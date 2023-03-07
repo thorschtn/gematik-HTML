@@ -1,0 +1,839 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_37"></p>
+  <p id="polarion_57"></p>
+  <p id="polarion_20"> <span style="font-size: 14pt;color: #FF0000;line-height: 1.5;">zulassungstest-relevante Abbildung von Errata 3 für Kon PTV3 &gt; führt zu PTV3.5.0-0</span> </p>
+  <p id="polarion_58"> Das Dokument soll die im vorliegenden Errata beschriebenen Änderungen im PET so abbilden, dass Test den funktionalen (Zulassungs-)Test des <span style="font-weight: bold;">Kon PTV 3</span> in der <span style="font-weight: bold;">Produkttypversion 3.5.0-0</span> vorbereiten und durchführen kann. </p>
+  <p id="polarion_2"> Im Errata - zur besseren Lesbarkeit - enthaltene <span style="text-decoration: underline;">unveränderte</span> Spezifikationsanteile wurden hier nicht übernommen. </p>
+  <p id="polarion_59">Die zum Errata veröffentlichten Dokumente sind im ELO zu finden:</p>
+  <ul id="polarion_60"> 
+   <li>Errata <span style="font-weight: bold;">gemErrata_3_Kon_PTV3 inkl. Anlagendokumente</span>:&nbsp;elodms://3645343</li> 
+   <li>Produkttypsteckbrief <span style="font-weight: bold;">gemProdT_Kon_PTV3_3.5.0-0_V1.0.0</span>:&nbsp;elodms://3645527</li> 
+  </ul>
+  <p id="polarion_11">Dokumentenlandkarte, in der Kon PTV3.5.0-0 eingeführt wird:&nbsp;elodms://3536973</p>
+  <p id="polarion_61"></p>
+  <p id="polarion_62">snapshot vom Deckblatt des veröffentlichten Erratum:</p>
+  <p id="polarion_14"></p>
+  <p id="polarion_9"> <span style="font-weight: bold;"><img src="attachments/5-screenshot-20191009-132319.png"></span> </p>
+  <p id="polarion_23"> <span style="font-weight: bold;">Inhaltsverzeichnis</span> </p>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100926">1 C_6968 -Abkündigung der Verwendung von TLS 1.1</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100971">1.1 Änderungen in [gemSpec_Krypt_V2.11.0]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100968">1.2 Änderungen in [gemILF_PS]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100969">1.3 Änderungen in [gemSpec_KT]</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100929">2 C_6996 -Automatisches Softwareupdate von Konnektor und Kartenterminals</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100930">2.1 Änderungen in [gemSpec_Kon_V5.4.0]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100979">2.2 Änderungen in [gemILF_PS]</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100980">3 C_7010 - Basisdienst TBAuth optional (Optimierung des Konnektors PTV3 und PTV4 für die fristgerechte Umsetzung der ePA)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100981">3.1 Änderungen in [gemSpec_Kon_V5.4.0]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100982">3.2 Änderungen in [gemILF_PS]</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100984">4 C_7012 - Remote-Management optional (Optimierung des Konnektors PTV3 und PTV4 für die fristgerechte Umsetzung der ePA)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100986">5 C_7032 - Zulassung von TLS Version 1.3 per KANN-Anforderung</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100988">6 C_7070 - Entfernen des festen Verweises auf die BMP-Version</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100987">6.1 Änderungen in [gemSpec_Info_AMTS_1.3.0]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100989">6.2 Änderungen in AMTS_Document_v1_5.xsd</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100990">6.3 Änderungen in gemILF_PS_AMTS</a></li>
+  </div>
+  <p id="polarion_64"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100926">1 C_6968 -Abkündigung der Verwendung von TLS 1.1</h2>
+  <p id="polarion_65"> <br> Das TLS-Protokoll in der Version 1.1 verwendet&nbsp; beim Verbindungsaufbau das schwache Hash-Verfahren SHA-1. Aus diesem Grund wird das IETF&nbsp; die TLS Version 1.1 abkündigen [1]. Darüber hinaus haben die namenhaften Webbrowser-Hersteller angekündigt ab 2020 TLS 1.1 nicht mehr zu unterstützen [2]. Des Weiteren schätzt die gematik ein (nach aktuellen Gesprächen mit dem BSI zu dem Thema), dass das BSI in der nächsten Aktualisierung der für die TI normativen TR-03116-1 TLS Version 1.1 für die TI verbieten wird.<br> Ziel der gematik ist es frühzeitig diese Entwicklung (Abkündigung von TLS 1.1) auch in der Spezifikation widerzuspiegeln.<br> Primärsysteme können ab dem 01.04.2020 nicht mehr davon ausgehen, dass alle Konnektoren TLS in der Version 1.1 unterstützen.<br> [1]: <a href="https://tools.ietf.org/html/draft-ietf-tls-oldversions-deprecate-05" target="_top" class="descriptionLink">https://tools.ietf.org/html/draft-ietf-tls-oldversions-deprecate-05</a>&nbsp;<br> [2]: <a href="https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols" target="_top" class="descriptionLink">https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols</a>&nbsp; </p>
+  <p id="polarion_67"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_32"> 
+   <li>gemSpec_Krypt_V2.11.0,</li> 
+   <li>gemSpec_KT,</li> 
+   <li>gemILF_PS,</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100971">1.1 Änderungen in [gemSpec_Krypt_V2.11.0]</h3>
+  <p id="polarion_33"> in Kapitel <span style="font-weight: bold;">3.3.2 TLS-Verbindungen:</span> </p>
+  <p id="polarion_36"> <span style="text-decoration: line-through;font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Nach [RFC-5246, Abschnitt 7.4.1.2] muss ein TLS-Client beim Aufbau einer TLS-Verbindung (Handshake) die höchste von ihm unterstützte Version, also Version 1.2, als „favorite choice“ angeben. Mit [RFC-5246, Abschnitt 7.4.1.3] muss ein TLS-Server mit der höchsten von beiden Kommunikationspartnern unterstützten Version antworten, also nach GS-A_4385 Version 1.2. Damit wird zwischen Komponenten und Diensten, die GS-A_4385 umsetzen, nur noch die TLS-Version 1.2 verwendet.</span> </p>
+  <p id="polarion_38"> <span style="text-decoration: line-through;font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Mittelfristig wird eine vollständige Migration auf TLS Version 1.2 angestrebt (vgl. auch [BSI-TR-02102-2, Abschnitt 3.2]), d. h. außer für den Konnektor und das KOM-LE-CM (s. u. GS-A_5530) wird die grundsätzliche Unterstützung von TLS-Version 1.1 freigestellt, und in einer späteren Migrationsphase wird diese Unterstützung (bzw. die Verwendung) untersagt.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-7921|external=true|revision=168180|anchor=b07d4b16-c0a8e832-080e9e57-10d160f3">
+   <p><b>GS-A_4386</b></p>
+   <p><span style="text-decoration: line-through;background-color: #FFFF99;">Alle Produkttypen, die Übertragungen mittels TLS durchführen, KÖNNEN die TLS-Version 1.1 [RFC-4346] unterstützen (oder auch nicht).</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_40"> <span style="text-decoration: line-through;background-color: #FFFF99;"><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Da alle aktuellen Webbrowser (vgl. Übersicht unter&nbsp; </span><a href="https://www.ssllabs.com/ssltest/clients.html" target="_blank">https://www.ssllabs.com/ssltest/clients.html</a><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">&nbsp;und </span><a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations" target="_blank">https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations</a><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">&nbsp;) seit längerem TLS-Version 1.2 unterstützen ist eine Forderung der Unterstützung von TLS-Version 1.1 bei Diensten innerhalb der TI, die u. Um. von einem Primärsystem aus mittels eines Webbrowsers kontaktiert werden (bspw. VZD), nicht notwendig.</span></span> </p>
+  <p id="polarion_41"> <span style="text-decoration: line-through;font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Komponenten, die direkt mit einem Primärsystem per TLS in Verbindung treten, sollen zunächst weiterhin die TLS-Version 1.1 unterstützen, um eine größtmögliche Interoperabilität zu erreichen.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-7922|external=true|revision=168184|anchor=b0951d63-c0a8e832-080e9e57-3e6bd3e5">
+   <p><b>GS-A_5530</b></p>
+   <p><span style="text-decoration: line-through;background-color: #FFFF99;">Der Konnektor und das KOM-LE-CM MÜSSEN die TLS-Version 1.1 unterstützen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100240|external=true|revision=168194|anchor=b0951d63-c0a8e832-080e9e57-06b5c37a">
+   <p><b>A_18464</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, DÜRFEN NICHT die TLS-Version 1.1 [RFC-4346] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100968">1.2 Änderungen in [gemILF_PS]</h3>
+  <p id="polarion_50" class="gemStandard"> <span style="font-weight: bold;">In Kap. 4.1.1</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-17304|external=true|revision=168218|anchor=b09c3abb-c0a8e832-080e9e57-4d06673c">
+   <p><b>TIP1-A_4962</b></p>
+   <p>Das Primärsystem SOLL die TLS-Authentisierungsmethoden der Stufen 2 oder 4 aus Tabelle Tab_ILF_PS_Konfigurationsvarianten_HTTP&nbsp;und Stufe 2 aus Tabelle Tab_ILF_PS_Konfigurationsvarianten_CETP verwenden, d.&nbsp;h. TLS mit Server-Authentisierung mit oder ohne Client-Authentisierung.<br> Der Konnektor kann nur noch in den Produkttypversionen 1 und 2 die TLS-Version 1.1&nbsp;anbieten.&nbsp;Nur mit&nbsp;diesen Produkttypversionen&nbsp;kann&nbsp;das&nbsp;PS&nbsp;auch&nbsp;TLS-Version&nbsp;1.1 verwenden. Ab&nbsp; der&nbsp; Konnektor-Produkttypversion 3 bietet&nbsp;der Konnektor&nbsp;TLS nur noch&nbsp;gemäß TLS-Version&nbsp;1.2&nbsp;oder&nbsp;1.3 an.&nbsp;Ab PTV3 MUSS&nbsp;das PS&nbsp;für TLS-gesicherte&nbsp;Verbindungen mindestens TLS Version 1.2 verwenden, es KANN auch TLS Version 1.3 verwenden.<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100969">1.3 Änderungen in [gemSpec_KT]</h3>
+  <p id="polarion_27"> in Kapitel <span style="font-weight: bold;">2.4.5.1 Sicherung der administrativen TLS-Verbindung</span> </p>
+  <p id="polarion_84" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">Nach [TIP1-A_3415] sind Netzwerkverbindungen grundsätzlich mit den in [gemSpec_Krypt] genannten Verfahren zu sichern. <span style="text-decoration: line-through;background-color: #FFFF99;">Die Verbindung zu den Netzwerk-basierten Managementschnittstellen ist immer mit TLS 1.1 gemäß [RFC4346] zu sichern [gemSpec_Krypt#GS-A_4386]. Um die Zukunftsfä-higkeit zu gewährleisten sollen sie auch mittels TLS 1.2 gemäß [RFC5246] gesichert werden können [gemSpec_Krypt#GS-A_4385].</span></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100845|external=true|revision=168228|anchor=b0a3f650-c0a8e832-080e9e57-d4b6810a">
+   <p><b>TIP1-A_3231-01</b></p>
+   <p>Das eHealth-Kartenterminal MUSS als Authentisierungsverfahren für administrative TLS-Verbindungen mindestens einseitige Authentisierung einsetzen.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_88" class="MsoNormal"> in Kapitel <span style="font-weight: bold;">2.4.4 Sicherheitsanforderungen LAN-gekoppelter Terminals</span> </p>
+  <p id="polarion_91" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">(…)</span> </p>
+  <p id="polarion_92" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">Für die Sicherung der hierfür notwendigen Netzwerkkommunikation <span style="background-color: #FFFF99;">sind<span style="text-decoration: line-through;">ist</span></span> für alle Kartenterminals<span style="background-color: #FFFF99;">&nbsp;die&nbsp;in [gemSpec_Krypt] genannten Verfahren&nbsp;<span style="text-decoration: line-through;">TLS 1.1 (Transport Layer Security) gemäß [RFC4346] [gemSpec_Krypt#GS-A_4386]</span></span> als einheitliche<span style="background-color: #FFFF99;">s</span> auf Zertifikaten basierende<span style="background-color: #FFFF99;">s</span> Verfahren vorgegeben.<span style="text-decoration: line-through;"> <span style="background-color: #FFFF99;">Um die Zukunftsfähigkeit zu gewährleisten, soll zusätzlich auch TLS 1.2 gemäß [RFC5246] unterstützt werden [gemSpec_Krypt#GS-A_4385].</span></span></span> </p>
+  <p id="polarion_93" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">(…)</span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100929">2 C_6996 -Automatisches Softwareupdate von Konnektor und Kartenterminals</h2>
+  <p id="polarion_75"> Aktuell ist eine Administratoraktion (bzw. DVO-Einsatz) notwendig, um ein Firmewareupdate zu aktivieren. Dieses führt dazu, dass es viele Monate dauert, bis eine neue Firmewareversion flächenendeckend im Einsatz ist.<br> Gewünscht wird, eine automatische Firmewareaktualisierung aktivieren zu können<span style="font-weight: bold;"> </span> </p>
+  <p id="polarion_79"> <span style="font-weight: bold;">Von der Änderungbetroffene Dokumente:</span> </p>
+  <ul id="polarion_80"> 
+   <li>gemSpec_Kon_V5.4.0</li> 
+   <li>gemILF_PS</li> 
+   <li>gemKPT_Arch_TIP_V2.5.0</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100930">2.1 Änderungen in [gemSpec_Kon_V5.4.0]</h3>
+  <p id="polarion_81"> <span style="font-size: 11pt;font-family: Arial, Helvetica;line-height: 1.5;">in Kapitel 4.3.9&nbsp;</span> </p>
+  <p id="polarion_31" class="GEM3">...</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43558">
+   <p><b>TIP1-A_5657</b></p>
+   <p>Der Konnektor MUSS die Möglichkeit bieten, dass Softwareupdates durch den Nutzer bzw. einen von ihm beauftragten Administrator einzeln freigeschaltet werden. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100003|external=true|revision=168263|anchor=b0d903ef-c0a8e832-080e9e57-136c3858">
+   <p><b>A_18387</b></p>
+   <p>Der Konnektor MUSS die Möglichkeit bieten, die automatische Installation von Softwareupdates pro Gerät (Konnektor und Kartenterminals)&nbsp;ein- und auszuschalten. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43559|external=true|revision=150027|anchor=b0d903ef-c0a8e832-080e9e57-40325313">
+   <p><b>TIP1-A_5659</b></p>
+   <p><span style="text-decoration: line-through;background-color: #FFFF99;">Der Hersteller des Konnektors MUSS in seinem Handbuch den Nutzer (bzw. den von ihm beauftragten Administrator) darauf hinweisen, dass der Anwender ein Softwareupdate nur dann aktivieren soll, wenn er ausreichend Informationen über den Inhalt des Softwareupdates erhalten hat, die ihm eine bewusste Entscheidung bei der Freischaltung ermöglichen.<span id="polarion-comment:835"></span></span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100005|external=true|revision=168267|anchor=b0e2afb3-c0a8e832-080e9e57-210fee0f">
+   <p><b>A_18389</b></p>
+   <p>Der Hersteller des Konnektors MUSS in seinem Handbuch den Nutzer darauf hinweisen, dass er sich bei der Arbeit mit dem Konnektor vergewissern muss, dass er mit einer zugelassenen Version arbeitet und beschreiben, wie der Nutzer diese Information mittels seines Primärsystems erhalten kann.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43566">
+   <p><b>TIP1-A_4832</b></p>
+   <p>Der Konnektor MUSS den technischen Use Case TUC_KON_280 „Konnektoraktualisierung durchführen“ umsetzen.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph">Tabelle: TAB_KON_664 – TUC_KON_280 „Konnektoraktualisierung durchführen“</p> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> 
+    <table style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Element<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Beschreibung<br> </th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Name<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">TUC_KON_280 „Konnektoraktualisierung durchführen“<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Beschreibung<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Dieser TUC aktualisiert den Konnektor mit einem Update, dessen Update-Dateien entweder direkt übergeben oder per UpdateInformation (vom KSRS bezogen) referenziert werden<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Auslöser<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der Administrator hat UpdateInformation zur Anwendung ausgewählt und bestätigt bzw. ein lokales Updatepaket bezogen und zur Anwendung übergeben.<br> <span style="font-size: 10pt;font-family: Arial, Helvetica;background-color: #FFFF00;line-height: 1.5;">automatisches Softwareupdate [A_18387]&nbsp;</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Vorbedingungen<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Eingangsdaten<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UpdateInformation (gemäß [gemSpec_KSR#5.2])<br> </li> 
+        </ul> oder<br> 
+        <ul> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updatepaket (herstellerspezifisch, von lokaler Datenquelle, mit enthaltenen FirmwareFiles)<br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Komponenten<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Konnektor, Konfigurationsdienst<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Ausgangsdaten<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Keine<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Nachbedingungen<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der Konnektor arbeitet basierend auf der übergebenen, im Updatepaket enthaltenen neuen Version.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Standardablauf<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der Konnektor MUSS die zur Anwendung übergebene UpdateInformation wie folgt anwenden:<br> 
+        <ol> 
+         <li>Integrität und Authentizität der UpdateInformation prüfen (Mechanismus ist herstellerspezifisch)<br> </li> 
+         <li>Download aller in UpdateInformation.FirmwareFiles gelisteten Dateien. Dabei wird die Komprimierung des File Transfers vom Konfigurationsdienst über http „Content Coding“ [RFC2616] „gzip“ genutzt.<br> </li> 
+         <li>Integrität und Authentizität jeder der via UpdateInformation/FirmwareFiles heruntergeladenen Dateien prüfen (Mechanismus ist herstellerspezifisch)<br> </li> 
+         <li>Prüfen auf Zulässigkeit des Updates basierend auf der Firmware-Gruppe (siehe [gemSpec_OM#2.5]<br> </li> 
+         <li>Anwenden der zur Verfügung stehenden FirmwareFiles<br> </li> 
+         <ol> 
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TUC_KON_256{<br> &nbsp;&nbsp;&nbsp;&nbsp;topic = „KSR/UPDATE/START“;<br> &nbsp;&nbsp;&nbsp;&nbsp;eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;parameters = („Target=Konnektor,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name=$MGM_KONN_HOSTNAME“)}<br> (betroffene Fachmodule und Basisdienste reagieren und stoppen sich)<br> </li> 
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Herstellerspezifischer Mechanismus zur Aktualisierung der internen Konnektorsoftware durch die FirmwareFiles inklusive anschließender Prüfung auf Erfolg.<br> </li> 
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bestehende Konfigurationsdaten des Konnektors MÜSSEN erhalten bleiben und sofern erforderlich und möglich automatisch auf die Definitionen der neuen Firmware angepasst werden.<br> </li> 
+          <li>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Ist ein händischer Anpassungs- oder Ergänzungsbedarf der Konfigurationsdaten erforderlich, so MUSS der Administrator hierüber geeignet informiert werden<br> </li> 
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TUC_KON_256 {<br> &nbsp;&nbsp;&nbsp;&nbsp;topic = „KSR/UPDATE/SUCCESS”;<br> &nbsp;&nbsp;&nbsp;&nbsp;eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;parameters = („Target=Konnektor,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name= $MGM_KONN_HOSTNAME,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NewFirmwareversion =<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateInformation.FirmwareVersion,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConfigurationChanged=&lt;Ja/Nein&gt;,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ManualInputNeeded=&lt;Ja/Nein&gt;„) }<br> </li> 
+         </ol> 
+        </ol> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Der TUC endet in jedem Fall mit:<br> 
+        <div style="margin-left: 4em;"> 
+         <ul> 
+          <li>TUC_KON_256 {<br> &nbsp;&nbsp;&nbsp;&nbsp;topic = „KSR/UPDATE/END“;<br> &nbsp;&nbsp;&nbsp;&nbsp;eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;parameters = („Target=Konnektor,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name=$MGM_KONN_HOSTNAME“) }<br> (betroffene Fachmodule und Basisdienste reagieren und starten sich)<br> </li> 
+         </ul> 
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Varianten/Alternativen<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Sofern direkt ein Updatepaket (mit enthaltenen FirmwareFiles) übergeben wurde beginnt der Ablauf ab Nummer 4 mit der Integritätsprüfung des Updatepakets<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlerfälle<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehler in den folgenden Schritten des Ablaufs führen zu:<br> a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aufruf von TUC_KON_256 {<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; topic = „KSR/ERROR“;<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; eventType = $ErrorType;<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; severity = $Severity;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameters = („Target=Konnektor,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name= $MGM_KONN_HOSTNAME,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Error=$Fehlercode,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bedeutung=$Fehlertext“) }<br> <br> b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abbruch der Verarbeitung mit den ausgewiesenen Fehlercodes<br> <br> (1) Integritätsprüfung UpdateInformation fehlgeschlagen, Fehlercode:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4181<br> (2) Fehler bei der Downloaddurchführung, Fehlercode: 4182<br> (3) Integritätsprüfung eines FirmwareFiles fehlgeschlagen,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fehlercode: 4183<br> ( 4) Firmwaregruppenprüfung fehlgeschlagen, Fehlercode: 4185<br> (5b) Interne Aktualisierung fehlgeschlagen, dann:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Rollback auf vorherige Version<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Abbruch mit Fehlercode: 4184<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Nichtfunktionale Anforderungen<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der laufende Updatevorgang MUSS in der Managementschnittstelle ausgewiesen und der Fortschritt mindestens für die Schritte 1-5b dargestellt werden.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 84pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Zugehörige Diagramme<br> </td> 
+       <td style="vertical-align: top;width: 361pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Abbildung 21: PIC_KON_105 Aktivitätsdiagramm Konnektoraktualisierung durchführen<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <p data-keep-next="true" class="polarion-rte-caption-paragraph">Tabelle: TAB_KON_665 Fehlercodes TUC_KON_280 „Konnektoraktualisierung durchführen“</p> 
+    <table style="width: 441pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlercode<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">ErrorType<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Severity<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlertext<br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="vertical-align: top;width: 441pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Neben den Fehlercodes der aufgerufenen technischen Use Cases können folgende weitere Fehlercodes auftreten:<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4181<br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Integritätsprüfung UpdateInformation fehlgeschlagen.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4182<br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Download nicht aller UpdateFiles möglich.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4183<br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Integritätsprüfung UpdateFiles fehlgeschlagen.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4184<br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Anwendung der UpdateFiles fehlgeschlagen (&lt;Details&gt;).<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4185<br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Firmware-Version liegt außerhalb der gültigen Firmware-Gruppe<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <br> <img title="1-image106.png" src="attachments/ML-43566-1-image106.png" style="width: 562px;height: 735px;"><br> <p class="polarion-rte-caption-paragraph"></p> <p class="polarion-rte-caption-paragraph" style="text-align: center;">Abbildung: PIC_KON_105 Aktivitätsdiagramm Konnektoraktualisierung durchführen</p> <p class="polarion-rte-caption-paragraph" style="text-align: center;"></p><p class="polarion-rte-caption-paragraph" style="text-align: center;"></p><br> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43568">
+   <p><b>TIP1-A_4833</b></p>
+   <p>Der Konnektor MUSS den technischen Use Case TUC_KON_281 „Kartenterminalaktualisierung anstoßen“ umsetzen.<span style="text-decoration: line-through;background-color: #FFFF99;"><br> <br> </span> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: TAB_KON_666 – TUC_KON_281 „Kartenterminalaktualisierung anstoßen“ </p> 
+    <table style="width: 441pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <td style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #FFFF99;"></span>Element<br> </td> 
+       <td style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Beschreibung<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Name<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">TUC_KON_281 „Kartenterminalaktualisierung anstoßen“<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Beschreibung<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Dieser TUC fordert ein Kartenterminal auf einen Update durchzuführen, dessen Update-Dateien entweder direkt übergeben oder per UpdateInformation (vom KSRS bezogen) referenziert werden<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Auslöser<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der Administrator hat UpdateInformation für ein Kartenterminal zur Anwendung ausgewählt und bestätigt bzw. ein lokales Updatepaket für ein Kartenterminal bezogen und zur Anwendung übergeben.<br> <span style="font-size: 10pt;font-family: Arial, Helvetica;background-color: #FFFF00;line-height: 1.5;">automatisches Softwareupdate [A_18387]&nbsp;</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Vorbedingungen<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> 
+        <ul> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT(ctId).IS_PHYSICAL=Ja<br> </li> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT(ctId).CORRELATION&gt;=”gepairt”<br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Eingangsdaten<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctId (ID des Ziel-KTs)<br> </li> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UpdateInformation (gemäß [gemSpec_KSR]) oder<br> </li> 
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Updatepaket (herstellerspezifisch, von lokaler Datenquelle, mit enthaltenen FirmwareFiles)<br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Komponenten<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Konnektor, Kartenterminal<span style="text-decoration: line-through;background-color: #FFFF99;"><br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #FFFF99;"></span>Ausgangsdaten<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Keine<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Nachbedingungen<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Das Kartenterminal arbeitet basierend auf der übergebenen, im Updatepaket enthaltenen neuen Version.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Standardablauf<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Der Konnektor MUSS die zur Anwendung übergebene UpdateInformation wie folgt anwenden:<br> 
+        <ol> 
+         <li>Download der in UpdateInformation/FirmwareFiles gelisteten Datei (für KT-Updates darf nur genau ein FirmwareFile angegeben werden)<br> </li> 
+         <li>TUC_KON_256{<br> topic = „KSR/UPDATE/START”;<br> &nbsp;&nbsp;&nbsp;&nbsp;eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;parameters = („Target=KT, CtID=$ctId“) }<br> </li> 
+         <li>Durchführen des KT-Updates durch:</li> 
+        </ol> a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wechsel in eine Admin-Session durch TUC_KON_050<br> &nbsp;&nbsp;&nbsp;&nbsp; „Beginne Kartenterminalsitzung“{role=„Admin“; ctId}<br> b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Senden der SICCT Kommandos: SICCT CT Download INIT,<br> &nbsp;&nbsp;&nbsp;&nbsp; SICCT CT Download DATA (Übermittlung des UpdateFiles) und<br> &nbsp;&nbsp;&nbsp;&nbsp; SICCT CT Download FINISH an ctId<br> c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TUC_KON_256{<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topic = „KSR/UPDATE/SUCCESS”;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameters = („Target=KT,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name= $CT.HOSTNAME, CtID =$ctId,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NewFirmwareversion =<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;UpdateInformation.FirmwareVersion&gt;„}<br> <br> Der TUC endet in jedem Fall mit:<br> 
+        <ul> 
+         <li>TUC_KON_256 {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topic = „KSR/UPDATE/END”;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eventType = Sec;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity = Info;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameters = („Target=KT, CtID =$ctId“) }<br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Varianten/Alternativen<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Sofern direkt ein Updatepaket (mit enthaltenem FirmwareFile) übergeben wurde beginnt der Ablauf ab Nummer 2 mit Signalisierung des Beginns des KT-Updates<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlerfälle<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehler in den folgenden Schritten des Ablaufs führen zu:<br> a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aufruf von TUC_KON_256 {<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;topic = „KSR/ERROR”;<br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eventType = $ErrorType;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; severity = $Severity;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameters = („Target=KT, Name=$CT.HOSTNAME,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CtID =$ctId, Error=$Fehlercode,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bedeutung=$Fehlertext“) }<br> b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Abbruch der Verarbeitung mit den ausgewiesenen Fehlercodes<br> (1)&nbsp;Download fehlgeschlagen, Fehlercode: 4186<br> (3b) SICCT-Download fehlgeschlagen, Fehlercode: 4187<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Nichtfunktionale Anforderungen<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Die Durchführung eines KT-Updates DARF die weitere Operation des Konnektors NICHT behindern (weder auf Schnittstellenebene noch in der Managementschnittstelle).<br> Der laufende Updatevorgang eines KT MUSS in der Managementschnittstelle ausgewiesen und der Fortschritt dargestellt werden.<br> Der Konnektor MUSS mindestens 5 Kartenterminal-Updates parallel durchführen können.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 110pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Zugehörige Diagramme<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 331pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">keine<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___2"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: TAB_KON_667 Fehlercodes TUC_KON_281 „Kartenterminalaktualisierung anstoßen“ </p> 
+    <table style="width: 441pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlercode<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">ErrorType<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Severity<br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Fehlertext<br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="text-align: left;vertical-align: top;width: 441pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Neben den Fehlercodes der aufgerufenen technischen Use Cases können folgende weitere Fehlercodes auftreten:<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4186<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Download nicht aller UpdateFiles möglich.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4187<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Security<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error<br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 253pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">KT-Update fehlgeschlagen (&lt;Fehlerinfo gemäß SICCT&gt;)<span style="text-decoration: line-through;background-color: #FFFF99;"><br> </span></td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43581|external=true|revision=168288|anchor=b0f9313d-c0a8e832-080e9e57-a983f387">
+   <p><b>TIP1-A_5938</b></p>
+   <p>Der Konnektor MUSS in der Bootup-Phase TUC_KON_284 „KSR-Client initialisieren“ durchlaufen.<br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___3"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: TAB_KON_864&nbsp;– TUC_KON_284 „KSR-Client initialisieren“ </p> 
+    <table style="width: 441pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <td style="background-color: #E6E6E6;text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Element</span><br> </td> 
+       <td style="background-color: #E6E6E6;text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Name</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_284 ”KSR-Client initialisieren”</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 36pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 36pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Der Konnektor muss während des Bootups die Downloadpunkte für Konfigurationsdaten und Firmware ermitteln.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 23pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsanforderung</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 23pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Auslöser und Vorbedingungen</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Bootup</span><br> <span style="font-size: 10pt;line-height: 1.5;">Verbindung zum VPN-Konzentrator TI muss aufgebaut sein</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsdaten</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Komponenten</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Konnektor</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 29pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ausgangsdaten</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 29pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">MGM_KSR_KONFIG_URL</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">MGM_KSR_FIRMWARE_URL</span><br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Standardablauf</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Falls MGM_LU_ONLINE=Enabled:</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durch DNS-Anfragen an den DNS-Forwarder zur<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Auflösung der SRV-RR und TXT-RR mit den Bezeichnern<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; „_ksrkonfig._tcp.ksr.&lt;TOP_LEVEL_DOMAIN_TI&gt;„ und<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; „_ksrfirmware._tcp.ksr.&lt;TOP_LEVEL_DOMAIN_TI&gt;„ erhält<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; der Konnektor URLs der Downloadpunkte des KSR für<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Konfigurationsdaten (MGM_KSR_KONFIG_URL) und für<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Firmware (MGM_KSR_FIRMWARE_URL).</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Varianten/Alternativen</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlerfälle</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 29pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Nichtfunktionale Anforderungen</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 29pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 102pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zugehörige Diagramme</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 339pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___4"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: TAB_KON_822 Fehlercodes TUC_KON_284 „KSR-Client initialisieren“ </p> 
+    <table style="width: 446pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Fehlercode</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">ErrorType</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Severity</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Fehlertext</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="vertical-align: top;width: 446pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Neben den Fehlercodes der aufgerufenen technischen Use Cases können keine weiteren Fehlercodes auftreten.</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43582">
+   <p><b>TIP1-A_4835</b></p>
+   <p>Der Administrator MUSS die in TAB_KON_670 aufgelisteten Parameter über die Managementschnittstelle konfigurieren und die in TAB_KON_820 aufgelisteten Parameter ausschließlich einsehen können.<span style="text-decoration: line-through;background-color: #FFFF99;"><br> </span> <p data-keep-next="true" class="polarion-rte-caption-paragraph">Tabelle : TAB_KON_670 Konfigurationsparameter der Software-Aktualisierung</p> 
+    <table style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 172px;height: 20pt;border: 1px solid #CCCCCC;padding: 4pt;">ReferenzID<br> </th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 151px;height: 20pt;border: 1px solid #CCCCCC;padding: 4pt;">Belegung<br> </th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 391px;height: 20pt;border: 1px solid #CCCCCC;padding: 4pt;">Bedeutung und Administrator-Interaktion<br> </th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 172px;height: 70px;border: 1px solid #CCCCCC;padding: 4pt;">MGM_KSR_<br> AUTODOWNLOAD<br> </td> 
+       <td style="vertical-align: top;width: 151px;height: 70px;border: 1px solid #CCCCCC;padding: 4pt;">Enabled/<br> Disabled<br> </td> 
+       <td style="vertical-align: top;width: 391px;height: 70px;border: 1px solid #CCCCCC;padding: 4pt;">Der Administrator MUSS den automatischen Download verfügbarer Update-Pakete über den Konfigurationsparameter MGM_KSR_AUTODOWNLOAD an- und abschalten können.<br> Default-Wert: Enabled<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 172px;height: 146px;border: 1px solid #CCCCCC;padding: 4pt;">MGM_KSR_SHOW_<br> TRIAL_UPDATES<br> </td> 
+       <td style="vertical-align: top;width: 151px;height: 146px;border: 1px solid #CCCCCC;padding: 4pt;">Enabled /<br> Disabled<br> </td> 
+       <td style="vertical-align: top;width: 391px;height: 146px;border: 1px solid #CCCCCC;padding: 4pt;">Der Administrator MUSS einschalten können, dass zusätzlich zur Anzeige von Update-Paketen für den Online-Produktivbetrieb auch die Anzeige von Erprobungs-Update-Paketen erfolgt.<br> Wenn MGM_KSR_SHOW_TRIAL_UPDATES von Disabled auf Enabled gesetzt wird, muss ein Warnhinweis angezeigt werden, dass die Installation von Erprobungs-Update-Paketen nur für Teilnehmer der Erprobungen vorgesehen ist.<br> Default-Wert: Disabled<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 172px;height: 87px;border: 1px solid #CCCCCC;padding: 4pt;">MGM_KSR_AUTO_UPDATE</td> 
+       <td style="vertical-align: top;width: 151px;height: 87px;border: 1px solid #CCCCCC;padding: 4pt;">Enabled / Disabled</td> 
+       <td style="vertical-align: top;width: 391px;height: 87px;border: 1px solid #CCCCCC;padding: 4pt;">Der Administrator MUSS pro Gerät (Konnektor und Kartenterminals) das automatische Softwareupdate ein- und ausschalten können.<br> Default-Wert: Enabled<br> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Falls MGM_KSR_AUTO_UPDATE=Enabled wird&nbsp;MGM_KSR_<br> AUTODOWNLOAD=Enabled gesetzt.</span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 172px;height: 109px;border: 1px solid #CCCCCC;padding: 4pt;">MGM_KSR_AUTO_<br> UPDATE_TIME</td> 
+       <td style="vertical-align: top;width: 151px;height: 109px;border: 1px solid #CCCCCC;padding: 4pt;">Wochentag / Uhrzeit<br> Oder<br> täglich / Uhrzeit</td> 
+       <td style="vertical-align: top;width: 391px;height: 109px;border: 1px solid #CCCCCC;padding: 4pt;">Der Administrator MUSS den Wochentag und die Uhrzeit einstellen können, wann automatische Softwareupdates durchgeführt werden.<br> Als Wochentag MUSS es neben den einzelnen Wochentagen auch einen Wert für eine tägliche Prüfung auf Aktualität und gegebenenfalls Durchführung von Softwareupdates geben.<br> Default-Wert: Montag / 1:00 Uhr</td> 
+      </tr> 
+     </tbody> 
+    </table> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph">Tabelle: TAB_KON_820 Einsehbare Konfigurationsparameter der Software-Aktualisierung</p> 
+    <table style="width: 445pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #CCCCCC;text-align: left;vertical-align: top;width: 121pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">ReferenzID<br> </th> 
+       <th style="background-color: #CCCCCC;text-align: left;vertical-align: top;width: 90pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Belegung<br> </th> 
+       <th style="background-color: #CCCCCC;text-align: left;vertical-align: top;width: 234pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Bedeutung und Administrator-Interaktion<br> </th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 121pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">MGM_KSR_<br> KONFIG_URL<br> </td> 
+       <td style="vertical-align: top;width: 90pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">URL<br> </td> 
+       <td style="vertical-align: top;width: 234pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">SOAP-Endpunkt des Konfigurationsdienstes zum Download von Konfigurationsdaten<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 121pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">MGM_KSR_<br> FIRMWARE_URL<br> </td> 
+       <td style="vertical-align: top;width: 90pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">URL<br> </td> 
+       <td style="vertical-align: top;width: 234pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">SOAP-Endpunkt des Konfigurationsdienstes zum Download der Firmware<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43587">
+   <p><b>TIP1-A_4839</b></p>
+   <p>Der Administrator MUSS in der Übersichtsliste einzelne Geräteeinträge bzw. Gruppen mit der jeweils anzuwendenden UpdateInformation für die Durchführung eines Updates markieren können.<br> Alternativ MUSS der Administrator neben der Markierung je Geräteeintrag bzw. Gruppe Update-Pakete lokal einspielen können (etwa durch ein Upload- bzw. Download-Interface in der Administrationsoberfläche).<br> Je Geräteeintrag MUSS der Administrator einen individuellen Ausführungszeitpunkt für die Durchführung des Updates einstellen können.<br> Der Administrator MUSS für den Geräteeintrag Konnektor festlegen können, ob dieses Update erst gestartet werden darf, wenn zuvor alle festgelegten KT-Updates erfolgreich durchlaufen wurden.<br> Der Administrator MUSS zu jeder Zeit die gerätebezogene Festlegung für ein Update ändern bzw. löschen können, sofern dieses konkrete Update noch nicht begonnen wurde.<br> Je Geräteeintrag MUSS der Administrator automatische Softwareupdates aktivieren und deaktivieren können.<span style="text-decoration: line-through;"><br> </span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-43588">
+   <p><b>TIP1-A_4840</b></p>
+   <p>Der Administrator MUSS für die Liste der markierten Geräteeinträge ein gesammeltes Update auslösen können. Dieses MUSS nach folgendem Muster ablaufen:<br> 
+    <ol> 
+     <li>Alle Kartenterminaleinträge abarbeiten. Pro markiertem Kartenterminal:<br> </li> 
+    </ol> 
+    <div style="margin-left: 2em;"> 
+     <ul> 
+      <li>Wenn Ausführungszeitpunkt nicht gesetzt:&nbsp;&nbsp;&nbsp;&nbsp;<br> Anwenden des definierten Updates mittels TUC_KON_281 „Kartenterminalaktualisierung anstoßen“<br> </li> 
+      <li>Wenn Ausführungszeitpunkt gesetzt:&nbsp;&nbsp;&nbsp;&nbsp;<br> Anwenden des definierten Updates mittels TUC_KON_281 sobald der Ausführungszeitpunkt erreicht ist oder, sofern der Konnektor zum Ausführungszeitpunkt nicht in Betrieb war, überschritten wurde. Konnte das Kartenterminal nicht erreicht werden, so MUSS das gesetzte Update im KSR-Client für eine spätere Anwendung erhalten bleiben (wird ereignisgesteuert neu ausgelöst).<br> </li> 
+     </ul> 
+    </div> 
+    <ol class="continue"> 
+     <li>Sofern die KonnektorUpdate-Abhängigkeit von KT-Updates nicht gesetzt wurde oder wenn alle vorgesehenen Kartenterminal-Updates durchgeführt wurden, MUSS das Konnektor-Updates mittels TUC_KON_280 „Konnektoraktualisierung durchführen“ wie folgt begonnen werden:<br> </li> 
+    </ol> 
+    <div style="margin-left: 2em;"> 
+     <ul> 
+      <li>wenn Ausführungszeitpunkt nicht gesetzt: TUC-Aufruf direkt<br> </li> 
+      <li>wenn Ausführungszeitpunkt gesetzt: TUC-Aufruf direkt sobald der Ausführungszeitpunkt erreicht ist oder, sofern der Konnektor zum Ausführungszeitpunkt nicht in Betrieb war, überschritten wurde</li> 
+     </ul> 
+    </div> Wenn der Administrator ein Erprobungs-Update zur Installation auswählt, MUSS er über einen Warnhinweis darüber informiert werden,<br> 
+    <ul> 
+     <li>dass es sich um ein Erprobungs-Update handelt,<br> </li> 
+     <li>für welche Erprobung es vorgesehen ist,<br> </li> 
+     <li>dass das Update-Paket nur installiert werden sollte, wenn die Institution oder Organisation des Gesundheitswesens an der Erprobung teilnimmt,<br> </li> 
+    </ul> dass, falls die Institution oder Organisation des Gesundheitswesens nicht an der Erprobung teilnimmt und dennoch das Update installiert wird, es zu funktionalen Einschränkungen des Konnektors kommen kann. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100006|external=true|revision=168310|anchor=b11f752e-c0a8e832-080e9e57-0d443ca4">
+   <p><b>A_18390</b></p>
+   <p>Wenn für mindestens ein Gerät das automatische Softwareupdate aktiviert ist, MUSS der Konnektor zur MGM_KSR_AUTO_UPDATE_TIME die Updates nach folgendem Muster durchführen:<br> 
+    <ul> 
+     <li>Alle Geräte (Kartenterminals und Konnektor), für die MGM_KSR_AUTO_UPDATE=Enabled ist, werden markiert<br> </li> 
+     <li>Alle Kartenterminaleinträge abarbeiten</li> 
+     <ul> 
+      <li>Pro markiertem Kartenterminal: Anwenden des automatischen Updates mittels TUC_KON_281 „Kartenterminalaktualisierung anstoßen"</li> 
+     </ul> 
+     <li>Sofern die Konnektorupdate-Abhängigkeit von KT-Updates nicht gesetzt wurde oder wenn alle vorgesehenen Kartenterminal-Updates&nbsp;durchgeführt wurden, MUSS für einen markierten Konnektor das Konnektor-Update mittels TUC_KON_280 „Konnektoraktualisierung durchführen“ begonnen werden.</li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100007|external=true|revision=168312|anchor=b11f752e-c0a8e832-080e9e57-2e410590">
+   <p><b>A_18391</b></p>
+   <p>Sofern der Konnektor zu MGM_KSR_AUTO_UPDATE_TIME nicht in Betrieb war, DÜRFEN die automatischen Updates später NICHT nachgeholt werden. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100979">2.2 Änderungen in [gemILF_PS]</h3>
+  <p id="polarion_6">in Kapitel 4.1.2</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100258|external=true|revision=155472|anchor=b1219a74-c0a8e832-080e9e57-a6d00a54">
+   <p><b>A_18468</b></p>
+   <p><span style="background-color: #FFFF99;">Das PS MUSS an geeigneter Stelle dem Nutzer die Firmwareversion des Konnektors anzeigen, der an das PS angebunden ist. Die Konnektorversion wird über den Dienstverzeichnisdienst ausgelesen. Zur Anzeige kommen dabei die DVD-Informationen ProductVendorName, ProductName und ProductVersion/Local/FWVersion.</span><span style="font-size: 10pt;background-color: #FFFF33;line-height: 1.5;"><span id="polarion-comment:160"></span></span> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100980">3 C_7010 - Basisdienst TBAuth optional (Optimierung des Konnektors PTV3 und PTV4 für die fristgerechte Umsetzung der ePA)</h2>
+  <p id="polarion_3"> Der Basisdienst TBAuth des Konnektors wird als optional gekennzeichnet.<br> Es wird eine neue Anforderung definiert, die den Basisdienst TBAuth als optional definiert. </p>
+  <p id="polarion_1"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_4"> 
+   <li>gemSpec_Kon_V5.4.0</li> 
+   <li>gemILF_PS</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100981">3.1 Änderungen in [gemSpec_Kon_V5.4.0]</h3>
+  <p id="polarion_5">in Kapitel 2.1</p>
+  <p id="polarion_7"> Der Anwendungskonnektor bietet zusätzlich zu den in Kap. 4.1 beschriebenen Basisdiensten den <span style="background-color: #FFFF99;">optionalen</span> Dienst „tokenbasierte Authentisierung“, der in [gemSpec_Kon_TBAuth] beschrieben ist. </p>
+  <p id="polarion_8"> dazu: PIC_KON_117:<br> Der Basisdienst Tokenbasierte Authentisierung wird als optional gekennzeichnet. </p>
+  <p id="polarion_10">in Kapitel 3:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100490|external=true|revision=168321|anchor=b12d2ca8-c0a8e832-080e9e57-d89b9ec1">
+   <p><b>A_18605</b></p>
+   <p>Der Konnektor SOLL den Basisdienst TBAuth [gemSpec_Kon_TBAuth] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100982">3.2 Änderungen in [gemILF_PS]</h3>
+  <p id="polarion_15">in Kapitel 4.4.5.2</p>
+  <p id="polarion_12"> &lt;PTV3&gt; Tokenbasierte Authentisierung<br> Die Bereitstellung des&nbsp; Basisdienstes Tokenbasierte Authentisierung ist für die Hersteller des Konnektors optional, d.h. ob der Dienst TBAuth vom Konnektor angeboten wird ist herstellerabhängig.<br> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100984">4 C_7012 - Remote-Management optional (Optimierung des Konnektors PTV3 und PTV4 für die fristgerechte Umsetzung der ePA)</h2>
+  <p id="polarion_16"> Auf die verpflichtende Umsetzung des Remote-Management wird verzichtet. Das Remote-Management wird als optional spezifiziert.<br> TIP1-A_7276 wird in eine KANN-Anforderung geändert. Alle anderen Anforderungen, die das Remote-Management (z.B. auch Remote-Administrator) betreffen, bleiben unverändert und gelten verbindlich für den Fall, dass der Konnektor das Remote-Management technisch unterstützt. </p>
+  <p id="polarion_17"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_18"> 
+   <li>gemSpec_Kon_V5.4.0</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <p id="polarion_19">in Kapitel 4.3.8 Remote Management</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-74803">
+   <p><b>TIP1-A_7276</b></p>
+   <p>Der Konnektor KANN Remote Management technisch unterstützen.&nbsp;<br> Falls der Konnektor das Remote Management technisch unterstützt, MUSS der Konnektor alle Anforderungen, die das Remote Management (z.B. auch Remote-Administrator) betreffen, umsetzen.<br> Andernfalls sind die Anforderungen, die das Remote Management (z.B. auch Remote-Administrator) betreffen, für den Konnektor nicht relevant. <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100986">5 C_7032 - Zulassung von TLS Version 1.3 per KANN-Anforderung</h2>
+  <p id="polarion_21">Als KANN-Anforderung wird TLS in der Version 1.3 für alle Produkttypen der TI zugelassen.</p>
+  <p id="polarion_22"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_24"> 
+   <li>gemSpec_Krypt_V2.11.0</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <p id="polarion_25">in Kap. 3.3.2</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100244|external=true|revision=168338|anchor=b1460beb-c0a8e832-080e9e57-c67d9084">
+   <p><b>A_18467</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, KÖNNEN die TLS-Version 1.3 [RFC-8446] unterstützen, falls sie<br> 
+    <ol> 
+     <li>dabei nur nach [BSI-TR-02102-2] empfohlene Verbindungskonfigurationen (Handshake-Modi, (EC)DH-Gruppen, Signaturverfahren, Ciphersuiten etc.) verwenden, und&nbsp;</li> 
+     <li>mindestens die Ciphersuite "TSL_AES_128_GCM_SHA256" dabei unterstützen.&nbsp;</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-93497|external=true|revision=168334|anchor=b1460beb-c0a8e832-080e9e57-9ce31743">
+   <p><b>A_17322</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, MÜSSEN sicherstellen, dass sie nur (durch andere Anforderungen) zugelassene TLS-Ciphersuiten bzw. TLS-Versionen anbieten bzw. verwenden. <br> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100988">6 C_7070 - Entfernen des festen Verweises auf die BMP-Version</h2>
+  <p id="polarion_13">Das Schema AMTS_Document_v1_5.xsd hat in dem Attribut "v" einen festen Verweis auf die aktuell verwendete BMP-Version. Bei jeder Änderung des BMP muss zurzeit auch das AMTS-Schema angepasst werden. Eine einfache Schemaanpassung ist zurzeit nicht möglich, daher soll diese feste Verknüpfung aufgelöst werden. Das Primärsystem soll die BMP-Version in den AMTS-Datensatz schreiben. Zurzeit besteht bereits eine Abweichung, da sich der BMP in der Version 2.6 befindet, aber in dem AMTS_Document_v1_5.xsd die Version fest auf 2.5 verblieben ist.&nbsp;</p>
+  <p id="polarion_30"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_34"> 
+   <li>gemSpec_Info_AMTS</li> 
+   <li>gemILF_PS_AMTS</li> 
+   <li>AMTS_Document_v1_5.xsd</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100987">6.1 Änderungen in [gemSpec_Info_AMTS_1.3.0]</h3>
+  <p id="polarion_39" class="MsoNormal">In Kapitel 2.1:</p>
+  <p id="polarion_42" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Tab_AMTS_Info_001 XML-Dokumente zum Info-Modell der Fachanwendung eMP/AMTS-Datenmanagement</span> </p>
+  <table id="polarion_43" style="width: 100%;border: none;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;vertical-align: top;width: 59.25pt;height: 15.2pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 2.25pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Version </span><br> </td> 
+     <td colspan="2" style="background-color: #F0F0F0;vertical-align: top;width: 495pt;height: 15.2pt;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">XML-Artefakte des Info-Modells </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td rowspan="8" style="vertical-align: top;width: 59.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">1.<span style="background-color: #FFFF00;">46.0</span></span><br> </td> 
+     <td colspan="2" style="vertical-align: top;width: 495pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">Einwilligung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 0.75pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">XSD-Name</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 0.75pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">AMTS_Einwilligung_Document_v1_0.xsd</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">XSD-Version</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">1.0.1</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">TargetNamespace</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <a href="http://ws.gematik.de/fa/amtss/AMTS_Einwilligung_Document/v1.0" target="_top" style="color: #0000FF;">http://ws.gematik.de/fa/amtss/AMTS_Einwilligung_Document/v1.0</a><span style="font-size: 10pt;line-height: 1.5;">&nbsp;</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td colspan="2" style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">eMP/AMTS-Daten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">XSD-Name</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">AMTS_Document_v1_<span style="background-color: #FFFF00;">46</span>.xsd</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">XSD-Version</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">1.<span style="background-color: #FFFF00;">46.0</span></span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121.5pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="font-size: 10pt;line-height: 1.5;">TargetNamespace</span><br> </td> 
+     <td style="vertical-align: top;width: 368.25pt;height: 14.65pt;border-top: none;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: none;padding: 2.25pt;"> <span style="text-decoration: underline;font-size: 10pt;color: #0000FF;line-height: 1.5;">http://ws.gematik.de/fa/amtss/AMTS_Document/v1.<span style="background-color: #FFFF00;">4</span></span><span style="font-size: 10pt;background-color: #FFFF00;line-height: 1.5;">6</span><span style="font-size: 10pt;line-height: 1.5;">&nbsp; </span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_44" class="MsoNormal">In Kapitel 2.3:</p>
+  <p id="polarion_45" class="MsoNormal"> <span style="font-size: 10pt;color: #000000;line-height: 1.5;">attribute <span style="font-weight: bold;">MP/@v</span></span> </p>
+  <table id="polarion_46" style="width: 100%;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border: 1pt solid black;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">type</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #000000;line-height: 1.5;">restriction of xs:string</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">properties</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">use </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #000000;line-height: 1.5;">required</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"><span style="text-decoration: line-through;"> <span style="font-size: 8pt;color: #808080;background-color: #FFFF00;line-height: 1.5;">fixed </span><br> </span></td> 
+         <td style="vertical-align: top;padding: 0.75pt;"><span style="text-decoration: line-through;"> <span style="font-size: 8pt;background-color: #FFFF00;line-height: 1.5;">025</span><br> </span></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">facets</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Kind </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Value </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Annotation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">length </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">3</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">pattern </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">\d*</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">annotation</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">documentation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">Name: Version BMP<br> <br> Beschreibung: Versionsnummer des zugrunde liegenden BMP<br> <br> Befüllung / Format: z.B. BMP v2.3 entspricht "023"<span style="text-decoration: line-through;background-color: #FFFF00;">, fixed</span><br> <br> Aus BMP: Ja</span><br> </td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_47" class="MsoNormal">&nbsp;</p>
+  <p id="polarion_48" class="MsoNormal"> <span style="font-size: 10pt;color: #000000;line-height: 1.5;">attribute <span style="font-weight: bold;">MP/@iv</span></span> </p>
+  <table id="polarion_49" style="width: 100%;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border: 1pt solid black;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">type</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #000000;line-height: 1.5;">restriction of xs:string</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">properties</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">use </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #000000;line-height: 1.5;">required</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="text-decoration: line-through;"><span style="font-size: 8pt;color: #808080;background-color: #FFFF00;line-height: 1.5;">fixed </span><br> </span></td> 
+         <td style="vertical-align: top;padding: 0.75pt;"><span style="text-decoration: line-through;"> <span style="font-size: 8pt;color: #000000;background-color: #FFFF00;line-height: 1.5;">1.35.01</span><br> </span></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">facets</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Kind </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Value </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">Annotation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">minLength </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">1</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">maxLength </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">11</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;color: #808080;line-height: 1.5;">annotation</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;color: #808080;line-height: 1.5;">documentation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;color: #000000;line-height: 1.5;">Name: Version eMP/AMTS<br> <br> Beschreibung: Version der <span style="background-color: #FFFF00;">verwendeten</span> eMP/AMTS-Daten / des Informationsmodells nach Spezifikation der gematik<br> <br> Befüllung / Format: xxx.yyy.zzz, fixed<br> <br> Aus BMP: Nein</span><br> </td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_51" class="MsoNormal">&nbsp;</p>
+  <p id="polarion_52" class="MsoNormal"> <span style="font-size: 10pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">attribute <span style="font-weight: bold;">MP/S/M/@ps</span></span> </p>
+  <table id="polarion_53" style="width: 100%;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border: 1pt solid black;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">type</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: 1pt solid black;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">restriction of xs:string</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">properties</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">use </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">optional</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="text-decoration: line-through;"><span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;background-color: #FFFF00;line-height: 1.5;">fixed </span><br> </span></td> 
+         <td style="vertical-align: top;padding: 0.75pt;"><span style="text-decoration: line-through;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;background-color: #FFFF00;line-height: 1.5;">BMP v2.5, Kap 8.3.1, Tab 3</span><br> </span></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">facets</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">Kind </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">Value </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">Annotation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">minLength </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">1</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">maxLength </span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">30</span><br> </td> 
+         <td style="vertical-align: top;padding: 0.75pt;"></td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 10%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">annotation</span><br> </td> 
+     <td style="vertical-align: top;width: 88%;border-top: none;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: none;padding: 0.75pt;"> 
+      <table style="border-collapse: collapse;"> 
+       <tbody> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-weight: bold;font-size: 8pt;font-family: 'Times New Roman', Times;color: #808080;line-height: 1.5;">documentation</span><br> </td> 
+        </tr> 
+        <tr> 
+         <td style="vertical-align: top;padding: 0.75pt;"> <span style="font-size: 8pt;font-family: 'Times New Roman', Times;color: #000000;line-height: 1.5;">Name: Code-System PZN<br> <br> Beschreibung: Code-System für die PZN<br> <br> <span style="background-color: #FFFF00;">Befüllung / Format: z.B. BMP v2.5, Kapitel 8.3.1, Tabelle 3<span style="text-decoration: line-through;">, fixed</span></span><br> <br> Validitätskriterium: Falls das Attribut p angegeben ist, muss auch das Attribut ps angegeben werden. Falls das Attribut p nicht angegeben ist, darf das Attribut ps nicht angegeben werden.<br> <br> Aus BMP: Nein</span><br> </td> 
+        </tr> 
+       </tbody> 
+      </table> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_54"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100989">6.2 Änderungen in AMTS_Document_v1_5.xsd</h3>
+  <p id="polarion_28" class="MsoNormal">Xsd.-Dokument in Version AMTS_Document_v1_6.xsd umbenennen.</p>
+  <p id="polarion_29" class="MsoNormal">&nbsp;&gt;&gt; hier kommt eine Reihe von Änderungen an der Schemadatei; nachzuschauen im Errata selbst unter:&nbsp;elodms://3645343</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100990">6.3 Änderungen in gemILF_PS_AMTS</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-17046|external=true|revision=168343|anchor=b14f5d8f-c0a8e832-080e9e57-d9ea0f46">
+   <p><b>AMTS-A_2282</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Das Primärsystem MUSS gewährleisten, dass verschiedene Versionen des BMP im eMP verarbeitet werden können. Im eMP MUSS das &nbsp;Primärsystem die BMP-Version als Versionsnummer des zugrunde liegenden BMP dokumentieren (attribute name="v"). <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_55"></p>
+  <p id="polarion_56"></p>
+ </body>
+</html>

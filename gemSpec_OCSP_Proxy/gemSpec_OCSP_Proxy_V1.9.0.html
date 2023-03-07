@@ -1,0 +1,611 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <br> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Spezifikation</span> </p>
+  <p id="polarion_10" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">OCSP-Proxy</span> </p>
+  <p id="polarion_11"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.9.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571835</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>14.05.2018</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_OCSP_Proxy</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_12"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-11733">Dokumentinformationen</h1>
+  <p id="polarion_21"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Anpassungen gemäß Änderungsliste P15.2 sind gelb markiert.</p>
+  <p id="polarion_23"></p>
+  <p id="polarion_24"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_25" style="width: 445pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Version</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Stand</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Kap./ Seite</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Grund der Änderung, besondere Hinweise</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Bearbeitung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">0.0.1</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">23.12.2013</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Initiale Erstellung</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">0.0.2</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">13.01.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">6</span><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Erstellung Systemüberblick, TUCs und Anforderungen</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">0.0.3</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">30.01.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Überarbeitung TUCs, Ergänzung Anforderungen, Erstellung Systemkontext, Zerlegung des Produkttyps und Übergreifende Festlegungen</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">0.0.4</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">02.02.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fachliche QS</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">0.0.5</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">04.02.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung Kommentare durch QS</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.0.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">06.02.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Freigegeben durch Release Board</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.0.1</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">07.03.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung Kommentare der gematik</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.1.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">07.03.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Freigabe durch Release-Management</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.1.1</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">25.03.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung der Kommentare der gematik nach Abgleich mit Sicherheitskonzept</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.2.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">25.03.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Freigabe durch Release-Management</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Aufnahme der Anforderungen in das Anforderungsmanagement der gematik (Anforderungsnummern nach Nomenklatur der gematik)</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.3.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">11.04.2014</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.4.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">01.04.2015</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Korrekturen der Verarbeitung von QES-Zertifikaten</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">24.04.2015</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Freigabe d. Release-Management</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.5.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">05.05.2015</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben </span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.6.0</span><br> </td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">24.08.16</span><br> </td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Anpassungen zum Online-Produktivbetrieb (Stufe 1)</span><br> </td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.7.0 </span></td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">16.10.16 </span></td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Anpassungen gemäß Änderungsliste<br> </span></td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;"><br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Änderungen in Vorbereitung auf das Release 1.6.3 (eIDAS) </span></td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.8.0 </span></td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">06.02.17 </span></td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Anpassungen lt. Änderungsliste </span></td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik </span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 48pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.9.0</span></td> 
+     <td style="vertical-align: top;width: 61pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">14.05.18</span></td> 
+     <td style="vertical-align: top;width: 33pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+     <td style="vertical-align: top;width: 230pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span></td> 
+     <td style="vertical-align: top;width: 73pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-11734">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-11733">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-11734">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11735">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11736">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11737">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11738">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11739">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11740">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11742">2 Systemüberblick</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11743">3 Systemkontext</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11744">3.1 Nutzer</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11745">3.2 Nachbarsysteme</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11746">3.3 Anfrageablauf</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11747">4 Übergreifende Festlegungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11748">4.1 Logging</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11753">4.2 Datenschutz</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11757">4.3 Sicherheit</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11759">5 Funktionsmerkmale</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11760">5.1 Funktionsmerkmal OCSP-Proxy-Responder</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11761">5.1.1 Schnittstelle I_OCSP_Status_Information</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11762">5.1.1.1 Schnittstellendefinition</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11763">5.1.1.2 Umsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11772">5.2 Testunterstützung</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11773">6 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11774">6.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11775">6.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11776">6.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11777">6.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11778">6.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11779">6.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-11780">6.5.2 Weitere Dokumente</a></li>
+  </div>
+  <p id="polarion_28"> <br> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11735">1 Einordnung des Dokumentes</h2>
+  <p id="polarion_29"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11736">1.1 Zielsetzung</h3>
+  <p id="polarion_30">Die vorliegende Spezifikation definiert die Anforderungen zu Herstellung, Test und Betrieb des Produkttyps OCSP-Proxy.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11737">1.2 Zielgruppe</h3>
+  <p id="polarion_31">Das Dokument richtet sich an Hersteller und Anbieter des OCSP-Proxys der TI sowie Hersteller und Anbieter von Produkttypen, die hierzu eine Schnittstelle besitzen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11738">1.3 Geltungsbereich</h3>
+  <p id="polarion_32">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des Deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungs- oder Abnahmeverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_33"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_34"> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11739">1.4 Abgrenzungen</h3>
+  <p id="polarion_35">Spezifiziert werden in dem Dokument die von dem Produkttyp bereitgestellten (angebotenen) Schnittstellen. Benutzte Schnittstellen werden hingegen in der Spezifikation desjenigen Produkttypen beschrieben, der diese Schnittstelle bereitstellt. Auf die entsprechenden Dokumente wird referenziert (siehe auch Anhang A5).</p>
+  <p id="polarion_36">Die vollständige Anforderungslage für den Produkttyp ergibt sich aus weiteren Konzept- und Spezifikationsdokumenten, diese sind in dem Produkttypsteckbrief des Produkttyps OCSP-Proxy verzeichnet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11740">1.5 Methodik</h3>
+  <p id="polarion_37">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID in eckigen Klammern sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_38">Sie werden im Dokument wie folgt dargestellt:</p>
+  <p id="polarion_39"> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;<br> </span><span style="font-weight: normal;"> Text / Beschreibung</span><span style="font-weight: bold;"><br> [</span><span style="font-weight: normal;">&lt;=</span><span style="font-weight: bold;">]</span><br> </p>
+  <p id="polarion_40">Dabei umfasst die Anforderung sämtliche innerhalb der Textmarken angeführten Inhalte.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11742">2 Systemüberblick</h2>
+  <p id="polarion_42">Der Produkttyp OCSP-Proxy wird eingesetzt, um die Statusinformation der Zertifikate der zeitlich begrenzt durch die TI unterstützten HBA-Vorläuferkarten in der TI-Plattform verfügbar zu machen.</p>
+  <p id="polarion_13">Zusätzlich ermöglicht er das Weiterleiten von OCSP-Anfragen aus der TI an andere im Internet erreichbare OCSP-Responder für QES-Zwecke.</p>
+  <p id="polarion_43">Im Falle von OCSP-Anfragen für End-Entity- Zertifikate leitet der OCSP-Proxy die Anfrage an den zuständigen OCSP-Responder im Internet weiter und gibt die vom OCSP-Responder zurück gelieferte OCSP-Antwort an die zertifikatsvalidierende Komponente zurück.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11743">3 Systemkontext</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11744">3.1 Nutzer</h3>
+  <p id="polarion_45">Nutzer des OCSP-Proxys sind die zertifikatsvalidierenden Komponenten, die</p>
+  <ul id="polarion_46"> 
+   <li>Endnutzer-Zertifikate (nonQES und QES) der durch die TI unterstützten HBA-Vorläuferkarten</li> 
+  </ul>
+  <p id="polarion_47">prüfen. Dabei handelt es sich lediglich um den Konnektor.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11745">3.2 Nachbarsysteme</h3>
+  <p id="polarion_48">Nachfolgende Abbildung stellt die Nachbarsysteme und Nutzer des OCSP-Proxys dar.</p>
+  <p id="polarion_49" style="text-align: center;" data-keep-next="true"> <br> </p>
+  <p id="polarion_50" style="text-align: center;" data-keep-next="true"> <br> <img data-keep-next="true" src="attachments/image3.png" style="width: 548px;height: 414px;"> </p>
+  <p id="polarion_51" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Abb_OCSP-Proxy_001 Nachbarsysteme und Nutzer des OCSP-Proxys. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11746">3.3 Anfrageablauf</h3>
+  <p id="polarion_52">Abb_OCSP-Proxy_003 gibt einen Überblick über den Prozess der OCSP-Anfrage an den OCSP-Proxy sowie der OCSP-Antwort durch den OCSP-Proxy:</p>
+  <p id="polarion_53"> <br> </p>
+  <p id="polarion_54" style="text-align: center;" data-keep-next="true"> <br> <img data-keep-next="true" src="attachments/image4.png" style="width: 555px;height: 324px;"> </p>
+  <p id="polarion_55" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Abb_OCSP-Proxy_003 Überblick OCSP-Anfrage aus TI an OCSP-Proxy </p>
+  <p id="polarion_56"></p>
+  <p id="polarion_57">Nachfolgende Erläuterung dient dem Verständnis der Abb_OCSP-Proxy_003.</p>
+  <p id="polarion_58">Prozessabläufe von OCSP-Anfragen aus der TI:</p>
+  <p id="polarion_59" style="margin-left: 40px;">1. OCSP-Anfrage aus der TI</p>
+  <p id="polarion_60" style="margin-left: 40px;">2. Weiterleitung der OCSP-Anfrage an OCSP-Responder der Vorläuferkarte im Internet</p>
+  <p id="polarion_61" style="margin-left: 40px;">3. Empfang der OCSP-Antwort des OCSP-Responders der Vorläuferkarte</p>
+  <p id="polarion_62" style="margin-left: 40px;">4. Weiterleitung der OCSP-Antwort an anfragende Komponente (Konnektor) in der TI</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11747">4 Übergreifende Festlegungen</h2>
+  <p id="polarion_64">Im folgenden Kapitel werden übergreifende Anforderungen an den OCSP-Proxy aufgeführt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11748">4.1 Logging</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11749">
+   <p><b>TIP1-A_5831</b></p>
+   <p>Der OCSP-Proxy MUSS lokal erkannte Fehler und Remote-Fehler im lokalen Protokollspeicher (FehlerLog) protokollieren. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11750">
+   <p><b>TIP1-A_5832</b></p>
+   <p>Der OCSP-Proxy KANN ein Security-Log für sicherheitsrelevante Ereignisse implementieren. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11751">
+   <p><b>TIP1-A_5833</b></p>
+   <p>Der OCSP-Proxy KANN ein Performance-Log implementieren. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11752">
+   <p><b>TIP1-A_5834</b></p>
+   <p>Der OCSP-Proxy KANN im Testbetrieb ein Debug-Log implementieren, das eine erweiterte Protokollierung für Testzwecke ermöglicht. <br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11753">4.2 Datenschutz</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11754">
+   <p><b>TIP1-A_5835</b></p>
+   <p>Falls es erforderlich sein sollte, dass der OCSP-Proxy eine Protokollierung zum Zwecke der Fehler- bzw. Störungsbehebung durchführt, DARF der OCSP-Proxy NICHT personenenbezogene Daten in den Protokollen speichern. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11755">
+   <p><b>TIP1-A_5836</b></p>
+   <p>Falls es erforderlich sein sollte, dass der OCSP-Proxy eine Protokollierung zum Zwecke der Fehler- bzw. Störungsbehebung durchführt, DÜRFEN die Daten NICHT von unautorisierten Personen eingesehen werden. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11756">
+   <p><b>TIP1-A_5837</b></p>
+   <p>Der OCSP-Proxy MUSS zur Gewährleistung der Anforderungen des Datenschutzes technische Maßnahmen umsetzen, wenn deren Aufwand gegenüber organisatorischen Maßnahmen in einem angemessenen Verhältnis zum angestrebten Schutzzweck steht. <br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11757">4.3 Sicherheit</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11758">
+   <p><b>TIP1-A_5838</b></p>
+   <p>Im Rahmen des Designs und der Implementierung des OCSP-Proxys MÜSSEN der<br> 
+    <ul> 
+     <li>ISO27002 Standard - Abschnitt 12.2 [ISO27001] zur korrekten Verarbeitung in Anwendungen, d. h. <br> </li> 
+     <ul> 
+      <li>Überprüfung von Eingabedaten, <br> </li> 
+      <li>Kontrolle der internen Verarbeitung, <br> </li> 
+      <li>Integrität von Nachrichten, <br> </li> 
+      <li>Überprüfung von Ausgabedaten<br> </li> 
+     </ul> 
+    </ul> sowie<br> 
+    <ul> 
+     <li>Best Practices (Secure Coding Guidelines) bei der Entwicklung von Software <br> </li> 
+     <ul> 
+      <li>OWASP Development Guide Project (Secure Coding Standards) [OWASP]<br> </li> 
+      <li>CERT Secure Coding (Secure Coding) [CERT]<br> </li> 
+      <li>Common Criteria for Information Technology Security Evaluation, Version 3.1, August 2012 [CC31]<br> </li> 
+     </ul> 
+    </ul> berücksichtigt werden. <br> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11759">5 Funktionsmerkmale</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11760">5.1 Funktionsmerkmal OCSP-Proxy-Responder</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-11761">5.1.1 Schnittstelle I_OCSP_Status_Information</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-11762">5.1.1.1 Schnittstellendefinition</h5>
+  <p id="polarion_74">Der OCSP-Proxy muss die technische Schnittstelle I_OCSP_Status_Information gemäß [gemSpec_PKI#9] implementieren und in der Telematikinfrastruktur anbieten.</p>
+  <p id="polarion_75">Über diese Schnittstelle werden die Statusinformation&nbsp;&nbsp;für Zertifikate der unterstützten HBA-Vorläuferkarten&nbsp;und anderer QES-Verfahren in der TI-Plattform verfügbar gemacht.</p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-11763">5.1.1.2 Umsetzung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11764">
+   <p><b>TIP1-A_5848</b></p>
+   <p><p style="margin-left: 0px;"><span>Der OCSP-Proxy MUSS in Form eines OCSP-Responders über das Netzwerk der Telematikinfrastruktur erreichbar sein. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11765">
+   <p><b>TIP1-A_5849</b></p>
+   <p>Der OCSP-Proxy MUSS den technischen Use Case "TUC_OCSP-Proxy_002 OCSP-Anfragen aus der TI beantworten" gemäß Tab_OCSP-Proxy_002 umsetzen. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11766">
+   <p><b>TIP1-A_5851</b></p>
+   <p><p style="margin-left: 0px;"><span>Der OCSP-Proxy MUSS OCSP-Anfragen der zertifikatsvalidierenden Komponenten der TI </span><span>für</span><span> nonQES- und QES-EE-Zertifikate der zu unterstützenden HBA-Vorläuferkarten unverändert an den entsprechenden OCSP-Responder im Internet weiterleiten und die Antwort des OCSP-Responders an die zertifikatsvalidierenden Komponente unverändert zurückgeben. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11767">
+   <p><b>TIP1-A_5852</b></p>
+   <p><p style="margin-left: 0px;"><span>Ein Verbindungsaufbau </span><span>zu den OCSP-Respondern im Internet</span><span> </span><span>MUSS vom OCSP-Proxy</span><span> initiiert </span><span>werden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11768">
+   <p><b>TIP1-A_5853</b></p>
+   <p><p style="margin-left: 0px;"><span>Anfragen </span><span>aus dem Internet </span><span>MÜSSEN vom OCSP-Proxy abgelehnt werden</span><span>.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11769">
+   <p><b>TIP1-A_5855</b></p>
+   <p><p style="margin-left: 0px;"><span>Der </span><span>OCSP-Proxy DARF OCSP-Anfragen der zertifikatsvalidierenden Komponenten der TI </span><span>NICHT </span><span>speichern</span><span>.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11770">
+   <p><b>TIP1-A_5856</b></p>
+   <p><p style="margin-left: 0px;"><span>Der </span><span>OCSP-Proxy DARF OCSP-Antworten </span><span>für die</span><span> zertifikatsvalidierenden Komponenten der TI </span><span>NICHT </span><span>speichern</span><span>.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-11771">
+   <p><b>TIP1-A_5857</b></p>
+   <p><p style="margin-left: 0px;"><span>Der </span><span>OCSP-Proxy DARF OCSP-Anfragen und OCSP-Antworten </span><span>NICHT </span><span>protokollieren</span><span>.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_84"></p>
+  <p id="polarion_85" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_OCSP-Proxy_002 TUC_OCSP-Proxy_002 OCSP-Anfragen aus der TI beantworten </p>
+  <table id="polarion_86" style="width: 454pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Element</span><br> </th> 
+     <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Name</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_OCSP-Proxy_002 "OCSP-Anfragen aus der TI beantworten"</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dieser Use Case beschreibt den Prozess der Zertifikatsstatusauskunft des OCSP-Proxys bei OCSP-Anfragen für nonQES-EE- und QES-EE-Zertifikate der HBA-Vorlä</span>uferkarten und anderer QES-Verfahren.<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Auslöser</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OCSP-Anfrage einer zertifikatsvalidierenden Komponente aus der TI</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Vorbedingungen</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsdaten</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OCSP-Anfrage</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Komponenten</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zertifikatsvalidierende Komponenten der TI (z. B. Konnektor), OCSP-Proxy, OCSP-Res</span>ponder (der HBA-Vorläuferkarten, u.a.)<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ausgangsdaten</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OCSP-Antwort&nbsp;&nbsp;eines OCSP-Responders</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Nachbedingungen</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Standardablauf</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">1.</span><br> <span style="font-size: 10pt;line-height: 1.5;">[OCSP-Proxy]: OCSP-Anfrage der zertifikatsvalidierenden Komponente empfangen.</span><br> <span style="font-size: 10pt;line-height: 1.5;">2.</span><br> <span style="font-size: 10pt;line-height: 1.5;">[OCSP-Proxy]: OCSP-Anfrage</span> an den entsprechenden OCSP-Responder im Internet weiterleiten unter Verwendung der Ziel-URL im Internet aus der empfangenen OCSP-Anfrage.<br> <span style="font-size: 10pt;line-height: 1.5;">3.</span><br> <span style="font-size: 10pt;line-height: 1.5;">[OCSP-Proxy]: OCSP-Antwort des OCSP-Responders im Internet empfangen.</span><br> <span style="font-size: 10pt;line-height: 1.5;">4.</span><br> <span style="font-size: 10pt;line-height: 1.5;">[OCSP-Proxy]: OCSP-Antwort des OCSP-Responders im Internet an zertifikatsvalidierende Komponente zurückgeben.</span><br> <br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Varianten/Alternativen</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlerfälle</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">2a </span><br> <span style="font-size: 10pt;line-height: 1.5;">[OCSP-Proxy]: Der OCSP-Responder im Internet ist nicht erreichbar: OCSP-Response mit einer unsignierten Error-Response des Typs "internalError" (siehe [RFC2560#2.3]) zurückgeben.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Nichtfunktionale Anforderungen</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Anmerkungen</span><br> </td> 
+     <td style="vertical-align: top;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die URL, mit der der OCSP-Proxy-Responder angesprochen wird, enthält auch die Ziel-URL des OCSP-Responders im Internet (s. [gemSpec_VPN_ZugD#TIP1-A_4322]).</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 121pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zugehörige Diagramme</span><br> </td> 
+     <td style="vertical-align: middle;width: 333pt;height: 20pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11772">5.2 Testunterstützung</h3>
+  <p id="polarion_87">Neben dem OCSP-Proxy für die Produktivumgebung (PU) wird ein davon separierter OCSP-Proxy für Test- und Referenzzwecke betrieben.</p>
+  <p id="polarion_88"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-11773">6 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11774">6.1 Abkürzungen</h3>
+  <table id="polarion_90" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Kürzel</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 372pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Erläuterung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">AIA</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Authority Information Access</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">CA</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Certificate Authority</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">CERT</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Computer Emergency Response Team</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">DNS</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Domain Name System</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">DNSSEC</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Domain Name System Security Extensions</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">EE</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">End Entity</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">FQDN</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fully Qualified Domain Name</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">HBA</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Heilberufsausweis</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">ISO</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Internationale Organisation für Normung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OCSP</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Online Certficate Status Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">ORS 1</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Online-Rollout (Stufe 1)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OWASP</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Open Web Application Security Project</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">QES</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Qualifizierte elektronische Signatur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TI</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">VDA</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Vertrauensdiensteanbieter</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">URI</span><br> </td> 
+     <td style="vertical-align: top;width: 372pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Uniform Resource Identifier</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11775">6.2 Glossar</h3>
+  <table id="polarion_91" style="margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 117pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Begriff</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 327pt;height: 15pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Erläuterung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 117pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Funktionsmerkmal</span><br> </td> 
+     <td style="vertical-align: top;width: 327pt;height: 16pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems. </span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_92">Das Glossar wird als eigenständiges Dokument, vgl. [gemGlossar] zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11776">6.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_51">Abbildung 1: Abb_OCSP-Proxy_001 Nachbarsysteme und Nutzer des OCSP-Proxys.</a></li>
+   <li><a href="#polarion_55">Abbildung 2: Abb_OCSP-Proxy_003 Überblick OCSP-Anfrage aus TI an OCSP-Proxy</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11777">6.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_85">Tabelle 1: Tab_OCSP-Proxy_002 TUC_OCSP-Proxy_002 OCSP-Anfragen aus der TI beantworten</a></li>
+  </div>
+  <p id="polarion_93"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-11778">6.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-11779">6.5.1 Dokumente der gematik</h4>
+  <p id="polarion_94">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert, Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument passende jeweils gültige Versionsnummer sind in der aktuellsten, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_95"></p>
+  <table id="polarion_96" style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Herausgeber: Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar der Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_PKI]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Spezifikation PKI</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_VPN_ZugD]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation VPN-Zugangsdienst</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-11780">6.5.2 Weitere Dokumente</h4>
+  <p id="polarion_97"></p>
+  <table id="polarion_98" style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[CC31]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Common Criteria for Information Technology Security Evaluation, Version 3.1, September 2012</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[CERT]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">CERT Secure Coding;</span><br> <a href="http://www.cert.org/secure-coding/" target="_blank" class="descriptionLink">http://www.cert.org/secure-coding/</a><span style="font-size: 10pt;line-height: 1.5;"> </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[COMMON-PKI]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">T7 &amp; TeleTrust (20.01.2009): Common PKI Spezifikation, Version 2.0</span><br> <a href="http://www.t7ev.org/themen/entwickler/common-pki-v20-spezifikation.html" target="_blank" class="descriptionLink">http://www.t7ev.org/themen/entwickler/common-pki-v20-spezifikation.html</a><span style="font-size: 10pt;line-height: 1.5;"> </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[ISO27001]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Information technology – Security techniques – Information security management systems – Requirements</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[OWASP]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">OWASP Development Guide Project;</span><br> <a href="http://www.owasp.org/index.php/Category:OWASP_Guide_Project" target="_blank" class="descriptionLink">http://www.owasp.org/index.php/Category:OWASP_Guide_Project</a><span style="font-size: 10pt;line-height: 1.5;"> </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 105pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 3986]</span><br> </td> 
+     <td style="vertical-align: top;width: 346pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">RFC 3986 (Januar 2005): Uniform Resource Identifier (URI): Generic Syntax </span><a href="http://tools.ietf.org/html/rfc3986" target="_blank" class="descriptionLink">http://tools.ietf.org/html/rfc3986</a><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_14"></p>
+ </body>
+</html>

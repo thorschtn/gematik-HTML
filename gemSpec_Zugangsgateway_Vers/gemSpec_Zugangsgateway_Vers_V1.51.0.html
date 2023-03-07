@@ -1,0 +1,897 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_83"></p>
+  <p id="polarion_65"> <br> </p>
+  <p id="polarion_85"> <br> </p>
+  <p id="polarion_90"> <br> </p>
+  <p id="polarion_93"> <br> </p>
+  <p id="polarion_5"></p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Spezifikation Zugangsgateway des Versicherten ePA</span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <p id="polarion_15"> <br> </p>
+  <div id="polarion_editor_html_block2" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.51.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>584298</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>25.07.2022</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>in Bearbeitung</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_Zugangsgateway_Vers</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-90881">Dokumentinformationen</h1>
+  <p id="polarion_21"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_23"></p>
+  <p id="polarion_25" data-keep-next="true"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=uid=6" style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 47pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Version </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 53pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Stand </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 39pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Kap./ Seite </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 222pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Grund der Änderung, besondere Hinweise </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 72pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Bearbeitung </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">initiale Erstellung</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.0.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">18.12.18</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">freigegeben</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.1.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">15.05.19</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">freigegeben</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.2.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">28.06.19</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung P19.1, Begriffsanpassungen</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.3.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">02.10.19</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung P20.1/2</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.4.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">02.03.20</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">6.2.2.2, 6.2.2.3</td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Aktualisierung (I_Proxy_Directory_Query Nutzung) entsprechend neuem VZD-Datenmodell</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.4.1 CC</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">26.05.20</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">&nbsp;Einarbeitung P21.3</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.5.0&nbsp;</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">30.06.20</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.1 und Scope-Themen aus Systemdesign R4.0.0</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">12.11.20</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.2 und Scope-Themen aus Systemdesign R4.0.1</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.1</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">19.02.21</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.5</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.2</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">02.06.21</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">4.2</td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung Änderungsliste ePA_Maintenance_21.1 </td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.3</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">09.07.21</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">5</td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung Änderungsliste ePA_Maintenance_21.2</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.4</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">02.09.21</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">4.8</td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung Konn_Maintenance_21.5</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.6.5</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">31.03.22</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung ePA_Maintenance_22.1</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.50.0 </td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">06.04.22</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;">ePA-Stufe 2.5: </span>gemF_ePA_DiGA_Anbindung, gemF_ePA_FDZ_Anbindung </td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 47pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">1.51.0</td> 
+     <td style="vertical-align: top;width: 53pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">25.07.22</td> 
+     <td style="vertical-align: top;width: 39pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 222pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Änderungsliste ePA_Maintenance_22.2, redaktionell: diskriminierungsfreie Sprache (Black-/Whitelist)</td> 
+     <td style="vertical-align: top;width: 72pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-90882">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-90881">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-90882">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90883">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90884">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90885">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90886">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90887">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90888">1.5 Methodik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90889">1.5.1 Anforderungen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90891">2 Systemüberblick</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90892">3 Systemkontext</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90893">3.1 Akteure und Rollen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90894">3.2 Nachbarsysteme</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90896">4 Zerlegung des Zugangsgateways des Versicherten ePA</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90897">4.1 Paketfilter</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90898">4.1.1 Funktion</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90904">4.1.2 Redundanz</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90906">4.1.3 Konfiguration</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90908">4.1.4 Adressierung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90909">4.1.4.1 Zugangsgateway für Versicherte zum Transportnetz Internet</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90912">4.1.4.2 ePA-Aktensystem zum Zentralen Netz</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90913">4.2 Einbettung Authentisierung Versicherter</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90918">4.3 Autorisierungsproxy</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90920">4.4 Proxy Dokumentenverwaltung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90923">4.5 LDAP-Proxy</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90926">4.6 TSL- und Status-Proxy</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-93876">4.7 Proxy Schlüsselgenerierungsdienst</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123509">4.8 Tracing in Nichtproduktivumgebungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-128582">4.9 Transport-Proxy</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90931">5 Übergreifende Festlegungen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90945">6 Funktionsmerkmale</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90946">6.1 Versicherten Authentisierung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90947">6.2 Autorisierungsproxy, Proxy Dokumentenverwaltung, LDAP-Proxy</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90948">6.2.1 Schnittstelle I_Authorization_Insurant, I_Account_Management_Insurant, I_Authorization_Management_Insurant, I_Document_Management_Insurant, I_Document_Management_Connect</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90949">6.2.2 Schnittstelle I_Proxy_Directory_Query</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90950">6.2.2.1 Schnittstellendefinition</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90953">6.2.2.2 Umsetzung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90957">6.2.2.3 Nutzung</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90958">7 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90959">7.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90960">7.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90961">7.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90962">7.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90963">7.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90964">7.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-90965">7.5.2 Weitere Dokumente</a></li>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90883">1 Einordnung des Dokumentes</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90884">1.1 Zielsetzung</h3>
+  <p id="polarion_40">Die vorliegende Spezifikation definiert die Anforderungen zu Herstellung, Test und Betrieb des Zugangsgateways für Versicherte als Bestandteil des ePA-Aktensystems.</p>
+  <p id="polarion_41">Dieses Dokument beschreibt die Komponente zur sicheren Anbindung von Client­Systemen in der Personal Zone mit den Versichertengeräten und deren beabsichtigtem Zugriff auf das ePA-Aktensystem. Das Zugangsgateway für Versicherte ist einerseits verantwortlich für die Authentifizierung des Versicherten und dessen Vertreter und andererseits für die Kommunikation mit dem Autorisierungsdienst und der Dokumentenverwaltung des ePA-Aktensystems sowie dem Schlüsselgenerierungsdienst ePA und dem Verzeichnisdienst. Aus den Kommunikationsbeziehungen der Client-Systeme mit dem ePA-Aktensystem resultieren vom Zugangsgateway für Versicherte anzubietende Schnittstellen. Dies wird in diesem Dokument sowie den fachanwendungsspezifischen Spezifikationen normativ geregelt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90885">1.2 Zielgruppe</h3>
+  <p id="polarion_44">Dieses Dokument richtet sich an Anbieter eines&nbsp;ePA-Aktensystems und Hersteller von Produkttypen, die hierzu eine Schnittstelle besitzen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90886">1.3 Geltungsbereich</h3>
+  <p id="polarion_53">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungsverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.&nbsp;B. Dokumentenlandkarte, Produkttypsteckbrief) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_54"></p>
+  <p id="polarion_33"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_55"> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90887">1.4 Abgrenzungen</h3>
+  <p id="polarion_58">Spezifiziert werden in dem Dokument die von dem Produkttyp bereitgestellten (angebotenen) Schnittstellen. Benutzte Schnittstellen werden hingegen in der Spezifikation desjenigen Produkttypen beschrieben, der diese Schnittstelle bereitstellt. Auf die entsprechenden Dokumente wird referenziert (siehe auch Kapitel 7.5).</p>
+  <p id="polarion_59">Die vollständige Anforderungslage für den Produkttyp ergibt sich aus weiteren Konzept- und Spezifikationsdokumenten. Diese sind in dem Produkttypsteckbrief des Produkttyps ePA-Aktensystem verzeichnet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90888">1.5 Methodik</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90889">1.5.1 Anforderungen</h4>
+  <p id="polarion_12">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_24">Da in dem Beispielsatz „Eine leere Liste DARF NICHT ein Element besitzen.“ die Phrase „DARF NICHT“ semantisch irreführend wäre (wenn nicht ein, dann vielleicht zwei?), wird in diesem Dokument stattdessen „Eine leere Liste DARF KEIN Element besitzen.“ verwendet. Die Schlüsselworte werden außerdem um Pronomen in Großbuchstaben ergänzt, wenn dies den Sprachfluss verbessert oder die Semantik verdeutlicht.</p>
+  <p id="polarion_28"> Anforderungen werden im Dokument wie folgt dargestellt:<br> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> [&lt;=] </p>
+  <p id="polarion_29">Dabei umfasst die Anforderung sämtliche zwischen Afo-ID und Textmarke [&lt;=]&nbsp; angeführten Inhalte.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90891">2 Systemüberblick</h2>
+  <p id="polarion_78">Das Zugangsgateway für Versicherte ermöglicht den Versicherten bzw. deren berechtigten Vertretern den Zugang zum zugehörigen Aktensystem über das Internet. Auf der einen Seite dient es der Abschottung des ePA-Aktensystems in Richtung Internet, auf der anderen Seite regelt es den kontrollierten Zugriff der Versicherten auf das Aktensystem mit seinen funktionalen Komponenten.</p>
+  <p id="polarion_17">In der Abbildung 1 wird auf logischer Ebene die Einbindung des Zugangsgateways für Versicherte in&nbsp;das ePA-Aktensystem dargestellt. Zu sehen sind als integraler Bestandteil des Zugangsgateways für Versicherte eine für die Authentifizierung von Versicherten benötigte Komponente, ein LDAP-Proxy für Abfragen im zentralen Verzeichnisdienst der Telematikinfrastruktur (TI), ein Paketfilter zur Absicherung in Richtung Internet und mehrere Proxies, welche den Zugriff auf den Autorisierungsdienst, die Schlüsselgenerierungsdienste (SGD 1 und SGD 2) und die Dokumentenverwaltung ermöglichen.</p>
+  <p id="polarion_19" style="text-align: center;"> <img src="attachments/Zugangsgateway_Systemüberblick.png" style="width: 582px;height: 366px;"> </p>
+  <p id="polarion_45" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Zugangsgateway für Versicherte im ePA-Aktensystem </p>
+  <p id="polarion_35"></p>
+  <p id="polarion_52">Diese Spezifikation beschreibt die Anforderungen und gibt Umsetzungshinweise zum Zugangsgateway des Versicherten ePA und den in der Komponente&nbsp;enthaltenen Proxies. Die Komponente Authentisierung des Versicherten ePA ist in [gemSpec_Authentisierung_Vers] beschrieben.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90892">3 Systemkontext</h2>
+  <p id="polarion_130">Der folgende Abschnitt setzt die Komponente Zugangsgateway des Versicherten in den Systemkontext der Fachanwendung ePA.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90893">3.1 Akteure und Rollen</h3>
+  <p id="polarion_131">Die Komponente Zugangsgateway des Versicherten wird als Provider von technischen Schnittstellen von weiteren technischen Komponenten und Produkttypen der Fachanwendung ePA aufgerufen.</p>
+  <p id="polarion_184">Die Nutzer der Komponente sind Versicherte und deren Vertreter,&nbsp;welche über das ePA-Frontend des Versicherten Zugang und Zugriff auf das ePA-Aktensystem&nbsp;erhalten.</p>
+  <p id="polarion_185">Autorisierte Nutzer sind weiterhin berechtigt, zum Zweck der Berechtigungserteilung Abfragen an den Verzeichnisdienst über den im Zugangsgateway des Versicherten enthaltenen LDAP-Proxy durchzuführen.</p>
+  <p id="polarion_189">Mit der Komponente Zugangsgateway des Versicherten, als Bestandteil des ePA-Aktensystems, interagiert der Anbieter des ePA-Aktensystems in seiner Rolle als Administrator zur Systempflege und Konfiguration.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90894">3.2 Nachbarsysteme</h3>
+  <p id="polarion_84">Der folgende Abschnitt beschreibt die Positionierung der Komponente Zugangsgateway des Versicherten im Kontext der Fachanwendung ePA und stellt die Schnittstellen der Komponente schematisch dar.</p>
+  <p id="polarion_46" style="text-align: center;"> <img src="attachments/Zugangsgateway_Nachbarsysteme.png" style="width: 582px;height: 308px;"> </p>
+  <p id="polarion_57" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Nachbarsysteme des Zugangsgateways für Versicherte im ePA-Aktensystem </p>
+  <p id="polarion_47">Die in Abbildung 2 dargestellten Nachbarsysteme des Zugangsgateway des Versicherten ePA sind:</p>
+  <ul id="polarion_48"> 
+   <li>Fachmodul ePA im Konnektor [gemSpec_FM_ePA]</li> 
+   <li>ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;des Versicherten [<span style="font-size: 10pt;line-height: 1.5;">gemSpec_ePA_FdV</span>]</li> 
+   <li>Komponente Dokumentenverwaltung [gemSpec_Dokumentenverwaltung]</li> 
+   <li>Komponente&nbsp;Autorisierung ePA [gemSpec_Autorisierung] </li> 
+   <li>Schlüsselgenerierungsdienst SGD 1 [gemSpec_SGD_ePA] (Schlüsselgenerierungsdienst eines Fachanwendungsspezifischen Dienstes),</li> 
+   <li>Schlüsselgenerierungsdienst SGD 2 [gemSpec_SGD_ePA] (Schlüsselgenerierungsdienst der zentralen TI-Plattform),</li> 
+   <li>Verzeichnisdienst [gemSpec_VZD]</li> 
+   <li>Trust Service Provider X.509 [gemSpec_X_509_TSP]</li> 
+   <li>Netzwerknahe Dienste der TI: Namensdienst, Zeitdienst [gemSpec_Net], TSL-Dienst [gemSpec_TSL]</li> 
+  </ul>
+  <p id="polarion_37"></p>
+  <p id="polarion_60">Wie in Abbildung 2 dargestellt, bietet die Komponente Schnittstellen für Aufrufe vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV) und vom Fachmodul ePA an. Weiterhin werden Aufrufe des ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;durch Nutzung von Proxies an Komponenten des Aktensystems ePA als auch weitere Produkte der TI geleitet. Die Komponente selbst nutzt Schnittstellen verschiedener Produkte der TI.</p>
+  <p id="polarion_39">Die Nutzung von Schnittstellen der beschriebenen Nachbarsysteme der Komponente als auch die Bereitstellung von Schnittstellen erfolgt in den Betriebsumgebungen der TI (RU/TU, PU).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90895">
+   <p><b>A_14249</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS die Bereitstellung von Schnittstellen für die Nutzung durch benachbarte Komponenten und Produkttypen&nbsp;aus verschiedenen Umgebungen der TI (RU/TU, PU) sicherstellen und voneinander separieren. <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90896">4 Zerlegung des Zugangsgateways des Versicherten ePA</h2>
+  <p id="polarion_92">Die folgende Abbildung stellt die einzelnen Komponenten des Zugangsgateways des Versicherten dar.</p>
+  <p id="polarion_49" style="text-align: center;" data-keep-next="true"> <img data-keep-next="true" src="attachments/Zerlegung_Versichertengateway.png"> </p>
+  <p id="polarion_62" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">3</span>: Komponenten des Zugangsgateway des Versicherten </p>
+  <p id="polarion_50"></p>
+  <p id="polarion_82">Die grün dargestellte Komponente dient der Authentisierung von Versicherten. Die blau dargestellten Komponenten dienen der Kontrolle der Kommunikation mit dem Autorisierungsdienst, der Dokumentenverwaltung, den Schlüsselgenerierungsdiensten (jeweils SGD 1 und SGD 2), den TSP X.509 und dem Verzeichnisdienst. Die rosa dargestellte Komponente hat&nbsp;Schnittstellen in Richtung Internet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90897">4.1 Paketfilter</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90898">4.1.1 Funktion</h4>
+  <p id="polarion_64">Der Paketfilter stellt die Anbindung des ePA-Aktensystems&nbsp;an das Internet her und gewährleistet die Abschottung des ePA-Aktensystems in Richtung Internet.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90899">
+   <p><b>A_14017</b></p>
+   <p>Das ePA-Aktensystem MUSS zum Transportnetz Internet durch einen Paketfilter (ACL) gesichert werden, welcher ausschließlich die erforderlichen Protokolle weiterleitet. Der Paketfilter der Komponente Zugangsgateway des Versicherten MUSS frei konfigurierbar sein auf der Grundlage von Informationen aus OSI-Layer 3 und 4, das heißt Quell- und Zieladresse, IP-Protokoll sowie Quell- und Zielport. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90900">
+   <p><b>A_14018</b></p>
+   <p>Der Paketfilter der Komponente Zugangsgateway des Versicherten, zum Schutz in Richtung Transportnetz Internet, DARF NICHT auf den anderen, zum Zugangsdienst für Versicherte gehörenden, physischen Komponenten implementiert werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101318">
+   <p><b>A_14019-01</b></p>
+   <p>Der Paketfilter der Komponente Zugangsgateway des Versicherten MUSS die Weiterleitung von IP-Paketen an der Schnittstelle zum Internet auf die nachfolgenden Protokolle beschränken:<br> 
+    <ol>
+     <li>HTTPS, und</li>
+     <li>OCSP-Zugriffe für das OCSP-Stapling nach A_15888 (vgl. Hinweis nach A_14019-01),&nbsp;ggf. notwendige DNS Anfragen (und Antworten)<br></li>
+    </ol>Ein Verbindungsaufbau aus dem ePA-Aktensystem&nbsp;über das Zugangsgateway in Richtung Internet MUSS unterbunden werden, mit Ausnahme der Verbindungen aus Punkt 2 . <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_73"> <span style="font-size: 10pt;line-height: 1.5;">Hinweis zu A_14019-01: </span> </p>
+  <p id="polarion_75"> <span style="font-size: 10pt;line-height: 1.5;">Der Aktensystem-Anbieter muss für seine HTTPS-Schnittstelle ein TLS-Zertifikat von einem durch das CAB-Forum zulässigen TSP erwerben (dessen CA-Zertifikate also über einen aktuellen Webbrowser prüfbar ist, vgl. A_14776). Für dieses TLS-Zertifikat fragt das&nbsp;Zugangsgateway des Versicherten (die HTTPS-Schnittstelle ist Teil davon) regelmäßig für das&nbsp;OCSP-Stapling nach A_15888 den&nbsp;OCSP-Responder des TSP nach dem Sperrstatus des TLS-Zertifikats.&nbsp;Als Antwort erhält das&nbsp;Zugangsgateway des Versicherten eine OCSP-Response. Diese wird nach A_19126 geprüft und anschließend von der HTTPS-Schnittstelle verwendet (vgl.&nbsp;<a href="https://tools.ietf.org/html/rfc6066#section-8" target="_top" class="descriptionLink">https://tools.ietf.org/html/rfc6066#section-8</a>&nbsp;und bspw.&nbsp;<a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling" target="_top" class="descriptionLink">http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling</a>&nbsp;).</span> </p>
+  <p id="polarion_76"> <span style="font-size: 10pt;line-height: 1.5;">Um dies zu ermöglichen, muss der Paketfilter entsprechende stateful-Firewall-Regeln gemäß A_14019-01 und A_19126 definieren.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-102977">
+   <p><b>A_19126</b></p>
+   <p>Der Paketfilter der Komponente Zugangsgateway des Versicherten MUSS bezüglich des OCSP-Stapling gemäß A_15888 folgende Vorgaben umsetzen:<br> 
+    <ol> 
+     <li>Für das vom&nbsp;Aktensystem-Anbieter erworbene TLS-Zertifikat (vgl. Hinweis zu A_14019-01) MUSS die Komponente initial die IP-Adresse (ggf. die IP-Adressen) des entsprechenden OCSP-Responsers ermitteln.</li> 
+     <li>Diese IP-Adresse(n) MÜSSEN gemäß A_14019-01 per stateful-Firewalling Verbindungen von der HTTPS-Schnittstelle an den OCSP-Responder erlaubt werden.</li> 
+     <li>Gemäß OCSP-Stapling (<a href="https://tools.ietf.org/html/rfc6066#section-8" target="_top" class="descriptionLink">https://tools.ietf.org/html/rfc6066#section-8</a>&nbsp;) MUSS die Komponente regelmäßig eine OCSP-Response vom entsprechenden OCSP-Responder beziehen (Die Regelmäßigkeit wird vom zertifikatsausgebenden TSP und der Gültigkeitsdauer dessen OCSP-Responses bestimmt).&nbsp;</li> 
+     <li>Die OCSP-Responses MÜSSEN von der Komponente geprüft werden (Signaturprüfung, CertID in der OCSP-Response passt zum angefragten Zertifikat). Falls eine der Prüfung ein nicht-positives Ergebnis liefert so MUSS die erhaltene OCSP-Response verworfen werden.</li> 
+     <li>Sollte die letzte in der Komponente vorhandene OCSP-Response zeitlich nicht mehr gültig sein (bspw. der OCSP-Responder im Internet war länger nicht erreichbar), so MUSS diese OCSP-Response verworfen werden und ein von einem Klienten (ePA FdV) <span style="font-size: 10pt;line-height: 1.5;">initiierter</span> TLS-Verbindungsaufbau der HTTPS-Schnittstelle ohne OCSP-Stapling durchgeführt werden.</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_79"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90902">
+   <p><b>A_14776</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten&nbsp;MUSS sich beim TLS-Verbindungsaufbau gegenüber dem Client mit einem Extended Validation TLS-Zertifikat eines Herausgebers gemäß [CAB Forum]&nbsp;authentisieren. Das Zertifikat MUSS an die Schnittstelle der Proxy-Komponente gebunden werden. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90904">4.1.2 Redundanz</h4>
+  <p id="polarion_63">Die Anforderungen zur Verfügbarkeit ergeben sich aus [gemSpec_Perf#4.2]. Die Verfügbarkeit&nbsp;wird hergestellt durch Anzahl, Verteilung und Konfiguration der Zugangsgateways für Versicherte.</p>
+  <p id="polarion_77">Die Auswahl der Zugangsgateways für Versicherte wird durch das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;aus einer durch DNS übermittelten Liste vorgenommen. Auf die Auswahl des Zugangsdienstes für Versicherte kann der Anbieter des ePA-Aktensystems durch die Konfiguration und Anpassung der DNS-Einträge Einfluss nehmen. Die Verfügbarkeit ist hergestellt, wenn jeder Versicherte mit existierendem Konto beim Anbieter des ePA-Aktensystems oder dessen berechtigter Vertreter die Möglichkeit zum Verbindungsaufbau hat.</p>
+  <p id="polarion_80">Eine hardwaretechnische Hochverfügbarkeit der einzelnen Zugangsgateways für Versicherte ist über grundlegende Maßnahmen, wie redundante Netzteile hinaus nicht erforderlich. Es steht dem Anbieter jedoch frei, zur Sicherstellung der Verfügbarkeitsanforderungen technische Lösungen, wie z.B. Load-Balancer und Stateful Failover innerhalb von Clustern einzusetzen, so dass jedes einzelne Zugangsgateway für Versicherte im Ergebnis eine höhere Verfügbarkeit oder Leistungsfähigkeit besitzt.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90905">
+   <p><b>A_14026</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass bei Ausfall eines von mehreren Paketfiltern die verbleibenden Paketfilter in dem­selben Standort den Datenverkehr aller Mandanten des ausgefallenen Paketfilters zusätzlich übernehmen können. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90906">4.1.3 Konfiguration</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90907">
+   <p><b>A_14030</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS den Paketfilter Internet so konfigurieren, dass bei Vollauslastung der Systemressourcen im ePA-Aktensystem keine weiteren Verbindungen angenommen werden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_105">Durch die Zurückweisung von Verbindungen wird sichergestellt, dass das ePA-Modul Frontend des Versicherten (ePA-Modul FdV) einen Verbindungsaufbau mit einem anderen Zugangsgateway für Versicherte des jeweiligen ePA-Aktensystems versucht, bei dem die erforderlichen&nbsp;Ressourcen zur Verfügung stehen.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90908">4.1.4 Adressierung</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-90909">4.1.4.1 Zugangsgateway für Versicherte zum Transportnetz Internet</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90910">
+   <p><b>A_14031</b></p>
+   <p>Der Anbieter des ePA-Aktensystems MUSS jedem Zugangsgateway für Versicherte genau eine öffentliche IPv4-Adresse zuweisen. Diese Adresse MUSS auf der physischen Schnittstelle zum Internet konfiguriert werden. Die öffentlichen IP-Adressen des&nbsp;Zugangsgateways für Versicherte&nbsp;MÜSSEN vom Anbieter des ePA-Aktensystems zur Verfügung gestellt werden<span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90911">
+   <p><b>A_14032</b></p>
+   <p>Der Anbieter des ePA-Aktensystems SOLL jedem Zugangsgateway für Versicherte eine IPv6-Adresse zuweisen. Diese Adresse MUSS auf der physischen Schnittstelle zum Internet konfiguriert werden. Die öffentliche IPv6-Adresse MUSS vom Anbieter des Zugangsgateways des Versicherten zur Verfügung gestellt werden. <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-90912">4.1.4.2 ePA-Aktensystem zum Zentralen Netz</h5>
+  <p id="polarion_110">Die Adressen des ePA-Aktensystems am Übergang zur TI werden vom Anbieter des Zentralen Netzes aus dem Adressblock TI_Zentral zugewiesen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90913">4.2 Einbettung Authentisierung Versicherter</h3>
+  <p id="polarion_61">Die "Authentisierung des Versicherten ePA" dient der Bestätigung der Authentifizierung von Versicherten und deren berechtigten Vertretern. Die Teilkomponente ist in [gemSpec_Authentisierung_Vers] beschrieben.</p>
+  <p id="polarion_153">Die Authentisierung&nbsp;Versicherter generiert bei erfolgreicher Authentifizierung eines Versicherten ein Token, wie in [gemSysL_Fachanwendung_ePA] und [gemSpec_Authentisierung_Vers] beschrieben.</p>
+  <p id="polarion_98">Von dem Zugangsgateway des Versicherten wird bei Verbindungsaufbau durch ein ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;eine serverseitige Session erstellt. Die Session dient sowohl der Umsetzung von Anforderungen zum Beenden nach Inaktivität als auch der Kontrolle, dass ausschließlich authentifizierte ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;Zugriff auf die Komponente kryptographische Autorisierung und ausschließlich autorisierte ePA-Modul Frontend des Versicherten (ePA-Modul FdV) Zugriff auf die Dokumentenverwaltung, VAU und den LDAP-Proxy erhalten.</p>
+  <p id="polarion_154">Bei erfolgreicher Authentisierung wird die für das ePA-Modul Frontend des Versicherten (ePA-Modul FdV) verwaltete Session vom Zugangsgateway des Versicherten mit dem Status "Authentisiert" markiert.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90914">
+   <p><b>A_15197</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS bei einem Aufruf der Versicherten Authentisierung durch ein ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;eine serverseitige Session anlegen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121440">
+   <p><b>A_15198-02</b></p>
+   <p>Das ePA-Modul Frontend des Versicherten MUSS für jede Aktensession -&nbsp;<span style="font-size: 10pt;line-height: 1.5;">außer</span>&nbsp;für die Kommunikation mit dem Schlüsselgenerierungsdienst - genau eine TLS-Session nutzen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_68">Die für das&nbsp;ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;verwaltete Session dient im Weiteren der Aufgabe die Zugangskontrolle bei Zugriff auf die Komponenten Autorisierung, LDAP-Proxy und Dokumentenverwaltung zu ermöglichen.</p>
+  <p id="polarion_103">Die serverseitig authentifizierte TLS gesicherte Verbindung vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV) terminiert am Zugangsgateway des Versicherten. Hier kommen Anwendungsproxies zum Einsatz, welche der Zugangskontrolle auf weitere Komponenten der Fachanwendung ePA dienen.</p>
+  <p id="polarion_94">Somit wird sichergestellt, dass ausschließlich authentisierte ePA-Modul Frontend der Versicherten (ePA-Modul FdV)&nbsp;auf die Komponenten Autorisierung und ausschließlich autorisierte&nbsp;ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;auf die Komponenten LDAP-Proxy, Dokumentenverwaltung und die VAU zugreifen können.</p>
+  <p id="polarion_128">Bei negativen Ergebnissen, bei Fehlerfällen der Kommunikation mit Komponenten des ePA-Aktensystems oder&nbsp;nach Inaktivität des ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;wird die TLS-Session&nbsp;zum ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;abgebaut und die serverseitige Session entfernt.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90916">
+   <p><b>A_14356</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS die erfolgreiche Authentifizierung und Autorisierung anhand erfolgreicher Übergabe der Authentisierungs- und Autorisierungs-Token&nbsp;an das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;prüfen. Es MUSS hierbei die erfolgreiche Ausgabe der Token ausgewertet werden. Das jeweilige Token selbst MUSS nicht geprüft werden.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90917">
+   <p><b>A_14359</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass der Autorisierungsdienst erst nach erfolgreicher Authentisierung und die Dokumentenverwaltung sowie der LDAP-Proxy erst nach erfolgreicher Autorisierung für die aufgebaute Session des Versicherten erreichbar sind. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90918">4.3 Autorisierungsproxy</h3>
+  <p id="polarion_141">Der Autorisierungsproxy dient der Überprüfung, ob Aufrufe der Schnittstellen, welche in [gemSpec_Autorisierung] beschrieben sind, ausschließlich von authentisierten&nbsp;ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;getätigt werden.</p>
+  <p id="polarion_42">Die von den Proxies auszuwertenden Aufrufparameter (FQDN und Pfadinformationen) sind in [gemSpec_Aktensystem] Kapitel 5.1 beschrieben. Beispielsweise wird die Komponente Autorisierung Versicherter durch einen Aufruf mit FQDN des Aktensystems im Internet (ePA_FQDN)&nbsp;und dem in [gemSpec_Aktensystem] Kapitel 5.1, Tabelle 2 angegebenen Pfad für "authz" aufgerufen. Verbindungsinformationen von Produkten der TI und weiterer Komponenten des ePA Aktensystems können per DNS Service Discovery abgerufen werden (siehe u.a. [gemSpec_Aktensystem] Kapitel 5.1, Tabelle 1).</p>
+  <p id="polarion_146">Nach erfolgreicher Authentisierung ist die für das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;verwaltete Session mit dem Status "Authentisiert" markiert. Nur unter dieser Voraussetzung darf der Autorisierungsproxy Aufrufe an den Autorisierungsdienst weiterleiten. Ist die Voraussetzung nicht erfüllt, muss die Verbindung&nbsp;zum ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;abgebaut werden.</p>
+  <p id="polarion_4">Bei erfolgreicher Autorisierung wird die für das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;verwaltete Session mit dem Status "Autorisiert" markiert. Dabei ist zu beachten, dass die Änderung des Status der Session nur bei erfolgreichem Aufruf der Operation "getAuthorizationKey" der Schnittstelle "I_Authorization_Insurant" am Autorisierungdienst erfolgen darf. Ein Aufruf anderer Operationen und Schnittstellen führt nicht zur Änderung des Status der Session.</p>
+  <p id="polarion_56">Referenziert wird an dieser Stelle die bereits im Kapitel 4.2 "Authentisierung Versicherter" existierende Anforderung "A_14356 - Prüfung Token Übergabe".</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90919">
+   <p><b>A_14300</b></p>
+   <p>Der Autorisierungsproxy der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass ausschließlich authentisierte ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;Zugriff auf den Autorisierungsdienst erhalten.<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90920">4.4 Proxy Dokumentenverwaltung</h3>
+  <p id="polarion_147">Der Proxy Dokumentenverwaltung stellt sicher, dass die in [gemSpec_Dokumentenverwaltung] beschriebenen Schnittstellen ausschließlich von autorisierten ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;aufgerufen werden können.</p>
+  <p id="polarion_148">Bei bestehender Session zum ePA-Modul Frontend des Versicherten (ePA-Modul FdV), wird von der Komponente bei jedem Aufruf von Operationen der in [gemSpec_Dokumentenverwaltung] beschriebenen Schnittstellen geprüft, ob die für das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;verwaltete Session mit dem Status "Autorisiert" markiert ist. Ist dies nicht der Fall, muss der Aufruf unterbunden werden.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90921">
+   <p><b>A_14301</b></p>
+   <p>Der Proxy Dokumentenverwaltung der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass ausschließlich autorisierte ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;Zugriff auf die Dokumentenverwaltung erhalten.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_43">Aufrufe des ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;werden an die Dokumentenverwaltung weitergeleitet. Diese Aufrufe richten sich an einen Kontext der Versicherten (VAU). Um der Dokumentenverwaltung zu ermöglichen, den korrekten Kontext des Versicherten (VAU) zu identifizieren, wird den Aufrufen vom Zugangsgateways der Versicherten eine über alle Zugangsgateways der Versicherten eines Anbieters eindeutige&nbsp;SessionID hinzugefügt.&nbsp;</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90922">
+   <p><b>A_14040</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS bei der Weiterleitung eines Requests vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;an die ePA-Dokumentenverwaltung das „request-header field:session“ auf einen Wert setzen, der die vom Zugangsgateway geführte TLS-Session für die Dokumentenverwaltung eindeutig zuordenbar macht.<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90923">4.5 LDAP-Proxy</h3>
+  <p id="polarion_67">Das Zugangsgateway für Versicherte ermöglicht ausschließlich einem autorisierten ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;durch Nutzung des LDAP-Proxies, Daten aus dem Verzeichnisdienst der TI-Plattform (VZD) abzufragen. Die Kommunikation vom LDAP-Proxy zum VZD erfolgt über das LDAPv3-Protokoll. Der LDAP-Proxy darf ausschließlich lesend auf den VZD zugreifen.</p>
+  <p id="polarion_168">Die Abfragen vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;zum VZD, über den LDAP-Proxy, werden gemäß Directory Services Markup Language&nbsp;(DSML) [DSML2.0] Syntax verschickt. Der LDAP-Proxy stellt die dafür vorgesehene Schnittstelle in Richtung ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;zur Verfügung und führt die für den eigentlichen Zugriff auf den VZD notwendige Protokollwandlung in das LDAPv3-Protokoll durch.</p>
+  <p id="polarion_72">Die Anzahl der pro Anfrage zurückgegebenen Einträge des Verzeichnisdienstes wird durch den Verzeichnisdienst [gemSpec_VZD#TIP1-A_5552] limitiert.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90924">
+   <p><b>A_14470</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten&nbsp;MUSS den FQDN und den Port des VZD durch eine DNS-SD-Namensauflösung gemäß [RFC6763] mit dem Bezeichner ”_ldap._tcp.vzd.&lt;DNS_TOP_LEVEL_DOMAIN_TI&gt;.” ermitteln. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-114456">
+   <p><b>A_14514-01</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten&nbsp;MUSS eine LDAPS-Verbindung zum VZD aufbauen. Dabei wird das Serverzertifikat des Verzeichnisdienst C.ZD.TLS-S nach TUC_PKI_018 geprüft.<br>Parameter:<br> 
+    <ul>
+     <li>PolicyList: oid_zd_tls_s (gemäß gemSpec_OID),<br></li>
+     <li>intendedKeyUsage: digitalSignature,<br></li>
+     <li>intendedExtendedKeyUsage: serverAuth,<br></li>
+     <li>OCSP-Graceperiod: 60 Minuten<br></li>
+     <li>Offlinemodus: nein,<br></li>
+     <li>Prüfmodus: OCSP<br></li>
+    </ul>Die vom TUC_PKI_018 zurückgegebene Rollen-OID MUSS auf den Wert „oid_vzd_ti“ geprüft werden.<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90926">4.6 TSL- und Status-Proxy</h3>
+  <p id="polarion_32">Das Zugangsgateway des Versicherten muss das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;bei den Aufgaben unterstützen, regelmäßig die TSL-Aktualisierung vorzunehmen (A_15874)&nbsp; und Sperrinformationen für Zertifikate zu ermitteln (A_15873). Die OCSP-Responder und der TSL-Dienst haben deutlich höhere SLAs in Bezug auf die Verfügbarkeit innerhalb der TI. Manche OCSP-Responder besitzen keine direkte Anbindung an das Internet (Komponenten-PKI, Kontext: Prüfung Identität vertrauenswürdige Ausführungsumgebung). Es wird damit auch möglich, bessere Aussagen über die Verfügbarkeit von ePA-Anwendungsfällen zu treffen, weil weniger nicht-SLA-belegte Datenverbindungen für die&nbsp;Anwendungsfälle notwendig sind (Wenn eine funktionierende Datenverbindung zwischen ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;und Zugangsgateway des Versicherten besteht, dann kann eine in [gemSpec_Perf] definierte Verfügbarkeit garantiert werden). Aufgrund der Verwendung der Proxy-Funktionalität über die schon etablierte TLS-Verbindung sind OCSP-Requests des ePA-FdV nicht im Klartext im Internet sichtbar.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90927">
+   <p><b>A_15868</b></p>
+   <p>Ein Zugangsgateway des Versicherten MUSS folgende Vorgaben umsetzen:<br> <br> 
+    <ol> 
+     <li>Es MUSS mindestens einmal täglich aus der TI (TI-interne Verbindung) die&nbsp;"TSL(ECC-RSA)" und deren zugehörigen Hashwert aus der TI herunterladen.</li> 
+     <li>Es MUSS unter dem Pfadnamen "/TSL.xml" über sein vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;schon genutztes HTTPS-Interface die "TSL(ECC-RSA)" der TI zur Verfügung stellen (HTTP-GET, HTTP Content-Type: text/xml).</li> 
+     <li>Es MUSS unter dem Pfadnamen "/TSL.sha2" über sein vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;schon genutztes HTTPS-Interface den vom TSL-Dienst heruntergeladenen SHA-256 Hashwert der Datei TSL.xml aus Spiegelstrich 2 zur&nbsp;Verfügung stellen (HTTP Content-Type:&nbsp;text/plain, Hashwert als hexdump kodiert (64 Byte + Newline))</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_8">Hinweise:</p>
+  <ol id="polarion_30"> 
+   <li>"TI-interne Verbindung" hat nur den Hintergrund, dass dort über SLAs eine ausreichende Verfügbarkeit gewährleistet ist.</li> 
+   <li>Hashwert der TSL.xml bedeutet der Hashwert der Datei TSL.xml, so wie sie vom TSL-Dienst der TI bereitgestellt wird und als wenn man die Datei als Binärdatei interpretiert (vgl. [gemSpec_TSL]).</li> 
+  </ol>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90928">
+   <p><b>A_15869</b></p>
+   <p>Ein Zugangsgateway des Versicherten MUSS folgende Vorgaben umsetzen:<br> <br> 
+    <ol> 
+     <li>Es MUSS unter dem in [gemSpec_Aktensystem] Tabelle: Tab_ePA_FQDN angegeben Pfadnamen für den key "ocspf" einen Proxy zur Statusabfrage über sein vom ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;schon genutztes HTTPS-Interface zur Verfügung stellen (HTTP-POST, vgl. auch [RFC-6960, Appendix [gemSpec_PKI]).</li> 
+     <li>Es MUSS über die Schnittstelle aus Spiegelstrich 1 OCSP-Requests [RFC-6960] entgegen nehmen.</li> 
+     <li>Aus einem solchen OCSP-Request MUSS es aus dem issuerKeyHash&nbsp;[RFC-6960] die URL des entsprechenden OCSP-Responders in der TI ermitteln (Datengrundlage ist die TSL der TI) und den OCSP-Request an diese ermittelte URL weiterleiten.</li> 
+     <li>Es MUSS die erhaltenen OCSP-Response an das die OCSP-Anfrage stellende&nbsp;ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;unverändert weiterreichen.</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_18">Auf Anfrage stellt die gematik eine Beispielimplementierung für A_15869 Spiegelstrich 3 bereit.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90929">
+   <p><b>A_15871</b></p>
+   <p>Ein Zugangsgateway des Versicherten KANN OCSP-Antworten aus A_15869 bis zu 4 Stunden cachen und bei einer entsprechend passenden OCSP-Anfrage anstatt neu den OCSP-Responder anzufragen, die im Cache befindliche OCSP-Antwort ausliefern. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90930">
+   <p><b>A_15888</b></p>
+   <p>Ein Zugangsgateway des Versicherten MUSS an der HTTPS-Schnittstelle zum Internet OCSP-Stapling [RFC-6066] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-93876">4.7 Proxy Schlüsselgenerierungsdienst</h3>
+  <p id="polarion_20">Zur Nutzung der in [gemSpec_SGD_ePA] beschrieben Schlüsselableitungsfunktionalität für den Schutz von Akten- und Kontextschlüssel einer ePA werden Aufrufe zu den Schlüsselgenerierungsdiensten SGD 1 und SGD 2 über den "Proxy Schlüsselgenerierungsdienst" ermöglicht.</p>
+  <p id="polarion_31">Der Proxy SGD stellt sicher, dass ein ePA-FdV Aufrufe an den SGD 1 und SGD 2 durchführen kann.</p>
+  <p id="polarion_27">Die Information, auf welche Anfragen (Pfade) des&nbsp;ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;der Proxy SGD aktiv wird ("/SGD1" für den SGD 1 und "/SGD2" für&nbsp;den SGD 2), sind in [gemSpec_SGD_ePA#2.2 Tabelle 2] angegeben.</p>
+  <p id="polarion_34">Die FQDN und IP-Adresse des SGD wird vom Proxy SGD durch DNS Service Discovery in der TI bezogen. Hierzu wird der in [gemSpec_Aktensystem] Tabelle:&nbsp;Tab_ePA_Service Discovery angegebene PTR Record im Namensraum der TI abgerufen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-93901">
+   <p><b>A_17495</b></p>
+   <p>Der Proxy Schlüsselgenerierungsdienst&nbsp;der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;auch ohne Authentisierung und Autorisierung Zugriff auf den SGD 1 und den SGD 2 erhalten.<br> <br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123509">4.8 Tracing in Nichtproduktivumgebungen</h3>
+  <p id="polarion_38">Für die Fehlersuche - insbesondere bei IOP-Problemen zwischen Produkten verschiedener Hersteller in einer fortgeschrittenen Entwicklungsphase - hat es sich als notwendig erwiesen, dass ein Fehlersuchender den Klartext der Kommunikation zwischen ePA-Client und VAU-Instanz mitlesen kann. Vgl. [gemSpec_Aktensystem#5.8. Tracing in Nichtproduktivumgebungen].</p>
+  <p id="polarion_66">Das ZGdV stellt Informationen über die aktuell verfügbaren Sensorpunkte im AS bereit. Weiterhin exponiert das ZGdV die Daten der Sensorpunkte über TCP (i. s. v. nicht TLS-gesichert) bspw. über Port 8001,...,8009. Die dort von den Sensorpunkten ge-streamten Daten sind nur Testdaten, also keine Echtdaten, d. h. es sie haben keinen Schutzbedarf bez. Vertraulichkeit. Um die exponierten Sensordaten-Punkte vor DoS-Angriffen zu schützen, erlaubt das ZGdV im Fall der Fälle die TCP-Ports auf IP-Layer über Firewall-Regeln abzusichern.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-128379">
+   <p><b>A_21890-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Komponente Zugangsgateway des Versicherten (ZGdV) MUSS genau in&nbsp;Nichtproduktivumgebungen:</span><br> 
+    <ul> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">die Daten der Sensorpunkte des Aktensystems auf TCP-Ports (bspw. ab Port 8000) öffentlich (ggf. auch ohne TLS-Sicherung) im Internet zur Verfügung stellen, indem die aktuell an den Sensorpunkten auflaufenden Daten auf dem TCP-Port am ZGdV öffentlich gestreamt werden.</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">die Möglichkeit bieten, den Zugriff auf diese TCP-Ports durch Firewall-Einstellungen auf IP-Layer zu beschränken. </span></li> 
+    </ul> <span style="font-size: 10pt;line-height: 1.5;">Weiterhin MUSS das ZGdV über die URL /tracingpoints Informationen über die aktuell im AS verfügbaren und damit auch im ZGdV öffentlich exponierten Sensorpunkt-Daten als JSON-Array (=&gt; Response-Type 'application/json) der folgenden Form bereitstellen:<br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">[<br> {"name" : "zentraler Tigerproxy",<br> &nbsp;"port" : 8001,<br> &nbsp;"DoS-protection-type" : „secret_url“<br> &nbsp;"DoS-protection-port" : „udp/46789“<br> },<br> {"name" : "Extra Senor VAU RZ2/B1/R1",<br> &nbsp;"port" : 8002,<br> &nbsp;"DoS-protection-type" : „ssh_tunnel“<br> &nbsp;"DoS-protection-port" : „tcp/46790“<br> }, ...<br> ]</span><br> Sollten keine Sensorpunkte aktuell im AS aktiviert sein (bspw. bei Lasttests) so ist das Array leer: [ ].<br> Sollte es keinen optionalen DoS-Schutzmechanismus gemäß&nbsp;</span>A_22582-* geben, so fallen die DoS-* Attribute in der o. g. Datenstruktur weg (sind nicht existent).<span style="font-size: 10pt;line-height: 1.5;"><br> Die einzelnen Felder des Arrays sind associative array (oder auch maps oder dictionaries genannt). Diese KÖNNEN neben "name" und "port" beliebige vom AS definierbare, weitere key-value-Paare enthalten. Der Eintrag "port" gibt an, an welchem öffentlich erreichbaren TCP-Port des ZGdV die Sensordaten des entsprechenden Sensors abrufbar sind (gestreamt werden).</span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_69">Hinweis zu A_21890-*:&nbsp;Die semistatische JSON-Datei, welche ein Client unter dem Pfad „/tracingpoints“ erhalten kann, ist eine einfache Form von Service-Discovery. Damit kann ein Client (Fehlersuchende(r)) erfahren welche Tracing-Quellen es aktuell im AS gibt i. S. v. welche Tracing-Quellen ein Client zur Fehlersuche aktuell verwenden kann.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-127882">
+   <p><b>A_22582</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Komponente Zugangsgateway des Versicherten (ZGdV) KANN Sicherheitsmechanismen bereitstellen und aktivieren, die es genau in&nbsp;Nichtproduktiv­umgebungen ermöglichen temporär, automatisiert und nur nach erfolgreicher Authentifizierung die TCP-Ports für das Streaming der Sensorpunkte für Clients nach A_21890-* freizuschalten.</span><span style="font-size: 10pt;background-color: #FFFF00;line-height: 1.5;"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_89" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Hinweis zu A_22582-*:&nbsp;In den Nichtproduktivumgebungen darf es keine Echtdaten geben. Es dürfen sich dort nur Daten befinden deren Schutzbedarf bez. Vertraulichkeit niedrig ist. Der optionale Schutzmechanismus nach A_22582-* braucht nur einen einfachen DoS-Schutz leisten gegen einen Angreifer mit niedrigen Angriffspotential. Der Anbieter ist, sofern er einen solchen Mechanismus einsetzen möchte, frei dafür den&nbsp;Mechanismus selbst zu wählen. Er wählt dann bei "DoS-protection-type" (vgl. A_21890-*) einen selbstdefinierten (möglichst sprechenden) Namen.</span> </p>
+  <p id="polarion_91"> <span style="font-size: 10pt;line-height: 1.5;">Beispiele für Umsetzungsmöglichkeiten</span> </p>
+  <ol id="polarion_95"> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Es gibt im ZGdV eine geheime URL (bspw. /tracing/964b059de83d20581f43dd1b867d740c). Ein Client kennt das Geheimnis und ruft diese URL auf. Darauf hin wird im ZGdV für die IP-Adresse des Clients die Tracing-Quelle im ZGdV frei geschalten (TCP-Port 8000, ... ).</span></li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Die gematik stellt eine Beispielimplementierung zur Verfügung. Dort gibt es einen UDP-Server (ZGdV) und einen UDP-Client (Fehlersuchende), die beide ein gemeinsames HMAC-Geheimnis teilen. Wenn der Client die aktuelle Zeit und dessen IP-Adresse per HMAC authentisiert dem UDP-Server sendet, so schaltet der UDP-Server nach erfolgreicher Prüfung des HMACs den entsprechenden TCP-Port für die authentisierte IP-Adresse des Clients frei.</span></li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Auf dem ZGdV läuft ein SSH-Daemon. Der öffentliche Authentisierungsschlüssel eines Clients ist dort als gültiger Nutzer konfiguriert (Login-Shell: /bin/false). Die Tracing-Quellen im ZGdV sind so konfiguriert, dass sie nur mittels authentisierten SSH-Port-Forwarding (<a href="https://www.ssh.com/academy/ssh/tunneling/example" target="_top" class="descriptionLink">https://www.ssh.com/academy/ssh/tunneling/example</a>) erreichbar sind.&nbsp;</span></li> 
+  </ol>
+  <p id="polarion_26"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-128582">4.9 Transport-Proxy</h3>
+  <p id="polarion_88">Die Vertrauensstelle (VST) und das Forschungsdatenzentrum (FDZ) sind als weitere Anwendung des Gesundheitswesens und der Gesundheitsforschung (WANDA Smart) an die Telematikinfrastruktur angebunden. Der Transport-Proxy (T-Proxy) im Zugangsgateway des Aktensystems stellt sicher, dass ein ePA-FdV die Schnittstellen der Vertrauensstelle (VST) und des Forschungsdatenzentrums (FDZ) zum Zweck der Freigabe von Daten für die Forschung erreichen kann. Der Transport-Proxy leitet dabei nur Anfragen an VST oder FDZ weiter, wenn der Nutzer des anfragenden ePA-FdVs vorher erfolgreich für die Nutzung einer Akte autorisiert wurde.</p>
+  <p id="polarion_96"> Der Transport-Proxy ist ein HTTPS-Proxy und leitet eine Anfrage auf der am Zugangsgateway terminierte TLS-Verbindung ePA-FdV -&gt; Aktensystem über eine TLS-Verbindung <span id="polarion-comment:110"></span>an die WANDA-Dienste weiter. VST und FDZ weisen sich dabei mit einer Identität der TI aus (C.FD.TLS-S mit oid_wadg als Rolle). </p>
+  <p id="polarion_97"> Eine Anfrage über den Transport-Proxy erfolgt durch das ePA-FdV im folgenden Format. <br> <span style="font-style: italic;">https://&lt;Endpunkt des Transport-Proxys&gt;/https://&lt;Endpunkt des WANDA-Dienstes in der TI&gt;</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136081">
+   <p><b>A_22617-01</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS einen Transport-Proxy bereitstellen, der HTTP-Requests an WANDA-Dienste im zentralen Netz über eine serverseitig authentifizierte TLS-Verbindung weiterleitet.<span id="polarion-comment:113"></span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121433">
+   <p><b>A_21852</b></p>
+   <p>Der Transport-Proxy&nbsp;der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass Anfragen eines ePA-FdVs nur weitergeleitet werden, wenn der Nutzer des ePA-FdVs vorher erfolgreich für den Zugang zu einer Akte autorisiert wurde. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_99"> <span style="font-style: italic;">Hinweis: Die Bindung der TLS-Session-ID an den Authentisierungsstatus hat sich in der Praxis als ungünstig erwiesen (insbesondere bei iOS-Geräten). Es ist bei der Umsetzung von A_21852-* ebenfalls zulässig die Client-IP-Adresse als Merkmal des Authentisierungsstatus zu verwenden, da das Sicherheitsziel, was mit A_21852-* zu erreichen ist, eher DoS-Schutz der Server der VST und des FDZ ist. Alternativ kann der Hersteller auch einen proprietären HTTP(S)-Token-Mechanismus zwischen AS &lt;-&gt; ePA-FdV &lt;-&gt; T-Proxy umsetzen.</span> </p>
+  <p id="polarion_101"> <span style="font-style: italic;"><span id="polarion-comment:111"></span></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-131759">
+   <p><b>A_21862-01</b></p>
+   <p>Der Transport-Proxy der Komponente Zugangsgateway des Versicherten&nbsp;MUSS beim Aufbau der TLS-Verbindung die WANDA-Dienste über das Zertifikat C.FD.TLS-S mit dem passenden FQDN authentifizieren. Dabei MUSS das Zertifikat nach TUC_PKI_018 geprüft werden.<br>Parameter:<br> 
+    <ul>
+     <li>PolicyList: oid_fd_tls_s,</li>
+     <li>intendedKeyUsage: digitalSignature,</li>
+     <li>intendedExtendedKeyUsage: id-kp-serverAuth,</li>
+     <li>OSCP-Graceperiod: 60 Minuten,</li>
+     <li>Offlinemodus: nein,</li>
+     <li>Prüfmodus: OSCP</li>
+    </ul>Die von TUC_PKI_018 zurückgegebene Rollen-OID MUSS dem Wert "oid_wadg" entsprechen.<span id="polarion-comment:112"></span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121474">
+   <p><b>A_21863</b></p>
+   <p>Der Transport-Proxy der Komponente Zugangsgateway des Versicherten&nbsp;MUSS Weiterleitungen auf die FQDN der WANDA-Dienste Vertrauensstelle (VST) und Forschungsdatenzentrum (FDZ) beschränken. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121477">
+   <p><b>A_21865</b></p>
+   <p>Der Anbieter des ePA-Aktensystems MUSS mit Maßnahmen am Transport-Proxy der Komponente Zugangsgateway des Versicherten verhindern, dass am Transport-Proxy Profile über das Verhalten der Versicherten bzgl. der Freigabe von ePA-Daten für die Forschung gebildet werden (z.B. welcher Versicherte wann wie oft Daten freigibt oder widerruft). <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121535">
+   <p><b>A_21876</b></p>
+   <p>Der Transport-Proxy der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass Anfragen und Daten nach der Weiterleitung an WANDA-Dienste oder das ePA-FdV unverzüglich gelöscht werden. <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90931">5 Übergreifende Festlegungen</h2>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90932">
+   <p><b>A_14034</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass der Zugriff auf Dienste der TI ausschließlich über einen Sicheren Zentralen Zugangspunkt (SZZP) erfolgt. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90933">
+   <p><b>A_14036</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS alle Komponenten seines Zugangsdienstes für Versicherte mit denStratum-1-NTP-Servern der TI synchronisieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90934">
+   <p><b>A_15518</b></p>
+   <p>Die in der Komponente Zugangsgateway des Versicherten verwendeten Proxies MÜSSEN als transparente Proxies umgesetzt werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90935">
+   <p><b>A_13879</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sich gegenüber dem ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;beim Aufbau der TLS-Session durch sein ExtendedValidation-Zertifikat&nbsp;authentisieren. Die Beschaffung des Zertifikats erfolgt durch den Anbieter über eine öffentliche CA. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90936">
+   <p><b>A_14033</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass jede Kommunikation mit dem ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;TLS verschlüsselt erfolgt. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_51">Die Verwendung der SoapAction ermöglicht einer Reverse-Proxy-Komponente innerhalb des Zugangsgateways, die Nachrichten zu verarbeiten, ohne die http-Payload zu untersuchen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90937">
+   <p><b>A_14416</b></p>
+   <p>Bei einer fehlenden oder fehlerhaft gesetzten SoapAction MUSS die bestehende Session in Richtung des aufrufenden Systems durch das Zugangsgateway geschlossen werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90938">
+   <p><b>A_14357</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS bei negativem Ergebnis der Prüfung der Ausgabe eines Tokens durch eine der nachgelagerten Komponenten die für das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;verwaltete Session und die Verbindung zum ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;nach Weiterleitung der eigentlichen Antwort des Token-Ausstellers an das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;beenden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90939">
+   <p><b>A_14358</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS nach Inaktivität von 20 Minuten die Session zum ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;abbauen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90940">
+   <p><b>A_13876</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS einen direkten Zugriff aus dem Internet auf Dienste der zentralen TI-Plattform verhindern. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90941">
+   <p><b>A_14016</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS für alle vom Internet erreichbaren Schnittstellen Maßnahmen zum Schutz vor DoS-Angriffen auf Anwendungsebene treffen. Weitere Angriffe auf Anwendungsebene MÜSSEN mindestens durch Einsatz geeigneter IDS/IPS Lösungen verhindert werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90942">
+   <p><b>A_15196</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS bei Beauftragung eines qualifizierten Dienstleisters zum&nbsp;Schutz vor volumetrischen DoS-Angriffen, Kriterien des BSI zur Auswahl&nbsp;qualifizierter Dienstleister umsetzen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_122"> Als Maßnahme gegen volumetrische Denial-of-Service-Angriffe wird die Verwendung von DNS- oder BGP-Routing-Diensten empfohlen. Hinweise des BSI: <a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Gefaehrdungen/DDoS/ddos_node.html" target="_top" class="descriptionLink">https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Gefaehrdungen/DDoS/ddos_node.html</a>. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121235">
+   <p><b>A_15599-02</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS bei Fehlern in einer nachgelagerten Komponente die Verbindung zum ePA-Frontend des Versicherten (ePA-FdV) abbauen und die verwaltete Session löschen. Dies gilt für folgende Fehlerfälle:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <table id="polarion_wiki macro name=table;params=uid=client1" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Komponente</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehler</th> 
+      </tr> 
+      <tr> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Authentisierung</td> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Alle spezifizierten wst:*-Fehler, ASSERTION_INVALID</td> 
+      </tr> 
+      <tr> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Autorisierung</td> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">ASSERTION_INVALID, DEVICE_UNKNOWN, DEVICE_LOCKED</td> 
+      </tr> 
+      <tr> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Dokumentenverwaltung</td> 
+       <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">ASSERTION_INVALID,&nbsp;INVALID_AUT_KEY</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90944">
+   <p><b>A_14028</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass<br> 
+    <ul> 
+     <li>alle bestehenden Verbindungen zum Zugangsgateway für Versicherte beendet werden und</li> 
+     <li>keine neuen Verbindungen zugelassen werden,</li> 
+    </ul> wenn am jeweiligen Zugangsgateway-Standort eine an der Weiterleitung der Daten zum ePA-Aktensystem&nbsp;beteiligte Komponente ausfällt und dadurch die Nutzung des ePA-Aktensystems nicht mehr möglich ist. <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90945">6 Funktionsmerkmale</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90946">6.1 Versicherten Authentisierung</h3>
+  <p id="polarion_104">Die Schnittstellen der Versicherten&nbsp;Authentisierung sind in [gemSpec_Authentisierung_Vers] beschrieben.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90947">6.2 Autorisierungsproxy, Proxy Dokumentenverwaltung, LDAP-Proxy</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90948">6.2.1 Schnittstelle I_Authorization_Insurant, I_Account_Management_Insurant, I_Authorization_Management_Insurant, I_Document_Management_Insurant, I_Document_Management_Connect</h4>
+  <p id="polarion_125">Aufrufe des ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;an die Komponenten Autorisierung, SGD 1 und&nbsp;Dokumentenverwaltung&nbsp;des Produkttyps ePA-Aktensystem sowie SGD 2 werden von der Komponente Zugangsgateway des Versicherten nicht verarbeitet, sondern nach Prüfung der Existenz und des Zustands (Authentisiert oder Autorisiert) der verwalteten Session an die Komponente Autorisierung bzw. die Dokumentenverwaltung weitergeleitet. Die fachliche Verarbeitung der Aufrufe wird in [gemSpec_Autorisierung_ePA] und in [gemSpec_Dokumentenverwaltung] beschrieben.</p>
+  <p id="polarion_109">Rückgabeparameter von Funktionsaufrufen der Schnittstellen I_Authorization_Insurant, I_Account_Management_Insurant, I_Authorization_Management_Insurant&nbsp;an das ePA-Modul Frontend des Versicherten (ePA-Modul FdV), werden hinsichtlich der Existenz vom SOAP-Fehlercode ausgewertet.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90949">6.2.2 Schnittstelle I_Proxy_Directory_Query</h4>
+  <p id="polarion_36">Die Schnittstelle I_Proxy_Directory_Query dient der Abfrage des Verzeichnisdienstes in der TI. Über diese Schnittstelle können Versicherte zum Zweck der Berechtigung von Leistungserbringern Einträge im Verzeichnisdienst suchen. Die Nutzung dieser Schnittstelle steht nur autorisierten Versicherten zur Verfügung. Die Autorisierung erfolgt über die korrespondierenden Funktionalitäten des Autorisierungsdienstes. Der DSML "authRequest" wird nicht genutzt.</p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-90950">6.2.2.1 Schnittstellendefinition</h5>
+  <p id="polarion_86">Die Schnittstelle wird auf Basis des OASIS Standards Directory Services Markup Language (DSML) v2.0 [DSML2.0] definiert.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90951">
+   <p><b>A_14361</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten MUSS den Webservice I_Proxy_Directory_Query mit der Operation "Search" gemäß<br> 
+    <ul> 
+     <li>Tabelle Tab_ePA_I_Proxy_Directory_Query und<br> </li> 
+     <li>[DSML2.0]<br> </li> 
+     <ul> 
+      <li>mit SOAP Request/Response Binding<br> </li> 
+      <li>mit Nutzung der DSMLRequests und&nbsp; DSMLResponses Operationen entsprechend WSDL<br> </li> 
+     </ul> 
+    </ul> für die Daten des Verzeichnisdienstes [gemSpec_VZD#5] anbieten.<br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_ePA_I_Proxy_Directory_Query </p> 
+    <table style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align: left;vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Schnittstelle</span><br> </span></th> 
+       <th colspan="2" style="text-align: left;vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">I_Proxy_Directory_Query</span><br> </span></th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Version</span><br> </span></td> 
+       <td colspan="2" style="vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">2.0<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Namensraum</span><br> </span></td> 
+       <td colspan="2" style="vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">"urn:oasis:names:tc:DSML:2:0:core"<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Namensraum-Kürzel</span><br> </span></td> 
+       <td colspan="2" style="vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">DSML<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Operationen</span><br> </span></td> 
+       <td style="vertical-align: top;width: 135pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Name</span><br> </span></td> 
+       <td style="vertical-align: top;width: 182pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Kurzbeschreibung</span><br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 135pt;height: 45pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Search<br> </span></td> 
+       <td style="vertical-align: top;width: 182pt;height: 45pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Suche nach Leistungserbringern bzw. Leistungsbringerorganisationen im Verzeichnisdienst.<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">WSDL</span><br> </span></td> 
+       <td colspan="2" style="vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[DSML.wsdl]<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 110pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">XML-Schema</span><br> </span></td> 
+       <td colspan="2" style="vertical-align: top;width: 325pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><a href="http://www.oasis-open.org/committees/dsml/docs/DSMLv2.xsd" target="_blank" class="descriptionLink">http://www.oasis-open.org/committees/dsml/docs/DSMLv2.xsd</a></span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90952">
+   <p><b>A_14419</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten MUSS die Operation "Search" im Web Service I_Proxy_Directory_Query gemäß Tabelle Tab_ePA_I_Proxy_Directory_Query anbieten und als Antwort darauf entsprechend WSDL und XML-Schema das "SearchResponse" und "ErrorResponse"&nbsp;unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-90953">6.2.2.2 Umsetzung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90954">
+   <p><b>A_14421</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten MUSS für die Umsetzung des Webservices I_Proxy_Directory_Query die Schnittstelle I_Directory_Query des Verzeichnisdienstes [gemSpec_VZD] nutzen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90955">
+   <p><b>A_14467</b></p>
+   <p>Die Komponente Zugangsgateway des Versicherten MUSS die Anzahl der Operationen an der Schnittstelle I_Proxy_Directory_Query pro Versicherten Session und Minute auf einen - durch den Betreiber im Wertebereich 1 bis 15 -&nbsp; konfigurierbaren Wert beschränken. Der Defaultwert für diese Konfigurationsparameter MUSS 10 betragen. Wird diese Anzahl überschritten, MUSS ein&nbsp;HTTP-Response mit&nbsp;HTTP-Statuscode&nbsp;429 entsprechend RFC6585 Kapitel 4 "429 Too Many Requests"&nbsp;an den Client zurückgegeben werden. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-90956">
+   <p><b>A_14468</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten DARF personenbezogene Daten NICHT in das Logging aufnehmen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-128312">
+   <p><b>A_17748-02</b></p>
+   <p>Der LDAP-Proxy der Komponente Zugangsgateway des Versicherten MUSS sicherstellen, dass ein anfragendes ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;ausschließlich die Informationen des Verzeichnisdienstes erhält, welche für die Erfüllung der Aufgaben benötigt werden. Folgende Vorgaben MÜSSEN eingehalten werden: <br> 
+    <ul>
+     <li>Der&nbsp;LDAP-Proxy&nbsp;DARF NICHT&nbsp;Fachdaten an das anfragende ePA-Modul Frontend des Versicherten (ePA-Modul FdV) zurückgegeben.</li>
+     <li>Es MUSS sichergestellt sein, dass ausschließlich&nbsp;Einträge des Verzeichnisdienstes mit Eintragstyp nach [gemSpec_VZD#Tab_VZD_Mapping_Eintragstyp_und_ProfessionOID] == 3 oder 6 oder 9 zurückgegeben werden.</li>
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-90957">6.2.2.3 Nutzung</h5>
+  <p id="polarion_126">Für die Nutzung des Webservices I_Proxy_Directory_Query durch einen Client sind folgende Randbedingungen zu beachten:</p>
+  <ul id="polarion_71"> 
+   <li>Die Datenstruktur des Verzeichnisdienstes [gemSpec_VZD#5]</li> 
+   <li>Die Einschränkungen des Verzeichnisdienstes.</li> 
+   <ul> 
+    <li>Die Anzahl der pro "Search" Operation gelieferten Datensätze wird durch den Verzeichnisdienst&nbsp;[gemSpec_VZD#TIP1-A_5552]beschränkt.</li> 
+   </ul> 
+  </ul>
+  <p id="polarion_2"> Das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;kann über den Webservices I_Proxy_Directory_Query alle in der Datenstruk<span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">tur </span>„Verzeichnisdienst_Eintrag_flache_Liste“ (dn="dc=data,dc=vzd")&nbsp;<span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">de</span>s Verzeichnisdienstes [gemSpec_VZD#5] definierten Daten ermitteln. </p>
+  <p id="polarion_3">Zur Suche im Verzeichnisdienst muss das ePA-Modul Frontend des Versicherten (ePA-Modul FdV)&nbsp;das "SearchRequest" entsprechend OASIS DSML v2.0 [DSML2.0] nutzen. Die DSML.wsdl schränkt die zugelassenen Operationen im Webservice I_Proxy_Directory_Query auf ein "SearchRequest" pro SOAP Request ein. Der LDAP-Proxy antwortet mit einem "SearchResponse" bzw. im Fehlerfall mit einem "ErrorResponse". Andere Operationen werden im Webservice I_Proxy_Directory_Query nicht unterstützt. Die Parameter der Nachrichten werden durch das OASIS DSML v2.0 Schema und Dokumentation [DSML2.0] definiert. Die Verarbeitung der "SearchRequest" erfolgt durch den Verzeichnisdienst entsprechend LDAPv3.</p>
+  <p id="polarion_159"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Beispiel für einen SearchRequest mit dem ein</span>e Orthopädiepraxis<span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;"> mit Namen Schmidt gesucht wird:</span> </p>
+  <p id="polarion_74"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">ID: 7<br> Address: http://localhost:9098/services/DSML/1.0.0<br> Encoding: UTF-8<br> Http-Method: POST<br> Content-Type: application/soap+xml; action="http://ws.gematik.de/phr/dsml/v2#dsmlRequest"; charset=UTF-8<br> Headers: {Accept=[*/*], cache-control=[no-cache], clienttype=[fdv], Content-Length=[613], content-type=[application/soap+xml; action="http://ws.gematik.de/phr/dsml/v2#dsmlRequest"; charset=UTF-8], forwarded=[proto=https;host="localhost:9094";for="127.0.0.1:63936"], host=[localhost:9098], pragma=[no-cache], tlssession=[6660eee2226aebe2ab967e6fadb45825e34481b4852c1c303df36a185a77e731], user-agent=[Apache-CXF/3.3.5], x-forwarded-for=[127.0.0.1], x-forwarded-host=[localhost:9094], x-forwarded-port=[9094], x-forwarded-proto=[https]}<br> Payload: &lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"&gt;<br> &nbsp; &lt;soap:Body&gt;<br> &nbsp; &nbsp; &lt;ns3:SearchRequest xmlns:ns2="urn:oasis:names:tc:DSML:2:0:core" xmlns:ns3="http://ws.gematik.de/phr/dsml/v2" dn="dc=data,dc=vzd" scope="wholeSubtree" derefAliases="neverDerefAliases"&gt;<br> &nbsp; &nbsp; &nbsp; &lt;ns2:filter&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:and&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:equalityMatch name="subject"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;Orthopädie&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:equalityMatch&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:and&gt;<br> &nbsp; &nbsp; &nbsp; &lt;/ns2:filter&gt;<br> &nbsp; &nbsp; &nbsp; &lt;ns2:attributes&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attribute name="displayName"/&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attribute name="street"/&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attribute name="postalCode"/&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attribute name="userCertificate"/&gt;<br> &nbsp; &nbsp; &nbsp; &lt;/ns2:attributes&gt;<br> &nbsp; &nbsp; &lt;/ns3:SearchRequest&gt;<br> &nbsp; &lt;/soap:Body&gt;<br> &lt;/soap:Envelope&gt;<br> <br> </span> </p>
+  <p id="polarion_81"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Beispiel für ein Response auf den SearchRequest:</span> </p>
+  <p id="polarion_87"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">ID: 7<br> Response-Code: 200<br> Encoding: UTF-8<br> Content-Type: application/soap+xml<br> Headers: {}<br> Payload: &lt;soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"&gt;<br> &nbsp; &lt;soap:Body&gt;<br> &nbsp; &nbsp; &lt;ns3:DSMLsearchResponse xmlns:ns2="urn:oasis:names:tc:DSML:2:0:core" xmlns:ns3="http://ws.gematik.de/phr/dsml/v2"&gt;<br> &nbsp; &nbsp; &nbsp; &lt;searchResponse requestID="6"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:searchResultEntry dn="uid=7,dc=data,dc=vzd"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="street"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;Gaffelsteig 134&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="postalCode"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;45879&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="displayName"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;Praxis Prof. Gourmet&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="userCertificate;binary"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;MIIEpTCCA42gAwIBAgIHAQ97rEzGnjANBgkqhkiG9w0BAQsFADCBmjELMAkGA1UEBhMCREUxHzAdBgNVBAoMFmdlbWF0aWsgR21iSCBOT1QtVkFMSUQxSDBGBgNVBAsMP0luc3RpdHV0aW9uIGRlcyBHZXN1bmRoZWl0c3dlc2Vucy1DQSBkZXIgVGVsZW1hdGlraW5mcmFzdHJ1a3R1cjEgMB4GA1UEAwwXR0VNLlNNQ0ItQ0EyNCBURVNULU9OTFkwHhcNMTkwMTAyMjMwMDAwWhcNMjQwMTAyMjI1OTU5WjBUMQswCQYDVQQGEwJERTEcMBoGA1UECgwTMTAwMDIyMjA3IE5PVC1WQUxJRDEnMCUGA1UEAwweUHJheGlzIFByb2YuIEdvdXJtZXQgVEVTVC1PTkxZMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyQOTyl8dB2G/rfc1lUU3so0Uwwe55mAlPCmOMM7kdfYWVuTeXXFjSNFFreK43KPyT6cDN9x7Fl8auzErLg64kKLuS47vBD27/qmkaxitzLlRioGPfM79EC3efIutpSSdEeNGWjHRWTnCB2MW8kBi4+dN93qTiYfG5X+QEWcQbOd7LMSbfXgp4/KgD3H/+cS2qR8mL1q+RDwnkMgb3l05K0SzotlVHxZ18DpuXV63PTnYXGaz564CTF7nKSzA2ewCTLEBaMCtYXKY8x2v2om0iUNaBToOc93eUegHq7EFpFrmX+b8PHnhoIlxZTduBUz0KtKjYQMFxYh/CrCkDt2OEQIDAQABo4IBMzCCAS8wHQYDVR0OBBYEFCxL7gqLNViJxujRaQ8e84HFibC1MCwGA1UdHwQlMCMwIaAfoB2GG2h0dHA6Ly9laGNhLmdlbWF0aWsuZGUvY3JsLzAMBgNVHRMBAf8EAjAAMEUGBSskCAMDBDwwOjA4MDYwNDAyMBYMFEJldHJpZWJzc3TDpHR0ZSBBcnp0MAkGByqCFABMBDITDTEtMjBWWkQwMDAwMDcwHwYDVR0jBBgwFoAUeunhb+oUWRYF7gPp0/0hq97p2Z4wIAYDVR0gBBkwFzAKBggqghQATASBIzAJBgcqghQATARMMA4GA1UdDwEB/wQEAwIEMDA4BggrBgEFBQcBAQQsMCowKAYIKwYBBQUHMAGGHGh0dHA6Ly9laGNhLmdlbWF0aWsuZGUvb2NzcC8wDQYJKoZIhvcNAQELBQADggEBAD80QGann9YCqQ1adaKwv+CvSjY+svYlTIGKiRbBUI3zyVrlGlM3N8zZFF95NfabYLXpKHppEX9FgekxHOgYC/vs40MSh19ioLpgfxI1fJh5t8H1Fs3XX2HAwd5dMwHgOZwibSBZhtkUmlbGvpOQ+Q6OuZYVjAZRuWk4tAgnwRPilFVC+TQ9Xvy8o+PPHsjdorpuv2b9w1ttbKBbmP+oikl1YmTP6XLKxuDlbMade4/8xdpP9ypRFvVlcdl2rZ73VjHJ01A47Q+11g8oGn+G4vnkC7EEwqtg8BD/MUKs6qfkTVRZCSVj8vv6h0gMKrduytEUKKU72fNIqjfz/8sGHM4=&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:searchResultEntry&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:searchResultEntry dn="uid=10,dc=data,dc=vzd"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="street"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;Caligariplatz 34&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="postalCode"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;09111&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:attr name="displayName"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:value&gt;QXJ6dHplbnRydW0gT3J0aG9ww6RkaWU=&lt;/ns2:value&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:attr&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:searchResultEntry&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:searchResultDone requestID="6"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns2:resultCode code="0" descr="success"/&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns2:searchResultDone&gt;<br> &nbsp; &nbsp; &nbsp; &lt;/searchResponse&gt;<br> &nbsp; &nbsp; &lt;/ns3:DSMLsearchResponse&gt;<br> &nbsp; &lt;/soap:Body&gt;<br> &lt;/soap:Envelope&gt;</span> </p>
+  <p id="polarion_70" style="margin-left: 30pt;" class="MsoNormal"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-90958">7 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90959">7.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=uid=1" style="width: 100%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Kürzel</span><span style="font-weight: bold;"> </span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Erläuterung</span><span style="font-weight: bold;"> </span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">ACL</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Access Control List</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">BSI</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Bundesamt für Sicherheit in der Informationstechnik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">DNS</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Domain Name System</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">DSML</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Directory Services Markup Language</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">eGK</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">elektronische Gesundheitskarte</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">ePA</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">elektronische Patientenakte</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IDS/IPS</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Intrusion-Detection/Intrusion-Prevention System</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">LDAP</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Lightweight Directory Access Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">OCSP</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Online Certificate Status Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">OSI</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Open Systems Interconnection Model</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">SOAP</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Simple Object Access Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">SZZP</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Sicherer Zentraler Zugangspunkt</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">TI</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">TLS</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Transport Layer Security</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">TSP</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Trusted Services Provider</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">VAU</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Vertrauenswürdige Ausführungsumgebung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">VZD</span><br> </td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Verzeichnisdienst der TI-Plattform</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">WANDA</td> 
+     <td style="vertical-align: top;width: 373pt;height: 15pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Weiteren Anwendungen für den Datenaustausch in der TI</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_100"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90960">7.2 Glossar</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 191.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Begriff</span> <br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 538.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Erläuterung</span> <br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191.111px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Funktionsmerkmal</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.667px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende, Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems.</span> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_181">Das Glossar wird als eigenständiges Dokument (vgl. [gemGlossar]) zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90961">7.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_45">Abbildung 1: Zugangsgateway für Versicherte im ePA-Aktensystem</a></li>
+   <li><a href="#polarion_57">Abbildung 2: Nachbarsysteme des Zugangsgateways für Versicherte im ePA-Aktensystem</a></li>
+   <li><a href="#polarion_62">Abbildung 3: Komponenten des Zugangsgateway des Versicherten</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90962">7.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion___1">Tabelle 1: Tab_ePA_I_Proxy_Directory_Query</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-90963">7.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90964">7.5.1 Dokumente der gematik</h4>
+  <p id="polarion_186">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert, Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummer ist in der aktuellen, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_187"></p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber: Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Aktensystem]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Spezifikation ePA-Aktensystem</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Authentisierung_Vers]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Spezifikation Authentisierung des Versicherten ePA</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Autorisierung]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Spezifikation Autorisierung ePA</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Dokumentenverwaltung]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Spezifikation ePA-Dokumentenverwaltung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_ePA_FdV]</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Spezifikation ePA-Frontend des Versicherten</span> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Krypt]</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik:&nbsp;Übergreifende Spezifikation&nbsp;Verwendung kryptographischer Algorithmen in der Telematikinfrastruktur</span> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Perf]</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Spezifikation Performance und Mengengerüst TI-Plattform</span> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_TSL]</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation TSL-Dienst</span> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_SGD_ePA] </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation&nbsp; Schlüsselgenerierungsdienst&nbsp;ePA </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_VZD]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 463.111px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation Verzeichnisdienst</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_1"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-90965">7.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 144px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 585.778px;height: 19.5556px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 144px;height: 117.333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[DSML2.0]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 585.778px;height: 117.333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">OASIS: Directory Services Markup Language v2.0<br> December 18, 2001<br> <a href="https://www.oasis-open.org/standards" target="_blank" class="descriptionLink">https://www.oasis-open.org/standards</a><br> <a href="http://www.oasis-open.org/committees/dsml/docs/DSMLv2.doc" target="_blank" class="descriptionLink">http://www.oasis-open.org/committees/dsml/docs/DSMLv2.doc</a><br> <a href="http://oasis-open.org/committees/dsml/errata" target="_blank" class="descriptionLink">http://oasis-open.org/committees/dsml/errata</a><br> <a href="https://www.oasis-open.org/committees/dsml/docs/DSMLv2.xsd" target="_blank" class="descriptionLink">https://www.oasis-open.org/committees/dsml/docs/DSMLv2.xsd</a><br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 144px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CAB-Forum<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 585.778px;height: 39.1111px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Liste vertrauenswürdiger Zertifikatsherausgeber (Root-CAs) für Anwendungen im Internet<br> <a href="https://cabforum.org/members/" target="_top" class="descriptionLink">https://cabforum.org/members/</a><br> </span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_196"></p>
+ </body>
+</html>

@@ -1,0 +1,1044 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <br> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11"> <br> </p>
+  <p id="polarion_12" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Schnittstellenspezifikation Primärsysteme VSDM</span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.5.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571731</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>14.05.2018</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_SST_PS_VSDM</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_15"> <br> </p>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-9402">Dokumentinformationen</h1>
+  <p id="polarion_22"> <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_23">Anpassungen lt. Änderungsliste P15.2</p>
+  <p id="polarion_24"></p>
+  <p id="polarion_25"> <span style="font-weight: bold;font-size: 11pt;line-height: 1.5;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=uid=1" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 61px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Version</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 71px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Datum</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 53px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kap./ Seite</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 267px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Grund der Änderung, besondere Hinweise</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bearbeitung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">0.1.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Oktober 11</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Ersterstellung</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">0.7.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">04.06.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Stand zur Abstimmung </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.0.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">15.10.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung Gesellschafterkommentare</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.1.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">12.11.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung Kommentare aus der übergreifenden Konsistenzprüfung</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.2.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">15.08.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung lt. Änderungsliste vom 08.08.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.3.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">21.02.14</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Losübergreifende Synchronisation</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.4.0<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">12.08.16<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"><br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Anpassungen zum Online-Produktivbetrieb (Stufe 1)<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 40.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"><br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung lt. Änderungsliste P15.2<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.25px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 61px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">&nbsp;1.5.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 71px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">14.05.18&nbsp;</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 267px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-9403">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-9402">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-9403">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9404">1 Einordnung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9405">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9406">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9407">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9408">1.4 Abgrenzung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9409">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9410">2 Übergreifende Festlegungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9411">2.1 Eingesetzte Standards</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9412">2.2 Transportsicherung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9413">2.3 Nachrichtenerzeugung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9414">2.4 Nachrichtverarbeitung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9415">2.5 Umfang der Schnittstellen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9416">3 Schnittstelle I_VSDService</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9417">3.1 Übersicht</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9418">3.2 Operation ReadVSD</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9419">3.2.1 Eingangsbedingungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9420">3.2.2 Request</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9421">3.2.3 Response</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9422">3.2.4 Zeichenkodierung</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9423">3.2.5 Statusverarbeitung mittels Prüfungsnachweis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9424">4 Schnittstelle I_KVKService</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9425">4.1 Übersicht</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9426">4.2 Operation ReadKVK</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9427">4.2.1 Eingangsbedingungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9428">4.2.2 Request</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9429">4.2.3 Response</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9430">5 Fehlerbehandlung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9431">5.1 Übersicht</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9432">5.2 Struktur</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9433">5.3 Fehlercodes</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9434">6 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9435">6.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9436">6.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9437">6.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-46056">6.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-46057">6.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9438">6.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9439">6.5.2 Weitere Dokumente</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9440">7 Anhang B – Anforderungshaushalt</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9441">7.1 Eingangsanforderungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9442">7.2 Ausgangsanforderungen</a></li>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9404">1 Einordnung des Dokuments</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9405">1.1 Zielsetzung</h3>
+  <p id="polarion_29">Eindeutig spezifizierte Schnittstellen an den Außengrenzen der Telematikinfrastruktur (TI) sind Grundlage für die Interoperabilität zwischen der TI und angeschlossenen Systemen. Produkte verschiedener Hersteller und Anbieter müssen die spezifizierten Schnittstellen nutzen, um die geforderte Funktionalität und Interoperabilität zu gewährleisten.</p>
+  <p id="polarion_30">Dieses Dokument spezifiziert die Schnittstellen des Fachmoduls VSDM, die von Clientsystemen zum Lesen der Versichertenstammdaten genutzt werden. Die Schnittstellen werden in diesem Dokument in der für die Entwicklung und Test benötigten Tiefe spezifiziert. Das Dokument richtet neben anderen Spezifikationen Blattanforderungen an das Fachmodul VSDM. Blattanforderungen sind detaillierte Anforderungen, die direkt Grundlagen der Implementierung sind (im Gegensatz zu allgemeineren Umsetzungsanforderungen). Die Schnittstellenspezifikation ist aus der Fachmodulspezifikation herausgelöst, da sie sich neben den Entwicklern von Fachmodulen auch an Entwickler von Primärsystemen richtet.</p>
+  <p id="polarion_31">Clientsysteme sind Primärsysteme der Leistungserbringer oder Anwendungen in den Geschäftsstellen der Kostenträger. Primärsysteme der Leistungserbringer sind Praxisverwaltungssysteme (PVS), Krankenhausinformationssysteme (KIS) und Apothekenverwaltungssysteme (AVS). In diesem Dokument werden die Begriffe Primärsystem und Clientsystem synonym verwendet.</p>
+  <p id="polarion_32">Ziel des Dokumentes ist die Umsetzung der Anforderungen aus dem systemspezifischem Konzept VSDM, die sich auf die Schnittstellen des Fachmoduls VSDM für die Clientsysteme beziehen.</p>
+  <p id="polarion_33">Grundlagen für die Ausführungen dieses Dokumentes sind</p>
+  <ul id="polarion_34"> 
+   <li>das systemspezifische Konzept VSDM [gemSysL_VSDM]</li> 
+   <li>das Konzept Architektur der TI-Plattform [gemKPT_Arch_TIP]</li> 
+   <li>die übergreifende Spezifikation Operation &amp; Maintenance [gemSpec_OM]</li> 
+  </ul>
+  <p id="polarion_35" style="text-align: center;"> <span style="font-size: 11pt;line-height: 1.5;"> <img src="attachments/image2.emf" style="width: 754px;height: 644px;"><br> </span> </p>
+  <p id="polarion_36" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Abb_SST_PS_VSDM_01 - Dokumentenhierarchie im Projekt VSDM </p>
+  <p id="polarion_37">Die Abbildung zeigt schematisch die Dokumentenhierarchie im Projekt VSDM, in welcher die Schnittstellenspezifikation Primärsysteme und die Konzepte und Spezifikationen eingeordnet sind. Die Abbildung stellt nicht die vollständige Dokumentenhierarchie des Projekts Online-Produktivbetrieb (Stufe 1) oder den Trace der Anforderungen dar.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9406">1.2 Zielgruppe</h3>
+  <p id="polarion_38">Dieses Dokument richtet sich an:</p>
+  <ul id="polarion_39"> 
+   <li>Hersteller und Entwickler </li> 
+   <ul> 
+    <li>Entwickler von Fachmodulen VSDM</li> 
+    <li>Entwickler von Primärsystemen und anderen Clientsystemen</li> 
+   </ul> 
+   <li>Verantwortliche für Zulassung und Test</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9407">1.3 Geltungsbereich</h3>
+  <p id="polarion_40">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungsverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z. B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_41" data-keep-next="true"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Wichtiger Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_42" data-keep-next="true"> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9408">1.4 Abgrenzung des Dokuments</h3>
+  <p id="polarion_43">Innerhalb dieses Dokuments wird auf die technische Umsetzung der Schnittstelle des Fachmoduls VSDM für Clientsysteme eingegangen. Anforderungen an andere Produkttypen sind nicht Bestandteil des Dokuments. Für die Beschreibung der Anwendungsfälle und Abläufe der Fachanwendung VSDM wird auf das systemspezifische Konzept VSDM [gemSysL_VSDM] verwiesen.</p>
+  <p id="polarion_44">Dieses Dokument fokussiert auf das sichtbare Außenverhalten der Schnittstelle selbst und damit auf die Eingangs- und Ausgangsparameter der entsprechenden Operationen. Anforderungen zu den internen Abläufen im Fachmodul finden sich in [gemSpec_FM_VSDM].</p>
+  <p id="polarion_45">Ebenfalls in [gemSpec_FM_VSDM] enthalten und damit nicht Bestandteil dieses Dokuments ist die Beschreibung der durch das Fachmodul für das Primärsystem erzeugten Benachrichtigungen (Events).</p>
+  <p id="polarion_46">Nicht beschrieben sind Konfigurationen, Abläufe und die Verarbeitung der Daten im Primärsystem. Diese finden sich im Implementierungsleitfaden Primärsysteme [gemILF_PS]. Insbesondere Entwickler von Primärsystemen sollten für die Schnittstellenimplementierung dieses Dokument als Grundlage gelesen haben.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9409">1.5 Methodik</h3>
+  <p id="polarion_47">Für die genauere Unterscheidung zwischen normativen und informativen Inhalten werden die dem RFC 2119 [RFC2119] entsprechenden in Großbuchstaben geschriebenen, deutschen Schlüsselworte (MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN) verwendet.</p>
+  <p id="polarion_48">In Anhang B dieses Dokuments werden in der Tabelle 8 die Eingangsanforderungen aufgelistet, die in diesem Ergebnisdokument berücksichtigt sind. In der Spalte "umgesetzt durch" finden sich die eindeutigen Referenzen auf die dazu erarbeiteten Blattanforderungen. In Anhang B2 stehen die Blattanforderungen mit ihrem Text und dem entsprechenden Vorgänger.</p>
+  <p id="polarion_49">Sofern im Dokument auf die Ausgangsanforderungen verwiesen wird, erfolgt dies in eckigen Klammern, z. B. [VSDM-A_2093]. Wird auf Eingangsanforderungen verwiesen, erfolgt dies in runden Klammern, z. B. (VSDM-A_303).</p>
+  <p id="polarion_50">Die Ausgangsanforderungen und deren Zusammenhang zu den Anforderungen aus den anderen Dokumenten bezüglich der Fachanwendung VSDM werden tabellarisch in Anhang B dargestellt.</p>
+  <p id="polarion_51">Die Darstellung der Schemadaten mittels Klassendiagramm erfolgt in UML.</p>
+  <p id="polarion_52"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">Listing, Bezeichner, Variablen oder XML-Elemente werden in Courier dargestellt.</span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9410">2 Übergreifende Festlegungen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9411">2.1 Eingesetzte Standards</h3>
+  <p id="polarion_54">Als Schnittstellentechnologie wird SOAP verwendet. Um Interoperabilität zwischen verschiedenen SOAP-Implementierungen [SOAP1.1] zu gewährleisten, erfolgt die technische Umsetzung der Schnittstellen konform zum WS-I Basic Profile in der Version 1.2 [BasicProfile1.2] [VSDM-A_2658].</p>
+  <p id="polarion_55">Die Schnittstellen des Fachmoduls VSDM werden in Form von WSDL [WSDL1.1] und XML-Schemas definiert. Gemäß dem WS-I Basic Profile muss für die Definition die Web Services Description Language (WSDL) in der Version 1.1 verwendet werden. Die aus der WSDL resultierende Nachricht muss dem Simple Object Access Protocol (SOAP) in der Version 1.1 entsprechen und die Übertragung erfolgt mittels des Hypertext Transfer Protocols (HTTP) in der Version 1.1.</p>
+  <p id="polarion_56">Die WSDL-Dateien und XML-Schemadateien müssen mit dieser Schnittstellenspezifikation zur Verfügung gestellt werden, um eine einfache Implementierung zu gewährleisten und eine maschinelle Prüfung der spezifizierten Elemente zu ermöglichen. Die in den WSDLs verwendete Kodierungsmethode der SOAP-Nachrichten muss „wrapped document/literal“ sein, um Interoperabilität zu gewährleisten.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9412">2.2 Transportsicherung</h3>
+  <p id="polarion_57">Es ist bei Leistungserbringern aufgrund gesetzlicher Vorschriften bzw. sektorspezifischer Regelungen von einer sicheren Umgebung auszugehen. Demnach ist eine unverschlüsselte Kommunikation zwischen Primärsystem und Fachmodul des Konnektors ausreichend.</p>
+  <p id="polarion_58">Die Notwendigkeit der Absicherung der Kommunikation zwischen Fachmodul VSDM und Clientsystem hängt allerdings von dem Angriffsrisiko im konkreten Einsatzumfeld ab. Die Verantwortung für die Beurteilung der Sicherheit der Einsatzumgebung haben der Leistungserbringer bzw. die Verantwortlichen in den Geschäftsstellen der Kostenträger. Ein Ergebnis dieser Bewertung kann sein, dass die Kommunikation zwischen Clientsystem und Konnektor durch Verschlüsselung zusätzlich abzusichern ist, um die Kommunikation ausreichend vor Abhören zu schützen.</p>
+  <p id="polarion_59">Das Fachmodul VSDM muss daher dem Clientsystem die Verschlüsselung der Kommunikation anbieten, indem es die durch den Konnektor bereitgestellte Funktionalität zur Transportsicherung an der Primärsystemschnittstelle nutzt. [VSDM-A_2678]</p>
+  <p id="polarion_60">Verschlüsselte Kommunikation mittels TLS ist weit verbreitete industrielle Praxis und stellt keinen nennenswerten Implementierungsaufwand dar. Daher wird zur allgemeinen Erhöhung des Schutzniveaus an der Schnittstelle des Primärsystems zum Konnektor die standardmäßige Verschlüsselung der Kommunikation mit serverseitiger Authentisierung empfohlen.</p>
+  <p id="polarion_61">Zusätzlich kann vom Konnektor eine Client-Authentisierung erzwungen werden. Dies ist entweder eine Basic Authentication mittels Benutzername und Passwort oder eine Client Authentication mittels Software-Zertifikat. Bei der Basic Authentication müssen Benutzername und Passwort in der Schnittstellenkonfiguration des PS hinterlegt und mit der Konfiguration des Konnektors abgestimmt sein. Im Fall der zertifikatsbasierten Client Authentication wird im Konnektor ein Zertifikat generiert und exportiert. Dieses ist anschließend für die Nutzung im Primärsystem zu importieren. Weitere Festlegungen (z. B. Format der Zertifikatsdatei) finden sich in [gemSpec_Kon] sowie Anwendungshinweise in [gemILF_PS].</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9413">2.3 Nachrichtenerzeugung</h3>
+  <p id="polarion_62">Der Sender muss gültige SOAP-Nachrichten konform der WSDL bzw. der XSDs der aufgerufenen SOAP-Schnittstelle erzeugen. Es sind nur die in der Spezifikation genannten Header-Elemente erlaubt. [VSDM-A_2703]</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9414">2.4 Nachrichtverarbeitung</h3>
+  <p id="polarion_63">Das Fachmodul VSDM validiert eingehende Nachrichten gegen das entsprechende Schema (XSD). Nicht valide Nachrichten müssen mit einer Fehlermeldung zurückgewiesen werden. Neben der Schemavalidierung muss das Fachmodul auch die Inhalte aller zur Verarbeitung benötigten Elemente auf zulässige Werte validieren. [VSDM-A_2675][VSDM-A_2689]</p>
+  <p id="polarion_64">Das Fachmodul als Empfänger einer Nachricht muss nicht auf zusätzliche Header-Elemente prüfen. Enthält eine Nachricht zusätzliche Header-Elemente soll das Fachmodul diese ignorieren und die Verarbeitung fortsetzen. [VSDM-A_2676]</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9415">2.5 Umfang der Schnittstellen</h3>
+  <p id="polarion_65"> Die externen Schnittstellen <span style="font-family: 'Courier New', Courier, monospace;">I_VSDService</span> und<span style="font-family: 'Courier New', Courier, monospace;"> I_KVKService</span> zum Primärsystem müssen, wie in der Systemlösung VSDM dargestellt, umgesetzt werden. [VSDM-A_2596] [VSDM-A_2608] </p>
+  <p id="polarion_66">Die Schnittstellen müssen dabei gleichartig die verschiedenen Konfigurationsvarianten der Leistungserbringerumgebung unterstützen (Online-Szenario und Standalone-Szenario), welche detailliert im Implementierungsleitfaden Primärsysteme beschrieben sind.</p>
+  <p id="polarion_67"> Die Bezeichner<span style="font-family: 'Courier New', Courier, monospace;"> I_VSDService</span> und <span style="font-family: 'Courier New', Courier, monospace;">I_KVKService</span> sind die logischen Bezeichnungen der Schnittstellen. Die konkreten Operationen <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>und <span style="font-family: 'Courier New', Courier, monospace;">ReadKVK </span>werden in entsprechenden WSDL-Dateien spezifiziert. </p>
+  <p id="polarion_68" style="margin-left: 120px;"> <span style="font-size: 11pt;line-height: 1.5;"><br> <img data-keep-next="true" src="attachments/image3.png" style="width: 493px;height: 260px;"><br> </span> </p>
+  <p id="polarion_70" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Abb_SST_PS_VSDM_02 - Übersicht der PS-Schnittstellen des Fachmoduls VSDM </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9416">3 Schnittstelle I_VSDService</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9417">3.1 Übersicht</h3>
+  <p id="polarion_72"> Das Fachmodul VSDM muss die Schnittstelle <span style="font-family: 'Courier New', Courier, monospace;">I_VSDService</span> mit der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>realisieren, die mehrfach parallel aufgerufen werden kann. Die SOAP-Schnittstelle ist in [VSDService.wsdl] gemäß Abbildung Abb_SST_PS_VSDM_03 spezifiziert, die Ein- und Ausgangsparameter der SOAP-Anfrage sind in [VSDService.xsd] definiert. [VSDM-A_2633] </p>
+  <p id="polarion_73" style="margin-left: 80px;"> <br> <span style="font-size: 11pt;line-height: 1.5;"><br> <img src="attachments/image4.png" style="width: 558px;height: 169px;"><br> </span> </p>
+  <p id="polarion_75" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">3</span>: Abb_SST_PS_VSDM_03 – Schnittstelle ReadVSD </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9418">3.2 Operation ReadVSD</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9419">3.2.1 Eingangsbedingungen</h4>
+  <p id="polarion_76"> Die Eingangsbedingungen für die Durchführung der Operationen <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>sind im Anwendungsfall in Tab_VSDM_SysL_01 von [gemSysL_VSDM] beschrieben: Alle lokalen Komponenten sind betriebsbereit, z. B. die zu lesende eGK sowie der HBA bzw. die SMC sind gesteckt, funktionsfähig und durch vorangegangene Operationen bereits eindeutig durch Karten-Handles identifiziert. </p>
+  <p id="polarion_77"> Die Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>wird sowohl im Online-Szenario als auch im Standalone-Szenario am Offline-Konnektor genutzt. </p>
+  <p id="polarion_78"> <span style="font-weight: bold;">Online-Szenario</span> </p>
+  <p id="polarion_79"> Im Online-Szenario ist der Konnektor sowohl über das lokale Netzwerk direkt mit dem Primärsystem als auch mit der Telematikinfrastruktur (TI) verbunden. Beim Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>kann die Prüfung auf Aktualisierung durch das Fachmodul online vorgenommen werden. </p>
+  <p id="polarion_80"> <span style="font-weight: bold;">Standalone-Szenario</span> </p>
+  <p id="polarion_81"> Im Standalone-Szenario ist das Primärsystem im lokalen Netzwerk mit dem Offline-Konnektor verbunden. In diesem Fall ist die Prüfung und ggf. Aktualisierung der eGK durch den Online-Konnektor inkl. Erstellen des Prüfungsnachweises bereits erfolgt und der Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD </span>liest den Prüfungsnachweis von der eGK. </p>
+  <p id="polarion_82">Die zwei Szenarien Standalone und Online sind im systemspezifischen Konzept [gemSysL_VSDM] sowie ausführlich im Implementierungsleitfaden Primärsysteme erläutert [gemILF_PS].</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9420">3.2.2 Request</h4>
+  <p id="polarion_83" style="text-align: center;"> <span style="font-size: 11pt;line-height: 1.5;"> <img src="attachments/image5.png" style="width: 356px;height: 237px;"> </span> </p>
+  <p id="polarion_84" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">4</span>: Abb_SST_PS_VSDM_04 - Eingangsparameter ReadVSD </p>
+  <p id="polarion_85"></p>
+  <p id="polarion_20"> Die Tabelle Tab_SST_PS_VSDM_01 beschreibt die Eingangsparameter der Operation<span style="font-size: 11pt;line-height: 1.5;"> <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD</span>.</span> </p>
+  <p id="polarion_86"></p>
+  <p id="polarion_87" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_SST_PS_VSDM_01 - Eingangsparameter ReadVSD [VSDM-A_2693] </p>
+  <table id="polarion_wiki macro name=table;params=uid=2" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 159.217px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 425.783px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 159.217px;height: 39.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">EhcHandle </span><br> <br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 425.783px;height: 39.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Karten-Handle der eGK: Merkmal zur Identifizierung der eGK, von der die Daten gelesen werden sollen.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 159.217px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HpcHandle</span><span style="font-size: 9pt;line-height: 1.5;"> </span><br> <br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 425.783px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Karten-Handle der SMC-B bzw. der HBA: Merkmal zur Identifizierung der SMC-B / HBA, die zur Durchführung der Echtheitsprüfung (Card-to-Card-Authentisierung) verwendet werden soll.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 159.217px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PerformOnlineCheck</span><span style="font-size: 9pt;line-height: 1.5;"> </span><br> <br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 425.783px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Online-Prüfung durchführen: Gibt an, ob eine Onlineprüfung und ggf. ein Update durchgeführt werden soll.<br> ( </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">true/false</span><span style="font-size: 9pt;line-height: 1.5;"> ).</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 159.217px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ReadOnlineReceipt</span><span style="font-size: 9pt;line-height: 1.5;"> </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 425.783px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Prüfungsnachweis lesen: Gibt an, ob der Prüfungsnachweis in der Antwort enthalten sein soll.<br> (</span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">true/false</span><span style="font-size: 9pt;line-height: 1.5;"> )</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 159.217px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Context</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 425.783px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Aufrufkontext der Operation, bestehend aus Mandanten-ID, Primärsystem-ID, Arbeitsplatz-ID und User-ID. Dieser dient zur Prüfung, ob die angegebenen Karten im gegebenen Kontext verwendet werden dürfen.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_89"></p>
+  <p id="polarion_1"> Damit das Clientsystem steuern kann, ob eine Online-Prüfung durchgeführt werden soll, besitzt die Operation den Parameter <span style="font-family: 'Courier New', Courier, monospace;">PerformOnlineCheck</span>. Ist der Parameter auf <span style="font-family: 'Courier New', Courier, monospace;">true </span>gesetzt, führt das Fachmodul eine Aktualisierungsanfrage durch. Ist der Parameter auf <span style="font-family: 'Courier New', Courier, monospace;">false </span>gesetzt, führt das Fachmodul nur aus fachlichen Gründen gemäß Aktivitätsdiagramm des UC VSDM-UC_01 eine Aktualisierungsanfrage durch, z. B. wenn die Gesundheitsanwendung der eGK bereits gesperrt ist. Da im Standalone-Szenario keine Online-Verbindung genutzt werden kann (Primärsystem am Offline-Konnektor), ist in diesem Fall der Parameter <span style="font-family: 'Courier New', Courier, monospace;">PerformOnlineCheck </span>mit dem Wert <span style="font-family: 'Courier New', Courier, monospace;">false </span>zu verwenden, da die Aktualisierung immer scheitern würde. </p>
+  <p id="polarion_90"> Das Clientsystem steuert mittels des Parameters <span style="font-family: 'Courier New', Courier, monospace;">ReadOnlineReceipt</span>, ob ein Prüfungsnachweis zurückgegeben wird. Ist der Parameter <span style="font-family: 'Courier New', Courier, monospace;">ReadOnlineReceipt </span>auf <span style="font-family: 'Courier New', Courier, monospace;">true </span>gesetzt, wird ein Prüfungsnachweis zurückgegeben, andernfalls enthält die Antwort keinen Prüfungsnachweis. Falls Leistungserbringer grundsätzlich nicht zum Auslesen und Verwenden des Prüfungsnachweises verpflichtet sind (z. B. Krankenhäuser), kann der Parameter <span style="font-family: 'Courier New', Courier, monospace;">ReadOnlineReceipt </span>immer auf <span style="font-family: 'Courier New', Courier, monospace;">false </span>gesetzt sein. </p>
+  <p id="polarion_91"> Im Online-Szenario ist die Parametrierung <span style="font-family: 'Courier New', Courier, monospace;">PerformOnlineCheck=false</span> und <span style="font-family: 'Courier New', Courier, monospace;">ReadOnlineReceipt=true</span> grundsätzlich zulässig, aber im normalen Ablauf nicht sinnvoll, da versucht würde einen bestehenden, verschlüsselten Prüfungsnachweis von der eGK zu lesen. Dieser Prüfungsnachweis wäre aber bei einem vorherigen Besuch in einer anderen Praxis erstellt worden und nicht nutzbar oder aus der eigenen Praxis und veraltet. </p>
+  <p id="polarion_92">Das Element Context enthält notwendige und optionale Angaben zum Aufrufkontext.</p>
+  <p id="polarion_93" style="text-align: center;" data-keep-next="true"> <span style="font-size: 11pt;line-height: 1.5;"><br> <img data-keep-next="true" src="attachments/image6.png" style="width: 398px;height: 250px;"><br> </span> </p>
+  <p id="polarion_94" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">5</span>: Abb_SST_PS_VSDM_12 – Schema des Aufrufkontextes </p>
+  <p id="polarion_95"></p>
+  <p id="polarion_96" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: Tab_SST_PS_VSDM_13: Eingangsparameter ReadVSD, Aufrufkontext [VSDM-A_2693] </p>
+  <table id="polarion_wiki macro name=table;params=uid=3" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 158.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 426.483px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 158.517px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">MandantId </span><br> <br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.483px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Eine alphanumerische ID des Mandanten, die in der Konnektorkonfiguration festgelegt und im Clientsystem entsprechend hinterlegt sein muss. </span><br> <span style="font-size: 9pt;line-height: 1.5;">Die ID ist immer anzugeben. In Mehrmandantenumgebungen muss sie entsprechend dem Aufrufkontext gefüllt sein</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 158.517px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ClientSystemId </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.483px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Eine alphanumerische ID des Primärsystems, die in der Konnektorkonfiguration festgelegt und im Primärsystem entsprechend hinterlegt sein muss. </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 158.517px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">WorkplaceId</span><br> <br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.483px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Eine alphanumerische ID des Arbeitsplatzes, aus dessen Kontext der Aufruf erfolgt. Diese muss in der Konnektorkonfiguration festgelegt und im Primärsystem entsprechend hinterlegt sein. Sie ist im Rahmen der VSDM-Schnittstelle (abweichend vom Schema) immer anzugeben.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 158.517px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">UserId</span><span style="font-size: 9pt;line-height: 1.5;"> </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.483px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die ID des Nutzers im Primärsystem, die auch im Konnektor hinterlegt ist. Sie ist nur dann erforderlich, falls ein HBA verwendet wird.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_98"></p>
+  <p id="polarion_2">Weiterführende Beschreibungen zu Anwendung und Kombination der Eingangsparameter in verschiedenen Szenarien sind im Implementierungsleitfaden zu finden [gemILF_PS].</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9421">3.2.3 Response</h4>
+  <p id="polarion_99" style="text-align: center;"> <span style="font-size: 11pt;line-height: 1.5;"><br> <img src="attachments/image7.png" style="width: 452px;height: 237px;"><br> </span> </p>
+  <p id="polarion_100" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">6</span>: Abb_SST_PS_VSDM_05 - Schema der Ausgangsparameter ReadVSD </p>
+  <p id="polarion_101"> Die Tabelle Tab_SST_PS_VSDM_02 beschreibt die Ausgangsparameter der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD</span>. </p>
+  <p id="polarion_102"></p>
+  <p id="polarion_103" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: Tab_SST_PS_VSDM_02 - Ausgangsparameter ReadVSD [VSDM-A_2634] </p>
+  <table id="polarion_wiki macro name=table;params=uid=4" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 172px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 409px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 172px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">VSD_Status </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 409px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Inhalt Status-Container der eGK</span><br> <span style="font-size: 9pt;line-height: 1.5;">(XML-Element </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">VSD_Status</span><span style="font-size: 9pt;line-height: 1.5;">) </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 172px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">PersoenlicheVersichertendaten (PD)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 409px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Inhalt des PD-Containers der eGK <br> (XML-Element </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">UC_PersoenlicheVersicherungsdatenXML</span><span style="font-size: 9pt;line-height: 1.5;">)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 172px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">AllgemeineVersicherungsdaten (VD)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 409px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Inhalt des VD-Containers der eGK</span><br> <span style="font-size: 9pt;line-height: 1.5;">(XML-Element </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">UC_AllgemeineVersicherungsdatenXML</span><span style="font-size: 9pt;line-height: 1.5;">)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 172px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">GeschuetzteVersichertendaten (GVD)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 409px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Inhalt des GVD-Containers der eGK</span><br> <span style="font-size: 9pt;line-height: 1.5;">(XML-Element </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">UC_GeschützteVersicherungsdatenXML</span><span style="font-size: 9pt;line-height: 1.5;">)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 172px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Pruefungsnachweis</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 409px;height: 58.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Von der eGK gelesene Prüfungsnachweis bzw. der innerhalb des Ablaufs erstellte Prüfungsnachweis.</span><br> <span style="font-size: 9pt;line-height: 1.5;">(XML-Element </span><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Pruefungsnachweis</span><span style="font-size: 9pt;line-height: 1.5;">)</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_105"></p>
+  <p id="polarion_17">Die SOAP-Antwort enthält immer den Statuscontainer, die ungeschützten VSD (PD, VD) sowie - abhängig von der Parametrierung des Aufrufs und dem Verlauf der Verarbeitung - die geschützten Versichertendaten (GVD) und den Prüfungsnachweis.</p>
+  <p id="polarion_106">Die XML-Struktur findet sich in der zugehörigen Schemadatei [Versichertenstammdaten.xsd]. Die Beschreibung dazu findet sich im Anhang von [gemSysL_VSDM]. Das Fachmodul VSDM des Konnektors führt keine Validierung der XML-Dateien der eGK durch und gibt sie ohne Modifikation an die Schnittstelle zurück.</p>
+  <p id="polarion_107">Die geschützten Daten sind nur Bestandteil der SOAP-Response, wenn der Leistungserbringer zum Zugriff berechtigt ist. Können die GVD aufgrund fehlender Berechtigungen nicht gelesen werden, werden trotzdem die PD und VD zurückgegeben [VSDM-A_2647].</p>
+  <p id="polarion_108"> <span style="font-weight: bold;">Prüfungsnachweis</span> </p>
+  <p id="polarion_109">Sofern durch das Clientsystem angefordert, enthält die Antwort einen Prüfungsnachweis. Dieser enthält neben der Fachdienstquittung sowohl im Erfolgsfall (Aktualisierung erfolgt bzw. nicht notwendig) als auch im Falle von Warnungen entsprechenden Statusinformationen. [VSDM-A_2631] [VSDM-A_2676].</p>
+  <p id="polarion_110" style="text-align: center;" data-keep-next="true"> <span style="font-size: 11pt;line-height: 1.5;"><br> <img data-keep-next="true" src="attachments/image8.png" style="width: 562px;height: 614px;"><br> </span> </p>
+  <p id="polarion_111" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">7</span>: Abb_SST_PS_VSDM_12 Schema des Prüfungsnachweises </p>
+  <p id="polarion_112"></p>
+  <p id="polarion_21">Die XML-Struktur findet sich in der zugehörigen Schemadatei [Pruefungsnachweis.xsd]. Die zulässigen Werte für das Element Ergebnis sind in [gemSysL_VSDM#Tab_VSDM_SysL_35] definiert.</p>
+  <p id="polarion_113"> <span style="font-weight: bold;">Container VSD_Status</span> </p>
+  <p id="polarion_114"> Der Container VSD_Status ist ein XML-Element von Typ <span style="font-family: 'Courier New', Courier, monospace;">VSD_StatusType</span> und enthält die Statusinformationen der Versichertenstammdaten der eGK. (Aktualisierungsstatus, Version und Zeitstempel der letzten Aktualisierung der Karte). </p>
+  <p id="polarion_115" style="text-align: center;" data-keep-next="true"> <span style="font-size: 11pt;line-height: 1.5;"><br> <img data-keep-next="true" src="attachments/image9.png" style="width: 388px;height: 283px;"><br> </span> </p>
+  <p id="polarion_116" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">8</span>: Abb_SST_PS_VSDM_06 - Schema von VSD_Status </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9422">3.2.4 Zeichenkodierung</h4>
+  <p id="polarion_117">Festlegungen zur Zeichenkodierung der Datenstrukturen (ISO8859-15, UTF-8) und Kompression finden sich in [gemSysL_VSDM], in [gemSpec_eGK_Fach_VSDM] sowie in Beschreibungen im Implementierungsleitfaden Primärsysteme [gemILF_PS].</p>
+  <p id="polarion_118">Die Operation ReadVSD liefert die Container PD, VD, GVD sowie den Prüfungsnachweis gzip-komprimiert und Base64-kodiert [VSDM-A_2691].</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9423">3.2.5 Statusverarbeitung mittels Prüfungsnachweis</h4>
+  <p id="polarion_119">Bei Fehlern, die bei der Kommunikation zwischen Fachmodul und Fachdienst auftreten, wird die Verarbeitung nicht abgebrochen, sondern das Fachmodul versucht trotzdem die Versichertenstammdaten zu lesen und den Aufruf für das Clientsystem zu beantworten. Dem Clientsystem sind damit Probleme bei der Online-Kommunikation nicht direkt ersichtlich.</p>
+  <p id="polarion_120">In Fällen, bei denen durch das Primärsystem ein Prüfungsnachweis angefordert worden ist, kann anhand von Ergebnis und ErrorCode im Prüfungsnachweis eine weitergehende Verarbeitung im Primärsystem erfolgen. Durch das Ergebnis im Prüfungsnachweis (3-6) kann ein Problem bei der Kommunikation erkannt werden. Aus Sicht des Primärsystems stellt dieser Fall eine Warnung dar. Die Verarbeitung bezüglich VSD war trotzdem erfolgreich, sofern die VSD von der eGK gelesen werden konnten [VSDM-A_2631].</p>
+  <p id="polarion_121">Im speziellen Fall des Ergebnis=3 im Prüfungsnachweis sind Fehlercodes Bestandteil des Prüfungsnachweises. Dies ist dann der Fall, wenn die VSDM-Fachdienste mit einem SOAP-Fault geantwortet haben. Die entsprechenden Fehlercodes finden sich in der Gesamtübersicht im Implementierungsleitfaden Primärsystem [gemILF_PS].</p>
+  <p id="polarion_122"></p>
+  <p id="polarion_123" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: Tab_SST_PS_VSDM_03 - Kategorien von Status- und Fehlermeldungen </p>
+  <table id="polarion_wiki macro name=table;params=uid=5" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 77.3333px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Kategorie</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 266.667px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 252px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Übermittlung des Status / Fehlers</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77.3333px;height: 39.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">OK</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 39.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kein Fehler, Verarbeitung vollständig </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 252px;height: 39.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">PN.Ergebnis (1-2)<br> </span><span style="font-size: 10pt;line-height: 1.5;">(sofern PN erzeugt/gelesen)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77.3333px;height: 59.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Warnung<br> (*)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 59.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kartendaten gelesen und gültig, z.B. Probleme bei Online-Aktualisierung</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 252px;height: 59.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">PN.Ergebnis (3-6)<br> PN.ErrorCode<br> </span><span style="font-size: 10pt;line-height: 1.5;">(sofern PN erzeugt/gelesen)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77.3333px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fehler</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 266.667px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fehler, Verarbeitung abgebrochen, anstelle von ReadVSDResponse wird ein SOAP-Fault zurückgeliefert</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 252px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">SOAP-Fault<br> (</span><span style="font-size: 10pt;line-height: 1.5;">siehe Fehlerbehandlung 5)</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_125"></p>
+  <p id="polarion_18">(*) Für alle Anwendungsfälle, bei denen kein Prüfungsnachweis durch das Primärsystem angefordert worden ist, ist immer von einer erfolgreichen und fehlerfreien Verarbeitung auszugehen, wenn die Operation nicht mit einem SOAP-Fault antwortet.</p>
+  <p id="polarion_126"> Der <span style="font-weight: bold;">Wert 4</span> für das Ergebnis im Prüfungsnachweis ist nur im Standalone-Szenario möglich. Nur in diesem Szenario wird dieser Wert im Zuge der automatischen Online-Aktualisierung durch den Online-Konnektor auf die eGK geschrieben, sofern im Ergebnis der Online-Prüfung das AUTH-Zertifikat der eGK ungültig ist. Im Online-Szenario würde anstelle dessen die Operation abgebrochen und ein SOAP-Fault geliefert werden. </p>
+  <p id="polarion_127"> Der <span style="font-weight: bold;">Wert 6</span> für das Ergebnis im Prüfungsnachweis sollte eine spezielle Verarbeitung im Primärsystem auslösen. Dieser Wert wird erzeugt, wenn die Bedingung „Aktualisierung VSD auf eGK technisch nicht möglich und maximaler Offline-Zeitraum überschritten“ eingetreten ist. Der Benutzer kann dadurch in hervorgehobener Art und Weise über diesen länger anhaltenden Fehlerzustand informiert werden. </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9424">4 Schnittstelle I_KVKService</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9425">4.1 Übersicht</h3>
+  <p id="polarion_129"> Das Fachmodul VSDM muss die Schnittstelle<span style="font-family: 'Courier New', Courier, monospace;"> I_KVKService</span> mit der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadKVK </span>realisieren. Die SOAP-Schnittstelle ist in [KVKService.wsdl] gemäß Abbildung Abb_SST_PS_VSDM_07 spezifiziert, die Ein- und Ausgangsparameter der SOAP-Anfrage sind in [KVKService.xsd] definiert. [VSDM-A_2677] </p>
+  <p id="polarion_130" style="text-align: center;" data-keep-next="true"> <span style="font-size: 11pt;line-height: 1.5;"> <img data-keep-next="true" src="attachments/image10.png" style="width: 587px;height: 141px;"><br> </span> </p>
+  <p id="polarion_131" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">9</span>: Abb_SST_PS_VSDM_07 - Schnittstelle ReadKVK </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9426">4.2 Operation ReadKVK</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9427">4.2.1 Eingangsbedingungen</h4>
+  <p id="polarion_132"> Die Eingangsbedingungen für die Durchführung der Schnittstellenoperationen <span style="font-family: 'Courier New', Courier, monospace;">ReadKVK </span>sind in der Erläuterung des Anwendungsfalls in Tabelle [gemSysL_VSDM#Tab_VSDM_SysL_07] normativ beschrieben: Alle lokalen Komponenten sind betriebsbereit, z.&nbsp;B. die zu lesende KVK ist gesteckt und funktionsfähig. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9428">4.2.2 Request</h4>
+  <p id="polarion_133" style="text-align: center;"> <span style="font-size: 11pt;line-height: 1.5;"> <img src="attachments/image11.png" style="width: 430px;height: 155px;"><br> </span> </p>
+  <p id="polarion_134" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">10</span>: Abb_SST_PS_VSDM_08 - Eingangsparameter ReadKVK </p>
+  <p id="polarion_135"></p>
+  <p id="polarion_26"> Die Tabelle Tab_SST_PS_VSDM_09 beschreibt die Eingangsparameter der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadKVK</span>. </p>
+  <p id="polarion_136"></p>
+  <p id="polarion_137" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">5</span> : Tab_SST_PS_VSDM_09 - Eingangsparameter der Operation ReadKVK [VSDM-A_2710] </p>
+  <table id="polarion_wiki macro name=table;params=uid=6" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 146.183px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 360.15px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146.183px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVKHandle</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 360.15px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Merkmal zur Identifizierung der KVK, von der die Daten gelesen werden sollen. </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146.183px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Context</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 360.15px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Aufrufkontext der Operation, bestehend aus Mandanten-ID, Primärsystem-ID, Arbeitsplatz-ID. Dieser dient zur Prüfung, ob die angegebene Karte im gegebenen Kontext verwendet werden darf (siehe Abbildung 5: Abb_SST_PS_VSDM_12 – Schema des Aufrufkontextes).</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9429">4.2.3 Response</h4>
+  <p id="polarion_139" style="text-align: center;"> <span style="font-size: 11pt;line-height: 1.5;"> <img src="attachments/image12.png" style="width: 329px;height: 120px;"><br> </span> </p>
+  <p id="polarion_140" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">11</span>: Abb_SST_PS_VSDM_09 - Ausgangsparameter ReadKVK </p>
+  <p id="polarion_141"> <span style="font-size: 11pt;line-height: 1.5;"> </span> </p>
+  <p id="polarion_53"></p>
+  <p id="polarion_88"> Die Tabelle Tab_SST_PS_VSDM_14 beschreibt die Ausgangsparameter der Operation <span style="font-family: 'Courier New', Courier, monospace;">ReadVSD</span> </p>
+  <p id="polarion_142"></p>
+  <p id="polarion_143" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">6</span>: Tab_SST_PS_VSDM_14 - Ausgangsparameter der Operation ReadKVK [VSDM-A_2711] </p>
+  <table id="polarion_wiki macro name=table;params=uid=7" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 146.417px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 359.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146.417px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVK</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 359.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die base64-kodierte ASN.1 Struktur der KVK [G04].</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_145"></p>
+  <p id="polarion_19">Der Datensatz ist anhand der bestehenden Regeln geprüft und mit Hilfe der Prüfsumme auf Integrität verifiziert (siehe [gemSpec_FM_VSDM] und [G04]).</p>
+  <p id="polarion_146">Ist die Verifikation fehlgeschlagen, wird mit einem SOAP-Fault mit entsprechendem Fehlercode geantwortet.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9430">5 Fehlerbehandlung</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9431">5.1 Übersicht</h3>
+  <p id="polarion_148">Tritt ein Fehler in der Verarbeitung auf, der dazu führt, dass die aufgerufene Operation abgebrochen wird, gibt das Fachmodul VSDM einen SOAP-Fault mit der gematik Fehlerstruktur zurück. Tritt der Fehler nicht auf Nachrichtenebene, sondern auf einer tieferen Ebene des OSI-Schichtenmodells auf (z. B. HTTP oder TLS), erfolgt die Fehlerbehandlung auf der entsprechenden OSI-Schicht.</p>
+  <p id="polarion_149">Bei Fehlern in der Kommunikation zwischen Fachmodul und Clientsystem, die bereits durch das eingesetzte Webservice-Framework erkannt werden, soll mit einem normalen SOAP-Fault reagiert werden. Zu diesen Fehlerzuständen zählen: Verletzung des Schemas, Abweichungen von der technischen Schnittstellenbeschreibung (WSDL), fehlerhaftes Encoding oder unerwartet große Nachrichten. Das Fachmodul muss sicherstellen, dass der SOAP-Fault keine sicherheitsrelevanten Informationen (z. B. Stacktraces) enthält. [VSDM-A_2682]</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9432">5.2 Struktur</h3>
+  <p id="polarion_150">Bei der anzuwendenden Fehlermeldung handelt es sich um eine standardkonforme Erweiterung des SOAP-Faults gemäß [SOAP1.1] und [BasicProfile1.2], deren Vorgaben zu SOAP-Faults normativ gelten. Die Struktur eines SOAP-Faults und die Inhalte der Datenelemente sind in [gemSpec_OM#Kap3.2.3] beschrieben.</p>
+  <p id="polarion_151">Die Struktur des Error-Elements entspricht dem Schema in [TelematikError.xsd]. Die Struktur des Error-Elements und die Inhalte der Datenelemente sind in der [gemSpec_OM#Kap3.2.1] beschrieben. Auch wenn das Schema mehrere Trace-Elemente zulässt, ist nur ein Trace-Element pro Fehlermeldung erlaubt.</p>
+  <p id="polarion_152"> Das Ereignis, dass einen Fehler verursacht, wird eindeutig durch <span style="font-family: 'Courier New', Courier, monospace;">EventID </span>und <span style="font-family: 'Courier New', Courier, monospace;">LogReference </span>beschrieben, wobei letztere durch eine InstanceID verfeinert werden kann. </p>
+  <p id="polarion_153"> Die Werte für das Element Severity sind in [gemSpec_OM] beschrieben. Von der Fachanwendung VSDM wird nur der Wert <span style="font-family: 'Courier New', Courier, monospace;">Fatal</span> genutzt. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9433">5.3 Fehlercodes</h3>
+  <p id="polarion_154">In Tab_SST_PS_VSDM_10 sind die Fehlercodes aufgeführt, die vom Fachmodul VSDM erzeugt werden und von der Schnittstelle als Bestandteil des SOAP-Fault-Elements zurückgegeben werden. Allgemeine Fehlercodes des Konnektors sind nicht in der Tabelle enthalten.</p>
+  <p id="polarion_155">Das Fachmodul VSDM muss mit einer generischen Fehlermeldung gemäß [gemSpec_OM] antworten, wenn die Gesundheitsanwendung DF.HCA auf der eGK gesperrt ist.</p>
+  <p id="polarion_156"></p>
+  <p id="polarion_157" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">7</span>: Tab_SST_PS_VSDM_10 - Fehlercodes des Fachmoduls VSDM [VSDM-A_2690] [VSDM-A_2692] [VSDM-A_2695] [VSDM-A_2696] [VSDM-A_2936] [VSDM-A_2937] [VSDM-A_2982] [VSDM-A_2983] </p>
+  <table id="polarion_wiki macro name=table;params=uid=8" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 37.2667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Comp<br> Type</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 33.25px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Code</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 61.4333px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ErrorType</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 52.3833px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Severity</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 97.6833px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ErrorText</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 179.25px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Befüllung Detail</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 103.733px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Auslösende <br> Bedingung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3001</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 81px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><span style="background-color: #FFFF99;"><br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSD nicht <br> konsistent</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext kann leer sein oder soll den Fehler in geeigneter Form näher beschreiben.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Status-Flag des <br> StatusVD Con-<br> tainers ist ’1’.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3011</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Verarbeiten <br> der Versicher-<br> tendaten ge-<br> scheitert</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext soll den Fehler in geeigneter Form näher beschreiben, z.B. den betroffenen Container (PD, VD, GVD) identifizieren.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Lesen der VSD <br> (PD, VD oder <br> GVD) von der <br> eGK gescheitert.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3020</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Lesen KVK <br> gescheitert</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext soll den Fehler in geeigneter Form näher beschreiben.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVK-Datensatz <br> konnte nicht <br> gelesen werden.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3021</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVK-Prüfsumme <br> falsch, Daten <br> korrupt</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext kann leer sein oder soll den Fehler in geeigneter Form näher beschreiben.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Überprüfung <br> der Prüfsumme <br> des KVK-Satzes <br> ergab einen Feh-<br> ler.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3039</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Prüfungsnach-<br> weis nicht ent-<br> schlüsselbar</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext soll den Fehler in geeigneter Form näher beschreiben, z.B. Der Prüfungsnachweis kann nicht entschlüsselt werden.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Integritäts-<br> prüfung bei der Entschlüsselung <br> des Prüfungs-<br> nachweises <br> schlägt fehl.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3040</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Es ist kein Prü-<br> fungsnachweis <br> auf der eGK vor-<br> handen</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext soll den Fehler in geeigneter Form näher beschreiben, z.B. Kein Prüfungsnachweis auf der eGK vorhanden.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Es ist kein Prü-<br> fungsnachweis <br> auf der eGK <br> vorhanden.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3041</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SM-B nicht <br> freigeschaltet</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext muss das CardHandle der betroffenen SM-B enthalten.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 182.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SMC-B oder <br> HSM-Sicher-<br> heitszustand <br> ist nicht aus-<br> reichend, z. B. <br> für C2C oder für TLS-Verbin-<br> dungsaufbau <br> zum Intermediär</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 37.2667px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">FM_<br> VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 33.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">3042</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.4333px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Technical</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 52.3833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Error</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 97.6833px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HBA nicht <br> freigeschaltet</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 179.25px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Detailtext kann leer sein oder soll den Fehler in geeigneter Form näher beschreiben.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 103.733px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HBA-Sicher-<br> heitszustand ist <br> nicht ausreichend, <br> z. B. für C2C</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_159"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9434">6 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9435">6.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=uid=9" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Abkürzung</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bedeutung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">AVS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Apothekenverwaltungssystem</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">C2C</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Card to Card</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CCS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Card Communication Service</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMP</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Komponentendiagramm</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Card Management System</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">eGK</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">elektronische Gesundheitskarte</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Geschützte Versichertendaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HBA</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Heilberufsausweis</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HCA</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Healthcare Application</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ICCSN</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Integrated Circuit Card Serial Number</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ID</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Identification</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">IP</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Internet Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ISO</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">International Organization for Standardization</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KIS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Krankenhausinformationssystem</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVNR</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Krankenversicherungsnummer</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KVK</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Krankenversichertenkarte</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">NTP</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Network Time Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">OCSP</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Online Certificate Status Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Persönliche Versichertendaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PN</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Prüfungsnachweis</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PVS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Praxisverwaltungssystem</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Request for Comments</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SAB</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Sicherer Ausführungsbereich</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Sequenzdiagramm</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SMC (B/A/KTR)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Security Module Card</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SOAP</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Simple Object Access Protocol</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">TI</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">TLS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Transport Layer Security</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">UC</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Use Case, Use-Case-Diagramm</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">UML</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Unified Modeling Language</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Allgemeine Versicherungsdaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Versichertenstammdaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Versichertenstammdatendienst</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Versichertenstammdatenmanagement</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 102.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">XML</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 493.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Extensible Markup Language</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9436">6.2 Glossar</h3>
+  <p id="polarion_162"> <span style="font-size: 11pt;line-height: 1.5;">Das Glossar wird als eigenständiges Dokument, vgl. [gemGlossar] zur Verfügung gestellt.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9437">6.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_36">Abbildung 1: Abb_SST_PS_VSDM_01 - Dokumentenhierarchie im Projekt VSDM</a></li>
+   <li><a href="#polarion_70">Abbildung 2: Abb_SST_PS_VSDM_02 - Übersicht der PS-Schnittstellen des Fachmoduls VSDM</a></li>
+   <li><a href="#polarion_75">Abbildung 3: Abb_SST_PS_VSDM_03 – Schnittstelle ReadVSD</a></li>
+   <li><a href="#polarion_84">Abbildung 4: Abb_SST_PS_VSDM_04 - Eingangsparameter ReadVSD</a></li>
+   <li><a href="#polarion_94">Abbildung 5: Abb_SST_PS_VSDM_12 – Schema des Aufrufkontextes</a></li>
+   <li><a href="#polarion_100">Abbildung 6: Abb_SST_PS_VSDM_05 - Schema der Ausgangsparameter ReadVSD</a></li>
+   <li><a href="#polarion_111">Abbildung 7: Abb_SST_PS_VSDM_12 Schema des Prüfungsnachweises</a></li>
+   <li><a href="#polarion_116">Abbildung 8: Abb_SST_PS_VSDM_06 - Schema von VSD_Status</a></li>
+   <li><a href="#polarion_131">Abbildung 9: Abb_SST_PS_VSDM_07 - Schnittstelle ReadKVK</a></li>
+   <li><a href="#polarion_134">Abbildung 10: Abb_SST_PS_VSDM_08 - Eingangsparameter ReadKVK</a></li>
+   <li><a href="#polarion_140">Abbildung 11: Abb_SST_PS_VSDM_09 - Ausgangsparameter ReadKVK</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-46056">6.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_87">Tabelle 1: Tab_SST_PS_VSDM_01 - Eingangsparameter ReadVSD [VSDM-A_2693]</a></li>
+   <li><a href="#polarion_96">Tabelle 2: Tab_SST_PS_VSDM_13: Eingangsparameter ReadVSD, Aufrufkontext [VSDM-A_2693]</a></li>
+   <li><a href="#polarion_103">Tabelle 3: Tab_SST_PS_VSDM_02 - Ausgangsparameter ReadVSD [VSDM-A_2634]</a></li>
+   <li><a href="#polarion_123">Tabelle 4: Tab_SST_PS_VSDM_03 - Kategorien von Status- und Fehlermeldungen</a></li>
+   <li><a href="#polarion_137">Tabelle 5 : Tab_SST_PS_VSDM_09 - Eingangsparameter der Operation ReadKVK [VSDM-A_2710]</a></li>
+   <li><a href="#polarion_143">Tabelle 6: Tab_SST_PS_VSDM_14 - Ausgangsparameter der Operation ReadKVK [VSDM-A_2711]</a></li>
+   <li><a href="#polarion_157">Tabelle 7: Tab_SST_PS_VSDM_10 - Fehlercodes des Fachmoduls VSDM [VSDM-A_2690] [VSDM-A_2692] [VSDM-A_2695] [VSDM-A_2696] [VSDM-A_2936] [VSDM-A_2937] [VSDM-A_2982] [VSDM-A_2983]</a></li>
+   <li><a href="#polarion_171">Tabelle 8: Tab_SST_PS_VSDM_11 - Eingangsanforderungen mit Nachweis der Abdeckung</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-46057">6.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9438">6.5.1 Dokumente der gematik</h4>
+  <p id="polarion_165">Die nachfolgende Tabelle enthält die Bezeichnungen der im vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert, Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument passende jeweils gültige Versionsnummer entnehmen Sie bitte der aktuellsten, auf der Internetseite der gematik veröffentlichten Dokumentenlandkarte, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_166"></p>
+  <table id="polarion_wiki macro name=table;params=uid=10" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Quelle</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemeGK_Fach]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Speicherstrukturen der eGK für Gesundheitsanwendungen</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar der Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemKPT_Arch_TIP]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Konzept Architektur der TI-Plattform</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_FM_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation Fachmodul VSDM</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_OM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Spezifikation Operations und Maintenance</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Systemspezifisches Konzept Versichertenstammdatenmanagement (VSDM)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemILF_PS]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Implementierungsleitfaden Primärsysteme </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.917px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Kon]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.083px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Konnektorspezifikation</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_168"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-9439">6.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=uid=11" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 201.867px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Quelle</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 379.133px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">[BasicProfile1.2]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">Basic Profile Version 1.2, 2006-11-09</span><br> <span style="text-decoration: underline;font-size: 10pt;color: #0000FF;line-height: 1.5;"><a href="http://ws-i.org/profiles/BasicProfile-1.2-2010-11-09.html" target="_top" class="descriptionLink">http://ws-i.org/profiles/BasicProfile-1.2-2010-11-09.html</a> </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[G04]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Spitzenverbände der Krankenkassen, Kassenärztliche Bundesvereinigung und Kassenzahnärztlichen Bundesvereinigung (gültig ab 01.November 2003):<br> Technische Spezifikation der Arztausstattung – Lesegeräte, Version: 2.00</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC2119]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 2119 (März 1997): Key words for use in RFCs to Indicate Requirement Levels S. Bradner,</span><br> <a href="http://tools.ietf.org/html/rfc2109" target="_blank" class="descriptionLink">http://tools.ietf.org/html/rfc2109</a><span style="text-decoration: underline;font-size: 10pt;color: #0000FF;line-height: 1.5;"> </span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">[SOAP1.1]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">Simple Object Access Protocol (SOAP) 1.1, W3C Note 08 May 2000</span><br> <a href="http://www.w3.org/TR/2000/NOTE-SOAP-20000508/" target="_blank" class="descriptionLink">http://www.w3.org/TR/2000/NOTE-SOAP-20000508/</a><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">[WSDL1.1]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">Web Services Description Language (WSDL) 1.1, W3C Note 15 March 2001 </span><br> <a href="http://www.w3.org/TR/wsdl" target="_blank" class="descriptionLink">http://www.w3.org/TR/wsdl</a><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 201.867px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">[XML Datatypes]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 379.133px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">XML Schema Part 2: Datatypes Second Edition W3C Recommendation 28 October 2004</span><br> <a href="http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/" target="_blank" class="descriptionLink">http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/</a><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9440">7 Anhang B – Anforderungshaushalt</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9441">7.1 Eingangsanforderungen</h3>
+  <p id="polarion_171" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">8</span>: Tab_SST_PS_VSDM_11 - Eingangsanforderungen mit Nachweis der Abdeckung </p>
+  <table id="polarion_wiki macro name=table;params=uid=12" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">AFO-ID</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 153.267px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Quelle</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 371.033px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 130.7px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Umgesetzt durch</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CR-A_9</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Ä_2; 1012705</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die nachrichtenbasierte Middleware der TI-Plattform MUSS Interoperabilität durch einfache und, sofern verfügbar, standardbasierte Mechanismen sicherstellen. Entscheidend für die Eignung eines Standards ist dabei vorrangig die Reife und Akzeptanz in der Industrie und nachrangig der Status des Standards.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 121.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2658<br> VSDM-A_2675<br> VSDM-A_2676<br> VSDM-A_2678<br> VSDM-A_2689<br> VSDM-A_2703</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2002</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Aktivitätsdiagramm "Aktivitätsdiagramm: VSDM-UC_01 - VSD von eGK lesen" erfüllen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2596</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2017</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS den primären Anwendungsfall "VSDM-UC_01: VSD von eGK lesen" abbilden.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2596</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2018</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS den primären Anwendungsfall "VSDM-UC_03: Versichertendaten von KVK lesen" abbilden.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2608</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2055</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS im Anwendungsfall "VSDM-UC_01 VSD von eGK lesen" die funktionalen Ergänzungen der Tabelle "Tab_VSDM_SysL_01 - VSD von eGK lesen" erfüllen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> VSDM-A_2596</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2061</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS im Anwendungsfall "VSDM-UC_03 Versichertendaten von KVK lesen" die funktionalen Ergänzungen der Tabelle "Tab_VSDM_SysL_07 – Versichertendaten von KVK lesen" erfüllen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2608</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2094</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS für das Primärsystem die Operation ReadVSD an der I_VSDService Schnittstelle bereitstellen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2596</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2097</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD der Schnittstelle I_VSDService MUSS die Ein- und Ausgangsparameter der Tabelle "Tab_VSDM_SysL_29 Parameter der Operation ReadVSD" nutzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2596<br> VSDM-A_2634<br> VSDM-A_2691<br> VSDM-A_2693</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2099</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadKVK der Schnittstelle I_KVKService MUSS die Ein- und Ausgangsparameter der Tabelle "Tab_VSDM_SysL_30 Parameter der Operation ReadKVK" nutzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 81px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2608<br> VSDM-A_2710<br> VSDM-A_2711</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 283.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2120</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 283.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 283.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS für die Schnittstellen Fehlermeldungen mit einer einheitlichen Fehlerstruktur für die nachnutzenden Systeme definieren.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 283.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2682<br> VSDM-A_2690<br> VSDM-A_2692<br> VSDM-A_2695<br> VSDM-A_2696<br> VSDM-A_2698<br> VSDM-A_2699<br> VSDM-A_2700<br> VSDM-A_2701<br> VSDM-A_2702</span><br> <span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2936</span><br> <span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2937</span><br> <span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2982</span><br> <span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2983</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2142</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS im Falle eines Abbruchs einer Aktivität bzw. eines Anwendungsfalles eine Fehlermeldung für alle nachnutzenden Systeme erzeugen, die Produkttyp, Betreiber und Fehlerursache eindeutig identifiziert und Referenzen zu Details des Fehlers enthält.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 101.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2631</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2154</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das fachliche Infomodell zum Prüfungsnachweis aus dem Lastenheft VSDM im technischen Infomodell umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2633<br> VSDM-A_2677</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2156</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell geschützte Versichertendaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2633<br> VSDM-A_2647<br> VSDM-A_2677</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2158</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell persönliche Versichertendaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2633<br> VSDM-A_2677</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2159</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell allgemeine Versicherungsdaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2633<br> VSDM-A_2677</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2170</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS für das Primärsystem die Operation ReadKVK an der I_KVKService Schnittstelle bereitstellen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2608</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2709</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 153.267px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 371.033px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM KANN die Kommunikation mit dem Clientsystem absichern, um sicherzustellen, dass nur Anfragen aus Umgebungen von berechtigten Akteuren stammen. </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 130.7px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2678</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9442">7.2 Ausgangsanforderungen</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9445">
+   <p><b>VSDM-A_2596</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD des Fachmoduls VSDM MUSS das Außenverhalten des Anwendungsfalls "VSDM-UC_01: VSD von eGK lesen" abbilden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9446">
+   <p><b>VSDM-A_2608</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadKVK des Fachmoduls VSDM MUSS das Außenverhalten des Anwendungsfalls "VSDM-UC_03: Versichertendaten von KVK lesen" abbilden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9447">
+   <p><b>VSDM-A_2631</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD des Fachmoduls VSDM MUSS den ErrorCode eines SOAP-Faults des Fachdienstes in das Feld ErrorCode des Prüfungsnachweises übernehmen, wenn das Fachmodul in der Verarbeitung von einem Fachdienst einen gematik SOAP-Fault erhält.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9448">
+   <p><b>VSDM-A_2633</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Schnittstelle I_VSDService des Fachmoduls VSDM MUSS die Operation ReadVSD gemäß der Syntax der VSDService.wsdl implementieren.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9449">
+   <p><b>VSDM-A_2634</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD des Fachmoduls VSDM MUSS in der Antwortnachricht die Ausgangsparameter gemäß Tab_SST_PS_VSDM_02 enthalten.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9450">
+   <p><b>VSDM-A_2647</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD des Fachmoduls VSDM MUSS in der Antwortnachricht das Element GeschuetzteVersichertendaten enthalten, wenn der Leistungserbringer zum Lesen berechtigt ist.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9451">
+   <p><b>VSDM-A_2658</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS die Primärsystemschnittstellen I_VSDService und I_KVKService konform zu WS-I Basic-Profile 1.2 implementieren.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9452">
+   <p><b>VSDM-A_2675</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS schema-invalide XML-Request-Root-Elemente in der Anfragenachricht des Clientsystems erkennen und die Verarbeitung mit einer Fehlermeldung abbrechen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9453">
+   <p><b>VSDM-A_2676</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM SOLL an den Primärsystemschnittstellen beim Aufruf zusätzliche Headerelemente ignorieren und die Verarbeitung fortsetzen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9454">
+   <p><b>VSDM-A_2677</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Schnittstelle I_KVKService des Fachmoduls MUSS die Operation ReadKVK gemäß der Syntax der KVKService.wsdl implementieren.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9455">
+   <p><b>VSDM-A_2678</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS dem Clientsystem die Verschlüsselung der Kommunikation anbieten, indem es die durch den Konnektor bereitgestellte Funktionalität zur Transportsicherung an der Primärsystemschnittstelle nutzt.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9456">
+   <p><b>VSDM-A_2682</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM DARF sicherheitsrelevante Informationen (geheimes Schlüsselmaterial, personenbezogene Daten) beim Abbruch der Verarbeitung in der Fehlermeldung NICHT übermitteln (z.B. in Stacktraces).</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9457">
+   <p><b>VSDM-A_2689</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS alle zur Verarbeitung benötigten Elemente der Anfragenachricht auf zulässige Werte validieren.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9458">
+   <p><b>VSDM-A_2690</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3001 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn der Status-Container im Feld Status den Wert '1' enthält.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9459">
+   <p><b>VSDM-A_2691</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Schnittstelle I_VSDService des Fachmoduls VSDM MUSS die Elemente PersoenlicheVersichertendaten, AllgemeineVersicherungsdaten, GeschuetzteVersichertendaten und Pruefungsnachweis gzip-komprimiert und anschließend Base64-kodiert liefern.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9460">
+   <p><b>VSDM-A_2692</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3011 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn das Lesen der VSD von der eGK scheitert.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9461">
+   <p><b>VSDM-A_2693</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadVSD des Fachmoduls VSDM MUSS im Request die Eingangsparameter gemäß Tab_SST_PS_VSDM_01 und Tab_SST_PS_VSDM_13 enthalten.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9462">
+   <p><b>VSDM-A_2695</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3020 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn das Lesen des KVK-Datensatzes scheitert.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9463">
+   <p><b>VSDM-A_2696</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3021 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn die Überprüfung der Prüfsumme des KVK-Datensatzes einen Fehler ergibt.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9464">
+   <p><b>VSDM-A_2703</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS Antwortnachrichten erstellen, die nur die in der Spezifikation genannten Header-Elemente der aufgerufenen Schnittstelle enthalten.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9465">
+   <p><b>VSDM-A_2710</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadKVK des Fachmoduls VSDM MUSS im Request die Eingangsparameter gemäß Tab_SST_PS_VSDM_09 enthalten.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9466">
+   <p><b>VSDM-A_2711</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Operation ReadKVK des Fachmoduls VSDM MUSS in der Antwortnachricht die Ausgangsparameter gemäß Tab_SST_PS_VSDM_14 enthalten.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9467">
+   <p><b>VSDM-A_2936</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3039 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn der Prüfungsnachweis mit dem konfigurierten Schlüssel nicht entschlüsselbar ist.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9468">
+   <p><b>VSDM-A_2937</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3040 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn der Prüfungsnachweis angefordert worden ist und dieser auf der eGK nicht vorhanden ist.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9469">
+   <p><b>VSDM-A_2982</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3041 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn der SMC-B- oder HSM-Sicherheitszustand für entsprechende Operationen nicht ausreichend ist.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9470">
+   <p><b>VSDM-A_2983</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Fachmodul VSDM MUSS mit einem gematik SOAP-Fault und dem Fehlercode 3042 gemäß den Festlegungen in Tab_SST_PS_VSDM_10 antworten, wenn der HBA-Sicherheitszustand für entsprechende Operationen nicht ausreichend ist (z. B. C2C).</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_175" class="polarion-rte-caption-paragraph"></p>
+ </body>
+</html>

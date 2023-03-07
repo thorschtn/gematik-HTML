@@ -1,0 +1,701 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_6"> <br> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">S/MIME-Profil Kommunikation Leistungserbringer</span> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">(KOM-LE)</span> </p>
+  <p id="polarion_12"> <br> </p>
+  <p id="polarion_13"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.7.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571447</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>04.08.2021</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSMIME_KOMLE</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_14"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-16817">Dokumentinformationen</h1>
+  <table id="polarion_wiki macro name=table;params=header=no|width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 742px;height: 91px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Seit März 2020 verwendet die gematik die Bezeichnung „<span style="font-weight: bold;">KIM – Kommunikation im Medizinwesen</span>“ für die Anwendung <span style="font-weight: bold;">KOM-LE</span>. Diese neue Benennung findet sich insbesondere in Informationsmaterialien für die Zielgruppe Leistungserbringer sowie in Presseveröffentlichungen. Eine Umbenennung in den technisch-normativen Dokumenten wie Spezifikationen, Konzepten, Zulassungsdokumenten etc. mit Ausnahme von Angaben zu Domänen, E-Mail-Adressen, technischen Schnittstellen, Parametern u.ä. ist mit Stand Release 4.0.0 nicht geplant.</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_16"></p>
+  <p id="polarion_18"> <span style="font-weight: bold;font-size: 12pt;line-height: 1.5;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_21">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_22"></p>
+  <p id="polarion_23"> <span style="font-weight: bold;font-size: 12pt;line-height: 1.5;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 74px;height: 13px;border: 1px solid #CCCCCC;padding: 5px;">Version </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 97px;height: 13px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Stand </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 72px;height: 13px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Kap./ Seite </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 336px;height: 13px;border: 1px solid #CCCCCC;padding: 5px;">Grund der Änderung, besondere Hinweise </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 120px;height: 13px;border: 1px solid #CCCCCC;padding: 5px;">Bearbeitung </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">0.1 </td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">05.09.11<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Alle </td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Ersterstellung </td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Projekt KOM-LE </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.0.0 </td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">24.07.15<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">freigegeben </td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.1.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">28.10.16<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">2.1, 2.2 </td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Anpassungen gemäß Änderungsliste </td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.2.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">28.06.19</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß Änderungsliste P19.1 </td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.2.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">02.03.20</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß Änderungsliste P1.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.3.0&nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">30.06.20</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Anpassungen gemäß Änderungsliste P22.1 und Scope-Themen aus Systemdesign R4.0.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.4.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">12.11.20</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß Änderungsliste P22.2</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.4.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">08.01.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß Änderungsliste P22.6</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.5.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">19.02.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß Änderungsliste P22.5</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.6.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">06.04.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß KIM Maintenance 21.1/KIM 1.5.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 74px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">1.7.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 97px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">04.08.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 336px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung gemäß KIM Maintenance 21.2 /KIM 1.5.1-3</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_25"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-16818">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-16817">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-16818">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16819">1 Einführung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16820">1.1 Zielsetzung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16821">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16822">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16823">1.4 Arbeitsgrundlagen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16824">1.5 Abgrenzung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16825">1.6 Methodik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16826">1.6.1 Anforderungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16828">1.6.2 Diagramme</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16829">1.6.3 Nomenklatur</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16830">2 S/MIME-Profil-Anforderungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16831">2.1 Strukturkonformität</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16832">2.1.1 Nachricht</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16833">2.1.1.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16844">2.1.1.2 Kommentare (nicht normativ)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16845">2.2 Verschlüsselter Inhalt</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16846">2.2.1 Algorithmen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16847">2.2.2 Authenticated-Enveloped-Data</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16848">2.2.2.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16851">2.2.2.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16852">2.2.3 Empfängerinformationen (recipientInfos)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16853">2.2.3.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16857">2.2.3.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16858">2.2.4 Verschlüsselte Inhaltsinformation (authEncryptedContentInfo)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16859">2.2.4.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16861">2.2.4.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16862">2.2.5 Ungeschützte Attribute (unauthAttrs)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16863">2.2.5.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16868">2.2.5.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16869">2.2.6 Beispiel</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16870">2.3 Digital signierter Inhalt</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16871">2.3.1 Signed-data</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16872">2.3.1.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16875">2.3.1.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16876">2.3.2 Algorithmen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16877">2.3.3 Gekapselte Inhaltsinformation (encapContentInfo)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16878">2.3.3.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16880">2.3.3.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16881">2.3.4 Zertifikate (certificates)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16882">2.3.4.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16884">2.3.4.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16885">2.3.5 Unterzeichnerinformationen (signerInfos)</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16886">2.3.5.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16892">2.3.5.2 Kommentare (nicht normativ)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16893">3 Anforderungen an Zertifikate</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16894">3.1 Zertifikatsprofile</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16895">3.1.1 Verschlüsselungszertifikate</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16896">3.1.1.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16898">3.1.1.2 Kommentare (nicht normativ)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16899">3.1.2 Signaturzertifikate</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16900">3.1.2.1 Normative Beschreibung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16902">3.1.2.2 Kommentare (nicht normativ)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16903">4 Anhang A</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16904">4.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16905">4.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16906">4.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16907">4.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16908">4.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16909">4.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-16910">4.5.2 Weitere Dokumente</a></li>
+  </div>
+  <p id="polarion_28"> <br> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-16819">1 Einführung</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16820">1.1 Zielsetzung des Dokuments</h3>
+  <p id="polarion_29">Dieses Dokument definiert ein Profil für S/MIME (Secure/Multipurpose Internet Mail Extentions). Dieses Profil konkretisiert die S/MIME-Spezifikation für das Projekt „Kommunikation Leistungserbringer“ (KOM-LE). Ziel dieses Profils ist die Gewährleistung der Interoperabilität sowie der Schutz von Vertraulichkeit und Integrität der KOM-LE-Nachrichten.</p>
+  <p id="polarion_30">Das Profil basiert auf der Spezifikation von S/MIME Version 3.2. Nicht alle marktüblichen E-Mail-Clients unterstützen alle S/MIME-Leistungsmerkmale, die in diesem Profil verwendet werden (z.B. die Unterstützung von Zertifikaten ohne E-Mail-Adresse – in S/MIME Version 3 eingeführt, Schutz von Header-Elementen – in S/MIME Version 3.2 eingeführt). Die Kompatibilität mit marktüblichen E-Mail-Clients ist deshalb nicht Ziel dieses Profils.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16821">1.2 Zielgruppe</h3>
+  <p id="polarion_31">Dieses Dokument richtet sich, neben Personengruppen die grundsätzlich an den Verfahren von KOM-LE interessiert sind, an</p>
+  <ul id="polarion_32"> 
+   <li>Entwickler von fachspezifischen Clientmodulen,</li> 
+   <li>Primärsystemhersteller,</li> 
+   <li>Verantwortliche für Zulassung und Test.</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16822">1.3 Geltungsbereich</h3>
+  <p id="polarion_33">Das vorliegende Dokument enthält Festlegungen, die von Herstellern und Betreibern von Komponenten und Diensten der Telematikinfrastruktur im Rahmen der Projekte der Neuausrichtung zur Einführung der elektronischen Gesundheitskarte und der Telematikinfrastruktur zu beachten sind. Es gilt somit nicht für den Basis-Rollout.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16823">1.4 Arbeitsgrundlagen</h3>
+  <p id="polarion_34">Folgende Dokumente sind für dieses Profil normativ:</p>
+  <ul id="polarion_35"> 
+   <li>RFC 2119: Keywords for use in RFCs to Indicate Requirement Levels, S. Bradner, März 1997 [RFC2119]</li> 
+   <li>RFC 5652: Cryptographic Message Syntax (CMS), R. Housley, September 2009 [RFC5652]</li> 
+   <li>RFC 5750: Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Certificate Handling, B. Ramsdell, S. Turner, Januar 2010 [RFC5750]</li> 
+   <li>RFC 5751: Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Message Specification, B. Ramsdell, S. Turner, Januar 2010 [RFC5751]</li> 
+   <li>RFC 5322: Internet Message Format, P. Resnick, Ed., Oktober 2008 [RFC5322]</li> 
+  </ul>
+  <p id="polarion_36">Folgende Dokumente sind für dieses Profil informativ:</p>
+  <ul id="polarion_37"> 
+   <li>RFC 1847: Security Multiparts for MIME: Multipart/Signed and Multipart/Encrypted, J. Galvin, S. Murphy, S. Crocker, N. Freed, Oktober 1995 [RFC1847]</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16824">1.5 Abgrenzung des Dokuments</h3>
+  <p id="polarion_38">Dieses Dokument spezifiziert das Format einer integritäts- und vertraulichkeitsgeschützten KOM-LE-Nachricht. Das Dokument macht keine Vorgaben für Komponenten und Fachdienste, die an Erzeugung, Bearbeitung und Transport von KOM-LE-Nachrichten beteiligt sind.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16825">1.6 Methodik</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16826">1.6.1 Anforderungen</h4>
+  <p id="polarion_39">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_40">Sie werden im Dokument wie folgt dargestellt:</p>
+  <p id="polarion_1"> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> <span style="font-weight: bold;">[</span><span style="font-weight: normal;">&lt;=</span><span style="font-weight: bold;">]</span><br> </p>
+  <p id="polarion_42">Dabei umfasst die Anforderung sämtliche innerhalb der Textmarken angeführten Inhalte.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16828">1.6.2 Diagramme</h4>
+  <p id="polarion_43">Die Darstellung der Spezifikationen von Komponenten erfolgt auf der Grundlage einer durchgängigen Use-Case-Modellierung als</p>
+  <ul id="polarion_44"> 
+   <li>technische Use Cases (eingebundene Graphik sowie tabellarische Darstellung mit Vor- und Nachbedingungen gemäß Modellierungsleitfaden), </li> 
+   <li>Sequenz- und Aktivitätendiagramme sowie </li> 
+   <li>Klassendiagramme</li> 
+   <li>XML-Strukturen und Schnittstellenbeschreibungen.</li> 
+  </ul>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16829">1.6.3 Nomenklatur</h4>
+  <p id="polarion_45">Sofern im Text dieser Spezifikation auf die Ausgangsanforderungen verwiesen wird, erfolgt dies in eckigen Klammern, z.B. [KOMLE-A_2015]. Wird auf Eingangsanforderungen verwiesen, erfolgt dies in runden Klammern, z.B. (KOMLE-A_202).</p>
+  <p id="polarion_46" style="text-align: center;"> <br> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-16830">2 S/MIME-Profil-Anforderungen</h2>
+  <p id="polarion_47">Dieses Kapitel beschreibt das Format einer integritäts- und vertraulichkeitsgeschützten KOM-LE-Nachricht.</p>
+  <p id="polarion_48">Diesem Profil konforme Nachrichten MÜSSEN alle Mussbestimmungen von IETF RFCs 5652 [RFC5652], 5083 [RFC5083], 5750 [RFC5750] und 5751 [RFC5751] umsetzen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16831">2.1 Strukturkonformität</h3>
+  <p id="polarion_49">Um die Interoperabilität zwischen KOM-LE-Clients sicherzustellen und den Integritäts- und Vertraulichkeitsschutz für KOM-LE-Nachrichten zu gewährleisten, wird hier eine für alle KOM-LE-Nachrichten geltende Struktur definiert.</p>
+  <p id="polarion_50">Abbildung 1 bietet eine informative Darstellung der Struktur einer KOM-LE-Nachricht.</p>
+  <p id="polarion_51" style="text-align: center;" data-keep-next="true"> <br> <img data-keep-next="true" src="attachments/image3.jpeg" style="width: 574px;height: 163px;"><br> </p>
+  <p id="polarion_52" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Abb_Struk_KOMLE_Msg Struktur einer KOM-LE-Nachricht (informativ) </p>
+  <p id="polarion_53">Eine KOM-LE-Nachricht besteht aus zwei Schichten. Die äußere Schicht ist eine entsprechend S/MIME-Standard signierte und verschlüsselte E-Mail-Nachricht. Weiter unten im Text wird diese Nachricht als äußere Nachricht bezeichnet. Die innere Schicht ist eine zu schützende E-Mail-Nachricht, die die Nutzdaten enthält und als message/rfc822 MIME Einheit in die äußere Nachricht verpackt ist.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16832">2.1.1 Nachricht</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16833">2.1.1.1 Normative Beschreibung</h5>
+  <p id="polarion_54">Eine diesem KOM-LE-Profil konforme Nachricht hat folgende Struktur:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16834">
+   <p><b>KOM-LE-A_2095</b></p>
+   <p><p style="margin-left: 0px;"><span>Eine KOM-LE-Nachricht MUSS zuerst digital signiert und danach verschlüsselt werden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16835">
+   <p><b>KOM-LE-A_2096</b></p>
+   <p><p style="margin-left: 0px;"><span>Das digitale Signieren und die Verschlüsselung MÜSSEN entsprechend der S/MIME Version 3.2 erfolgen. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16836">
+   <p><b>KOM-LE-A_2097</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> verschlüsselte Body der Nachricht MUSS eine </span><span style="font-family: 'Courier New', Courier, monospace;">message/rfc822</span><span> MIME Ei</span><span>n</span><span>heit sein</span><span>, die die zu schützende Nachricht mit Nutzdaten enthält. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116263">
+   <p><b>KOM-LE-A_2098-03</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Header der äußeren Nachricht MUSS mit den <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">orig-date, from, sender, reply-to, to, cc, bcc</span> der inneren Nachricht identisch sein. Ein Headerelement der inneren Nachricht beginnend mit dem Bezeichner <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KIM-</span> MUSS in den äußeren Header übernommen werden.<span id="polarion-comment:16"></span></span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16838">
+   <p><b>KOM-LE-A_2099</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> Header der äußeren Nachricht MUSS ein Header-Element </span><span>X-KOM-LE-Version</span><span> enthalten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117837">
+   <p><b>KOM-LE-A_2100-02</b></p>
+   <p>Der Wert des <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KOM-LE-Version</span> Elements MUSS auf die KOM-LE Version gesetzt werden, die für das Clientmodul zur Verarbeitung auf der Empfängerseite notwendig ist. <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_20"> Wenn für eine E-Mail-Nachricht keine Anhänge auf dem KAS abgelegt werden, handelt es sich bei der E-Mail um eine Nachricht in der KIM-Version 1.0. Werden Anhänge aus der E-Mail-Nachricht auf dem KAS abgelegt, wird das Element&nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KOM-LE-Version</span> mit der KIM-Version 1.5 in der E-Mail-Nachricht befüllt. </p>
+  <p id="polarion_24"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-114459">
+   <p><b>KOM-LE-A_2101-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Das Element Message-ID der äußeren Nachricht muss mit dem Inhalt des Elementes Message-ID der inneren Nachricht gefüllt werden.</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_19"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16841">
+   <p><b>KOM-LE-A_2102</b></p>
+   <p><p style="margin-left: 0px;"><span>Das</span><span> </span><span style="font-family: 'Courier New', Courier, monospace;">subject</span><span> </span><span>Header-Element der </span><span>äußeren Nachricht </span><span>MUSS</span><span> </span><span>„KOM-LE-Nachricht“ als Wert haben. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16842">
+   <p><b>KOM-LE-A_2103</b></p>
+   <p><p style="margin-left: 0px;"><span>Die</span><span> </span><span>digitale Signatur MUSS </span><span>application/pkcs7-mime</span><span> S/MIME Media-Typ mit </span><span>signed-data</span><span> Parameter verwenden (Opak-Signatur).</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16843">
+   <p><b>KOM-LE-A_2104</b></p>
+   <p><p style="margin-left: 0px;"><span>Die Verschlüsselung MUSS </span><span style="font-family: 'Courier New', Courier, monospace;">application/pkcs7-mime</span><span> S/MIME Media-Typ mit </span><span style="font-family: 'Courier New', Courier, monospace;">authenticated-env</span><span style="font-family: 'Courier New', Courier, monospace;">e</span><span style="font-family: 'Courier New', Courier, monospace;">lo</span><span>ped-data</span><span> Parameter verwenden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16844">2.1.1.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_65">S/MIME ist ein Set von Spezifikationen für die Absicherung der E-Mail-Kommunikation. Unter anderem spezifiziert S/MIME die Verschlüsselung und das digitale Signieren von MIME-Einheiten, die als Teil einer E-Mail-Nachricht transportiert werden können.</p>
+  <p id="polarion_66">Die Verschlüsselung und das Signieren betreffen nur den Body einer Nachricht. Der Header der Nachricht bleibt ungeschützt. Das resultiert aus der Notwendigkeit den Mailübertragungssystemen (Message Transfer Agents – MTAs) die Möglichkeit zu geben die im Header enthaltenen Adressierungsinformationen zu lesen sowie den Header mit neuen Einträgen zu ergänzen.</p>
+  <p id="polarion_67">Das KOM-LE-S/MIME-Profil sorgt dafür, dass die Integrität und Vertraulichkeit von Body und Header-Elementen einer Nachricht geschützt werden.</p>
+  <p id="polarion_68">Um das zu erreichen, verwendet dieses Profil ein im S/MIME Version 3.2 eingeführtes Verfahren, bei dem die ganze Nachricht (der Header und der Body) in einer message/rfc822 MIME-Einheit gekapselt, verschlüsselt und/oder signiert sowie als Anhang in einer neuen Nachricht verpackt wird.</p>
+  <p id="polarion_69">Der Header der äußeren Nachricht übernimmt die orig-date, from, sender, reply-to, to, cc, bcc Header-Elemente der originalen (inneren) Nachricht. Der Betreff der äußeren Nachricht soll keine schutzbedürftigen Daten enthalten.</p>
+  <p id="polarion_70">S/MIME ermöglicht das Verschlüsseln und Signieren in beliebiger Reihenfolge. Das KOM-LE-Profil fordert, dass die Daten zuerst signiert und danach verschlüsselt werden. Diese Reihenfolge stellt eine direkte Verbindung zwischen dem Inhalt der Nachricht und der Signatur her und sorgt dafür, dass die Information über den Unterzeichner durch die Verschlüsselung unsichtbar gemacht wird.</p>
+  <p id="polarion_71">S/MIME definiert zwei Möglichkeiten für das Anbringen einer Signatur:</p>
+  <ul id="polarion_72"> 
+   <li>Klartext-Signatur – die zu signierende unveränderte MIME-Einheit und die abgetrennte Signatur werden als Teile einer multipart/signed Nachricht transportiert (siehe [RFC1847])</li> 
+   <li>Opak-Signatur – die zu signierende MIME-Einheit wird zusammen mit der Signatur in einem CMS (Cryptographic Message Syntax) Objekt als Teil einer application/pkcs7-mime Nachricht transportiert.</li> 
+  </ul>
+  <p id="polarion_73">Die Klartext-Signatur ermöglicht es E-Mail-Clients ohne S/MIME-Unterstützung die signierten Inhalte darzustellen (ohne die Signatur zu prüfen). Der Nachteil ist, dass MTAs oder Virenscanner die Inhalte ändern können und dadurch die Signatur ungültig machen. Die Opak-signierten Daten werden in E-Mail-Clients ohne S/MIME-Unterstützung nicht angezeigt. Der Transport innerhalb eines CMS-Objektes bietet aber den Vorteil, dass solche Objekte nicht durch Virenscanner oder MTAs geändert werden. Aus diesem Grund wird in diesem Profil die Verwendung der Opak-Signatur vorgeschrieben.</p>
+  <p id="polarion_74">Die S/MIME-Spezifikation empfiehlt die Verwendung der Klartext-Signatur. Der Widerspruch entsteht dadurch, dass die Lesbarkeit einer Nachricht für die S/MIME-Spezifikation Priorität über die Möglichkeit die Signatur zu prüfen hat, was aber nicht Ziel des KOM-LE-S/MIME-Profils ist.</p>
+  <p id="polarion_75">Beispiel einer diesem Profil konformen Nachricht:</p>
+  <p id="polarion_76"> <span style="font-size: 10pt;line-height: 1.5;">X-KOM-LE-Version: 1.0</span> </p>
+  <p id="polarion_77"> <span style="font-size: 10pt;line-height: 1.5;">MIME-Version: 1.0</span> </p>
+  <p id="polarion_78"> <span style="font-size: 10pt;line-height: 1.5;">Message-Id: (message ID)</span> </p>
+  <p id="polarion_79"> <span style="font-size: 10pt;line-height: 1.5;">From: (mailbox in US-ASCII)</span> </p>
+  <p id="polarion_80"> <span style="font-size: 10pt;line-height: 1.5;">To: (address in US-ASCII)</span> </p>
+  <p id="polarion_81"> <span style="font-size: 10pt;line-height: 1.5;">Date: Wed, 16 Nov 2011 11:27:58 +0100</span> </p>
+  <p id="polarion_82"> <span style="font-size: 10pt;line-height: 1.5;">Subject: <span style="text-decoration: line-through;background-color: #FFFF99;"> </span>KOM-LE Nachricht</span> </p>
+  <p id="polarion_83"> <span style="font-size: 10pt;line-height: 1.5;">Content-Type: application/pkcs7-mime; </span> </p>
+  <p id="polarion_84" style="margin-left: 40px;"> <span style="font-size: 10pt;line-height: 1.5;">smime-type=authenticated-enveloped-data;</span> </p>
+  <p id="polarion_15" style="margin-left: 40px;"> <span style="font-size: 10pt;line-height: 1.5;">name=smime.p7m</span> </p>
+  <p id="polarion_86"> <span style="font-size: 10pt;line-height: 1.5;">Content-Transfer-Encoding: base64</span> </p>
+  <p id="polarion_87"> <span style="font-size: 10pt;line-height: 1.5;">Content-Disposition: attachment; filename=smime.p7m</span><br> </p>
+  <p id="polarion_89"> <span style="font-size: 10pt;line-height: 1.5;">rfvbnj756tbBghyHhHUujhJhjH77n8HHGT9HG4VQpfyF467GhIGfHfYT6</span> </p>
+  <p id="polarion_90"> <span style="font-size: 10pt;line-height: 1.5;">7n8HHGghyHhHUujhJh4VQpfyF467GhIGfHfYGTrfvbnjT6jH7756tbB9H</span> </p>
+  <p id="polarion_91"> <span style="font-size: 10pt;line-height: 1.5;">f8HHGTrfvhJhjH776tbB9HG4VQbnj7567GhIGfHfYT6ghyHhHUujpfyF4</span> </p>
+  <p id="polarion_92"> <span style="font-size: 10pt;line-height: 1.5;">0GhIGfHfQbnj756YT64V...</span> </p>
+  <p id="polarion_93"> <span style="font-size: 10pt;line-height: 1.5;">Das obere Beispiel stellt eine äußere KOM-LE-Nachricht dar, deren verschlüsselter Body eine opak-signierte application/pkcs7-mime MIME-Einheit enthält:</span> </p>
+  <p id="polarion_94"> <span style="font-size: 10pt;line-height: 1.5;">Content-Type: application/pkcs7-mime; </span> </p>
+  <p id="polarion_95" style="margin-left: 40px;"> <span style="font-size: 10pt;line-height: 1.5;">smime-type=signed-data;</span> </p>
+  <p id="polarion_96" style="margin-left: 40px;"> <span style="font-size: 10pt;line-height: 1.5;">name=smime.p7m</span> </p>
+  <p id="polarion_97"> <span style="font-size: 10pt;line-height: 1.5;">Content-Transfer-Encoding:&nbsp;&nbsp;binary</span> </p>
+  <p id="polarion_98"> <span style="font-size: 10pt;line-height: 1.5;">Content-Disposition: attachment; filename=smime.p7m</span><br> </p>
+  <p id="polarion_100"> <span style="font-size: 10pt;line-height: 1.5;">567GhIGfHfYT6ghyHhHUujpfyF4f8HHGTrfvhJhjH776tbB9HG4VQbnj7</span> </p>
+  <p id="polarion_101"> <span style="font-size: 10pt;line-height: 1.5;">77n8HHGT9HG4VQpfyF467GhIGfHfYT6rfvbnj756tbBghyHhHUujhJhjH</span> </p>
+  <p id="polarion_102"> <span style="font-size: 10pt;line-height: 1.5;">HUujhJh4VQpfyF467GhIGfHfYGTrfvbnjT6jH7756tbB9H7n8HHGghyHh</span> </p>
+  <p id="polarion_103"> <span style="font-size: 10pt;line-height: 1.5;">6YT64V0GhIGfHfQbnj75...</span> </p>
+  <p id="polarion_104"> <span style="font-size: 10pt;line-height: 1.5;">Der signierte Inhalt ist eine <span style="font-style: italic;">message/rfc822</span> MIME-Einheit, die die innere Nachricht enthält:</span> </p>
+  <p id="polarion_105"> <span style="font-size: 10pt;line-height: 1.5;">Content-Type: message/rfc822</span><br> </p>
+  <p id="polarion_107"> <span style="font-size: 10pt;line-height: 1.5;">MIME-Version: 1.0</span> </p>
+  <p id="polarion_108"> <span style="font-size: 10pt;line-height: 1.5;">From: (mailbox in US-ASCII)</span> </p>
+  <p id="polarion_109"> <span style="font-size: 10pt;line-height: 1.5;">To: (address in US-ASCII)</span> </p>
+  <p id="polarion_110"> <span style="font-size: 10pt;line-height: 1.5;">Date: Wed, 16 Nov 2011 11:27:58 +0100</span> </p>
+  <p id="polarion_111"> <span style="font-size: 10pt;line-height: 1.5;">Subject: Arztbrief: Herr Leo Mustermann</span><br> </p>
+  <p id="polarion_113"> <span style="font-size: 10pt;line-height: 1.5;">...</span><br> </p>
+  <p id="polarion_115"> <span style="font-size: 10pt;line-height: 1.5;">--unique-boundary-1</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16845">2.2 Verschlüsselter Inhalt</h3>
+  <p id="polarion_116"> Der S/MIME-Spezifikation entsprechend wird für verschlüsselte Daten (CMS) der Inhaltstyp <span style="font-style: italic;">authenticated-</span>e<span style="font-style: italic;">nveloped-data</span> verwendet. Die mit dem KOM-LE-S/MIME-Profil konforme Verschlüsselung muss die unten beschriebenen Anforderungen an die CMS beachten. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16846">2.2.1 Algorithmen</h4>
+  <p id="polarion_117">Dieses Profil unterstützt als Schlüssel-Verwaltungalgorithmus nur „key-transport“ (siehe 2.2.3). Bei diesem Verfahren werden Inhaltsdaten mit einem symmetrischen Inhaltsschlüssel verschlüsselt und der Inhaltsschlüssel wird noch mal je Empfänger asymmetrisch verschlüsselt. Dieses Verfahren ist als hybride Verschlüsselung bekannt. Die für die hybride Verschlüsselung zulässigen Algorithmen werden in [gemSpec_Krypt] vorgegeben und vom Konnektor bei der Verschlüsselung berücksichtigt.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16847">2.2.2 Authenticated-Enveloped-Data</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16848">2.2.2.1 Normative Beschreibung</h5>
+  <p id="polarion_118"> Für ein CMS-Objekt mit dem Inhaltstyp authenticated-enveloped-data<span style="font-style: italic;"> </span>gelten folgende Einschränkungen: </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16849">
+   <p><b>KOM-LE-A_2106</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element </span><span>authenticatedEnvelopedData</span><span> DARF NICHT </span><span>originatorInfo</span><span> enthalten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16850">
+   <p><b>KOM-LE-A_2107</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element </span><span>authenticatedEnvelopedData</span><span> MUSS </span><span>unauthAttrs</span><span> en</span><span>t</span><span>halten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16851">2.2.2.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_121"> Ein CMS-Objekt mit dem Inhaltstyp <span style="font-family: 'Courier New', Courier, monospace;">authenticated-</span>enveloped-data kann folgende Elemente enthalten: </p>
+  <ul id="polarion_122"> 
+   <li>version – ist entsprechend CMS-Spezifikation 2</li> 
+   <li>originatorInfo – optionales Element mit Informationen über Zertifikate des Senders; wird in diesem Profil nicht verwendet</li> 
+   <li>recipientInfos – beschrieben in Kapitel 2.2.3</li> 
+   <li><span style="font-family: 'Courier New', Courier, monospace;">auth</span>EncryptedContentInfo – beschrieben in Kapitel 2.2.4</li> 
+   <li><span style="font-family: 'Courier New', Courier, monospace;">mac </span>- Tag gemäß [GS-A_4389] in [gemSpec_Krypt]</li> 
+   <li>unauthAttrs – beschrieben in Kapitel 2.2.5.</li> 
+  </ul>
+  <p id="polarion_123">Das KOM-LE-S/MIME-Profil benutzt nur die Elemente, die für den Transport und die Entschlüsselung von Inhaltsdaten erforderlich sind. So werden Zertifikate des Senders, die z.B. für die Verschlüsselung der Antwort benötigt werden über einen Verzeichnisdienst oder andere Wege zugänglich gemacht. Die Nachricht muss ungeschützte Attribute enthalten.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16852">2.2.3 Empfängerinformationen (recipientInfos)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16853">2.2.3.1 Normative Beschreibung</h5>
+  <p id="polarion_124">Für die Empfängerinformationen (recipientInfos) gelten folgende Festlegungen:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16854">
+   <p><b>KOM-LE-A_2108</b></p>
+   <p><p style="margin-left: 0px;"><span>Die Empfängerinformation (</span><span style="font-family: 'Courier New', Courier, monospace;">recipientInfo</span><span style="font-family: 'Courier New', Courier, monospace;">s</span><span>) MUSS für alle</span><span> E</span><span>m</span><span>pfänger “key transport” </span><span>als </span><span>Schlüsselverwaltung</span><span>s</span><span>a</span><span>lgorithmus verwenden (</span><span>keyTransRecipientInfo</span><span> Typ)</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16855">
+   <p><b>KOM-LE-A_2109</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element </span><span style="font-family: 'Courier New', Courier, monospace;">keyTransRecipientInfo</span><span> </span><span>MUSS den Aus</span><span>s</span><span>teller und </span><span>die </span><span>Seriennummer verwenden</span><span>,</span><span> um das Zertifikat des Emp</span><span>f</span><span>ängers zu identifizieren (</span><span>issuerAndSerialNumber </span><span>Typ)</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112317">
+   <p><b>KOM-LE-A_2111-01</b></p>
+   <p>Die Empfängerinformation (<span style="font-family: 'Courier New', Courier, monospace;">recipientInfos</span>) MUSS zusätzlich zu den <span style="font-family: 'Courier New', Courier, monospace;">recipientInfo</span> Elementen für alle Empfänger auch ein recipientInfo Element für den Sender enthalten. <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16857">2.2.3.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_128"> <span style="font-family: 'Courier New', Courier, monospace;">RecipientInfos</span> besteht aus einem oder mehreren <span style="font-family: 'Courier New', Courier, monospace;">recipientInfo</span> Elementen. Es gibt ein Element pro Empfänger und jedes Element enthält Informationen, die ein entsprechender Empfänger zur Entschlüsselung des symmetrischen Nachrichtenschlüssels braucht. </p>
+  <p id="polarion_129"> Informationen, die ein recipientInfo<span style="font-style: italic;"> </span>Element enthält, sind von der jeweiligen Schlüsselverwaltungsmethode abhängig. </p>
+  <p id="polarion_130">Um auch dem Sender die Möglichkeit zu geben die Nachricht später zu öffnen, erfordert das KOM-LE-S/MIME-Profil auch ein recipientInfo Element für den Sender. Das Element kann entfallen, wenn das Verschlüsselungszertifikat des Senders nicht verfügbar ist.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16858">2.2.4 Verschlüsselte Inhaltsinformation (authEncryptedContentInfo)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16859">2.2.4.1 Normative Beschreibung</h5>
+  <p id="polarion_131">Für verschlüsselte Inhaltsinformationen (authEncryptedContentInfo) gelten folgende Festlegungen:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16860">
+   <p><b>KOM-LE-A_2112</b></p>
+   <p><p style="margin-left: 0px;"><span>Die verschlüsselte Inhaltsinformation (</span><span>authEncryptedContentInfo</span><span>)</span><span> MUSS </span><span>encryptedContent</span><span> enthalten</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16861">2.2.4.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_133">Die mit diesem Profil konformen symmetrischen Verschlüsslungsalgorithmen werden in [gemSpec_Krypt] vorgegeben und vom Konnektor bei der Verschlüsselung berücksichtigt. Die verschlüsselten Daten werden innerhalb des CMS-Objektes mittransportiert.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16862">2.2.5 Ungeschützte Attribute (unauthAttrs)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16863">2.2.5.1 Normative Beschreibung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119717">
+   <p><b>KOM-LE-A_2114-01</b></p>
+   <p>Eine dem KOM-LE-S/MIME-Profil konforme Nachricht MUSS ein <span style="font-family: 'Courier New', Courier, monospace;">recipient-emails</span> Attribut als ein ungeschütztes Attribut enthalten. Im Attribut werden die Zusammenhänge zwischen den für die Verschlüsselung verwendeten Zertifikaten und den E-Mail-Adressen der Empfänger gespeichert.<br><br>Der folgende Objekt-Identifikator identifiziert das recipient-emails Attribut:<br> <br> <span style="font-size: 11pt;line-height: 1.5;">id-recipientEmails OBJECT IDENTIFIER ::= {</span><span style="font-size: 9pt;line-height: 1.5;">1.2.276.0.76.4.173</span><span style="font-size: 11pt;line-height: 1.5;">}</span><br>Recipient-emails Attributwerte sind vom ASN.1 Typ RecipientEmails:<br> <span style="font-size: 11pt;line-height: 1.5;">RecipientEmails ::= SET SIZE (1..MAX) OF RecipientEmail</span><br> <span style="font-size: 11pt;line-height: 1.5;">RecipientEmail ::= SEQUENCE {</span><br> <span style="font-size: 11pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emailAddress IA5String,</span> <span style="font-size: 9pt;line-height: 1.5;">rid RecipientIdentifier }</span> <br> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117838">
+   <p><b>KOM-LE-A_2115-02</b></p>
+   <p>Für jedes Element vom Typ RecipientInfo MUSS es ein Element vom Typ RecipientEmail geben und die jeweiligen rid Elemente MÜSSEN auf dasselbe Zertifikat referenzieren.&nbsp;Die Übernahme der durch das Zertifikat bereitgestellten Parameter zum Issuer (DistinguishedName) in die ASN1-Struktur der Nachricht erfolgt in der RDNSequence absteigend, beginnend mit dem obersten RelativeDistinguishedName.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16866">
+   <p><b>KOM-LE-A_2116</b></p>
+   <p><p style="margin-left: 0px;"><span>Das </span><span>emailAddress </span><span>Element</span><span> </span><span>MUSS die E-Mail-Adresse des Zertifikatsinhabers des im </span><span>rid</span><span> referenzierten Ze</span><span>r</span><span>tifikats enthalten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16867">
+   <p><b>KOM-LE-A_2117</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> ASN.1 Typ </span><span style="font-family: 'Courier New', Courier, monospace;">RecipientIdentifier</span><span> entspricht dem gleichnamigen Typ aus der CMS-Spezifikation </span><span>[RFC5652]</span><span>. U</span><span>m das Zert</span><span>i</span><span>fikat des Emp</span><span>f</span><span>ängers zu identifizieren</span><span> MUSS</span><span> de</span><span>r</span><span> Aus</span><span>s</span><span>teller und </span><span>die </span><span>Seriennummer (</span><span>IssuerAndSeria</span><span>l</span><span>Number</span><span> </span><span>Typ)</span><span> verwendet werden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16868">2.2.5.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_140">Das KOM-LE-S/MIME-Profil unterstützt nur bestimmte Zertifikatsprofile (siehe Kapitel 3). Laut diesen Profilen enthalten die Verschlüsselungszertifikate nicht die E-Mail-Adresse des Zertifikatsinhabers. Um während der Entschlüsselung sicher zu stellen, dass die Nachricht mit dem Schlüssel des Abholers oder des Senders entschlüsselt wird, werden Zusammenhänge zwischen den für die Verschlüsselung verwendeten Zertifikaten und den E-Mail-Adressen der Empfänger und des Senders als unverschlüsselte Attribute im authenticated-enveloped-data CMS-Objekt abgelegt.</p>
+  <p id="polarion_141">UnauthAttrs ist ein optionales Element, das mehrere unverschlüsselte Attribute enthalten kann. Das KOM-LE-S/MIME-Profil definiert das recipient-emails Attribut als ein Set von mehreren Elementen des Typs RecipientEmail. Pro Element des Typs RecipientInfo gibt es ein Element des Typs RecipientEmail. Dadurch wird jedes Verschlüsselungszertifikat mit einer E-Mail-Adresse assoziiert.</p>
+  <p id="polarion_142">Um den Zusammenhang zwischen der E-Mail-Adresse und den Zertifikaten vor der Entschlüsselung herstellen zu können, müssen die Inhalte des recipient-emails Attributs unverschlüsselt transportiert werden. Infolgedessen wird die Integrität des Attributs nicht durch die S/MIME-Signatur geschützt.</p>
+  <p id="polarion_143">Um sicherzustellen, dass auf dem Weg zum Empfänger das recipient-emails Attribut nicht geändert wurde, muss das verschlüsselte signed-data CMS-Objekt die Kopie des Attributes als signiertes Attribut enthalten. Nach dem Entschlüsseln der Nachricht und Prüfung der Signatur können die Werte der beiden Attribute miteinander verglichen werden. Dadurch wird geprüft, ob das recipient-emails Attribut manipuliert wurde (siehe 2.3.5).</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16869">2.2.6 Beispiel</h4>
+  <p id="polarion_144"> Das folgende Beispiel stellt ein Fragment des <span style="font-family: 'Courier New', Courier, monospace;">authenticated</span>-enveloped-data CMS-Objektes, das eine entschlüsselte, an zwei Empfänger gerichtete innere Nachricht enthält, dar: </p>
+  <div id="polarion_wiki macro name=page_break|uid=polarion_1" contenteditable="false" data-is-landscape="false"></div>
+  <p id="polarion_145"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">ContentInfo<br> &nbsp;&nbsp;├contentType: </span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">1.2.840.113549.1.9.16.1.23 (id</span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">-ct-authEnvelopedData)</span> </p>
+  <p id="polarion_146"> <span style="font-size: 11pt;line-height: 1.5;">&nbsp;&nbsp;└AuthEnvelopedData</span> </p>
+  <p id="polarion_147"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;├</span><span style="font-size: 11pt;line-height: 1.5;">version: 0</span> </p>
+  <p id="polarion_148"> <span style="font-size: 11pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">├</span><span style="font-size: 11pt;line-height: 1.5;">recipientInfos</span> </p>
+  <p id="polarion_149"> <span style="font-size: 11pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">│</span><span style="font-size: 11pt;line-height: 1.5;"> </span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">├RecipientInfo</span> </p>
+  <p id="polarion_150"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │ └ktri</span> </p>
+  <p id="polarion_151"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; ├version: 0</span> </p>
+  <p id="polarion_152"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; ├rid</span> </p>
+  <p id="polarion_153"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; │ └issuerAndSerialNumber</span> </p>
+  <p id="polarion_154"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; │&nbsp;&nbsp; ├issuer</span> </p>
+  <p id="polarion_155"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; │&nbsp;&nbsp; │ ├…</span> </p>
+  <p id="polarion_156"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; │&nbsp;&nbsp; └SerialNumber: 123456789</span> </p>
+  <p id="polarion_157"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; ├keyEncryptionAlgorithm</span> </p>
+  <p id="polarion_158"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; │ └…</span> </p>
+  <p id="polarion_159"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp; └encryptedKey: …</span> </p>
+  <p id="polarion_160"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ └RecipientInfo</span> </p>
+  <p id="polarion_161"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp; └ktri</span> </p>
+  <p id="polarion_162"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├version: 0</span> </p>
+  <p id="polarion_163"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├rid</span> </p>
+  <p id="polarion_164"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │ └issuerAndSerialNumber</span> </p>
+  <p id="polarion_165"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp;&nbsp; ├issuer</span> </p>
+  <p id="polarion_166"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp;&nbsp; │ ├…</span> </p>
+  <p id="polarion_167"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp;&nbsp; └SerialNumber: 987654321</span> </p>
+  <p id="polarion_168"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├keyEncryptionAlgorithm</span> </p>
+  <p id="polarion_169"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │ └…</span> </p>
+  <p id="polarion_170"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; └encryptedKey: …</span> </p>
+  <p id="polarion_171"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;├authE</span><span style="font-size: 11pt;line-height: 1.5;">ncryptedContentInfo</span> </p>
+  <p id="polarion_172"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ ├contentType: </span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">1.2.840.113549.1.7.1</span><span style="font-size: 9pt;line-height: 1.5;"> </span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">(id-data)</span> </p>
+  <p id="polarion_173"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ ├contentEncryptionAlgorithm: </span> </p>
+  <p id="polarion_174"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp;├ algorithm: 2.16.840.1.101.3.4.1.46 (id-aes256-gcm)</span> </p>
+  <p id="polarion_175"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp;└ parameters: </span> </p>
+  <p id="polarion_176"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp;&nbsp;&nbsp;├ aes-nonce: …</span> </p>
+  <p id="polarion_177"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ │&nbsp;&nbsp;&nbsp;&nbsp;└ </span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">aes-ICVlen</span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">: …</span> </p>
+  <p id="polarion_178"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│ └encryptedContent: …</span> </p>
+  <p id="polarion_179"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│</span> </p>
+  <p id="polarion_180"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;├mac: …</span> </p>
+  <p id="polarion_181"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;│</span> </p>
+  <p id="polarion_182"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;└unauthAttrs</span> </p>
+  <p id="polarion_183"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└Attribute (</span><span style="font-size: 11pt;line-height: 1.5;">id-recipientEmails</span><span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">)</span> </p>
+  <p id="polarion_184"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├attrType: komle-recipient-emails</span> </p>
+  <p id="polarion_185"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└attrValues</span> </p>
+  <p id="polarion_186"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└RecipientEmails</span> </p>
+  <p id="polarion_187"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├RecipientEmail</span> </p>
+  <p id="polarion_188"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ ├emailAddress: mustermann@komle.de</span> </p>
+  <p id="polarion_189"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ └rid</span> </p>
+  <p id="polarion_190"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp; └issuerAndSerialNumber</span> </p>
+  <p id="polarion_191"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├issuer</span> </p>
+  <p id="polarion_192"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; │ ├…</span> </p>
+  <p id="polarion_193"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; └SerialNumber: 123456789</span> </p>
+  <p id="polarion_194"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</span> </p>
+  <p id="polarion_195"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└RecipientEmail</span> </p>
+  <p id="polarion_196"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├emailAddress: musterfrau@komle.de</span> </p>
+  <p id="polarion_197"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└rid</span> </p>
+  <p id="polarion_198"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└issuerAndSerialNumber</span> </p>
+  <p id="polarion_199"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├issuer</span> </p>
+  <p id="polarion_200"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ ├…</span> </p>
+  <p id="polarion_201"> <span style="font-size: 11pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└SerialNumber: 987654321</span> </p>
+  <p id="polarion_202">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16870">2.3 Digital signierter Inhalt</h3>
+  <p id="polarion_204">Der S/MIME-Spezifikation entsprechend, wird für digital signierte Daten CMS mit dem Inhaltstyp signed-data verwendet. Die mit dem KOM-LE-S/MIME-Profil konforme Signatur muss die unten beschriebenen Anforderungen an CMS beachten.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16871">2.3.1 Signed-data</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16872">2.3.1.1 Normative Beschreibung</h5>
+  <p id="polarion_205">Für ein CMS-Objekt mit dem Inhaltstyp signed-data gelten folgende Festlegungen:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16873">
+   <p><b>KOM-LE-A_2118</b></p>
+   <p><p style="margin-left: 0px;"><span>Ein CMS-Objekt mit dem Inhaltstyp </span><span style="font-family: 'Courier New', Courier, monospace;">signed-data</span><span> DARF NICHT </span><span>crls</span><span> en</span><span>t</span><span>halten.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16874">
+   <p><b>KOM-LE-A_2119</b></p>
+   <p><p style="margin-left: 0px;"><span>Ein CMS-Objekt mit dem Inhaltstyp </span><span style="font-family: 'Courier New', Courier, monospace;">signed-data</span><span> MUSS certificates enthalten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16875">2.3.1.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_208"> Ein CMS-Objekt mit dem Inhaltstyp <span style="font-family: 'Courier New', Courier, monospace;">signed-data</span> kann bis zu sechs Elemente enthalten: </p>
+  <ul id="polarion_209"> 
+   <li><span style="font-style: italic;">version</span> – entsprechend CMS-Spezifikation</li> 
+   <li>digestAlgorithm – identifiziert den Digest-Algorithmus, der bei der Signaturerzeugung verwendet wurde. </li> 
+   <li>encapContentInfo – Element mit Informationen über signierte Inhaltsdaten; beschrieben in Kapitel 2.3.3</li> 
+   <li><span style="font-family: 'Courier New', Courier, monospace;">certificates</span> – optionales Element mit Zertifikaten; beschrieben in Kapitel 2.3.4</li> 
+   <li><span style="font-family: 'Courier New', Courier, monospace;">crls</span> – optionales Element mit Zertifikatsperrlisten; wird in diesem Profil nicht verwendet</li> 
+   <li>signerInfos – Sammlung von Informationen über Unterzeichner&nbsp;&nbsp;</li> 
+  </ul>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16876">2.3.2 Algorithmen</h4>
+  <p id="polarion_210">Bei der Signaturerzeugung wird ein Digest (ein Hash-Wert) der zu signierenden Daten berechnet und mit dem privaten Schlüssel des Unterzeichners asymmetrisch verschlüsselt. Die entsprechenden kryptographischen Algorithmen werden in [gemSpec_Krypt] vorgegeben und beim Signieren vom Konnektor berücksichtigt.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16877">2.3.3 Gekapselte Inhaltsinformation (encapContentInfo)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16878">2.3.3.1 Normative Beschreibung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16879">
+   <p><b>KOM-LE-A_2121</b></p>
+   <p><p style="margin-left: 0px;"><span>Das </span><span>eContent</span><span style="font-weight: bolder;"> </span><span>Element</span><span style="font-weight: bolder;"> </span><span>der gekapselten Inhaltsinformation (</span><span>encapContentInfo</span><span>) </span><span>MUSS digital signierte Daten enthalten.</span><span style="font-weight: bolder;"> </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16880">2.3.3.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_212"> Im <span style="font-family: 'Courier New', Courier, monospace;">eContentType</span> Element enthält <span style="font-family: 'Courier New', Courier, monospace;">encapContentInfo</span><span style="font-style: italic;"> </span>den Typ der signierten Daten und im optionalen Element eContent die Daten selbst. Der S/MIME-Standard fordert, dass eContentType immer vom Typ id-data ist. Wenn die signierten Daten nicht im CMS-Objekt enthalten sind, müssen sie über andere Wege transportiert werden – z.B. werden bei der Klartextsignatur die signierten Inhaltsdaten in einer separaten MIME-Entität mittransportiert. Dadurch, dass das KOM-LE-S/MIME-Profil nur die Opak-Signatur erlaubt, enthält das CMS-Objekt immer die signierten Daten. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16881">2.3.4 Zertifikate (certificates)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16882">2.3.4.1 Normative Beschreibung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16883">
+   <p><b>KOM-LE-A_2122</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element</span><span> Zertifikate</span><span> </span><span>(</span><span>certificates</span><span>) </span><span>MUSS das Signaturzertifikat enthalten</span><span>. Weitere Zertifikate dürfen nicht enthalten sein. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16884">2.3.4.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_214"> Im optionalen <span style="font-family: 'Courier New', Courier, monospace;">certificates</span> Element können ein oder mehrere Zertifikate transportiert werden. Das KOM-LE-S/MIME-Profil erfordert, dass das Signaturzertifikat des Unterzeichners zusammen mit der signierten Nachricht transportiert wird. Andere Zertifikate dürfen in diesem Element nicht enthalten sein. Die für die Prüfung des Zertifizierungspfads notwendigen Zertifikate sollen dem Client über andere Wege zugänglich gemacht werden. Die Inhaltsdaten der Nachricht werden nur einmalig signiert (siehe Kapitel 2.3.5). Somit enthält das <span style="font-family: 'Courier New', Courier, monospace;">cert</span>ificates - Element nur ein Zertifikat. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16885">2.3.5 Unterzeichnerinformationen (signerInfos)</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16886">2.3.5.1 Normative Beschreibung</h5>
+  <p id="polarion_215">Für das Element Unterzeichnerinformationen (signerInfos) gelten folgende Festlegungen:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16887">
+   <p><b>KOM-LE-A_2123</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element Unterzeichnerinformationen (</span><span>signerInfos</span><span>) MUSS genau ein </span><span>signerInfo</span><span> Element enthalten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16888">
+   <p><b>KOM-LE-A_2124</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element </span><span style="font-weight: bolder;font-family: 'Courier New', Courier, monospace;">sid</span><span style="font-style: italic;"> </span><span>der Unterzeichnerinformationen</span><span> (</span><span style="font-family: 'Courier New', Courier, monospace;">signerInfos</span><span>)</span><span> </span><span>MUSS den Aus</span><span>s</span><span>teller und </span><span>die </span><span>Seriennummer verwenden um das Signaturzert</span><span>i</span><span>fikat zu identifizieren (</span><span>issuerAndSerialNumber</span><span style="font-style: italic;"> </span><span>Typ</span><span>)</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16889">
+   <p><b>KOM-LE-A_2125</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> </span><span>Au</span><span>s</span><span>steller und </span><span>die </span><span>Seriennummer</span><span>,</span><span> die in </span><span style="font-family: 'Courier New', Courier, monospace;">sid</span><span> enthalten</span><span> sind,</span><span> MÜSSEN dem Signaturzertifikat aus dem </span><span style="font-family: 'Courier New', Courier, monospace;">ce</span><span>rtificates</span><span> El</span><span>e</span><span>ment entsprechen</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16890">
+   <p><b>KOM-LE-A_2126</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element Unterzeichnerinformationen (</span><span style="font-family: 'Courier New', Courier, monospace;">signerInfos</span><span>) </span><span>DARF NICHT </span><span>unsignedAttrs</span><span> entha</span><span>l</span><span>ten.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16891">
+   <p><b>KOM-LE-A_2127</b></p>
+   <p><p style="margin-left: 0px;"><span>Das Element Unterzeichnerinformationen (</span><span>signerInfos</span><span>) MUSS </span><span>recipient-emails</span><span> als signiertes Attribut enthalten. </span><span>Recipient-emails</span><span> </span><span>MUSS</span><span> die gleichen Werte enthalten wie das </span><span>recipient-emails</span><span> </span><span>Attribut</span><span> </span><span>des</span><span> entspr</span><span>e</span><span>chenden</span><span> authenticated-</span><span>enveloped-data</span><span> </span><span>CMS</span><span>-</span><span>Objektes (s</span><span>i</span><span>ehe</span><span> Kapitel</span><span> </span><span></span><span></span><span></span><span>2.2.5</span><span></span><span>)</span><span>. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16892">2.3.5.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_221"> Das Element<span style="font-style: italic;"> </span><span style="font-family: 'Courier New', Courier, monospace;">SignerInfos</span> kann Informationen über mehrere (parallele) Signaturen enthalten. Das KOM-LE-S/MIME-Profil erlaubt nur eine Signatur. Dadurch enthält signerInfos nur ein signerInfo Element.<span style="font-style: italic;"> </span> </p>
+  <p id="polarion_222">Das Element signerInfo enthält Informationen über den beim Signieren verwendeten kryptographischen Algorithmus, die Signatur selbst, den Verweis auf das Signaturzertifikat sowie eine Reihe von Attributen (signierten und nicht signierten).</p>
+  <p id="polarion_223">Im KOM-LE-S/MIME-Profil wird auf das Zertifikat des Unterzeichners über den Aussteller und die Seriennummer verwiesen. Dieser Verweis muss dem im certificates Element enthaltenen Zertifikat entsprechen.</p>
+  <p id="polarion_224"> Das Element<span style="font-style: italic;"> </span>SignerInfo kann mehrere signierte Attribute enthalten, unsignierte Attribute dürfen aber nicht vorhanden sein. </p>
+  <p id="polarion_225">Das signierte Attribut recipient-emails wird für die nachträgliche Prüfung der Integrität des gleichnamigen unverschlüsselten Attributs des entsprechenden authenticated-enveloped-data CMS-Objektes verwendet (siehe 2.2.5.2).</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-16893">3 Anforderungen an Zertifikate</h2>
+  <p id="polarion_227">Dieses Kapitel definiert Zertifikate, die für den Integritäts- und Vertraulichkeitsschutz einer KOM-LE-Nachricht verwendet werden dürfen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16894">3.1 Zertifikatsprofile</h3>
+  <p id="polarion_228">Eine zum KOM-LE-S/MIME-Profil konforme Nachricht kann nur mit bestimmten Zertifikaten verschlüsselt bzw. digital signiert werden.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16895">3.1.1 Verschlüsselungszertifikate</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16896">3.1.1.1 Normative Beschreibung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16897">
+   <p><b>KOM-LE-A_2128</b></p>
+   <p>Eine<span style="font-weight: bold;"> </span>KOM-LE-S/MIME-Profil konforme Nachricht MUSS entweder ein Verschlüsselungszertifikat der SMC Typ B (C.HCI.ENC) oder ein Verschlüsselungszertifikat des HBA (C.HP.ENC) benutzen/referenzieren. Das Profil des C.HCI.ENC Zertifikats wird in [gemSpec_PKI] beschrieben. Das Profil des C.HP.ENC Zertifikats wird ebenfalls in [gemSpec_PKI] beschrieben. Die Verwendung anderer Zertifikate zur Verschlüsselung von KOM-LE-S/MIME-Profil konformen Nachrichten ist nicht zulässig. <br> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16898">3.1.1.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_230">Dieses Profil macht strikte Vorgaben bezüglich der Zertifikate, die für die Verschlüsselung verwendet werden dürfen. Es darf entweder ein auf einer SMC Typ B gespeichertes C.HCI.ENC- oder ein auf einem HBA (inkl. Vorläuferkarten HBA-qSig und ZOD-2.0) gespeichertes C.HP.ENC-Zertifikat benutzt werden.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16899">3.1.2 Signaturzertifikate</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16900">3.1.2.1 Normative Beschreibung</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-16901">
+   <p><b>KOM-LE-A_2129</b></p>
+   <p>Eine KOM-LE-S/MIME-Profil konforme Nachricht MUSS ein Organisationszertifikat der SMC Typ B (C.HCI.OSIG) als Signaturzertifikat benutzen/referenzieren. Das Profil des C.HCI.OSIG Zertifikats wird in [gemSpec_PKI] beschrieben. Die Verwendung anderer Zertifikate zur Signatur ist nicht zulässig. <br> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-16902">3.1.2.2 Kommentare (nicht normativ)</h5>
+  <p id="polarion_232">Ähnlich wie bei der Verschlüsselung, dürfen mit dem KOM-LE-S/MIME-Profil konforme Nachrichten nur bestimmte Zertifikate als Signaturzertifikate verwenden. Es darf nur ein auf einer SMC Typ B gespeichertes C.HCI.OSIG Zertifikat benutzt werden.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-16903">4 Anhang A</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16904">4.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kürzel</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Erläuterung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Cryptographic Message Syntax</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HBA</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Heilberufsausweis</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">MIME</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Multipurpose Internet Mail Extensions</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">S/MIME</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Secure Multipurpose Internet Mail Extensions</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 130px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SMC</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 461px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Secure Module Card</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16905">4.2 Glossar</h3>
+  <p id="polarion_235">Das Glossar wird als eigenständiges Dokument, vgl [gemGlossar] zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16906">4.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_52">Abbildung 1: Abb_Struk_KOMLE_Msg Struktur einer KOM-LE-Nachricht (informativ)</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16907">4.4 Tabellenverzeichnis</h3>
+  <p id="polarion_236">Keine Tabellen vorhanden</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-16908">4.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16909">4.5.1 Dokumente der gematik</h4>
+  <p id="polarion_237">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummer entnehmen Sie bitte der aktuellen, auf der Internetseite der gematik veröffentlichten Dokumentenlandkarte, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_238"></p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 191px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> [Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 540px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 10px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Krypt]</span> </td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 10px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Verwendung kryptographischer Algorithmen in der Telematikinfrastruktur</span> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_PKI]</td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Spezifikation PKI</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_240"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-16910">4.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 191px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 540px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel<br> </span></th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 15px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC822]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 15px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 822: Standard for ARPA Internet Text Messages, David H. Crocker,&nbsp;&nbsp;August 1982<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 35px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC1847]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 35px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 1847: Security Multiparts for MIME: Multipart/Signed and Multipart/Encrypted, J. Galvin, S. Murphy, S. Crocker, N. Freed, Oktober 1995<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC2119]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 2119: Key words for use in RFCs to Indicate Requirement Levels, S. Bradner, März 1997<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC5322]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 5322: Internet Message Format, P. Resnick, Ed., Oktober 2008<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC5652]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 5652: Cryptographic Message Syntax (CMS), R. Housley, September 2009<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC5750]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 5750: Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Certificate Handiling, B. Ramsdell, S. Turner, Januar 2010<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC5751]<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">RFC 5751: Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Message Specification, B. Ramsdell, S. Turner, Januar 2010<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 191px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[RFC5083]</td> 
+     <td style="text-align: left;vertical-align: top;width: 540px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">RFC 5083: Authenticated-Enveloped-Data Content Type, R.Housley, November 2007</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_17"></p>
+ </body>
+</html>

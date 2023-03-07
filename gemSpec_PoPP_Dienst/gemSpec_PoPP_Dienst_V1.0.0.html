@@ -1,0 +1,1316 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"></p>
+  <p id="polarion_137"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Spezifikation&nbsp;PoPP-Dienst</span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <p id="polarion_15"> <br> </p>
+  <div id="polarion_editor_html_block2" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.0.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>578932</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>06.02.2023</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>in Bearbeitung</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_PoPP_Dienst</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-136911">Dokumenteninformationen</h1>
+  <p id="polarion_21"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_23"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;kurze Beschreibung der inhaltlichen Änderungen (max. ½ Seite)&gt;&gt;</span> </p>
+  <p id="polarion_24"></p>
+  <p id="polarion_25" data-keep-next="true"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=6" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 78px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Version<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86.8px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Stand<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 65.2px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Kap./ Seite<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 348.4px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Grund der Änderung, besondere Hinweise<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 120.4px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Bearbeitung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 86.8px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 65.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 348.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 120.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 86.8px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 65.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 348.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 120.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 86.8px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 65.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 348.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 120.4px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_27"> <br> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Genereller Hinweis:</span> </p>
+  <p id="polarion_29"> <span style="font-style: italic;color: #3333FF;">Hidden Text wird blau dargestellt</span> </p>
+  <p id="polarion_30"> <span style="font-style: italic;color: #3333FF;">In doppelten spitzen Klammen gefasste Mustertexte der Vorlage sind Hidden Text und sind für die Druckaufbereitung normalerweise ausgeblendet.</span> </p>
+  <p id="polarion_31"> <span style="font-style: italic;color: #3333FF;">In einfachen spitzen Klammern gesetzte Begriffe sind Platzhalter und sinngemäß auszutauschen bzw. zu entfernen.</span> </p>
+  <p id="polarion_32"> <span style="font-style: italic;color: #3333FF;">Alle Anforderungen und Abbildungen sind Muster und zu entfernen.</span> </p>
+  <p id="polarion_33"> <span style="font-style: italic;color: #3333FF;">Fachliche Formulierungen und Abbildungen aus dem Kontext der TI sind beispielhaft und müssen entfernt werden</span> </p>
+  <p id="polarion_34"> <span style="font-style: italic;color: #3333FF;">Weitere Hinweise – insbesondere zum Umgang mit Anforderungen – siehe Kap. 2.&gt;&gt;</span> </p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-136912">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-136911">Dokumenteninformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-136912">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136913">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136914">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136915">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136916">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136917">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136918">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136919">2 Systemüberblick</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136920">3 Systemkontext</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136921">3.1 Akteure und Rollen &lt;&lt;optional – ggf. komplett zu streichen&gt;&gt;</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136922">3.2 Nachbarsysteme &lt;&lt;optional – ggf. komplett zu streichen&gt;&gt;</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136923">4 Zerlegung des Produkttyps</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136924">5 Übergreifende Festlegungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136963">5.1 Fehlerhandling</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136925">6 Funktionsmerkmale</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136926">6.1 Proof of Patient Presence</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136954">6.1.1 Schnittstelle I_PoPP_Service</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136957">6.1.1.1 Operation getChallenge</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136955">6.1.1.1.1 Umsetzung getChallenge</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136956">6.1.1.2 Operation createPoPPToken</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136958">6.1.1.2.1 Umsetzung createPoPPToken</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136959">6.2 Schnittstellen zu zentralen Diensten</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136936">6.2.1 Testunterstützung</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136937">6.2.2 Hardwaremerkmale</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-137222">6.3 Datenschutz &amp; Sicherheit</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136971">6.4 Betrieb</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136969">6.4.1 Servicekonzept</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136970">6.4.1.1 Servicemodell</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136976">6.4.1.1.1 Servicezerlegung</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136977">6.4.1.1.2 Mitwirkungsverpflichtung im TI-ITSM gemäß [gemRL_Betr_TI]</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136974">6.4.1.1.3 Spezifische Ausprägungen und Verpflichtungen einzelner Rollen</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136975">6.4.1.1.4 Anbieter Proof-of-Patient-Presence-Dienst</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136972">6.4.1.2 Supportkonzept</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136973">6.4.1.3 Organisatorische Service Level</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136980">6.4.1.4 Technische Service Level / Performance-Kenngrößen</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136978">6.4.1.4.1 Spezifische Ausprägungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136987">6.4.2 gemKPT_Betr: Anhang A</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136988">6.4.3 gemSpec_Perf#Rohdaten-Performance-Reporting</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136984">6.4.3.1 Umfang</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136986">6.4.3.2 Lieferintervalle</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136981">6.4.3.3 Format</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136982">6.4.4 gemSpecPerf#3.x Proof-of-Patient-Presence-Dienst</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136985">6.4.4.1 Leistungsanforderungen Proof-of-Patient-Presence-Dienst</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136983">6.4.4.1.1 Performancevorgaben Proof-of-Patient-Presence-Dienst</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-137012">6.4.4.2 Rohdaten-Performance-Reporting Spezifika Proof-of-Patient-Presence-Dienst</a></li>
+   <li> : : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-137011">6.4.4.2.1 3.x.2.2 Format</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136938">7 Informationsmodell</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136939">8 Verteilungssicht</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136940">9 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136941">9.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136942">9.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136943">9.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136944">9.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136945">9.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136946">9.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136947">9.5.2 Weitere Dokumente</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136948">9.6 Verzeichnis der verwendeten Operationen und Interfaces &lt;&lt;optional&gt;&gt;</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136949">9.7 Klärungsbedarf &lt;&lt;optional&gt;&gt;</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-136950">9.8 Allgemeine Erläuterungen &lt;&lt;optional&gt;&gt;</a></li>
+  </div>
+  <p id="polarion_38"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136913">1 Einordnung des Dokumentes</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136914">1.1 Zielsetzung</h3>
+  <p id="polarion_40">Die vorliegende Spezifikation definiert die Anforderungen zu Herstellung, Test und Betrieb des Produkttyps &lt;Produkttyp&gt;.</p>
+  <p id="polarion_41"> <span style="font-style: italic;color: #3333FF;">&lt;Beispiel: Die vorliegende Spezifikation definiert die Anforderungen zu Herstellung, Test und Betrieb des Produkttyps ABC.&gt;</span><br> </p>
+  <p id="polarion_19"> <span style="font-style: italic;color: #3333FF;">&lt;Danach kurze fachliche Einordnung des Dokumentengegenstands.&gt;</span><br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136915">1.2 Zielgruppe</h3>
+  <p id="polarion_44">Das Dokument richtet sich an &lt;Benennungen&gt;.</p>
+  <p id="polarion_20"> <span style="font-style: italic;color: #3333FF;">&lt;Beispiel: Das Dokument richtet sich an Hersteller von Produkten des Produkttyps ABC sowie an Hersteller und Anbieter von weiteren Produkttypen der Fachanwendung XYZ.&gt;</span><br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136916">1.3 Geltungsbereich</h3>
+  <p id="polarion_53">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungs- oder Abnahmeverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekanntgegeben.</p>
+  <p id="polarion_54"></p>
+  <p id="polarion_26"> <span style="font-weight: bold;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_55"> <span style="font-style: italic;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <p id="polarion_18"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136917">1.4 Abgrenzungen</h3>
+  <p id="polarion_58"> Spezifiziert werden in dem Dokument die von dem Produkttyp bereitgestellten (angebotenen) Schnittstellen. Benutzte Schnittstellen werden hingegen in der Spezifikation desjenigen Produkttypen beschrieben, der diese Schnittstelle bereitstellt. Auf die entsprechenden Dokumente wird referenziert (siehe auch Anhang <span class="polarion-rte-link" data-type="crossReference" id="fake" data-scope="gematikLibrary" data-item-id="WI-375" data-option-id="shortoutline"></span>). </p>
+  <p id="polarion_59">Die vollständige Anforderungslage für den Produkttyp ergibt sich aus weiteren Konzept- und Spezifikationsdokumenten, diese sind in dem Produkttypsteckbrief des Produkttyps &lt;Produkttyp&gt; verzeichnet.</p>
+  <p id="polarion_60"> <span style="font-style: italic;color: #3333FF;">&lt;sofern erforderlich, sind Abgrenzungen zu anderen Spezifikationen/Konzepten oder im Kontext derzeit nicht relevanten Themen vorzunehmen, andernfalls entfällt dieser Absatz&gt;</span> </p>
+  <p id="polarion_61">&lt;Nicht Bestandteil des vorliegenden Dokumentes sind die Festlegungen zum Themenbereich... &gt;</p>
+  <p id="polarion_62"> <span style="font-style: italic;color: #3333FF;">&lt;usw.&gt;</span> </p>
+  <p id="polarion_198"> <br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136918">1.5 Methodik</h3>
+  <p id="polarion_17"> Anwendungsfälle und Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID,<br> Anforderungen zusätzlich durch die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet. </p>
+  <p id="polarion_35">Da in dem Beispielsatz „Eine leere Liste DARF NICHT ein Element besitzen.“ die Phrase „DARF NICHT“ semantisch irreführend wäre (wenn nicht ein, dann vielleicht zwei?), wird in diesem Dokument stattdessen „Eine leere Liste DARF KEIN Element besitzen.“ verwendet. Die Schlüsselworte werden außerdem um Pronomen in Großbuchstaben ergänzt, wenn dies den Sprachfluss verbessert oder die Semantik verdeutlicht.</p>
+  <p id="polarion_37"> Anwendungsfälle und Anforderungen werden im Dokument wie folgt dargestellt:<br> <span style="font-weight: bold;">&lt;AF-ID&gt; - &lt;Titel des Anwendungsfalles&gt;<br> </span> Text / Beschreibung<br> [&lt;=] </p>
+  <p id="polarion_42">bzw.</p>
+  <p id="polarion_43"> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> [&lt;=] </p>
+  <p id="polarion_45">Dabei umfasst der Anwendungsfall bzw. die Anforderung sämtliche zwischen ID und Textmarke [&lt;=] angeführten Inhalte.</p>
+  <p id="polarion_65"></p>
+  <p id="polarion_69" style="margin-left: 0px;"></p>
+  <p id="polarion_71"> <span style="font-style: italic;color: #3333FF;">&lt;Weitere Methodik-Hinweise (z.B. auf UML als Modellierungsform) sind nicht erforderlich.&gt;</span><br> </p>
+  <p id="polarion_28"> <span style="font-weight: bold;">Hinweis auf offene Punkte</span> <span style="font-style: italic;color: #3333FF;">&lt;&lt;optional; Kasten mit "Offener Punkt" in das entsprechende Kapitel einfügen&gt;&gt;</span> </p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=100%|uid=29" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 591.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;color: #3333FF;">Offener Punkt: Das Kapitel wird in einer späteren Version des Dokumentes ergänzt.</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_76"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136919">2 Systemüberblick</h2>
+  <p id="polarion_78"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;hier erfolgt, in <span style="font-weight: bold;">knappen</span> Worten und ggf. Diagrammen, ein <span style="font-weight: bold;">informativer</span> Überblick über den Produkttyp und die Aufgaben die er erfüllt, und die Nachbarsysteme und Rollen, die mit diesem System (Produkttyp) interagieren. Um Redundanzen zu den Konzepten zu vermeiden, kann auf die Konzepte verwiesen werden, in denen relevante Anteile zum Systemüberblick des Produkttyps festgelegt wurden (z.B. relevante Use Cases). Dies Kapitel ist rein informativ, es dürfen keine Anforderungen gestellt werden.&gt;&gt;</span> </p>
+  <p id="polarion_79"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136920">3 Systemkontext</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136921">3.1 Akteure und Rollen &lt;&lt;optional – ggf. komplett zu streichen&gt;&gt;</h3>
+  <p id="polarion_81"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;<span style="font-weight: bold;">Optionale</span> Dezidiert auf den Produkttyp bezogene Konkretisierung von Akteuren und Rollen, basierend auf den Festlegen in den Konzepten. Es darf keine normative Wiederholung von Akteuren und Rollen der Konzepte erfolgen.&gt;&gt;</span><br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136922">3.2 Nachbarsysteme &lt;&lt;optional – ggf. komplett zu streichen&gt;&gt;</h3>
+  <p id="polarion_84"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;<span style="font-weight: bold;">Optionale</span> Konkretisierung der Nachbarsysteme, basierend auf den Festlegungen in den Konzepten.&gt;&gt;</span> </p>
+  <p id="polarion_85"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Das Kapitel (Ebene 1) muss auch dann erhalten bleiben, wenn keine Beschreibung des Kontexts notwendig ist.</span> </p>
+  <p id="polarion_87"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Kapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_88"> <span style="font-style: italic;color: #3333FF;">Eine Beschreibung des Systemkontexts ist nicht erforderlich.&gt;&gt;</span> </p>
+  <p id="polarion_89"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136923">4 Zerlegung des Produkttyps</h2>
+  <p id="polarion_91"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;<span style="font-weight: bold;">Optional</span>: Falls eine weitere Zerlegung des Produkttyps in Teilsysteme nötig ist, erfolgen alle Festlegungen hierzu in diesem Kapitel. Im weitern Verlauf des Dokuments kann auf die hier festgelegte Teilsysteme zurückgegriffen werden. Speziell können übergreifende Anforderungen für die Teilsysteme gestellt werden (Kapitel 6) und die Funktionsmerkmale die Teilsysteme konkretisieren (Kapitel 7). Das Kapitel muss auch dann erhalten bleiben, wenn keine weitere Zerlegung stattfindet.</span> </p>
+  <p id="polarion_92"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Kapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_94"> <span style="font-style: italic;color: #3333FF;">Eine weiter Untergliederung der Aufbaustruktur des Produkttyps ist nicht erforderlich.&gt;&gt;</span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136924">5 Übergreifende Festlegungen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136963">5.1 Fehlerhandling</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136214">
+   <p><b>A_23427</b></p>
+   <p>Der PoPP-Dienst MUSS Fehlernachrichten gemäß Tab_Fehlernachricht_Struktur aufbauen. Nutzer der Schnittstellen des PoPP-Dienstes MÜSSEN Fehlernachrichten dieser Struktur verarbeiten.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_Fehlernachricht_Struktur </p> 
+    <table id="polarion_wiki macro name=table;params=header=no" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <td style="width: 591.207px;height: 19.4886px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">{<br> &nbsp; &nbsp; "timestamp": "...",<br> &nbsp; &nbsp; "status": ...,<br> &nbsp; &nbsp; "error": "...",<br> &nbsp; &nbsp; "issue": [<br> &nbsp; &nbsp; &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "messageId": "...",&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "severity": "...",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "...",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "message": "...",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "details": "..."<br> &nbsp; &nbsp; &nbsp; &nbsp; }<br> &nbsp; &nbsp; ]<br> }<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_49" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: Tab_Fehlernachricht_Beispiel </p>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=50" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">{<br> &nbsp; &nbsp; "timestamp": "2022-12-22T12:49:05Z",<br> &nbsp; &nbsp; "status": 410,<br> &nbsp; &nbsp; "error": "Gone",<br> &nbsp; &nbsp; "issue": [<br> &nbsp; &nbsp; &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "messageId": "POPP00004",&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "severity": "fatal",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "security",<br> "message": "Challenge veraltet",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "details": "Challenge abgelaufen am: 2022-12-22T12:38:07Z. Gegenwärtige Zeit: 2022-12-22T12:48:23Z. Differenz: 10 Minuten 14 Sekunden. Erlaubte Differenz: 10 Minuten 0 Sekunden."<br> &nbsp; &nbsp; &nbsp; &nbsp; }<br> &nbsp; &nbsp; ]<br> }<br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_12"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136213">
+   <p><b>A_23428</b></p>
+   <p>Der PoPP-Dienst MUSS in Fehlernachrichten JSON-Key-Value-Paare und Kodierungen gemäß Tab_JSON_Key_Values_Fehlernachrichten verwenden. Nutzer der Schnittstellen des PoPP-Dienstes MÜSSEN Fehlernachrichten dieser Struktur verarbeiten. Nutzer der Schnittstellen MÜSSEN vom PoPP-Dienst zusätzlich eingebrachte Key-Value-Paare in Fehlernachrichten tolerieren.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___2"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>:&nbsp; Tab_JSON_Key_Values_Fehlernachrichten </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">JSON-Key</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">JSON-Value</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Format</th> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">details</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Details zum Fehler</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">siehe&nbsp;Tab_Fehlernachricht_Beispiel</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">error</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">reason phrase des HTTP status code</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß [RFC9110#15]</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">issue</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehlerstruktur</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß&nbsp;Tab_Fehlernachricht_Struktur</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">message</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehlertext</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß Tabellen "*_Fehlerfälle"</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">messageId</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">ID des Fehlers</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß Tabellen "*_Fehlerfälle"</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">severity</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Schwere des Fehlers</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß Tabellen "*_Fehlerfälle"</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">status</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">HTTP status code</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß [RFC9110#15]</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">timestamp</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zeitstempel&nbsp;</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">UTC</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">type</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehlertype</td> 
+       <td style="width: 215.25px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemäß Tabellen "*_Fehlerfälle"</td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_63"></p>
+  <p id="polarion_96"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136925">6 Funktionsmerkmale</h2>
+  <p id="polarion_99"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Vollständig funktionale Zerlegung der Funktionen des Produkttyps in Funktionsmerkmale. I.d.R. ergeben sich die Funktionsmerkmale 1:1 aus den systemspezifischen Konzepten der TI-Plattform. Für die Architektur sind dies die in gemKPT_Arch_TIP definierten Basis-, Infrastruktur- und Netzwerkdienste mit Relevanz für den Produkttyp.&gt;&gt;</span> </p>
+  <p id="polarion_100"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Ggf. Übersicht aller Funktionsmerkmale und Schnittstellstellen in geeigneter Form&gt;&gt;</span> </p>
+  <p id="polarion_101"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Hinweis zur Struktur: Sollte nur genau ein Funktionsmerkmal zu beschreiben sein, sollte die überflüssige Gliederungsebene ausgelassen werden und alle untergeordneten Kapitel rücken dementsprechend eine Ebene höher – die Kapitelüberschrift der Eben 1 „7&nbsp;Funktionsmerkmale“ wird dann ersetzt durch den Titel des Funktionsmerkmals – dann z. B. „7&nbsp;Basisdienst Kartenverwaltung“, die Unterkapitel zu den einzelnen Schnittstellen rücken auf Ebene 2 etc.&gt;&gt;</span><br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136926">6.1 Proof of Patient Presence</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136954">6.1.1 Schnittstelle I_PoPP_Service</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134951">
+   <p><b>A_23267</b></p>
+   <p>Der PoPP-Dienst MUSS die Schnittstelle I_PoPP_Service durch verpflichtende Verwendung von TLS mit serverseitiger Authentisierung sichern. Der PoPP-Dienst MUSS sich mit der Identität ID.ZD.TLS-S authentisieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134953">
+   <p><b>A_23268</b></p>
+   <p>Der PoPP-Dienst und Nutzer der Schnittstelle MÜSSEN die Schnittstelle I_PoPP_Service als Webservice über HTTPS implementieren. Dabei MUSS der PoPP-Dienst mindestens HTTP Version 1.1 unterstützen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135436">
+   <p><b>A_23372</b></p>
+   <p>Der PoPP-Dienst und Nutzer der Schnittstelle MÜSSEN in Request- und Responsenachrichten JSON-Key-Value-Paare und Kodierungen gemäß Tab_JSON_Key_Values verwenden. Der PoPP-Dienst MUSS vom Nutzer der Schnittstelle zusätzlich eingebrachte Key-Value-Paare beim createPoPPToken-Request tolerieren.&nbsp;<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___3"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: Tab_JSON_Key_Values_Request_Response_Nachrichten </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">JSON-Key</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">JSON-Value</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp;Format</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">alg</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Signaturalgorithmus</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">challenge</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Vom PoPP-Dienst erzeugte Challenge</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">enc_egk_data</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Symmetrisch verschlüsselte Daten der eGK (Zertifikat C.CH.AUT etc.)</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">header</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Struktur für Headerinformationen der Nachricht</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">iat (Issued At)</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Zeitstempel des PoPP-Dienstes</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Unix-Zeit in Sekundengenauigkeit</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">iss (Issuer)</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">URL des PoPP-Dienstes</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">payload</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Struktur für Payload der Nachricht</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">signature</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Signatur</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">signatures</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Struktur für eine oder mehrere Signaturen</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">tid</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Telematik-ID</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">typ</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Media type ("JWT")</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">used_challenge</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Vom PoPP-Dienst erzeugte Challenge</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 130.15px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">x5c</td> 
+       <td style="text-align: left;vertical-align: top;width: 325.362px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Signaturzertifikat</td> 
+       <td style="text-align: left;vertical-align: top;width: 190.238px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_46"></p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136957">6.1.1.1 Operation getChallenge</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135172">
+   <p><b>A_23315</b></p>
+   <p>Der PoPP-Dienst MUSS&nbsp;die Operation I_PoPP_Service:getChallenge als HTTP GET über die URL https://<span style="font-style: italic;color: #3366FF;">&lt;ToDo: FQDN&gt;</span><span style="font-style: normal;color: #330033;">/v1/poppService/challenge</span> anbieten.&nbsp;Nutzer der Schnittstelle MÜSSEN die Operation unter dieser URL lokalisieren.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135269">
+   <p><b>A_23331</b></p>
+   <p>Der PoPP-Dienst MUSS die Responses der Operation getChallenge gemäß Tab_getChallenge_Response_Struktur aufbauen. Nutzer der Operation MÜSSEN Responses dieser Struktur verarbeiten.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___4"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">5</span>: Tab_getChallenge_Response_Struktur </p> 
+    <table id="polarion_wiki macro name=table;params=header=no" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 591px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">&lt;challenge&gt;</span></td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136216">
+   <p><b>A_23430</b></p>
+   <p>Der PoPP-Dienst MUSS die Nachricht getChallenge-Response mit dem Content-Type 'text/plain; charset = utf-8' an den Nutzer der Schnittstelle senden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136968">
+   <p><b>A_23535</b></p>
+   <p>Der PoPP-Dienst MUSS bei der Ausführung der Operation getChallenge Fehlersituationen erkennen und Fehlernachrichten gemäß Tab_getChallenge_Fehlerfälle erzeugen. <br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___5"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">6</span>&nbsp;Tab_getChallenge_Fehlerfälle </p> 
+    <table id="polarion_wiki macro name=table;params=width=90%" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 109px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">http status code</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 91px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">messageId</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 92px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">type</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 68px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">severity</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 264px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">message</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">500</td> 
+       <td style="text-align: left;vertical-align: top;width: 91px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">POPP00001</span></td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="text-align: left;vertical-align: top;width: 68px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="text-align: left;vertical-align: top;width: 264px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMAC-Geheimnis nicht verfügbar<span id="polarion-comment:1"></span></span></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">500</td> 
+       <td style="text-align: left;vertical-align: top;width: 91px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">POPP00002</span></td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="text-align: left;vertical-align: top;width: 68px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="text-align: left;vertical-align: top;width: 264px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMAC-Geheimnis abgelaufen<span id="polarion-comment:2"></span></span></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">500</td> 
+       <td style="text-align: left;vertical-align: top;width: 91px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP09999</td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">technical</td> 
+       <td style="text-align: left;vertical-align: top;width: 68px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="text-align: left;vertical-align: top;width: 264px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Operation fehlgeschlagen</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136955">6.1.1.1.1 Umsetzung getChallenge</h6>
+  <p id="polarion_47">Ziel der "Challenge" ist es, einen für jeden Beteiligten außer dem PoPP-Dienst unvorhersagbaren Frischeparameter bereitzustellen. Später im Protokoll-Ablauf</p>
+  <ol id="polarion_48"> 
+   <li>signiert die eGK mittels des privaten Schlüssels&nbsp;<span style="font-size: 10pt;line-height: 1.5;">PrK.eGK.AUT_CVC.E256 den auf 192-Bit gekürzten Hashwert der Challenge, und</span></li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">im PoPP-Request des Konnektors wird die Challenge in der vom Konnektor (AK.AUT) und der SMC-B (HCI.AUT) signierten JSON-Datenstruktur aufgeführt (<a href="https://www.rfc-editor.org/rfc/rfc7515#appendix-A.6.4" target="_top">RFC-7515#A.6.4</a>).</span></li> 
+  </ol>
+  <p id="polarion_51"> <span style="font-size: 10pt;line-height: 1.5;">Damit ist sichergestellt, dass Zero-Knowledge-Beweise von eGK, gSMC-K und SMC-B (Signaturen, bei denen die DTBS von der Challenge abhängen) nicht vor einer bestimmten Zeit erfolgt sein können (untere Schranke). Beim Ausstellen der PoPP-Nachweises prüft der PoPP-Dienst, dass die im signierten PoPP-Request aufgeführte Challenge tatsächlich vom PoPP-Dienst erzeugt wurde und nicht zu alt ist. Damit ist der Signaturzeitpunkt relativ genau bestimmbar, d. h. der Zeitpunkt, zu dem die Chipkarten dem Primärsystem zur Verfügung standen (Proof of Presence).&nbsp;</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134946">
+   <p><b>A_23264</b></p>
+   <p>Der PoPP-Dienst MUSS eine Challenge in Abhängigkeit von seiner aktuellen Systemzeit&nbsp;erzeugen. <br> Er MUSS dafür die aktuelle Systemzeit als Unix-Zeit mit Sekundengenauigkeit als UTF-8 kodierte Zeichenkette kodieren&nbsp;(Nachkommastellen sind abzuschneiden). Beispiel:&nbsp;<span style="font-size: 10pt;line-height: 1.5;">1666552275.</span> <span style="font-size: 10pt;color: #242424;line-height: 1.5;">Von der&nbsp;so kodierten Unix-Zeit MUSS er unter Nutzung des PoPP-Dienst-internen CMAC-Schlüssels per AES-CMAC [RFC-4493#2.4] den CMAC-Wert berechnen und diesen base64-kodieren.</span><span style="font-size: 10pt;line-height: 1.5;"><span style="font-size: 11pt;color: #242424;line-height: 1.5;">&nbsp;</span>Beide Teile (kodierte Zeit und kodierter CMAC) MUSS er per Doppelpunkt zusammenführen. Beispiel:&nbsp;1666552275:Wm1GR8T7wWRhc2jma54itA==. Dies ist dann die Challenge, die ein Nutzer der Schnittstelle bei Anfrage (getChallenge) als Antwort erhält. (vgl. A_23331-*)</span>&nbsp;<span style="font-style: italic;color: #3366FF;">&nbsp;</span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_50">Beispiel:</p>
+  <table id="polarion_wiki macro name=table;params=uid=246" class="polarion-Document-table" style="width: 80%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Unix-Zeit</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Challenge falls der CMAC-Schlüssel gleich (hexdump)&nbsp;<span style="font-size: 10pt;line-height: 1.5;">000102030405060708090a0b0c0d0e0f ist</span></th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1676844358</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">1676844358:1lqqztdpnYAGLU595CLWnw==</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1676844362</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">1676844362:h2+tXx4OvhfPBNHXFsaaig==</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1676844364</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">1676844364:Um2y1eDwh3Uff8n2Z0mGBg==</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1676844366</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">1676844366:t5suhxYrluIcfl0buEHu3Q==</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1676844367</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 453px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">1676844367:6ZtrBGkWlBspXsKLeREJaQ==</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_246">Hinweis:</p>
+  <p id="polarion_248" style="margin-left: 40px;"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">$ python -c 'import time; print(int(time.time()))'<br> 1676992804</span><br> </p>
+  <pre id="polarion_245"></pre>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135502">
+   <p><b>A_23396</b></p>
+   <p>Der PoPP-Dienst MUSS den CMAC-Schlüssel halbjährlich zufällig neu erzeugen. Die Anforderungen zur Schlüsselerzeugung gemäß [gemSpec_Krypt#GS-A_4368] MUSS der PoPP-Dienst umsetzen.<br> Nach Neuerzeugung des CMAC-Schlüssels MUSS der PoPP-Dienst&nbsp;für eine Übergangszeit von einer Stunde zwei CMAC-Schlüssel parallel vorhalten und bei Anfragen (createPoPPToken) sowohl den alten als auch den neuen CMAC-Schlüssel unterstützen. Nach Ablauf der Übergangszeit MUSS der PoPP-Dienst den alten CMAC-Schlüssel löschen und auf dem alten CMAC-Schlüssel basierende Challenges ablehnen.&nbsp;<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-137175">
+   <p><b>A_23553</b></p>
+   <p>Der PoPP-Dienst MUSS den CMAC-Schlüssel (vgl. A_23264) vertraulich im Dienst verwahren.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135168">
+   <p><b>A_23316</b></p>
+   <p>Der PoPP-Dienst MUSS im Erfolgsfall eine getChallenge-Response erzeugen und an den Aufrufer zurückgeben.<span style="font-size: 11pt;color: #172B4D;line-height: 1.5;"><br></span> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136956">6.1.1.2 Operation createPoPPToken</h5>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135175">
+   <p><b>A_23318</b></p>
+   <p>Der PoPP-Dienst MUSS&nbsp;die Operation I_PoPP_Service:createPoPPToken als HTTP POST über die URL https://<span style="font-style: italic;color: #3366FF;">&lt;ToDo: FQDN&gt;</span><span style="font-style: normal;color: #330033;">/v1/poppService/poPPToken</span> anbieten.&nbsp;Nutzer der Schnittstelle MÜSSEN die Operation über diese URL lokalisieren.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135186">
+   <p><b>A_23321</b></p>
+   <p>Nutzer der Operation createPoPPToken MÜSSEN die Requests gemäß Tab_createPoPPToken_Request_Struktur aufbauen. Der PoPP-Dienst MUSS Requests dieser Struktur verarbeiten.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___6"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">7</span>: Tab_createPoPPToken_Request_Struktur </p> 
+    <table id="polarion_wiki macro name=table;params=header=no" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;color: #330033;line-height: 1.5;"><span style="font-weight: bold;">Struktur des Request</span>:<br> <span style="font-weight: bold;">{</span><br> &nbsp; "payload":&nbsp;"...",<br> &nbsp; "signatures":&nbsp;&nbsp;<span style="font-weight: bold;">[</span><br> &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; "header":&nbsp;&nbsp;<span style="font-weight: bold;">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"alg": "…",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"x5c": <span style="font-weight: bold;">[</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "..."<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-weight: bold;">]</span><br> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span style="font-weight: bold;">}</span>,<br> &nbsp; &nbsp; &nbsp; &nbsp; "signature": "..."<br> &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">}</span>,<br> &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"header":&nbsp;&nbsp;<span style="font-weight: bold;">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"alg": "…",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"x5c":&nbsp;&nbsp;<span style="font-weight: bold;">[</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "..."<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">]</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="font-weight: bold;">}</span>,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "signature": "..."<br> &nbsp; &nbsp; &nbsp;<span style="font-weight: bold;">}</span><br> &nbsp; <span style="font-weight: bold;">]</span><br> <span style="font-weight: bold;">}<br> <br> Struktur des Payload</span><span style="font-weight: normal;">:<span style="font-size: 11pt;color: #172B4D;line-height: 1.5;"><br> </span> {<br> &nbsp;&nbsp;"challenge": "...",<br> &nbsp; "enc_egk_data": "..."<br> }</span><span style="font-weight: bold;"><br> </span></span></td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135144">
+   <p><b>A_23308</b></p>
+   <p>Der PoPP-Dienst MUSS die Responses der Operation createPoPPToken gemäß Tab_createPoPPToken_Response_Struktur aufbauen. Nutzer der Operation MÜSSEN Responses dieser Struktur verarbeiten.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___7"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">8</span>: Tab_createPoPPToken_Response_Struktur </p> 
+    <table id="polarion_wiki macro name=table;params=header=no" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;color: #242424;line-height: 1.5;">Struktur der Response:<br> </span> <span style="font-weight: normal;">Die&nbsp;Struktur der Response folgt&nbsp;JWS Compact Serialization gemäß [RFC-7515].<br> Die Signaturerstellung erfolgt nach<span style="font-weight: bold;">&nbsp;</span>[RFC-7515].<span style="font-weight: bold;"><br> </span> Für die Kodierung wird <span style="font-size: 10pt;color: #242424;line-height: 1.5;">Base64URL [RFC-7515#7.1]&nbsp;verwendet.</span></span><span style="font-weight: bold;font-size: 10pt;color: #242424;line-height: 1.5;"><br> </span> <span style="font-weight: bold;"><br> </span> <span style="font-weight: normal;">Die Response enthält drei durch "." getrennte Abschnitte:<br> &lt;base64URL-kodierter Header&gt;.&lt;base64URL-kodierter Payload&gt;.&lt;base64URL-kodierte Signatur&gt;</span><span style="font-weight: bold;"><br> <br> Struktur des Header:<br> </span> <span style="font-weight: normal;">{<br> &nbsp; "typ": "JWT",<br> &nbsp; "alg": "...",<br> &nbsp; "x5c": [ "..." ]<br> }<br> </span><br> <span style="font-weight: bold;">Struktur des Payload</span><span style="font-weight: normal;">:</span><br> {<br> &nbsp; "iat": ...,<br> &nbsp; "tid": "...",<br> &nbsp; "used_challenge": "...",<br> &nbsp; "enc_egk_data": "...",<br> &nbsp; "iss": "..."<br> }<br> <br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136967">
+   <p><b>A_23534</b></p>
+   <p>Der PoPP-Dienst MUSS bei der Ausführung der Operation createPoPPToken Fehlersituationen erkennen und Fehlernachrichten gemäß Tab_createPoPPToken_Fehlerfälle erzeugen.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___8"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">9</span>&nbsp;createPoPPToken_Fehlerfälle </p> 
+    <table id="polarion_wiki macro name=table;params=width=90%" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">http status code</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">messageId</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">type</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">severity</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">message</th> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">400</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00051</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMAC ungültig</span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">410</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00052</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal&nbsp;</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Challenge veraltet</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">400</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00053</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">technical</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Request ungültig</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00054</td> 
+       <td style="width: 86px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Signatur ungültig (<span style="font-size: 10pt;line-height: 1.5;">AK.AUT</span>)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00055</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zertifikat offline ungültig (AK.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">502</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00056</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">OCSP-Abfrage nicht möglich (AK.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00057</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zertifikat online ungültig (AK.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00058</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Signatur ungültig (HCI.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00059</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zertifikat offline ungültig (HCI.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">502</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00060</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">OCSP-Abfrage nicht möglich (HCI.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">403</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP00061</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">security</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zertifikat online ungültig (HCI.AUT)</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">500</td> 
+       <td style="width: 112px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">POPP09999</td> 
+       <td style="width: 86px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">technical</td> 
+       <td style="width: 80px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fatal</td> 
+       <td style="width: 233px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Operation fehlgeschlagen</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_67"></p>
+  <p id="polarion_68">Hinweis: Im folgenden Beispiel-Protokoll-Durchlauf (erzeugt mit der PoC-Implementierung der gematik) stimmen Details wie bspw. die OIDs in den Beispiel-Zertifikaten noch nicht 100%-ig. Dies wird in einer Folge-Version der Spezifikation aktualisiert. Ziel ist es, um das Verständnis zu verbessern, ein Beispiel in seiner Gesamtheit einmal "vorzurechnen".</p>
+  <p id="polarion_72" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">10</span>: Tab_Beispiel_Protokolldurchlauf </p>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=73" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Response vom PoPP-Dienst auf GET /v1/poppService/challenge<br> </span><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{<br> &nbsp; &nbsp;"challenge": "<span style="font-size: 10pt;line-height: 1.5;">1670535981:YRJrjwAy2jKf4Z4xd/ZC/w=="<br> </span>}</span><span style="font-weight: bold;"><br> <br> Request des Konnektor, POST auf /v1/poppService/poPPToken</span><br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{<br> &nbsp; &nbsp; "payload": "ewogICAgImNoYWxsZW5nZSI6ICIxNjcwNTM1OTgxOllSSnJqd0F5MmpLZjRaNHhkL1pDL3c9PSIsCiAgICAiZW5jX2Vna19kYXRhIjogIkZUZ0w0aElwM0orVGRQLzBhL0Vtb01yOGh3c09nUDhvTFJUOGtFVGN1UmtuTCtuK1NIb0M5VUQ2SkpyVTh6dngrbjBObHN0eHZiOWVuc1VMT0tTQjQrN0hjOCttQWhpdW5PRHZ0c0hma0FlRHIvc3ZDWW1vMEVqRnlMREJFaW5LOXo5ZUdMQ2RKYXBvK2tmU3dIUGVQeWc3VWpqRGRDdGJENTJBRTFOdXdpc0YzbjM2ODlXMVNtRWtrSG01QXlaMlo4akJFV2JJc0l1VWp3YTRHUFBiZHZKaXg3MGkxTTZiK28ybm9JZWY4eEpFajFKYjB1bVhYT1dhUTlBRWN0ekJwM0U0QzIyYkpZRmMrSkVoU0t5S2NBUU9TMXhRVDJaV3RrRWdqYXh2YkxGZUgwUTcwVGh1NWRxQ2U3enR5YUJBUkFrZzFNRGF5WFk0MFdMRE9VcEw2RWxTS05rUjZRYjUxV3ByTVlFeG5RV0JXMTRBQ2ZXZFZvZjArM0NhRWd4UTg4SlNrSWdyR0U0dFU5SjRzcTRjZVhyTE1ydlpJNDlWQ2RFWWt5NURMemk5TllWOVJaMDVNSW9xcTJHNWgwQmVpdlAxb0I4Zlh1UURVSTA2UnZiSjNpN3dvcjllRzZKeXNSTjE0V2F1ejlQS1hmcEw3R001eWRwbmZQSVcwU2NoTzYyeGVHU29YMjRUYjRHcW1kaDNtVlFOMTFWdENkVTBTT1hmU2FucElmaklkL2xac0EvTWdLMm1QZng0N2JNM0pqb2Q1KzVPbWpzVW1KSHFmcHpCajZSQTFmZWRkeE9TSEtNMkVtZER4aU1NNVBJRHU3U2pGQjI4Y0Z2WEN6eHBCVGxiWno3dG55aXptVW8wT2FYLzMrMGJQZkZhZTBLaWhyZ2JQMDBIWGMyQm5COGExR1FCY0Q4OVU2UDBJV0pDVEJjM3FmRXAxd1I4elVBSTJvaEpVWWNjdHZQdzhRemtMTytwQWxNMW5XOW11U0xMVEI0eVJrQzhJczB0TXdzeVVkOHMvbVA4WFViajJjemMvTnY0MitRalAyaDhLQU0vUGo1a2JzUm9DOG16WDJrck5JbGs1QWtLd2NwdFZUY0l3QytqNTFXRU9RaGhpaFdoOWtraUk2UGZjNE5LdXFqdjVmaW52cVNkdWREYUo0dGRrRjhmU3FlY3p2V0prc3REdFlSSWMzVWtuZjVHZFYzNnQyNlV6WWUvUzRDSlFRM0YzSHNabk5VTWdMRlNUWDE3YnA4Q1RyODBnNCtSUHJFRHFWeFYyeVBzYUhvWmZzbmdRczh1YTUvSzlmd09vSjVldEwvS2Izenl3UTNhQmFJSFBPaUwzdGNuMGYrTmk1MnpxdnM5dCt3PSIKfQ==",<br> &nbsp; &nbsp; "signatures": [<br> &nbsp; &nbsp; &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "header": {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "alg": "RS256",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "x5c": [&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "MIIDcDCCAlgCFGLhrD3t7FkGOlQzHCJgfzGAdZpQMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAkRFMQ8wDQYDVQQIDAZCZXJsaW4xDzANBgNVBAcMBkJlcmxpbjEQMA4GA1UECgwHZ2VtYXRpazEQMA4GA1UECwwHZ2VtYXRpazERMA8GA1UEAwwIU01DLUItQ0EwHhcNMjIxMDIzMTMzMjQwWhcNMjMxMDIzMTMzMjQwWjCBgjELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwGQmVybGluMRAwDgYDVQQKDAdnZW1hdGlrMRAwDgYDVQQLDAdnZW1hdGlrMS0wKwYDVQQDDCRBcnR6cHJheGlzIFRJRD00OjE6MTIzMTMyMTQyMzU0MzI0MTEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDR6kjVj5NFBACYfP0Of06/mcFhEIUIH9QklcPZvkc7k3LX1p8KzQ/qGF2ASHz9ZZcmHpghUIF/NcVtNcnPpYvLMDOn92Tvm7E6x3F8+NUw/242C62+DIDk+X0aPOTEQ+uS2AbG3gl0zSAHNGTqQjmsPeoxrmjkNGbKx3GXOiqnJFcpq6OG4CMaQrqaPjWZJ9yoFEKHy1+HR6N7yzS0lUlKe6qRpkfW28aSpqa26mcAzNdkfdUUoPI9RideqOW2W5msMdZYXCsIlG5pFYE881FhzfeeoEiapEOiYyKJERbYpIn98DRDDaPWuaUgvImYGW/Tk2LmRli5XbWaidWxC8pXAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAL/zq/Vdou1ugRo5kMSnJYeXY3xLJM3mEkf1FJN/CljntiS07z30fUNnUce4jfch7OY98dRrfB3D1D5WUG9Cito5Ztx9kMIYsTOJJfrF4OWHZXpvOxACdTjsf6a2KIJZiNqeg3ux81ynxkg14TrsGC2q4iaHoqH0wdBa5V8wgSGA8gtim+pbn6+ZC82xePrLpk4ResxczUf7mpiOfC+3NNStDr1WqzH6rtPIriRldDbZ3Md2ncKRBPh9QBbcodLDqurOHG2M/H3eZ2QdckuLal/onJ8cd+uOdtZAE0MLhLAsZ+bb4iSqN/R40DP7y6R9wUN6tYMiI+1buXErwWM08tA="<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "signature": "XQrQWx_e_8o905iE4Y6n5msOO_TMUGf8wDxgVy9C1UVxVDFq9a98bLsItj1I-apbPItp--azYSumyfHjg5pCa53OC-sKe2bhXCRVrS7APEiTu8sJkypuX9kI9I2rcD3ilnVQXfoBb1R-YRz0tDYE95A7lNJzc6kpGL_7FlRUbOky3lPgZBvth5NkixwJqv7MKRYnFRngUVQa8y7IEwLE0198M9tqD0EH9PH4deB4ZNvjm5Sf3kCwsXeuqSKXmOTl4w1ZQi7xNPv0-iIj00C5PNg-UJBU3__jx3RO9SRQBtn7tQZBklT_yl4hYu2rtnIKumjdfT6Vm4qmwVBbMJsLyw=="<br> &nbsp; &nbsp; &nbsp; &nbsp; },<br> &nbsp; &nbsp; &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "header": {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "alg": "PS256",<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "x5c": [&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "MIIB4jCCAYgCFGf+ShVJZKpcC7k+p2IYQkJXCe2NMAoGCCqGSM49BAMCMHAxCzAJBgNVBAYTAkRFMQ8wDQYDVQQIDAZCZXJsaW4xDzANBgNVBAcMBkJlcmxpbjEQMA4GA1UECgwHZ2VtYXRpazEQMA4GA1UECwwHZ2VtYXRpazEbMBkGA1UEAwwSS29tcG9uZW50ZW4tUEtJLUNBMB4XDTIyMDkyNDA3NTIzN1oXDTIzMDkyNDA3NTIzN1owdjELMAkGA1UEBhMCREUxDzANBgNVBAgMBkJlcmxpbjEPMA0GA1UEBwwGQmVybGluMRAwDgYDVQQKDAdnZW1hdGlrMRAwDgYDVQQLDAdnZW1hdGlrMSEwHwYDVQQDDBhLb25uZWt0b3ItQUstWmVyaXRpZmlrYXQwWjAUBgcqhkjOPQIBBgkrJAMDAggBAQcDQgAEEXKDSSXSBkJ2gyQYX0e8gxCQFch2hUlGqRrTRmsWx4UTwOX68uiyFCGv4E4fMZpzU7xKXSFDBtgpo2omJU4mbDAKBggqhkjOPQQDAgNIADBFAiEAkFSKpKfxvqholKnaOv7M1q1v50WYcEOkdLfCfg7Cz2YCIAUwOF7zEBFOZGL81ebsLVH/PcXN1Qpun7GP5Ov1Jzcs"<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "signature": "auCaJrcfN1OaisE5HsZVB-QCfpCt3BVkhtuu7b1QlXyjeA9UR3NG3dnLbmdWE2Ml3dLhHxHo5Ya-CEUFa96Rmg=="<br> &nbsp; &nbsp; &nbsp; &nbsp; }<br> &nbsp; &nbsp; ]<br> }</span><br> <br> Im Beispiel hat die SMC-B nur ein RSA-AUT-Zertifikat und der Konnektor besitzt RSA- und ECC-X.509-Zertifikate. Deshalb verwendet der Konnektor gemäß A_23319 das ECC-Material für die SMC-K-AUT-Signatur.<br> <br> <span style="font-weight: bold;">Der Wert in o. g. "payload" base64-dekodiert:</span><br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{<br> &nbsp; &nbsp; "challenge": "1670535981:YRJrjwAy2jKf4Z4xd/ZC/w==",<br> &nbsp; &nbsp; "enc_egk_data": "FTgL4hIp3J+TdP/0a/EmoMr8hwsOgP8oLRT8kETcuRknL+n+SHoC9UD6JJrU8zvx+n0Nlstxvb9ensULOKSB4+7Hc8+mAhiunODvtsHfkAeDr/svCYmo0EjFyLDBEinK9z9eGLCdJapo+kfSwHPePyg7UjjDdCtbD52AE1NuwisF3n3689W1SmEkkHm5AyZ2Z8jBEWbIsIuUjwa4GPPbdvJix70i1M6b+o2noIef8xJEj1Jb0umXXOWaQ9AEctzBp3E4C22bJYFc+JEhSKyKcAQOS1xQT2ZWtkEgjaxvbLFeH0Q70Thu5dqCe7ztyaBARAkg1MDayXY40WLDOUpL6ElSKNkR6Qb51WprMYExnQWBW14ACfWdVof0+3CaEgxQ88JSkIgrGE4tU9J4sq4ceXrLMrvZI49VCdEYky5DLzi9NYV9RZ05MIoqq2G5h0BeivP1oB8fXuQDUI06RvbJ3i7wor9eG6JysRN14Wauz9PKXfpL7GM5ydpnfPIW0SchO62xeGSoX24Tb4Gqmdh3mVQN11VtCdU0SOXfSanpIfjId/lZsA/MgK2mPfx47bM3Jjod5+5OmjsUmJHqfpzBj6RA1feddxOSHKM2EmdDxiMM5PIDu7SjFB28cFvXCzxpBTlbZz7tnyizmUo0OaX/3+0bPfFae0KihrgbP00HXc2BnB8a1GQBcD89U6P0IWJCTBc3qfEp1wR8zUAI2ohJUYcctvPw8QzkLO+pAlM1nW9muSLLTB4yRkC8Is0tMwsyUd8s/mP8XUbj2czc/Nv42+QjP2h8KAM/Pj5kbsRoC8mzX2krNIlk5AkKwcptVTcIwC+j51WEOQhhihWh9kkiI6Pfc4NKuqjv5finvqSdudDaJ4tdkF8fSqeczvWJkstDtYRIc3Uknf5GdV36t26UzYe/S4CJQQ3F3HsZnNUMgLFSTX17bp8CTr80g4+RPrEDqVxV2yPsaHoZfsngQs8ua5/K9fwOoJ5etL/Kb3zywQ3aBaIHPOiL3tcn0f+Ni52zqvs9t+w="<br> }</span><br> <br> <span style="font-weight: bold;">Der vom Konnektor erzeugte und verwendete Pseudonymisierungsschlüssel (base64-kodiert):</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">TvRIybprnMLZD9H8GnRcnw==</span><br> <br> <span style="font-weight: bold;">Antwort des PoPP-Dienstes auf diesen Request:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsIng1YyI6WyJNSUlCMHpDQ0FYb0NGR2YrU2hWSlpLcGNDN2srcDJJWVFrSlhDZTJNTUFvR0NDcUdTTTQ5QkFNQ01IQXhDekFKQmdOVkJBWVRBa1JGTVE4d0RRWURWUVFJREFaQ1pYSnNhVzR4RHpBTkJnTlZCQWNNQmtKbGNteHBiakVRTUE0R0ExVUVDZ3dIWjJWdFlYUnBhekVRTUE0R0ExVUVDd3dIWjJWdFlYUnBhekViTUJrR0ExVUVBd3dTUzI5dGNHOXVaVzUwWlc0dFVFdEpMVU5CTUI0WERUSXlNRGt5TkRBM05USXpOMW9YRFRJek1Ea3lOREEzTlRJek4xb3dhREVMTUFrR0ExVUVCaE1DUkVVeER6QU5CZ05WQkFnTUJrSmxjbXhwYmpFUE1BMEdBMVVFQnd3R1FtVnliR2x1TVJBd0RnWURWUVFLREFkblpXMWhkR2xyTVJBd0RnWURWUVFMREFkblpXMWhkR2xyTVJNd0VRWURWUVFEREFwR1lXTm9aR2xsYm5OME1Gb3dGQVlIS29aSXpqMENBUVlKS3lRREF3SUlBUUVIQTBJQUJLSkpwdG11amJjTFIwRUk2TS9IVjQ5NTBLdklFeVhtcXFtWFQ3cmFGZ1U3ZmpwTWc0QzhZNXRzK0h4TDM4YjVzR2JhanJWRGZlSGw2bWo3dzBJNGsyZ3dDZ1lJS29aSXpqMEVBd0lEUndBd1JBSWdYSkxBNTVLL25mOWdBamZJbzhXUXBiSWZzQzJma0llRmFBS1M4M0xLSWJvQ0lISGxKTFp0RUVmYjh5T2EwZXNOSDhIZUdYc3VZeHRXWVhHQ01MVHhMZWR2Il19.eyJpYXQiOjE2NzA1MzIzODEuNTk1NTc3LCJ0aWQiOiI0OjE6MjIzNDMxNDM0MyIsInVzZWRfY2hhbGxlbmdlIjoiMTY3MDUzNTk4MTpZUkpyandBeTJqS2Y0WjR4ZC9aQy93PT0iLCJlbmNfZWdrX2RhdGEiOiJGVGdMNGhJcDNKK1RkUC8wYS9FbW9Ncjhod3NPZ1A4b0xSVDhrRVRjdVJrbkwrbitTSG9DOVVENkpKclU4enZ4K24wTmxzdHh2YjllbnNVTE9LU0I0KzdIYzgrbUFoaXVuT0R2dHNIZmtBZURyL3N2Q1ltbzBFakZ5TERCRWluSzl6OWVHTENkSmFwbytrZlN3SFBlUHlnN1VqakRkQ3RiRDUyQUUxTnV3aXNGM24zNjg5VzFTbUVra0htNUF5WjJaOGpCRVdiSXNJdVVqd2E0R1BQYmR2Sml4NzBpMU02YitvMm5vSWVmOHhKRWoxSmIwdW1YWE9XYVE5QUVjdHpCcDNFNEMyMmJKWUZjK0pFaFNLeUtjQVFPUzF4UVQyWld0a0VnamF4dmJMRmVIMFE3MFRodTVkcUNlN3p0eWFCQVJBa2cxTURheVhZNDBXTERPVXBMNkVsU0tOa1I2UWI1MVdwck1ZRXhuUVdCVzE0QUNmV2RWb2YwKzNDYUVneFE4OEpTa0lnckdFNHRVOUo0c3E0Y2VYckxNcnZaSTQ5VkNkRVlreTVETHppOU5ZVjlSWjA1TUlvcXEyRzVoMEJlaXZQMW9COGZYdVFEVUkwNlJ2YkozaTd3b3I5ZUc2SnlzUk4xNFdhdXo5UEtYZnBMN0dNNXlkcG5mUElXMFNjaE82MnhlR1NvWDI0VGI0R3FtZGgzbVZRTjExVnRDZFUwU09YZlNhbnBJZmpJZC9sWnNBL01nSzJtUGZ4NDdiTTNKam9kNSs1T21qc1VtSkhxZnB6Qmo2UkExZmVkZHhPU0hLTTJFbWREeGlNTTVQSUR1N1NqRkIyOGNGdlhDenhwQlRsYlp6N3RueWl6bVVvME9hWC8zKzBiUGZGYWUwS2locmdiUDAwSFhjMkJuQjhhMUdRQmNEODlVNlAwSVdKQ1RCYzNxZkVwMXdSOHpVQUkyb2hKVVljY3R2UHc4UXprTE8rcEFsTTFuVzltdVNMTFRCNHlSa0M4SXMwdE13c3lVZDhzL21QOFhVYmoyY3pjL052NDIrUWpQMmg4S0FNL1BqNWtic1JvQzhtelgya3JOSWxrNUFrS3djcHRWVGNJd0MrajUxV0VPUWhoaWhXaDlra2lJNlBmYzROS3VxanY1ZmludnFTZHVkRGFKNHRka0Y4ZlNxZWN6dldKa3N0RHRZUkljM1VrbmY1R2RWMzZ0MjZVelllL1M0Q0pRUTNGM0hzWm5OVU1nTEZTVFgxN2JwOENUcjgwZzQrUlByRURxVnhWMnlQc2FIb1pmc25nUXM4dWE1L0s5ZndPb0o1ZXRML0tiM3p5d1EzYUJhSUhQT2lMM3RjbjBmK05pNTJ6cXZzOXQrdz0iLCJpc3MiOiJodHRwczovL3BvcHAudGVsZW1hdGlrLiJ9.psV23oKaw7nMJ8lI2aJTrM5_3jrn0gNd9lukpdLP1dse0wJFoTQ9g0syjhoNuxra2BqhAspHcpDU51clPirkdA</span> <br> <br> In diesem Token ([RFC-7519], [RFC-7515]) gibt es drei durch "." getrennte Abschnitte. Im mittleren Abschnitt befindet sich der payload, welche base64url-dekodiert [RFC-7515#7.1] folgenden Wert besitzt. (Hinweis: https://jwt.io kann man gut zum Dekodieren verwenden.)<br> <br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{<br> &nbsp; "iat": 1670531708.043164,<br> &nbsp; "tid": "4-1-2234314343",<br> &nbsp; "used_challenge": "1670535307:0fEFISWL7SB9FvpRwqVHqg==",<br> &nbsp; "enc_egk_data": "nkZkt/mC2jKjk3JrutsMmGslChRA9oH4hAA5Saswa7XU7cJHPIOCobfXZINBJX2Sd5/lQMAcfwgvEGQ2dtQ2bIfGpR8w4jVjNdZAbVuF+UVehWMRxWWGFzauW/Tbo5NyIB4PL7AajyPbNDM8m1A4sXRE5lWZ7CVAAs2cyIKIZU81255/OdUNVwUCXSP8YrSdCFTTG64imikJR9q0ijONXhbt8QuQ+k2qcwqmgiJYq00w1u3WevmtIbXguu7PCSBqUyi7CQspNuzDWyV0iNISp4tnhU7m20UGpxqPDa/o3ZFSilKEqgJ5lv605sK3358AoHRNlEe/PBjUPk3X3NyYadqBa+snJzg7e4SqKoz/oimQMy5HEW7m6zTRgg2isQZrVvdrJhIrbCmX+FDhMZK/Cfedn2IEwZLCGVCcZkbnmvpq5kUplupf5v0Q6PTGgwklehJcqeYRrdOr7/xv2uMqlyud+t4wrh1J1Y9X21GXDngeZISL4FKjEMfTWgRfzV6wXgr8vKhU8BTkbMaU8NBRMRpAAYCOxzIGqZVzPCazGzEFJu+m1/eeODu2JBUfNJ8854w+mE6Hn1JRCw274hvIddyTgoZKmufnKnGMEOIF3tihQiXm4hoWSbRdyBqaRv3Nu5c6Bf1KymqOhNWcVbuFoDFddnFU5O8FCZ7emPpbgHRbyvx1kt5W0dK4UH9Le/4pF5pBK1C497b/PjUcXnEg9ifVuhehDAavDg79B4OQhUvB6bdVme4wHGC/NKs8f2+iT+hyTmOQ1j2VRofhi/dQtBP8zoy+dJXRBCjfDjkZ7C/fcf9guQgu4lmZxjcf5TlUQlRaFgVra5JF1XUp/Zxc1THRkLEd2oJF96GaVjWDoNwBZ16OYr6zk/0qB2L0CrvgGGCVUVjFRUtRlugBWXavihNuuuiVaIfCd6lceKUjCRE1zdYZ9mT/SrqytnZOE/yEM3pj8di9eyIqEs1LyAe0oUPcRHEOfOobRcyNCya8K4PQGzYGzFU4inP8L2JWMM+x5xOzlY0=",<br> &nbsp; "iss": "https://popp.telematik."<br> }</span><br> <br> Der Rückgabewert des PoPP-Dienstes ("eyJ0eXAiO...") ist das PoPP-Token (PoPP-Nachweis). Dieses wird neben dem (De-)Pseudonymisierungsschlüssel an das aufrufende Primärsystem als Antwort übergeben (vgl. Abschnitt <span style="background-color: #FFFF99;"><span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-134811" data-option-id="long"></span></span>&nbsp;(A_23323)).<br> <br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_74"></p>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136958">6.1.1.2.1 Umsetzung createPoPPToken</h6>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135185">
+   <p><b>A_23320</b></p>
+   <p>Der PoPP-Dienst MUSS die mit den Identitäten ID.AK.AUT und ID.HCI.AUT erstellten Signaturen des Payload des createPoPPToken-Request prüfen. Der PoPP-Dienst MUSS die Signaturzertifikate C.AK.AUT und C.HCI.AUT gemäß TUC_PKI_018 prüfen (Prüfmodus=OCSP, TOLERATE_OCSP_FAILURE=<span style="color: #330033;">false</span>). Zertifikatsprüfergebnisse und OCSP-Antworten dürfen bis zu 12 Stunden gecacht und wiederverwendet werden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_75"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135143">
+   <p><b>A_23307</b></p>
+   <p>Der PoPP-Dienst MUSS prüfen, ob die im createPoPPToken-Request enthaltene Challenge ("challenge") vom PoPP-Dienst stammt, indem er den in der Challenge enthaltenen CMAC prüft. Falls der CMAC ungültig ist ("INVALID" [RFC-4493]), so MUSS der PoPP-Dienst die Abarbeitung des Protokolls mit einem Fehler an den Konnektor abbrechen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135171">
+   <p><b>A_23312</b></p>
+   <p>Der PoPP-Dienst MUSS prüfen, dass die im createPoPPToken-Request enthaltene Challenge ("challenge") nicht älter als 10 Minuten ist. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_52"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135201">
+   <p><b>A_23326</b></p>
+   <p>Der PoPP-Dienst MUSS den Payload der createPoPPToken-Response mit dem privaten Schlüssel der Identität ID.ZD.SIG mit der technischen Rolle oid_popp signieren. Der PoPP-Dienst MUSS den Signaturalgorithmus entsprechend des vom ZD.SIG-<span style="font-size: 10pt;color: #242424;line-height: 1.5;">Zertifikats unterstützten Schlüssels wählen.&nbsp;Den Bezeichner MUSS der PoPP-Dienst gemäß&nbsp;Tab_createPoPPToken_Response_Signaturalgorithmen verwenden.&nbsp;Die Signatur der Response erfolgt nach<span style="font-weight: bold;">&nbsp;</span>[RFC-7515].<br> </span> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___9"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">11</span>: Tab_createPoPPToken_Response_Signaturalgorithmen </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 225.512px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Schlüssel&nbsp;</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 250.562px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Signaturalgorithmus</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94.2375px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Bezeichner für "alg"</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 225.512px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">ECC auf der Kurve P-256</td> 
+       <td style="text-align: left;vertical-align: top;width: 250.562px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">ECDSA P-256 SHA-256</td> 
+       <td style="text-align: left;vertical-align: top;width: 94.2375px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">ES256</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 225.512px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">ECC auf der Kurve brainpoolP256r1</td> 
+       <td style="text-align: left;vertical-align: top;width: 250.562px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">ECDSA brainpoolP256r1 SHA-256</td> 
+       <td style="text-align: left;vertical-align: top;width: 94.2375px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">BP256R1</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_56"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135169">
+   <p><b>A_23317</b></p>
+   <p>Der PoPP-Dienst MUSS die createPoPPToken-Response erzeugen und an den Aufrufer zurückgeben. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136959">6.2 Schnittstellen zu zentralen Diensten</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135147">
+   <p><b>A_23309</b></p>
+   <p>Der PoPP-Dienst MUSS die TSL einmal täglich vom TSL-Dienst beziehen,&nbsp;<span style="font-size: 10pt;background-color: #CDE6EB;line-height: 1.5;">deren Integrität und Aktualität prüfen</span> und die vertrauenswürdigen Komponenten-CAs und CAs der TSPs-SMC-B extrahieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135145">
+   <p><b>A_23310</b></p>
+   <p>Der Anbieter des PoPP-Dienstes MUSS in den Nameservern TI die Resource Records gemäß Tabelle Tab_PoPP_DNS_SD verwalten.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: center;"></p><p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___10"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">12</span>: Tab_PoPP_DNS_SD </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 157.613px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Resource Record Bezeichner</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 423.5px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 157.613px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">_popp._tcp.telematik.</td> 
+       <td style="text-align: left;vertical-align: top;width: 423.5px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">SRV Resource Record zur Ermittlung von FQDN und Port des PoPP-Dienstes</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 157.613px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">FQDN des PoPP-Dienstes</td> 
+       <td style="text-align: left;vertical-align: top;width: 423.5px;height: 39px;border: 1px solid #CCCCCC;padding: 5px;">A Resource Record zur Namensauflösung von FQDN des PoPP-Dienstes in IP-Adresse</td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_36"></p>
+  <p id="polarion_145"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136936">6.2.1 Testunterstützung</h4>
+  <p id="polarion_149"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;&nbsp;<span style="font-weight: bold;">Optional</span> wenn für dieses Funktionsmerkmal&nbsp;&nbsp;eine spezielle Testunterstützung benötigt wird. Hier sind speziell nötige Umsetzungen für den Produkttyp aus der Testarchitektur durchzuführen. Hierbei kann es sich um spezifische Ausprägungen des Produkttypen für Testumgebungen handeln, aber auch um spezielle Testfunktion die im Wirkbetrieb aktivierbar bzw. nutzbar sein müssen.</span> </p>
+  <p id="polarion_150"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Unterkapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_151"> <span style="font-style: italic;color: #3333FF;">Zur Unterstützung von Tests im Zusammenhang mit dem Funktionsmerkmal werden keine gesonderten Festlegungen getroffen &gt;&gt;</span> </p>
+  <p id="polarion_39"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136937">6.2.2 Hardwaremerkmale</h4>
+  <p id="polarion_155"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;&nbsp;<span style="font-weight: bold;">Optional</span>: Hardwaremerkmale im Kontext des Funktionsmerkmals. Beispielsweise HW-Schnittstellen oder andere HW-Bestandteile mit Sichtbarkeit nach Außen (z.B. Bedienelemente).</span> </p>
+  <p id="polarion_156"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Unterkapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_157"> <span style="font-style: italic;color: #3333FF;">Das Funktionsmerkmal setzt keine besonderen Hardwaremerkmale voraus.&nbsp;&gt;&gt;</span> </p>
+  <p id="polarion_247"></p>
+  <p id="polarion_249"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-137222">6.3 Datenschutz &amp; Sicherheit</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135429">
+   <p><b>A_23367</b></p>
+   <p>Der PoPP-Dienst DARF personenbezogene Daten NICHT protokollieren und NICHT persistieren. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_252"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-137223">
+   <p><b>A_23558</b></p>
+   <p>Der PoPP-Dienst MUSS den privaten Signaturschlüssel, mit dem die PoPP-Token signiert werden, in einem HSM speichern. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135132">
+   <p><b>A_23305</b></p>
+   <p>Der Anbieter des PoPP-Dienstes MUSS zur Speicherung des privaten Signaturschlüssel, mit dem die PoPP-Token signiert werden, ein HSM verwenden, dessen Eignung durch eine erfolgreiche Evaluierung nachgewiesen wurde. Als Evaluierungsschemata kommen dabei Federal Information Processing Standard (FIPS) oder Common Criteria mit mindestens folgender Prüftiefe in Frage: <br> 
+    <ol> 
+     <li>FIPS 140-2 Level 3 oder</li> 
+     <li>Common Criteria EAL 4.</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136118">
+   <p><b>A_23424</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Anbieter des PoPP-Dienstes MUSS sichere Prozesse zur Personalisierung und des Betriebs des HSMs (A_23305*) definieren und etablieren, die gewährleisten, dass</span><br> 
+    <ol> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">das Schlüsselmaterial für die Identität FD.SIG im HSM erzeugt wird,</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">der private Schlüssel PrK.FD.SIG nur in einem HSM im Klartext vorliegt,</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">Erzeugen, Backup, Restore und Löschen des Schlüssel PrK.FD.SIG sowie die Erzeugung und der Export des Certificate Signing Request (CSR) nur im 4-Augen-Prinzip möglich ist,</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">der CSR unter Wahrung der Integrität und der Vorgaben des TSPs an den TSP übertragen wird, eine Verifikation des vom TSP erhaltenen Zertifikats im 4-Augen-Prinzip erfolgt, dass diese den korrekten öffentlichen Schlüssel PubK.FD.SIG enthält,</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">die Konfiguration des PoPP-Dienst zur Nutzung des privaten Schlüssels PrK.FD.SIG im HSM (Kopplung von PoPP-Dienst und HSM) nur im 4-Augen-Prinzip möglich ist und</span></li> 
+     <li><span style="font-size: 10pt;line-height: 1.5;">eine Nutzung des privaten Schlüssels PrK.FD.SIG durch Personal des Anbieters abgesehen von der Erstellung des CSR ausgeschlossen ist.</span></li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_250"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136971">6.4 Betrieb</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136969">6.4.1 Servicekonzept</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136970">6.4.1.1 Servicemodell</h5>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136976">6.4.1.1.1 Servicezerlegung</h6>
+  <p id="polarion_57"></p>
+  <p id="polarion_64"> <img src="attachments/4-screenshot-20230207-183233.png" style="max-width: 650px;"> </p>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136977">6.4.1.1.2 Mitwirkungsverpflichtung im TI-ITSM gemäß [gemRL_Betr_TI]</h6>
+  <p id="polarion_66" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tab_KPT_Betr_TI_003 Mitwirkungsverpflichtung im TI-ITSM&nbsp;</span> </p>
+  <table id="polarion_70" style="border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 70.5pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Mitwirkung in den TI-ITSM-Prozessen:</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 29.5pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">INC</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 31.9pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">PRO</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 31.95pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">CHG</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 32.5pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">SKM</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 31.25pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">SLM</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 30.1pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">RF</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 27.5pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Perf</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 38.4pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">CapM</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 28.8pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">KM</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 26.9pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">CSI</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 26.8pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">CM</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 33.2pt;height: 58pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">NM</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 70.5pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Anbieter Proof-of-Patient-Presence-Dienst</span><br> </td> 
+     <td style="width: 29.5pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 31.9pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 31.95pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 32.5pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">.</span><br> </td> 
+     <td style="width: 31.25pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 30.1pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A</span><br> </td> 
+     <td style="width: 27.5pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A</span><br> </td> 
+     <td style="width: 38.4pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A</span><br> </td> 
+     <td style="width: 28.8pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 26.9pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">.</span><br> </td> 
+     <td style="width: 26.8pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+     <td style="width: 33.2pt;height: 12pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">A/E</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_73"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Legende:</span> </p>
+  <p id="polarion_77"> <span style="font-size: 10pt;line-height: 1.5;">INC: Incident Management</span> </p>
+  <p id="polarion_80"> <span style="font-size: 10pt;line-height: 1.5;">PRO: Problem Management</span> </p>
+  <p id="polarion_82"> <span style="font-size: 10pt;line-height: 1.5;">CHG: Change Management</span> </p>
+  <p id="polarion_83"> <span style="font-size: 10pt;line-height: 1.5;">SKM: Servicekatalog Management</span> </p>
+  <p id="polarion_86"> <span style="font-size: 10pt;line-height: 1.5;">SLM: Service Level Management</span> </p>
+  <p id="polarion_90"> <span style="font-size: 10pt;line-height: 1.5;">RF: Request Fulfillment</span> </p>
+  <p id="polarion_93"> <span style="font-size: 10pt;line-height: 1.5;">Perf: Perfomance Management</span> </p>
+  <p id="polarion_95"> <span style="font-size: 10pt;line-height: 1.5;">CapM: Capacity Management</span> </p>
+  <p id="polarion_97"> <span style="font-size: 10pt;line-height: 1.5;">KM: Knowledge Management</span> </p>
+  <p id="polarion_98"> <span style="font-size: 10pt;line-height: 1.5;">CSI: Continual Service Improvement</span> </p>
+  <p id="polarion_102"> <span style="font-size: 10pt;line-height: 1.5;">CM: Configuration Management</span> </p>
+  <p id="polarion_103"> <span style="font-size: 10pt;line-height: 1.5;">NF: Notfall Management</span> </p>
+  <p id="polarion_104"> <span style="font-size: 10pt;line-height: 1.5;">A: Auslöser in INC, PRO, CHG</span> </p>
+  <p id="polarion_105"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Incidents, Problems oder Changes eröffnet.</span> </p>
+  <p id="polarion_106"> <span style="font-size: 10pt;line-height: 1.5;">E: Empfänger von INC, PRO, CHG</span> </p>
+  <p id="polarion_107"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E) ist wer Incidents, Problems oder Changes zugewiesen bekommt und dessen vollständige Mitarbeit gewährleistet ist.</span> </p>
+  <p id="polarion_108"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser und Empfänger im SKM</span> </p>
+  <p id="polarion_109"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Änderungen im Service Katalog Management einbringt.</span> </p>
+  <p id="polarion_110"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E)&nbsp;ist, wer Änderungen im Service Katalog Management aufnimmt.</span> </p>
+  <p id="polarion_111"> <span style="font-size: 10pt;line-height: 1.5;">Portalanbieter (P) ist, wer das TI-Service-Portal zur Verfügung stellt und selbst Nutzer ist.</span> </p>
+  <p id="polarion_112"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im SLM</span> </p>
+  <p id="polarion_113"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Änderungen im Servicelevel Management einbringt.</span> </p>
+  <p id="polarion_114"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E)&nbsp;ist, wer im Servicelevel Management an Servicelevel-Reviews teilnimmt.</span> </p>
+  <p id="polarion_115"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im RF</span> </p>
+  <p id="polarion_116"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Services bei anderen Anbietern abruft.</span> </p>
+  <p id="polarion_117"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E)&nbsp;ist, wer einen Servicekatalog führt und Services anbietet.</span> </p>
+  <p id="polarion_118"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im Perf</span> </p>
+  <p id="polarion_119"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Performancereports bzw. Rohdaten-Performance-Berichte sendet.</span> </p>
+  <p id="polarion_120"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E) ist die gematik.</span> </p>
+  <p id="polarion_121"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im CapM</span> </p>
+  <p id="polarion_122"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer&nbsp;Kapazitätspläne führt und reportet.<br> Empfänger (E) ist die gematik (GTI).</span> </p>
+  <p id="polarion_123"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im KM</span> </p>
+  <p id="polarion_124"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Artikel in der Wissensdatenbank einstellt.</span> </p>
+  <p id="polarion_125"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E) ist, wer Artikel aus der Wissensdatenbank bezieht.</span> </p>
+  <p id="polarion_126"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im CSI</span> </p>
+  <p id="polarion_127"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer&nbsp;ein CSI-Register führt und reportet.<br> Empfänger (E) ist die gematik (GTI).</span> </p>
+  <p id="polarion_128"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im CM</span> </p>
+  <p id="polarion_129"> <span style="font-size: 10pt;line-height: 1.5;">Auslöser (A) ist, wer Reports sendet, in denen die Konfigurationen der verwendeten Produkte dargestellt werden.</span> </p>
+  <p id="polarion_130"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E) ist, wer Konfigurationsvorgaben und deren Umsetzung dar z.B. im Zuge eines CRs oder Changes empfängt und umsetzt.</span> </p>
+  <p id="polarion_131"> <span style="font-size: 10pt;line-height: 1.5;">A/E: Auslöser und Empfänger im NM</span> </p>
+  <p id="polarion_132"> <span style="font-size: 10pt;line-height: 1.5;">Aktiv (A) ist, wer im Notfall zuarbeiten und unterstützen muss.</span> </p>
+  <p id="polarion_133"> <span style="font-size: 10pt;line-height: 1.5;">Empfänger (E) stellen einen Notfall-Ansprechpartner bereit.</span> </p>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136974">6.4.1.1.3 Spezifische Ausprägungen und Verpflichtungen einzelner Rollen</h6>
+  <p id="polarion_134" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tab_KPT_Betr_Betriebliche Rolle_Anbieterkonstellationen</span> </p>
+  <table id="polarion_135" style="width: 100%;border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 153.05pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Spezifische Ausprägung der Rolle</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 168.5pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Zulässige Anbieterkonstellationen</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 125.25pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 153.05pt;height: 13.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Anbieter Proof-of-Patient-Presence-Dienst</span><br> </td> 
+     <td style="width: 168.5pt;height: 13.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">I</span><br> </td> 
+     <td style="width: 125.25pt;height: 13.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136975">6.4.1.1.4 Anbieter Proof-of-Patient-Presence-Dienst</h6>
+  <p id="polarion_136" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Für den Anbieter Proof-of-Patient-Presence-Dienst dienen die in [gemKPT_Betrieb#3.4.1.2.1]&nbsp;aufgeführten betrieblichen Konstellationen zur Orientierung – diese Optionen sind jedoch nicht abschließend. Der Anbieter kann entscheiden, in welcher Weise er den Betrieb organisiert. An dieser Stelle ist jedoch anzumerken, dass für die TI-ITSM-Prozesse nur ein einziger Dienstleister als TI-ITSM-Teilnehmer für den Anbieter im Zulassungsvertrag/Zulassungsbescheid&nbsp;eingetragen werden kann. Dieser erfüllt dann die in&nbsp;[gemKPT_Betrieb#3.4.1.2.1]&nbsp;aufgeführten Berechtigungen und Verpflichtungen für den Anbieter.&nbsp;</span> </p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136972">6.4.1.2 Supportkonzept</h5>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136973">6.4.1.3 Organisatorische Service Level</h5>
+  <p id="polarion_139" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tabelle x:&nbsp;Tab_gemKPT_Betr_OrgSL_Serviceleistung_Zeiten</span> </p>
+  <table id="polarion_140" style="width: 100%;border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 160pt;height: 25.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Serviceleistung</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 158.1pt;height: 25.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">zu Haupt- und Nebenzeit<br> (TIP1-A_7265)</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 128.7pt;height: 25.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">zu Hauptzeit<br> (A_13573)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 160pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Anbieter Proof-of-Patient-Presence-Dienst</span><br> </td> 
+     <td style="width: 158.1pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">x</span><br> </td> 
+     <td style="width: 128.7pt;height: 14.5pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_141"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107403|external=true|anchor=2cf48e6b-c0a8e834-7ac6ae22-8383a1e1">
+   <p><b>TIP1-A_7265-03</b></p>
+   <p>TI-ITSM-Teilnehmer mit Mitwirkungsverpflichtung zur Haupt- und Nebenzeit gemäß <span style="font-size: 11pt;line-height: 1.5;"><br> </span><span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Tab_KPT_Betr_TI_002 Mitwirkungspflichten der TI-ITSM-Teilnehmer</span> <br> MÜSSEN die folgenden Service Level (Zeiten) einhalten:<br> <br> <p class="polarion-rte-caption-paragraph" id="polarion___11"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">13</span>: Tab_KPT_Betr_TI_052 Service Level (Zeiten) im TI-ITSM </p> <br> <img title="8-screenshot-20200811-144748.png" src="attachments/ML-107403-8-screenshot-20200811-144748.png" style="width: 591px;height: 628px;"><br> <br> * Die Reaktionszeit gilt sowohl für die Rolle Incident/Problem - Verantwortlicher als auch Incident/Problem - Unterstützer.<br> H (Hauptzeit): Mo - Fr 09:00 - 17:00 im Rahmen eines Einschichtbetriebs [außer an bundeseinheitlichen Feiertagen].<br> N (Nebenzeit): Alle anderen Zeiten gelten als Nebenzeit.<br> ** Abhängig vom im Business-Servicekatalog des TI-ITSM-Teilnehmers angebotenen&nbsp;konkreten Service <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_142" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Anbietertyp: Anbieter Proof-of-Patient-Presence-Dienst - org./betriebl. Eignung: Prozessprüfung</span> </p>
+  <p id="polarion_143"> <span style="font-size: 10pt;line-height: 1.5;">Sind SL nur der Hauptzeit (H) zugeordnet, so kann die Bearbeitung in der Nebenzeit unterbrochen werden und wieder in der Hauptzeit aufgenommen werden. Die Einhaltung dieses SL wird nur in der Hauptzeit gemessen.</span> </p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136980">6.4.1.4 Technische Service Level / Performance-Kenngrößen</h5>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136978">6.4.1.4.1 Spezifische Ausprägungen</h6>
+  <div class="heading-7" id="polarion_wiki macro name=module-workitem;params=id=ML-136979"></div>
+  <p id="polarion_144" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Schnittstellen::Operation bzw. Anwendungsfall</span> </p>
+  <p id="polarion_146" class="MsoNormal"> <span style="font-size: 10pt;color: #000099;line-height: 1.5;">&lt;&lt;PDT71-S01 ist reserviert für die&nbsp;Berechnung der rel. Verfügbarkeit und darf nicht für andere Performance-Kenngrößen verwendet werden.&gt;&gt;</span> </p>
+  <p id="polarion_147" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tab_gemKPT_Betr_Proof-of-Patient-Presence-Dienst_Operationen/Anwendungsfälle</span> </p>
+  <table id="polarion_wiki macro name=table;params=uid=148" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 80px;height: 100px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">Produkttyp / Anwen-dungstyp</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 25px;height: 100px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">S/A-ID</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 189px;height: 100px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">Schnittstellen::Operation / Anwendungsfall</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 98px;height: 100px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 156px;height: 100px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">Berichtsformat-Alias (sofern von Schnittstellen::Operation bzw. Anwendungsfall abweichend)</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="width: 80px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">PDT71</span><br> </td> 
+     <td style="width: 25px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">S01</span><br> </td> 
+     <td style="width: 189px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">I*</span><br> </td> 
+     <td style="width: 98px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 156px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 80px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">PDT71</span><br> </td> 
+     <td style="width: 25px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">S02</span><br> </td> 
+     <td style="width: 189px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> I_PoPP_Service::createPoPPToken<br> </td> 
+     <td style="width: 98px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <br> </td> 
+     <td style="width: 156px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 80px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PDT71</td> 
+     <td style="width: 25px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">S03</td> 
+     <td style="width: 189px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">I_PoPP_Service::getChallenge</td> 
+     <td style="width: 98px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 156px;height: 20.1667px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_152" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Performance-Kenngrößen / SL-Werte</span> </p>
+  <p id="polarion_153" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Der Erfassungszeitraum&nbsp;für die aufgeführten Soll-Werte beträgt ein Kalendermonat.</span> </p>
+  <p id="polarion_154" class="MsoNormal"></p>
+  <p id="polarion_158" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tab_gemKPT_Betr_Proof-of-Patient-Presence-Dienst_Performance-Kenngroessen</span> </p>
+  <table id="polarion_wiki macro name=table;params=uid=159|width=80%" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Performance-<br> Kenngröße (PKG-ID)</th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">berechnet aus (Rohdaten-BDE, Probing)</th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">SL-Wert<br> (Soll-Wert)</th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">min / max</th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Normative Referenz</th> 
+    </tr> 
+    <tr> 
+     <td colspan="6" rowspan="1" style="width: 592px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Proof-of-Patient-Presence-Dienst -&nbsp;PDT71 - I*</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S01-D3-G14</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Relative Verfügbarkeit im Erfassungszeitraum zur Hauptzeit exkl. Wartung.&nbsp;[%*1000]</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Probing</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">99990</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">min</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span class="polarion-rte-link" data-type="workItem" id="fake" data-custom-label="A_23419" data-item-id="ML-136043" data-option-id="custom"></span>&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S01-D3-G16</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Relative Verfügbarkeit im Erfassungszeitraum zur Nebenzeit exkl. Wartung.&nbsp;[%*1000]</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Probing</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">99970</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">min</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span class="polarion-rte-link" data-type="workItem" id="fake" data-custom-label="A_23419" data-item-id="ML-136043" data-option-id="custom"></span>&nbsp;&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td colspan="6" rowspan="1" style="width: 592px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Proof-of-Patient-Presence-Dienst -&nbsp;PDT71 - I_PoPP_Service::createPoPPToken</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S02-D1-G01</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Anzahl der Aufrufe im Betrachtungszeitraum. [Stück]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S02-D2-G04</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Summe der Bearbeitungszeiten im Betrachtungszeitraum. [msec]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S02-D2-G08</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Mittlere Bearbeitungszeit im Betrachtungszeitraum. [msec]&nbsp;&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">max</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S02-D2-G30</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Maximale Bearbeitungszeit im Betrachtungszeitraum.&nbsp;[msec]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">max</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S02-D2-G31</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Anteil Bearbeitungen innerhalb der Bearbeitungszeitvorgabe im Betrachtungszeitraum.&nbsp;[%*1000]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">99000</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">min</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td colspan="6" rowspan="1" style="width: 592px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Proof-of-Patient-Presence-Dienst -&nbsp;PDT71 - I_PoPP_Service::getChallenge</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S03-D1-G01</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Anzahl der Aufrufe im Betrachtungszeitraum. [Stück]</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S03-D2-G04</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Summe der Bearbeitungszeiten im Betrachtungszeitraum. [msec]</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">n/a</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S03-D2-G08</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Mittlere Bearbeitungszeit im Betrachtungszeitraum. [msec]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">max</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S03-D2-G30</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Maximale Bearbeitungszeit im Betrachtungszeitraum.&nbsp;[msec]&nbsp;</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">max</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 129px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PDT71-S03-D2-G31</td> 
+     <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Anteil Bearbeitungen innerhalb der Bearbeitungszeitvorgabe im Betrachtungszeitraum.&nbsp;[%*1000]</td> 
+     <td style="width: 69px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rohdaten-BDE</td> 
+     <td style="width: 44px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">99000</td> 
+     <td style="width: 37px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">min</td> 
+     <td style="width: 76px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_160"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136987">6.4.2 gemKPT_Betr: Anhang A</h4>
+  <p id="polarion_168" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">2.1.1.1&nbsp;Produkttypen (PDT-IDs)</span> </p>
+  <p id="polarion_169" class="MsoNormal"> <span style="font-size: 10pt;color: #000099;line-height: 1.5;">&lt;&lt; Produkttypen sind fortlaufend. Die Texte für Spalte 2 und 3 sind identisch mit den Texten im entsprechenden Zulassungstyp (PET)&gt;&gt;</span> </p>
+  <p id="polarion_176" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Tab_gemKPT_Betr_Produkttypen</span> </p>
+  <table id="polarion_177" style="width: 99.86%;border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 54pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">ID</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 155.8pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Produkttyp / Anwendungstyp</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 236.35pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Produkttyp-Name / Anwendungsname</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 54pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">PDT71</span><br> </td> 
+     <td style="width: 155.8pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">gemProdT_PoPP_Dienst</span><br> </td> 
+     <td style="width: 236.35pt;height: 14.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Proof-of-Patient-Presence-Dienst</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_178" class="MsoNormal"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136988">6.4.3 gemSpec_Perf#Rohdaten-Performance-Reporting</h4>
+  <p id="polarion_179"> <span style="font-weight: bold;font-size: 10pt;color: #3333FF;line-height: 1.5;">in [gemSpecPerf::Kapitel&nbsp;2.5.2&nbsp;Rohdaten-Performance-Reporting (Rohdatenerfassung v.02)]</span><span style="font-size: 10pt;color: #3333FF;line-height: 1.5;"><br> </span><span style="font-size: 10pt;line-height: 1.5;">Tabelle : Tab_gemSpec_Perf_Produkte_Rohdatenerfassung_Version_v02</span> </p>
+  <table id="polarion_180" style="width: 100%;border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 106.85pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">PDT</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 341.45pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Produkttyp</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="width: 106.85pt;height: 2.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">PDT71</span><br> </td> 
+     <td style="width: 341.45pt;height: 2.25pt;border: 1pt solid #CCCCCC;border-top: 1pt solid #CCCCCC;border-bottom: 1pt solid #CCCCCC;border-right: 1pt solid #CCCCCC;border-left: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;">Proof-of-Patient-Presence-Dienst</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_182" class="MsoNormal"> <span style="font-size: 10pt;line-height: 1.5;">Die Zuweisungen der Anforderungen zu dem Produkttypen Proof-of-Patient-Presence-Dienst&nbsp;sowie zu dem entsprechenden Anbietertypen werden wie folgt vorgenommen:</span> </p>
+  <p id="polarion_183" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22057 -&nbsp;Performance - Rohdaten - Verpflichtung des Anbieters (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_184" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Anbietertyp: Anbieter Proof-of-Patient-Presence-Dienst - org./betriebl. Eignung: Prozessprüfung</span> </p>
+  <p id="polarion_185" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22482&nbsp;-&nbsp;Performance - Rohdaten - Erfassung von Rohdaten (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_188" class="MsoNormal"> <span style="font-size: 10pt;color: #3366FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_189"></p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136984">6.4.3.1 Umfang</h5>
+  <p id="polarion_190" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22002 - Performance - Rohdaten - Übermittlung (Rohdatenerfassung v.02)</span><span style="font-size: 10pt;color: #3333FF;line-height: 1.5;"> </span> </p>
+  <p id="polarion_191" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_192" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22000 -&nbsp;Performance - Rohdaten - zu liefernde Dateien (Rohdatenerfassung v.02)</span><span style="font-size: 10pt;color: #3333FF;line-height: 1.5;"> </span> </p>
+  <p id="polarion_193" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_194" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22429 - Performance - Rohdaten - Inhalt der Selbstauskunft (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_195" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_197" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22004 - Performance - Rohdaten - Korrektheit (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_199" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_200" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22005 - Performance - Rohdaten - Frist für Nachlieferung (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_201" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Herstellererklärung</span> </p>
+  <p id="polarion_202" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22003-01 - Performance - Rohdaten - Nachlieferung auf Anforderung (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_203" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Anbietertyp: &nbsp;Anbieter Proof-of-Patient-Presence-Dienst -&nbsp;org.-betr.: Anbietererklärung</span> </p>
+  <p id="polarion_204" class="MsoNormal"></p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136986">6.4.3.2 Lieferintervalle</h5>
+  <p id="polarion_205" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21976 - Performance - Rohdaten - Konfigurierbarkeit der Lieferintervalle (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_206" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_207" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22047 - Performance - Rohdaten - Änderung der Konfiguration der Lieferintervalle (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_208" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst -&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_209" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22620 - Rohdaten - Umsetzungszeit für Änderung der Lieferintervalle</span> </p>
+  <p id="polarion_210" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Anbietertyp: Anbieter Proof-of-Patient-Presence-Dienst -&nbsp;org.-betr.: Anbietererklärung</span> </p>
+  <p id="polarion_211" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21978 - Performance - Rohdaten - Trennung der Lieferintervalle (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_212" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Herstellererklärung</span> </p>
+  <p id="polarion_213" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21975 - Performance - Rohdaten - Default-Werte für Lieferintervalle (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_214" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_215" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21979 - Performance - Rohdaten - Bezug der Lieferverpflichtung (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_216" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Herstellererklärung</span> </p>
+  <p id="polarion_217" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21980 - Performance - Rohdaten - Leerlieferung (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_218" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_219"></p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136981">6.4.3.3 Format</h5>
+  <p id="polarion_220" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22001-01 - Performance - Rohdaten - Name der Berichte (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_221" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_222" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21981-02 - Performance - Rohdaten - Format des Rohdaten-Performance-Berichtes (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_223" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp:&nbsp;Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_224" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22500-01 - Performance - Rohdaten - Status-Block (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_225" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp:&nbsp;Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_226" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_21982-01 - Performance - Rohdaten - Message-Block (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_227" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst&nbsp;-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_228" class="MsoNormal"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">A_22513-01 - Performance - Rohdaten - Message-Block im Fehlerfall - JSON (Rohdatenerfassung v.02)</span> </p>
+  <p id="polarion_229" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">hinzufügen der Zuordnung zu Produkttyp: Proof-of-Patient-Presence-Dienst-&nbsp;funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_230" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">&nbsp;</span> </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136982">6.4.4 gemSpecPerf#3.x Proof-of-Patient-Presence-Dienst</h4>
+  <p id="polarion_231" class="MsoNormal"> <span style="font-weight: bold;color: #3333FF;">in [gemSpecPerf::Kapitel&nbsp;3.x&nbsp;Proof-of-Patient-Presence-Dienst]</span> </p>
+  <p id="polarion_233"> <span style="font-size: 10pt;line-height: 1.5;">Im Folgenden werden die spezifischen Leistungsanforderungen und Anforderungen an das Rohdaten-Performance-Berichtsformat des Proof-of-Patient-Presence-Dienstaufgeführt.</span> </p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-136985">6.4.4.1 Leistungsanforderungen Proof-of-Patient-Presence-Dienst</h5>
+  <p id="polarion_234" class="MsoNormal"> <span style="font-weight: bold;color: #3333FF;">in [gemSpecPerf::Kapitel&nbsp;3.x.1&nbsp;Leistungsanforderungen&nbsp;Proof-of-Patient-Presence-Dienst]</span> </p>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-136983">6.4.4.1.1 Performancevorgaben Proof-of-Patient-Presence-Dienst</h6>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136042">
+   <p><b>A_23418</b></p>
+   <p>Der Anbieter des Proof-of-Patient-Presence-Dienst MUSS nachvollziehbar darstellen, wie die Skalierung im Produktivbetrieb erreicht wird. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_235"> <span style="font-weight: bold;color: #3333FF;">in [gemSpecPerf::Kapitel&nbsp;3.x.1.3&nbsp;Performancevorgaben&nbsp;Proof-of-Patient-Presence-Dienst]</span> </p>
+  <p id="polarion_138">Im Zuge des Zulassungsverfahrens hat der Anbieter des Proof-of-Patient-Presence-Dienstes&nbsp;der gematik gegenüber nachvollziehbar darzustellen, welche technischen Skalierungsmaßnahmen anhand welcher messbarer Parameter er für den Produktivbetrieb plant durchzuführen. Die Skalierungsmaßnahmen können dabei unterschiedliche Ausprägungen und Dimensionen umfassen. Beispielsweise eine automatisierte Ressourcenzuteilung oder eine Anpassung oder Änderung unterschiedlicher technischer Komponenten, die zu einer Produktänderung im Sinne der [gemSpec_OM] führt. Die Darstellung muss Verifikationsbeschreibungen enthalten, mit denen der Erfolg der Maßnahmen ermittelt werden kann.</p>
+  <p id="polarion_148"></p>
+  <p id="polarion_159">Die Verfügbarkeit der funktionalen Eigenschaften des Proof-of-Patient-Presence-Dienstes wird mittels der Probes des Service Monitorings und die nicht funktionalen Eigenschaften durch Auswertung der Rohdaten ermittelt.</p>
+  <p id="polarion_232"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136043">
+   <p><b>A_23419</b></p>
+   <p>Der Anbieter des Proof-of-Patient-Presence-Dienst MUSS zur Hauptzeit eine Verfügbarkeit von 99,99% und zur Nebenzeit von 99,97% für alle Operationen der technischen Schnittstellen aufweisen.<br> <br> Wartungsfenster MÜSSEN vollständig in der Nebenzeit liegen. Genehmigte Wartungsfenster werden nicht als Ausfallzeit gewertet.<br> <br> Hauptzeit ist Montag bis Freitag von 6 bis 22 Uhr sowie Samstag und Sonntag von 6 bis 20 Uhr. Alle übrigen Stunden der Woche sind Nebenzeit. Bundeseinheitliche Feiertage werden wie Sonntage behandelt, alle übrigen Feiertage wie Werktage.<br> <br> Der Anschluss an das zentrale Netz muss über die Anschlussoption „redundante Anbindung“ erfolgen.<br> <b>&lt;=</b></p>
+  </div>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-137012">6.4.4.2 Rohdaten-Performance-Reporting Spezifika Proof-of-Patient-Presence-Dienst</h5>
+  <p id="polarion_236" class="MsoNormal"> <span style="font-weight: bold;color: #3333FF;">in [gemSpecPerf::Kapitel&nbsp;3.x.2]&nbsp;Rohdaten-Performance-Reporting&nbsp;Proof-of-Patient-Presence-Dienst</span> </p>
+  <p id="polarion_237"> <span style="font-size: 10pt;line-height: 1.5;">In Ergänzung an die allgemeinen Anforderungen an das Performance-Rohdaten-Reporting befinden sich nachfolgend die produktspezifischen Anforderungen.</span> </p>
+  <p id="polarion_238" class="MsoNormal"></p>
+  <h6 id="polarion_wiki macro name=module-workitem;params=id=ML-137011">6.4.4.2.1 3.x.2.2 Format</h6>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136020">
+   <p><b>A_23414</b></p>
+   <p><br>Der Produkttyp Proof-of-Patient-Presence-Dienst MUSS bei Rohdaten-Performance-Berichten bzgl. der "duration_in_ms"-Felder die Hinweise der Spalte "Duration" aus Tabelle Tab_gemSpec_Perf_Berichtsformat_Proof-of-Patient-Presence-Dienst berücksichtigen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_239" class="MsoNormal"> <span style="font-size: 10pt;color: #3333FF;line-height: 1.5;">Zuordnung zu Produkttyp:&nbsp;Proof-of-Patient-Presence-Dienst- Prüfverfahren funkt. Eignung: Test Produkt/FA</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136039">
+   <p><b>A_23415</b></p>
+   <p>Der Produkttyp Proof-of-Patient-Presence-Dienst MUSS bei Rohdaten-Performance-Berichten bzgl. der "operation"-Felder die Angabe der Spalte "Operation/Usecase" aus Tabelle Tab_gemSpec_Perf_Berichtsformat_Proof-of-Patient-Presence-Dienst berücksichtigen.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_240" class="MsoNormal"> <span style="color: #3333FF;">Zuordnung zu Produkttyp:&nbsp;Proof-of-Patient-Presence-Dienst- Prüfverfahren funkt. Eignung: Test Produkt/FA</span> </p>
+  <p id="polarion_241"> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;Tabelle : Tab_gemSpec_Perf_Berichtsformat_Proof-of-Patient-Presence-Dienst</span> </p>
+  <table id="polarion_243" style="width: 100%;border: 1pt solid #CCCCCC;"> 
+   <tbody> 
+    <tr> 
+     <td style="background-color: #F0F0F0;width: 204px;height: 15pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Operation / Usecase</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 252px;height: 15pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Duration</span><br> </td> 
+     <td style="background-color: #F0F0F0;width: 264px;height: 15pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"><span style="font-weight: bold;">Message</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 204px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"> <span style="font-size: 10pt;line-height: 1.5;">I_PoPP_Service::createPoPPToken</span><br> </td> 
+     <td style="width: 252px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"> Bei Aufruf der Operation beginnt die&nbsp;Messung mit Annahme der Aufrufnachricht an der Außenschnittstelle des Produkttyps und endet mit dem vollständigen Versenden der Antwortnachricht.<br> </td> 
+     <td style="width: 264px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 204px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;">I_PoPP_Service::getChallenge</td> 
+     <td style="width: 252px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;">-""-&nbsp;</td> 
+     <td style="width: 264px;height: 14.1pt;border: 1pt solid #CCCCCC;padding: 3.75pt;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_244" class="MsoNormal"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136938">7 Informationsmodell</h2>
+  <p id="polarion_161"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;<span style="font-weight: bold;">Optional</span>: Enthält, sofern erforderlich, das technische Info-Modell – den Information View, z.B. auch Zertifkate, Schlüssel, eGK-Strukturen der TI-Plattform &gt;&gt;</span> </p>
+  <p id="polarion_162"> <br> </p>
+  <p id="polarion_163"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Das Kapitel muss auch dann erhalten bleiben, wenn kein Informationsmodell angegeben wird.</span> </p>
+  <p id="polarion_164"> <br> </p>
+  <p id="polarion_165"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Kapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_166"> <span style="font-style: italic;color: #3333FF;">Eine gesondertes Informationsmodell der durch den Produkttypen verarbeiteten Daten wird&nbsp;&nbsp;nicht benötigt.&gt;&gt;</span> </p>
+  <p id="polarion_167"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136939">8 Verteilungssicht</h2>
+  <p id="polarion_170"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;&nbsp;<span style="font-weight: bold;">Optional</span>: Darstellung der Verteilsicht des Produkttyps, also der hardwareseitigen Verteilung des Produkttyps bzw. seiner Teilsysteme und die Einbettung in die physikalische Umgebung (z.B. Arztpraxis)&gt;&gt;</span> </p>
+  <p id="polarion_171"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;Das Kapitel muss auch dann erhalten bleiben, wenn kein Verteilungssicht dargestellt wird.</span> </p>
+  <p id="polarion_172"> <br> </p>
+  <p id="polarion_173"> <span style="font-style: italic;color: #3333FF;">Werden keine Festlegungen getroffen, sollte das Kapitel mit dem folgenden Standardsatz erhalten bleiben:</span> </p>
+  <p id="polarion_174"> <span style="font-style: italic;color: #3333FF;">Eine Darstellung der hardwareseitigen Verteilung des Produkttyps bzw. seiner Teilsysteme und der Einbettung in die physikalische Umgebung wird nicht benötigt &gt;&gt;</span> </p>
+  <p id="polarion_175"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-136940">9 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136941">9.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Kürzel<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 486.8px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136942">9.2 Glossar</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 195px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Begriff<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 536px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 195px;height: 47px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Funktionsmerkmal</td> 
+     <td style="text-align: left;vertical-align: top;width: 536px;height: 47px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 195px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 536px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 195px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 536px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_181">Das Glossar wird als eigenständiges Dokument (vgl. [gemGlossar]) zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136943">9.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136944">9.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion___1">Tabelle 1: Tab_Fehlernachricht_Struktur</a></li>
+   <li><a href="#polarion_49">Tabelle 2: Tab_Fehlernachricht_Beispiel</a></li>
+   <li><a href="#polarion___2">Tabelle 3:&nbsp; Tab_JSON_Key_Values_Fehlernachrichten</a></li>
+   <li><a href="#polarion___3">Tabelle 4: Tab_JSON_Key_Values_Request_Response_Nachrichten</a></li>
+   <li><a href="#polarion___4">Tabelle 5: Tab_getChallenge_Response_Struktur</a></li>
+   <li><a href="#polarion___5">Tabelle 6&nbsp;Tab_getChallenge_Fehlerfälle</a></li>
+   <li><a href="#polarion___6">Tabelle 7: Tab_createPoPPToken_Request_Struktur</a></li>
+   <li><a href="#polarion___7">Tabelle 8: Tab_createPoPPToken_Response_Struktur</a></li>
+   <li><a href="#polarion___8">Tabelle 9&nbsp;createPoPPToken_Fehlerfälle</a></li>
+   <li><a href="#polarion_72">Tabelle 10: Tab_Beispiel_Protokolldurchlauf</a></li>
+   <li><a href="#polarion___9">Tabelle 11: Tab_createPoPPToken_Response_Signaturalgorithmen</a></li>
+   <li><a href="#polarion___10">Tabelle 12: Tab_PoPP_DNS_SD</a></li>
+   <li><a href="#polarion___11">Tabelle 13: Tab_KPT_Betr_TI_052 Service Level (Zeiten) im TI-ITSM</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136945">9.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136946">9.5.1 Dokumente der gematik</h4>
+  <p id="polarion_186">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummern sind in der aktuellen, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_187"></p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Herausgeber: Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[gemGlossar]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gematik: Einführung der Gesundheitskarte – Glossar</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-136947">9.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=5" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Herausgeber (Erscheinungsdatum): Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136948">9.6 Verzeichnis der verwendeten Operationen und Interfaces &lt;&lt;optional&gt;&gt;</h3>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136949">9.7 Klärungsbedarf &lt;&lt;optional&gt;&gt;</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=7" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 140.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Kapitel<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 467.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Offener Punkt<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 112.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Zuständig<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 467.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 112.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 467.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 112.4px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-136950">9.8 Allgemeine Erläuterungen &lt;&lt;optional&gt;&gt;</h3>
+  <p id="polarion_196"> <span style="font-style: italic;color: #3333FF;">&lt;&lt;hier können die Interfaces und Operationen mit Verweis auf die jeweilige Seite gelistet werden. Lesehilfe zur Auflösung von Querbezügen&gt;&gt;</span> </p>
+ </body>
+</html>

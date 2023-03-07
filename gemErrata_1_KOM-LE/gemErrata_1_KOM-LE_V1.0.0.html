@@ -1,0 +1,143 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_37"></p>
+  <p id="polarion_57"> <span style="font-size: 14pt;color: #FF0000;line-height: 1.5;">zulassungstest-relevante Abbildung von Errata 1 für KOM-LE </span> </p>
+  <p id="polarion_58">Das Dokument soll die im vorliegenden Errata beschriebenen Änderungen im PET so abbilden, dass Test den funktionalen (Zulassungs-)Test für:</p>
+  <ul id="polarion_15"> 
+   <li><span style="font-weight: bold;">CM KOM-LE</span> in der <span style="font-weight: bold;">PTV 1.2.2-0 =Spezifikationsstand R2.1.2 + Errata 1</span></li> 
+   <li><span style="font-weight: bold;">FD KOM-LE</span> in der <span style="font-weight: bold;">PTV 1.2.3-0 =Spezifikationsstand R2.1.2-1 + Errata1</span></li> 
+  </ul>
+  <p id="polarion_23">vorbereiten und durchführen kann.</p>
+  <p id="polarion_59">Die zum Errata veröffentlichten Dokumente sind im ELO zu finden:</p>
+  <ul id="polarion_60"> 
+   <li>Errata <span style="font-weight: bold;">gemErrata_1_KOM-LE</span>:&nbsp;elodms://3645669</li> 
+   <li>Produkttypsteckbrief <span style="font-weight: bold;">gemProdT_CM_KOMLE_PTV1.2.2-0</span>: elodms://3645474</li> 
+   <li>Produkttypsteckbrief <span style="font-weight: bold;">gemProdT_FD_KOMLE_PTV1.2.3-0</span>:&nbsp;elodms://3645082</li> 
+  </ul>
+  <p id="polarion_11">Dokumentenlandkarte, in der die o.g. neuen Produkttypversionen eingeführt wurden: elodms://3645608</p>
+  <p id="polarion_20"> <img src="attachments/6-screenshot-20191010-153106.png" style="width: 754px;height: 126px;"> </p>
+  <p id="polarion_61"></p>
+  <p id="polarion_62">snapshot vom Deckblatt des veröffentlichten Errata's:</p>
+  <p id="polarion_14"></p>
+  <p id="polarion_9"> <span style="font-weight: bold;"><img src="attachments/5-screenshot-20191010-150837.png"></span> </p>
+  <p id="polarion_8"></p>
+  <p id="polarion_28"> <span style="font-weight: bold;">Inhaltsverzeichnis</span> </p>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100993">1 C_6968 -Abkündigung der Verwendung von TLS 1.1</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100991">1.1 Änderungen in [gemSpec_Krypt_V2.10.0]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100992">1.2 Änderungen in [gemILF_PS]</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100994">1.3 Änderungen in [gemSpec_KT]</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100995">2 C_7032 - Zulassung von TLS Version 1.3 per KANN-Anforderung</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100997">3 C_7040 - Korrektur: Performance_Kennzahlen für KOM-LE</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-100996">4 C_7047 - KOM-LE Fachdienst - Falsche Zuordnung von Anforderungen zu Prüfverfahren</a></li>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100993">1 C_6968 -Abkündigung der Verwendung von TLS 1.1</h2>
+  <p id="polarion_24"> <br> Das TLS-Protokoll in der Version 1.1 verwendet&nbsp; beim Verbindungsaufbau das schwache Hash-Verfahren SHA-1. Aus diesem Grund wird das IETF&nbsp; die TLS Version 1.1 abkündigen [1]. Darüber hinaus haben die namenhaften Webbrowser-Hersteller angekündigt ab 2020 TLS 1.1 nicht mehr zu unterstützen [2]. Des Weiteren schätzt die gematik ein (nach aktuellen Gesprächen mit dem BSI zu dem Thema), dass das BSI in der nächsten Aktualisierung der für die TI normativen TR-03116-1 TLS Version 1.1 für die TI verbieten wird.<br> Ziel der gematik ist es frühzeitig diese Entwicklung (Abkündigung von TLS 1.1) auch in der Spezifikation widerzuspiegeln.<br> Primärsysteme können ab dem 01.04.2020 nicht mehr davon ausgehen, dass alle Konnektoren TLS in der Version 1.1 unterstützen.<br> [1]:&nbsp;<a href="https://tools.ietf.org/html/draft-ietf-tls-oldversions-deprecate-05&nbsp;" target="_top" class="descriptionLink">https://tools.ietf.org/html/draft-ietf-tls-oldversions-deprecate-05&nbsp;</a>&nbsp;<br> [2]:&nbsp;<a href="https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols" target="_top" class="descriptionLink">https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols</a>&nbsp; </p>
+  <p id="polarion_27"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_31"> 
+   <li>gemSpec_Krypt_V2.10.0,</li> 
+   <li>gemSpec_KT,</li> 
+   <li>gemILF_PS</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100991">1.1 Änderungen in [gemSpec_Krypt_V2.10.0]</h3>
+  <p id="polarion_32"> in Kapitel <span style="font-weight: bold;">3.3.2 TLS-Verbindungen:</span> </p>
+  <p id="polarion_33"> <span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Nach [RFC-5246, Abschnitt 7.4.1.2] muss ein TLS-Client beim Aufbau einer TLS-Verbindung (Handshake) die höchste von ihm unterstützte Version, also Version 1.2, als „favorite choice“ angeben. Mit [RFC-5246, Abschnitt 7.4.1.3] muss ein TLS-Server mit der höchsten von beiden Kommunikationspartnern unterstützten Version antworten, also nach GS-A_4385 Version 1.2. Damit wird zwischen Komponenten und Diensten, die GS-A_4385 umsetzen, nur noch die TLS-Version 1.2 verwendet.</span> </p>
+  <p id="polarion_34"> <span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Mittelfristig wird eine vollständige Migration auf TLS Version 1.2 angestrebt (vgl. auch [BSI-TR-02102-2, Abschnitt 3.2]), d. h. außer für den Konnektor und das KOM-LE-CM (s. u. GS-A_5530) wird die grundsätzliche Unterstützung von TLS-Version 1.1 freigestellt, und in einer späteren Migrationsphase wird diese Unterstützung (bzw. die Verwendung) untersagt.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-7921|external=true|revision=168180|anchor=b5798bed-c0a8e832-080e9e57-fdd6535c">
+   <p><b>GS-A_4386</b></p>
+   <p><span style="text-decoration: line-through;background-color: #FFFF99;">Alle Produkttypen, die Übertragungen mittels TLS durchführen, KÖNNEN die TLS-Version 1.1 [RFC-4346] unterstützen (oder auch nicht).</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_35"> <span style="background-color: #FFFF99;"><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Da alle aktuellen Webbrowser (vgl. Übersicht unter&nbsp; </span><a href="https://www.ssllabs.com/ssltest/clients.html" target="_blank">https://www.ssllabs.com/ssltest/clients.html</a><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">&nbsp;und </span><a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations" target="_blank">https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations</a><span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">&nbsp;) seit längerem TLS-Version 1.2 unterstützen ist eine Forderung der Unterstützung von TLS-Version 1.1 bei Diensten innerhalb der TI, die u. Um. von einem Primärsystem aus mittels eines Webbrowsers kontaktiert werden (bspw. VZD), nicht notwendig.</span></span> </p>
+  <p id="polarion_36"> <span style="font-size: 11pt;font-family: Arial, Helvetica;background-color: #FFFF99;line-height: 1.5;">Komponenten, die direkt mit einem Primärsystem per TLS in Verbindung treten, sollen zunächst weiterhin die TLS-Version 1.1 unterstützen, um eine größtmögliche Interoperabilität zu erreichen.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-7922|external=true|revision=168184|anchor=b5798bed-c0a8e832-080e9e57-58e85417">
+   <p><b>GS-A_5530</b></p>
+   <p><span style="text-decoration: line-through;background-color: #FFFF99;">Der Konnektor und das KOM-LE-CM MÜSSEN die TLS-Version 1.1 unterstützen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100240|external=true|revision=168194|anchor=b5798bed-c0a8e832-080e9e57-9ceaccea">
+   <p><b>A_18464</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, DÜRFEN NICHT die TLS-Version 1.1 [RFC-4346] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100992">1.2 Änderungen in [gemILF_PS]</h3>
+  <p id="polarion_38" class="gemStandard"> <span style="font-weight: bold;">In Kap. 4.1.1</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-17304|external=true|revision=168218|anchor=b5798bed-c0a8e832-080e9e57-b19b99e9">
+   <p><b>TIP1-A_4962</b></p>
+   <p>Das Primärsystem SOLL die TLS-Authentisierungsmethoden der Stufen 2 oder 4 aus Tabelle Tab_ILF_PS_Konfigurationsvarianten_HTTP&nbsp;und Stufe 2 aus Tabelle Tab_ILF_PS_Konfigurationsvarianten_CETP verwenden, d.&nbsp;h. TLS mit Server-Authentisierung mit oder ohne Client-Authentisierung.<br> Der Konnektor kann nur noch in den Produkttypversionen 1 und 2 die TLS-Version 1.1&nbsp;anbieten.&nbsp;Nur mit&nbsp;diesen Produkttypversionen&nbsp;kann&nbsp;das&nbsp;PS&nbsp;auch&nbsp;TLS-Version&nbsp;1.1 verwenden. Ab&nbsp; der&nbsp; Konnektor-Produkttypversion 3 bietet&nbsp;der Konnektor&nbsp;TLS nur noch&nbsp;gemäß TLS-Version&nbsp;1.2&nbsp;oder&nbsp;1.3 an.&nbsp;Ab PTV3 MUSS&nbsp;das PS&nbsp;für TLS-gesicherte&nbsp;Verbindungen mindestens TLS Version 1.2 verwenden, es KANN auch TLS Version 1.3 verwenden.<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-100994">1.3 Änderungen in [gemSpec_KT]</h3>
+  <p id="polarion_39"> in Kapitel <span style="font-weight: bold;">2.4.5.1 Sicherung der administrativen TLS-Verbindung</span> </p>
+  <p id="polarion_40" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">Nach [TIP1-A_3415] sind Netzwerkverbindungen grundsätzlich mit den in [gemSpec_Krypt] genannten Verfahren zu sichern. <span style="background-color: #FFFF99;">Die Verbindung zu den Netzwerk-basierten Managementschnittstellen ist immer mit TLS 1.1 gemäß [RFC4346] zu sichern [gemSpec_Krypt#GS-A_4386]. Um die Zukunftsfä-higkeit zu gewährleisten sollen sie auch mittels TLS 1.2 gemäß [RFC5246] gesichert werden können [gemSpec_Krypt#GS-A_4385].</span></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100845|external=true|revision=168228|anchor=b5798bed-c0a8e832-080e9e57-4287a088">
+   <p><b>TIP1-A_3231-01</b></p>
+   <p>Das eHealth-Kartenterminal MUSS als Authentisierungsverfahren für administrative TLS-Verbindungen mindestens einseitige Authentisierung einsetzen.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_41" class="MsoNormal"> in Kapitel <span style="font-weight: bold;">2.4.4 Sicherheitsanforderungen LAN-gekoppelter Terminals</span> </p>
+  <p id="polarion_42" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">(…)</span> </p>
+  <p id="polarion_43" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">Für die Sicherung der hierfür notwendigen Netzwerkkommunikation <span style="background-color: #FFFF99;">sindist</span> für alle Kartenterminals<span style="background-color: #FFFF99;">&nbsp;die&nbsp;in [gemSpec_Krypt] genannten Verfahren&nbsp;TLS 1.1 (Transport Layer Security) gemäß [RFC4346] [gemSpec_Krypt#GS-A_4386]</span> als einheitliche<span style="background-color: #FFFF99;">s</span> auf Zertifikaten basierende<span style="background-color: #FFFF99;">s</span> Verfahren vorgegeben. <span style="background-color: #FFFF99;">Um die Zukunftsfähigkeit zu gewährleisten, soll zusätzlich auch TLS 1.2 gemäß [RFC5246] unterstützt werden [gemSpec_Krypt#GS-A_4385].</span></span> </p>
+  <p id="polarion_44" class="MsoNormal"> <span style="font-size: 11pt;line-height: 1.5;">(…)</span> </p>
+  <p id="polarion_26"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100995">2 C_7032 - Zulassung von TLS Version 1.3 per KANN-Anforderung</h2>
+  <p id="polarion_45">Als KANN-Anforderung wird TLS in der Version 1.3 für alle Produkttypen der TI zugelassen.</p>
+  <p id="polarion_46"> <span style="font-weight: bold;">Von der Änderung betroffene Dokumente:</span> </p>
+  <ul id="polarion_47"> 
+   <li>gemSpec_Krypt_V2.10.0</li> 
+   <li>gemProdT_Kon_PTV3</li> 
+  </ul>
+  <p id="polarion_48">in Kap. 3.3.2</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-100244|external=true|revision=168338|anchor=b5798bed-c0a8e832-080e9e57-0d0c7002">
+   <p><b>A_18467</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, KÖNNEN die TLS-Version 1.3 [RFC-8446] unterstützen, falls sie<br> 
+    <ol> 
+     <li>dabei nur nach [BSI-TR-02102-2] empfohlene Verbindungskonfigurationen (Handshake-Modi, (EC)DH-Gruppen, Signaturverfahren, Ciphersuiten etc.) verwenden, und&nbsp;</li> 
+     <li>mindestens die Ciphersuite "TSL_AES_128_GCM_SHA256" dabei unterstützen.&nbsp;</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-93497|external=true|revision=168334|anchor=b5798bed-c0a8e832-080e9e57-d4b72f42">
+   <p><b>A_17322</b></p>
+   <p>Alle Produkttypen, die Übertragungen mittels TLS durchführen, MÜSSEN sicherstellen, dass sie nur (durch andere Anforderungen) zugelassene TLS-Ciphersuiten bzw. TLS-Versionen anbieten bzw. verwenden. <br> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100997">3 C_7040 - Korrektur: Performance_Kennzahlen für KOM-LE</h2>
+  <p id="polarion_1">Bei den Performance-Kennzahlen für den KOM-LE-Fachdienst wurden falsche Schnittstellen definiert. Diese werden korrigiert.&nbsp;</p>
+  <p id="polarion_2">in Anhang C von gemSpec_Perf V2.4.0:</p>
+  <p id="polarion_3"> Es werden folgende Werte in der Tabelle: <span style="font-weight: bold;color: #FF0000;">Tab_gemSpec_Perf_Performance-Kenngroessen</span> angepasst: </p>
+  <p id="polarion_4"> PDT24-S17-D2-G27 -&gt; PDT24-S<span style="background-color: #FFFF99;">01</span>-D2-G27 </p>
+  <p id="polarion_5"> PDT24-S17-D2-G03 -&gt; PDT24-S<span style="background-color: #FFFF99;">01</span>-D2-G03 </p>
+  <p id="polarion_6"> PDT24-S17-D2-G28 -&gt; PDT24-S<span style="background-color: #FFFF99;">01</span>-D2-G28 </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-100996">4 C_7047 - KOM-LE Fachdienst - Falsche Zuordnung von Anforderungen zu Prüfverfahren</h2>
+  <p id="polarion_22">Sicherheitsrelevante Anforderungen aus der Spezifikation des Fachdienstes für KOMLE wurden nicht dem Sicherheitsgutachten (oder in zwei Fällen nicht zumindest dem funktionalen Test) zugeordnet, sondern nur der Hersteller-/Anbietererklärung oder Test.&nbsp;</p>
+  <p id="polarion_10">Fünf Anforderungen werden in den Steckbriefen (Anbieter und Produkt) einem anderen bzw. teilweise einem weiteren Prüfverfahren zugeordnet:</p>
+  <p id="polarion_12">KOM-LE-A_2185 - ProdT: SiGu statt HE ; AnbT: neu SiGu</p>
+  <p id="polarion_13">KOM-LE-A_2189 - ProdT: Test statt HE</p>
+  <p id="polarion_16">KOM-LE-A_2162 - ProdT: Test statt HE</p>
+  <p id="polarion_17">KOM-LE-A_2164 - ProdT: SiGu statt HE ; AnbT: neu SiGu</p>
+  <p id="polarion_18">KOM-LE-A_2166 - ProdT: SiGu zusätzlich zu Test ; AnbT: neu SiGu</p>
+  <p id="polarion_21">&gt;&gt; Hinweis:</p>
+  <p id="polarion_25">Die folgenden Anforderungen stammen zwar aus gemSpec_FD_KOMLE Version 1.8.0 (aus R3.1.2), haben jedoch noch denselben Inhalt wie in gemSpec_FD_KOMLE Version 1.7.0 (in R2.1.2 und R2.1.2-1). Nur die Zuordnungen zu Prüfverfahren sind wie hier beschrieben verändert.</p>
+  <p id="polarion_19"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15730|external=true|revision=168500|anchor=b5abb950-c0a8e832-080e9e57-e8aaa344">
+   <p><b>KOM-LE-A_2166</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE</span><span>-</span><span>Fachdienst DARF das Ändern </span><span>oder Löschen </span><span>der bei ihm gespeicherten Passwörter der KOM-LE</span><span>-</span><span>Konten durch Dritte NICHT zulassen.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15726|external=true|revision=168498|anchor=b5abb950-c0a8e832-080e9e57-1b524a41">
+   <p><b>KOM-LE-A_2162</b></p>
+   <p><p style="margin-left: 0px;"><span>Die Fachanwendung KOM-LE MUSS gewährleisten, dass Passwörter der Teilnehmer nur vertraulichkeits-, integritäts- und authentizitätsgeschützt vom Client zum Fachdienst übermittelt werden.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15672|external=true|revision=168498|anchor=b5abb950-c0a8e832-080e9e57-b895a9ce">
+   <p><b>KOM-LE-A_2185</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Mail Server des KOM-LE-Fachdienstes MUSS ausschließlich Nachrichten, die innerhalb der TI versendet werden, verarbeiten. Der Zugriff auf einen Mail Server von außerhalb der TI ist nicht zulässig. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15728|external=true|revision=168498|anchor=b5abb950-c0a8e832-080e9e57-5e648ce4">
+   <p><b>KOM-LE-A_2164</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Fachdienst KOM-LE DARF Passwörter der </span><span>KOM-LE-</span><span>Teilnehmer NICHT im Klartext speichern. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15724|external=true|revision=168498|anchor=b5abb950-c0a8e832-080e9e57-feacc036">
+   <p><b>KOM-LE-A_2189</b></p>
+   <p><p style="margin-left: 0px;"><span>Beim Aufbau der TLS-Verbindung mit dem Verzeichnisdienst MUSS sich der Fachdienst KOM-LE mit seinem&nbsp;&nbsp;</span><span>C.FD.TLS-</span><span>C Client-Zertifikat authentifizieren. </span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_7"></p>
+ </body>
+</html>

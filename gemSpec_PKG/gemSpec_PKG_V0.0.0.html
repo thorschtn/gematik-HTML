@@ -1,0 +1,858 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"></p>
+  <p id="polarion_158"> <br> </p>
+  <p id="polarion_2"> <br> <span style="font-weight: bold;color: #FF0000;">Die Spezifikation gemSpec_PKG und die Steckbriefe gemProdT_PKG / gemAnbT_PKG werden (noch) nicht produktiv verwendet!</span> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.2;">Spezifikation</span> </p>
+  <p id="polarion_12" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.2;"> Private Key Generator<span id="polarion-comment:123"></span></span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <p id="polarion_15"> <br> </p>
+  <div id="polarion_editor_html_block2" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>0.0.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571409</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>28.02.2020</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>in Bearbeitung</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>nicht öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_PKG</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-102912">Dokumentinformationen</h1>
+  <p id="polarion_21"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Es handelt sich um die Erstversion des Dokumentes.</p>
+  <p id="polarion_23"></p>
+  <p id="polarion_24"></p>
+  <p id="polarion_25" data-keep-next="true"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 60.4px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Version<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 67.6px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Stand<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 50px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Kap./ Seite<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 276.4px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Grund der Änderung, besondere Hinweise<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Bearbeitung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 60.4px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 67.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 50px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 276.4px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 60.4px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 67.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 50px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 276.4px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_27"> <br> </p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-102913">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-102912">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-102913">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102914">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102915">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102916">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102917">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102918">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102919">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102921">2 Überblick</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-114108">2.1 Identitätsbasierte Verschlüsselung (IBE)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-114106">2.2 Hashwertbestätigung als Fernsignatur-Variante</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-114107">2.3 PKG</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104506">2.4 Akteure, Rollen und Komponenten</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104505">2.5 Beziehung zwischen SGD und PKG</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107271">2.6 Überblick PKG-Operationen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-114109">2.7 Beispielimplementierungen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102926">3 Übergreifende Festlegungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104520">3.1 Verfügbarkeit und Performanz</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104519">3.2 Sichere Betreiberumgebung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104517">3.3 Verschiedenes</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104527">4 Bestandteile eines PKG als Dienst der TI</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104525">4.1 HTTPS-Schnittstellen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107291">4.2 Request-Verarbeitung in einem PKG</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107304">4.2.1 DoS-Schutzmaßnahmen (Pre-Nutzer-ID und user_id)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104526">4.3 PKG-HSM</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104531">4.4 Schlüssel im PKG-HSM</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104532">4.5 Pflege der Prüfschlüssel (S2) und (S3) im PKG-HSM</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104529">4.6 Funktionsablauf Firmware-Modul PKG-HSM</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104530">4.6.1 Zertifikats- und Schlüsselprüfung im PKG-HSM</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104528">4.6.2 JWT-Prüfung und Pre-Nutzer-ID</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104533">4.6.3 Schlüsselberechnung im PKG-HSM</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107319">4.6.4 Kommandozeichenkette</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104561">4.6.5 Anwendungsspezifische Sonderfunktionen im PKG-HSM</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104535">5 Kodierung von Schlüsseln und Nachrichten</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108011">5.1 Kodierung der Public-Parameter</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108010">5.1.1 Aufführung der Public-Parameter in der TSL</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108627">5.1.2 Signatur der Public-Parameter für die Operation PublicParameter</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108720">5.2 erweiterte Identifikationszeichenkette</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102927">6 Schnittstellen und Operationen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104524">6.1 Innenschnittstellen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104523">6.2 HTTPS-Schnittstellen und HTTP-Kommunikation</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107266">6.2.1 Schutz vor DoS-Angriffen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107270">6.3 Anforderungen an die JSON-Requests und -Responses</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107278">6.4 Operation PublicParameter</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107276">6.5 Operation PrivateKey</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107277">6.6 Operation Random</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108608">6.7 Operation Time</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107272">6.8 Fehlermeldungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-107275">6.8.1 Fehlermeldungen und HTTP-Status-Code (informativ)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104534">7 Clientspezifische Festlegungen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108711">8 Beispiele (informativ)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108710">8.1 Erzeugung eines Masterkeys und der Public-Parameter</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108715">8.2 Berechnung eines öffentlichen Schlüssels (Sender)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108713">8.3 Berechnung eines privaten Schlüssels durch den PKG</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108714">8.4 Verschlüsselung (Sender)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108716">8.5 Entschlüsselung (Empfänger)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-109238">9 Zwischenparken des gemSpec_Krypt-Abschnittes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-109237">9.1 Identitätsbasierte asymmetrische Verschlüsselung (PKG)</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102942">10 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102943">10.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102944">10.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102945">10.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102946">10.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102947">10.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-102948">10.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-104513">10.5.2 Weitere Dokumente</a></li>
+  </div>
+  <p id="polarion_38"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-102914">1 Einordnung des Dokumentes</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102915">1.1 Zielsetzung</h3>
+  <p id="polarion_40">Die vorliegende Spezifikation definiert Anforderungen an den Produkttyp "Private Key Generator" (PKG) und beschreibt die Funktionsweise der identitätsbasierten (asymmetrischen) Verschlüsselung und der Hashwertbestätigung (Fernsignatur) innerhalb der TI.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102916">1.2 Zielgruppe</h3>
+  <p id="polarion_44">Das Dokument richtet sich an Hersteller und Anbieter des Produkts Private Key Generator" (PKG)".&nbsp;Weiterhin unterstützt das Dokument Anwendungen der TI, die eine identitätsbasierten Verschlüsselung und/oder die Hashwertbestätigung verwenden möchten, indem hier&nbsp;ebenfalls Client-spezifische Abläufe normativ beschrieben werden. Auf diese kann&nbsp;eine Anwendungsspezifikation verweisen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102917">1.3 Geltungsbereich</h3>
+  <p id="polarion_29">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungsverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z. B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_30"></p>
+  <p id="polarion_54"> <span style="font-weight: bold;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_55"> <span style="font-style: italic;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102918">1.4 Abgrenzungen</h3>
+  <p id="polarion_58">Es ist keine Abgrenzung gegenüber anderen Spezifikationen/Konzepten oder im Kontext derzeit nicht relevanten Themen erforderlich.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102919">1.5 Methodik</h3>
+  <p id="polarion_65">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID in eckigen Klammern sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_66"></p>
+  <p id="polarion_67"> Sie werden im Dokument wie folgt dargestellt:<span style="font-weight: bold;font-family: Wingdings;"><br> </span> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> [&lt;=] </p>
+  <p id="polarion_69" style="margin-left: 0px;"></p>
+  <p id="polarion_70">Dabei umfasst die Anforderung sämtliche zwischen Afo-ID und der Textmarke [&lt;=] angeführten Inhalte.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-102921">2 Überblick</h2>
+  <p id="polarion_147">Auf Endgeräten, die eine sichere Identifikation des Nutzers zulassen, aber keine sicheren Schlüsselspeicher für private Schlüssel der Nutzer aus dem TI-Vertrauensraum zur Verfügung stellen, möchte man</p>
+  <ol id="polarion_148"> 
+   <li>die Verwendung der nutzerorientierte Ver- und Entschlüsselung von Daten, und</li> 
+   <li>die Erzeugung der nutzerorientierte Authentisierung (Signatur) von Inhaltsdaten ermöglichen.</li> 
+  </ol>
+  <p id="polarion_149">Solche Endgeräte können bspw. mobile Endgeräte mit einem Trusted-Plattform-Modul (TPM), so wie sie im Optimos-Projekt [xxx] genutzt werden, sein.</p>
+  <p id="polarion_150">Diese Möglichkeiten sind anwendungsunabhängig und werden als erstes bei mobilen Szenarien ab KIM 2.0 verwendet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-114108">2.1 Identitätsbasierte Verschlüsselung (IBE)</h3>
+  <p id="polarion_151">Bei einem klassischen asymmetrischen Verschlüsselungsverfahren gibt es einen Empfänger, der ein asymmetrisches Schlüsselpaar besitzt: einen öffentlichen und einen privaten Schlüssel. Weiterhin gibt es einen Sender, der den öffentlichen Schlüssel des Empfängers authentisch und integer vorliegen hat. Mithilfe des öffentlichen Schlüssels des Empfängers kann der Sender eine Nachricht für den Empfänger verschlüsseln. Nur der Empfänger kann die Nachricht entschlüsseln, da nur er den privaten Schlüssel kennt.</p>
+  <p id="polarion_153">Bei einem Identitätsbasierten Verschlüsselungsverfahren (IBE) gibt es einen dritten Akteur -- den Private Key Generator (PKG). Er stellt regelmäßig (bspw. jährlich) neue Public-Parameter (PP) als systemweit veröffentlichte Daten zur Verfügung, die Grundlage des IBE sind. Ein Sender kann mit Hilfe der PP und einem eindeutigen Identifikators des Nutzers (bspw. KVNR, Telematik-ID, E-Mail-Adresse, LDAP-URI etc.) einen Nachricht für den Nutzer asymmetrisch verschlüsseln. Der Identifikator ist damit der öffentliche Schlüssel des Empfängers. Damit ein Empfänger lokal eine Nachricht entschlüsseln kann</p>
+  <p id="polarion_154"></p>
+  <p id="polarion_155">Um eine Nachricht&nbsp;</p>
+  <p id="polarion_156"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-114106">2.2 Hashwertbestätigung als Fernsignatur-Variante</h3>
+  <p id="polarion_157">xxx</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-114107">2.3 PKG</h3>
+  <p id="polarion_78"> <span id="polarion-comment:5"></span>Der Private Key Generator (PKG) ist ein Dienst der TI-Plattform, der von beliebigen Anwendungen der TI verwendet werden kann. Er ist Teil eines identitätsbasierten, asymmetrischen Verschlüsselungsverfahrens (Identity Based Encryption (IBE)). Bei einem IBE kann ein Sender aus systemweit bekannten öffentlichen Parametern (Public Parameter) und einem eindeutigen Identifikationsmerkmal (bspw. einer KVNR, einer Telematik-ID, einer E-Mail-Adresse etc.) einen öffentlichen Schlüssel berechnen. Mittels dieses öffentlichen Schlüssels kann der Sender eine Nachricht (ein Dokument etc.) für den <span id="polarion-comment:2"></span>Empfänger, dem dieses Identifikationsmerkmal zugeordnet ist, asymmetrisch verschlüsseln. Für diese Verschlüsselung ist keine direkte Interaktion mit dem PKG notwendig, d. h. die Verschlüsselung wird vollständig lokal beim Sender durchgeführt. </p>
+  <p id="polarion_105"> Im Abschnitt <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108711" data-option-id="longoutline"></span> werden Beispiele zur asymmetrischen identitätsbasierten Verschlüsselung detailliert aufgeführt um das Verständnis zu erleichtern. </p>
+  <p id="polarion_76"> Als erste Anwendungen in der TI wird die Anwendung <span id="polarion-comment:3"></span>KIM ein&nbsp;identitätsbasiertes, asymmetrisches Verschlüsselungsverfahren teilweise verwenden.<span id="polarion-comment:10"></span> </p>
+  <p id="polarion_46">Der PKG hat zwei Aufgaben:</p>
+  <ol id="polarion_31"> 
+   <li>Er berechnet im Rahmen eines Schlüsselerzeugung&nbsp;<span id="polarion-comment:4"></span>jedes Jahr neue "Public-Parameter" (ca. 800 Byte) und den dazu passenden Masterkey.</li> 
+   <li>Er berechnet auf Nutzer-Anfrage (Empfänger) innerhalb eines quasi autonom arbeitenden PKG-HSM den privaten Schlüssel, der zum verwendeten öffentlichen Schlüssel passt, nachdem der Nutzer erfolgreich authentifiziert wurde.<span id="polarion-comment:11"></span></li> 
+  </ol>
+  <p id="polarion_32"> Die Public-Parameter (ca. 800 Byte) werden über die TSL übertragen und durch die TSL authentizitäts- und integritätsgeschützt.<span id="polarion-comment:1"></span> Der Schutz der Public-Parameter auf diese beiden Schutzziele ist von zentraler Bedeutung. Für Systeme die keine TSL verwenden, bietet der PKG die Möglichkeit die aktuell gültigen Public-Parameter vom PKG zu erfragen. </p>
+  <p id="polarion_19">Der PKG bietet zwei HTTPS-Schnittstellen an -- eine im Internet und eine in der TI.</p>
+  <p id="polarion_48"> Das Standard-Vorgehen bei IBE-Verfahren ist, bei der Berechnung des öffentlichen Schlüssels ebenfalls Anwendungszweck (Anwendung) und Zeitinformationen und ggf. andere Angaben mit einfließen zu lassen. Auf diese Weise erfolgt zum einem eine Schlüsseldiversifizierung -- für unterschiedliche <span id="polarion-comment:63"></span>Anwendungszwecke und Anwendungen werden unterschiedliche Schlüssel verwendet. Andererseits wird es aufgrund des Zeitbezugs möglich,<span id="polarion-comment:64"></span> die Schlüsselnutzung zeitlich zu begrenzen. </p>
+  <p id="polarion_62">Zur Berechnung des öffentlichen Schlüssels eines Empfängers wird für die TI eine Zeichenkette vom Sender der folgenden Form verwendet:</p>
+  <p id="polarion_63" style="text-align: center;">&lt;ID-Public-Parameter&gt;:&lt;Anwendung&gt;:&lt;Operation&gt;:&lt;Typ-des-Identifikationsmerkmals&gt;:&lt;Identifikationsmerkmal&gt;:&lt;Datum&gt;</p>
+  <p id="polarion_64">Beispiele:</p>
+  <ol id="polarion_68"> 
+   <li>PP1:KIM:M:TID:2-20a1201-001:2020-10-10</li> 
+   <li>PP1:TIM:RoomKeyTransfer:TID:2-20a1201-001:2020-12-1</li> 
+  </ol>
+  <p id="polarion_71">Solch eine Zeichenkette wird im folgenden als erweiterte Identifikationszeichenkette bezeichnet. Sie wird im Klartext an jedes mit ihrer Hilfe erzeugte Chiffrat beigefügt. Sie ist (1) empfängerspezifisch (Ende-zu-Ende-Verschlüsselung), (2) anwendungsspezifisch, (3)&nbsp;operationsspezifisch, und (4) tagesspezifisch.</p>
+  <p id="polarion_28"> Bei der Verwendung von IBE-Verfahren in der&nbsp;TI muss für die Verschlüsselung kein direkter Kontakt mit dem PKG. Die Verschlüsselung kann rein lokal erfolgen, falls die gültigen Public-Parameter im System vorliegen, was bei Komponenten und Diensten der TI im Regelfall gegeben ist.<span id="polarion-comment:13"></span> </p>
+  <p id="polarion_72"> Der Empfänger kann sich täglich (bspw. LEI) oder beliebig oft (bspw. FdV) einen privaten Schlüssel vom PKG berechnen lassen und vom PKG erhalten. Dieser wird über einen Ende-zu-Ende verschlüsselten Kanal zwischen Client und PKG übermittelt. Die privaten Schlüssel korrespondieren immer genau mit<span id="polarion-comment:66"></span> einer erweiterten Identifikationszeichenkette. Als Beispiel bei der Anwendung eRezept wird i. d. R. ein Apothekensystem genau ein mal den privaten Schlüssel für "PP1:eR:eR:TID:2-20a1201-001:2020-04-10" für die Entschlüsselung aller eRezepte, die für die Apotheke am 10.04.2020 verschlüsselt wurden, vom PKG berechnen lassen. Anschließend verbleibt der Schlüssel lokal im Apothekensystem. </p>
+  <p id="polarion_73">Der PKG muss die meisten der durch Doppelpunkt (":") getrennten Bestandteile in der erweiterten&nbsp;Identifikationszeichenkette&nbsp;nicht auswerten oder verstehen. Er muss nur wissen, dass das Identifikationsmerkmal (KVNR etc.) vor dem Datum am Ende erscheint. Der PKG ist also anwendungsunabhängig. Der PKG muss bei einer Authentisierung des Nutzers über einen Token die Gleichheit der Identitätsattribute (KVNR, Telematik-ID, E-Mail-Adresse etc.) im Token und in der erweiterten Identifikationszeichenkette des öffentlichen Schlüssels überprüfen. Wenn dann zusätzlich die Datumsinformationen nicht zu alt sind (oder gar in der Zukunft liegen) kann der PKG den zur erweiterten Identifikationszeichenkette passenden privaten Schlüssel für den Nutzer berechnen und ihn sicher an den Nutzer übermitteln. Die Berechnung erfolgt dabei innerhalb eines speziellen PKG-HSM, das durch technische Maßnahmen verhindert, dass der Betreiber unberechtigte Schlüsselberechnungen vornehmen kann.</p>
+  <p id="polarion_61">Die folgende Abbildung gibt eine Übersicht über den grundsätzlichen Aufbau eines PKG:</p>
+  <p id="polarion_80" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/5-screenshot-20200410-230535.png"> </p>
+  <p id="polarion_87" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Strukturübersicht PKG </p>
+  <p id="polarion_77"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104506">2.4 Akteure, Rollen und Komponenten</h3>
+  <p id="polarion_33"> Die beteiligten Akteure sind:<span id="polarion-comment:7"></span> </p>
+  <p id="polarion_34" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: beteiligte Akteure im Kontext IBE </p>
+  <table id="polarion_wiki macro name=table;params=bold=1|width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Rolle</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Verschlüsselnder (Sender)</td> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Ein Sender möchte eine beliebige Nachricht (ein Dokument etc.)&nbsp;asymmetrisch für einen Empfänger verschlüsseln. Der Sender benötigt (1) die aktuellen integeren Public-Parameter (i. d. R. aus der TSL) und (2) ein eindeutiges Identifikationsmerkmal des Empfängers (KVNR, Telematik-ID etc.).<br> Der Sender benötigt keine direkte Interaktion mit dem PKG.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Entschlüsselnder (Empfänger)</td> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Der Empfänger erhält eine vom Sender für ihn asymmetrisch verschlüsselte Nachricht (Chiffrat). Beim Chiffrat ist im Klartext beigefügt welchen erweiterte Identifikationszeichenkette als Basis für die Berechnung des öffentlichen Schlüssels vom Sender verwendet wurde. Diese präsentiert der Empfänger dem PKG. Nach erfolgreicher Authentifizierung und Überprüfung der Berechtigung durch ein PKG-HSM berechnet<span id="polarion-comment:58"></span> das PKG-HSM den zum öffentlichen Schlüssel passenden privaten Schlüssel. Dieser private Schlüssel wird dem Empfänger über einen sicheren übergeben.<br> Der Empfänger kann lokal die Nachricht des Senders entschlüsseln. Je nach Client (vgl. Tabelle 2) kann der Empfänger den privaten Schlüssel länger lokal speichern und kann diesen für die Entschlüsselung von weiteren Chiffraten verwenden.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Hashwertbestätigung&nbsp;<br> Anfordernder</td> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Ein Nutzer kann sich gegenüber dem PKG authentisieren und dem PKG einen Hashwert übergeben. Der PKG stellt eine Bestätigende Signatur über das Tupel (Identität Signierender, Datum, Hashwert) und übergibt das Tupel und die Signatur dem Aufrufer.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Signatur Prüfender</td> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Ein Empfänger erhält Daten (eine KIM-Nachricht, ein Dokument etc.), das Tupel&nbsp;(Identität Signierender, Datum, Hashwert) plus Signatur. Er prüft die Signatur über das Tupel und kann sich sicher sein, dass de im Tupel aufgeführte Identität die Daten mit dem Hashwert "Hashwert" authentisieren (signieren) wollte.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Anbieter des PKG</td> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Der Anbieter des PKG wird von der gematik beauftragt<span id="polarion-comment:6"></span> als Dienst der TI einen PKG zur Verfügung zu stellen. Die PKG-HSM innerhalb des PKG berechnen jährlich neue Public-Parameter und auf Anfrage private Schlüssel für authentifizierte Nutzer (Empfänger).</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_36"></p>
+  <p id="polarion_37">Die beteiligten Komponenten und Dienste sind:</p>
+  <p id="polarion_39" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: beteiligte Komponenten und Dienste&nbsp;im Kontext IBE </p>
+  <table id="polarion_wiki macro name=table;params=bold=1|width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Komponente oder Dienst<span id="polarion-comment:19"></span></th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fachliche Aufgabe</th> 
+    </tr> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Client</td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span id="polarion-comment:8"></span>Der Client ver- und entschlüsselt Nachrichten, die mittels der IBE gesichert werden. Ebenfalls kann er Hashwertbestätigungen (Fernsignatur) anfordern oder prüfen.<br> Bspw. ein Client-Modul bei KIM 2.0 ist ein Client in diesem Sinne.</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">PKG</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der PKG erzeugt zum einen jährlich neue Public-Parameter und zu anderen berechnet er für Empfänger deren private Schlüssel. Nach sicherer Authentifizierung und Prüfung der Berechtigung für diese Berechnung werden die privaten Schlüssel über eine Ende-zu-Ende gesicherten Datenkanal an den Empfänger übermittelt.<br> Auf Anfrage stellt der PKG auch einen Client die aktuellen Public-Parameter signiert zur Verfügung.</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">TSL-Dienst<span id="polarion-comment:9"></span></span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der TSL-Dienst TI transportiert die Public-Parameter, der PKG jährlich neu erzeugt, authentizitäts- und integritätsgeschützt.</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_57"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104505">2.5 Beziehung zwischen SGD und PKG</h3>
+  <p id="polarion_41"> Ein Schlüsselgenerierungsdienst (SGD) berechnet für Anfragende symmetrische Schlüssel nach bestimmten Schlüssel-Ableitungsregeln, nachdem der Anfragende vom SGD-HSM erfolgreich authentifiziert wurde. Über einen beidseitig authentisierten und Ende-zu-Ende-verschlüsselten Datenkanal übergibt ein SGD-HSM die berechneten Schlüssel dem Anfragenden. Grundsätzlich ist ein SGD anwendungsunabhängig, er wird aktuell<span id="polarion-comment:20"></span> in der TI genau nur für die Anwendung elektronische Patientenakte (ePA) verwendet. </p>
+  <p id="polarion_35"> Der PKG stellt, abstrahiert gesehen, die Weiterentwicklung des SGD in Bezug auf die Berechnung von asymmetrischen Schlüsseln dar. Daher ist die Architektur von PKG und SGD sehr ähnlich. Da jedoch zukünftig innerhalb der TI verstärkt die tokenbasierte Authentisierung und nicht mehr vorrangig die Authentisierung über <span style="font-size: 10pt;line-height: 1.5;">Authentisierung</span>szertifikate verwendet werden soll, gibt es im Bereich der Authentifizierung und der authentisierten Ende-zu-Ende-Verschlüsselung zwischen PKG und SGD deutliche Unterschiede. Da ein Anfragender keine <span style="font-size: 10pt;line-height: 1.5;">Authentisierung</span>szertifikate bei Anfragen an ein PKG verwendet, sondern JSON Web Token (JWT) ohne nutzerspezifische kryptographische Schlüssel, kann das beim SGD verwendete Kommunikationsprotokoll für die Ende-zu-Ende-Verschlüsselung nicht verwendet werden. Daher verwendet der PKG ein anderes&nbsp;Kommunikationsprotokoll auf Applikationsebene und stellt damit auch andere durch einen Anfragenden aufzurufende Operationen bereit. Ebenfalls unterscheidet sich die JWT-Prüfung beim PKG deutlich von der Prüfung der <span style="font-size: 10pt;line-height: 1.5;">Authentisierung</span>szertifikate beim SGD. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107271">2.6 Überblick PKG-Operationen</h3>
+  <p id="polarion_43"> Die folgende Tabelle gibt eine kurze Übersicht über die von einem PKG auf dessen HTTPS-Schnittstellen (vgl. Abschnitt <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-102927" data-option-id="longoutline"></span>&nbsp;) angebotenen Operationen. &nbsp; </p>
+  <p id="polarion_74" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: Übersicht über die von außen zugänglichen Operationen eines PKG </p>
+  <table id="polarion_wiki macro name=table;params=bold=1|width=100%|uid=75" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">URL</span></th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Beschreibung</span></th> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">/PublicParameter</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Clients, die nicht die TSL verwenden (nicht der Regelfall), können hier die aktuell systemweit zu verwendenden Public-Parameter des IBE-Verfahrens in der TI vom PKG erfragen.</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">/PrivateKey</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ein&nbsp;Client fordert die Berechnung des privaten Schlüssel für die von ihm präsentierte erweiterten Identifikationszeichenkette an. Der Request ist für alle PKG-HSM innerhalb des PKG verschlüsselt. Im verschlüsselten Request befindet sich das Authentisierungstoken (JWT) des vom Client repräsentierten Nutzers. Die Verschlüsselung ist Ende-zu-Ende.</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">/HashACK</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">xxx</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">/Random</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ein Client kann für ihn verschlüsselten Zufall von hoher kryptographischer Güte vom PKG anfordern. Diesen Zufall kann der Client parallel neben Zufall aus anderen Quellen für die Erweiterung seines lokalen Entropie-Speichers verwenden.</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">/Time</span></td> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ein Client kann die aktuelle Zeit (bspw. "<span style="font-size: 10pt;line-height: 1.5;">2020-04-28T05:42:47.248131+00:00") im PKG (RVE) vom PKG erfragen (vgl. Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108608" data-option-id="shortoutline"></span>&nbsp;).</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-114109">2.7 Beispielimplementierungen</h3>
+  <p id="polarion_152">Die gematik stellt analog zum AKTOR-SGD eine Beispielimplementierung bereit und Beispielimplementierungen für Clients in verschiedenen Programmiersprachen (IBE-Verschlüsselung, IBE-Entschlüsselung, Hashwertbestätigung anfordern (Fernsignatur), Bestätigungssignatur prüfen).</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-102926">3 Übergreifende Festlegungen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104520">3.1 Verfügbarkeit und Performanz</h3>
+  <p id="polarion_45">Verfügbarkeits- und Performanzanforderungen für einen PKG befinden sich in [gemSpec_Perf#PKG]&nbsp;und sind dem Produkttypsteckbrief PKG zugewiesen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104519">3.2 Sichere Betreiberumgebung</h3>
+  <p id="polarion_18"> Ähnlich wie einem TSP werden an den Betreiber eines PKG Anforderungen u. a. an die sichere Betreiberumgebung aus [gemSpec_DS_Anbieter] gestellt (vgl. Zuordnung im <span id="polarion-comment:14"></span>Anbietersteckbrief). Die zugeordneten Module sind "Basis-IS", "Basis-ISMS", "Erweitertes ISMS", "TI-Sicherheitsbericht" und "„Erweiterter TI-Sicherheitsbericht“. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104521">
+   <p><b>A_19529</b></p>
+   <p>Der Anbieter eines PKG MUSS die im Handbuch des eingesetzten PKG-Dienstes beschriebenen Voraussetzungen für den sicheren Betrieb des Produktes gewährleisten. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104522">
+   <p><b>A_19530</b></p>
+   <p>Der Hersteller eines PKG MUSS für sein Produkt im dazugehörigen Handbuch leicht ersichtlich darstellen, welche Voraussetzungen vom Betreiber und der Betriebsumgebung erfüllt werden müssen, damit ein sicherer Betrieb des Produktes gewährleistet werden kann. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104517">3.3 Verschiedenes</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104516">
+   <p><b>A_19527</b></p>
+   <p>Ein PKG MUSS mit den Stratum-1-NTP-Servern der TI synchronisieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104518">
+   <p><b>A_19528</b></p>
+   <p>Ein PKG MUSS sicherstellen, dass dessen PKG-HSM keine automatische Verbindung zu Zeitserver aufbauen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_96"> <span style="font-style: italic;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;color: #0000FF;line-height: 1.5;"> </span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-104527">4 Bestandteile eines PKG als Dienst der TI</h2>
+  <p id="polarion_50">Ein PKG besteht aus</p>
+  <ol id="polarion_83"> 
+   <li>zwei HTTPS-Schnittstellen: einer im Internet und einer in der TI,</li> 
+   <li>einer Request verarbeitenden Einheit für die eingehenden HTTP-Requests</li> 
+   <li>mehreren PKG-HSM</li> 
+  </ol>
+  <p id="polarion_53" style="text-align: center;" data-keep-next="true"> <img src="attachments/diagram_20180704-1745.34354.mxg.png" data-lastmodified="2020-04-11T12:50:20.534+02:00"> </p>
+  <p id="polarion_59" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Bestandteile eines PKG </p>
+  <p id="polarion_60"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104525">4.1 HTTPS-Schnittstellen</h3>
+  <p id="polarion_75"> Vorgaben für die HTTPS-Schnittstellen befinden sich in Abschnitt <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-104523" data-option-id="longoutline"></span>. Vorgaben für das dabei zu verwendeten TLS-Protokoll finden sich in [gemSpec_Krypt] und werden über die Referenzierung im Produkttypsteckbrief PKG normativ. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107291">4.2 Request-Verarbeitung in einem PKG</h3>
+  <p id="polarion_84"> Eingehende Requests eines Clients werden von der Request verarbeitenden Einheit (RVE) an der HTTPS-Außenschnittstelle entgegengenommen. Dort werden sie entweder direkt beantwortet (Operation PublicParameter und Time)&nbsp;oder aufbereitet und danach an ein PKG-HSM (Operation PrivateKey und Random) gesendet. Abhängig von der Antwort des PKG-HSM erzeugt die RVE eine Antwort für den Client und sendet diese an ihn. Die RVE hat keinen Einblick in den beidseitig <span id="polarion-comment:16"></span>authentisierten und verschlüsselten Datenkanal zwischen Client und PKG-HSM (vgl. Abschnitt xxx). Die RVE stellt nur in Bezug auf die Verfügbarkeit (DoS-Gegenmaßnahmen, Umkodieren von Requests etc.) des PKG eine kritische Komponente dar. In Bezug auf die Vertraulichkeit der Schlüssel erbringt sie keine Sicherheitsleistung. </p>
+  <p id="polarion_86"> Die Schnittstelle zwischen RVE und PKG-HSM ist eine Innenschnittstelle (vgl. Abschnitt <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-104524" data-option-id="longoutline"></span>&nbsp;) und wird deshalb nicht ausspezifiziert beschrieben. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107294">
+   <p><b>A_19648</b></p>
+   <p>Die Request verarbeitende Einheit (RVE) eines PKG MUSS die über die HTTPS-Schnittstellen ankommende HTTP-Request entgegennehmen. Sie MUSS die Operation <span id="polarion-comment:17"></span>PublicParameter selbst beantworten (vgl. <span data-option-id="custom" data-item-id="ML-107318" data-custom-label="A_19665" id="fake" data-type="crossReference" class="polarion-rte-link"></span>). Sie MUSS die restlichen Operationen über an eine Lastverteilung an die im PKG zur Verfügung stehenden PKG-HSM verteilten (Innenschnittstelle). Die Antwort der PKG-HSM auf die Requests MUSS<span id="polarion-comment:23"></span> die RVE (ggf. nach geeigneter Umkodierung abhängig von der Gestaltung der Innenschnittstelle) als Antwort auf den Request über die entsprechende Webschnittstelle an den Client liefern.<span id="polarion-comment:68"></span> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-107304">4.2.1 DoS-Schutzmaßnahmen (Pre-Nutzer-ID und user_id)</h4>
+  <p id="polarion_102">Auf OSI-Schichten unterhalb der Applikationsschicht gibt es mit A_19634 Maßnahmen für den DoS-Schutz.</p>
+  <p id="polarion_114"> Ziel der DoS-Schutzmaßnahmen in der RVE und im PKG-HSM (also auf Applikationsebene des PKG) ist es die rechentechnisch teuren Operationen PrivateKey und Random zu schützen, die Zugriff auf die PKG-HSM erfordern. Um diese rechentechnisch beschränkte Ressource zu schützen wird sie an eine für einen potentiellen Angreifer beschränkte Ressource gebunden -- die Anzahl der gültigen Authentisierungstoken, auf die er Zugriff hat. Ein <span id="polarion-comment:18"></span>PKG-HSM gibt der RVE nach erfolgreichen Kommandoausführung (inkl. Verifikation des Authentisierungstokens des Aufrufers) ein sich regelmäßig wechselndes Pseudonym des Aufrufenden zurück -- "Pre-Nutzer-ID" genannt (vgl. A_20122). Die RVE kann also den Anfragenden nicht direkt identifizieren, sondern erfährt vom PKG-HSM nur (wechselnde) Pseudonyme der Nutzer. </p>
+  <p id="polarion_125">Das Pseudonym Pre-Nutzer-ID bildet die Grundlage der Berechnung der "user_id" (vgl. A_19663). Aufgrund der Bildungsvorschrift der user_id kann eine RVE erkennen, ob ein Client es gültiges Pseudonym sendet, erst dadurch wird die Beschränkung der Anfragen nutzerspezifisch möglich.</p>
+  <p id="polarion_126">Anhand dieses Pseudonyms (user_id) kann die RVE beim nächsten Aufruf den Nutzer erkennen und ggf. zu viele Anfragen von ihm drosseln. Dafür wird der Nutzer aufgrund des Interface-Designs aufgefordert seine user_id bei Anfragen mit zusenden. Nutzer sind motiviert dies auch zu tun, weil Anfragen ohne gültige user_id bei hohem Lastaufkommen deutlich herunter priorisiert werden (A_19633).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107312">
+   <p><b>A_19663</b></p>
+   <p>Die RVE MUSS initial einen AES 128 Bit Authentisierungsschlüssel (genannt Key_RVE_UID) für die CMAC-Berechnung bei der Erzeugung der user_id zufällig erzeugen. Die RVE MUSS diesen Schlüssel alle x Tage zufällig neu erzeugen. Die Zeitdauer x MUSS per Konfiguration vom Administrator konfigurierbar sein. Der Default-Wert für x MUSS 40 Tage betragen.<span id="polarion-comment:69"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_107">Der Schutzbedarf von Key_RVE_A ist (nur) mittel, d. h. der Schlüssel soll per Software in der RVE vorhanden sein (keine HSM-Speicherung).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107314">
+   <p><b>A_19664</b></p>
+   <p>Die RVE MUSS bei erfolgreicher Abarbeitung des Requests in PKG-HSM die Pre-Nutzer-ID (vgl. A_20122) entgegennehmen. Anschließend mittels Key_RVE_UID und dem CMAC-Verfahren&nbsp;[NIST-SP-800-38B] den 128 Bit Längen AES-CMAC von Pre-Nutzer-ID (diese einfach als Byte-Array vom PKG-HSM entgegennehmen und dies als Eingabe für den CMAC-Algorithmus nutzen) berechnen.<br>Dieser AES-CMAC MUSS hexadezimal kodiert werden -- es wir damit also eine 32 Byte lange Zeichenkette erzeugt, diese wird mit CM bezeichnet.<br>Die user_id MUSS gleich die Zeichenkette "&lt;Pre-Nutzer-ID&gt;" + ":" + "&lt;CM&gt;" sein.<span id="polarion-comment:24"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_127">Diese so erzeugte user_id wird die PKG bei den Operationen PrivateKey und Random innerhalb der Antwort auf den Nutzer-Request mitsenden (vgl. A_xxx und A_xxxx).</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104526">4.3 PKG-HSM</h3>
+  <p id="polarion_88">Den wesentlichen Teil der Sicherheitsleistung eines PKG erbringt das (bzw. die) PKG-HSM. Das PKG-HSM entscheidet, ob eine ausreichende Authentifizierung stattgefunden hat und führt erst danach eine Berechnung eines privaten Schlüssels für einen Client durch.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107302">
+   <p><b>A_19656</b></p>
+   <p>Ein PKG MUSS <span id="polarion-comment:21"></span>Folgendes sicherstellen:<br> 
+    <ol>
+     <li>Er MUSS mindestens ein HSM, PKG-HSM genannt, einsetzen.</li>
+     <li>Solch ein PKG-HSM MUSS auf einer Plattform (Hardware und Software) basieren, das zuvor bereits erfolgreich eine Zertifizierung nach FIPS 140-2 [FIPS-140-2]&nbsp;mindestens Level 3 durchlaufen hat.</li>
+     <li>Ein solches PKG-HSM MUSS mit spezieller Firmware ausgestattet sein.</li>
+     <li>Diese Firmware MUSS die Ablauflogik aus [gemSpec_PKG#<span data-option-id="longoutline" data-item-id="ML-104529" id="fake" data-type="crossReference" class="polarion-rte-link"></span>&nbsp;] ausführen.</li>
+     <li>Im PKG-HSM MÜSSEN, neben dem speziellen Firmware-Modul, ausschließlich Standard-Firmware-Module verwendet werden (also keine anderen speziellen selbstprogrammierten Firmware-Module).</li>
+     <li>Das Firmware-Modul MUSS eine Sicherheitsbegutachtung durch eine durch die gematik anerkannte unabhängige Instanz (Penetration-Tester etc.) haben. Die gematik nimmt das Gutachten ab und prüft, ob die Anforderung aus dem Produkttypsteckbrief bezogen auf die Schlüsselableitungsfunktionalität ausreichend betrachtet worden sind.</li>
+     <li>Bei der Sicherheitsbegutachtung MUSS sichergestellt sein, dass die unabhängige Instanz aus Punkt 6 mit der gematik Informationen (Frage/Antwort) bezüglich der&nbsp;Sicherheitsbegutachtung austauschen darf.</li>
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_99">Hinweis zu Punkt 7:</p>
+  <p id="polarion_100">Analog zu den CC-Evaluierungen der TI-Komponenten muss es möglich sein, ohne dass Verschwiegenheitsregelungen die Klärung von fachlichen Punkten während der&nbsp;Sicherheitsbegutachtung behindern, die notwendige Dauer der&nbsp;Sicherheitsbegutachtung zu minimieren.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104531">4.4 Schlüssel im PKG-HSM</h3>
+  <p id="polarion_91">In einem PKG müssen verschiedene Schlüssel verfügbar sein, die durch ein PKG-HSM geschützt werden müssen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107300">
+   <p><b>A_19652</b></p>
+   <p>Ein PKG MUSS sicherstellen, dass in seinem (oder seinen) PKG-HSM folgende Schlüssel existieren und durch das (die) PKG-HSM geschützt werden:<br> 
+    <ol> 
+     <li>(S1) ein Signaturschlüsselpaar für die Authentisierung der Public-Parameter für die Operation PublicParameter (vgl. Abschnitt .<br> Das Schlüsselpaar MUSS ein ECC-Schlüsselpaar für ECDSA auf Basis von brainpoolP256r1 sein.</li> 
+     <li>(S2) eine Liste von Root-Schlüsseln (der X.509-Root der TI),</li> 
+     <li>(S3) eine Liste von IdP-Zertifikaten (für die Prüfung der JWT),</li> 
+     <li>(S4) alle aktuell benötigten Masterkeys des IBE-Verfahrens zusammen mit den zugehörigen Public-Parametern,</li> 
+     <li>(S5) ein regelmäßig wechselnder Pseudonymisierungsschlüssel (DoS-Schutz).</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107298">
+   <p><b>A_19653</b></p>
+   <p>Ein PKG MUSS sicherstellen, dass die Schlüssel (S4) nur im Mehr-Augen-Prinzip erstellbar und änderbar sind.<br> Bei der Erstelllungsschlüsselzeremonie wird dem PKG-HSM eine Identifikator (PP-ID) für die dabei erzeugten Public-Parameter vorgegeben. Diese PP-ID MUSS den Public-Parameter zugehörig im PKG-HSM gespeichert werden. Das PKG-HSM MUSS PP-ID, die einen Doppelpunkt enthalten, ablehnen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108712">
+   <p><b>A_20120</b></p>
+   <p>Ein PKG-HSM MUSS bei der Erzeugung der Masterkeys und der Public-Parameter sicherstellen, dass die gewählten Parameter (q, p, s) etc. (vgl. [RFC-5091#9 Security Considerations], [NK-2005]) ein Sicherheitsniveau von 120 Bit ermöglichen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_129">Erläuterung: A_20120 besagt, dass q mindestens 256 Bit groß ist.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107321">
+   <p><b>A_19667</b></p>
+   <p>Das PKG-HSM MUSS es ermöglichen mehrere (Public-Parameter, Maskerkeys, PP-ID)-Tupel im PKG-HSM zu speichern und verwenden zu können. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107299">
+   <p><b>A_19654</b></p>
+   <p>Ein PKG MUSS sicherstellen, dass die Schlüssel (S2) Teil des PKG-HSM-Firmware-Moduls sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107301">
+   <p><b>A_19655</b></p>
+   <p>Ein PKG MUSS technisch sicherstellen, dass<br> 
+    <ol> 
+     <li>der private Schlüsselbestätigungsschlüssel bei (S1),</li> 
+     <li>die Masterkeys (S4), und</li> 
+     <li>der Pseudonymisierungsschlüssel (S5)</li> 
+    </ol> ausschließlich durch das PKG-HSM-Firmware-Modul nutzbar sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107306">
+   <p><b>A_19658</b></p>
+   <p>Ein PKG MUSS technisch sicherstellen, dass alle Schlüssel S4 und der private&nbsp;Schlüssel S1 in dessen PKG-HSM ausschließlich verschlüsselt und im Mehr-Augen-Prinzip importierbar und exportierbar sind (Ziel: Sicherstellung der&nbsp;Verfügbarkeit dieser Schlüssel). Der PKG MUSS technisch sicherstellen, dass beim Import und Export dieser Schlüssel notwendiger Weise ein Mitarbeiter der gematik beteiligt ist.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107305">
+   <p><b>A_19659</b></p>
+   <p>Ein PKG MUSS durch technische Maßnahmen sicherstellen, dass<br> 
+    <ol> 
+     <li>das Einbringen und das Update des speziellen Firmware-Moduls in ihrem (oder ihren) PKG-HSM nur im Mehr-Augen-Prinzip möglich ist,</li> 
+     <li>ein Mitarbeiter der gematik an diesem Vorgang beteiligt ist (durch das PKG-HSM durchgesetzt).</li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_79"> Verständnishinweis zu <span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19658" data-item-id="ML-107306" data-option-id="custom"></span>&nbsp;&nbsp;und&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19659" data-item-id="ML-107305" data-option-id="custom"></span>&nbsp;: Dies ist analog zu den Vorgaben, wie seit 2014 die CVC-Root der TI betrieben wird und so wie es auch bei den SGD umgesetzt wird. Damit wird der Betreiber eines PKG vom Verdacht befreit, er könnte die Masterkeys des IBE-Verfahrens&nbsp;(S4) missbrauchen. Er ist technisch aufgrund der zwei Anforderungen nicht in der Lage dies zu tun. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108719">
+   <p><b>A_20123</b></p>
+   <p>Ein PKG-HSM MUSS sicherstellen, dass <br> (1) der Pseudonymisierungs (S5) ein Schlüssel mit mindestens 120 Bit Entropie ist,<br> (2) der Schlüssel alle y Tage vom PKG-HSM gewechselt wird. <br> (3) Der Wert y MUSS konfigurierbar im Bereich von einem Tag bis zu 30 Tagen liegen. <br> (4) Der Default-Wert MUSS 4 Tage betragen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108722">
+   <p><b>A_20125</b></p>
+   <p>Ein PKG MUSS sicherstellen, dass er für den öffentlichen Schlüssel (S1) ein bestätigendes X.509-Signaturzertifikat aus der Komponenten-PKI mit der OID "oid_pkg_hsm" erhält.<br> Ein PKG MUSS dieses Zertifikat als Signaturzertifikat bei der Signatur der Public-Parameter im Kontext der Operation PublicParameter verwenden. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104532">4.5 Pflege der Prüfschlüssel (S2) und (S3) im PKG-HSM</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107309">
+   <p><b>A_19662</b></p>
+   <p>Der PKG MUSS wöchentlich überprüfen, ob neue X.509-Root-CA-Versionen existieren und entsprechende Cross-Zertifikate verfügbar sind. Falls dies der Fall ist, so MUSS der PKG diese neue Root-Versionen in seine PKG-HSMs importieren.<span id="polarion-comment:70"></span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_98"> Hinweis: Nach der Erzeugung einer neuen&nbsp;Root-Version der X.509-Root-CA der TI werden dessen selbstsigniertes Zertifikat und Crosszertifikate auf den Download-Punkt&nbsp; <a href="https://download.tsl.ti-dienste.de/" target="_blank" class="descriptionLink">https://download.tsl.ti-dienste.de/</a>&nbsp;abgelegt. Automatisiert kann der PKG von dort die Verfügbarkeit neuer Versionen überwachen.&nbsp;Im Regelfall wird alle zwei Jahre eine neue Root-Version erzeugt. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107337">
+   <p><b>A_19670</b></p>
+   <p>Der PKG MUSS täglich die TSL der TI beziehen (vgl. Download-Punkte des TSL-Dienstes, bspw.&nbsp;<a class="descriptionLink" target="_top" href="https://download.tsl.ti-dienste.de/TSL.sha2">https://download.tsl.ti-dienste.de/TSL.sha2</a>&nbsp;und&nbsp;<a class="descriptionLink" target="_top" href="https://download.tsl.ti-dienste.de/TSL.xml">https://download.tsl.ti-dienste.de/TSL.xml</a>).<br>Sollten sich IdP-Zertifikate<span id="polarion-comment:71"></span> in der TSL befinden, die noch nicht in den PKG-HSM in&nbsp;der Liste der Prüfschlüsseln (S3) enthalten sind, so MUSS der PKG diese in die PKG-HSM importieren (vgl. A_xxx,<span id="polarion-comment:25"></span> Prüfung der Zertifikate im PKG-HSM über die Root-Schlüssel (S2)).<br>Sollte IdP-Zertifikate nicht mehr in der TSL aufgeführt sein, so MUSS<span id="polarion-comment:26"></span> der PKG für diese Zertifikate Sperrinformationen vom OCSP-Responder der X.509-Root der TI beziehen und diese den PKG-HSM zur Prüfung übergeben.<br>Die PKG-HSM MÜSSEN<span id="polarion-comment:27"></span> bei erfolgreicher Prüfung dieser Sperrinformationen (inkl. OCSP-Responder-Zertifikat des OCSP-Responder der X.509-Root der TI) die gesperrten IdP-Zertifikate aus der Liste (S3) entfernen und dauerhaft die Sperrung im PKG-HSM speichern (ein erneutes Importieren eines gesperrten IdP-Zertifikat darf nicht mehr möglich sein).<span id="polarion-comment:72"></span> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104529">4.6 Funktionsablauf Firmware-Modul PKG-HSM</h3>
+  <p id="polarion_94"> In diesem Abschnitt wird die Ablauflogik im speziellen HSM-Firmware-Modul beschrieben. Diese Vorgaben sind ein wichtiger Bestandteil der für die Zulassung notwendigen Sicherheitsüberprüfung (vgl. <span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19656" data-item-id="ML-107302" data-option-id="custom"></span>&nbsp;). </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-104530">4.6.1 Zertifikats- und Schlüsselprüfung im PKG-HSM</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108708">
+   <p><b>A_20118</b></p>
+   <p>Ein PKG-HSM MUSS beim Import eines IdP-Zertifikat (Aufnahme zur Liste (S3), vgl. A_19652) prüfen, ob<br> (1) das IdP-Zertifikat per Signaturprüfung auf einen Root-Schlüssel aus (S2) rückführbar ist, und<br> (2) ob es eine OCSP-Response (mit Status "good") für dieses IdP-Zertifikat gibt, die per Signaturprüfung auf einen Root-Schlüssel aus (S2) rückführbar ist und die nicht älter als 24 Stunden ist.<br> <br> Liefert eine dieser Prüfung ein nicht-positives Ergebnis, so MUSS das PKG-HSM den IdP-Schlüsselimport ablehnen.<br> Anderenfalls (Gut-Fall) MUSS das PKG-HSM das IdP-Zertifikat importieren und seiner Liste (S3) hinzufügen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108709">
+   <p><b>A_20119</b></p>
+   <p>Die RVE MUSS das PKG-HSM beim IdP-Zertifikats-Import unterstützen, indem es dem PKG-HSM<br> (1) empfiehlt welchen Schlüssel aus (S2) es für die Prüfungen aus A_20118 verwenden muss, und<br> (2) sie ihm alle notwendigen Zertifikate (OCSP-Signer-Zertifikate) beim Import zur Verfügung stellt. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-104528">4.6.2 JWT-Prüfung und Pre-Nutzer-ID</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108717">
+   <p><b>A_20121</b></p>
+   <p>Ein PKG-HSM MUSS im Rahmen der Operationen PrivateKey und Random das übergeben Authentisierungstoken (JSON Web Token) prüfen, auf folgende Prüfkriterien:<br> (1) ist das JWT zeitlich gültig,<br> (2) ist im 'aud'-Feld die URL eines der Webschnittstellen der PKG aufgeführt,<br> (3) ist die Signatur per Signaturprüfung auf einen IdP-Schlüssel aus der Liste (S3) rückführbar.<br> <br> Falls eine der Prüfungen ein nicht-positives Ergebnis (d. h. != OK) ergab, so MUSS der PKG-HSM die Kommandoarbeitung mit einer entsprechenden Fehlermeldung an das RVE (Inneninterface) abbrechen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108718">
+   <p><b>A_20122</b></p>
+   <p>Ein PKG-HSM MUSS, wenn die JWT-Prüfung erfolgreich verlief, die Pre-Nutzer-ID erzeugen indem es den SHA-256-Hashwert der Konketation des Schlüssel (S5) mit dem 'aud'-Feld aus dem JWT berechnet. Der erzeugte 256-Bit lange Hashwert MUSS hexadezimal kodiert werden (und ist damit 64 Zeichen/Byte lang). Dieser so erzeugte Wert sei die Pre-Nutzer-ID.<br> Die Pre-Nutzer-ID MUSS bei der Antwort des PKG-HSM (im Rahmen der Kommandoabarbeitung -- ob erfolgreich oder nicht) an die RVE der RVE mitgeteilt werden. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-104533">4.6.3 Schlüsselberechnung im PKG-HSM</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108723">
+   <p><b>A_20126</b></p>
+   <p>Ein PKG-HSM MUSS bei der Bearbeitung der Operation PrivateKey prüfen, ob der vom Nutzer präsentierte erweiterte Identifikation (sozusagen der vom Sender verwendete öffentliche Schlüssel) zum 'sub'-Feld im vom Nutzer präsentierten JWT passt. <br> Das PKG-HSM MUSS dafür prüfen, ob Datenfeld 4 und 5 gemäß A_20124 gleich dem 'sub'-Feld des JWT sind.<br> Falls nein, so MUSS das PKG-HSM die Berechnung des zum öffentlichen Schlüssel passenden privaten Schlüssel ablehnen und der RVE eine entsprechende Fehlermeldung übergeben (Innenschnittstelle).<br> Falls ja MUSS das PKG-HSM den entsprechenden privaten Schlüssel für den Nutzer berechnen.<br> Falls es keinen zur Public-Parameter-ID passenden Masterkey kennt, so MUSS das PKG-HSM dies der RVE als Fehlermeldung zurückmelden und MUSS abbrechen. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-107319">4.6.4 Kommandozeichenkette</h4>
+  <p id="polarion_109"> Die Operationen PrivateKey und Random enthalten im Request einen vom Client für die PKG-HSM über ein IBE-Verfahren (vgl. [gemSpec_Krypt#<span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="A_19645" data-url="/wiki/Spezifikation/gemSpec_Krypt?selection=ML-107288"></span>]) verschlüsselte Kommandozeichenkette. Als Identifikationszeichenkette für den dabei verwendeten öffentlichen Schlüssel verwendet der Client die Zeichenkette "PKG:YYYY-MM-DD" (vgl.&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19643" data-item-id="ML-107284" data-option-id="custom"></span>&nbsp;und xxx). </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107320">
+   <p><b>A_19666</b></p>
+   <p>Ein PKG-HSM MUSS von der RVE die "cipher_text" der Clients aus den Operationen PrivateKey und Random entgegen nehmen.<br> Das PKG-HSM MUSS versuchen die Zeichenkette gemäß [gemSpec_Krypt#<span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="A_19645" data-url="/wiki/Spezifikation/gemSpec_Krypt?selection=ML-107288"></span>] mittels des für das Chiffrat zugehörigen Masterkeys (vgl. Kodierung gemäß xxx und PP-ID), der sich als privater Schlüssel im PKG-HSM befindet, zu entschlüsseln.<br> <br> Falls dies fehlschlägt MUSS das PKG-HSM die mit einer entsprechender Fehlermeldung an die RVE meldet (Innenschnittstelle)<span id="polarion-comment:74"></span> und die Kommandoabarbeitung für den Request abbrechen.<br> <br> Das PKG-HSM MUSS prüfen ob der entschlüsselte Klartext (= s) das folgende Format besitzt:<br> s="&lt;JWT&gt;" + " " + "&lt;r&gt;" + " " + "&lt;k&gt;" + " "+ "PrivateKey" + " " + "&lt;erweiterte Identifikationszeichenkette&gt;"<br> oder <br> s="&lt;JWT&gt;" + " " + "&lt;r&gt;" + " " + "&lt;k&gt;" + " " + "Random" + " " + "&lt;Zahl&gt;"<br> 
+    <ol> 
+     <li>&lt;JWT&gt; MUSS ein JWT gemäß RFC-xxx sein.</li> 
+     <li>&lt;r&gt; MUSS eine 64 Byte große Hexadezimalzeichenkette sein.</li> 
+     <li>&lt;k&gt; analog &lt;r&gt;.</li> 
+     <li>Zahl MUSS eine Zahl zwischen 256 und 2^10 sein.</li> 
+     <li><span id="polarion-comment:28"></span></li> 
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-104561">4.6.5 Anwendungsspezifische Sonderfunktionen im PKG-HSM</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107307">
+   <p><b>A_19660</b></p>
+   <p>Ein PKG-HSM MUSS,&nbsp;<span id="polarion-comment:29"></span>wenn bei der Operation PrivateKey in der erweiterten Identifikationszeichenkette der Applikationsname "eRp" (d. h. zweites Datenfeld in der&nbsp;Identifikationszeichenkette) und die Datumsinformation am Ende der&nbsp;Identifikationszeichenkette älter als drei Monate in Bezug auf die aktuelle Zeit im PKG-HSM ist, das PKG-HSM die Schlüsselberechnung ablehnt. Die RVE MUSS dann gemäß Tabelle&nbsp;Tab_Fehlerfälle_und_Fehlermeldungen den Fehler date-not-valid als Antwort senden.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_106"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-104535">5 Kodierung von Schlüsseln und Nachrichten</h2>
+  <p id="polarion_17">Festlegungen in diesem Abschnitt folgen in Kürze. In der aktuell in der Entwicklung befindlichen Beispiel-Implementierung des PKG der gematik werden die Kodierungsvorgaben aktuell validiert, und anschließend in einer Folgeversion von gemSpec_PKG in diesem Abschnitt normativ festgelegt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108011">5.1 Kodierung der Public-Parameter</h3>
+  <p id="polarion_95">Aktuell in der Validierung befindliche Kodierung der Public-Parameter:</p>
+  <p id="polarion_112">Die Public-Parameter werden als JSON-Datenstruktur kodiert. Der Hauptteil ist ein Array in dem die Public-Parameter ggf. mehrerer IBE-Verfahrens aufgeführt sind. Ein Client verwendet das erste Element, dessen Verfahren er unterstützt. Pro Verfahren wird genau ein Public-Parameter aufgeführt. Damit es es möglich aufwärtskompatibel später auf andere IBE zu migrieren.&nbsp;</p>
+  <p id="polarion_121"> Im folgenden Beispiel werden die in Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108710" data-option-id="shortoutline"></span>&nbsp;erzeugten Public-Parameter kodiert (überlange Werte werden mit "..." für die Erhöhung der Lesbarkeit gekürzt). </p>
+  <p id="polarion_110" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: Struktur der JSON-Kodierung der Public-Parameter </p>
+  <table id="polarion_wiki macro name=table;params=header=no|bold=1|width=100%|uid=111" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="font-weight: bold;width: 365.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;font-family: 'Courier New', Courier, monospace, HanWangKanTan;">[<br> &nbsp;{ "id" : "2020-05",<br> &nbsp; &nbsp;"cryptosystem" : "Boneh-Franklin-RFC-5091",<br> &nbsp; &nbsp;"version" : "2",<br> &nbsp; &nbsp;"curve_id" : "<span style="font-size: 10pt;line-height: 1.5;">y^2 = x^3 + 1</span>",<br> &nbsp; &nbsp;"q" : "0xffffffffffffffffffffbfffffffffffffffffffffffffffffffffffffffffff",<br> &nbsp;&nbsp; "p" : "<span style="font-size: 10pt;line-height: 1.5;">0xbffffff...fffffffea3</span>",<br> &nbsp;&nbsp; "pointP" : [ "0x1", "0x2" ],<br> &nbsp;&nbsp; "pointPpub" : [ "0x3" , "0x4" ],<br> &nbsp;&nbsp; "hash_id" : "<span style="font-size: 10pt;line-height: 1.5;">sha256</span>"<br> &nbsp; },<br> &nbsp; { "id" : "future_use_1",<br> &nbsp; &nbsp; "cryptosystem" : "another_ibe_cryptosystem",<br> &nbsp; &nbsp; "not_known_yet" : "1"<br> &nbsp; }<br> ]&nbsp; <br> </span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_120"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-108010">5.1.1 Aufführung der Public-Parameter in der TSL</h4>
+  <p id="polarion_123"> Folgend ist die aktuell in der Validierung befindliche TSL-Struktur aufgeführt, im Eintrag "ns:PKGPublicParameter" befinden sich Base64-kodierte Public-Parameter wie sie in Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108011" data-option-id="shortoutline"></span>&nbsp;definiert sind. </p>
+  <p id="polarion_111" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">5</span>: Struktur TSL-Eintrag für die Public-Parameter </p>
+  <table id="polarion_wiki macro name=table;params=header=no|bold=1|width=100%|uid=112" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 365.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;">&nbsp;&lt;TSPService&gt;<br> &nbsp; &lt;ServiceInformation&gt;<br> &nbsp; &nbsp; &lt;ServiceTypeIdentifier&gt; http://uri.telematik/TrstSvc/Svctype/PKG &lt;/ServiceTypeIdentifier&gt;<br> &nbsp; &nbsp; &lt;ServiceName&gt;<br> &nbsp; &nbsp; &nbsp; &lt;Name xml:lang="DE"&gt;PKG der Telematikinfrastruktur&lt;/Name&gt;<br> &nbsp; &nbsp; &lt;/ServiceName&gt;<br> &nbsp; &nbsp; &lt;ServiceDigitalIdentity&gt;<br> &nbsp; &nbsp; &nbsp; &lt;DigitalId&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;Other&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns:PKGPublicParameter xmlns:ns="http://uri.etsi.org/02231/v2#"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .... Base64-kodierte Public Parameter wie in Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108011" data-option-id="shortoutline"></span>&nbsp;definiert ...<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ns:PKGPublicParameter&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/Other&gt;<br> &nbsp; &nbsp; &nbsp; &lt;/DigitalId&gt;<br> &nbsp; &nbsp; &lt;/ServiceDigitalIdentity&gt;<br> &nbsp; &nbsp; &lt;ServiceStatus&gt; http://uri.etsi.org/TrstSvc/Svcstatus/inaccord&lt;/ServiceStatus&gt;<br> &nbsp; &nbsp; &lt;StatusStartingTime&gt; 2020-01-21T10:00:00Z&lt;/StatusStartingTime&gt;<br> &nbsp; &nbsp; &lt;ServiceSupplyPoints&gt;<br> &nbsp; &nbsp; &nbsp; &lt;ServiceSupplyPoint&gt; http://ocsp00.gematik.invalid/not-used&lt;/ServiceSupplyPoint&gt;<br> &nbsp; &nbsp; &lt;/ServiceSupplyPoints&gt;<br> &nbsp; &nbsp; &lt;ServiceInformationExtensions&gt;<br> &nbsp; &nbsp; &nbsp; &lt;Extension Critical="false"&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns:ExtensionOID xmlns:ns="http://uri.etsi.org/02231/v2#"&gt; 1.2.276.0.76.4.xxx &lt;/ns:ExtensionOID&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;ns:ExtensionValue xmlns:ns="http://uri.etsi.org/02231/v2#"&gt; oid_public_parameter &lt;/ns:ExtensionValue&gt;<br> &nbsp; &nbsp; &nbsp; &lt;/Extension&gt;<br> &nbsp; &nbsp; &lt;/ServiceInformationExtensions&gt;<br> &nbsp; &lt;/ServiceInformation&gt;<br> &lt;/TSPService&gt;<br> </span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_97"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-108627">5.1.2 Signatur der Public-Parameter für die Operation PublicParameter</h4>
+  <p id="polarion_118"> Die JSON-kodierten Public-Parameter wie in Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-108011" data-option-id="shortoutline"></span>&nbsp;definiert werden per JSON Web Signature (JWS) [RFC-7515] signiert und vom PKG mit dem Context-Type "application/jose" an den Client als Antwort gesendet. Die Signatur wird mit dem Schlüssel (S1) aus A_19652 im PKG-HSM erzeugt. Die normative Festlegung dessen erfolgt in Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-107278" data-option-id="longoutline"></span>.&nbsp; </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108720">5.2 erweiterte Identifikationszeichenkette</h3>
+  <p id="polarion_104">Eine erweiterte Identifikationszeichenkette besitzt die in TAB_erweiterte_Identifikationszeichenkette definierte Struktur.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108721">
+   <p><b>A_20124</b></p>
+   <p>Ein PKG und ein PKG-Client MÜSSEN sicherstellen, dass die von Ihnen verwendete&nbsp;erweiterte Identifikationszeichenkette die in&nbsp;TAB_erweiterte_Identifikationszeichenkette definierte Struktur besitzt.<br> <p class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">6</span>: TAB_erweiterte_Identifikationszeichenkette </p> 
+    <table id="polarion_wiki macro name=table;params=header=no|bold=1|width=100%|uid=client4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <td style="width: 365.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&lt;ID-Public-Parameter&gt;:&lt;Anwendung&gt;:&lt;Operation&gt;:&lt;Typ-des-Identifikationsmerkmals&gt;:&lt;Identifikationsmerkmal&gt;:&lt;Datum&gt;<br> <br> Diese Zeichenkette ist die&nbsp;erweiterte Identifikationszeichenkette. Sie MUSS durch genau 5 Doppelpunkte in 6 Datenfelder getrennt sein.&nbsp;<br> Die ID für die Public-Parameter bestimmt die gematik. Die ID der aktuellen Public-Parameter kann ein Sender aus der Kodierung gemäß xxx entnehmen.<br> Die Datenfelder "Anwendung" und "Operation" werden&nbsp;vom Sender abhängig im Kontext der Anwendung in der er agiert festgelegt.<br> "Typ-des-Identifikationsmerkmals" und "Identifikationsmerkmal" ermittelt der Sender.<br> Das "Datum" MUSS der Tag der Verschlüsselung (Erzeugung des Chiffrats, d. h. der Verwendung des öffentlichen Schlüssel) im Format YYYY-MM-DD sein.<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;"><br> </span></td> 
+      </tr> 
+     </tbody> 
+    </table> <p class="polarion-rte-caption-paragraph"></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_128">Beispiele:&nbsp;PP1:KIM:M:TID:2-20a1201-001:2020-04-10</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-102927">6 Schnittstellen und Operationen</h2>
+  <p id="polarion_47"> <span style="font-style: italic;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;color: #0000FF;line-height: 1.5;"> </span>Der PKG bietet zwei HTTPS-Schnittstellen an -- eine im Internet und eine in der TI. </p>
+  <p id="polarion_49">Die gematik stellt auf Anfrage eine Beispiel-Implementierung für die Außenschnittstellen eines PKG bereit.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104524">6.1 Innenschnittstellen</h3>
+  <p id="polarion_51">Die Innenschnittstellen zwischen der Request verarbeitende Einheit (RVE) für die eingehenden HTTP-Request und dem PKG-HSM sind PKG-intern. Deren Ausgestaltung bleibt dem Betreiber überlassen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-104523">6.2 HTTPS-Schnittstellen und HTTP-Kommunikation</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104514">
+   <p><b>A_19525</b></p>
+   <p>Der PKG MUSS zwei HTTPS-Schnittstellen anbieten:<br> 
+    <ol>
+     <li>eine HTTPS-Schnittstelle im Internet unter der URL https://pkg.ti-dienste.de, und</li>
+     <li>eine HTTPS-Schnittstelle in der TI unter der URL https://pkg.telematik.</li>
+    </ol>Für die HTTPS-Schnittstelle im Internet MUSS ein&nbsp;Extended Validation TLS-Zertifikat eines Herausgebers gemäß [CAB-Forum] verwendet werden.<span id="polarion-comment:75"></span><br> <br>Für die HTTPS-Schnittstelle in der TI MUSS der PKG ein TLS-Fachdienst Zertifikat (inkl. privatem Schlüssel) mit dem Profil C.FD.TLS-S (vgl. [gemSpec_PKI#C.FD.TLS-S Server-Authentisierung] und OID "oid_fd_tls_s" [gemSpec_OID]) <span id="polarion-comment:76"></span><span id="polarion-comment:83"></span>aus der Komponenten-PKI der TI besitzen und verwenden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_113"> Hinweis: Vorgaben für das dabei zu verwendeten TLS-Protokoll finden sich in [gemSpec_Krypt] und werden über die Referenzierung im Produkttypsteckbrief PKG normativ.<span id="polarion-comment:77"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104515">
+   <p><b>A_19526</b></p>
+   <p>Ein PKG MUSS bei seinen HTTPS-Schnittstellen OCSP-Stapling unterstützen und verwenden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107264">
+   <p><b>A_19632</b></p>
+   <p>Ein PKG MUSS auf den HTTPS-Schnittstellen die HTTP Version <span id="polarion-comment:15"></span>1.1 unterstützen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108615">
+   <p><b>A_20084</b></p>
+   <p>Ein PKG KANN neben HTTP Version 1.1 (vgl. A_19632) zusätzlich auch höhere HTTP-Version (HTTP/2 oder&nbsp; HTTP/3) unterstützen.<span id="polarion-comment:30"></span> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-107266">6.2.1 Schutz vor DoS-Angriffen</h4>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107267">
+   <p><b>A_19634</b></p>
+   <p>Ein<span id="polarion-comment:31"></span> PKG MUSS bei seinen beiden HTTPS-Schnittstellen<span id="polarion-comment:32"></span> Schutzmaßnahmen auf Netzwerkprotokoll-Ebene umsetzen. Diese MÜSSEN gegen Angriffe wie bspw.&nbsp;<span style="font-size: 10pt;line-height: 1.5;">SYN-Flooding, Connection Flooding, ICMP Flooding wirksam sein.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107265">
+   <p><b>A_19633</b></p>
+   <p>Ein PKG MUSS bei seinen beiden HTTPS-Schnittstellen<span id="polarion-comment:33"></span> in der Request verarbeitenden Einheit (RVE) Maßnahmen gegen DoS-Angriffe auf Applikation-Ebene umsetzen (vgl. "Hinweise zu A_19633").<span id="polarion-comment:35"></span> Dabei MUSS der PKG zwischen zwei Klassen von Anfragenden unterscheiden: (1) die ohne einer gültigen user_id und (2) die mit einer gültigen user_id. Liegen aktuell so viele Client-Anfragen vor, dass die DoS-Schutzmaßnahmen auf Applikationsebene aktiviert werden müssen, so MUSS die RVE<span id="polarion-comment:34"></span> <br> 
+    <ol>
+     <li>die Clients mit gültiger user_id mit einem Faktor von ca. 10 bevorzugen, und</li>
+     <li>die Clients mit gültiger user_id, die zu viele Anfragen in einer von der RVE-Implementierung gewählten&nbsp;Zeiteinheit gestellt haben, mit einem try-later (vgl. Abschnitt&nbsp;<span data-option-id="longoutline" data-item-id="ML-107272" id="fake" data-type="crossReference" class="polarion-rte-link"></span>) abgewiesen (vgl. "Hinweis zu&nbsp; A_19633").</li>
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_20">Hinweis zu A_19633:</p>
+  <p id="polarion_26">Das in A_19633 Punkt 2) geforderte Verhalten, kann man effizient bspw. mittels "Counting Bloom Filter" implementieren. Die Client-ID ist der dann zu verwendende Schlüsselwert für den Bloom-Filter.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107270">6.3 Anforderungen an die JSON-Requests und -Responses</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107268">
+   <p><b>A_19635</b></p>
+   <p>Alle an einer Kommunikation mit einem PKG beteiligten Parteien (Client, PKG selbst) MÜSSEN sicherstellen, dass die JSON-Datenstrukturen, die bei der Kommunikation übermittelt werden, zusätzliche Key-Value-Paare enthalten können, d. h. ein Beteiligter MUSS ihm unbekannte Key-Value-Paare ignorieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107269">
+   <p><b>A_19636</b></p>
+   <p>Ein PKG und ein Client eines PKG MÜSSEN&nbsp;JSON-Requests und -Responses auf den PKG ablehnen, wenn diese größer als 2 MiB sind. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_42"> Erläuterung zu A_19636: Bei einer Sicherheitsüberprüfung muss u. a. die Validierung von Daten an der Außenschnittstelle betrachtet werden (im Fokus die Implementierung im PKG-HSM). Dabei unterstützt&nbsp;&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19636" data-item-id="ML-107269" data-option-id="custom"></span>&nbsp;indem sie eine obere Schranke für die Größe aller Eingabe-Datenfelder definiert. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107278">6.4 Operation PublicParameter</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107308">
+   <p><b>A_19661</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Ein Client eines PKG MUSS für die Operation PublicParameter bei der URI den Pfadnamen /PublicParameter und die HTTP-GET- Methode verwenden</span>.<span id="polarion-comment:36"></span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107318">
+   <p><b>A_19665</b></p>
+   <p>Ein PKG MUSS in Bezug auf die Beantwortung einer Anfrage auf die Operation PublicParameter sicherstellen, dass dessen RVE <span id="polarion-comment:78"></span>als Antwort die in einer Datei befindlichen signierten und kodieren Public-Parameter sendet (vgl. Abschnitt <span data-option-id="shortoutline" data-item-id="ML-108627" id="fake" data-type="crossReference" class="polarion-rte-link"></span>).<span id="polarion-comment:79"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_108">Die Public-Parameter werden jährlich neu erstellt und über&nbsp;die TSL authentitäts- und integritätsgeschützt verteilt. Für Systeme, die die TSL nicht als Prüfbasis verwenden, sondern die X.509-Root der TI, stellt der PKG die aktuellen Public-Parameter in signierte Form zur Verfügung.</p>
+  <p id="polarion_122"> Die Formulierung "in einer Datei" bei A_19665 soll verdeutlichen, dass diese Information semistatisch an den Client gesendet werden, also nicht dynamisch berechnet werden.&nbsp;<span id="polarion-comment:37"></span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107276">6.5 Operation PrivateKey</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107284">
+   <p><b>A_19643</b></p>
+   <p>Ein Client eines PKG MUSS für die Verwendung der Operation PrivateKey folgende Vorgaben erfüllen:<br> <br> Er MUSS bei der URI den Pfadnamen /PrivateKey und die HTTP-POST-Methode verwenden.<br> <br> Er MUSS eine zufällig 256 Bit lange Request-ID erzeugen und diese hexadezimal kodieren (=r) (Beispiel:<br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">00002a5c86824b9664fba01b649ed791365f3e7a90c5b57a6713b6ebcaba0d92</span><br> ).&nbsp;<br> <br> Er MUSS einen <span id="polarion-comment:38"></span> 256 Bit langen AES-Schlüssel (=k) zufällig erzeugen und diesen hexadezimal&nbsp;kodieren (=k) (Beispiel:&nbsp;<span style="font-size: 10pt;line-height: 1.5;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">006d92d76fff728b5440653f5d52f9e7c70928e325c62e1179c56f74808c0000</span>).</span><br> <br> Er MUSS die Zeichenkette s mit<br> s="&lt;JWT&gt;" + " " + "&lt;r&gt;" + " " + "&lt;k&gt;" + " "+ "PrivateKey" + "&lt;erweiterte Identifikationszeichenkette&gt;"<span id="polarion-comment:59"></span><br> erzeugen, wo bei JWT das für den PKG dedizierte JWT (Authentisierungstoken) des Nutzers ist, und die erweiterte&nbsp;Identifikationszeichenkette aus dem beigefügten Daten des Chiffrat (vgl. Abschitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-104535" data-option-id="longoutline"></span>&nbsp;) entnommen ist.<br> <br> Diese Zeichenkette s MUSS er gemäß [gemSpec_Krypt#<span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="A_19645" data-url="/wiki/Spezifikation/gemSpec_Krypt?selection=ML-107288"></span>&nbsp;] mit der erweiterten Identitifkationszeichenkette "PKG:&lt;YYYYMMDD&gt;" verschlüsseln und gemäß xxx kodieren. So erhält er das Chiffrat c.<br> <br> Er MUSS folgende JSON-Datenstruktur j erzeugen:<br> { "ct" : "&lt;c&gt;", "user_id" : "&lt;user_id&gt;" }<br> Er MUSS bei &lt;user_id&gt; die ihm beim vorherigen Request zugewiesene user_id eintragen. Falls ein <span id="polarion-comment:39"></span>noch keine besitzt MUSS er als Wert leere Zeichenkette verwenden ("user_id" : "").<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107277">6.6 Operation Random</h3>
+  <p id="polarion_89">xxx Ein Client kann sich einfach ein paar KiB Zufall vom PKG abholen und diesen als einen von mehreren Entropie-Quellen verwenden (vgl. Fortuna-PRNG, [BSI-TR-03161]).</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108608">6.7 Operation Time</h3>
+  <p id="polarion_90"> Über diese Operation kann ein Client die aktuelle Zeit (bspw. "<span style="font-size: 10pt;line-height: 1.5;">2020-04-28T05:42:47.248131+00:00") im PKG (RVE) vom PKG erfragen. Dies ist eine Infrastrukturleistung für Clients denen es -- bspw. aufgrund von&nbsp;Netzwerkbeschränkungen im aktuell verwendeten WLAN -- nicht möglich ist das&nbsp;NTP-Protokoll zu verwenden. Ziel ist es, dass solche Clients aus einer Menge von Zeitquellen die aktuelle Zeit erfragen und aus&nbsp;der Menge an Antworten den Median als aktuelle Zeit gewinnen.&nbsp;Der PKG mit dieser Operation ist von mehreren Quellen.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108613">
+   <p><b>A_20082</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Ein Client eines PKG MUSS für die Operation Time bei der URI den Pfadnamen /Time und die HTTP-GET- Methode verwenden</span>. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108614">
+   <p><b>A_20083</b></p>
+   <p>Ein PKG MUSS in Bezug auf in Bezug auf die Beantwortung einer Anfrage auf die Operation Time sicherstellen, dass dessen RVE als Antwort die aktuelle Systemzeit (UTC) in der RVE im Format nach ISO 8601 (Beispiel: "<span style="font-size: 10pt;line-height: 1.5;">2020-04-28T05:42:47.248131+00:00") mit dem Content-Type "text/plain" sendet.</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_115">Beispiel-Code in Python:</p>
+  <p id="polarion_116" style="margin-left: 40px;"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">from datetime import datetime, timezone</span> </p>
+  <p id="polarion_117" style="margin-left: 40px;"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">print(datetime.now(timezone.utc).isoformat())</span><br> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-107272">6.8 Fehlermeldungen</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107273">
+   <p><b>A_19637</b></p>
+   <p>Ein PKG MUSS Folgendes sicherstellen: Die RVE MUSS bei Fehlerfällen die in Tabelle ”Tab_Fehlerfälle_und_Fehlermeldungen” aufgeführten Fehlermeldungen an einen PKG-Client senden und dabei die in der Tabelle aufgeführten HTTP-Status-Codes verwenden (vgl. Erläuterung in Abschnitt 6.7.1). <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_85"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">#</span>: Tab_Fehlerfälle_und_Fehlermeldungen<span id="polarion-comment:40"></span> </p>
+  <table id="polarion_wiki macro name=table;params=width=99.87%|uid=76" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Fehlerfall</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">an den Client zu sendende Fehlernachricht</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">HTTP-Status-Code</th> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Der für das PKG-HSM verschlüsselte Request könnte nicht korrekt entschlüsselt werden (bspw. AES/GCM meldet FAIL).<br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "decryption FAIL" }</span><br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: normal;font-size: 11pt;color: #222222;line-height: 1.5;">400 Bad Request</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Das Kommando an das PKG-HSM (vgl. bspw.&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19643" data-item-id="ML-107284" data-option-id="custom"></span>&nbsp;&nbsp;Zeichenkette s) ist nicht wohlgeformt.</td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "command not valid" }</span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">400 Bad Request</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Die im Kommando an das PKG-HSM referenzierten Public-Parameter gibt es nicht.</td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "public parameter&nbsp;reference not valid" }</span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">400 Bad Request</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Die erweiterte Identifikaktionszeichenkette trägt ein Datum in der Zukunft (nicht erlaubt).</td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "date not valid" }</span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">400 Bad Request</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Eine Bedingung einer applikationsspezifische Sonderfunktion triff nicht zu (vgl. Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-104561" data-option-id="shortoutline"></span>&nbsp;).</td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "application constraint applies" }<span id="polarion-comment:49"></span></span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: normal;font-size: 11pt;color: #222222;line-height: 1.5;">409 Conflict</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Die Tokenprüfung (JWT) im PKG-HSM ergab kein Positiv-Ergebnis.<br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "jwt not valid" }</span><br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">401 Unauthorized</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Datenfelder im Request fehlen.<br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "request not valid" }</span><br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 11pt;color: #222222;line-height: 1.5;">400 Bad Request</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Der Request ist größer als 2 MiB (<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19636" data-item-id="ML-107269" data-option-id="custom"></span>).<br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "payload too large" }<span id="polarion-comment:50"></span></span><br> </span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: normal;font-size: 11pt;color: #222222;line-height: 1.5;">413 Payload Too Large</span><span style="font-weight: bold;font-size: 11pt;color: #222222;line-height: 1.5;">&nbsp;</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 250px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Die RVE musste DoS-Gegenmaßnahmen einleiten und Client nun mit dieser Fehlermeldung abweisen (vgl.&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19633" data-item-id="ML-107265" data-option-id="custom"></span>&nbsp;).<span id="polarion-comment:80"></span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{ "Status" : "try later" }</span></td> 
+     <td style="width: 404px;height: 9pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: normal;font-size: 11pt;color: #222222;line-height: 1.5;">429 Too Many Requests</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_81"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107274">
+   <p><b>A_19638</b></p>
+   <p>Eine RVE eines PKG KANN weitere Fehlermeldungen analog zu den in Tabelle [gemSpec_PKG#Tab_Fehlerfälle_und_Fehlermeldungen] aufgeführten Fehlermeldungen für sich definieren und an einen PKG-Client senden. <br> Eine RVE KANN schon definierte Fehlermeldungen mit beliebigen JSON-Format-konformen Statusinformationen anreichern. Dabei gilt die Größenbeschränkung aus <span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19636" data-item-id="ML-107269" data-option-id="custom"></span>. Vgl. auch&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19635" data-item-id="ML-107268" data-option-id="custom"></span>.&nbsp;<br> Beispiel:<br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;"><span style="font-size: 10pt;line-height: 1.5;">{</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;"Status": "decryption FAIL",</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;"Error": {</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp; "Timestamp": "2019-01-15T13:37:42.123Z",</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp; "Trace": {</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp; &nbsp;"LogReference": "550e8400-e29b-11d4-4ffe-446655440000"</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp; }</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;}</span><br> <span style="font-size: 10pt;line-height: 1.5;">}</span></span> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-107275">6.8.1 Fehlermeldungen und HTTP-Status-Code (informativ)</h4>
+  <p id="polarion_82">Da der PKG im Gegensatz zum SGD, sowohl in der TI als auch im Internet eine HTTPS-Schnittstelle anbietet, gibt es keine Weiterleitung der Nachrichten über ein Gateway (vgl.&nbsp;Zugangsgateway des Versicherten bei ePA). Daher gibt es beim PKG keine&nbsp;Motivation die Beziehung Applikationsnachrichten und HTTP-Fehlercodes für&nbsp;eine einfachere Weiterleitung der Nachrichten über ein Gateway zu vereinfachen. Deshalb gilt für die Außenschnittstellen des PKG der übliche REST-Ansatz (vgl. HTTP-Status-Codes in Tabelle "Tab_Fehlerfälle_und_Fehlermeldungen").</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-104534">7 Clientspezifische Festlegungen</h2>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107297">
+   <p><b>A_19651</b></p>
+   <p>Ein Sender im Kontext IBE<span id="polarion-comment:60"></span><span id="polarion-comment:61"></span> MUSS bei der Erstellung der erweiterten Identifikationszeichenkette folgende Struktur s erzeugen:<br> s=&lt;ID-Public-Parameter&gt;:&lt;Anwendung&gt;:&lt;Operation&gt;:&lt;Typ-des-Identifikationsmerkmals&gt;:&lt;Identifikationsmerkmal&gt;:&lt;Datum&gt;<span id="polarion-comment:41"></span><br> <br> Beispiel:PP1:KIM:M:TID:2-20a1201-001:20200410<br> <br> Der Sender im Kontext IBE MUSS diese Zeichenketten bei der Berechnung des öffentlichen Schlüssels (vgl. [gemSpec_Krypt#<span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="A_19645" data-url="/wiki/Spezifikation/gemSpec_Krypt?selection=ML-107288"></span>]) verwenden.<br> Den aktuellen Wert für ID-Public-Parameter MUSS ein Sender entweder aus der TSL im Eintrag für die Public-Parameter ermitteln oder aus der Antwort der Operation PublicParameter (xxx).<span id="polarion-comment:81"></span><br> Die Festlegung für "&lt;Anwendung&gt;" und "&lt;Operation&gt;" trifft jede Anwendung für sich selbst (Teil der Anwendungsspezifikation).<span id="polarion-comment:42"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_56"> Die kryptographischen Vorgaben für das zu verwendende IBE-Verfahren sind mit [gemSpec_Krypt#<span class="polarion-rte-link" data-type="polarion" id="fake" data-custom-label="A_19645" data-url="/wiki/Spezifikation/gemSpec_Krypt?selection=ML-107288"></span>] festlegt, &nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19651" data-item-id="ML-107297" data-option-id="custom"></span>&nbsp;legt die dabei zu verwendende Struktur der&nbsp;erweiterten Identifikationszeichenkette fest. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107295">
+   <p><b>A_19649</b></p>
+   <p>Ein Sender im Kontext IBE MUSS bei der Erstellung der erweiterten Identifikationszeichenkette überprüfen ob Bestandteile der Identifikationszeichenkette (insbesondere die Telematik-ID) Doppelpunkte enthalten. Falls ja, so MÜSSEN diese wie folgt umkodiert werden bevor diese in die Bildung der erweiterten Identifikationszeichenkette einfließen:<br>Enthält<span id="polarion-comment:43"></span> der Bestandteil einen Doppelpunkt (<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">":"</span>, Character 58), so <span id="polarion-comment:44"></span>MUSS der Sender den Bestandteil in Hexadezimalschreibweise (ohne führendes "0x") kodieren und davor ein <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">"*"</span>&nbsp;(Character 42) setzen.<br> <span id="polarion-comment:45"></span>Beispiel Telematik-ID:<br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">"2-20a1201-001:AAB::112"</span>&nbsp;wird zu&nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">"*<span style="font-size: 10pt;line-height: 1.5;">322d323061313230312d3030313a4141423a3a313132"</span></span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_92"> Erläuterung A_19649: Es ist sehr unwahrscheinlich, dass der Fall aus A_19649 auftritt, er kann jedoch formal nicht ausgeschlossen werden, da es aktuell keine normativen, vollständigen Vorgaben für die genaue Struktur von Identifikationsmerkmalen außer der KVNR gibt.<span id="polarion-comment:62"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107303">
+   <p><b>A_19657</b></p>
+   <p>Ein PKG-Client MUSS bei der Kommunikation mit dem PKG die von PKG übermittelte user_id für den nächsten Aufruf einer Operation beim PKG verwenden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_101"> Bei den Operationen eines PKG (vgl. Abschnitte <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-107278" data-option-id="shortoutline"></span>, <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-107276" data-option-id="shortoutline"></span>&nbsp;und&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-107277" data-option-id="shortoutline"></span>) sendet der PKG eine pseudozufällig erzeugte user_id als Teil der Antwort an den PKG-Client. Diese user_id muss der Client beim nächsten Aufruf einer Operation des PKG<span id="polarion-comment:51"></span> an den PKG mitsenden. </p>
+  <p id="polarion_103"> Die user_id wird regelmäßig gewechselt (vgl. Abschnitt&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-107304" data-option-id="longoutline"></span>) und ist eine für den PKG-Client opake Zeichenkette, d. h. der PKG-Client braucht die Bildungsvorschrift der user_id in der RVE nicht zu verstehen. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107296">
+   <p><b>A_19650</b></p>
+   <p>Ein PKG-Client MUSS die bei der Kommunikation mit dem PKG (von der RVE) erhaltenden user_id geheimhalten und ausschließlich<span id="polarion-comment:46"></span> für die Kommunikation mit dem PKG verwenden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_93"> Erläuterung: Die user_id ist nicht erratbar und dient dem DoS-Schutz im PKG. Ihr Schutzbedarf ist (nur) mittel, sie sollte die PKG-Client-Applikation nicht unkontrolliert verlassen, da ansonsten es einem Angreifer gelingen könnte den Client mit der bekannt gewordenen user_id temporär vom PKG "auszusperren". Die Intention von&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-custom-label="A_19650" data-item-id="ML-107296" data-option-id="custom"></span>&nbsp;ist nicht, dass die Variable in einem Trusted-Plattform-Module (TPM)&nbsp;<span id="polarion-comment:82"></span>oder Secure-Element (SE) etc. gespeichert werden soll. </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-108711">8 Beispiele (informativ)</h2>
+  <p id="polarion_119">In diesem Abschnitt werden informativ Beispiele im Rahmen des IBE vorgerechnet.</p>
+  <p id="polarion_124">Die gematik&nbsp;stellt zudem eine Beispielimplementierung der Außenschnittstellen des PKG bereit. Und auch Beispiel-Code für die Ver- und die Entschlüsselungsfunktion bereit.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108710">8.1 Erzeugung eines Masterkeys und der Public-Parameter</h3>
+  <p id="polarion_52">Nach A_20120 muss q mindestens 256 Bit groß sein. Wir wählen analog [NK-2005] q als Solinas Primzahl mit</p>
+  <p id="polarion_130"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">g = 2^256 - 2^174 -1 </span> </p>
+  <p id="polarion_131"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">&nbsp; = <span style="font-size: 10pt;line-height: 1.5;">0xffffffffffffffffffffbfffffffffffffffffffffffffffffffffffffffffff</span></span> </p>
+  <p id="polarion_132">Nach [RFC-5091#5.1.2] wählen wir r = 2^ (1536-256) + r' und erhöhen r' schrittweise um 1 bis</p>
+  <p id="polarion_133"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">p = 12 * r * q - 1&nbsp;</span> </p>
+  <p id="polarion_136">prim ist. Bei r = 29 erhalten wir</p>
+  <p id="polarion_137"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">p = 12 * (2^(1536-256) + 29)&nbsp; * q - 1 =<span style="font-size: 10pt;line-height: 1.5;">&nbsp;0xbfffffffffffffffffffcfffffffffffffffffffffffffffffffffffffffffff4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015bffffffffffffffffffa8fffffffffffffffffffffffffffffffffffffffffea3</span></span> </p>
+  <p id="polarion_138"></p>
+  <p id="polarion_139"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108715">8.2 Berechnung eines öffentlichen Schlüssels (Sender)</h3>
+  <p id="polarion_140">... wird noch vor der Veröffentlichung ergänzt (ist nur ein informativer Abschnitt) ...</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108713">8.3 Berechnung eines privaten Schlüssels durch den PKG</h3>
+  <p id="polarion_134">... wird noch vor der Veröffentlichung ergänzt (ist nur ein informativer Abschnitt) ...</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108714">8.4 Verschlüsselung (Sender)</h3>
+  <p id="polarion_141">... wird noch vor der Veröffentlichung ergänzt (ist nur ein informativer Abschnitt) ...</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108716">8.5 Entschlüsselung (Empfänger)</h3>
+  <p id="polarion_135">... wird noch vor der Veröffentlichung ergänzt (ist nur ein informativer Abschnitt) ...</p>
+  <p id="polarion_142"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-109238">9 Zwischenparken des gemSpec_Krypt-Abschnittes</h2>
+  <p id="polarion_143">... zwischengeparkt ... kommt dann in gemSpec_Krypt</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-109237">9.1 Identitätsbasierte asymmetrische Verschlüsselung (PKG)</h3>
+  <p id="polarion_144">In der TI werden identitätsbasierte, asymmetrischen Verschlüsselungsverfahrens (Identity Based Encryption (IBE)) verwendet. Bei einem IBE kann ein Sender aus systemweit bekannten öffentlichen Parametern (Public Parameter) und einem eindeutigen Identifikationsmerkmal (bspw. einer KVNR, einer Telematik-ID, einer E-Mail-Adresse etc.) einen öffentlichen Schlüssel berechnen. Mittels dieses öffentlichen Schlüssels kann der Sender eine Nachricht (ein Dokument etc.) für den Nutzer, dem dieses Identifikationsmerkmal zugeordnet ist, asymmetrisch verschlüsseln. Die Public-Parameter werden von einem Private Key Generator [gemSpec_PKG] jährlich neu erzeugt und über die TSL authentizitäts- und integritätsgeschützt verteilt. Für eine IBE-basierte Verschlüsselung ist keine direkte Interaktion zwischen Sender und PKG notwendig, d. h. die Verschlüsselung wird vollständig lokal beim Sender durchgeführt. Der Empfänger erhält nach erfolgreicher Authentifizierung durch ein PKG-HSM den passenden privaten Schlüssel. Damit ist die Entschlüsselung auch bei Kartenverlust bzw. Kartenwechsel möglich. Die Entschlüsselung des Chiffrats erfolgt lokal beim Empfänger.</p>
+  <p id="polarion_145">Eine tiefergehende Erläuterung zur Verwendung der IBE-Verfahren innerhalb der TI und der Verwendung der erweiterten Identifikationszeichenkette befindet sich in [gemSpec_PKG].</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107288|external=true|anchor=0c8ccd2e-c0a8e834-49b0ede3-e078cdaf">
+   <p><b>A_19645</b></p>
+   <p>Alle Produkttypen,&nbsp;die&nbsp;ein Identitätsbasiertes asymmetrisches Verschlüsselungsverfahren im Rahmen einer Anwendung der TI verwenden MÜSSEN folgende Vorgaben umsetzen.<br> 
+    <ol>
+     <li>Es MUSS das Boneh-Franklin-Verfahren nach [RFC-5091] verwendet werden, wobei die dort definierten ASN.1-basierten Kodierungsvorgaben nicht gelten sollen, sondern Vorgaben zur Kodierung der Chiffrate aus Anforderungen in [gemSpec_PKG].</li>
+     <li>Es MÜSSEN die in [RFC-5091] definierten Domainparameter, die ein Sicherheitsniveau von 120-Bit ermöglichen, verwenden werden (diese werden im jährlichen Turnus vom PKG erzeugt).</li>
+     <li>Der im Verfahren verwendete "Context Encryption Key" (CEK) MUSS ein AES-256 Bit Schlüssel sein.</li>
+     <li>Für den symmetrischen Teil (Ver/Entschlüsselung der eigentlichen Nutzdaten mit dem CEK) MUSS AES/GCM ([FIPS-197], [NIST-SP-800-38D]) verwendet werden. Dabei MUSS ein zufällig erzeugter IV von 96-Bit Länge und ein Authenication-Tag mit der Länge von 128 Bit verwendet werden.</li>
+    </ol> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_146"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-102942">10 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102943">10.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Kürzel<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 486.8px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">IBE</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Identity Based Encryption</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">PKG</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Private Key Generator</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">SE</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Secure Element</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">SGD</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Schlüsselgenerierungsdienst</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">TPM</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Trusted Plattfom Modul</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102944">10.2 Glossar</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 154px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Begriff<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 426.8px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 154px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;">Funktionsmerkmal </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.8px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems. </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_181">Das Glossar wird als eigenständiges Dokument (vgl. [gemGlossar]) zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102945">10.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_87">Abbildung 1: Strukturübersicht PKG</a></li>
+   <li><a href="#polarion_59">Abbildung 2: Bestandteile eines PKG</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102946">10.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_34">Tabelle&nbsp;1: beteiligte Akteure im Kontext IBE</a></li>
+   <li><a href="#polarion_39">Tabelle&nbsp;2: beteiligte Komponenten und Dienste&nbsp;im Kontext IBE</a></li>
+   <li><a href="#polarion_74">Tabelle&nbsp;3: Übersicht über die von außen zugänglichen Operationen eines PKG</a></li>
+   <li><a href="#polarion_110">Tabelle&nbsp;4: Struktur der JSON-Kodierung der Public-Parameter</a></li>
+   <li><a href="#polarion_111">Tabelle&nbsp;5: Struktur TSL-Eintrag für die Public-Parameter</a></li>
+   <li><a href="#polarion___1">Tabelle&nbsp;6: TAB_erweiterte_Identifikationszeichenkette</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-102947">10.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-102948">10.5.1 Dokumente der gematik</h4>
+  <p id="polarion_186">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummern sind in der aktuellen, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_187"></p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Herausgeber: Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">[gemGlossar] </td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Einführung der Gesundheitskarte – Glossar </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_OID]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik:&nbsp;<span style="font-size: 10pt;line-height: 1.5;">Spezifikation Festlegung von OIDs</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_Krypt]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik: <span style="font-size: 10pt;line-height: 1.5;">Übergreifende Spezifikation, Verwendung kryptographischer Algorithmen in der Telematikinfrastruktur</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-104513">10.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=5" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 144px;height: 19.5556px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 585.778px;height: 19.5556px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="width: 144px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[CAB-Forum]<br> </span></td> 
+     <td style="width: 585.778px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Liste vertrauenswürdiger Zertifikatsherausgeber (Root-CAs) für Anwendungen im Internet<br> <a href="https://cabforum.org/members/" target="_top" class="descriptionLink">https://cabforum.org/members/</a><br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 144px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[NIST-SP-800-38B]</td> 
+     <td style="width: 585.778px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">NIST Special Publication 800-38B,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Recommendation for Block Cipher Modes of Operation: The CMAC</span><br> <span style="font-size: 10pt;line-height: 1.5;">Mode for Authentication, Morris Dworkin, May 2005 Edition,</span><br> <a href="http://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf" target="_blank" class="descriptionLink">http://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf</a></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 144px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[RFC-7515]</td> 
+     <td style="width: 585.778px;height: 39.1111px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">RFC 7515:&nbsp;<span style="font-size: 10pt;line-height: 1.5;">JSON Web Signature (JWS),&nbsp;M. Jones, J. Bradley, N. Sakimura, May 2015<br> <a href="https://tools.ietf.org/html/rfc7515" target="_top" class="descriptionLink">https://tools.ietf.org/html/rfc7515</a>&nbsp;</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_196"></p>
+ </body>
+</html>

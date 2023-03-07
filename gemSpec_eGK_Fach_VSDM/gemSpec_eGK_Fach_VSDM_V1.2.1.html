@@ -1,0 +1,803 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_6"> <br> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Speicherstrukturen der eGK<br> für die Fachanwendung VSDM</span> </p>
+  <p id="polarion_11"> <br> </p>
+  <p id="polarion_12"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.2.1</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571720</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>19.02.2021</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_eGK_Fach_VSDM</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_13"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-9240">Dokumentinformationen</h1>
+  <p id="polarion_19"> <span id="polarion-comment:11"></span> </p>
+  <p id="polarion_22"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 59.3333px;height: 40.6667px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Version</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 68.2222px;height: 40.6667px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Stand</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 48.6667px;height: 40.6667px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kap./ Seite</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 277.111px;height: 40.6667px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Grund der Änderung, besondere Hinweise</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 40.6667px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bearbeitung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">02.10.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Erstellung</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.0.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">15.10.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung Kommentare aus der übergreifenden Konsistenzprüfung</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.1.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">12.11.12</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">als Arbeitsgrundlage freigegeben</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.1.9</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">15.02.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung der Änderungen im Rahmen des Verhandlungsverfahrens.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.1.9</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">22.04.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">zur Abstimmung freigegeben</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PL P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">27.05.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Einarbeitung der Kommentierung der Gesellschafter vom 22.04.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.2.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">30.05.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PL P72</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">1.2.0</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">06.06.13</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">freigegeben</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 59.3333px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;">1.2.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 68.2222px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;">19.02.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 48.6667px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 277.111px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;">Verweis auf das Schema der privaten Kostenträger aufgenommen.<br> Verweise auf eGK G1Plus, ORS1 und Release 0.5.3 entfernt</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23.7778px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_24"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-9241">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-9240">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-9241">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9242">1 Einordnung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9243">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9244">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9245">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9246">1.4 Abgrenzung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9247">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9248">2 Daten der Fachanwendung VSDM</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9249">2.1 Einleitung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9250">2.2 Allgemeine Versicherungsdaten (EF.VD)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9251">2.3 Geschützte Versichertendaten (EF.GVD)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9252">2.4 Persönliche Versichertendaten (EF.PD)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9253">2.5 VSD Status (EF.StatusVD)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9254">2.6 Übersicht Versionierung (informativ)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9255">2.7 Prüfungsnachweis (EF.Prüfungsnachweis)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9256">2.8 Sichere Übertragung der VSD zwischen Fachdienst und eGK</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9257">3 Anhang A – Anforderungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9258">3.1 Eingangsanforderungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9259">3.2 Ausgangsanforderungen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9273">4 Anhang B – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9274">4.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9275">4.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-9276">4.3 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21095">4.4 Referenzierte Dokumente</a></li>
+  </div>
+  <p id="polarion_27"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9242">1 Einordnung des Dokuments</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9243">1.1 Zielsetzung</h3>
+  <p id="polarion_28"> Das Dokument beschreibt die für die Fachanwendung VSDM spezifischen Speicherstrukturen der Container EF.PD, EF.VD, EF.GVD, EF.StatusVD und EF.Prüfungsnachweis der eGK. <span id="polarion-comment:12"></span>Die übergreifenden Festlegungen für alle Fachanwendungen werden in [gemSpec_eGK_Fach_TIP] getroffen.&nbsp;<span id="polarion-comment:14"></span> </p>
+  <p id="polarion_29"> Die Festlegungen dieses Dokuments entsprechen der Version <span style="font-weight: bold;">3.0.4 </span>zu Speicherstrukturen VSDM<span style="font-weight: bold;">. </span>Diese Versionsnummer ist in der <span id="polarion-comment:13"></span> 4. Stelle des Containers EF.StatusVD auf der eGK abgelegt. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9244">1.2 Zielgruppe</h3>
+  <p id="polarion_32">Das Dokument richtet sich an Kartenhersteller bzw. -personalisierer, Anbieter der Fachdienste VSDM sowie Hersteller und Entwickler des Fachmoduls VSDM.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9245">1.3 Geltungsbereich</h3>
+  <p id="polarion_33">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des Deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungsverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_34"> Die in diesem Dokument getroffenen Festlegungen gelten für die Fachanwendung VSDM für die eGK der Generation 2 und Generation 2.1.&nbsp;<span id="polarion-comment:15"></span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9246">1.4 Abgrenzung des Dokuments</h3>
+  <p id="polarion_35"> Die Festlegungen betreffen die Speicherstrukturen und die Befüllung der Container EF.PD, EF.VD, EF.GVD, EF.StatusVD und EF.Prüfungsnachweis der eGK.<span id="polarion-comment:18"></span> </p>
+  <p id="polarion_36"> Festlegungen zur Erzeugung, Verschlüsselung und Speicherung des Prüfungsnachweises sowie zur Prüfung auf unterstützte Versionen werden in [gemSpec_FM_VSDM] getroffen.&nbsp;<span id="polarion-comment:16"></span> </p>
+  <p id="polarion_25"> Speicherstrukturen anderer Fachanwendungen werden in gesonderten <span id="polarion-comment:17"></span>Dokumenten beschrieben. </p>
+  <p id="polarion_38">Normative Festlegungen zum Objektsystem der eGK werden in [gemSpec_eGK_ObjSys] getroffen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9247">1.5 Methodik</h3>
+  <p id="polarion_39">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID in eckigen Klammern sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_40">Sie werden in Anhang A zusammengefasst und im Dokument in eckigen Klammern referenziert.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9248">2 Daten der Fachanwendung VSDM</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9249">2.1 Einleitung</h3>
+  <p id="polarion_42"> Die <span style="font-weight: bold;">Versichertendaten</span> (VSD) werden auf der eGK in vier Dateien abgelegt: </p>
+  <ul id="polarion_43"> 
+   <li>Allgemeine Versicherungsdaten (<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.VD</span>)</li> 
+   <li>Geschützte Versichertendaten (<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.GVD</span>)</li> 
+   <li>Persönliche Versichertendaten (<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.PD</span>)</li> 
+   <li>VSD Status (<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.StatusVD</span>)</li> 
+  </ul>
+  <p id="polarion_44"> Die Datei <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.StatusVD</span> wird genutzt, um das Datum der letzten Aktualisierung, die Version der XML-Schema, die Version der VSD-Speicherstrukturen und einen Status zu sichern. Der Status zeigt an, ob der letzte Aktualisierungsprozess vollständig durchlaufen ist und die Daten über die übrigen 3 VSD-Dateien hinweg technisch konsistent sind. Schreibabbrüche während der Aktualisierung lassen sich somit eindeutig erkennen. </p>
+  <p id="polarion_23"> In einer weiteren Datei wird der <span style="font-weight: bold;">Prüfungsnachweis</span> abgelegt (<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.Prüfungsnachweis</span>). </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9250">2.2 Allgemeine Versicherungsdaten (EF.VD)</h3>
+  <p id="polarion_46">Der Bereich der allgemeinen Versicherungsdaten enthält Vertragsdaten zum Versicherungsverhältnis.</p>
+  <p id="polarion_47"> Basis der Größenkalkulation ist eine Instanz einer XML-Datei, die auf dem Element <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">UC_AllgemeineVersicherungsdatenXML </span>des Schemas<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;"> Schema_VSD.xsd</span> basiert, mit allen (auch optionalen) Elemente mit maximaler Länge ausgefüllt ist, Namespace- und SchemaLocation-Attribute enthält (keine Optimierung) und welche anschließend mittels des gzip-Algorithmus komprimiert wurde. Für den ermittelten Speicherbedarf wurde ein Sicherheitspuffer von mindestens 20% aufgeschlagen. </p>
+  <p id="polarion_48">Der Container EF.VD ist auf der eGK unter der Gesundheitsanwendung DF.HCA angeordnet und stellt eine Größe von 1250 (G 2) Byte zur Verfügung. Der Zugriffsschutz für diesen Container ist so eingestellt, dass er jederzeit ohne Authentisierung lesbar ist. [VSDM-A_2966] [VSDM-A_2971]</p>
+  <p id="polarion_49"> Zur Unterstützung der Szenarien für ORS1 wird auf Beschluss des BMG<sup>([Arch_Board_2006])</sup> zunächst in EF.VD neben den allgemeinen Versicherungsdaten zusätzlich eine Kopie der geschützten Versichertendaten EF.GVD abgelegt. </p>
+  <p id="polarion_50" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_eGK_Fach_VSDM_01 - Struktur der Datei EF.VD [VSDM-A_2974] </p>
+  <table id="polarion_wiki macro name=table;params=uid=4" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148.517px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Informationselement</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 59.45px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Länge in Byte</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 56.3333px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Typ</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 293.9px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Offset Start VD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 1.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Offset Ende VD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 1.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Offset Start GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 2.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Offset Ende GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 2.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">variabel</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <br> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 3., siehe 5.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148.517px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 59.45px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">variabel</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <br> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 293.9px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 4., siehe 5.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=4" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <ol> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Der Offset berechnet sich ab Start der Datei und wird in Byte angegeben. Durch die Länge des Offset-Bereiches ist der kleinstmögliche Wert 8. </span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Liegen keine geschützten Versichertendaten GVD in EF.VD vor, so werden die Felder Offset Start GVD und Offset Ende GVD jeweils mit hexadezimal ‚FFFF’ belegt, um das Feld GVD als leer zu markieren. Der Offset berechnet sich ab Start der Datei und wird in Byte angegeben. Durch die Länge des Offset-Bereiches ist der kleinst mögliche Wert 8. </span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Die allgemeinen Versicherungsdaten VD selbst werden als XML-Daten gemäß vorgegebenem XML-Schema, gzip-komprimiert und nicht verschlüsselt innerhalb der Datei abgelegt. Der zu verwendende Zeichensatz für die fachlichen Inhalte ist ISO8859-15. </span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Die allgemeinen geschützten Versichertendaten GVD selbst werden als XML-Daten gemäß vorgegebenem XML-Schema, gzip-komprimiert und nicht verschlüsselt innerhalb der Datei abgelegt. Der zu verwendende Zeichensatz für die fachlichen Inhalte ist ISO8859-15. </span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Die Reihenfolge der Felder VD und GVD ist durch die entsprechenden Offsets definiert und nur exemplarisch wie oben abgebildet. Die maximale Länge ergibt sich aus der in [gemSpec_eGK_ObjSys] definierten Dateigröße für Versicherungsdaten minus dem Speicherplatzbedarf für den Offsetbereich (8 Byte).</span></li> 
+      </ol> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_14"></p>
+  <p id="polarion_15"> <span style="font-weight: bold;">Hinweis zur Migration</span> </p>
+  <p id="polarion_53">Die GVD sind nach einer Übergangszeit nicht mehr als Kopie im ungeschützten Bereich zu speichern [Arch_Board_2006], um den Schutz der personenbezogenen medizinischen Daten zu gewährleisten. Das Fachmodul VSDM muss die GVD immer aus dem geschützten Bereich lesen und darf die GVD nicht aus dem ungeschützten Bereich lesen. Das Fachmodul VSDM soll zudem in der Lage sein, die VD von der eGK zu lesen, wenn zukünftig keine Kopie der GVD im ungeschützten Bereich gespeichert ist. Somit kann das Fachmodul VSDM ohne echte Migration nach Ende des Übergangzeitraums weitergenutzt werden. Die Kopie der GVD wird entweder aus dem ungeschützten Bereich durch eine Aktualisierung durch den Fachdienst VSDD entfernt oder die Kartenherausgeber produzieren eGKs ohne Kopie der GVD.</p>
+  <p id="polarion_54"> Die Kennzeichnung nicht vorhandener GVD im Container <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.VD</span> erfolgt wie in Tabelle 1 unter Punkt 2 beschreiben. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9251">2.3 Geschützte Versichertendaten (EF.GVD)</h3>
+  <p id="polarion_55"> Die geschützten Versichertendaten enthalten Informationen über den Teil der Versichertendaten, die besonders schützenswert sind. Basis der Größenkalkulation ist eine Instanz einer XML-Datei, die auf dem Element <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;color: #800000;line-height: 1.5;">UC_GeschuetzteVersichertendatenXML </span>des Schemas<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;color: #800000;line-height: 1.5;"> Schema_VSD.xsd</span> basiert, mit allen (auch optionalen) Elementen mit maximaler Länge ausgefüllt ist, Namespace- und SchemaLocation-Attribute enthält (keine Optimierung) und welche anschließend mittels des gzip-Algorithmus komprimiert wurde. Für den ermittelten Speicherbedarf wurde ein Sicherheitspuffer von mindestens 20% angenommen. </p>
+  <p id="polarion_56">Der Container EF.GVD ist auf der eGK unter der Gesundheitsanwendung DF.HCA angeordnet und stellt eine Größe von 600 (G 2) Byte zur Verfügung. [VSDM-A_2967]</p>
+  <p id="polarion_57">Der Zugriff auf diese Daten ist nur nach Freischaltung dieses Containers durch eine berechtigte Karte möglich. Dies erfolgt mittels Card-to-Card-Authentisierung (HBA/SMC) und stellt sicher, dass nicht berechtigte Rollen (z.B. Mitarbeiter Rettungsdienst ohne Eingabe der PIN.CH) keinen Zugriff erhalten. [VSDM-A_2972]</p>
+  <p id="polarion_58">Es wird hier ausdrücklich darauf hingewiesen, dass die geschützten Versichertendaten grundsätzlich in der Datei EF.GVD abgelegt werden. Zusätzlich wird für eine Übergangszeit eine Kopie dieser Daten in der Datei EF.VD abgelegt (siehe 2.2)</p>
+  <p id="polarion_60" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span> : Tab_eGF_Fach_VSDM_02 - Struktur der Datei EF.GVD ]VSDM-A_2975] </p>
+  <table id="polarion_wiki macro name=table;params=uid=15" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 150.667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Informationselement</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 61.3333px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Länge in Byte</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 58.6667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Typ</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 324px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 150.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Länge GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 324px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 1.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 150.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">variabel</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <br> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 324px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 2.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=16" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <ol> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Gibt die Länge des Feldes EF.GVD in Byte an. Der Container EF.GVD ist nach der Personalisierung immer mit der Minimalstruktur der GVD befüllt. Hierbei sind bestimmte XML-Elemente verpflichtend, so dass die GVD nicht leer sein können.</span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Die GVD sind als XML-Daten gemäß anzuwendender XML-Schema-Version strukturiert, gzip-komprimiert und nicht verschlüsselt innerhalb der Datei abgelegt. Der zu verwendende Zeichensatz für die fachlichen Inhalte ist ISO8859-15.</span></li> 
+      </ol> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9252">2.4 Persönliche Versichertendaten (EF.PD)</h3>
+  <p id="polarion_62"> In EF.PD werden die persönlichen Versichertendaten abgelegt. Basis der Größenkalkulation ist eine Instanz einer XML-Datei, die auf dem Element <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;color: #800000;line-height: 1.5;">UC_PersoenlicheVersichertendatenXML </span>des Schemas<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;color: #800000;line-height: 1.5;"> Schema_VSD.xsd</span> basiert,<span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;color: #800000;line-height: 1.5;"> </span>mit allen (auch optionalen) Elemente mit maximaler Länge ausgefüllt ist, Namespace- und SchemaLocation-Attribute enthält (keine Optimierung) und welche anschließend mittels des gzip-Algorithmus komprimiert wurde. Für den ermittelten Speicherbedarf wurde ein Sicherheitspuffer von mindestens 20% aufgeschlagen. </p>
+  <p id="polarion_63">Der Container EF.PD ist auf der eGK unter der Gesundheitsanwendung DF.HCA angeordnet und stellt eine Größe von 850 Byte zur Verfügung. Der Zugriffsschutz für diesen Container ist so eingestellt, dass er jederzeit ohne Authentisierung lesbar ist. [VSDM-A_2965] [VSDM-A_2971]</p>
+  <p id="polarion_64" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span> : Tab_eGF_Fach_VSDM_03 - Struktur der Datei EF.PD [VSDM-A_2973] </p>
+  <table id="polarion_wiki macro name=table;params=uid=18" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 150.667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Informationselement</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 61.3333px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Länge in Byte</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 58.6667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Typ</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 324px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 150.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Länge PD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 324px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 1.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 150.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 61.3333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">variabel</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <br> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 324px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Siehe 2.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=19" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <ol> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Gibt die Länge des Feldes EF.PD in Byte an. Die maximale Länge ergibt sich aus der in [gemSpec_eGK_ObjSys] definierten Dateigröße minus des Speicherplatzbedarfes für das <br> Längenfeld (2 Byte).</span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Die persönlichen Versichertendaten PD selbst werden als XML-Daten gemäß vorgegebenem XML-Schema, gzip-komprimiert und nicht verschlüsselt innerhalb der Datei abgelegt. Der zu verwendende Zeichensatz für die fachlichen Inhalte ist ISO8859-15.</span></li> 
+      </ol> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9253">2.5 VSD Status (EF.StatusVD)</h3>
+  <p id="polarion_66">Der Container EF.StatusVD ist auf der eGK unter der Gesundheitsanwendung DF.HCA angeordnet und stellt eine Größe von 25 Byte zur Verfügung. Der Zugriffsschutz für diesen Container ist so eingestellt, dass er jederzeit ohne Authentisierung lesbar ist. [VSDM-A_2970] [VSDM-A_2971]</p>
+  <p id="polarion_67">Im Container EF.StatusVD werden Statusinformationen, Zeitstempel und Versionsinformationen abgelegt, die die Speicherstruktur der Daten der anderen VSD-Container betreffen (EF.VD, EF.GVD, EF.PD, EF.Prüfungsnachweis). Der Container wird ebenso wie die anderen VSD-Container bei der Personalisierung erzeugt und beim Online-Update der eGK durch den Fachdienst VSDD aktualisiert.</p>
+  <p id="polarion_69" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span> : Tab_eGK_Fach_VSDM_04 - Struktur der Datei EF.StatusVD [VSDM-A_2976] </p>
+  <table id="polarion_wiki macro name=table;params=uid=20" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 192px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Informationselement</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 60px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Länge in Byte</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 58.6667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Typ</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 317.333px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 192px;height: 43.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">Status</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 43.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">1</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 43.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">ALPHA<br> </span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 317.333px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">„1“ = Transaktionen offen<br> „0“ = keine Transaktionen offen</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 192px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">Timestamp</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">14</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">ALPHA</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 317.333px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Timestamp der letzten Aktualisierung der VSD durch den VSDD im Format YYYYMMDDhhmmss, siehe 1. <br> Als Zeitzone MUSS UTC verwendet werden.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 192px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">Version</span><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">_</span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">XML</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">5</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BCD</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 317.333px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">siehe 2.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 192px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">Version_Speicherstruktur</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">5</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 58.6667px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BCD</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 317.333px;height: 20.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">siehe 3.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <table id="polarion_wiki macro name=table;params=header=no|uid=21" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <ol> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Das Informationselement Timestamp wird mit dem Zeitstempel des Personalisierungszeitpunktes vorbelegt.</span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Versionsnummer der VSD XML-Struktur im Format XXXYYYZZZZ. Diese wird beim Personalisieren der Karte mit der Versionsnummer der VSD (siehe Tab_eGK_Fach_VSDM-05) befüllt.&nbsp;<span id="polarion-comment:19"></span></span></li> 
+       <li><span style="font-size: 10pt;line-height: 1.5;">Versionsnummer der VSD-Speicherstruktur auf der eGK im Format XXXYYYZZZZ. Diese Versionsnummer zeigt auf eine Version des vorliegenden Dokuments. Für eGK der Generation 2 und Generation 2.1 ist diese Version der Speicherstrukturen auf </span><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">0x0030000004</span><span style="font-size: 10pt;line-height: 1.5;"> festgelegt. <br> </span><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;"><span id="polarion-comment:20"></span></span></li> 
+      </ol> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9254">2.6 Übersicht Versionierung (informativ)</h3>
+  <p id="polarion_72"> Tab_eGK_Fach_VSDM_05 enthält zur Übersicht<span style="font-weight: bold;"> </span>die <span id="polarion-comment:21"></span>verwendete Versionierung bezogen auf VSDM. Die hier dargestellten Versionsnummern zu COS und Objektsystem sind nur als Beispiel zu verstehen. </p>
+  <p id="polarion_74" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">5</span> : Tab_eGK_Fach_VSDM_05 - Versionsnummern und Mapping zu normativen Dokumenten </p>
+  <table id="polarion_wiki macro name=table;params=uid=22" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 41px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Rec 1 (COS)</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 56px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Rec 2</span><br> <span style="font-size: 10pt;line-height: 1.5;">(ObjSys)</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 35px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Rec 3</span><br> <br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 98px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">StatusVD.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Version_ Speicherstruktur</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 66px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">StatusVD.</span><br> <span style="font-size: 10pt;line-height: 1.5;">Version_ XML</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 176px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Zugehörige Dokumente<br> (Mapping)</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 53px;height: 60.75px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Zulässig für</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 41px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">4.0.0<br> *)<br> </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">4.0.0<br> *)<br> </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 35px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">4.0.0</span><span style="font-style: italic;font-size: 10pt;line-height: 1.5;"><br> </span><span style="font-size: 10pt;line-height: 1.5;">*)</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 98px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">3.0.4</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 66px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 176px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">[gem_eGK_Fach_VSDM], </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 24px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">G2<br> G2.1<span id="polarion-comment:6"></span></span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 41px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 56px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 35px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 98px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 66px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">5.2.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 176px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: underline;font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM],<br> </span><span style="font-weight: bold;text-decoration: underline;font-size: 10pt;line-height: 1.5;">Schema_VSD</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">**)<span id="polarion-comment:25"></span><span id="polarion-comment:9"></span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 41px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 56px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 35px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 98px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 66px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">1.0.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 176px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemSysL_VSDM]<br> <span style="font-weight: bold;">Schema_VSD_PKV</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 53px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">***)<span id="polarion-comment:10"></span><span id="polarion-comment:26"></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_76"> *) Die normative Festlegung erfolgt in den Produkttypsteckbriefen der eGK,&nbsp; bzw. in der entsprechenden Dokumentenlandkarte. <span id="polarion-comment:22"></span><span style="background-color: #FFFF00;"> </span> </p>
+  <p id="polarion_77"> **) Diese Schemaversion bildet das Informationsmodell der gesetzlichen Kostenträger (GKV) ab.<span id="polarion-comment:7"></span> </p>
+  <p id="polarion_17"> ***) Diese Schemaversion bildet das Informationsmodell der privaten Kostenträger (PKV) ab.<span id="polarion-comment:8"></span> </p>
+  <p id="polarion_26"> <span id="polarion-comment:23"></span> </p>
+  <p id="polarion_78"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9255">2.7 Prüfungsnachweis (EF.Prüfungsnachweis)</h3>
+  <p id="polarion_79">Der Container EF.Prüfungsnachweis ist auf der eGK unter der Gesundheitsanwendung DF.HCA angeordnet und stellt eine Größe von 300 Byte zur Verfügung. Der Zugriffsschutz für diesen Container ist so eingestellt, dass er jederzeit ohne Authentisierung lesbar ist. [VSDM-A_2968] [VSDM-A_2971]</p>
+  <p id="polarion_80">Bei der erstmaligen Nutzung der eGK im Quartal ist ihre Gültigkeit und die Aktualität der Versichertenstammdaten zu prüfen. Der Nachweis der durchgeführten Prüfung muss auf der eGK gespeichert werden (Prüfungsnachweis). Die Speicherung dieses Prüfungsnachweises erfolgt im Container EF.Prüfungsnachweis.</p>
+  <p id="polarion_81"> Wie die Informationen zum Prüfungsnachweis im Container EF.Prüfungsnachweis abgelegt werden, ist in [gemSpec_FM_VSDM] beschrieben. Die Abgrenzung erfolgt aus dem Grund, dass im Fall des Containers <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.Prüfungsnachweis</span> die Fachdienste und die Kartenpersonalisierung nicht involviert sind. Auf diesen Container greift sowohl schreibend als auch lesend nur das Fachmodul VSDM zu. </p>
+  <p id="polarion_82"> Zum Personalisierungszeitpunkt wird der Container <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace;line-height: 1.5;">EF.Prüfungsnachweis</span> mit NULL vorbelegt oder mit Länge 0 initialisiert. [VSDM-A_2977] </p>
+  <p id="polarion_83">Die Speicherstruktur des Prüfungsnachweises, wie er durch das Fachmodul VSDM erzeugt wird, ist in Tabelle 6: Tab_eGK_Fach_VSDM_06 – Struktur des Containers EF.Prüfungsnachweis abgebildet.</p>
+  <p id="polarion_85" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">6</span>: Tab_eGK_Fach_VSDM_06 – Struktur des Containers EF.Prüfungsnachweis </p>
+  <table id="polarion_wiki macro name=table;params=uid=23" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 174.667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Informationselement</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 72px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Länge in Byte</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 60px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Typ</span> 
+      </div> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 288px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bemerkung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 174.667px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Länge Prüfungsnachweis</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">2</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 288px;height: 40.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Gibt die Länge des Feldes Prüfungsnachweis in Byte an.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 174.667px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Prüfungsnachweis</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 72px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">Variabel</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 60px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"> 
+      <div style="text-align: center;"> 
+       <span style="font-size: 10pt;line-height: 1.5;">BINÄR</span> 
+      </div> </td> 
+     <td style="text-align: left;vertical-align: top;width: 288px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Inhalt gemäß [gemSpec_FM_VSDM#4.1]</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9256">2.8 Sichere Übertragung der VSD zwischen Fachdienst und eGK</h3>
+  <p id="polarion_87">Aus Datenschutzgründen müssen die Inhalte der drei Container PD, VD und GVD während der Aktualisierung durch den Fachdienst VSDD integritätsgeschützt und Ende-zu-Ende-verschlüsselt zur eGK übertragen werden. [VSDM-A_2994]</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9257">3 Anhang A – Anforderungen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9258">3.1 Eingangsanforderungen</h3>
+  <table id="polarion_wiki macro name=table;params=uid=1|width=80%" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 101px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">AFO-ID</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 355px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 114px;height: 20.25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Umgesetzt durch</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2146</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS die Berechtigungen der Akteure entsprechend der Tabelle Tab_VSDM_SysL_28 "fachliche Berechtigungsmatrix VSDM" umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2971<br> VSDM-A_2972</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2154<br> A_21180<span id="polarion-comment:4"></span></span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das fachliche Infomodell zum Prüfungsnachweis aus dem Lastenheft VSDM im technischen Infomodell umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2968<br> VSDM-A_2977</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2156<br> A_21174<span id="polarion-comment:1"></span></span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell geschützte Versichertendaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2967<br> VSDM-A_2975</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2158<br> A_21172<span id="polarion-comment:2"></span></span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell persönliche Versichertendaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2965<br> VSDM-A_2973</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2159<br> A_21173<span id="polarion-comment:3"></span></span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS das Teilmodell allgemeine Versicherungsdaten aus dem technischen Informationsmodell VSDM umsetzen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2966<br> VSDM-A_2974</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2969</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Fachanwendung VSDM MUSS einen Statuscontainer auf der eGK umsetzen, der einen Zeitstempel der letzten Aktualisierung, Versionsinformationen und einen Transaktionsstatus zur Aktualisierung der Karte enthält.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2970<br> VSDM-A_2976</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_7</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Der Kostenträger MUSS als Ausnahmeregelung den schützenswerten Teil der Versichertenstammdaten auf der eGK für eine befristete Übergangszeit auch im ungeschützten Bereich der eGK als Kopie speichern.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2974</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_331</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 355px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Anwendung VSDM MUSS die Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität gemäß Schutzbedarf sicherstellen.</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 60px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM-A_2994</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9259">3.2 Ausgangsanforderungen</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9260">
+   <p><b>VSDM-A_2965</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G2 MUSS für die Speicherung des Teilmodells "Persönliche Versichertendaten" den Container EF.PD mit der Mindestgröße von 850 Byte innerhalb der Gesundheitsanwendung DF.HCA zur Verfügung stellen.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9261">
+   <p><b>VSDM-A_2966</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G2 MUSS für die Speicherung des Teilmodells "Allgemeine Versicherungsdaten" den Container EF.VD mit der Mindestgröße von 1250 Byte innerhalb der Gesundheitsanwendung DF.HCA zur Verfügung stellen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9262">
+   <p><b>VSDM-A_2967</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G 2 MUSS für die Speicherung des Teilmodells "Geschützte Versicherungsdaten" den Container EF.GVD mit der Mindestgröße von 600 Byte innerhalb der Gesundheitsanwendung DF.HCA zur Verfügung stellen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9263">
+   <p><b>VSDM-A_2968</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G2 MUSS für die Speicherung des Teilmodells "Prüfungsnachweis" den Container EF.Prüfungsnachweis mit der Mindestgröße von 300 Byte innerhalb der Gesundheitsanwendung DF.HCA zur Verfügung stellen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9264">
+   <p><b>VSDM-A_2970</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G 2 MUSS den Container EF.StatusVD mit der Größe von 25 Byte innerhalb der Gesundheitsanwendung DF.HCA zur Verfügung stellen.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9265">
+   <p><b>VSDM-A_2971</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK MUSS den Zugriffsschutz für die Container EF.PD, EF.VD, EF.Prüfungsnachweis und EF.StatusVD so einstellen, dass sie jederzeit ohne Authentisierung lesbar sind.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9266">
+   <p><b>VSDM-A_2972</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die eGK G 2 MUSS den Zugriff auf den Container EF.GVD schützen und mittels C2C-Authentisierung nur berechtigten Rollen (alle Rollen außer "Mitarbeiter Rettungsdienst" und "Administrator") erlauben.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9267">
+   <p><b>VSDM-A_2973</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die betroffenen Produkttypen der Fachanwendung VSDM (Fachmodul, Fachmodul (mobKT), Fachdienste VSDM) MÜSSEN die Speicherstruktur des Containers EF.PD gemäß Tabelle Tab_eGK_Fach_VSDM_03 verwenden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9268">
+   <p><b>VSDM-A_2974</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die betroffenen Produkttypen der Fachanwendung VSDM (Fachmodul, Fachmodul (mobKT), Fachdienste VSDM) MÜSSEN die Speicherstruktur des Containers EF.VD gemäß Tabelle Tab_eGK_Fach_VSDM_01 verwenden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9269">
+   <p><b>VSDM-A_2975</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die betroffenen Produkttypen der Fachanwendung VSDM (Fachmodul, Fachmodul (mobKT), Fachdienste VSDM) MÜSSEN die Speicherstruktur des Containers EF.GVD gemäß Tabelle Tab_eGK_Fach_VSDM_02 verwenden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9270">
+   <p><b>VSDM-A_2976</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die betroffenen Produkttypen der Fachanwendung VSDM (Fachmodul, Fachmodul (mobKT), Fachdienste VSDM) MÜSSEN die Speicherstruktur des Containers EF.StatusVD gemäß Tabelle Tab_eGK_Fach_VSDM_04 verwenden.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9271">
+   <p><b>VSDM-A_2977</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Kartenherausgeber SOLL zum Personalisierungszeitpunkt den Container EF.Prüfungsnachweis mit NULL vorbelegen oder mit der Länge 0 initialisieren.</span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-9272">
+   <p><b>VSDM-A_2994</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Aus Datenschutzgründen MUSS der Fachdienst VSDD während einer Aktualisierung die Inhalte der Container PD, VD und GVD integritätsgeschützt und Ende-zu-Ende-verschlüsselt zur eGK übertragen.</span> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-9273">4 Anhang B – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9274">4.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=16" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 103.778px;height: 18.4444px;border: 1px solid #CCCCCC;padding: 5px;">Kürzel<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 476.222px;height: 18.4444px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">eGK</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Elektronische Gesundheitskarte<span id="polarion-comment:24"></span></span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">TI</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">LE</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Leistungserbringer</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDM</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Versicherstammdatenmanagement</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">UFS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Update Flag Service</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VSDD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Versicherstammdatendienst</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">CMS</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Card Management System</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Persönliche Versichertendaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Allgemeine Versicherungsdaten</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 103.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">GVD</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 476.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Geschützte Versichertendaten</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9275">4.2 Glossar</h3>
+  <p id="polarion_95">Das Glossar wird als eigenständiges Dokument, vgl [gemGlossar] zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-9276">4.3 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21095">4.4 Referenzierte Dokumente</h3>
+  <p id="polarion_97">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummer entnehmen Sie bitte der aktuellen, auf der Internetseite der gematik veröffentlichten Dokumentenlandkarte, in der die vorliegende Version aufgeführt wird.</p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=17" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 204.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 375.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber: Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar der Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_FM_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation Fachmodul VSDM</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_VSDM]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Systemspezifisches Konzept Versichertenstammdatenmanagement (VSDM)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_eGK_Fach_TIP]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Speicherstrukturen der eGK für die TI-Plattform</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_eGK_ObjSys]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation der elektronischen Gesundheitskarte, </span><br> <span style="font-size: 10pt;line-height: 1.5;">eGK-Objektsystem</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_egK_Fach_VSDM]<span id="polarion-comment:5"></span></td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">Das vorliegende Dokument</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">Schema_VSD.xsd</td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">gematik: XML-Schema für das&nbsp; Informationsmodell der GKV der Versichertenstammdaten&nbsp;<span id="polarion-comment:27"></span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">Schema_VSD_PKV.xsd</td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">gematik: XML-Schema für das Informationsmodell der PKV der Versichertenstammdaten<span id="polarion-comment:28"></span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 204.222px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">Pruefungsnachweis.xsd</td> 
+     <td style="text-align: left;vertical-align: top;width: 375.778px;height: 39.7778px;border: 1px solid #CCCCCC;padding: 5px;">gematik: XML-Schema für den Inhalt des Prüfungsnachweises&nbsp;<span id="polarion-comment:29"></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_18"></p>
+ </body>
+</html>

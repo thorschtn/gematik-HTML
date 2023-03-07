@@ -1,0 +1,895 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_2"></p>
+  <p id="polarion_3"> <br> <span style="font-size: 14pt;color: #FF0000;line-height: 1.5;">zulassungstest-relevante Abbildung von Errata 3 für Kon PTV3 &gt; führt zu PTV3.6.0-0</span> </p>
+  <p id="polarion_16"> Das Dokument soll die im vorliegenden Errata beschriebenen Änderungen im PET so abbilden, dass Test den funktionalen (Zulassungs-)Test des <span style="font-weight: bold;">Kon PTV 3</span> in der <span style="font-weight: bold;">Produkttypversion 3.6.0-0</span> vorbereiten und durchführen kann. </p>
+  <p id="polarion_34">Im Errata - zur besseren Lesbarkeit - ggf. enthaltene unveränderte Spezifikationsanteile wurden hier nicht übernommen.</p>
+  <p id="polarion_49">Die zum Errata veröffentlichten Dokumente sind im ELO zu finden:</p>
+  <ul id="polarion_53"> 
+   <li>Errata <span style="font-weight: bold;">gemErrata_4_Kon_PTV3 inkl. Anlagendokumente</span>:&nbsp;elodms://3660850</li> 
+   <li>Produkttypsteckbrief <span style="font-weight: bold;">gemProdT_Kon_PTV3_3.6.0-0_V1.0.0</span>:&nbsp;elodms://3661902</li> 
+  </ul>
+  <p id="polarion_54"> <span style="font-weight: bold;">Dokumentenlandkarte</span>, in der die Produkttypversion Kon PTV3.6.0-0 eingeführt wird:&nbsp;elodms://3661737 </p>
+  <p id="polarion_55"></p>
+  <p id="polarion_56">snapshot vom Deckblatt des veröffentlichten Erratum:</p>
+  <p id="polarion_13"> <img src="attachments/4-screenshot-20191129-104317.png"> </p>
+  <p id="polarion_58"></p>
+  <p id="polarion_59"> <span style="font-weight: bold;font-size: 14pt;line-height: 1.5;">Inhaltsverzeichnis</span> </p>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101437">1 C_7076 - RSA-Verschlüsselungsverfahren für PTV3-Konnektor</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101435">1.1 Änderungen in gemSpec_Kon / Version 5.4.0</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101436">1.2 Änderungen in gemSpec_Krypt / Version 2.11.0</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101438">2 C_7095 - Erweiterungen und Korrekturen gemRL_QES_NFDM</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101439">3 C_7096 - Referenz auf gemRL_QES_NFDM aktualisiert</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101442">4 C_7100 - Entfernen der Prüfung von Qualifizierten Zeitstempeln</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101440">4.1 Änderungen in gemKPT_Arch_TIP / Version 2.5.0</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101441">4.2 Änderungen in gemSpec_Kon / Version 5.4.0</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101445">5 C_7101 - Verzichtoption für nonQES-XAdES-Signatur</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101446">5.1 Änderungen in gemSpec_Kon / Version 5.4.0</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101443">6 C_7133 - Es soll klargestellt werden, dass PDF/A-3 nicht unterstützt werden soll.</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101444">6.1 Änderungen in gemSpec_Kon / Version 5.4.0</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-101449">7 Änderungen in gemProdT_Kon_PTV3 ggü. PTV3.5.0</a></li>
+  </div>
+  <p id="polarion_14"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101437">1 C_7076 - RSA-Verschlüsselungsverfahren für PTV3-Konnektor</h2>
+  <p id="polarion_60"> RSAES-PKCS1-v1-5 wird für den PTV3-Konnektor optional<br> TIP1-A_4617 =&gt; TIP1-A_4617-01<br> GS-A_4375 =&gt; GS-A_4375-01<br> RSAES-OAEP wird verpflichtend<br> GS-A_4376 =&gt; GS-A_4376-01 </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101435">1.1 Änderungen in gemSpec_Kon / Version 5.4.0</h3>
+  <p id="polarion_62"> <span style="font-weight: bold;">TIP1-A_4617-01</span> ; löst TIP1-A_4617 ab: </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101456|external=true|revision=181929|anchor=b67c15ff-c0a8e832-65e1d788-c13ecc64">
+   <p><b>TIP1-A_4617-01</b></p>
+   <p>Der Konnektor MUSS den technischen Use Case TUC_KON_071 „Daten hybrid entschlüsseln” umsetzen.<br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: TAB_KON_140 – TUC_KON_071 „Daten hybrid entschlüsseln“ </p> 
+    <table style="width: 447pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 92pt;height: 14px;border: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Element</span></th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 354pt;height: 14px;border: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span></th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 18pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Name<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 18pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_071 „Daten hybrid entschlüsseln“<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 39pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 39pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ein hybrid verschlüsseltes Dokument, das konform zu TUC_KON_070 erstellt wurde, wird entschlüsselt.<br> Es muss eine asymmetrische Verschlüsselung vorliegen, zu der der Schlüssel auf einer Karte vorliegt.<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 12pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Auslöser<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 12pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Aufruf in einem fachlichen Use Case oder des Verschlüsselungsbasisdienstes.<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Vorbedingungen<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die Karte mit dem privaten Schlüssel muss gesteckt sein und der Sicherheitszustand zur Nutzung des privaten Schlüssels muss gesetzt sein.<br> Ein konform zu TUC_KON_070 hybrid verschlüsseltes Dokument liegt vor.<br> <span style="text-decoration: underline;">Bei XML-Dokumenten</span>: Das Dokument enthält EncryptedData Elemente. Falls mehrere Elemente des Dokumentes zu entschlüsseln sind, müssen diese alle mit demselben symmetrischen Schlüssel verschlüsselt sein.<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 43pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsdaten<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 43pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">encryptedDocument<br> (Zu entschlüsselndes Dokument)<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">cardSession<br> (Kartensitzung; unterstützt werden SM-B, HBAx und eGK mit der jeweiligen C.ENC-KeyReference.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">privateKeyReference<br> (Referenz auf den privaten Schlüssel; unterstützt werden SM-B, HBAx und eGK mit der jeweiligen C.ENC-KeyReference).<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">encryptionCertificate – <span style="font-style: italic;">optional</span><br> (Verschlüsselungszertifikat passend zur Schlüsselreferenz).<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">encryptionCertificateReference <span style="font-style: italic;">– optional</span><br> (Referenz auf das Zertifikat auf obiger Karte passend zur Schlüsselreferenz).<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">encryptedKey – <span style="font-style: italic;">optional, falls nicht in encryptedDocument enthalten</span> ( asymmetrisch verschlüsselter symmetrischer Schlüssel)<br> Darüber hinaus werden die folgenden, vom Dokumentformat und dem Verschlüsselungsverfahren abhängigen Eingangsdaten benötigt:<br> <span style="text-decoration: underline;">Bei XML-Dokumenten</span>:<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">xmlElements – <span style="font-style: italic;">optional/verpflichtend, wenn encryptionType = XMLEnc</span><br> (bei XML-Dokumenten Angabe der zu entschlüsselnden Teile des XML-Dokuments)<br> </span></li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Komponenten<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Konnektor, Kartenterminal, Karte<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ausgangsdaten<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">plainDocument<br> (Unverschlüsseltes Dokument. Bei XML-Dokumenten: Das EncryptedData-Element ist durch das entschlüsselte ersetzt.)<br> </span></li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Standardablauf<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ol> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">Das Verfahren zum Entschlüsseln wird entsprechend dem Format des übergebenen zu entschlüsselnden Dokuments (EncryptedDocument) gewählt.&nbsp;&nbsp;<br> Der Konnektor <span style="background-color: #FFFF99;">MUSS </span>beim asymmetrischen Anteil der Entschlüsselung hybrid verschlüsselter Dokumente <span style="background-color: #FFFF99;">die in [gemSpec_Krypt] beschriebenen Verfahren </span><span style="background-color: #FFFFFF;">unterstützen</span>.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;"><span style="text-decoration: underline;">XMLEnc</span>:<br> Das EncryptedData Element (oder mehrere Elemente) werden im Dokument lokalisiert. Falls sie nicht oder nicht eindeutig gefunden werden können wird Fehler 4103 bzw. 4104 gemeldet.<br> Ist in einem EncryptedData Element ein vom Konnektor nicht unterstützter Mechanismus spezifiziert, wird Fehler 4201 gemeldet.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">Falls erforderlich, wird TUC_KON_216 „Lese Zertifikat“ aufgerufen, um das Zertifikat von der Karte zu lesen.<br> 3.1 Die Kenntnis des Zertifikats kann erforderlich sein, um im Zertifikat kodierte Verschlüsselungsparameter auszulesen. (Zur Zeit der Erstellung dieser Spezifikation werden zur Laufzeit keine zusätzlichen Parameter aus dem Zertifikat benötigt, da alle nötigen Informationen aus den PKI- und Kartenspezifikationen abgeleitet werden können.)<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;"><span style="text-decoration: underline;">XMLEnc</span>:<br> Es wird geprüft, ob die Verschlüsselungsparameter (EncryptionMethod in EncryptedKey) zum referenzierten privaten Schlüssel auf der Karte passen. Ist dies nicht der Fall, bricht der Use Case mit Fehler 4106 ab.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">Es wird TUC_KON_219 „Entschlüssele“ aufgerufen, um den symmetrischen Schlüssel mit Hilfe des angegebenen privaten Schlüssels zu entschlüsseln.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">Mit dem symmetrischen Schlüssel wird der unverschlüsselte Dateninhalt wiederhergestellt.<br> <span style="text-decoration: underline;">6.1 XMLEnc</span>: Das EncrpytedData Element wird durch die entschlüsselten Daten ersetzt.<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">Der symmetrische Schlüssel wird aktiv gelöscht (überschrieben).<br> </span></li> 
+        </ol> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Varianten/Alterna-<br> tiven<br> <br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zu 6.: Zur Unterstützung von Bestandssystemen werden, neben den für den symmetrischen Teil der hybriden <span style="text-decoration: underline;">Verschlüsselung</span> vorgeschriebenen kryptographischen Algorithmen, für den symmetrischen Teil der hybriden <span style="text-decoration: underline;">Entschlüsselung</span> auch folgende Algorithmen unterstützt (siehe [gemSpec_Krypt#3.5.1]):<br> <br> </span> 
+        <ul> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">AES-128 GCM<br> </span></li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">AES-192 GCM<br> </span></li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlerfälle<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Siehe Tabelle TAB_KON_142 Fehlercodes TUC_KON_071 „Daten hybrid entschlüsseln“.<br> Wenn im Ablauf des TUCs ein anderer Fehler als die in Tabelle TAB_KON_142 Fehlercodes TUC_KON_071 „Daten hybrid entschlüsseln“ beschriebenen Fehler auftritt, wird Fehler 4107 gemeldet.<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Nichtfunktionale Anforderungen<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 28pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">keine<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 92pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zugehörige Diagramme<br> </span></td> 
+       <td style="vertical-align: top;width: 354pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Abbildung PIC_KON_059 Aktivitätsdiagramm „Daten hybrid entschlüsseln“<br> </span></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <div style="text-align: center;"> 
+     <br> 
+     <img title="1-image58.emf" src="attachments/ML-101456-1-image58.emf" style="width: 482px;max-width: 750px;height: 849px;"> 
+    </div> <p class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___2"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: PIC_KON_059 Aktivitätsdiagramm „Daten hybrid entschlüsseln“ </p> <p class="polarion-rte-caption-paragraph" id="polarion___3"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: TAB_KON_142 Fehlercodes TUC_KON_071 „Daten hybrid entschlüsseln“ </p> 
+    <table style="width: 446pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Fehlercode</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">ErrorType</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Severity</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Fehlertext</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="vertical-align: top;width: 446pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Neben den Fehlercodes der aufgerufenen technischen Use Cases können folgende weitere Fehlercodes auftreten:</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4106</span><br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">falscher Schlüssel</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4107</span><br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">hybride Entschlüsselung konnte nicht durchgeführt werden</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4103</span><br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">XML-Element nicht gefunden</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4104</span><br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">XML-Element nicht eindeutig identifiziert</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4201</span><br> </td> 
+       <td style="vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">kryptographischer Algorithmus vom Konnektor nicht unterstützt</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_63">Die AFO TIP1-A_4617 wird beim PTV3 Konnektor entfernt.</p>
+  <p id="polarion_5"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101436">1.2 Änderungen in gemSpec_Krypt / Version 2.11.0</h3>
+  <p id="polarion_65">GS-A_4375-01 ; löst GS-A_4375 ab:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101461|external=true|revision=181931|anchor=b67c15ff-c0a8e832-65e1d788-d90a87b3">
+   <p><b>GS-A_4375-01</b></p>
+   <p>Alle Produkttypen, die Dokumente mittels [XMLEnc-1.1] RSA-basiert hybrid <span style="background-color: #FFFF99;">ent</span>schlüsseln, <span style="background-color: #FFFF99;">KÖNNEN</span> für die <span style="background-color: #FFFF99;">Ent</span>schlüsselung des symmetrischen Schlüssels den Algorithmus RSAES-PKCS1-v1_5 unter Berücksichtigung von speziellen Maßnahmen gegen Seitenkanalangriffe (vgl. [BSI-TR-03116-1] S. 16) verwenden.<br> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_66"> Die AFO GS-A_4375 wird beim PTV3-Konnektor entfernt.<br> </p>
+  <p id="polarion_68">GS-A_4376-01 ; löst GS-A_4376 ab:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101460|external=true|revision=181832|anchor=b2ace931-c0a8e832-410f3f87-c3bcbffc">
+   <p><b>GS-A_4376-01</b></p>
+   <p>Alle Produkttypen, die Dokumente mittels [XMLEnc-1.1] RSA-basiert hybrid verschlüsseln, <span style="background-color: #FFFF99;">MÜSSEN</span> für den Schlüsseltransport den Algorithmus RSAES-OAEP gemäß [PKCS#1] verwenden.<br> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_33">Die AFO GS-A_4376 wird beim PTV3-Konnektor entfernt.&nbsp;</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101438">2 C_7095 - Erweiterungen und Korrekturen gemRL_QES_NFDM</h2>
+  <p id="polarion_71"> In Kapitel 3.2 Typkonformität werden zusätzliche Prüfungen für den signierten Notfalldatensatz ergänzt, um zu prüfen, dass die Signatur entsprechend der Signaturrichtlinie erstellt wurde.<br> Eine falsche URI der Signaturrichtlinie wird korrigiert.<br> </p>
+  <p id="polarion_72"> In Kapitel 3.2 Typkonformität wird ergänzt:<br> Bei der Verifikation wird der Typ identifiziert durch SigPolicyID/Identifyer = "urn:gematik:fa:sak:nfdm:r1:v1" in der Signatur<br> Im Rahmen der Typenkonfomität ist darüber hinaus zu prüfen, dass<br> • Der signierte Notfalldatensatz genau eine Signatur enthält,<br> • Die Signatur das Element NFD:Notfalldaten referenziert.<br> Die URI der Signaturrichtlinie wird korrigiert:<br> - Tabelle2:<br> /fa/nfds/NFD_Document<span style="background-color: #FFFF99;">_v1_4</span>.xsd http://ws.gematik.de/fa/nfds/NFD_Document/v1.4<br> - Tabelle3:<br> urn:gematik:fa:sak:nfdm:r1:v1 http://ws.gematik.de/fa/nfds/NFD_Document/v1.4 NFD_Document </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101439">3 C_7096 - Referenz auf gemRL_QES_NFDM aktualisiert</h2>
+  <p id="polarion_73">Es wird die falsche Version von gemRL_QES_NFDM referenziert.</p>
+  <p id="polarion_74"> Tabelle 2: Mitgeltende Dokumente:<br> [gemRL_QES_NFDM] Signaturrichtlinie QES Notfalldaten-Management (NFDM) <span style="background-color: #FFFF99;">1.<span style="text-decoration: line-through;">1</span>4.0</span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101442">4 C_7100 - Entfernen der Prüfung von Qualifizierten Zeitstempeln</h2>
+  <p id="polarion_7"> Da auf absehbare Zeit in der TI keine Möglichkeit bestehen wird, qualifizierte Zeitstempel zu erstellen, wird eine Prüfung qualifizierter Zeitstempel durch den Konnektor aktuell nicht benötigt. Dabei wird auch die Inkonsistenz beseitigt, dass die<br> Spezifikation nicht die Anforderung aus gemKPT_Arch_TIP umsetzt, da es sich um unterschiedliche Zeitstempel handelt. </p>
+  <p id="polarion_8">Übernahme aus dem Anlagendokument:</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101440">4.1 Änderungen in gemKPT_Arch_TIP / Version 2.5.0</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101459|layout=1|external=true|revision=181774|anchor=b2881598-c0a8e832-410f3f87-12d14455">
+   <p><b>TIP1-A_2255-01</b></p>
+   <p>Die Schnittstelle I_SAK_Operations MUSS die logische Operation verify_Document_QES implementieren.<br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___4"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: Operation verify_Document_QES </p> 
+    <table style="width: 414pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th colspan="5" style="background-color: #CCCCCC;text-align: left;vertical-align: top;width: 350pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">I_SAK_Operations</span><br> </th> 
+       <th style="text-align: left;vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Berechtigung: CS, FM</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td rowspan="6" style="background-color: #CCCCCC;vertical-align: top;width: 103pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">verify_Document_QES</span><br> </td> 
+       <td colspan="4" style="vertical-align: top;width: 247pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Parameter</span><br> </td> 
+       <td style="background-color: #D9D9D9;vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">V, I, A</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 25pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">In</span><br> </td> 
+       <td style="vertical-align: top;width: 81pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">SignedData</span><br> </td> 
+       <td style="vertical-align: top;width: 101pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">SignedDocumentType</span><br> </td> 
+       <td style="vertical-align: top;width: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">IM103</span><br> </td> 
+       <td style="vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">SH/M/M</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 25pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">In</span><br> </td> 
+       <td style="vertical-align: top;width: 81pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Certificate</span><br> </td> 
+       <td style="vertical-align: top;width: 101pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">CertificateX.509</span><br> </td> 
+       <td style="vertical-align: top;width: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">IM404</span><br> </td> 
+       <td style="vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">M/M/M</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 25pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #99FFFF;"><br> </span></td> 
+       <td style="vertical-align: top;width: 81pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #99FFFF;"><br> </span></td> 
+       <td style="vertical-align: top;width: 101pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #99FFFF;"><br> </span></td> 
+       <td style="vertical-align: top;width: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #99FFFF;"><br> </span></td> 
+       <td style="vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="text-decoration: line-through;background-color: #99FFFF;"><br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 25pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+       <td style="vertical-align: top;width: 81pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+       <td style="vertical-align: top;width: 101pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+       <td style="vertical-align: top;width: 40pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+       <td style="vertical-align: top;width: 64pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"></td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 25pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Out</span><br> </td> 
+       <td style="vertical-align: top;width: 81pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">VerificationResult</span><br> </td> 
+       <td style="vertical-align: top;width: 101pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">VerificationResultType</span><br> </td> 
+       <td style="vertical-align: top;width: 40pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">IM420</span><br> </td> 
+       <td style="vertical-align: top;width: 64pt;height: 6pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">M/H/H</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="6" style="vertical-align: top;width: 414pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Diese Operation überprüft die qualifizierte elektronische Signatur (QES) des übergebenen Dokuments (</span><span style="font-style: italic;font-size: 9pt;line-height: 1.5;">SignedData</span><span style="font-size: 9pt;line-height: 1.5;">) gemäß [eIDAS] unter Verwendung des mit dem Dokument übergebenen Signaturzertifikats. Das Signaturzertifikat muss entweder bereits im signierten Dokument enthalten sein oder über den optionalen Parameter</span> <span style="font-style: italic;font-size: 9pt;line-height: 1.5;">Certificate</span> <span style="font-size: 9pt;line-height: 1.5;">separat übergeben werden. Es wird zuerst die Gültigkeit des Signaturzertifikats durch Nachnutzung des Dienstes „Prüfung_Zertifikat“ geprüft. Dies umfasst die Prüfung im Online- wie auch im Offline-Fall.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Sollte das übergebene Dokument (</span><span style="font-style: italic;font-size: 9pt;line-height: 1.5;">SignedData</span><span style="font-size: 9pt;line-height: 1.5;">) eine Sperrinformation (OCSP-Response) für das Signaturzertifikat enthalten, so wird diese bei der Prüfung des Zertifikates verwendet.</span><br> <span style="font-size: 9pt;line-height: 1.5;">War das genutzte Zertifikat bei Erstellung der Signatur nicht gültig, dann ist auch die Signatur im rechtlichen Sinn nicht gültig.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Im Ergebnis der Operation (</span><span style="font-style: italic;font-size: 9pt;line-height: 1.5;">VerificationResult</span><span style="font-size: 9pt;line-height: 1.5;">) wird dokumentiert, ob die Prüfung erfolgreich war oder ob sie fehlgeschlagen ist. Falls die Prüfung nicht vollständig erfolgen konnte, da z.B. die Online-Statusprüfung des Zertifikats nicht möglich war (Offline-Fall), muss dies dem Nutzer mitgeteilt werden. Dazu werden die durchgeführten Prüfschritte im Ergebnis der Operation (</span><span style="font-style: italic;font-size: 9pt;line-height: 1.5;">VerificationResult</span><span style="font-size: 9pt;line-height: 1.5;">) aufgeführt. Falls ein Algorithmus oder Parameter, der zur Signatur genutzt wurde, nicht mehr als geeignet betrachtet wird, muss die Signaturprüfung trotzdem durchgeführt werden. Das Ergebnis der Signaturprüfung muss im Parameter</span> <span style="font-style: italic;font-size: 9pt;line-height: 1.5;">VerificationResult</span> <span style="font-size: 9pt;line-height: 1.5;">enthalten sein.</span><br> <span style="text-decoration: line-through;background-color: #FFFF99;"><span style="font-size: 9pt;background-color: #FFFF99;line-height: 1.5;">In den</span> <span style="font-style: italic;font-size: 9pt;background-color: #FFFF99;line-height: 1.5;">SignedData</span> <span style="font-size: 9pt;background-color: #FFFF99;line-height: 1.5;">enthaltene qualifizierte Zeitstempel werden ausgewertet.</span></span><br> <span style="font-size: 9pt;line-height: 1.5;">Vor der Prüfung der Signatur muss der Status der verwendeten Algorithmen gegen den aktuell gültigen Algorithmenkatalog der zuständigen Behörde (BNetzA) geprüft werden.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Es werden die nachfolgenden Dokumententypen mit dem genannten Signaturformat unterstützt:</span><br> 
+        <ul> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">Text und TIFF mit CMS</span><br> </li> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">XML mit XAdES</span><br> </li> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">PDF/A mit PDF-Signatur</span><br> </li> 
+        </ul> <span style="font-size: 9pt;line-height: 1.5;">Bei der Prüfung werden die folgenden Formen der Signatur unterstützt:</span><br> 
+        <ul> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">Einzelsignatur für alle angegebenen Formate</span><br> </li> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">Parallelsignatur für die Formate Text, TIFF und XML</span><br> </li> 
+         <li><span style="font-size: 9pt;line-height: 1.5;">Gegensignatur für alle angegebenen Formate außer PDF-Signatur</span><br> </li> 
+        </ul> <span style="font-size: 9pt;line-height: 1.5;">Bei Nichtvorhandensein der Konfiguration LU_SAK muss die Operation unmittelbar mit einer Fehlermeldung abgebrochen werden bzw. darf nicht angeboten werden.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Es werden nur Signaturen der kryptographischen Identitäten von Leistungserbringern (zulässige Karten: HBA wie auch zeitlich begrenzt die HBA-Vorläuferkarten HBA-qSig und ZOD-2.0) geprüft.</span><br> <span style="font-size: 9pt;line-height: 1.5;">Die Operation unterstützt mindestens Dokumente bis zu einer Größe von 25 MB.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="6" style="vertical-align: top;width: 414pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">Verfügbarkeit: NA, Nichtabstreitbarkeit: NA</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101441">4.2 Änderungen in gemSpec_Kon / Version 5.4.0</h3>
+  <p id="polarion_11"> in Kapitel&nbsp;<span style="font-weight: bold;">4.1.8.1.3 Signaturzeitpunkt</span><br> Bezogen auf den vom Konnektor für die Signaturprüfung anzunehmenden Signaturerstellungszeitpunkt werden in dieser Spezifikation die Bezeichner Ermittelter_Signaturzeitpunkt und Benutzerdefinierter_Zeitpunkt verwendet.<br> Ermittelter_Signaturzeitpunkt: Vom Konnektor ermittelter Zeitpunkt, zu dem eine Signatur geprüft wird. Es werden folgende Signaturzeitpunkte ermittelt:<br> 1. Ermittelter_Signaturzeitpunkt_Eingebettet: in der Signatur eingebetteter Zeitpunkt (falls vorhanden) </p>
+  <p id="polarion_12"> <span style="text-decoration: line-through;background-color: #FFFF99;">2. Ermittelter_Signaturzeitpunkt_Qualifiziert: qualifizierter Zeitstempel über die Signatur (falls vorhanden)</span> </p>
+  <p id="polarion_15"> 2. Ermittelter_Signaturzeitpunkt_System: Systemzeit des Konnektors bei Signaturprüfung<br> Anmerkung: Bei vom Konnektor selbst erstellten Signaturen ist immer ein in der Signatur eingebetteter Zeitpunkt vorhanden, jedoch kein qualifizierter Zeitstempel, da in der TI keine qualifizierten Zeitstempel ausgestellt werden. <span style="background-color: #FFFF99;">Sollte ein Dokument mit einem qualifizierten Zeitstempel versehen sein, so wird dieser nicht für die Ermittlung des Signaturzeitpunkts herangezogen.</span><br> Benutzerdefinierter_Zeitpunkt: Vom Benutzer beim Aufruf der Signaturprüfoperation als Parameter an den Konnektor übergebener Zeitpunkt, zu dem eine Signatur geprüft werden soll.<br> </p>
+  <p id="polarion_17"> in Kapitel&nbsp;<span style="font-weight: bold;">4.1.8.4.6 TUC_KON_151 „QES Dokumentensignatur prüfen“</span> </p>
+  <p id="polarion_18"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101455|external=true|revision=181934|anchor=b67c15ff-c0a8e832-65e1d788-272e0cf5">
+   <p><b>TIP1-A_4672-01</b></p>
+   <p>Der Konnektor MUSS den technischen Use Case TUC_KON_151 „QES-Dokumentensignatur prüfen” umsetzen.<br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___5"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: TAB_KON_591 - TUC_KON_151 „QES-Dokumentensignatur prüfen“ </p> 
+    <table style="width: 450pt;margin-left: 0px;margin-right: auto;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <td style="background-color: #E6E6E6;width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Element</span><br> </td> 
+       <td style="background-color: #E6E6E6;width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Name</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_151 „QES-Dokumentensignatur prüfen”</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Es wird die QES eines Dokuments geprüft. Dabei werden die Signaturverfahren laut Tabelle TAB_KON_582 – Signaturverfahren unterstützt. Sind mehrere Signaturen vorhanden, so werden alle geprüft. Auch Parallel- und Gegensignaturen MÜSSEN unterstützt werden.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsanforderung</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Auslöser</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Aufruf durch ein Clientsystem (Operation VerifyDocument) oder durch ein Fachmodul im Konnektor</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Vorbedingungen</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsdaten</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">signedDocument –</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">optional</span> <span style="font-size: 10pt;line-height: 1.5;"><br> (QES-signiertes Dokument vom Typ</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">QES_DocFormate<br> </span> <span style="font-size: 10pt;line-height: 1.5;">-&gt; siehe Definition in Operation</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">VerifyDocument</span> <span style="font-size: 10pt;line-height: 1.5;">mit</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:Document</span><span style="font-size: 10pt;line-height: 1.5;">)</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">signatureObject –</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">optional</span><span style="font-size: 10pt;line-height: 1.5;"><br> ( -&gt; siehe Definition in Operation VerifyDocument mit dss:SignatureObject.<br> Es werden Parallel- und Gegensignaturen unterstützt.)</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">optionalInputParams<br> (optionale Eingabeparameter, siehe Operation VerifyDocument, Parameter SIG:OptionalInputs)</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">certificates –</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">optional/falls diese nicht im signierten Dokument enthalten sind, sondern nur referenziert werden<br> </span> <span style="font-size: 10pt;line-height: 1.5;">(X.509-Zertifikate ).</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">xmlSchemas –</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">optional/nur für XML-Dokumente</span><span style="font-size: 10pt;line-height: 1.5;"><br> (XMLSchema und ggf. weitere vom Hauptschema benutzte Schemata)</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">includeRevocationInfo [Boolean]:</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">– optional; Default: false</span><span style="font-size: 10pt;line-height: 1.5;"><br> (Dieser optionale Parameter steuert die Einbettung von OCSP Antworten in die Signatur)</span><br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Komponenten</span><br> </td> 
+       <td style="width: 337pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Konnektor</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ausgangsdaten</span><br> </td> 
+       <td style="width: 337pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <ul> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">verificationResult [VerificationResult]<br> (Ergebnis der Signaturprüfung)</span><br> </li> 
+         <li style="text-align: left;"><span style="font-size: 10pt;line-height: 1.5;">optionalOutput –</span> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">optional</span><span style="font-size: 10pt;line-height: 1.5;"><br> (weitere Ausgabedaten gemäß SIG:OptionalOutput)</span><br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Standardablauf<br> </span></td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">1. „DocumentValidation“</span>: Das signierte Dokument wird validiert mit Aufruf TUC_KON_080 „Dokument validieren“{ … }.<br> </span>
+         <br> 
+        </div> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;">Treten Fehler bei der Validierung der Typkonformität auf, wenn die Signatur im Dokument eingebettet ist, wird die Prüfung mit einem Fehler abgebrochen.<br> Treten bei der Typkonformität, wenn die Signatur nicht im Dokument eingebettet ist, Fehler auf, so bricht der TUC nicht ab, sondern führt die folgenden Schritte soweit sinnvoll möglich durch. (Die Entscheidung über das sinnvoll Durchführbare liegt beim Hersteller des Konnektors.)<br> </span>
+         <br> 
+        </div> 
+        <div style="margin-left: 40px;"></div><br> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">2. „CoreValidation“</span>:<br> </span>
+         <br> 
+        </div> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;">Es erfolgt die mathematische Prüfung der Signatur, bestehend aus der Prüfung der Hash-Kette bis zum signierten Hashwert und der Prüfung der Signatur unter Verwendung des öffentlichen Schlüssels, des Signaturwertes und des signierten Hashwertes. <br> <br> <span style="text-decoration: underline;">XML-Signatur:</span><br> Die Core Validation erfolgt entsprechend [XMLDSig] Kapitel 3.2 Core Validation.<br> <span style="text-decoration: underline;">CMS-Signatur:&nbsp;</span><br> Die Core Validation erfolgt entsprechend Cryptographic Message Syntax (CMS) Kapitel 5.6 Signature Verification Process [RFC5652].<br> <span style="text-decoration: underline;">PDF-Signatur:</span><br> Die Core Validation erfolgt entsprechend [PAdES-3] Kapitel 4.6 Signature Validation aus PAdES-BES Part 3.<br> <br> Auch wenn die Validierung fehlschlägt, werden die folgenden Prüfschritte durchgeführt, so dass ein vollständiges Prüfprotokoll erstellt werden kann.<br> </span>
+         <br> 
+        </div> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">3. „CheckSignatureCertificate“:</span><br> </span>
+         <br> 
+        </div> <br> <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">Teil 1: Signaturzertifikat ermitteln</span><br> &nbsp;&nbsp;XML-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Das Signaturzertifikat ist im XMLDSig Element<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">ds:KeyInfo/ds:X509Data</span> gespeichert [XMLDSig] oder wird als<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eingangsparameter übergeben.<br> &nbsp; CMS-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Das Signaturzertifikat für CAdES ist im Feld <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">certificates</span> im<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">SignedData</span> Container gespeichert [CAdES] oder wird als<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eingangsparameter übergeben.<br> &nbsp; PDF-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Das PDF Signaturzertifikat für PAdES ist im Feld<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SignedData.certificates entsprechend Kapitel 6.1.1 „Placements of<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the signing certificate“ [PAdES Baseline Profile] gespeichert oder<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wird als Eingangsparameter übergeben.<br> <br> <span style="font-weight: bold;">Teil 2: Signaturzeitpunkt bestimmen<br> </span><br> </span>
+        <div style="margin-left: 40px;"></div><span style="font-weight: bold;">&nbsp;</span> Der Signaturzeitpunkt<br> &nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Ermittelter_Signaturzeitpunkt_Eingebettet</span> wird wie<br> &nbsp;&nbsp;folgt selektiert:<br> &nbsp;&nbsp;XML-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Das XML element <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">SigningTime</span> spezifiziert den Signaturzeitpunkt<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entsprechend Kapitel 7.2.1 XAdES [XAdES].<br> &nbsp;&nbsp;CMS-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Das Attribut <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">SigningTime</span> spezifiziert den Signaturzeitpunkt<br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;entsprechend Kapitel 11.3 CMS [CMS].<br> &nbsp;&nbsp;PDF-Signatur:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Der Signaturzeitpunkt kann dem M Eintrag des Signature Dictionary<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entnommen werden [PAdES Baseline Profile] Kapitel 6.2.1 Signing<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; time.<br> <br> Der Signaturzeitpunkt <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Benutzerdefinierter_Zeitpunkt</span> liegt gegebenenfalls als Aufrufparameter vor. Der Signaturzeitpunkt <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Ermittelter_Signaturzeitpunkt_System</span> wird ermittelt.<br> <br> <span style="font-weight: bold;">Teil 3: Signaturzertifikatsprüfung:</span><br> Bei der folgenden Signaturzertifikatsprüfung sind die Signaturzeitpunkte gemäß [TIP1-A_5540] zu berücksichtigen.<br> Die Signaturzertifikatsprüfung erfolgt durch Aufruf von TUC_KON_037 „Zertifikat prüfen“ {<br> &nbsp;&nbsp;&nbsp;&nbsp;certificate = C.HP.QES;<br> &nbsp;&nbsp;&nbsp;&nbsp;qualifiedCheck = required;<br> &nbsp;&nbsp;&nbsp;&nbsp;baseTime = Signaturzeitpunkt;<br> &nbsp;&nbsp;&nbsp;&nbsp;offlineAllowNoCheck = true;<br> &nbsp;&nbsp; validationMode = OCSP;<br> &nbsp;&nbsp;&nbsp;&nbsp;ocspResponses = OCSP-Response;<br> &nbsp;&nbsp;&nbsp;&nbsp;getOCSPResponses = includeRevocationInfo<br> }.<br> Sind OCSP-Responses in der Signatur eingebettet, ist die jüngsten OCSP-Response des EE-Zertifikats, die für die Zertifikatsprüfung notwendig ist, beim Aufruf von TUC_KON_037 zu übergeben.<br> Sofern der Aufruf von TUC_KON_037 ocspResponses zurückgibt, wird die OCSP-Response des EE-Zertifikats in die Signatur eingebettet.<br> Auch wenn die Zertifikatsprüfung fehlschlägt, werden die folgenden Prüfungen durchgeführt.<br> <br> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">4. „CheckPolicyConstraints“</span>:<br> </span>
+         <br> 
+        </div> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;">In diesem Schritt wird das signierte Dokument entsprechend der Profilierung der Signaturformate (siehe Anhang B.2) geprüft. Es sind die Vorgaben für die Prüfung von Signaturen aus den Standards für AdES [XAdES], [XAdES Baseline], [CAdES], [CAdES Baseline], [PAdES-3] und [PAdES Baseline] umzusetzen. Dabei sind die Vorgaben aus Tabelle TAB_KON_779 „Profilierung der Signaturformate“ und Tabelle&nbsp;TAB_KON_778 „Einsatzbereich der Signaturvarianten“&nbsp;zu erfüllen.<br> </span>
+         <br> 
+        </div> <br> <span style="font-size: 10pt;line-height: 1.5;">Auch wenn nicht alle Anforderungen an das Format des signierten Dokuments erfüllt werden, wird die Prüfung mit den folgenden Schritten fortgesetzt, um ein vollständiges Prüfungsprotokoll zu erhalten.<br> <br> </span> 
+        <div style="margin-left: 40px;"> 
+         <span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">5.</span> Das <span style="font-weight: bold;">Prüfergebnis</span> (VerificationResult, OptionalOutput) wird an den Aufrufer zurückgegeben (siehe TAB_KON_593 Übersicht Status für Prüfung einer Dokumentensignatur).</span>
+         <br> 
+        </div> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Varianten/Alternativen</span><br> </td> 
+       <td style="width: 337pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlerfälle</span><br> </td> 
+       <td style="width: 337pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Das Verhalten des TUCs bei einem Fehlerfall ist in TAB_KON_592 Fehlercodes TUC_KON_151 „QES Dokumentensignatur prüfen“ beschrieben.<br> </span> (-&gt;1) keine Signatur in signedDocument und signatureObject vorhanden: 4253.<br> <span style="font-size: 10pt;line-height: 1.5;">(</span><span style="font-size: 10pt;font-family: Wingdings, 'Wingdings Regular';line-height: 1.5;"></span> <span style="font-size: 10pt;line-height: 1.5;">2</span> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">„CoreValidation“</span><span style="font-size: 10pt;line-height: 1.5;">) Interner Fehler: 4001, Signatur des Dokuments ungültig: </span>4115, Signatur umfasst nicht das gesamte Dokument: 4262<br> <span style="font-size: 10pt;line-height: 1.5;">(</span><span style="font-size: 10pt;font-family: Wingdings, 'Wingdings Regular';line-height: 1.5;"></span><span style="font-size: 10pt;line-height: 1.5;">3</span> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">„CheckSignatureCertificate“</span><span style="font-size: 10pt;line-height: 1.5;">) Interner Fehler: 4001, Signaturzertifikat ermitteln ist fehlgeschlagen: 4206.</span><br> <span style="font-size: 10pt;line-height: 1.5;">(</span><span style="font-size: 10pt;font-family: Wingdings, 'Wingdings Regular';line-height: 1.5;"></span><span style="font-size: 10pt;line-height: 1.5;">4</span> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">„CheckPolicyConstraints“</span><span style="font-size: 10pt;line-height: 1.5;">) Interner Fehler: 4001, Dokument nicht konform zu Regeln für QES: 4124, Dokument nicht konform zu Profilierung der Signaturformate: 4208.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Nichtfunktionale Anforderungen</span><br> </td> 
+       <td style="width: 337pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 113pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Zugehörige Diagramme</span><br> </td> 
+       <td style="width: 337pt;height: 17pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">keine</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <p data-keep-next="true" class="polarion-rte-caption-paragraph"> <br> </p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___6"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">5</span>: TAB_KON_592 Fehlercodes TUC_KON_151 „QES Dokumentensignatur prüfen“ </p> 
+    <table style="width: 446pt;margin-left: 0px;margin-right: auto;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlercode</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">ErrorType</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Severity</span><br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Fehlertext</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="width: 446pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Neben den Fehlercodes der aufgerufenen technischen Use Cases können folgende weitere Fehlercodes auftreten:</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4001</span><br> </td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">interner Fehler</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4115</span><br> </td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Security</span><br> </td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Signatur des Dokuments ungültig. Prüfung der Hashwertkette bzw. Prüfung der kryptographischen Signatur fehlgeschlagen.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4124</span><br> </td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dokument nicht konform zu Regeln für QES</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;height: 21px;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4206</span><br> </td> 
+       <td style="width: 63pt;height: 21px;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="width: 57pt;height: 21px;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="width: 258pt;height: 21px;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Signaturzertifikat ermitteln ist fehlgeschlagen</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">4208</span><br> </td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dokument nicht konform zu Profilierung der Signaturformate</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4253</td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Technical</td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error</td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Keine Signatur im Aufruf</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 68pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">4262</td> 
+       <td style="width: 63pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Technical</td> 
+       <td style="width: 57pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Error</td> 
+       <td style="width: 258pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;">Signatur umfasst nicht das gesamte Dokument</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <div style="margin-left: 40px;"></div>Das Gesamtergebnis (VerificationResult) für die Prüfung einer Dokumentensignatur fasst die Ergebnisse<br> aller Prüfungsschritte in einem einzelnen Statuswert zusammen.&nbsp;<br> 
+    <div style="margin-left: 40px;"></div> <p class="polarion-rte-caption-paragraph" id="polarion___7"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">6</span>: TAB_KON_593 Übersicht Status für Prüfung einer Dokumentensignatur </p> 
+    <table id="polarion_wiki macro name=table" class="polarion-Document-table" style="width: 80%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th colspan="4" style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 591px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VerificationResult für gesamtes Dokument (VerificationResult/HighLevelResult)<br> </span></th> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 109px;height: 21px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Wert<br> </span></td> 
+       <td colspan="2" style="width: 471px;height: 21px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bedeutung<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VALID<br> </span></td> 
+       <td colspan="2" style="width: 471px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Wenn VerificationResult für alle Signaturen zum Dokument VALID<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">INVALID<br> </span></td> 
+       <td colspan="2" style="width: 471px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Wenn VerificationResult für eine Signatur zum Dokument INVALID<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">INCONCLUSIVE<br> </span></td> 
+       <td colspan="2" style="width: 471px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">in allen anderen Fällen<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="width: 591px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VerificationResult pro Signatur&nbsp; (VerificationReport/IndividualReport/Result)</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 109px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Wert</span></td> 
+       <td colspan="2" style="width: 471px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bedeutung<br> mögliche Ausprägungen im VerificationReport</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="3" style="width: 109px;height: 174px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">VALID</span></td> 
+       <td colspan="2" style="width: 471px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Signatur wurde gemäß den Regeln für die QES geprüft und für gültig befunden.</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 57px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:Success<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:valid:signature:OnAllDocuments</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 57px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:Success<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:valid:signature:HasManifestResults</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="6" style="width: 109px;height: 332px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">INVALID</span></td> 
+       <td colspan="2" style="width: 471px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Signatur ist ungültig oder aufgrund eines Fehlers konnte die Signaturprüfung nicht durchgeführt werden.</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:Success<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:invalid:IncorrectSignature</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:RequesterError</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:ResponderError</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:InsufficientInformation<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:invalid:IncorrectSignature</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 57px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:InsufficientInformation<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:CertificateChainNotComplete</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" style="width: 109px;height: 239px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">INCONCLUSIVE</span></td> 
+       <td colspan="2" style="width: 471px;height: 76px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die Signatur wurde gemäß den Regeln für die QES geprüft. Allerdings konnten eine oder mehrere Prüfungen nicht vollständig durchgeführt werden. Einzelheiten finden sich in Result-Detail.<br> Die Prüfungen, die durchgeführt werden konnten, waren erfolgreich.</span></td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="width: 471px;height: 152px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ResultMajor = urn:oasis:names:tc:dss:1.0:resultmajor:InsufficientInformation<br> ResultMinor = urn:oasis:names:tc:dss:1.0:resultminor:OcspNotAvailiable<br> <br> Hinweis: Das Erreichen dieses Zustandes hängt davon ab, ob eine OCSP-Abfrage nicht durchgeführt werden konnte, unabhängig davon, ob die Ursache dafür die Offlineschaltung des Konnektors (MGM_LU_ONLINE = Disabled) oder die Nichterreichbarkeit des OCSP-Responders im Online-Betrieb (MGM_LU_ONLINE = Enabled) &nbsp;ist.</span></td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_4"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101454|external=true|revision=181940|anchor=b67c15ff-c0a8e832-65e1d788-52c6cdf6">
+   <p><b>TIP1-A_5540-01</b></p>
+   <p>Der Konnektor MUSS zur QES-Signaturprüfung ein Prüfergebnis, das sich auf genau einen angenommenen Signaturzeitpunkt bezieht, an den Aufrufer zurückgeben.&nbsp;&nbsp;<br> Die Auswahl des angenommenen Signaturzeitpunkts, auf den sich das Signaturergebnis bezieht, erfolgt hierarchisch:<br> 
+    <ul> 
+     <li><span style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp; Benutzerdefinierter_Zeitpunkt <br> </span>falls vorhanden, sonst<br> </li> 
+     <li><span style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp; Ermittelter_Signaturzeitpunkt_Eingebettet<br> </span>falls vorhanden, sonst <br> </li> 
+     <li><span style="font-family: 'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp; Ermittelter_Signaturzeitpunkt_System</span><br> </li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_19"></p>
+  <p id="polarion_37"></p>
+  <p id="polarion_20"> <span style="font-weight: normal;">in Kapitel&nbsp;</span><span style="font-weight: bold;">4.1.8.5.2 VerifyDocument (nonQES und QES)</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101450|external=true|revision=181702|anchor=b1d31476-c0a8e832-410f3f87-b15bed59">
+   <p><b>TIP1-A_5034-03</b></p>
+   <p>Der Signaturdienst des Konnektors MUSS an der Clientschnittstelle eine an [OASIS-DSS] angelehnte Operation VerifyDocument (nonQES und QES) anbieten<span style="font-weight: normal;">.</span><br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___8"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">7</span>: TAB_KON_066 Operation VerifyDocument (nonQES und QES) </p> 
+    <table style="width: 445pt;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #D9D9D9;text-align: left;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Name</span><br> </th> 
+       <th colspan="3" style="text-align: left;vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">VerifyDocument</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td style="background-color: #D9D9D9;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Diese Operation verifiziert die Signatur eines Dokumentes.</span><br> <span style="font-size: 10pt;line-height: 1.5;">Der Konnektor MUSS jede konform zur Außenschnittstelle SignDocument erzeugte Signatur durch VerifyDocument prüfen können. Außerdem MÜSSEN die zusätzlich geforderten Signaturverfahren zur Dokumentensignaturprüfung unterstützt werden</span><br> <span style="font-size: 10pt;line-height: 1.5;">Das Ergebnis der Prüfung wird, wenn gefordert, in Form eines standardisierten Prüfberichts in einer</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">VerificationReport</span><span style="font-size: 10pt;line-height: 1.5;">-Struktur gemäß [OASIS-VR] zurückgeliefert.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="16" style="background-color: #D9D9D9;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Aufruf-parameter</span><br> </td> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <br> <img title="1-image84.png" src="attachments/ML-101450-1-image84.png"><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Name</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">CCTX:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Context</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">MandantId, ClientSystemId, WorkplaceId verpflichtend; UserId nicht ausgewertet</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">TvMode</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Der Parameter wird im Konnektor nicht ausgewertet.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Optional</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Inputs</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Enthält optionale Eingabeparameter (angelehnt an dss:OptionalInputs gemäß [OASIS-DSS] Section 2.7):</span><br> <span style="font-size: 10pt;line-height: 1.5;">Die zulässigen optionalen Eingabeparameter sind unten erläutert.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Document</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Enthält im Fall der Prüfung von detached oder enveloped Signaturen das zur Signatur gehörende bzw. das diese umschließende Dokument (siehe [OASIS-DSS] Section 2.4.2 und oben).</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Signa</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ture</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Object</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Enthält die zu prüfende Signatur, wenn sie nicht im Dokument selbst eingebettet ist ([OASIS-DSS] Kapitel 4.1). Hierbei werden</span> <span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">XML-Signaturen</span> <span style="font-size: 10pt;line-height: 1.5;">als</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ds:Signature</span> <span style="font-size: 10pt;line-height: 1.5;">Element und alle anderen Signaturen als</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:Base64Signature</span> <span style="font-size: 10pt;line-height: 1.5;">mit entsprechend gesetztem</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Type</span><span style="font-size: 10pt;line-height: 1.5;">-Attribut (siehe</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SignatureType,</span> <span style="font-size: 10pt;line-height: 1.5;">Operationen SignDocument und ExternalAuthenticate) übergeben, wobei die nachfolgenden Werte unterstützt werden müssen:</span><br> 
+        <ul> 
+         <li><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">CMS-Signatur</span><br> urn:ietf:rfc:5652<br> </li> 
+         <li><span style="font-weight: bold;font-size: 10pt;color: #000000;line-height: 1.5;">S/MIME-Signatur</span><br> <a href="urn:ietf:rfc:5751" target="_blank" class="descriptionLink">urn:ietf:rfc:5751</a><br> </li> 
+         <li><span style="font-weight: bold;font-size: 10pt;color: #000000;line-height: 1.5;">PDF-Signatur</span><br> <a href="http://uri.etsi.org/02778/3" target="_blank" class="descriptionLink">http://uri.etsi.org/02778/3</a><br> </li> 
+         <li><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">PKCS#1-Signatur</span> <span style="font-size: 10pt;line-height: 1.5;">(siehe Operation&nbsp;ExternalAuthenticate)</span><br> urn:ietf:rfc:3447<br> </li> 
+         <li><span style="font-weight: bold;font-size: 10pt;color: #000000;line-height: 1.5;">ECC-Signatur&nbsp;</span><span style="font-size: 10pt;color: #000000;line-height: 1.5;">(siehe Operation&nbsp;ExternalAuthenticate)</span><br> urn:bsi:tr:03111:ecdsa<br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Include</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Revocat</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ionInfo</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch diesen verpflichtenden Schalter kann der Aufrufer die Einbettung von zum Zeitpunkt der Signaturprüfung vorliegenden Sperrinformationen anfordern.</span><br> <span style="font-size: 10pt;line-height: 1.5;">Ist bereits eine Sperrinformation eingebettet, so wird die neue Sperrinformation zusätzlich eingebettet.</span><br> <span style="font-size: 10pt;line-height: 1.5;">Für in einer Gegensignatur enthaltene Signaturen erfolgt keine Einbettung von Sperrinformationen.</span>&nbsp;Für PDF-Signaturen erfolgt keine Einbettung von&nbsp;Sperrinformationen. Der Konnektor nimmt die Warnung&nbsp;4261 in die Antwort auf.&nbsp;<span style="font-size: 10pt;line-height: 1.5;"><br> </span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;height: 110pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <img title="2-image85.png" src="attachments/ML-101450-2-image85.png"><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verify</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Mani</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">fests</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch das in [OASIS-DSS] (Abschnitt 4.5.1) definierte Element kann die Prüfung eines ggf. vorhandenen Manifests angefordert werden.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;height: 110pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <img title="3-image86.png" src="attachments/ML-101450-3-image86.png"><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Use</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verifi</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">cation</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Time</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch das in [OASIS-DSS] (Abschnitt 4.5.2) spezifizierte Element kann die Prüfung der Signatur bezüglich eines durch den Aufrufer bestimmten Zeitpunktes (</span><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Benutzerdefinierter_Zeitpunkt</span><span style="font-size: 10pt;line-height: 1.5;">) erfolgen.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Addit</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ional</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">KeyInfo</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch das in [OASIS-DSS] (Abschnitt 4.5.4) spezifizierte Element kann zusätzliches, für die Prüfung benötigtes, Schlüsselmaterial übergeben werden.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">vr:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Return</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verifi</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">cation</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Report</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch dieses in [OASIS-VR] spezifizierte Element kann die Erstellung eines ausführlichen Prüfberichtes angefordert werden. Der Konnektor MUSS die Anforderungen der Konformitätsstufe 2 („Comprehensive“) erfüllen und die Profilierung aus Anhang B3 beachten.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Schemas</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Durch das in [OASIS-DSS] (Abschnitt 2.8.5) definierte Element können eine Menge von XML-Schematas übergeben werden, die zur Validierung des übergebenen XML-Dokumentes verwendet werden können.</span><br> <span style="font-size: 10pt;line-height: 1.5;">Zur Struktur dieses Elements siehe Beschreibung des Parameters</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:Schemas</span> <span style="font-size: 10pt;line-height: 1.5;">der Operation SignDocument.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" style="vertical-align: top;width: 90pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Viewer</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Info</span><br> </td> 
+       <td style="vertical-align: top;width: 279pt;height: 3pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Der Parameter wird im Konnektor nicht ausgewertet.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="11" style="background-color: #D9D9D9;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Rückgabe</span><br> </td> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <img title="4-image87.png" src="attachments/ML-101450-4-image87.png" style="width: 400px;height: 92px;"><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Status</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Enthält den Ausführungsstatus der Operation.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verifi</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">cation</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Result</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <img title="5-image88.png" src="attachments/ML-101450-5-image88.png" style="width: 350px;height: 132px;"><br> <span style="font-size: 10pt;line-height: 1.5;">Das Element</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Sig:VerificationResult</span> <span style="font-size: 10pt;line-height: 1.5;">enthält das Ergebnis der Prüfung als Ampel, den Typ des zugehörigen angenommenen Signaturzeitpunkts und der angenommene Signaturzeitpunkt selbst.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">High</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Level</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Result</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Das Ergebnis der Prüfung (Ampelschaltung) mit folgenden Werten:</span><br> 
+        <ul> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">VALID: alle Signaturen sind gültig</span><br> </li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">INVALID: mindestens eine der Signaturen ist ungültig</span><br> </li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">INCONCLUSIVE: in allen anderen Fällen</span><br> </li> 
+        </ul> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Time</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">stamp</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Type</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Der Typ des angenommenen Signaturzeitpunkts mit folgenden Werten:</span><br> 
+        <ul> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp; SIGNATURE_EMBEDDED_TIMESTAMP:</span><br> <span style="font-size: 10pt;line-height: 1.5;">in der Signatur eingebetter Zeitpunkt&nbsp;&nbsp;</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Ermittelter_Signaturzeitpunkt</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_Eingebettet</span> <span style="text-decoration: line-through;background-color: #FFFF99;"></span><br> </li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp; SYSTEM_TIMESTAMP:</span><br> <span style="font-size: 10pt;line-height: 1.5;">Systemzeit des Konnektors bei Signaturprüfung</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Ermittelter_Signaturzeitpunkt</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_System</span><br> </li> 
+         <li><span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp; USER_DEFINED_TIMESTAMP:</span><br> <span style="font-size: 10pt;line-height: 1.5;">benutzerdefinierter Zeitpunkt</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Benutzerdefinierter_Zeitpunkt</span><br> </li> 
+        </ul> <span style="font-size: 10pt;line-height: 1.5;">Als Format darf jedes zum XML-Typ "dateTime" konforme Format verwendet werden (&lt;element name="Timestamp" type="dateTime"/&gt;). Wenn mehrere Signaturen im Dokument vorhanden sind, wird hier der angenommene Signaturzeitpunkt der jüngsten Signatur angegeben.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Time</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">stamp</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Im Element SIG:Timestamp wird der zu SIG:TimestampType gehörende Zeitstempel zurückgegeben.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Optio</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">nal</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Outputs</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Enthält (angelehnt an dss:OptionalOutputs, wie in Abschnitt 2.7 von [OASIS-DSS] beschrieben) optionale Ausgangselemente:</span><br> <br> <img title="6-image89.png" src="attachments/ML-101450-6-image89.png" style="width: 350px;height: 108px;"><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verify</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Manifest</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Results</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dieses in Abschnitt 4.5.1 von [OASIS-DSS] definierte Element enthält Informationen zur Prüfung eines ggf. vorhandenen Signaturmanifests und wird zurückgeliefert, sofern beim Aufruf das</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:VerifyManifest</span><span style="font-size: 10pt;line-height: 1.5;">-Element, aber nicht das</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">RequestVerificationReport</span> <span style="font-size: 10pt;line-height: 1.5;">als optionales Eingabeelement übergeben wurde.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Document</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">With</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Signa</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ture</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dieses in Abschnitt 4.5.8 von [OASIS-DSS] spezifizierte Element wird zurückgeliefert, falls eine in dem Dokument enthaltene Signatur (Enveloped Signature) in Verbindung mit dem</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:IncludeRevocationInfo</span><span style="font-size: 10pt;line-height: 1.5;">-Element geprüft wurde.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">dss:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Updated</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Signa</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ture</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dieses in Abschnitt 4.5.8 von [OASIS-DSS] spezifizierte Element wird zurückgeliefert, falls eine abgesetzte (Detached Signature) oder umschließende (Enveloping Signature) in Verbindung mit dem</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">SIG:IncludeRevocationInfo-</span> <span style="font-size: 10pt;line-height: 1.5;">Element geprüft wurde.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 81pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">vr:</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Verifi</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">cation</span><br> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">Report</span><br> </td> 
+       <td colspan="2" style="vertical-align: top;width: 288pt;height: 35pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Dieses in [OASIS-VR] spezifizierte Element wird zurückgeliefert, falls das</span> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">ReturnVerificationReport</span><span style="font-size: 10pt;line-height: 1.5;">-Element als Eingabeparameter verwendet wurde. Die Profilierung von Anhang B3 MUSS beachtet werden.</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="background-color: #D9D9D9;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Vorbe-dingungen</span><br> </td> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="background-color: #D9D9D9;vertical-align: top;width: 76pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Nachbe-dingungen</span><br> </td> 
+       <td colspan="3" style="vertical-align: top;width: 369pt;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Keine</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___9"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">8</span>: TAB_KON_760 Ablauf Operation VerifyDocument (nonQES und QES) </p> 
+    <table style="width: 98%;margin-left: 0px;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Nr.</span><br> <br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Aufruf Technischer Use Case oder Interne Operation</span><br> <br> </th> 
+       <th style="background-color: #E0E0E0;text-align: left;vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> <br> </th> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><br> <span style="font-size: 10pt;line-height: 1.5;">1.</span><br> <br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">checkArguments</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die übergebenen Werte werden auf Konsistenz und Gültigkeit überprüft. Treten hierbei Fehler auf, so bricht die Operation mit Fehler 4000 ab.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">2.</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_000 „Prüfe Zugriffs- berechtigung“</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die Prüfung erfolgt durch den Aufruf</span><br> <span style="font-size: 10pt;line-height: 1.5;">TUC_KON_000 {</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;mandantId = $context.mandantId;</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;clientsystemId&nbsp;&nbsp;= $context.clientsystemId;</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;workplaceId = $context.workplaceId;</span><br> <span style="font-size: 10pt;line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;needCardSession= false;</span><br> <span style="font-size: 10pt;line-height: 1.5;">}</span><br> <span style="font-size: 10pt;line-height: 1.5;">Tritt bei der Prüfung ein Fehler auf, bricht die Operation mit Fehlercode aus TUC_KON_000 ab.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">3.</span><br> <br> <br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">prüfe, ob QES oder nonQES</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Ist im jeweiligen Signaturzertifikat mindestens ein QCStatement mit dem OID id-etsi-qcs-QcCompliance (0.4.0.1862.1.1) enthalten, handelt es sich um eine QES-Signatur, andernfalls liegt eine nonQES-Signatur vor.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" style="background-color: #E0E0E0;vertical-align: top;width: 100%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Für QES-Signaturen wird Schritt 4 ausgeführt. Für nonQES-Signaturen wird Schritt 5 ausgeführt.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">4.a</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Prüfe Signaturdienst-Modul</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Prüfe, ob MGM_LU_SAK=Enabled. Ist dies nicht der Fall, so bricht die Operation mit Fehler 4125 ab.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">4.b</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_151 „QES Dokumentensignatur prüfen“</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die QES wird geprüft. Tritt hierbei ein Fehler auf, bricht die Operation ab.</span><br> <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="vertical-align: top;width: 8%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 9pt;line-height: 1.5;">5.</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 25%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">TUC_KON_161 „nonQES Dokumentensignatur prüfen“</span><br> <br> </td> 
+       <td style="vertical-align: top;width: 67%;border: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><span style="font-size: 10pt;line-height: 1.5;">Die nonQES wird geprüft. Tritt hierbei ein Fehler auf, bricht die Operation ab.</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <p class="polarion-rte-caption-paragraph"> <br> </p> <p class="polarion-rte-caption-paragraph" id="polarion___10"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">9</span>: TAB_KON_761 Fehlercodes „VerifyDocument (nonQES und QES)“ </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fehlercode</span><br> </th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 102px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ErrorType</span><br> </th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 92px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Severity</span><br> </th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 406px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fehlertext</span><br> </th> 
+      </tr> 
+      <tr> 
+       <td colspan="4" style="text-align: left;vertical-align: top;width: 742px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Neben den Fehlercodes der aufgerufenen TUCs (siehe Tabelle TAB_KON_760 Ablauf Operation VerifyDocument) können folgende weiteren Fehlercodes auftreten:</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">4000</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 102px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 406px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Syntaxfehler</span><br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 10px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">4261</td> 
+       <td style="text-align: left;vertical-align: top;width: 102px;height: 10px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Technical</td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 10px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Warning</td> 
+       <td style="text-align: left;vertical-align: top;width: 406px;height: 10px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Einbettung von Revocation-Informationen nicht unterstützt</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 109px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">4125</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 102px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Technical</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 92px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Error</span><br> </td> 
+       <td style="text-align: left;vertical-align: top;width: 406px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">LU_SAK nicht aktiviert</span><br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_1"> <span style="color: #3366FF;">&gt;&gt; Bei der dadurch abgelösten TIP1-A_5034 in Errata 2 wurde daher dort der Status= abgelöst gesetzt.</span> </p>
+  <p id="polarion_38"></p>
+  <p id="polarion_23"> <span style="font-weight: normal;">in Kapitel</span><span style="font-weight: bold;">&nbsp;6.3 Profilierung VerificationReport</span> </p>
+  <p id="polarion_24"> …<br> <span style="font-weight: bold;">Sonderfälle:</span><br> Dokument mit parallelen Signaturen<br> &nbsp; &nbsp; Für jede Signatur wird ein IndividualReport erzeugt.<br> <span style="text-decoration: line-through;background-color: #FFFF99;">Dokument mit Signatur und Gegensignatur<br> &nbsp; &nbsp;Für jede Signatur wird ein IndividualReport erzeugt. Dokument mit Signatur und qualifiziertem Zeitstempel.</span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101445">5 C_7101 - Verzichtoption für nonQES-XAdES-Signatur</h2>
+  <p id="polarion_26">Um die Zertifizierung des PTV3-Konnektors zu beschleunigen, wird eine Zulassung des PTV3-Konnektors ohne nonQES-XAdES-Signaturerstellung und Prüfung ermöglicht.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101446">5.1 Änderungen in gemSpec_Kon / Version 5.4.0</h3>
+  <p id="polarion_27">Neue Anforderung: A_18756</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101290|external=true|revision=182273|anchor=b1d31476-c0a8e832-410f3f87-6d626283">
+   <p><b>A_18756</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Konnektor KANN alle Aufrufe zu Signaturerstellung einer nonQES-XAdES Signatur mit Fehler 4111 und alle Aufrufe zur Signaturprüfung einer nonQES-XAdES Signatur mit Fehler 4112 beantworten. Die Signaturvarianten aus TAB_KON_778 werden damit weiter eingeschränkt. Wird die nonQES-XAdES Signatur umgesetzt, so ist diese in der Sicherheitszertifizierung zu betrachten.</span> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101443">6 C_7133 - Es soll klargestellt werden, dass PDF/A-3 nicht unterstützt werden soll.</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-101444">6.1 Änderungen in gemSpec_Kon / Version 5.4.0</h3>
+  <p id="polarion_31">Neue Anforderung: A_18780</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-101419|external=true|revision=182298|anchor=ac218d2a-c0a8e832-410f3f87-a908c7f8">
+   <p><b>A_18780</b></p>
+   <p>Der Konnektor DARF Dokumente im PDF/A-3 Format NICHT unterstützen. <br> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-101449">7 Änderungen in gemProdT_Kon_PTV3 ggü. PTV3.5.0</h2>
+  <p id="polarion_46"> <span style="font-style: italic;font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Anmerkung: Die Anforderungen der folgenden Tabelle stellen einen Auszug dar und verteilen sich innerhalb der Tabelle des Originaldokuments [gemProdT_...]. Alle Anforderungen der Tabelle des Originaldokuments, die in der folgenden Tabelle nicht ausgewiesen sind, bleiben unverändert bestehenden.</span> </p>
+  <p id="polarion_51" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">10</span>: Anforderungen zur <span style="font-weight: bold;">funktionalen Eignung "Produkttest/Produktübergreifender Test"</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Afo-ID</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Afo-Bezeichnung</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Quelle (Referenz)</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_4617</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">&nbsp;TUC_KON_071 „Daten hybrid entschlüsseln“</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">&nbsp;gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp;TIP1-A_4617-01</td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp;TUC_KON_071 „Daten hybrid entschlüsseln“</td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp;gemErrata_4_Kon_PTV3&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_4672</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TUC_KON_151 „QES-Dokumentensignatur prüfen“</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">TIP1-A_4672-01</td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">TUC_KON_151 „QES-Dokumentensignatur prüfen“</td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;text-decoration: line-through;font-size: 10pt;line-height: 1.5;">TIP1-A_5540</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">QES-Signaturprüfergebnis bezogen auf Signaturzeitpunkt</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: normal;font-size: 10pt;line-height: 1.5;">TIP1-A_5540-01</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">QES-Signaturprüfergebnis bezogen auf Signaturzeitpunkt</td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_5034</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">Operation VerifyDocument (nonQES und QES)</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemErrata_2_Kon_PTV3</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">TIP1-A_5034-03</td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Operation VerifyDocument (nonQES und QES)</td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">A_18780</td> 
+     <td style="text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> PFD/A-3 DARF NICHT unterstützt werden</td> 
+     <td style="text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_50"></p>
+  <p id="polarion_30" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">11</span>: Anforderungen zur <span style="font-weight: bold;">funktionalen Eignung "Herstellererklärung"</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=31" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Afo-ID</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Afo-Bezeichnung</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Quelle (Referenz)</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">A_18756<br> </td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Optionalität von nonQES-XAdES Signatur</span><br> </td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_35" data-keep-next="true" class="polarion-rte-caption-paragraph"></p>
+  <p id="polarion_36" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">12</span>: Anforderungen zur <span style="font-weight: bold;">Sicherheitstechnische Eignung "CC-Evaluierung"</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=37" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Afo-ID</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Afo-Bezeichnung</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica;line-height: 1.5;">Quelle (Referenz)</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_4617</span></td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TUC_KON_071 „Daten hybrid entschlüsseln“</span></td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TIP1-A_4617-01</td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TUC_KON_071 „Daten hybrid entschlüsseln“</td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">GS-A_4375</span></td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">XML-Verschlüsselung - Hybrid, Schlüsseltransport</span></td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Krypt</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">GS-A_4375-01</td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">XML-Verschlüsselung - Hybrid, Schlüsseltransport</td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">GS-A_4376<br> </span></td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">XML-Verschlüsselung - Hybrid, Schlüsseltransport RSAES-OAEP<br> </span></td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Krypt</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">GS-A_4376-01</td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">XML-Verschlüsselung - Hybrid, Schlüsseltransport RSAES-OAEP</td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_4672</span></td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TUC_KON_151 „QES-Dokumentensignatur prüfen“</span></td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TIP1-A_4672-01</td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TUC_KON_151 „QES-Dokumentensignatur prüfen“</td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">TIP1-A_5540</span></td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">QES-Signaturprüfergebnis bezogen auf Signaturzeitpunkt</span></td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="text-decoration: line-through;">gemSpec_Kon</span></td> 
+    </tr> 
+    <tr> 
+     <td style="width: 95.6px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TIP1-A_5540-01</td> 
+     <td style="width: 333.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">QES-Signaturprüfergebnis bezogen auf Signaturzeitpunkt</td> 
+     <td style="width: 141.2px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">gemErrata_4_Kon_PTV3</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_32"></p>
+ </body>
+</html>

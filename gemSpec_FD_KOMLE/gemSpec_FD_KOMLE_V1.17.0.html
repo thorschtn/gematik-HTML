@@ -1,0 +1,1584 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Spezifikation Fachdienst KOM-LE</span> </p>
+  <p id="polarion_12"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.17.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571454</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>13.01.2023</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_FD_KOMLE</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_13"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-15653">Dokumentinformationen</h1>
+  <p id="polarion_15"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_21"> <span style="font-size: 10pt;line-height: 1.5;">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</span> </p>
+  <p id="polarion_20"></p>
+  <p id="polarion_18"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 72px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Version<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 83px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Stand<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 59px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Kap./ Seite<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 366px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Grund der Änderung, besondere Hinweise<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 112px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Bearbeitung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">0.1.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">02.12<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Ersterstellung<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">04. 13<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Einfügen Anforderungen mit Afo-Makro<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.0.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">27.01.14<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Einarbeitung Kommentare<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.1.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">28.02.14<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">3.1<br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Hinweis ergänzt<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.2.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">25.07.14<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">4.3<br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Afo zu Schnittstellen der TI-Plattform ergänzt<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.3.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">22.09.14<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Begriff Betreiber durch Anbieter ersetzt<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.4.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">06.05.15<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassung Anforderung KOM-LE-A_2146<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Projekt KOM-LE<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">1.5.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">24.07.15<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">3.1<br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">Präzisierung der Erstellung von Abwesenheitsnotizen (2 neue&nbsp;&nbsp;Afos)<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">P74<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.6.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">28.10.16<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">4.3<br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.7.0<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">14.05.18<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.8.0&nbsp;<br> </td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">15.05.19<br> </td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P18.1<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.9.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">02.03.20</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><br> </td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P21.1<br> </td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.10.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">30.06.20</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.1 und Scope-Themen aus Systemdesign R4.0.0</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.11.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">12.11.20</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.2 und Scope-Themen aus Systemdesign R4.0.1</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.11.1</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">18.12.20</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.4</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.11.2</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">08.01.21</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.6</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.12.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">19.02.21</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste P22.5</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.13.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">06.04.21</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste KIM_Maintenance_21.1/<br> KIM 1.5.1&nbsp;</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.14.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">04.08.21</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste KIM_Maintenance_21.1/<br> KIM 1.5.1-3</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.15.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">31.01.22</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste<span style="font-size: 9pt;line-height: 1.5;"> KIM Maintenance 21.3 /KIM 1.5.2</span></td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.16.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">20.09.22</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste KIM_Maintenance_22.2 - KIM 1.5.2-1 (C_11209)</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 72px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">1.17.0</td> 
+     <td style="vertical-align: top;width: 83px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">13.01.23</td> 
+     <td style="vertical-align: top;width: 59px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"></td> 
+     <td style="vertical-align: top;width: 366px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">Anpassungen gemäß Änderungsliste KIM_Maintenance_22.3 - KIM 1.5.2-2</td> 
+     <td style="vertical-align: top;width: 112px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_23"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-15656">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-15653">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-15656">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15657">1 Einordnung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15658">1.1 Zielsetzung und Einordnung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15659">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15660">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15661">1.4 Arbeitsgrundlagen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15662">1.5 Abgrenzung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15663">1.6 Methodik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15664">1.6.1 Anforderungsmanagement</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15666">1.6.2 Diagramme</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15667">1.6.3 Nomenklatur</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15668">1.6.4 Hinweis auf offene Punkte &lt;optional&gt;</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15669">2 Systemüberblick</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15670">3 Funktionen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15671">3.1 Funktionen des Mail Servers</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15680">3.2 Funktionen des Account Managers</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103276">3.3 Funktionen des KOM-LE Attachment Services</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-105608">3.4 Service Lokalisierung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15682">3.5 Fehlerbehandlung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15684">3.6 Protokollierung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15688">3.7 Monitoring</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15690">3.8 Konfiguration</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15692">4 Schnittstellen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15693">4.1 Schnittstelle I_Message_Service</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15705">4.1.1 Operation send_Message</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15711">4.1.2 Operation receive_Message</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103278">4.2 Schnittstelle I_Attachment_Services</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-108579">4.3 Schnittstelle I_AccountManager_Service</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-126671">4.4 Schnittstelle I_AccountLimit_Services</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15734">4.5 Genutzte Schnittstellen der TI-Plattform</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15736">5 Nicht-Funktionale Anforderungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15737">5.1 Skalierbarkeit</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15739">5.2 Performance</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15740">5.3 Mengengerüst</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15741">6 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15742">6.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15743">6.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15744">6.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15745">6.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-23712">6.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15746">6.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-15747">6.5.2 Weitere Dokumente</a></li>
+  </div>
+  <p id="polarion_27"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15657">1 Einordnung des Dokuments</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15658">1.1 Zielsetzung und Einordnung des Dokuments</h3>
+  <p id="polarion_28">Dieses Dokument enthält die Anforderungen an den Produkttyp Fachdienst KOM-LE. Der Fachdienst ist verantwortlich für die Speicherung und Bereitstellung von KOM-LE-Nachrichten sowie für die Registrierung und Deregistrierung von KOM-LE-Teilnehmern.</p>
+  <p id="polarion_29">Aus den Kommunikationsbeziehungen mit Clientmodul, Konnektor und Verzeichnisdienst resultieren vom Fachdienst anzubietende Schnittstellen, die in diesem Dokument normativ beschrieben werden. Vom Fachdienst genutzte Schnittstellen liegen zumeist in anderen Verantwortungsbereichen (z.B. Verzeichnisdienst). Diese werden in der entsprechenden Produkttypspezifikationen definiert.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15659">1.2 Zielgruppe</h3>
+  <p id="polarion_30">Dieses Dokument richtet sich neben Personengruppen, die grundsätzlich am Fachdienst Kommunikation Leistungserbringer interessiert sind, an</p>
+  <ul id="polarion_31"> 
+   <li>Hersteller und Entwickler des Fachdienstes</li> 
+   <li>Anbieter</li> 
+   <li>Verantwortliche für Zulassung und Test</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15660">1.3 Geltungsbereich</h3>
+  <p id="polarion_32">Das vorliegende Dokument enthält normative Anforderungen und Festlegungen, die von Herstellern und Anbietern von Komponenten und Diensten im Rahmen der Projekte der Neuausrichtung zur Einführung der elektronischen Gesundheitskarte und der Telematikinfrastruktur zu beachten sind. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungsverfahren werden durch die gematik GmbH in gesonderten Dokumenten (z.B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15661">1.4 Arbeitsgrundlagen</h3>
+  <p id="polarion_33">Grundlagen für die Ausführungen dieses Dokumentes sind</p>
+  <ul id="polarion_34"> 
+   <li>das systemspezifische Konzept KOM-LE [gemSysL_KOMLE]</li> 
+   <li>KOM-LE S/MIME Profil [gemSMIME_KOMLE]</li> 
+   <li>Gesamtarchitektur der TI [gemÜK_Arch_TI]</li> 
+   <li>Konzept Architektur der TI-Plattform [gemKPT_Arch_TIP]</li> 
+   <li>Konzept PKI der TI-Plattform [gemKPT_PKI_TIP]</li> 
+  </ul>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15662">1.5 Abgrenzung des Dokuments</h3>
+  <p id="polarion_35">Spezifiziert werden in dem Dokument die vom Produkttyp bereitgestellten (angebotenen) Schnittstellen. Benutzte Schnittstellen werden hingegen in der Spezifikation desjenigen Produkttypen beschrieben, der diese Schnittstelle bereitstellt. Auf die entsprechenden Dokumente wird referenziert.</p>
+  <p id="polarion_36">Die Systemlösung der Fachanwendung KOM-LE ist im systemspezifischen Konzept [gemSysL_KOMLE] beschrieben. Dieses Konzept setzt die fachlichen Anforderungen des Lastenheftes auf Systemebene um, zerlegt die Fachanwendung KOM-LE in die zugehörigen Produkttypen, darunter das KOM-LE-Clientmodul und der KOM-LE-Fachdienst. Ferner definiert es die Schnittstellen zwischen den einzelnen Produkttypen. Für das Verständnis dieser Spezifikation wird die Kenntnis von [gemSysL_KOM-LE] vorausgesetzt.</p>
+  <p id="polarion_37">Die Anforderungen an das Clientmodul werden separat in der Spezifikation KOM-LE-Clientmodul [gemSpec_CM_KOMLE] beschrieben.</p>
+  <p id="polarion_38">Die Anforderungen an das Format der KOM-LE-Nachrichten, die zwischen dem Clientmodul und dem Fachdienst übermittelt werden, werden separat im KOM-LE-S/MIME-Profil [gemSMIME_KOMLE] beschrieben.</p>
+  <p id="polarion_39">Abbildung 1 zeigt schematisch die Einbettung des vorliegenden Dokuments in die Dokumentenlandschaft der Lastenheft- und Pflichtenheftphase in Form einer Dokumentenhierarchie.</p>
+  <p id="polarion_41" style="text-align: center;"> <br> <img src="attachments/image3.png" style="width: 582px;height: 276px;"> </p>
+  <p id="polarion_16" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Abb_Dok_Hierachie_KOMLE Dokumentenhierarchie KOM-LE </p>
+  <p id="polarion_53"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15663">1.6 Methodik</h3>
+  <p id="polarion_43">Das Vorgehen zur Erstellung dieser Spezifikation verwendet einen anforderungszentrierten und modellbasierten Entwicklungsprozess. Dabei werden Auftragsanforderungen über Umsetzungsanforderungen bis hin zu Blattanforderungen verfeinert. Auf Basis der vollständigen und nachvollziehbaren Anforderungen werden verbindliche Artefakte zur Fachanwendung modelliert. Der gesamte Prozess wird durch eine Qualitätssicherung begleitet.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15664">1.6.1 Anforderungsmanagement</h4>
+  <p id="polarion_44">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_45">Sie werden im Dokument wie folgt dargestellt:</p>
+  <p id="polarion_14"> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> <span style="font-weight: bold;">[</span>&lt;=<span style="font-weight: bold;">]</span><br> </p>
+  <p id="polarion_47">Dabei umfasst die Anforderung sämtliche innerhalb der Afo-ID und der Textmarke angeführten Inhalte.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15666">1.6.2 Diagramme</h4>
+  <p id="polarion_48">Die Darstellung der Spezifikationen von Komponenten erfolgt auf der Grundlage einer durchgängigen Use-Case-Modellierung als</p>
+  <ul id="polarion_49"> 
+   <li>technische Use Cases (eingebundene Graphik sowie tabellarische Darstellung mit Vor- und Nachbedingungen gemäß Modellierungsleitfaden),</li> 
+   <li>Sequenz- und Aktivitätendiagramme sowie</li> 
+   <li>Klassendiagramme</li> 
+   <li>XML-Strukturen und Schnittstellenbeschreibungen.</li> 
+  </ul>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15667">1.6.3 Nomenklatur</h4>
+  <p id="polarion_50">Sofern im Text dieser Spezifikation auf die Ausgangsanforderungen verwiesen wird, erfolgt dies in eckigen Klammern, z.B. [KOMLE-A_2015]. Wird auf Eingangsanforderungen verwiesen, erfolgt dies in runden Klammern, z.B. (KOMLE-A_202).</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15668">1.6.4 Hinweis auf offene Punkte &lt;optional&gt;</h4>
+  <table id="polarion_wiki macro name=table;params=header=no|width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;color: #3366FF;">Das Kapitel wird in einer späteren Version des Dokumentes ergänzt.</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15669">2 Systemüberblick</h2>
+  <p id="polarion_54">Der Fachdienst KOM-LE ist in der Provider Zone an das zentrale Netz der TI-Plattform angeschlossen und besteht aus den Teilkomponenten Account Manager, Mail Server (SMTP und POP3-Server) und dem KOM-LE Attachment Service (KAS).</p>
+  <p id="polarion_55"> Die Teilkomponente Account Manager prüft die Authentizität des Leistungserbringers/KOM-LE-Teilnehmers sowie dessen Registrierungs- bzw. Deregistrierungsdaten. Nach erfolgreicher Prüfung der Daten erfolgt die Registrierung bzw. Deregistrierung des KOM-LE-Teilnehmers inklusive der Aktualisierung seines Verzeichniseintrages bezüglich der E-Mail-Adresse. Weitere Funktionsumfänge des Account Managers sind <span style="font-weight: normal;">die Verwaltung von Abwesenheitsnotizen sowie das Eintragen der KIM-Version in den Verzeichnisdienst.</span> </p>
+  <p id="polarion_56">Die Teilkomponente Mail Server stellt dem KOM-LE-Clientmodul eine Schnittstelle zum Versenden und Abholen von E-Mails zur Verfügung. Die technische Umsetzung erfolgt über die Bereitstellung von entsprechenden TCP-Ports für SMTP- bzw. POP3.</p>
+  <p id="polarion_77">Die Teilkomponente KOM-LE Attachment Service stellt dem Clientmodul eine Schnittstelle zum Ablegen bzw. Herunterladen von verschlüsselten E-Mail-Daten zur Verfügung.</p>
+  <p id="polarion_57"></p>
+  <p id="polarion_22" data-keep-next="true"> <img src="attachments/10-screenshot-20200427-090157.png" style="width: 750px;height: 462px;"> </p>
+  <p id="polarion_78" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Abb_FD_Systemkontext Fachdienst KOM-LE im Systemkontext </p>
+  <p id="polarion_82"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15670">3 Funktionen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15671">3.1 Funktionen des Mail Servers</h3>
+  <p id="polarion_62"> Der Mail Server nimmt SMTP-Nachrichten von Clientmodulen oder anderen KOM-LE-Fachdiensten entgegen und leitet diese an die Ziel-Mail-Server weiter. Empfangene Nachrichten werden vom Mail Server zur Abholung bereitgestellt und auf Anforderung über POP3 an Clientmodule ausgeliefert. Die zugehörigen Anwendungsfälle sind im systemspezifischen Konzept <span style="text-decoration: underline;">[</span>gemSysL_KOM-LE#3.1.1, 3.1.5] beschrieben. </p>
+  <p id="polarion_19"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116863">
+   <p><b>A_21383</b></p>
+   <p>Der Mail Server MUSS die Authentifizierung mit Benutzername und Passwort ermöglichen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112457">
+   <p><b>KOM-LE-A_2185-01</b></p>
+   <p>Der Mail Server des KOM-LE-Fachdienstes MUSS ausschließlich Nachrichten, die innerhalb der TI versendet werden, verarbeiten. Der Zugriff auf einen Mail Server außerhalb der TI ist nicht zulässig.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112460">
+   <p><b>KOM-LE-A_2131-01</b></p>
+   <p>Können Nachrichten aufgrund einer fehlerhaften E-Mail-Adresse nicht weitergeleitet werden, MUSS der Mail Server eine Fehlernachricht entsprechend Delivery Status Notification gemäß [RFC3461-3464] erzeugen und diese an den Absender übermitteln.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15673">
+   <p><b>KOM-LE-A_2130</b></p>
+   <p>Der Ziel-Mail-Server MUSS, wenn die eingehende Nachricht eine Zustellbestätigung anfordert, diese entsprechend Delivery Status Notification vom Typ Success (RFC3461-3464) generieren und an den Absender übermitteln. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-120359">
+   <p><b>A_21777</b></p>
+   <p>Der Mail Server des KOM-LE-Fachdienstes MUSS, wenn er eine Nachricht mit angeforderter Delivery Status Notification (DSN) erhält, sicherstellen, dass eine DSN keine Teile des Bodies der originalen Nachricht enthält.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117958">
+   <p><b>KOM-LE-A_2223-01</b></p>
+   <p>Der Mail Server MUSS eine Autoreply-Funktionalität für das Versenden von Abwesenheitsnotizen nach [RFC5230] unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117957">
+   <p><b>KOM-LE-A_2278-01</b></p>
+   <p>Der Mail Server MUSS beim Versenden von automatischen Abwesenheitsnotizen folgende Bedingungen erfüllen:<br>SMTP MAIL FROM = &lt;&gt; <br>Subject = „Auto: “ + Betreff der Nachricht beim Mailserver<br>Auto-Submitted field = „auto-replied” (siehe RFC5230, section 5).<br><br>Zusätzlich MUSS der Mail Server das Attribut X-KIM-Dienstkennung mit dem Wert "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">KIM-Mail;Abwesend;V1.0</span>" gemäß [Dienstkennung] befüllen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117959">
+   <p><b>KOM-LE-A_2224-01</b></p>
+   <p>Der Mail Server MUSS es dem Nutzer ermöglichen, Abwesenheitsnotizen&nbsp;über die Schnittstelle&nbsp;I_AccountManager_Service -&nbsp;wie in [AccountManager.yaml] definiert - einstellen zu können.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15679">
+   <p><b>KOM-LE-A_2277</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Mail Server MUSS den Nutzer beim Einrichten von automatischen Abwesenheitsnotizen informieren, dass diese nicht als verschlüsselte und signierte Nachrichten versendet werden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_73"> Die Pflege der Abwesenheitsfunktionen (z.B. Aktivieren, Deaktivieren und Notiztext) kann nicht mit dezentralen Komponenten der TI vorgenommen werden.<br> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117379">
+   <p><b>A_20978-01</b></p>
+   <p><span style="font-size: 10pt;font-family: Arial, Helvetica;line-height: 1.5;"><span style="background-color: #FFFFFF;">Der KOM-LE Anbieter MUSS bei der Registrierung eines Teilnehmers prüfen, ob eine Mailadresse&nbsp;bereits vergeben wurde. Die erneute Vergabe einer Mailadresse MUSS vom KOM-LE Anbieter unterbunden werden, es sei denn der Teilnehmer kann nachweisen, dass er bereits früher mit der selben Adresse registriert war. Der KOM-LE Anbieter MUSS hierbei sicherstellen, dass er nur Nachweise auf Basis sicherer Authentisierungsfaktoren akzeptiert.<br> Der KOM-LE Anbieter MUSS hierbei die Datenschutzkonformität des Nachhaltens hierfür notwendiger Daten sicherstellen.</span><br> </span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_88"> <span style="font-size: 10pt;line-height: 1.5;">Da diese Anforderung ohne Aufbewahrung personenbezogener Daten realisierbar ist (z.B. durch Vorhalten von Hashes der deregistrierten KIM-Adressen und der KIM-Adress - Telematik-ID Paare) ist hierbei eine Verwendung von personenbezogenen Daten nicht zulässig.</span> </p>
+  <p id="polarion_128"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116998">
+   <p><b>A_21455</b></p>
+   <p>Der KIM-Anbieter MUSS bei Vergabe des Localparts einer KIM-Adresse folgenden Zeichensatz akzeptieren:<br> <br> 
+    <ul> 
+     <li>(<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">A-Z</span>, <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">a-z</span>, <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">0-9</span>) sowie (Punkt, Bindestrich und Unterstrich),</li> 
+     <li>es wird nicht zwischen der Groß- und Kleinschreibung unterschieden,</li> 
+     <li>die maximale Länge des Localparts darf 64 Zeichen nicht überschreiten.</li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125285">
+   <p><b>A_21456-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der KIM-Anbieter MUSS für die Beantragung seiner KIM spezifische Subdomain (<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">hrst_domain</span>) einer KIM-Adresse folgenden Zeichensatz verwenden:</span> <br> 
+    <ul> 
+     <li>(<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">a-z</span>, <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">0-9</span>) sowie (Punkt<span style="text-decoration: line-through;"></span>&nbsp;und Bindestrich),</li> 
+     <li>es wird nicht zwischen der Groß- und Kleinschreibung unterschieden,</li> 
+     <li>die Gesamtlänge des Domainparts darf maximal 189 Zeichen betragen,</li> 
+     <li>der Domainpart endet mit der Zeichenkette "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">.kim.telematik</span>" (Produktivumgebung).</li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_124"> <span style="font-weight: bold;">Beispiel:</span> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">praxis-dr.mueller@hrst_domain.kim.telematik</span> </p>
+  <p id="polarion_129"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-120853">
+   <p><b>A_21816</b></p>
+   <p>Der Mail Server des KOM-LE-Fachdienstes MUSS als ein geschlossener SMTP-Relay-Server konfiguriert werden. Das bedeutet, der Mail Server darf nur E-Mails weiterleiten, für die er als Sender und/oder Empfänger zuständig ist. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125949">
+   <p><b>A_22415</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Anbieter des Mail Servers MUSS sicherstellen, dass alle gespeicherten E-Mails eines Accounts mit abgelaufener Gültigkeit (Expires-Header) gelöscht werden.</span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136103">
+   <p><b>A_23421</b></p>
+   <p>Der Fachdienst KOM-LE MUSS den bei der Authentisierung vom Clientmodule übermittelten Username (SMTP AUTH) mit der Adresse im MAIL FROM&nbsp;Kommando vergleichen. Sollte bei dem Vergleich ein Unterschied festgestellt werden (RFC 5322 „addr-spec“), MUSS der Fachdienst die Verarbeitung der KOM-LE-Mail ablehnen und das Clientmodule mit einem SMTP Fehler informieren.<span style="background-color: #99FF99;"></span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_87"> Hinweis: <span style="color: #242424;">Gemäß KOM-LE-A_2161 entspricht der in der SMTP-Authentifizierung anzugebende Benutzername der E-Mail-Adresse des KOM-LE-Teilnehmers.</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-136104">
+   <p><b>A_23422</b></p>
+   <p><span style="background-color: #99FF99;"></span>Der Fachdienst KOM-LE MUSS vor der Verarbeitung einer KOM-LE-Nachricht folgende Prüfregeln umsetzen:<br> &nbsp;<span style="background-color: #99FF99;"><br> </span>
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div> 
+    <div style="margin-left: 35.45pt;"> 
+     <span style="color: #242424;">1.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;</span> Der Fachdienst KOM-LE MUSS die Verarbeitung eine KOM-LE-Nachricht mit einem SMTP-Fehler ablehnen, wenn eines der folgenden Merkmale der „originator“ Header-Elemente (RFC 5322) zutrifft, zu beachten ist die unter (2) formulierte Ausnahme:</span> 
+    </div> 
+    <div style="margin-left: 35.45pt;"></div>&nbsp;<br> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div> 
+    <div style="margin-left: 53.4pt;"> 
+     <span style="color: #242424;">a.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;&nbsp;&nbsp;</span> Es&nbsp;wurde keine Adresse im Header-Element „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">from</span>“ angegeben</span> 
+    </div> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div> 
+    <div style="margin-left: 53.4pt;"> 
+     <span style="color: #242424;">b.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;&nbsp;&nbsp;</span> Es ist genau eine Adresse im Header-Element „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">from</span>“ angegeben und diese stimmt nicht mit der Adresse aus dem SMTP-Protokollschritt „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">MAIL FROM</span>“ überein (RFC 5322 „addr-spec“)</span> 
+    </div> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div> 
+    <div style="margin-left: 53.4pt;"> 
+     <span style="color: #242424;">c.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;&nbsp;&nbsp;</span> <span style="font-size: 10pt;line-height: 1.5;">Es ist mehr als genau eine Adresse im Header-Element „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">from</span>“ angegeben und die Adressen stimmen nicht mit der Adresse aus dem SMTP-Protokollschritt „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">MAIL FROM</span>“ übereinstimmen (RFC 5322 „addr-spec“)</span></span> 
+    </div> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div> 
+    <div style="margin-left: 53.4pt;"> 
+     <span style="color: #242424;">d.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;&nbsp;&nbsp;</span> <span style="font-size: 10pt;line-height: 1.5;">Ein „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">sender</span>“-Header wurde angegeben und dessen Inhalt entspricht nicht der Adresse (RFC 5322 „addr-spec“) aus dem SMTP-Protokollschritt „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">MAIL FROM</span>“</span></span> 
+    </div> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div> 
+    <div style="margin-left: 53.4pt;"> 
+     <span style="color: #242424;">e.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;&nbsp;&nbsp;</span> <span style="font-size: 10pt;line-height: 1.5;">Es sind Adressdaten im Header-Element „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">reply-to</span>“ angegeben und diese enden nicht mit den definierten KIM-Domainparts „.kim.telematik“ (PU) bzw. “.kim.telematik-test“ (RU/TU) (RFC 5322 „addr-spec“). Da heißt, es MUSS sichergestellt werden, dass die Angabe, an welche KIM-Adresse eine Antwort gerichtet werden soll, weiterhin möglich ist und dass dies nur für KIM-Adressen erlaubt ist.</span></span> 
+    </div> 
+    <div style="margin-left: 53.4pt;"></div>
+    <div style="margin-left: 53.4pt;"></div><span style="color: #242424;">&nbsp;</span><br> 
+    <div style="margin-left: 35.45pt;"></div> 
+    <div style="margin-left: 35.45pt;"> 
+     <span style="color: #242424;">2.<span style="font-weight: normal;font-style: normal;font-size: 8pt;font-family: 'Times New Roman', Times;line-height: 1.5;">&nbsp;</span> Der Fachdienst KOM-LE DARF die Verarbeitung einer empfangenen KOM-LE-Nachricht gemäß (1) NICHT ablehnen, wenn genau eine Adresse im SMTP-Protokoll „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">RCPT TO</span>“ übermittelt wurde und diese Adresse der Absender Adresse aus dem SMTP-Protokollschritt „<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">MAIL FROM</span>“ (RFC 5322 „addr-spec“) entspricht.</span> 
+    </div> 
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div> 
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div>
+    <div style="margin-left: 35.45pt;"></div> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_97">Hinweis: Item (2) entspricht dem Anwendungsfall Versand/Weiterleitung „an sich selbst“.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15680">3.2 Funktionen des Account Managers</h3>
+  <p id="polarion_74">Über die Teilkomponente&nbsp;Accout Manager des Fachdienstes wird die&nbsp;Kontoverwaltung eines KOM-LE-Teilnehmers durchgeführt. Zu dem Funktionsumfang gehören:</p>
+  <ul id="polarion_67"> 
+   <li>die Verwaltung des Nutzer-Accounts </li> 
+   <ul> 
+    <li>Registrierung,</li> 
+    <li>Deregistrierung, </li> 
+    <li>Kennwortänderung, </li> 
+    <li>Wechsel der Telematik-ID,</li> 
+    <li>Löschfrist von E-Mail-Daten,</li> 
+    <li>Wechsel der eingesetzten KIM-Version</li> 
+   </ul> 
+   <li>die Verwaltung von Abwesenheitsnotizen</li> 
+   <li>die Bereitstellung der PKCS#12-Dateien</li> 
+  </ul>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15681">
+   <p><b>KOM-LE-A_2133</b></p>
+   <p><p style="margin-left: 0px;"><span>Führt der </span><span>Anbieter</span><span> ein Accounting für die Abrechnung unter Einhaltung der ge</span><span>l</span><span>tenden Anforderungen an Datenschutz u</span><span>nd Informationssich</span><span>erheit durch, KANN der Fac</span><span>h</span><span>dienst die dafür notwendigen Funktionen implementieren. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-74854">
+   <p><b>KOM-LE-A_2304</b></p>
+   <p>Der KOM-LE-Anbieter&nbsp; MUSS die KOM-LE-Teilnehmer im Rahmen der Registrierung zu KOM-LE und im KOM-LE-Nutzerhandbuch darüber informieren, dass auf eine Nutzung der bcc-Funktionalität eines E-Mail-Clients verzichtet werden sollte, da es technisch nicht ausgeschlossen ist, dass Nachrichtenempfänger ggf. auch alle bcc (blind carbon copy) Empfänger der Nachricht ermitteln werden können. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_46">Es kann zusätzlich darauf hingewiesen werden, dass dies nicht die Klartext-Nachricht betrifft, die ein Empfänger letztlich in seinem Mail-Client empfängt, sondern nur die Daten, die das KOM-LE-Clientmodul verarbeitet. Es ist also durch den Empfänger ein Eingriff zur Analyse des Clientmoduls (z.B. mit Hilfe eines Debuggers) durchzuführen, um an die Daten zu gelangen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-107203">
+   <p><b>A_19591</b></p>
+   <p>Der Account Manager MUSS die vom Clientmodul übermittelte KIM-Version im Verzeichnisdienst in den KOM-LE-Fachdaten für die betroffene "mail"-Adresse eintragen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_71">Es gelten die Festlegungen aus Kap.4.4., da der Verzeichnisdienst zur TI-Plattform gehört.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116864">
+   <p><b>A_21384</b></p>
+   <p>Für die Sperrung eines Zertifikates aus einer PKCS#12-Datei MUSS der KOM-LE-Anbieter einen organisatorischen Prozess definieren, mit dem das Zertifikat im Falle von Verlust, Diebstahl, oder sonstiger Kompromittierung beim Herausgeber gesperrt wird.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116865">
+   <p><b>A_21385</b></p>
+   <p>Der Account Manager MUSS bei der Registrierung eines neuen KOM-LE-Teilnehmers den Nutzer zum Wechseln des initialen Passwortes auffordern. Wird keine Passwortänderung durchgeführt, wird der Fehler <span style="font-family: Arial, Helvetica;">420</span>&nbsp;(<span style="font-style: italic;">W3C -&nbsp;Policy Not Fulfilled)</span><span style="font-style: italic;font-size: 11pt;color: #202122;line-height: 1.5;">&nbsp;</span>zurück gegeben.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116852">
+   <p><b>A_21376</b></p>
+   <p>Der Account Manager MUSS die vom Clientmodul übermittelten KOM-LE-Fachdaten (gemäß gemSpec_VZD#Datenmodell) während der Registrierung eines neuen KOM-LE-Teilnehmers in den Verzeichnisdienst eintragen.<br> <br> Bei Eintragung der KIM-Version in den Verzeichnisdienst ist folgendes Schema zu verwenden: &lt;Hauptversionsnummer.Nebenversionsnummer&gt;<br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103276">3.3 Funktionen des KOM-LE Attachment Services</h3>
+  <p id="polarion_59">Die Teilkomponente KAS des Fachdienstes dient als Speicherort für verschlüsselte E-Mail-Daten, die durch Clientmodule aus Client-Mails extrahiert wurden. Damit wird die Übertragung von Mails größer 15 MiB ermöglicht. Das sendende KOM-LE Clientmodul legt die E-Mail-Daten in verschlüsselter Form auf dem KAS ab. Das empfangende KOM-LE Clientmodul lädt die verschlüsselten E-Mail-Daten nach dem Empfang der KOM-LE-Nachricht vom KAS des Absenders herunter und stellt sie dem Clientsystem in entschlüsselter Form zusammen mit der KOM-LE-Nachricht zur Verfügung. In der folgenden Abbildung wird die Funktionsweise des KAS gezeigt.</p>
+  <p id="polarion_65"></p>
+  <p id="polarion_60" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/15-screenshot-20220912-141340.png" style="width: 754px;height: 252px;">Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">3</span>: Abb_FD_KAS Funktionsweise des Attachment Service </p>
+  <p id="polarion_91"></p>
+  <p id="polarion_17">Das sendende KOM-LE Clientmodul legt die verschlüsselten E-Mail-Daten auf dem KAS seines Fachdiensts A ab. Das empfangende KOM-LE Clientmodul lädt verschlüsselten E-Mail-Daten der Mail vom KAS des Fachdiensts A, auch wenn der&nbsp;Empfänger einen anderen Fachdienst (z. B. Fachdienst B) nutzt. Zur Kommunikation der Clientmodule mit den KAS Servern werden für TLS die TI Zertifikate analog zu Schnittstelle I_Message_Service genutzt, was die Kommunikation über Anbietergrenzen hinaus ermöglicht.</p>
+  <p id="polarion_66">Die maximale Gesamtgröße einer zu übermittelnden Client-Mail wird durch den Fachdienst definiert und dem Clientmodul zur Verfügung gestellt. Das Clientmodul prüft die Gesamtgröße der im Client erzeugten Mail vor dem Versenden mit dem vom Fachdienst übermittelten Wert. Beim Hochladen der verschlüsselten E-Mail-Daten auf den KAS prüft dieser den vorhandenen Speicherplatz gemäß dem mit dem Anbieter vereinbarten Speichervolumen für den Nutzeraccount (Quota). Die Gestaltung der jeweiligen Quota-Regelung bleibt dem Anbieter überlassen (Marktmodell).</p>
+  <p id="polarion_83"></p>
+  <p id="polarion_92"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-105608">3.4 Service Lokalisierung</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125702">
+   <p><b>A_19524-01</b></p>
+   <p>Der KOM-LE-Fachdienst MUSS die aufgeführten Resource Records Types im Namensraum der TI gemäß folgender Tabelle verwalten.<span style="background-color: #FFFF99;"><br> </span> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p><p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___1"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Tab_KOMLE_Service Discovery </p> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> 
+    <table id="polarion_wiki macro name=table;params=width=100%|uid=83" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Resource Record Bezeichner</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Resource Record Type</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">_fdkimsmtp._tcp.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PTR</td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ermittlung aller KOM-LE-Anbieter (SMTP)<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&lt;fdkimsmtp&gt;.&lt;hrst_domain&gt;.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV<br> </td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV Resource Record zur Ermittlung der Ports und des FQDN des KOMLE-LE Fachdienstes<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">_fdkimpop._tcp.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PTR</td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ermittlung aller KOM-LE-Anbieter (POP3)<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&lt;fdkimpop&gt;.&lt;hrst_domain&gt;.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV<br> </td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV Resource Record zur Ermittlung der Ports und des FQDN des KOMLE-LE Fachdienstes<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">_accmgr._tcp.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PTR</td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ermittlung aller Account Manager Dienste aller KOM-LE-Anbieter.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&nbsp; &lt;accmgr_service_name&gt;.&lt;hrst_domain&gt;.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV&nbsp; und TXT<br> </td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SRV Resource Record zur Ermittlung der Ports und des &nbsp;FQDN des Accout Managers<br> </span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">_kas._tcp.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PTR</td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Ermittlung aller KAS-Dienste aller KOM-LE-Anbieter.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="width: 184px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&lt;kas_service_name&gt;.&lt;hrst_domain&gt;.kim.telematik</td> 
+       <td style="width: 107px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SRV&nbsp; und TXT</td> 
+       <td style="width: 430px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">SRV Resource Record zur Ermittlung der Ports und des &nbsp;FQDN des KAS</span></td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_58">Der Einträge in &lt; &gt; sind als Variable zu verstehen und durch konkrete Bezeichner zu ersetzen, z.B. für den Account Manager</p>
+  <p id="polarion_93" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_accmgr._tcp.kim.telematik 86400 IN PTR _accmgr._tcp.hrst1.kim.telematik</span> </p>
+  <p id="polarion_95" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_accmgr._tcp.hrst1.kim.telematik 86400 IN SRV 5 10 8443 account-manager.hrst1.kim.telematik</span> </p>
+  <p id="polarion_98" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_accmgr._tcp.hrst1.kim.telematik 86400 IN TXT „txtvers=1“ „path=/“</span> </p>
+  <p id="polarion_100">oder z.B. für den KAS</p>
+  <p id="polarion_103" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_kas._tcp.kim.telematik 86400 IN PTR _hrst1_kas._tcp.hrst1.kim.telematik</span> </p>
+  <p id="polarion_104" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_kas._tcp.hrst1.kim.telematik 86400 IN SRV 5 10 8443 kas.hrst1.kim.telematik</span> </p>
+  <p id="polarion_106" class="MsoNoSpacing"> <span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;">_kas._tcp.hrst1.kim.telematik 86400 IN TXT „txtvers=1“ „path=/“</span> </p>
+  <p id="polarion_107"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-105606">
+   <p><b>A_19533</b></p>
+   <p>Der KOM-LE-Fachdienst MUSS im Namensraum der TI die Resource Records gemäß nachstehender Tabelle verwalten.<span style="background-color: #FFFF99;"><br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"> </p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"> </p> </span> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;" id="polarion___2"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: Tab_KOMLE_FQDN </p> <span style="background-color: #FFFF99;"> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"> </p> </span> <p data-keep-next="true" class="polarion-rte-caption-paragraph" style="text-align: left;"> </p> 
+    <table id="polarion_wiki macro name=table;params=width=100%|uid=client3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 158px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Resource Record Typ<br> </th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 574px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 158px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">FQDN</td> 
+       <td style="text-align: left;vertical-align: top;width: 574px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">A Resource Records zur Namensauflösung von FQDN des KOM-LE-Fachdienstes des jeweiligen Anbieters in IP-Adressen</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_64">Nachfolgend sind exemplarisch FQDNs für den Account Manager und KAS dargestellt:</p>
+  <p id="polarion_75" class="MsoNoSpacing"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">account-manager.hrst1.kim.telematik IN A 10.30.20.10</span> </p>
+  <p id="polarion_84" class="MsoNoSpacing"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">kas.hrst1.kim.telematik IN A 10.30.20.20</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15682">3.5 Fehlerbehandlung</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15683">
+   <p><b>KOM-LE-A_2134</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> Fachdienst KOM-LE MUSS mindestens die in Tabelle </span><span>Tab_Fehler_Behandlung</span><span> beschriebenen Fehlerzustände erkennen und die zugehörigen Aktionen durchführen. </span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_24" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: Tab_Fehler_Behandlung Fehlerbehandlung Fachdienst KOM-LE </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=54" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Teilkomponente</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 199pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Fehlerbeschreibung</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 177pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">durchzuführende Aktionen</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Aufbau der TLS-Verbindung schlägt fehl</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Übermittlung Fehlercode an den Aufrufer (z.B. Clientmodul)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Authentifizierung über Benutzername und Passwort schlägt fehl</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Übermittlung Fehlercode an den Aufrufer (z.B. Clientmodul)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Nachricht ist nicht verschlüsselt</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Generierung einer entsprechenden Fehlernachricht an den Absender,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Verwerfen der Originalnachricht</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Absenderadresse fehlerhaft</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Verwerfen der Originalnachricht</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 74pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 74pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Empfängeradresse fehlerhaft</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 74pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Generierung einer entsprechenden Fehlernachricht an den Absender mit der Originalnachricht im Anhang,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Verwerfen der Originalnachricht</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Nachricht kann nicht weitergeleitet werden (z. B.: empfangender Mail Server oder TI-Netz nicht verfügbar)</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 59pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers,</span><br> <span style="font-size: 10pt;line-height: 1.5;">Versuch der erneuten Weiterleitung der Nachricht nach einem konfigurierbarem Zeitraum</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 86pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Account Manager</span><br> </td> 
+     <td style="vertical-align: top;width: 199pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Verzeichnisdienst nicht erreichbar</span><br> </td> 
+     <td style="vertical-align: top;width: 177pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Protokollierung des Fehlers</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15684">3.6 Protokollierung</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112461">
+   <p><b>KOM-LE-A_2135-01</b></p>
+   <p>Für die Nachvollziehbarkeit der Vorgänge am Fachdienst KOM-LE MÜSSEN Maßnahmen und Verfahren gemäß DSGVO i.V.m. BDSG installiert werden. Die Protokollierung der folgenden Informationen ist dabei zulässig:<br> 
+    <div style="margin-left: 2em;">
+     <ul>
+      <li>Anmeldung von Nutzern (Nutzername und Uhrzeit),<br></li>
+      <li>Informationen über empfangene, weitergeleitete und abgeholte Nachrichten (Absender, Empfänger, Uhrzeit) und<br></li>
+      <li>Fehlermeldungen (Fehler mit Beschreibung und Uhrzeit).<br></li>
+     </ul>
+    </div> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15686">
+   <p><b>KOM-LE-A_2136</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE-Fachdienst MUSS sicherstellen, dass eine Protokollierung von personenbezogenen Daten </span><span>außerhalb der gesetzlichen und vertraglichen Pflichten</span><span> nur dann erfolgt, wenn dies zum Zwecke der Fehler- bzw. Störungsbehebung erforderlich ist. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15687">
+   <p><b>KOM-LE-A_2137</b></p>
+   <p>Falls im KOM-LE-Fachdienst eine Protokollierung zum Zwecke der Fehler- bzw. Störungsbehebung erfolgt, MUSS der KOM-LE-Fachdienst unter Berücksichtigung des Art. 25 Abs. 2 DSGVO sicherstellen, dass in den Protokolldaten entsprechend dem Datenschutzgrundsatz nach Art. 5 DSGVO nur personenbezogene Daten in der Art und dem Umfang enthalten sind, wie sie zur Behebung erforderlich sind und dass die erzeugten Protokolldaten im Fachdienst nach der Behebung unverzüglich gelöscht werden. <br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15688">3.7 Monitoring</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15689">
+   <p><b>KOM-LE-A_2138</b></p>
+   <p><p style="margin-left: 0px;"><span>Die</span><span> Administratoren des KOM-LE-Fachdienstes sind verpflichtet, zu jedem Zeitpunkt au</span><span>s</span><span>kunftsfähig über den Systemzustand des Fachdienstes zu sein. Zur Unterstützung di</span><span>e</span><span>ser Auskunftsfähigkeit KANN der KOM-LE-Fachdienst </span><span>Monitoringfunktionen</span><span> implementi</span><span>e</span><span>ren.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15690">3.8 Konfiguration</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-126668">
+   <p><b>KOM-LE-A_2139-02</b></p>
+   <p>Der Fachdienst KOM-LE MUSS dem Anbieter mindestens die in der Tabelle Tab_Konfig_Parameter dargestellten Parameter zur Konfiguration zur Verfügung stellen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_25" class="polarion-rte-caption-paragraph"></p>
+  <p id="polarion_26" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: Tab_Konfig_Parameter Konfigurationsparameter Fachdienst KOM-LE </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=55" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 199px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 134px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Standardwert</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 382px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 117pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Maximale Nachrichtengröße</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 117pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">700 MB</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 117pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Dieser Standardwert darf 700 MB nicht unterschreiten, da in KIM 1.5 mindestens 500 MB (netto) unterstützt werden müssen. Die Nachrichten werden unter Verwendung von S/MIME transportiert und auf dem Fachdienst gespeichert. Die Verwendung von S/MIME schließt die base64-Kodierung der Nachricht ein. Deshalb erhöht sich die Nachrichtengröße ca. um den Faktor 1,4 (brutto ca. 700 MB).</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 53px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Zeitraum für erneute Weiterleitungsversuche</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 53px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">15 Minuten</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 53px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Dieser Wert gibt an, in welchem Intervall ein Weiterleitungsversuch durch den Mail Server unternommen werden soll.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 59px;border: 1px solid #CCCCCC;padding: 4pt;">Zeitraum für Weiterleitungsversuche</td> 
+     <td style="vertical-align: top;width: 134px;height: 59px;border: 1px solid #CCCCCC;padding: 4pt;">2 Stunden</td> 
+     <td style="vertical-align: top;width: 382px;height: 59px;border: 1px solid #CCCCCC;padding: 4pt;">Nach Ablauf des konfigurierten Wertes&nbsp;werden keine weiteren&nbsp;Weiterleitungsversuche unternommen und es wird eine Fehlermeldung an den Sender übermittelt.</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Löschfrist von Nachrichten</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">90 Tage</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Nachrichten, die vom Fachdienst nicht abgeholt werden oder nach dem Abholen auf dem Fachdienst verbleiben, müssen nach der angegebenen Frist gelöscht werden.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Löschfrist für automatisch generierte Mails</span></td> 
+     <td style="vertical-align: top;width: 134px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">90 Tage</span></td> 
+     <td style="vertical-align: top;width: 382px;height: 62px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Diese Löschfrist gilt für Mails, die vom Server automatisch generiert werden, insbesondere Zustellbestätigungen (DSN) und Abwesenheitsnotizen (vacation)</span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 42px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Löschfrist von Logfiles</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 42px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">90 Tage</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 42px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Die im Rahmen der Nachrichtenverarbeitung erzeugten Logfiles müssen nach der angegebenen Frist gelöscht werden.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 39px;border: 1px solid #CCCCCC;padding: 4pt;">Ablaufzeitspanne</td> 
+     <td style="vertical-align: top;width: 134px;height: 39px;border: 1px solid #CCCCCC;padding: 4pt;">5 Minuten</td> 
+     <td style="vertical-align: top;width: 382px;height: 39px;border: 1px solid #CCCCCC;padding: 4pt;">Ablaufzeitspanne für die Requests zum Account Manager. Nach Ablauf der Zeitspanne müssen die Requests abgelehnt werden.</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Download- und Prüfzyklus der TSL</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">1 Tag</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Regelmäßiger Zyklus in dem die aktuelle TSL zu laden und zu prüfen ist.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 24px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Downloadpunkt der TSL</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 24px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">-</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 24px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse des verwendeten Downloadpunktes der TSL</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse DNS-Server</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">-</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse des verwendeten DNS-Servers der TI</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse NTP-Server</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">-</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse des verwendeten NTP-Servers der TI</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 199px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse Verzeichnisdienst</span><br> </td> 
+     <td style="vertical-align: top;width: 134px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">-</span><br> </td> 
+     <td style="vertical-align: top;width: 382px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">IP-Adresse des Verzeichnisdienstes der TI</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15692">4 Schnittstellen</h2>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-93355">
+   <p><b>A_17240</b></p>
+   <p>Der Fachdienst KOM-LE MUSS&nbsp;parallel&nbsp;RSA und ECC unterstützen. Als TLS-Client MUSS der Fachdienst KOM-LE&nbsp;bevorzugt ECC verwenden, falls er auf einen TLS-Server, der beide Verfahren unterstützt, trifft.<span style="font-size: 10pt;background-color: #FFFF99;line-height: 1.5;"></span> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15693">4.1 Schnittstelle I_Message_Service</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15694">
+   <p><b>KOM-LE-A_2140</b></p>
+   <p>Die Teilkomponente Mail Server des KOM-LE-Fachdiensts MUSS die Schnittstelle I_Message_Service anbieten. I_Message_Service ist eine logische Schnittstelle, die Funktionalitäten zum Versenden und Empfangen von E-Mail-Nachrichten bereitstellt. Die Schnittstelle bietet die folgenden Operationen:<br> 
+    <ul> 
+     <ul> 
+      <li style="text-align: left;">send_Message(Nachricht, Anmeldedaten) und<br> </li> 
+      <li style="text-align: left;">receive_Message(Anmeldedaten): Nachricht[ ]. <br> </li> 
+     </ul> 
+    </ul> Die Schnittstelle kann sowohl seitens des KOM-LE-Clientmoduls als auch eines anderen KOM-LE-Fachdienstes (nur send_Message Operation) aufgerufen werden. Erfolgt der Aufruf der Operation send_Message durch einen anderen Fachdienst, entfällt der Parameter Anmeldedaten. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15695">
+   <p><b>KOM-LE-A_2141</b></p>
+   <p>Die technische Umsetzung der Schnittstelle I_Message_Service erfolgt über die Bereitstellung von entsprechenden TCP-Ports am KOM-LE-Fachdienst für SMTP-bzw. POP3-Verbindungen. Die Schnittstelle MUSS ausschließlich über eine sichere Verbindung unter Verwendung von TLS mit beidseitiger zertifikatsbasierter Authentifizierung zugänglich sein. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15696">
+   <p><b>KOM-LE-A_2226</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE-Anbieter MUSS das KOM-LE Clientmodul mit einem TLS-Client-Zertifikat aus der Komponenten-PKI der TI für die TLS-Kommunikation mit dem KOM-LE Fachdienst ausstatten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15697">
+   <p><b>KOM-LE-A_2227</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE-Anbieter MUSS das KOM-LE Clientmodul mit einem TLS-Server-Zertifikat aus der Komponenten-PKI der TI für die TLS-Kommunikation mit Clientsystemen ausstatten. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112458">
+   <p><b>KOM-LE-A_2228-01</b></p>
+   <p>Der Fachdienst&nbsp;&nbsp;MUSS beim Aufbau einer TLS-Verbindung mit dem KOM-LE Clientmodul ausschließlich Client-Zertifikate akzeptieren, die KOM-LE Clientmodulen zugeordnet sind. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15699">
+   <p><b>KOM-LE-A_2186</b></p>
+   <p><p style="margin-left: 0px;"><span>Beim Aufbau der TLS-Verbindung mit dem Clientmodul MUSS sich der Fachdienst KOM-LE mit seinem </span><span>C.FD.TLS-S</span><span> Server-Zertifikat authentifizieren.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15701">
+   <p><b>KOM-LE-A_2143</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> Aufbau der TLS-Verbindung für die Schnittstelle </span><span>I_Message_Service</span><span> DARF NIC</span><span>H</span><span>T über STARTTLS erfolgen. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15703">
+   <p><b>KOM-LE-A_2144</b></p>
+   <p>Beim Aufbau der TLS-Verbindung MUSS der KOM-LE-Fachdienst folgende Schritte bei der Prüfung des vorgelegten Clientzertifikats (C.CM.TLS-CS-Zertifikat des Clientmoduls oder C.FD.TLS-C Client-Zertifikat eines anderen KOM-LE-Fachdienstes) durchführen:<br> 
+    <ul> 
+     <li style="text-align: left;">Prüfung des Vertrauensstatus der Aussteller-CA gegen die TSL,<br> </li> 
+     <li style="text-align: left;">mathematische Prüfung der Zertifikatssignatur,<br> </li> 
+     <li style="text-align: left;">Prüfung der zeitlichen Gültigkeit des Zertifikats und<br> </li> 
+     <li style="text-align: left;">Prüfung des Zertifikatsstatus durch Abfrage des relevanten OCSP-Responders.<br> </li> 
+    </ul> Die Reihenfolge ist empfohlen z. B. hinsichtlich wirtschaftlicher Umsetzbarkeit (Offline-Schritte vor Online-Schritten), aber nicht zwingend vorgegeben. Vorbedingung für die Zertifikatsprüfung ist, dass eine validierte TSL in Form eines Trust Stores vorliegt. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15704">
+   <p><b>KOM-LE-A_2145</b></p>
+   <p>Unabhängig von der Zertifikatsprüfung MUSS der KOM-LE-Fachdienst in regelmäßigen Zyklen die TSL-Validierung durchführen. Dabei sind folgende Schritte auszuführen:<br> 
+    <ul> 
+     <li style="text-align: left;">Download der aktuellen Liste vom relevanten Downloadpunkt,<br> </li> 
+     <li style="text-align: left;">Validierung gegen das XML-Schema der TSL,<br> </li> 
+     <li style="text-align: left;">Prüfung des Vertrauensstatus des TSL-Signaturzertifikats gegen einen sicher verwahrten TSL-Root-Schlüssel und<br> </li> 
+     <li style="text-align: left;">Prüfung der XML-Signatur. <br> </li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15705">4.1.1 Operation send_Message</h4>
+  <p id="polarion_101">Die Operation send_Message ermöglicht das Versenden von KOM-LE-Nachrichten über den Mail Server des KOM-LE-Fachdiensts. Die logischen Parameter dieser Operation werden in Tabelle Tab_Para_send_Msg Parameter send_Message Fachdienst KOM-LE&nbsp;beschrieben. Die technische Implementierung dieser Operation erfolgt über die Bereitstellung eines TCP-Ports über den eine SMTP-Verbindung für das Versenden von KOM-LE-Nachrichten aufgebaut wird [RFC 5321].</p>
+  <p id="polarion_102"></p>
+  <p id="polarion_40" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">5</span>: Tab_Para_send_Msg Parameter send_Message Fachdienst KOM-LE </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=18" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th colspan="2" style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 255pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 299pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="vertical-align: top;width: 110pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsparameter</span><br> </td> 
+     <td style="vertical-align: top;width: 143pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Anmeldedaten (optional)</span><br> </td> 
+     <td style="vertical-align: top;width: 299pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Benutzername und Passwort für Authentifizierung des Clients gegenüber dem SMTP-Server seines KOM-LE-Anbieters. Bei der Kommunikation zwischen Clientmodul und SMTP-Server des Senders ist dieser Parameter zwingend erforderlich. Bei Dienst-zu-Dienst-Kommunikation (SMTP-Server des Senders und SMTP-Server des Empfängers) entfällt der Parameter.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 143pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Nachricht</span><br> </td> 
+     <td style="vertical-align: top;width: 299pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">KOM-LE-Nachricht</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_105"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112465">
+   <p><b>KOM-LE-A_2146-03</b></p>
+   <p>Der Mail Server DARF Nachrichten, die nicht entsprechend S/MIME-Profile [gemSMIME_KOMLE] verschlüsselt sind, NICHT weiterleiten bzw. im Postfach des Empfängers hinterlegen. Der Mail Server MUSS gemäß [A_20771] eine Fehlernachricht generieren und diese an den Sender übermitteln. Für alle servergenerierten Nachrichten wie Fehlermeldungen und Abwesenheitsnotizen sowie vom Clientmodul generierte Fehlernachrichten, gilt diese Anforderung nicht. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-120807">
+   <p><b>KOM-LE-A_2147-02</b></p>
+   <p>Erhält der Ziel-Mail-Server eine Nachricht, die eine Zustellbestätigung fordert, MUSS er diese unter Verwendung folgender Informationen aus der empfangenen Nachricht&nbsp;generieren und unverschlüsselt an den Absender weiterleiten:<br> <br> 
+    <ul> 
+     <li style="text-align: left;">Empfänger (alle Empfänger der Original-Nachricht die dem Ziel-Mail-Server zugeordnet sind), pro Empfänger wird ein <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">per-recipient</span> Header Feld befüllt [RFC3464]<br> </li> 
+     <li style="text-align: left;">Empfangszeitpunkt&nbsp;der originalen Nachricht beim Ziel-Mail-Server im Header Feld <span style="font-style: italic;">Arrival-Date</span> (im Part Content-Type: message/delivery-status)&nbsp;<br> </li> 
+     <li>Message-ID der äußeren Nachricht im Header Feld&nbsp;<span style="font-style: italic;">In-Reply-To <span style="font-style: normal;">(im Headerbereich der DSN selbst, mit dem Content-Type: multipart/report)</span><br> </span></li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117820">
+   <p><b>A_20771-01</b></p>
+   <p>Der Mail Server MUSS eine Fehlernachricht entsprechend Delivery Status Notification gemäß [RFC3461-3464] erzeugen und das Header-Attribut <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KIM-Fehlermeldung</span> mit den Werten aus der folgenden Tabelle befüllen. <br> <br> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> <p data-keep-next="true" class="polarion-rte-caption-paragraph" id="polarion___3"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">6</span> Tab_Fehlercodes_KOMLE-Fachdienst </p> <p data-keep-next="true" class="polarion-rte-caption-paragraph"></p> 
+    <table id="polarion_wiki macro name=table;params=width=98.99%" class="polarion-Document-table" style="width: 98.99%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+     <tbody> 
+      <tr> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 281px;height: 14.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Prüfkriterien</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 315px;height: 14.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehler</th> 
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&nbsp;Wert</th> 
+      </tr> 
+      <tr> 
+       <td style="width: 281px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Prüfung der Mailbody-Eigenschaften auf S/MIME-Konformität</td> 
+       <td style="width: 315px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Die Mail entspricht nicht dem KOM-LE S/MIME-Profil</td> 
+       <td style="width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">fdgerr_1</span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 281px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Subject ungleich "KOM-LE-Nachricht"</td> 
+       <td style="width: 315px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der Betreff der Mail ist ungültig</td> 
+       <td style="width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">fdgerr_2</span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 281px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Header "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KOM-LE-Version</span>" ungültig</td> 
+       <td style="width: 315px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die übergebene</span> X-KOM-LE-Version ist ungültig</td> 
+       <td style="width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">fdgerr_3</span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 281px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">ContentType beginnt nicht mit "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">application/pkcs7-mime;</span>" oder enthält nicht "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">smime-type=authenticated-enveloped-data</span>"</td> 
+       <td style="width: 315px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der ContentType der Mail ist ungültig</td> 
+       <td style="width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">fdgerr_4</span></td> 
+      </tr> 
+      <tr> 
+       <td style="width: 281px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Prüfung der Mailgröße<br> </span></td> 
+       <td style="width: 315px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Die maximale Größe der Mail wurde überschritten<br> </span></td> 
+       <td style="width: 118px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">fdgerr_5</span></td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_52"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-114349">
+   <p><b>KOM-LE-A_2148-01</b></p>
+   <p>Der Mail Server MUSS bei der PLAIN-Authentifizierung von SMTP-Auth beim Empfangen der Parameter "<span style="font-style: italic;">authenticationID</span>" und "<span style="font-style: italic;">password</span>" die optionale "<span style="font-style: italic;">authorizationID</span>" gemäß [RFC 4616] selbständig aus der "<span style="font-style: italic;">authenticationID</span>" herleiten, sofern sie nicht übertragen wurde. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15709">
+   <p><b>KOM-LE-A_2149</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE</span><span>-</span><span>Fachdienst MUSS Nachrichten, die an ein </span><span>deregistriertes</span><span> Konto gerich</span><span>tet sind, bei Eingang verwerfen und an den Absender eine Fehler-E-Mail senden.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15710">
+   <p><b>KOM-LE-A_2150</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE</span><span>-</span><span>Fachdienst </span><span>DARF</span><span> Nachrichten</span><span> NICHT </span><span>von einem </span><span>dere</span><span>gistrierten</span><span> Konto aus verschicken</span><span>.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117821">
+   <p><b>A_20651-02</b></p>
+   <p>Der KOM-LE-Fachdienst MUSS Nachrichten vom Clientmodul, die nicht signiert und verschlüsselt sind, nur entgegennehmen wenn das Mail-Header-Attribut&nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KIM-Fehlermeldung</span> vorhanden ist. Als zulässige Befüllung dieses Attributs gelten die in der [gemSpec_CM_KOMLE#A_20650] festgelegten Werte. Nicht signierte und verschlüsselte Nachrichten ohne befülltem Mail-Header-Attribut&nbsp;<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">X-KIM-Fehlermeldung</span> <span style="font-family: Arial, Helvetica;">werden nicht entgegengenommen.</span> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15711">4.1.2 Operation receive_Message</h4>
+  <p id="polarion_113">Die Operation receive_Message ermöglicht das Abholen von KOM-LE-Nachrichten vom Mail Server des KOM-LE-Fachdiensts. Die logischen Parameter dieser Operation werden in Tabelle Tab_Para_recive_Msg Parameter receive_Message Fachdienst KOM-LE&nbsp;beschrieben. Die technische Implementierung dieser Operation erfolgt über Bereitstellung eines TCP-Ports über den eine POP3-Verbindung für das Abholen von KOM-LE-Nachrichten aufgebaut wird [RFC 1939].</p>
+  <p id="polarion_114"></p>
+  <p id="polarion_42" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">7</span>: Tab_Para_recive_Msg Parameter receive_Message Fachdienst KOM-LE </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=19" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th colspan="2" style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 373pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Parameter</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 182pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Beschreibung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 182pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Eingangsparameter</span><br> </td> 
+     <td style="vertical-align: top;width: 188pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Anmeldedaten</span><br> </td> 
+     <td style="vertical-align: top;width: 182pt;height: 44pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Benutzername und Passwort für Authentifizierung gegenüber dem POP3-Server.</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 182pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Ausgangsparameter</span><br> </td> 
+     <td style="vertical-align: top;width: 188pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Nachricht[ ]</span><br> </td> 
+     <td style="vertical-align: top;width: 182pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">KOM-LE-Nachrichten</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_117"> <br> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15713">
+   <p><b>KOM-LE-A_2152</b></p>
+   <p><p style="margin-left: 0px;"><span>Um</span><span> die Kompatibilität mit dem KOM-LE-Clientmodul sicherzustellen MUSS der Mail Server das POP3-Kommando UIDL unterstü</span><span>t</span><span>zen. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112459">
+   <p><b>KOM-LE-A_2154-01</b></p>
+   <p>Der KOM-LE-Fachdienst DARF den Sender NICHT über das automatische Löschen einer von ihm versendeten, aber nicht abgeholten Nachricht informieren.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117203">
+   <p><b>KOM-LE-A_2155-01</b></p>
+   <p>Der KOM-LE-Fachdienst MUSS bereits eingegangene Nachrichten, die noch nicht vom Teilnehmer abgerufen wurden, auch nach der Deregistrierung des Teilnehmers bis Ablauf eines konfigurierbaren Intervalls zum Abrufen bereit halten und dann löschen. Als Standardwert wird ein Monat vorgesehen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103278">4.2 Schnittstelle I_Attachment_Services</h3>
+  <p id="polarion_81"> <span style="font-size: 10pt;line-height: 1.5;">Der KAS ermöglicht das Hoch- und Herunterladen von verschlüsselten E-Mail-Daten, die durch Clientmodule aus Client-Mails extrahiert wurden. Zum Bereitstellen der Funktionen wird die REST-Schnittstelle I_Attachment_Services definiert. Der Aufruf der Schnittstelle ist ausschließlich vom Clientmodul zulässig. &nbsp;Die Schnittstellenbeschreibung ist in [AttachmentServices.yaml] definiert.</span> </p>
+  <p id="polarion_118">In der folgenden Tabelle sind alle Ressourcen mit den jeweiligen HTTP-Methoden dargestellt. Die jeweilige Operation ist eine Abstraktion auf einen Webservice Endpunkt.</p>
+  <p id="polarion_79"></p>
+  <p id="polarion_76" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">8</span>: Operationen vom KAS </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 125.2px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Operation<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 112.4px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> URI<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 54px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Methode<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 65.2px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Request<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Response<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 232.4px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Beschreibung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 125.2px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;"> add_Attachment<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 112.4px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"> /attachment/<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 54px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"> POST<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 65.2px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"> recipients<br> messageID<br> expires<br> binary<br> &lt;File&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"> string<br> &lt;Freigabelink&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 232.4px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">Fügt verschlüsselte E-Mail-Daten im KAS hinzu<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 125.2px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">read_Attachment</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 112.4px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;"> /attachment/{attachmentId}<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 54px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;"> GET<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 65.2px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;"> recipient<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;"> binary<br> &lt;File&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 232.4px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;">Lädt die unter einem Freigabelink erreichbaren verschlüsselten E-Mail-Daten herunter<br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_80"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134169">
+   <p><b>A_19375-04</b></p>
+   <p>Der KAS MUSS die Schnittstelle I_Attachment_Services als REST-Webservices über HTTPS gemäß [AttachmentServices.yaml] in der Version 2.3.0 implementieren. Des Weiteren MUSS der KAS für alle in der&nbsp;[AttachmentServices.yaml] definierten Operationen den Zeichensatz UTF-8 unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104085">
+   <p><b>A_19377</b></p>
+   <p>Der KAS MUSS die Schnittstelle I_Attachment_Services durch Verwendung von TLS mit beidseitiger Authentisierung sichern.&nbsp;Der KAS MUSS für diese TLS-Verbindungen TI-Zertifikate&nbsp;(analog zu Schnittstelle I_Message_Service) nutzen. Der KAS MUSS sich mit der Server-Identität von Schnittstelle I_Attachment_Services&nbsp;authentisieren.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116866">
+   <p><b>A_21386</b></p>
+   <p>Der KAS MUSS bei Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">add_attachment</span> <span style="font-family: Arial, Helvetica;">eine</span> HTTP-Basic-Authentifizierung durchführen.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_51"> Für die HTTP-Basic-Authentifizierung sind die gleichen Credentials (Username, Passwort), wie bei dem jeweiligen Mail-Server (SMTP), zu verwenden.<br> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134027">
+   <p><b>A_19378-01</b></p>
+   <p>Der KAS MUSS die Dateigröße der verschlüsselten E-Mail-Daten ermitteln, bevor diese gespeichert werden. Der KAS MUSS die Verarbeitung ablehnen, wenn die Gesamtgröße der verschlüsselten E-Mail-Daten den&nbsp;Konfigurationswert des KAS übersteigt.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134028">
+   <p><b>A_19379-01</b></p>
+   <p>Der KAS MUSS sicherstellen, dass nur über den dazugehörigen Freigabelink auf die verschlüsselten E-Mail-Daten zugegriffen werden kann.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_69"></p>
+  <p id="polarion_94"> <span style="font-weight: bold;">Erzeugung des Freigabelinks</span> </p>
+  <p id="polarion_96" class="MsoNormal"> Der KAS generiert für jeden Upload der E-Mail-Daten einen zufälligen und eindeutigen Freigabelink und sendet diesen als Antwort an den Client zurück. Durch Verwendung des Freigabelinks können die verschlüsselten E-Mail-Daten vom KAS heruntergeladen werden.<br> </p>
+  <p id="polarion_70" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/16-screenshot-20220912-150443.png" style="width: 754px;height: 740px;"> </p>
+  <p id="polarion_111" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">4</span>: Abb_Anw_Dokument auf dem KAS hochladen </p>
+  <p id="polarion_112"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134029">
+   <p><b>A_19380-01</b></p>
+   <p>Der KAS MUSS bei Aufruf der REST-Operation add_Attachment einen Freigabelink erzeugen, die aus dem FQDN der Teilkomponente KAS und einer zufälligen und eindeutigen ID der Ressource z. B. einer UUID [<span style="font-size: 10pt;line-height: 1.5;">RFC4122</span>]&nbsp;besteht und diesen an den aufrufenden Client zurückgeben.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104092">
+   <p><b>A_19381</b></p>
+   <p><span style="font-weight: bold;"> </span>Der KAS MUSS in den Freigabelink das https-Protokoll hinein generieren: "HTTPS://".<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104088">
+   <p><b>A_19383</b></p>
+   <p><span style="font-weight: bold;"> </span><span style="font-weight: normal;">Der KAS DARF von gelöschten Daten KEINE Kopien speichern.<br> </span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134032">
+   <p><b>A_22410-01</b></p>
+   <p>Der KAS MUSS das Herunterladen der E-Mail-Daten mit dem HTTP-Fehlercode 403 ablehnen, wenn beim Abruf der E-Mail-Daten die Empfänger-Adresse (recipient) nicht mit einem für diese E-Mail-Daten beim KAS hinterlegten Empfänger (recipients) übereinstimmt.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_99"></p>
+  <p id="polarion_72"> <span style="font-style: italic;">Hinweis: Bei der im Aufruf geforderten Empfänger-Adresse handelt es sich um die KIM-Mail-Adresse des Empfängers.</span> </p>
+  <p id="polarion_122"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134034">
+   <p><b>A_22411-01</b></p>
+   <p>Der KAS KANN den Zugriff mit dem HTTP-Fehlercode 429 verweigern, wenn eine Ressource zu oft von einem Client angefragt wird. Der KAS KANN für die Bestimmung der zulässigen Zugriffsrate folgende Faktoren berücksichtigen: Subject-DN des Clientmodul-Zertifikats, Freigabelink-URL, Anzahl der Empfänger der Ressource (E-Mail-Daten), Empfänger E-Mail-Adresse und Anzahl versuchter und erfolgreicher Downloads.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125957">
+   <p><b>A_22418</b></p>
+   <p><span style="font-size: 10pt;color: #000000;line-height: 1.5;">Der KAS des KOM-LE-Fachdienstes KANN bei Überschreitung der Quota für einen Nutzer-Account den HTTP-Fehlercode 507 an das Clientmodul zurückgeben.</span> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134035">
+   <p><b>A_22428-01</b></p>
+   <p>Der KAS des KOM-LE-Fachdienstes MUSS bei der Übertragung der E-Mail-Daten, das HTTP-Header-Element&nbsp;"<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Content-Length</span>" immer mit der Gesamt-Länge des Bodys befüllen.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_109"></p>
+  <p id="polarion_130"> <span style="font-weight: bold;">Anforderungen an den Anbieter</span> </p>
+  <p id="polarion_68">Im Folgenden werden weitere Anforderungen an den Anbieter der KAS-Komponente gestellt:</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-104091">
+   <p><b>A_19384</b></p>
+   <p><span style="font-weight: bold;"> </span><span style="font-weight: normal;">Der Anbieter des KAS MUSS den Dienst gegen Datenverlust absichern.<br> </span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134036">
+   <p><b>A_19385-02</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Anbieter des KAS MUSS sicherstellen, dass alle gespeicherten E-Mail-Daten, mit abgelaufener Gültigkeit (<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Expires</span>) gelöscht werden.</span><br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_110"></p>
+  <p id="polarion_132"> Der Wert <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Expires</span>&nbsp;(RFC822 date-time) entspricht dem Ablaufdatum der E-Mail-Daten,&nbsp;der beim Aufruf der Operation add_Attachement() vom Clientmodule übergeben wird. </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-108579">4.3 Schnittstelle I_AccountManager_Service</h3>
+  <p id="polarion_90">Der Account Manager stellt ein Webservices zur einfachen Verwaltung des Accounts eines KOM-LE-Teilnehmers bereit. Die Schnittstellenbeschreibung I_AccountManager_Service ist in [AccountManager.yaml] definiert. Der Aufruf der REST-Schnittstelle ist ausschließlich vom Clientmodul (Administrationsmodul) zulässig.</p>
+  <p id="polarion_120">In der folgenden Tabelle sind alle Ressourcen mit den jeweiligen HTTP-Methoden dargestellt. Die jeweilige Operation ist eine Abstraktion auf einen Webservice Endpunkt.</p>
+  <p id="polarion_63"></p>
+  <p id="polarion_85" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">9</span>: Operationen vom Account Manager </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 133px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Operation<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 111px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> URI<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 57px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Methode<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 91px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Request<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 106px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Response<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 190px;height: 21.2px;border: 1px solid #CCCCCC;padding: 5px;"> Beschreibung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">registerAccount<br> </span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"> /account<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"> POST<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> referenceID<br> iniPassword<br> kimVersion<br> &lt;JWT&gt; &nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"> &lt;Status&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Registrierung des Teilnehmers am KOM-LE-Fachdienst.<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">createCert</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/cert</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">POST</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> certPassword<br> commonName<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;<br> &lt;PKCS#12-Datei&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Anforderung und Herunterladen der PKCS#12-Datei</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">setAccount</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">PUT</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password(alt)<br> password(neu)<br> kimVersion<br> dataTimeToLive<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Aktualisierung des Accounts:<br> - Passwort<br> - kimVersion<br> - dataTimeToLive&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getAccount</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">GET</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt; </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;<br> username<br> kimVersion<br> regStat<br> deregDate</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Lesen der Account Attribute.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">revokeDeregistration</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/revokeDeregistration</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">PUT</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Rücknahme der Deregistrierung eines Accounts</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getOTP</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/OTP</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">GET</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;<br> OTP</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Liest für den KIM Account/E-Mail Adresse ein One-Time-Passwort (OTP) aus, mit dem die E-Mail-Adresse zu einer Telematik-ID (Karte) portiert werden kann.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">setTID</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/telematikID</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">POST</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt;<br> OTP</td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Entfernt<span style="font-weight: normal;font-style: normal;"> die E-Mail-Adresse vom bisherigen VZD-Eintrag und trägt die für den aktuellen VZD-Eintrag (der den Authentisierungsdaten dieser Operation setTID entspricht) ein. </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">updateOutOfOffice</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/outofoffice</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">PUT</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> startDate<br> endDate<br> message<br> active<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Einstellung der Abwesenheitsnotiz für den Account aktualisieren</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getOutOfOffice</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">/account/{username}/outofoffice</td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">GET</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;<br> startDate<br> endDate<br> message<br> active</td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 95.6px;border: 1px solid #CCCCCC;padding: 5px;">Einstellung der Abwesenheitsnotiz für den Account lesen</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 133px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">deregisterAccount</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 111px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;"> /account/{username}<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 57px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;">DELETE</td> 
+     <td style="text-align: left;vertical-align: top;width: 91px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;">username<br> password<br> &lt;JWT&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 106px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;"> &lt;Status&gt;<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 190px;height: 66px;border: 1px solid #CCCCCC;padding: 5px;">Deregistrierung des Teilnehmers am KOM-LE-Fachdienst.&nbsp;</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_123"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133809">
+   <p><b>A_20063-03</b></p>
+   <p>Die Teilkomponente Account Manager des Fachdienstes MUSS die Schnittstelle I_AccountManager_Service als REST-Webservice über HTTPS gemäß [AccountManager.yaml] in der Version&nbsp;2.3.0 implementieren. Des Weiteren MUSS der Account Manager für alle in der&nbsp;[AccountManager.yaml] definierten Operationen den Zeichensatz UTF-8 unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-108581">
+   <p><b>A_20064</b></p>
+   <p>Die Teilkomponente Account Manager des Fachdienstes MUSS die Schnittstelle I_AccountManager_Service bei der Registrierung durch Verwendung von TLS mit serverseitiger Authentisierung sichern.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_125">Mit den folgenden Anforderungen wird die Funktionsweise der Operationen des Webservices festgelegt.</p>
+  <p id="polarion_86"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134047">
+   <p><b>KOM-LE-A_2187-04</b></p>
+   <p>Zur Pflege der Basisdaten des Verzeichnisdienstes und bei der Registrierung und Deregistrierung MUSS der Fachdienst die Authentizität&nbsp;&nbsp;des KOM-LE-Teilnehmers über das AUT-Zertifikat des HBA bzw. der SM-B über das vom Clientmodul übergebene Token prüfen.&nbsp;Hierzu MUSS der Fachdienst folgende Prüfschritte durchführen:<br> <br> 
+    <ul style="color: #172B4D;"> 
+     <li><span style="color: #000000;">ist das Token korrekt (mit Validierung der erzeugten Signatur),</span></li> 
+     <li><span style="color: #000000;">ist das Token zeitlich gültig (also die Verarbeitung zwischen <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">nbf</span> und <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">nbf&nbsp;</span>+&nbsp; konfigurierter Ablaufzeitspanne erfolgt),</span></li> 
+     <li><span style="color: #000000;">sind Username und Passwort korrekt</span></li> 
+    </ul> <br> Für die Operationen gilt:<br> 
+    <ul> 
+     <li>bei Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">registerAccount</span> und <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">revokeDeregistration</span>:<br> Die Fachdaten des KOM-LE-Teilnehmers müssen während der Registrierung bzw. bei der Rücknahme einer Deregistrierung in den VZD-Datensatz mit der Telematik-ID des AUT-Zertifikats aus dem Token eingetragen werden.</li> 
+     <li>bei Aufruf aller anderen Operationen:<br> Der - in der Operation angegebene - Parameter&nbsp;<span style="font-style: italic;">username</span> (E-Mail Adresse) muss in dem VZD-Datensatz mit der Telematik-ID des AUT-Zertifikats aus dem Token im <span style="font-style: italic;">mail</span> Attribut der Fachdaten vorhanden sein.</li> 
+    </ul> <br> Ist einer dieser Prüfschritte nicht erfolgreich MUSS die Nachricht zurückgewiesen werden. Sind alle Prüfungen erfolgreich, ist die Nachricht valide und MUSS vom Account Manager&nbsp;verarbeitet werden. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134048">
+   <p><b>A_23175</b></p>
+   <p>Der KOM-LE Fachdienst MUSS bei Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">revokeDeregistration</span> durch das Administrationsmodul prüfen, ob für den Benutzer-Account das <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">deregDate</span> überschritten wurde. Bei Überschreitung des <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">deregDate</span> ist eine Rücknahme der Deregistrierung zu unterbinden. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112467">
+   <p><b>A_20772</b></p>
+   <p>Der KOM-LE Fachdienst MUSS für die Inhalte aller Operationen (Request und Response) der Schnittstelle&nbsp; I_AccountManager_Service den UTF-8 Zeichensatz unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-109687">
+   <p><b>A_20209</b></p>
+   <p>Der KOM-LE Anbieter MUSS den KOM-LE Teilnehmern alle nötigen Zugangsdaten auf einem sicheren Weg bereitstellen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-74890">
+   <p><b>KOM-LE-A_2305</b></p>
+   <p>Der KOM-LE Fachdienst MUSS die Möglichkeit anbieten für einen KOM-LE-Teilnehmer, repräsentiert durch dasselbe AUTH Zertifikat, mehrere Postfächer mit jeweils eigener E-Mail-Adresse und eigenen Anmeldecredentials nutzen zu können. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15721">
+   <p><b>KOM-LE-A_2158</b></p>
+   <p>Der KOM-LE-Fachdienst MUSS das Registrieren und Deregistrieren von KOM-LE- Teilnehmern protokollieren. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-110298">
+   <p><b>KOM-LE-A_2159-01</b></p>
+   <p>Für die Änderung des Verzeichniseintrages (Eintragen und Löschen der E-Mail-Adresse des KOM-LE-Teilnehmers sowie die vom Clientmodul verwendete KOM-LE-Version) MUSS der KOM-LE-Fachdienst die Schnittstelle I_Directory_Application_Maintenance der TI-Plattform verwenden.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-109690">
+   <p><b>A_20212</b></p>
+   <p>Für die Änderung des Verzeichniseintrages (Eintragen bzw. Löschen der E-Mail-Adresse des KOM-LE-Teilnehmers) MUSS der KOM-LE-Fachdienst zur Lokalisierung des VZD Eintrags die Telematik-ID aus dem AUT Zertifikat nutzen, mit dem sich der KOM-LE Teilnehmer an der Schnittstelle I_AccountManager_Service authentifiziert hat.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15723">
+   <p><b>KOM-LE-A_2160</b></p>
+   <p>Der Fachdienst KOM-LE MUSS bei der Änderung des Verzeichniseintrages über die Schnittstelle I_Directory_Application_Maintenance immer eine sichere Verbindung unter Verwendung von TLS mit beidseitiger zertifikatsbasierter Authentifizierung benutzen. <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15724">
+   <p><b>KOM-LE-A_2189</b></p>
+   <p><p style="margin-left: 0px;"><span>Beim Aufbau der TLS-Verbindung mit dem Verzeichnisdienst MUSS sich der Fachdienst KOM-LE mit seinem&nbsp;&nbsp;</span><span>C.FD.TLS-</span><span>C Client-Zertifikat authentifizieren. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15725">
+   <p><b>KOM-LE-A_2161</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> KOM-LE-Fachdienst MUSS bei der Registrierung die </span><span>E-Mail-Adresse des </span><span>KOM-LE-Teilnehmers</span><span> </span><span>als Benutzernamen verwenden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15726">
+   <p><b>KOM-LE-A_2162</b></p>
+   <p><p style="margin-left: 0px;"><span>Die Fachanwendung KOM-LE MUSS gewährleisten, dass Passwörter der Teilnehmer nur vertraulichkeits-, integritäts- und authentizitätsgeschützt vom Client zum Fachdienst übermittelt werden.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-112440">
+   <p><b>KOM-LE-A_2163-01</b></p>
+   <p>Der KOM-LE-Anbieter MUSS Vorgaben zur Minimum-Qualität des Passwortes (entsprechend [BSI ORP.4] A.8 und A.22) machen und die Einhaltung dieser Vorgaben gewährleisten. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15728">
+   <p><b>KOM-LE-A_2164</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Fachdienst KOM-LE DARF Passwörter der </span><span>KOM-LE-</span><span>Teilnehmer NICHT im Klartext speichern. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15729">
+   <p><b>KOM-LE-A_2165</b></p>
+   <p><p style="margin-left: 0px;"><span>Die</span><span> Teilkomponente Account Manager des Fachdienstes KOM-LE MUSS </span><span>dem KOM-LE</span><span>-</span><span>Teilnehmer die Möglichkeit </span><span>anbieten</span><span> das Passwort für die Anmeldung am KOM-LE</span><span>-</span><span>Fachdienst zu ändern.</span><span> </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15730">
+   <p><b>KOM-LE-A_2166</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE</span><span>-</span><span>Fachdienst DARF das Ändern </span><span>oder Löschen </span><span>der bei ihm gespeicherten Passwörter der KOM-LE</span><span>-</span><span>Konten durch Dritte NICHT zulassen.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125287">
+   <p><b>KOM-LE-A_2302-01</b></p>
+   <p>Der KOM-LE-Anbieter MUSS die Schlüsselpaare für die Zertifikate für KOM-LE-Clientmodule erzeugen und für diese aus der Komponenten-PKI der TI die C.CM.TLS-CS-Zertifikate beziehen, sodass die Zertifikate <span style="text-decoration: line-through;"></span>nach der Registrierung eines Nutzers zur Verfügung stehen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125656">
+   <p><b>KOM-LE-A_2167-04</b></p>
+   <p>Der Fachdienst KOM-LE MUSS den Account eines Teilnehmers nach drei aufeinanderfolgenden Fehleingaben des Passwortes temporär gegen Brute-Force Angriffe schützen. Hierzu wird nach der dritten Falscheingabe eine Wartezeit für den nächsten Log-In Versuch vorgegeben, für die weitere Log-in Versuche nicht möglich sind. Die Wartezeit MUSS geeignet gewählt werden, um Brute-Force-Angriffe zu erschweren und gleichzeitig eine akzeptable User-Experience zu erhalten.&nbsp;Im Fall einer Falscheingabe wird dem KOM-LE-Client der Fehlercode&nbsp;535 (<span style="font-style: italic;">Authentication credentials invalid</span>) gemäß [RFC3463] zurückgegeben.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-110700">
+   <p><b>KOM-LE-A_2168-01</b></p>
+   <p>Der KOM-LE Anbieter&nbsp; MUSS einen Prozess implementieren, der es berechtigten Teilnehmern ermöglicht, mit Hilfe des KOM-LE Anbieters seinen gesperrten Account wieder freizuschalten. Der KOM-LE Anbieter MUSS den Teilnehmer mit Vetragsabschluss über diesen Prozess informieren. Der KOM-LE Anbieter ist der Owner des Prozesses.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15733">
+   <p><b>KOM-LE-A_2169</b></p>
+   <p><p style="margin-left: 0px;"><span>Der KOM-LE-Fachdienst MUSS die im Registrierungsprozess vergebenen Daten für Benutzername und Passwort sowohl beim Verse</span><span>n</span><span>den von Nachrichten über SMTP als auch beim Abholen von Nachrichten über POP3 für die Authentifizierung ve</span><span>r</span><span>wenden. </span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117963">
+   <p><b>A_18784-03</b></p>
+   <p><span style="font-size: 10pt;color: #172B4D;line-height: 1.5;">Der KOM-LE-Anbieter MUSS dem KOM-LE-Teilnehmer das Schlüsselmaterial und das Zertifikat für das KOM-LE-Clientmodul über die Schnittstelle I_AccountManager_Service als passwortgeschützte PKCS#12-Datei zur Verfügung stellen. Die Übermittlung der PKCS#12-Datei muss über eine verschlüsselte, authentifizierte und integritätsgeschützte Verbindung erfolgen. Das KOM-LE-Clientmodul MUSS das Passwort für die PKCS#12-Datei generieren und dem KOM-LE Fachdienst im Request der Operation übermitteln. Im Response übergibt der KOM-LE Fachdienst die – mit dem übermittelten Passwort geschützte – PKCS#12-Datei.</span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117962">
+   <p><b>A_19542-01</b></p>
+   <p>Die Teilkomponente&nbsp;Account Manager des Fachdienstes KOM-LE MUSS dem Administrationsmodul eine Operation für die Beantragung und das Herunterladen der PKCS#12-Datei bereitstellen. Der Account Manager MUSS die PKCS#12-Datei vor der Bereitstellung mit dem vom Administrationsmodul übergebenen symmetrischen Schlüssel verschlüsseln.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_116"> <span style="font-weight: bold;">Wechsel der Telematik-ID</span> </p>
+  <p id="polarion_121">Die folgenden Anforderungen beschreiben den Ablauf beim Wechsel der Telematik-ID. Mittels einer bisherigen und einer neuen Smartcard wird die Portierung einer E-Mail-Adresse zu einer neuen Telematik-ID ermöglicht. Das Verfahren wird kurz beschrieben:</p>
+  <ul id="polarion_126"> 
+   <li>Im ersten Schritt erfolgt die Authentisierung des Teilnehmers mit der bisherigen Smartcard.&nbsp; Nach erfolgreicher Authentisierung am Account Manager wird ein One-Time-Passwort generiert und an das Clientmodul übergeben.</li> 
+   <li>Im zweiten Schritt erfolgt das Verschieben der E-Mail-Adresse vom bisherigen Verzeichniseintrag zum neuen Verzeichniseintrag. Für die Authentisierung des Wechsels wird das One-Time-Passwort aus dem ersten Schritt und die neue Smartcard verwendet.<br> </li> 
+  </ul>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116856">
+   <p><b>A_21377</b></p>
+   <p>Der Account Manager MUSS bei Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getOTP</span> ein One-Time-Passwort gemäß den Kriterien aus [gemSpec_Krypt] generieren. Die Gültigkeit des One-Time-Passworts beträgt 1 Woche und ist an den verwendeten Account gebunden.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116857">
+   <p><b>A_21378</b></p>
+   <p>Der Account Manager MUSS die Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getOTP</span> implementieren, bei der die Authentisierung mit der bisherigen Smartcard erfolgt. Als Ergebnis wird ein One-Time-Passwort geliefert.<br> Der Account Manager MUSS die Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">setTID</span> implementieren, bei der die Authentisierung mit der neuen Smartcard erfolgt. Als Nachweis für die Benutzung der bisherigen und der neuen Smartcard muss das One-Time-Passwort als Eingangsparameter verwendet werden.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-116858">
+   <p><b>A_21379</b></p>
+   <p>Der Account Manager MUSS die vom Nutzer verwendete E-Mail-Adresse (KOM-LE-Fachdaten) des KOM-LE-Teilnehmers bei Aufruf der Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">setTID</span> aus dem Verzeichnisdiensteintrag der bisherigen Telematik-ID entfernen und an die neue Smartcard verknüpfen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-117916">
+   <p><b>A_21531</b></p>
+   <p>Der Account Manager MUSS sicherstellen, dass jede KOM-LE Adresse nur an maximal einen VZD-Eintrag angehängt wird. Hierzu MUSS er vor einer Eintragung einer KOM-LE Adresse prüfen, ob diese bereits im VZD hinterlegt ist. Ist sie bereits hinterlegt, so verwendet er Fehlercode 500.<span style="background-color: #99FF99;"><br> </span> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-126671">4.4 Schnittstelle I_AccountLimit_Services</h3>
+  <p id="polarion_89">Der Account Manager stellt einen Webservice zur Abfrage von technisch konfigurierten Daten eines KOM-LE-Teilnehmers bereit. Die Schnittstellenbeschreibung I_AccountLimit_Service ist in [AccountLimit.yaml] definiert. Der Aufruf der REST-Schnittstelle ist ausschließlich vom Clientmodul zulässig.</p>
+  <p id="polarion_134">In der folgenden Tabelle ist die Operation getLimit&nbsp;mit der entsprechenden HTTP-Methode dargestellt. Die Operation ist eine Abstraktion auf den Webservice Endpunkt /limit.</p>
+  <p id="polarion_135"></p>
+  <p id="polarion_136" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">10</span> Operation der Schnittstelle - I_AccountLimit_Services </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=137" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 128px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> Operation<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 115px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> URI<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 56px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> Methode<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 98px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> Request<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 101px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> Response<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 192px;height: 21.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"> Beschreibung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 128px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">getLimit<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 115px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">/limit/<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 56px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">GET<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 98px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">-<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 101px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">&lt;Status&gt;<br> - maxMailSize<br> - dataTimeToLive<br> - quota<br> -remainQuota<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 192px;height: 38px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Abfragen der technisch konfigurierten Daten eines Nutzer-Accounts<br> <br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_138"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134168">
+   <p><b>A_22413-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Teilkomponente Account Manager des Fachdienstes MUSS die Schnittstelle I_AccountLimit_Service als REST-Webservice über HTTPS gemäß [AccountLimit.yaml] in der Version&nbsp;1.1.0 implementieren. Des Weiteren MUSS der Account Manager für alle in der&nbsp;[AccountLimit.yaml] definierten Operationen den Zeichensatz UTF-8 unterstützen.</span> <br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125959">
+   <p><b>A_22420</b></p>
+   <p>Die Teilkomponente Account Manager des Fachdienstes MUSS die Schnittstelle I_AccountLimit_Service durch Verwendung von TLS mit beidseitiger Authentisierung sichern.&nbsp;Die Teilkomponente Account Manager des Fachdienstes MUSS für diese TLS-Verbindungen TI-Zertifikate&nbsp;(analog zu Schnittstelle I_Message_Service) nutzen. Die Teilkomponente Account Manager des Fachdienstes MUSS sich mit der Server-Identität von Schnittstelle I_AccountLimit_Service&nbsp;authentisieren.<span style="background-color: #FFFF99;"><br> </span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125947">
+   <p><b>A_22414</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Der Account Manager MUSS bei Aufruf der Operation getLimit eine HTTP-Basic-Authentifizierung durchführen.</span><br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15734">4.5 Genutzte Schnittstellen der TI-Plattform</h3>
+  <p id="polarion_141">Hier werden die durch den Fachdienst genutzten Schnittstellen der TI-Plattform aufgelistet. Die Spezifikation dieser Schnittstellen erfolgt durch das Projekt Basis-TI und wird in [gemKPT_Arch_TIP] beschrieben.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15735">
+   <p><b>KOM-LE-A_2231</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Fachdienst KOM-LE MUSS die in der Tabelle </span><span>Tab_Interface_TIP</span><span> aufgeführten Schnittstellen der TI-Plattform benutzen.</span><span style="font-weight: bolder;"> </span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_143"></p>
+  <p id="polarion_108" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">11</span>:&nbsp;Tab_Interface_TIP Schnittstellen zur TI-Plattform des Fachdienstes KOM-LE </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=56" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 166pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Schnittstelle</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 127pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Operation</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 163pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">benutzt durch</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 74pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_Directory_Application_Maintenance</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 74pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">add_Directory_FA-Attributes</span><br> <span style="font-size: 10pt;line-height: 1.5;">delete_Directory_FA-Attributes</span><br> <span style="font-size: 10pt;line-height: 1.5;">modify_Directory_FA-Attributes</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 74pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Account Manager bei der Registrierung bzw. Deregistrierung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_Directory_Query</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">search_Directory</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Account Manager bei der Registrierung bzw. Deregistrierung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_NTP_Time_Information</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">sync_Time</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 88pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Fachdienst für die Verwendung der korrekten Zeit z.B. beim Versenden und Weiterleiten von E-Mails/Empfangsbestätigungen oder bei der Erstellung von Logging-Einträgen</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_DNS_Name_Resolution</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">get_IP_Address</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server beim Versenden und Weiterleiten von E-Mails</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_OCSP_Request</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">check_Revocation_Status</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server beim Aufbau der TLS-Verbindung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 166pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">I_TSL_Download</span><br> </td> 
+     <td style="vertical-align: top;width: 127pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">download_TSL</span><br> </td> 
+     <td style="vertical-align: top;width: 163pt;height: 29pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Mail Server als Vorbedingung beim Aufbau der TLS-Verbindung</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15736">5 Nicht-Funktionale Anforderungen</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15737">5.1 Skalierbarkeit</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-15738">
+   <p><b>KOM-LE-A_2171</b></p>
+   <p><p style="margin-left: 0px;"><span>Der</span><span> KOM-LE-Fachdienst MUSS mit einer zunehmenden Anzahl von beteiligten Teilnehmern sk</span><span>a</span><span>lieren. </span></p> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15739">5.2 Performance</h3>
+  <p id="polarion_148">Die durch den Fachdienst KOM-LE zu erfüllenden Performance-Anforderungen befinden sich in [gemSpec_Perf#4.4].</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15740">5.3 Mengengerüst</h3>
+  <p id="polarion_149">Das für den Fachdienst KOM-LE relevante Mengengerüst befindet sich in [gemSpec_Perf#3.1].</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-15741">6 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15742">6.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=57" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;">Abkürzung</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;">Bedeutung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 28pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">base64<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 28pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Verfahren zur Kodierung von Binärdaten in eine Zeichenfolge, die nur aus lesbaren ASCII-Zeichen besteht<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">DNS<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Domain Name System<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">HBA<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Heilberufsausweis<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">ID<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Identification<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">IP<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Internet Protocol<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">MIME<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Multipurpose Internet Mail Extensions<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">ISO<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">International Organization for Standardization<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">KB<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Kilobyte<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">KAS</td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">KOM-LE Attachment Service</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">MB<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Megabyte<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">NTP<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Network Time Protocol<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">OCSP<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Online Certificate Status Protocol<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">POP3<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Post Office Protocol Version 3<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">RFC<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Request for Comments<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">SMC (B/A/KTR)<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Security Module Card<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">SMTP<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Simple Mail Transfer Protocol<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">SSL<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Secure Sockets Layer<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">TI<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Telematikinfrastruktur<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">TLS<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Transport Layer Security, die Vorgängerbezeichnung ist SSL<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">TSL<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Trusted Service List<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">S/MIME<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Secure Multipurpose Internet Mail Extensions<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 77pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">XML<br> </td> 
+     <td style="vertical-align: top;width: 384pt;height: 14pt;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 4pt;">Extensible Markup Language<br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15743">6.2 Glossar</h3>
+  <p id="polarion_152">Das Glossar wird als eigenständiges Dokument, vgl [gemGlossar_TI] zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15744">6.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_16">Abbildung 1: Abb_Dok_Hierachie_KOMLE Dokumentenhierarchie KOM-LE</a></li>
+   <li><a href="#polarion_78">Abbildung 2: Abb_FD_Systemkontext Fachdienst KOM-LE im Systemkontext</a></li>
+   <li><a href="#polarion_60">Abbildung 3: Abb_FD_KAS Funktionsweise des Attachment Service</a></li>
+   <li><a href="#polarion_111">Abbildung 4: Abb_Anw_Dokument auf dem KAS hochladen</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-15745">6.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion___1">Tabelle 1: Tab_KOMLE_Service Discovery</a></li>
+   <li><a href="#polarion___2">Tabelle 2: Tab_KOMLE_FQDN</a></li>
+   <li><a href="#polarion_24">Tabelle 3: Tab_Fehler_Behandlung Fehlerbehandlung Fachdienst KOM-LE</a></li>
+   <li><a href="#polarion_26">Tabelle 4: Tab_Konfig_Parameter Konfigurationsparameter Fachdienst KOM-LE</a></li>
+   <li><a href="#polarion_40">Tabelle 5: Tab_Para_send_Msg Parameter send_Message Fachdienst KOM-LE</a></li>
+   <li><a href="#polarion___3">Tabelle 6 Tab_Fehlercodes_KOMLE-Fachdienst</a></li>
+   <li><a href="#polarion_42">Tabelle 7: Tab_Para_recive_Msg Parameter receive_Message Fachdienst KOM-LE</a></li>
+   <li><a href="#polarion_76">Tabelle 8: Operationen vom KAS</a></li>
+   <li><a href="#polarion_85">Tabelle 9: Operationen vom Account Manager</a></li>
+   <li><a href="#polarion_136">Tabelle 10 Operation der Schnittstelle - I_AccountLimit_Services</a></li>
+   <li><a href="#polarion_108">Tabelle 11:&nbsp;Tab_Interface_TIP Schnittstellen zur TI-Plattform des Fachdienstes KOM-LE</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-23712">6.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15746">6.5.1 Dokumente der gematik</h4>
+  <p id="polarion_154">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert, Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummer entnehmen Sie bitte der aktuellen, auf der Internetseite der gematik veröffentlichten Dokumentenlandkarte, in der die vorliegende Version aufgeführt wird.</p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=58" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 267px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 460px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar_TI]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar der Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemKPT_Arch_TIP]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Konzept Architektur der TI-Plattform</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemLH_KOM-LE]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Lastenheft Kommunikation Leistungserbringer (KOM-LE)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemSysL_KOM-LE]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Systemspezifisches Konzept</span><br> <span style="font-size: 10pt;line-height: 1.5;">Kommunikation Leistungserbringer (KOM-LE)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_CM_KOMLE]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation Clientmodul KOM-LE</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[gemSMIME_KOM-LE]</span><br> </td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: S/MIME-Profil</span><br> <span style="font-size: 10pt;line-height: 1.5;">Kommunikation Leistungserbringer (KOM-LE)</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[AttachmentServices.yaml]</span></td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: <a href="https://github.com/gematik/api-kim/blob/master/src/openapi/AttachmentService.yaml" target="_top" class="descriptionLink">https://github.com/gematik/api-kim/blob/master/src/openapi/AttachmentService.yaml</a></span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[AccountManager.yaml]</span></td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">gematik: <a href="https://github.com/gematik/api-kim/blob/master/src/openapi/AccountManager.yaml" target="_top" class="descriptionLink">https://github.com/gematik/api-kim/blob/master/src/openapi/AccountManager.yaml</a><br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">[Dienstkennung]</td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik:&nbsp;https://fachportal.gematik.de/toolkit/dienstkennung-kim-kom-le</td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 267px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">[DirectoryApplicationMaintenance.yaml]</td> 
+     <td style="vertical-align: top;width: 460px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;">gematik: <a href="https://github.com/gematik/api-kim/blob/master/src/openapi/DirectoryApplicationMaintenance.yaml" target="_top" class="descriptionLink">https://github.com/gematik/api-kim/blob/master/src/openapi/DirectoryApplicationMaintenance.yaml</a>&nbsp;</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_157"></p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-15747">6.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=59" style="width: 100%;margin-left: auto;margin-right: auto;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 273px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 454px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[DESTATIS_KRK]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">Statistisches Bundesamt Deutschland, Eckdaten der Krankenhäuser 2010</span><br> <a href="http://www.destatis.de/" target="_blank" class="descriptionLink">http://www.destatis.de/</a><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC1939]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">RFC 1939: Post Office Protocol – Version 3, J. Myers, M. Rose, Mai 1996</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 2195]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">J. Klensin, R. Catoe, P. Krumviede, RFC 2195: IMAP/POP AUTHorize Extension for Simple Challenge/Response, September 1997</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 25px;border: 1px solid #CCCCCC;padding: 4pt;">[<span style="font-size: 10pt;line-height: 1.5;">RFC4122</span>]</td> 
+     <td style="vertical-align: top;width: 454px;height: 25px;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">A Universally Unique IDentifier (UUID) URN Namespace</span></td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 4616]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">K. Zeilenga, RFC 4616: The PLAIN Simple Authentication and Security Layer (SASL) Mechanism, August 2006</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 4954]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 29pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">R. Siemborski, A. Melnikov, RFC 4954: SMTP Service Extension for Authentication, July 2007</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 5321]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 14pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">J. Klensin, RFC 5321: Simple Mail Transfer Protocol, October 2008</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 44pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">[RFC 5802]</span><br> </td> 
+     <td style="vertical-align: top;width: 454px;height: 44pt;border: 1px solid #CCCCCC;padding: 4pt;"><span style="font-size: 10pt;line-height: 1.5;">C. Newman, A. Menon-Sen, A. Melnikov, N. Williams, RFC 5802: Salted Challenge Response Authentication Mechanism (SCRAM) SASL and GSS-API Mechanisms, July 2010</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="vertical-align: top;width: 273px;height: 44pt;border: 1px solid #CCCCCC;padding: 4pt;">[BSI ORP.4]</td> 
+     <td style="vertical-align: top;width: 454px;height: 44pt;border: 1px solid #CCCCCC;padding: 4pt;">BSI IT-Grundschutz Kompendium Edition 2020, Baustein Organisation und Personal ORP.4, Identitäts- und Berechtigungsmanagement</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_61"></p>
+ </body>
+</html>

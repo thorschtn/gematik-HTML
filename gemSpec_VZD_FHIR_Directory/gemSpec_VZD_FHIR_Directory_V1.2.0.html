@@ -1,0 +1,955 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <span id="polarion-comment:41"></span><br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Spezifikation</span> </p>
+  <p id="polarion_12" style="text-align: center;"> <span style="font-weight: bold;font-size: 28pt;line-height: 1.2;">Verzeichnisdienst FHIR-Directory</span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <p id="polarion_15"> <br> </p>
+  <div id="polarion_editor_html_block2" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.2.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>567556</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>12.12.2022</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_VZD_FHIR_Directory</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-121187">Dokumentinformationen</h1>
+  <p id="polarion_21"></p>
+  <p id="polarion_33"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_24"></p>
+  <p id="polarion_25" data-keep-next="true"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=6" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 78px;height: 25px;border: 1px solid #CCCCCC;padding: 5px;">Version </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 87px;height: 25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Stand</span> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 65px;height: 25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Kap./ Seite</span> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 348px;height: 25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Grund der Änderung, besondere Hinweise </span></th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 120px;height: 25px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Bearbeitung</span> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">1.0.0&nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">01.10.2021</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 348px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">Erstversion des Dokumentes&nbsp;&nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">1.1.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">29.07.2022</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 348px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">Fortschreibung und insbesondere Anpassungen gemäß TI-Messenger-Spezifikation Version 1.1.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">1.2.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">12.12.2022</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">4.2.4<br> <br> 4.2.3<br> 4.3.1<br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 348px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fachliche Beschreibung Operation whereIs ergänzt - C_11233<br> Aufbau der&nbsp;Föderationsliste aktualisiert -&nbsp;ANFTIM-185<br> Sicherheits- und Datenschutzanforderungen ergänzt</td> 
+     <td style="text-align: left;vertical-align: top;width: 120px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_34"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-121188">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-121187">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-121188">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121189">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121190">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121191">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121192">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121193">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121194">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121195">2 Systemüberblick</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-132771">2.1 Nutzer und Rollen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121198">2.2 Nachbarsysteme</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121199">3 Zerlegung des Produkttyps</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121201">4 Funktionsmerkmale</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121202">4.1 FHIR-Directory</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-122890">4.1.1 Datenmodell</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-122922">4.1.2 Mapping von LDAP auf FHIR-Ressourcen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121203">4.1.3 FHIR RESTful API</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-122889">4.2 FHIR-Proxy</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123013">4.2.1 Schnittstellen</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123476">4.2.1.1 TLS-Verbindungsaufbau</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123475">4.2.1.2 FHIR Schnittstelle für TI-Messenger-Nutzer FHIRDirectorySearchAPI</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123477">4.2.1.3 FHIR-Schnittstelle für Besitzer FHIRDirectoryOwnerAPI</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123388">4.2.1.4 Schnittstelle FHIRDirectoryTIMProviderAPI (I_VZD_TIM_Provider_Services.yaml)</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123330">4.2.2 Aktualisierung der Basiseinträge</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123676">4.2.3 Erzeugung und Bereitstellung der Föderationsliste</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-132695">4.2.4 Lokalisierung einer MXID (Operation whereIs)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123994">4.3 Übergreifende Vorgaben</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123329">4.3.1 Sicherheit und Datenschutz</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123995">4.3.2 Betrieb</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-122842">5 Anwendungsfälle</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123553">5.1 TI-Messenger-Nutzer sucht Einträge im FHIR-Directory</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123551">5.2 Eigentümer ändert seinen Eintrag im FHIR-Directory</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123552">5.3 Anwendungsfälle der TI-Messenger-Anbieter im VZD-FHIR-Directory</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-123554">5.4 Einträge mit dem VZD-LDAP-Directory abgleichen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121215">6 Verteilungssicht</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121216">7 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121217">7.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121218">7.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121219">7.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121220">7.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121221">7.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121222">7.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-121223">7.5.2 Weitere Dokumente</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-132227">7.6 Versionierung Datenmodell</a></li>
+  </div>
+  <p id="polarion_38"></p>
+  <div id="polarion_wiki macro name=page_break;params=uid=2" contenteditable="false" data-is-landscape="false"></div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121189">1 Einordnung des Dokumentes</h2>
+  <p id="polarion_17">Dieses Dokument beschreibt das FHIR-Directory des Verzeichnisdienstes der TI. Die Spezifikation umfasst Schnittstellen zum Abruf von Informationen der im FHIR-Directory eingetragenen Organization-FHIR-Ressourcen und der Practitioner-FHIR-Ressourcen durch Clientsysteme sowie Schnittstellen und Prozesse zur Pflege der Informationen innerhalb des VZD-FHIR-Directories.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121190">1.1 Zielsetzung</h3>
+  <p id="polarion_40">Die Spezifikation soll die Entwicklung und den Betrieb eines VZD-FHIR-Directories für die Telematikinfrastruktur unterstützen, indem die funktionalen und nicht-funktionalen Anforderungen sowie die Sicherheits-Anforderungen an den Dienst festgelegt werden.&nbsp;</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121191">1.2 Zielgruppe</h3>
+  <p id="polarion_44"> Das Dokument richtet sich zwecks der Realisierung an den Hersteller des VZD-FHIR-Directories sowie an den Anbieter, welcher dieses Produkt betreibt [gemKPT_Betr]. Alle Hersteller und Anbieter von TI-Anwendungen, die das VZD-FHIR-Directory nutzen,&nbsp;müssen dieses Dokument ebenso berücksichtigen. Gleichfalls ist das Dokument auch für die Nutzer relevant, welche die Daten im VZD-FHIR-Directory eintragen, abfragen, ändern und löschen wollen.<span id="polarion-comment:4"></span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121192">1.3 Geltungsbereich</h3>
+  <p id="polarion_53">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungs- oder Abnahmeverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z. B. gemPTV_ATV_Festlegungen, Produkttypsteckbrief, Anbietertypsteckbrief&nbsp;u.a.) oder Webplattformen (z. B. gitHub u.a.) festgelegt und bekanntgegeben.</p>
+  <p id="polarion_26"> <span style="font-weight: bold;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_55"> <span style="font-style: italic;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121193">1.4 Abgrenzungen</h3>
+  <p id="polarion_58">Spezifiziert werden in dem Dokument nur die mit dem VZD-FHIR-Directory neu eingeführten Komponenten und Schnittstellen des Verzeichnisdienstes der TI.&nbsp;Das VZD-LDAP-Directory ist in [gemSpec_VZD] spezifiziert.&nbsp;</p>
+  <p id="polarion_42"> Benutzte Schnittstellen werden in der Spezifikation desjenigen Produkttypen beschrieben, der diese Schnittstelle bereitstellt. Auf die entsprechenden Dokumente wird referenziert (siehe auch Anhang, Kapitel&nbsp;<span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-121221" data-option-id="longoutline"></span>). </p>
+  <p id="polarion_59">Die vollständige Anforderungslage für den Produkttyp ergibt sich aus weiteren Konzept- und Spezifikationsdokumenten, diese sind in dem Produkttypsteckbrief des Produkttyps VZD-FHIR-Directory verzeichnet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121194">1.5 Methodik</h3>
+  <p id="polarion_49">Die Spezifikation ist im Stil einer RFC-Spezifikation verfasst. Dies bedeutet:&nbsp;</p>
+  <ul id="polarion_112"> 
+   <li><span style="font-weight: bold;">Der gesamte Text in der Spezifikation ist sowohl für den Hersteller des Produktes VZD-FHIR-Directory als auch für den betreibenden Anbieter entsprechend [gemKPT_Betr] verbindlich zu betrachten und gilt sowohl als Zulassungskriterium beim Produkt und Anbieter.<span id="polarion-comment:5"></span></span></li> 
+   <li><span style="font-weight: normal;">Auch für technisch mit dem Produkt und Dienst verbundene Anwendungen ist dieses Dokument verbindlich. Gleichfalls für die Nutzer, welche zur Datenpflege im VZD-FHIR-Directory beitragen oder Daten abfragen.</span></li> 
+   <li>Die Verbindlichkeit SOLL durch die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet werden.&nbsp;</li> 
+   <li>Da in dem Beispielsatz „Eine leere Liste DARF NICHT ein Element besitzen.“ die Phrase „DARF NICHT“ semantisch irreführend wäre (wenn nicht ein, dann vielleicht zwei?), wird in diesem Dokument stattdessen „Eine leere Liste DARF KEIN Element besitzen.“ verwendet.</li> 
+   <li>Die Schlüsselworte KÖNNEN außerdem um Pronomen in Großbuchstaben ergänzt werden, wenn dies den Sprachfluss verbessert oder die Semantik verdeutlicht.</li> 
+  </ul>
+  <p id="polarion_114">Anwendungsfälle und Akzeptanzkriterien&nbsp;als Ausdruck normativer Festlegungen werden als Grundlage für Erlangung der Zulassung durch Tests geprüft und nachgewiesen. Sie besitzen eine eindeutige, permanente ID, welche als Referenz verwendet werden SOLL. Die Tests werden gegen eine von der gematik gestellte Referenz-Implementierung durchgeführt.&nbsp;</p>
+  <p id="polarion_51"> Anwendungsfälle und Akzeptanzkriterien werden im Dokument wie folgt dargestellt:<span id="polarion-comment:55"></span><br> <span style="font-weight: bold;">&lt;ID&gt; - &lt;Titel des Anwendungsfalles / Akzeptanzkriteriums&gt;<br> </span>Text / Beschreibung<br> [&lt;=] </p>
+  <p id="polarion_57">Die einzelnen Elemente beschreiben:</p>
+  <ul id="polarion_161"> 
+   <li><span style="font-weight: bold;">ID</span>: einen eindeutigen Identifier. </li> 
+   <ul> 
+    <li>Bei einem Anwendungsfall besteht der Identifier aus der Zeichenfolge 'AF_' gefolgt von einer Zahl,&nbsp;</li> 
+    <li>Der Identifier eines Akzeptanzkriteriums wird von System vergeben, z. B. die Zeichenfolge 'ML_' gefolgt von einer Zahl</li> 
+   </ul> 
+   <li><span style="font-weight: bold;">Titel des Anwendungsfalles / Akzeptanzkriteriums</span>: Ein Titel, welcher zusammenfassend den Inhalt beschreibt</li> 
+   <li><span style="font-weight: bold;">Text / Beschreibung</span>: Ausführliche Beschreibung des Inhalts, kann neben Text Tabellen, Abbildungen und Modelle enthalten</li> 
+  </ul>
+  <p id="polarion_162">Dabei umfasst der Anwendungsfall bzw. das Akzeptanzkriterium sämtliche zwischen ID und Textmarke [&lt;=] angeführten Inhalte.</p>
+  <p id="polarion_190">Der für die Erlangung einer Zulassung notwendige Nachweis der Erfüllung des Anwendungsfalls wird in den jeweiligen Steckbriefen festgelegt, in denen jeweils der Anwendungsfall gelistet ist. Akzeptanzkriterien werden in der Regel nicht im Steckbrief gelistet.</p>
+  <p id="polarion_65"> <span style="font-weight: bold;">Hinweis auf offene Punkte</span> </p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=100%|uid=29" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 591.6px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-style: italic;color: #3333FF;">Offener Punkt: Das Kapitel wird in einer späteren Version des Dokumentes ergänzt.</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_76"></p>
+  <div id="polarion_wiki macro name=page_break;params=uid=1" contenteditable="false" data-is-landscape="false"></div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121195">2 Systemüberblick</h2>
+  <p id="polarion_19"> Das VZD-FHIR-Directory ist eine Erweiterung des bisherigen Verzeichnisdienstes der TI. Im VZD-FHIR-Directory werden Einträge von Organisationen und Leistungserbringern gespeichert. Die <span id="polarion-comment:119"></span>VZD-LDAP-Directory Einträge&nbsp;werden in das VZD-FHIR-Verzeichnis synchronisiert. Bei diesem Vorgang erfolgt eine Umsetzung von der LDAP-Datenstruktur auf die Datenstruktur der FHIR-Ressourcen. Personeneinträge der Leistungserbringer werden auf die PractitionerDirectory-Ressource und Organisations-Einträge auf die OrganizationDirectory-Ressource abgebildet. Die synchronisierten Einträge bilden die Basis-Einträge, die durch die <span id="polarion-comment:91"></span>Besitzer um zusätzliche Daten ergänzt bzw. erweitert werden können. PractitionerDirectory und TIOrganization sind Profilierungen der FHIR-Ressourcen Practitioner und Organization. Die Anbieter von Fachanwendungen werden ebenfalls als TIOrganization-Einträge im FHIR-Directory eingetragen, um Daten der Fachanwendung zu dieser Organisation zuordnen zu können. </p>
+  <p id="polarion_67">Der Besitzer einer Telematik-ID erhält das Recht, seinen Eintrag zu erweitern (um z. B. Unterstrukturen für eine Organisation einzutragen) und Fachdaten zu ergänzen (z. B. TI-Messenger-Adressen). Die von den Kartenherausgebern eingetragenen Daten dürfen durch die Besitzer nicht verändert werden.&nbsp;Zusätzliche FHIR-Ressourcen (wie z. B. Location und HealthcareService) können durch die Besitzer ergänzt werden, um den Komfort bei der Suche nach Einträgen zu erhöhen.</p>
+  <p id="polarion_35">Alle vom VZD-FHIR-Directory bereitgestellten Schnittstellen sind über das Internet erreichbar und TLS-gesichert. Die Authentisierung erfolgt mit:</p>
+  <ul id="polarion_147"> 
+   <li>OpenID Connect Authorization Code Flow für Schreibzugriffe der Besitzer von Einträgen</li> 
+   <li>OAuth2 Client Credential Flow für Schreibzugriffe der Fachdienste</li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;"><span id="polarion-comment:120"></span>Matrix-OpenID-Token</span> für Lesezugriffe von TI-Messenger-Nutzern</li> 
+  </ul>
+  <p id="polarion_148"> Eine Nutzung der Schnittstellen des VZD-FHIR-Directory ohne Authentisierung der Nutzer MUSS durch das&nbsp;VZD-FHIR-Directory verhindert werden.<span id="polarion-comment:162"></span> </p>
+  <p id="polarion_20"> Als erste Anwendung wird der <span id="polarion-comment:121"></span>TI-Messenger-Dienst das VZD-FHIR-Directory nutzen. </p>
+  <p id="polarion_62" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/FHIR-Directory_Systemkontext.png" style="max-width: 650px;" data-lastmodified="2022-05-30T12:01:12.582+02:00"> </p>
+  <p id="polarion_150" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: <span id="polarion-comment:122"></span>Systemüberblick VZD-FHIR-Directory<span id="polarion-comment:13"></span> </p>
+  <p id="polarion_78"></p>
+  <p id="polarion_79"> Das FHIR-Directory ist eine Implementierung der FHIR-Spezifikation (<a href="http://hl7.org/fhir/summary.html" target="_top" class="descriptionLink">http://hl7.org/fhir/summary.html</a>&nbsp;). </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-132771">2.1 Nutzer und Rollen</h3>
+  <p id="polarion_80" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Nutzer und Rollen&nbsp; </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=73" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 119px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Nutzer und Rolle</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 612px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 119px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Nutzer</td> 
+     <td style="text-align: left;vertical-align: top;width: 612px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Alle Nutzer können im FHIR-Directory über die Schnittstelle (1) nach Einträgen im Organisationsverzeichnis und im Personenverzeichnis suchen.</span>&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 119px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Org-Admin oder LE</td> 
+     <td style="text-align: left;vertical-align: top;width: 612px;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;color: #24292F;line-height: 1.5;">Administratoren der Organisationen und LE können im FHIR-Directory über die Schnittstelle (2) ihren Eintrag im Organisationsverzeichnis ändern und um zusätzliche Ressourcen erweitern.</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_75" style="text-align: left;" data-keep-next="true" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: Kommunikationsbeziehungen zu IT-Systemen </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=76" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 114px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">IT-Systeme</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 617px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Kartenherausgeber</td> 
+     <td style="text-align: left;vertical-align: top;width: 617px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Die Kartenherausgeber nutzen die Schnittstelle (3), um die Einträge ihrer Mitglieder im LDAP-Directory und zukünftig im FHIR-Directory zu pflegen.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">TI-Messenger-Anbieter</td> 
+     <td style="text-align: left;vertical-align: top;width: 617px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Die TI-Messenger-Anbieter nutzen die Schnittstelle (4), um die Föderationsliste des TI-Messengers abzufragen und um die Domains der von ihnen betriebenen Messenger-Services als Teil der TI-Messenger Föderation zu verwalten.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+     <td style="text-align: left;vertical-align: top;width: 617px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Die gematik kann über die Schnittstelle (5) lesend auf die Einträge im FHIR-Directory und im LDAP-Directory zugreifen, um die Daten-Qualität der Einträge zu prüfen und um Fehler zu analysieren.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 114px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">LDAP-Directory</td> 
+     <td style="text-align: left;vertical-align: top;width: 617px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Die Schnittstelle (6) zwischen FHIR-Directory und LDAP-Directory wird vom Verzeichnisdienst genutzt, um die Einträge zu synchronisieren.</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_77"></p>
+  <p id="polarion_211"> <span style="font-size: 10pt;line-height: 1.5;">Alle Schnittstellen mit Ausnahme (6) sind über das Internet erreichbar. Die Schnittstellen stellen folgende Funktionen bereit:</span> </p>
+  <ol id="polarion_213"> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Für Nutzer gibt es eine Schnittstelle zur Suche nach Einträgen im FHIR-Directory Organisationsverzeichnis und Personenverzeichnis. Die Schnittstelle kann nur nach erfolgreicher Authentisierung genutzt werden. Alle TI-Messenger Nutzer können sich authentisieren und bekommen vom FHIR-Directory ein Accesstoken ausgestellt, das für die Suchanfragen verwendet wird. Die Suche ermöglicht es, komfortabel nach Volltext oder nach bestimmten Werten der einzelnen Attribute über die verlinkten Ressourcen zu suchen. Gefundene Ressourcen werden in einem Bundle von FHIR Ressourcen zurück geliefert. Das Datenformat ist json.</span></li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Für Administratoren der Organisationen des Gesundheitswesens und für LE gibt es eine Schnittstelle zur Änderung ihres Eintrags im Organisationsverzeichnis. Zur Nutzung der Schnittstelle ist eine Authentifizierung mit OIDC Authorization Code Flow erforderlich. Über diese Schnittstelle kann im Organisationsverzeichnis der eigene Eintrag der Organisation über eine Verlinkung um zusätzliche Einträge erweitert werden. TI-Messenger Nutzer, die auch LE sind, können diese Schnittstelle nutzen, um ihre TI-Messenger-Adresse in ihrem Eintrag im Personenverzeichnis zu speichern, sodass sie von anderen LE gefunden werden können. Auch hier erfolgt die Authentifizierung über OIDC. Das FHIR-Datenformat ist json.</span></li> 
+   <li><span style="font-size: 10pt;line-height: 1.5;">Fü</span>r Kartenherausgeber gibt es die Schnittstelle I_Directory_Administration, um Einträge im LDAP-Directory anzulegen und zu pflegen. Das Datenformat ist json und ist in der OpenAPI-yaml-Datei&nbsp;DirectoryAdministration.yaml<span id="polarion-comment:163"></span> festgelegt. Zukünftig ist vorgesehen, dass die Kartenherausgeber auch direkt die Schnittstelle zum FHIR-Directory nutzen können. Dann ist das Datenformat FHIR in der Ausprägung JSON<span id="polarion-comment:165"></span>. Die Authentifizierung der Kartenherausgeber erfolgt mit OAuth Client Credential Flow.</li> 
+   <li>TI-Messenger-Fachdienste pflegen im FHIR-Directory für die von ihnen angebotenen Messenger-Services die TI-Messenger-Domänen.&nbsp;Zusätzlich können die TI-Messenger-Anbieter die Föderationsliste abfragen. Sie beinhaltet alle an der Föderation des TI-Messengers beteiligte Domains. Um die Kommunikationskontrolle zu ermöglichen, fragen TI-Messenger-Fachdienste auch ab, in welchem Verzeichnis (Personen- oder Organisationsverzeichnis) sich die Hashes von TI-Messenger-Adressen befinden. Die Authentifizierung der TI-Messenger-Fachdienste erfolgt mit OAuth Client Credential Flow.</li> 
+   <li>Die gematik hat Schnittstellen, um die Daten-Qualität der Einträge zu prüfen. Dazu wird die Schnittstelle der Kartenherausgeber genutzt. Die gematik hat aber nur Leserechte.</li> 
+   <li>Die Einträge im LDAP-Directory werden in das FHIR-Directory Organisations- und Personenverzeichnis synchronisiert. Es handelt sich um eine interne Schnittstelle des Verzeichnisdienstes der TI. <span id="polarion-comment:164"></span><span id="polarion-comment:166"></span> </li> 
+  </ol>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121198">2.2 Nachbarsysteme</h3>
+  <p id="polarion_43"> Die Nachbarsysteme des VZD-FHIR-Directory sind Client- und Serverkomponenten des <span id="polarion-comment:131"></span>TI-Messenger-Dienstes, das VZD-LDAP-Directory, die IDPs aus der TI-IDP-Föderation und die Betriebsdatenerfassung der gematik.&nbsp; </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123876|layout=3">
+   <p><b>ML-123876</b></p>
+   <p>Es MÜSSEN alle Anwendungsfälle des VZD-FHIR-Directories erfolgreich gegen die Referenzimplementierung der Nachbarsysteme getestet sein.<br> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121199">3 Zerlegung des Produkttyps</h2>
+  <p id="polarion_31">Die folgende Abbildung zeigt die Teilkomponenten des bisherigen VZD-LDAP-Directory und die rot dargestellten neuen Komponenten des VZD-FHIR-Directory.</p>
+  <p id="polarion_39"></p>
+  <p id="polarion_153" style="text-align: center;"> <img src="attachments/VZD_FHIR_Directory_Zerlegung.png" style="max-width: 650px;" data-lastmodified="2022-05-30T12:56:31.282+02:00"> </p>
+  <p id="polarion_37" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>:<span id="polarion-comment:132"></span> Zerlegung des VZD<span id="polarion-comment:24"></span> </p>
+  <p id="polarion_41"></p>
+  <p id="polarion_47">Das VZD-FHIR-Directory besteht aus den Komponenten FHIR-Proxy und FHIR-Directory sowie Auth-Service.</p>
+  <p id="polarion_23">Die vom VZD-FHIR-Directory zu liefernden Rohdaten zur Ermittlung der Auslastung und Performance werden in den bereits vorhandenen Betriebsdaten-Erfassungs-Client (BDE-Client) des Verzeichnisdienstes integriert.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121201">4 Funktionsmerkmale</h2>
+  <p id="polarion_99">In diesem Kapitel werden die Komponenten des VZD-FHIR-Directories beschrieben.</p>
+  <p id="polarion_28"></p>
+  <p id="polarion_46">Das FHIR-Directory stellt folgende Schnittstellen bereit:</p>
+  <ul id="polarion_54"> 
+   <li>FHIRDirectoryAuthorizationService</li> 
+  </ul>
+  <p id="polarion_66" style="margin-left: 40px;">Stellt Accesstokens zum Zugriff auf FHIRDirectory APIs aus. Es wird zukünftig zum anwendunsspezifischen Policy Decision Point (PDP) ausgebaut.</p>
+  <p id="polarion_128" style="margin-left: 40px;">Hierbei werden die zwei folgenden REST-Schnittstellen</p>
+  <ul id="polarion_129"> 
+   <ul> 
+    <ul> 
+     <li><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/tim-authenticate </span>und<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;"><br> </span></li> 
+     <li><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/owner-authenticate</span></li> 
+    </ul> 
+   </ul> 
+  </ul>
+  <p id="polarion_132" style="margin-left: 40px;"> verwendet. Die Schnittstelle <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/tim-authenticate</span> erwartet ein Matrix-OpenID-Token, wohingegen bei der&nbsp;Schnittstelle <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/owner-authenticate</span> ein ID_TOKEN übergeben werden muss. </p>
+  <ul id="polarion_72"> 
+   <li>FHIRDirectorySearchAPI</li> 
+  </ul>
+  <p id="polarion_74" style="margin-left: 40px;">Die REST-Schnittstelle /search ermöglicht die Suche nach Personen und Institutionen.</p>
+  <p id="polarion_124" style="margin-left: 40px;"> Genutzt wird die Standard FHIR Suchoperation&nbsp;<a href="https://build.fhir.org/search.html" target="_top" class="descriptionLink">https://build.fhir.org/search.html</a>&nbsp; </p>
+  <p id="polarion_127" style="margin-left: 40px;">Zur Nutzung der Suchoperation muss ein entsprechendes&nbsp;Accesstoken vom&nbsp;FHIRDirectoryAuthorizationService vorliegen.</p>
+  <ul id="polarion_86"> 
+   <li>FHIRDirectoryTIMProviderAPI</li> 
+  </ul>
+  <p id="polarion_96" style="margin-left: 40px;">Die REST-Schnittstelle /tim-provider-services ermöglichet betriebliche Prozesse für TI-Messenger Provider insb. Föderation.&nbsp;</p>
+  <p id="polarion_121" style="margin-left: 40px;"> Diese REST Schnittstelle wird hier definiert:&nbsp;<a href="https://github.com/gematik/api-vzd/" target="_top" class="descriptionLink">https://github.com/gematik/api-vzd/</a>&nbsp;unter src/openapi/I_VZD_TIM_Provider_Services.yaml </p>
+  <ul id="polarion_169"> 
+   <li>FHIRDirectoryOwnerAPI</li> 
+  </ul>
+  <p id="polarion_184" style="margin-left: 40px;"> Die REST-Schnittstelle <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/owner</span> ermöglich die Anpassung der Einträge durch Identitätseigentümer zzgl. Autoritativer Daten der Kartenherausgeber. </p>
+  <p id="polarion_149" style="margin-left: 40px;"> Genutzt werden die Standard FHIR Operationen&nbsp;<a href="https://build.fhir.org/http.html" target="_top" class="descriptionLink">https://build.fhir.org/http.html</a>&nbsp;mit der Einschränkung auf eigene Resourcen und die autoritativer Daten der Kartenherausgeber. </p>
+  <p id="polarion_152" style="margin-left: 40px;">Zur Nutzung dieser Operation muss ein entsprechendes Owner-Accesstokens vom&nbsp;FHIRDirectoryAuthorizationService vorliegen.</p>
+  <ul id="polarion_136"> 
+   <li>ProviderAuthorizationService</li> 
+  </ul>
+  <p id="polarion_144" style="margin-left: 40px;">Ermöglicht Authentisierung und Autorisierung der TI-Anbieter zum Zugriff auf FHIR Directory. Am Anfang nur TI-Messenger Anbieter, später auch KIM-Anbieter und zukünftige Anbieter.</p>
+  <p id="polarion_156" style="margin-left: 40px;"> Bei Aufruf der REST-Schnittstelle <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/tim-provider-services</span> wird ein Accesstoken (provider-accesstoken) benötigt. Hierfür muss sich der Client bei dem ProviderAuthorizationService des VZD-FHIR-Directory mittels OAuth2 Client Credentials Flow authentisieren. Zuvor MUSS der Client beim VZD-Anbieter Client-Credentials beantragen. </p>
+  <p id="polarion_145"></p>
+  <p id="polarion_125">Geplante FHIR-Directory Schnittstellen in zukünftigen Releases:</p>
+  <ul id="polarion_135"> 
+   <li><span style="font-size: 11pt;color: #242424;line-height: 1.5;">FHIRDirectorySearchTI API</span></li> 
+  </ul>
+  <p id="polarion_185" style="margin-left: 40px;"> <span style="font-size: 11pt;color: #242424;line-height: 1.5;">G</span><span style="color: #242424;">eplante<span style="font-size: 10pt;line-height: 1.5;">&nbsp;Schnittstelle für die Suche der Einträge ohne Authentisierung im geschlossenen Netz der TI (TI-Anbindung erforderlich).</span></span> </p>
+  <ul id="polarion_187"> 
+   <li><span style="font-size: 11pt;color: #242424;line-height: 1.5;">FHIRDirectoryAdmin API</span></li> 
+  </ul>
+  <p id="polarion_188" style="margin-left: 40px;"> <span style="font-size: 10pt;color: #242424;line-height: 1.5;">Geplante&nbsp;Schnittstelle für die Administration der Daten im FHIR Verzeichnisdienst als Nachfolger für REST Pflegeschnittstelle&nbsp;(DirectoryAdministration).</span> </p>
+  <p id="polarion_189"></p>
+  <p id="polarion_191"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121202">4.1 FHIR-Directory</h3>
+  <p id="polarion_64"> Das FHIR-Directory ist eine Implementierung der HL7-FHIR-Spezifikation Release 4.0.1 (<a href="https://www.hl7.org/fhir/http.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/http.html</a>&nbsp;). </p>
+  <p id="polarion_93">Das FHIR-Directory ist nur über den FHIR-Proxy erreichbar.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-122890">4.1.1 Datenmodell</h4>
+  <p id="polarion_98"> Es werden die FHIR-Ressourcen gemäß folgender Tabelle verwendet.<span id="polarion-comment:54"></span> </p>
+  <p id="polarion_160"> Alle Änderungen und Erweiterungen der FHIR Ressourcen sind in&nbsp;<a href="https://simplifier.net/vzd-fhir-directory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory</a>&nbsp;veröffentlicht. </p>
+  <p id="polarion_92" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">3</span>: VZD-FHIR-Directory, FHIR-Ressourcen </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=69" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">FHIR-Ressource</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Organization in gematik Directory</span>&nbsp;(<span style="font-size: 10pt;line-height: 1.5;">OrganizationDirectory)</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Profil der Organization Ressource.<br> (<a href="https://simplifier.net/vzd-fhir-directory/organizationdirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/organizationdirectory</a>)<br> Das Element Identifier wurde so geändert, dass Telematik-IDs als Identifier verwendet werden können. <br> Im Element type wird der Typ der Organisation eingetragen. Dafür werden die CodeSysteme&nbsp;<a href="https://simplifier.net/vzd-fhir-directory/organizationprofessionoid" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/organizationprofessionoid</a>&nbsp;&nbsp;&nbsp;und&nbsp;<a href="https://simplifier.net/vzd-fhir-directory/practitionerprofessionoid" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/practitionerprofessionoid</a>&nbsp;&nbsp;sowie das ValueSet&nbsp;<a href="https://simplifier.net/vzd-fhir-directory/organizationtypevs" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/organizationtypevs</a>&nbsp;&nbsp;verwendet.<span id="polarion-comment:53"></span><br> <br> Wenn das Element type den Wert "TI-Messenger-Provider" hat, dann handelt es sich um eine Organisation, die einen TI-Messenger-Dienst innerhalb der Telematikinfrastruktur bereitstellt. In endpoint-Referenzen der Organisation werden die&nbsp;Domainnamen der TI-Messenger-Service-Instanzen eingetragen. Dazu wird im Elem<span style="font-size: 9pt;line-height: 1.5;">ent connectionType&nbsp;d</span>as Codesystem&nbsp;<a href="https://simplifier.net/vzd-fhir-directory/endpointdirectoryconnectiontype" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/endpointdirectoryconnectiontype</a><span id="polarion-comment:177"></span>&nbsp; <span id="polarion-comment:102"></span>mit <pre style="color: #333333;"><span style="color: #800000;"><a href="https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/79553/~details#CodeSystem.concept.code" target="_top" title="CodeSystem
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeSystem.json">code</a></span> <span style="color: #FF0000;">value</span><span style="color: #000000;">="</span><span style="color: #0000FF;">tim-domain</span><span style="color: #000000;">"</span></pre><pre style="color: #333333;"><span style="color: #800000;"><a href="https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/79553/~details#CodeSystem.concept.display" target="_top" title="CodeSystem
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeSystem.json">display</a></span> <span style="color: #FF0000;">value</span><span style="color: #000000;">="</span><span style="color: #0000FF;">TI-Messenger domain name</span><span style="color: #000000;">"</span></pre>&nbsp;verwendet. Im Element "name" wird der TI-Messenger Domainname eingetragen. In "managingOrganization" wird die OrganizationDirectory eingetragen, für die die TI-Messenger-Domain eingerichtet wurde.<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Practitioner in gematik Directory&nbsp;(<span style="color: #24292F;">PractitionerDirectory)</span></span></td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Profil der Practitioner Ressource. Lediglich das Element Identifier wurde so geändert, dass Telematik-IDs als Identifier verwendet werden können. (<a href="https://simplifier.net/vzd-fhir-directory/practitionerdirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/practitionerdirectory</a>)</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Endpoint in gematik Directory</span>&nbsp;(<span style="font-size: 10pt;line-height: 1.5;">EndpointDirectory)</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Endpoint Ressource (<a href="https://simplifier.net/vzd-fhir-directory/endpointdirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/endpointdirectory</a>)</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Location in gematik Directory</span>&nbsp;(<span style="font-size: 10pt;line-height: 1.5;">LocationDirectory)</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Location (<a href="https://simplifier.net/vzd-fhir-directory/locationdirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/locationdirectory</a>)</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">HealthcareService in gematik Directory</span>&nbsp;(<span style="font-size: 10pt;line-height: 1.5;">HealthcareServiceDirectory</span>)</td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">HealthcareService (<a href="https://simplifier.net/vzd-fhir-directory/healthcareservicedirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/healthcareservicedirectory</a>)</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 162px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">PractitionerRole in gematik Directory (PractitionerRoleDirectory)</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PractitionerRole (<a href="https://simplifier.net/vzd-fhir-directory/practitionerroledirectory" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/practitionerroledirectory</a>)</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_50"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123880|layout=3">
+   <p><b>ML-123880</b></p>
+   <p>Nur die in Tabelle "VZD-FHIR-Directory, FHIR-Ressourcen" angegebenen Ressourcen dürfen im VZD-FHIR-Directory erzeugt werden. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-122922">4.1.2 Mapping von LDAP auf FHIR-Ressourcen</h4>
+  <p id="polarion_120">Die OrganizationDirectory- und PractitionerDirectory-Basiseinträge werden durch den FHIR Proxy mit den Daten aus dem VZD-LDAP-Directory initial erzeugt und anschließend fortlaufend aktualisiert. Die synchronisierten Daten können nicht durch die Besitzer (Leistungserbringer und Organisationen) geändert werden.</p>
+  <p id="polarion_60"> Die Daten aus dem VZD-LDAP-Directory werden wie folgt den FHIR-Ressourcen zugeordnet:&nbsp;<a href="https://github.com/gematik/api-vzd/blob/master/docs/LDAP2FHIR_Sync.adoc" target="_top" class="descriptionLink">https://github.com/gematik/api-vzd/blob/master/docs/LDAP2FHIR_Sync.adoc</a>. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-121203">4.1.3 FHIR RESTful API</h4>
+  <p id="polarion_70"> Die Operationen der FHIR-Schnittstelle sind durch die FHIR-Spezifikation festgelegt (<a href="https://www.hl7.org/fhir/http.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/http.html</a>&nbsp;). </p>
+  <p id="polarion_32"> Die Anzahl der mittels /search Operation gefundenen und zurückgegebenen Einträge wird initial auf 100 begrenzt. Dieser Wert MUSS konfigurierbar sein.&nbsp;Die zurückgegebenen Einträge werden in einem FHIR-Ressource-Bundle zusammengefasst. Im Attribut Bundle.total MUSS die Gesamtanzahl der gefundenen Einträge (total number of matches) zurückgegeben werden.&nbsp;<span id="polarion-comment:174"></span> </p>
+  <p id="polarion_81">Zusätzlich MUSS konfigurierbar sein, ob Paging eingesetzt wird und wie groß die page_size ist.&nbsp;Paging ist initial eingeschaltet mit page_size = 10. Wenn eine Suche mehr Treffer enthält, als in page_size angegeben, dann enthält die Response ein bundle mit den gefundenen Einträgen gemäß page_size und einen Link auf die nächste page.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-122889">4.2 FHIR-Proxy</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-123013">4.2.1 Schnittstellen</h4>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-123476">4.2.1.1 TLS-Verbindungsaufbau</h5>
+  <p id="polarion_104">Der FHIR-Proxy MUSS sich beim TLS-Verbindungsaufbau an den Endpunkten gegenüber Clients mit einem Extended Validation TLS-Zertifikat eines Herausgebers gemäß [CAB-Forum] authentisieren. Das Zertifikat MUSS an die Schnittstelle des Eingangspunkts für Clientsysteme gebunden werden, damit Clientsysteme beim TLS-Verbindungsaufbau eine vereinfachte Zertifikatsprüfung mit TLS-Standardbibliotheken durchführen können.</p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-123475">4.2.1.2 FHIR Schnittstelle für TI-Messenger-Nutzer FHIRDirectorySearchAPI</h5>
+  <p id="polarion_90"> <span style="font-weight: bold;">Endpunkte für die Suche von Einträgen im VZD-FHIR-Directory durch TI-Messenger-Clients</span> </p>
+  <p id="polarion_122"> In der Produktionsumgebung ist die URL:&nbsp;<a href="https://fhir-directory.vzd.ti-dienste.de/search" target="_top" class="descriptionLink">https://fhir-directory.vzd.ti-dienste.de/search</a>&nbsp;&nbsp;&nbsp;<span id="polarion-comment:103"></span><span id="polarion-comment:105"></span> </p>
+  <p id="polarion_100"> In der Referenzumgebung ist die URL: <a href="https://fhir-directory-ref.vzd.ti-dienste.de/search" target="_top" class="descriptionLink">https://fhir-directory-ref.vzd.ti-dienste.de/search</a>&nbsp;&nbsp;<span id="polarion-comment:133"></span> </p>
+  <p id="polarion_101"> In der Testumgebung ist die URL:&nbsp;<a href="https://fhir-directory-test.vzd.ti-dienste.de/search" target="_top" class="descriptionLink">https://fhir-directory-test.vzd.ti-dienste.de/search</a>&nbsp; </p>
+  <p id="polarion_102"> <span style="font-weight: bold;">Authentisierung</span> </p>
+  <p id="polarion_108"> Um die Schnittstelle nutzen zu können, MÜSSEN sich die Clients mit einem gültigen <span id="polarion-comment:134"></span>Token <span id="polarion-comment:135"></span>authentisieren, das von einem Matrix-Homeserver aus der TI-Messenger-Föderation ausgestellt wurde. Im Folgenden werden diese <span id="polarion-comment:136"></span>Accesstoken <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token&nbsp;</span>genannt. Nach erfolgreicher Prüfung des&nbsp;Matrix-OpenID-Token stellt der <span id="polarion-comment:137"></span>FHIR-Proxy dem TI-Messenger-Client ein neues OAuth Accesstoken aus (tim-accesstoken), das für Suchanfragen des&nbsp;TI-Messenger-Clients verwendet wird. Die Gültigkeitsdauer ist 24 Stunden. </p>
+  <p id="polarion_157">Das Accesstoken enthält folgende Attribute:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=158" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;"><span style="color: #434343;background-color: #F9F9F9;">{ <br> &nbsp; "</span><span style="color: #434343;">iss"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"https://fhir-directory.vzd.ti-dienste.de/tim-authenticate"<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"aud"</span><span style="color: #434343;background-color: #F9F9F9;">: [ </span>"https://fhir-directory.vzd.ti-dienste.de/search"<span style="color: #434343;background-color: #F9F9F9;"> ], <br> &nbsp; </span><span style="color: #434343;">"iat"</span><span style="color: #434343;background-color: #F9F9F9;">: </span><span style="color: #000000;">1630306800</span><span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"exp"</span><span style="color: #434343;background-color: #F9F9F9;">: </span><span style="color: #000000;">1630393200</span><span id="polarion-comment:138"></span><span style="color: #434343;background-color: #F9F9F9;"><br> }</span></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_159"> <span id="polarion-comment:28"></span><span id="polarion-comment:14"></span> </p>
+  <p id="polarion_165"> Das Attribut "iss" enthält die URL des <span id="polarion-comment:73"></span>Endpunktes f<span style="font-size: 10pt;line-height: 1.5;">ür die Authentisierung&nbsp;</span>in der jeweiligen Umgebung RU, TU oder PU. </p>
+  <p id="polarion_172">Das Attribut "aud" enthält die URL des Endpunktes in der jeweiligen Umgebung RU, TU oder PU.</p>
+  <p id="polarion_176"> <span style="font-weight: bold;">Endpunkte für die Authentisierung</span> </p>
+  <p id="polarion_166"> In der Produktionsumgebung ist die URL:&nbsp;<a href="https://fhir-directory.vzd.ti-dienste.de/tim-authenticate" target="_top" class="descriptionLink">https://fhir-directory.vzd.ti-dienste.de/tim-authenticate</a>&nbsp;&nbsp;&nbsp; </p>
+  <p id="polarion_167"> In der Referenzumgebung ist die URL:&nbsp;<a href="https://fhir-directory-ref.vzd.ti-dienste.de/tim-authenticate" target="_top" class="descriptionLink">https://fhir-directory-ref.vzd.ti-dienste.de/tim-authenticate</a>&nbsp; </p>
+  <p id="polarion_168"> In der Testumgebung ist die URL:&nbsp;<a href="https://fhir-directory-test.vzd.ti-dienste.de/tim-authenticate" target="_top" class="descriptionLink">https://fhir-directory-test.vzd.ti-dienste.de/tim-authenticate</a>&nbsp;&nbsp; </p>
+  <p id="polarion_137"> <span style="font-weight: bold;">Operationen</span> </p>
+  <p id="polarion_138"> Die FHIR <span style="font-size: 9pt;line-height: 1.5;">Operationen&nbsp;für die Suche nach Einträgen im VZD-FHIR-Directory&nbsp;sind in der HL7 FHIR Spezifikation (<a href="https://www.hl7.org/fhir/http.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/http.html</a>&nbsp;) festgelegt.<span id="polarion-comment:104"></span></span> </p>
+  <p id="polarion_52"> <span style="font-weight: bold;"><span id="polarion-comment:57"></span></span> </p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-123477">4.2.1.3 FHIR-Schnittstelle für Besitzer FHIRDirectoryOwnerAPI</h5>
+  <p id="polarion_85"> <span id="polarion-comment:94"></span>Die Schnittstelle ermöglicht es den Besitzern einer Telematik-ID, ihren Eintrag im VZD-FHIR-Directory zu ändern. Im bei der Authentifizierung verwendeten Accesstoken ist die Telematik-ID des Nutzers enthalten. Nur der Eintrag (PractitionerDirectory oder OrganizationDirectory) <span style="font-size: 10pt;line-height: 1.5;">mit der eigenen Telematik-ID&nbsp;</span>darf verändert werden.<span id="polarion-comment:106"></span> Dabei dürfen nur die Attribute verändert werden, die nicht vom VZD-LDAP-Directory synchronisiert werden. </p>
+  <p id="polarion_123"> <span style="font-weight: bold;">Endpunkte für das Ändern von eigenen Einträgen im VZD-FHIR-Directory durch TI-Messenger Clients und Org-Admin-Clients</span> </p>
+  <p id="polarion_126"> In der Produktionsumgebung ist die URL:&nbsp;<a href="https://fhir-directory.vzd.ti-dienste.de/owner" target="_top" class="descriptionLink">https://fhir-directory.vzd.ti-dienste.de/owner</a>&nbsp;&nbsp; </p>
+  <p id="polarion_130"> In der Referenzumgebung ist die URL:&nbsp;<a href="https://fhir-directory-ref.vzd.ti-dienste.de/owner" target="_top" class="descriptionLink">https://fhir-directory-ref.vzd.ti-dienste.de/owner</a>&nbsp; </p>
+  <p id="polarion_131"> In der Testumgebung ist die URL:&nbsp;<a href="https://fhir-directory-test.vzd.ti-dienste.de/owner&nbsp;" target="_top" class="descriptionLink">https://fhir-directory-test.vzd.ti-dienste.de/owner&nbsp;</a>&nbsp;&nbsp; </p>
+  <p id="polarion_151"> <span style="font-weight: bold;">Authentisierung</span> </p>
+  <p id="polarion_154"> <span id="polarion-comment:59"></span><span id="polarion-comment:60"></span>Um die Schnittstelle nutzen zu können, MÜSSEN sich die Clients mit einem gültigen Accesstoken authentisieren, das vom FHIR-Proxy ausgestellt wurde. Wenn kein gültiges Accesstoken im Client vorhanden ist, dann muss sich der Client an einem&nbsp;IDP der TI-IDP-Föderation authentisieren. </p>
+  <p id="polarion_202">Nur der eigene Eintrag mit einem Identifier passend zur Telematik-ID aus dem Accesstoken KANN bearbeitet werden. Für einen eigenen OrganizationDirectory-Eintrag KÖNNEN weitere OrganizationDirectory-Einträge erstellt und mit dem eigenen Eintrag verlinkt werden.</p>
+  <p id="polarion_133">Das Accesstoken enthält folgende Attribute:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=134" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;"><span style="color: #434343;background-color: #F9F9F9;">{ <br> &nbsp; "</span><span style="color: #434343;">iss"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"https://vzd-fhir-directory.vzd.ti-dienste.de/owner-authenticate"<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"sub"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"&lt;telematikID&gt;"<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"aud"</span><span style="color: #434343;background-color: #F9F9F9;">: [ </span>"https://vzd-fhir-directory.vzd.ti-dienste.de/owner"<span style="color: #434343;background-color: #F9F9F9;"> ], <br> &nbsp; </span><span style="color: #434343;">"iat"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>1630306800<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"exp"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>1630393200<span style="color: #434343;background-color: #F9F9F9;"><br> }</span></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_155"></p>
+  <p id="polarion_208"> Das Attribut "iss" enthält die URL des Endpunktes f<span style="font-size: 10pt;line-height: 1.5;">ür die Authentisierung&nbsp;</span>in der jeweiligen Umgebung RU, TU oder PU. </p>
+  <p id="polarion_209">Das Attribut "aud" enthält die URL des Endpunktes in der jeweiligen Umgebung RU, TU oder PU.</p>
+  <p id="polarion_210"> <span style="font-weight: bold;">Endpunkte für die Authentisierung</span> </p>
+  <p id="polarion_204"> In der Produktionsumgebung ist die URL:&nbsp;<a href="https://fhir-directory.vzd.ti-dienste.de/owner-authenticate" target="_top" class="descriptionLink">https://fhir-directory.vzd.ti-dienste.de/owner-authenticate</a>&nbsp;&nbsp; </p>
+  <p id="polarion_205"> In der Referenzumgebung ist die URL:&nbsp;<a href="https://vzd-fhir-directory-ref.vzd.ti-dienste.de/owner-authenticate&nbsp;" target="_top" class="descriptionLink">https://vzd-fhir-directory-ref.vzd.ti-dienste.de/owner-authenticate&nbsp;</a>&nbsp;&nbsp; </p>
+  <p id="polarion_206"> In der Testumgebung ist die URL:&nbsp;<a href="https://vzd-fhir-directory-test.vzd.ti-dienste.de/owner-authenticate" target="_top" class="descriptionLink">https://vzd-fhir-directory-test.vzd.ti-dienste.de/owner-authenticate</a>&nbsp;&nbsp; </p>
+  <p id="polarion_207"> <span style="font-weight: bold;">Operationen</span> </p>
+  <p id="polarion_158"> Die FHIR-<span style="font-size: 9pt;line-height: 1.5;">Operationen&nbsp;für das Ändern von eigenen Einträgen im VZD-FHIR-Directory&nbsp;sind in der HL7-FHIR-Spezifikation (<a href="https://www.hl7.org/fhir/http.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/http.html</a>&nbsp;) festgelegt.</span> </p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-123388">4.2.1.4 Schnittstelle FHIRDirectoryTIMProviderAPI (I_VZD_TIM_Provider_Services.yaml)</h5>
+  <p id="polarion_163"> <span style="font-weight: bold;">Endpunkte </span> </p>
+  <p id="polarion_139"> In der Produktionsumgebung ist die URL:&nbsp;<span style="font-size: 10pt;line-height: 1.5;"><a href="https://fhir-directory.vzd.ti-dienste.de/tim-provider-services" target="_top" class="descriptionLink">https://fhir-directory.vzd.ti-dienste.de/tim-provider-services</a>&nbsp;</span> </p>
+  <p id="polarion_140"> In der Referenzumgebung ist die URL:&nbsp;<a href="https://fhir-directory-ref.vzd.ti-dienste.de/tim-provider-services" target="_top" class="descriptionLink">https://fhir-directory-ref.vzd.ti-dienste.de/tim-provider-services</a>&nbsp; </p>
+  <p id="polarion_141"> In der Testumgebung ist die URL:&nbsp;<a href="https://fhir-directory-test.vzd.ti-dienste.de/tim-provider-services" target="_top" class="descriptionLink">https://fhir-directory-test.vzd.ti-dienste.de/tim-provider-services</a>&nbsp; </p>
+  <p id="polarion_164"> <span style="font-weight: bold;">Authentisierung</span> </p>
+  <p id="polarion_171"> Um die Schnittstelle nutzen zu können, muss sich der Registrierungsdienst des TI-Messenger-Anbieters mit einem Accesstoken authentisieren, das vom OAuth-Server des VZD-Anbieters ausgestellt wurde. Das Accesstoken hat eine Gültigkeitsdauer von 30 Minuten.<span id="polarion-comment:107"></span> </p>
+  <p id="polarion_170">Das Accesstoken enthält folgende Attribute:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=171" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;"><span style="color: #434343;background-color: #F9F9F9;">{ <br> &nbsp; "</span><span style="color: #434343;">iss"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"https://oauth.vzd.ti-dienste.de/authenticate"<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"sub"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"&lt;client_id&gt;"<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"aud"</span><span style="color: #434343;background-color: #F9F9F9;">: [ </span>"https://vzd-fhir-directory.vzd.ti-dienste.de/tim-provider-services"<span style="color: #434343;background-color: #F9F9F9;"> ], <br> &nbsp; </span><span style="color: #434343;">"iat"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>1630306800<span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"exp"</span><span style="color: #434343;background-color: #F9F9F9;">: </span></span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;color: #000000;line-height: 1.5;">1630308600</span><span style="font-size: 10pt;font-family: 'Courier New', Courier, monospace, HanWangKanTan;line-height: 1.5;"><span style="color: #434343;background-color: #F9F9F9;">,<br> &nbsp; </span><span style="color: #434343;">"scope"</span><span style="color: #434343;background-color: #F9F9F9;">: </span>"tim-provider-services"<span style="color: #434343;background-color: #F9F9F9;"><br> }</span></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_177"> Das Attribut "iss" enthält die URL des Endpunktes f<span style="font-size: 10pt;line-height: 1.5;">ür die Authentisierung&nbsp;</span>in der jeweiligen Umgebung RU, TU oder PU. </p>
+  <p id="polarion_178">Das Attribut "aud" enthält die URL des Endpunktes in der jeweiligen Umgebung RU, TU oder PU.</p>
+  <p id="polarion_179"> <span style="font-weight: bold;">Endpunkte für die Authentisierung</span> </p>
+  <p id="polarion_180"> In der Produktionsumgebung ist die URL:&nbsp;<a href="https://oauth.vzd.ti-dienste.de/authenticate&nbsp;" target="_top" class="descriptionLink">https://oauth.vzd.ti-dienste.de/authenticate&nbsp;</a>&nbsp;&nbsp; </p>
+  <p id="polarion_182"> In der Referenzumgebung ist die URL:&nbsp;<a href="https://ru-oauth-test.vzd.ti-dienste.de/authenticate" target="_top" class="descriptionLink">https://ru-oauth-test.vzd.ti-dienste.de/authenticate</a>&nbsp; </p>
+  <p id="polarion_183"> In der Testumgebung ist die URL:&nbsp;<a href="https://tu-oauth-test.vzd.ti-dienste.de/authenticate" target="_top" class="descriptionLink">https://tu-oauth-test.vzd.ti-dienste.de/authenticate</a>&nbsp; </p>
+  <p id="polarion_173"> <span style="font-weight: bold;">Registrierung</span> </p>
+  <p id="polarion_29">Für den Zugriff auf den OAuth-Server MUSS der TI-Messenger-Anbieter für seinen Registrierungsdienst beim VZD-Anbieter Client-Credentials beantragen. Die Beantragung erfolgt über einen genehmigungspflichtigen Service-Request im TI-ITSM-System.</p>
+  <p id="polarion_69">Die Registrierung und Vergabe der Credentials erfolgt dabei auf Anbieterebene.</p>
+  <p id="polarion_103">Der Antrag MUSS folgende Informationen enthalten, um weiter bearbeitet werden zu können:</p>
+  <ul id="polarion_105"> 
+   <li>Angaben zur Rolle (hier TI-Messenger-Anbieter)<span id="polarion-comment:22"></span> und Organisation des Antragstellers, Erläuterung der Berechtigung und des Bedarfs (zur Verifikation notwendig)</li> 
+   <li>Kontaktdaten zu Ansprechpartnern beim Antragsteller (2 Personen) inkl. Telefonnummer, E-Mail-Adresse, Anschrift<br> </li> 
+   <li>Angabe der Betriebsumgebung (RU/PU)</li> 
+   <li>E-Mail-Adresse und dazugehöriges S/MIME-Zertifikat (in einer ZIP-Datei als Anhang), an welche die Zugangsdaten verschlüsselt übermittelt werden können (kostenlose Zertifikate sind z. B. beim DGN erhältlich)<br> </li> 
+   <li>falls bereits vorhanden, eine entsprechende Ticketnummer</li> 
+   <li>nur bei Deregistrierung durch den Antragsteller: vorab vergebene Client-ID</li> 
+   <li>gewünschte Bezeichnung im OAuth2-Server ID_TOKEN claim scope.</li> 
+  </ul>
+  <p id="polarion_106">Nach Prüfung der Angaben, werden die Zugangsdaten direkt vom Anbieter Zentrale Plattformdienste (vgl. gemKPT_Betr) an die gewünschte E-Mail-Adresse übermittelt.</p>
+  <p id="polarion_107">Es ist zu beachten, dass dieser Prozess ausschließlich für Neuanlagen und Löschungen vorgesehen ist. Änderungen oder der Neuversand von Zugangsdaten können nicht bearbeitet werden.</p>
+  <p id="polarion_109"> <span style="font-size: 10pt;line-height: 1.5;"> <span style="font-weight: bold;">Operationen</span></span> </p>
+  <p id="polarion_174"> <span style="font-weight: normal;font-size: 10pt;line-height: 1.5;">Die Schnittstelle ist in&nbsp;I_VZD_TIM_Provider_Services.yaml als OpenAPI RESTful Service&nbsp;spezifiziert.</span> </p>
+  <p id="polarion_212"> <a href="https://github.com/gematik/api-vzd/blob/main/src/openapi/I_VZD_TIM_Provider_Services.yaml" target="_top" class="descriptionLink">https://github.com/gematik/api-vzd/blob/main/src/openapi/I_VZD_TIM_Provider_Services.yaml</a>&nbsp; </p>
+  <p id="polarion_110" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">4</span>: Tab_VZD_TIM-Provider-Services_Operations </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=109" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Operation</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">GET /<br> "<span style="font-size: 10pt;line-height: 1.5;">getInfo"</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Mit dieser Operation können Metadaten (insbesondere auch die Version und das verwendete yaml-File) dieser Schnittstelle abgefragt werden.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">GET&nbsp;<span style="font-size: 10pt;line-height: 1.5;">/FederationList/federationList.json</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Mit dieser Operation wird die Liste der an der TI-Messenger-Föderation beteiligten Matrix-Domainnamen abgefragt (Föderationsliste).&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">GET&nbsp;<span style="font-size: 10pt;line-height: 1.5;">/localization<br> "whereIs"</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Gibt für den übergebenen Hash einer MXID den Teil des Directories zurück, in dem die MXID enthalten ist.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">POST&nbsp;/federation<br> "addTiMessengerDomain"</td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Eine Domaine zur Föderation hinzufügen.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">GET /federation<br> "getTiMessengerDomain"</td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Lesen einer oder aller eigener Domains.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">PUT&nbsp;/federation<br> "updateTiMessengerDomain"</td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Aktualisierung einer Domaine.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">DELETE&nbsp;/federation<br> "deleteTiMessengerDomain"</td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Löschen einer Domaine.</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 177px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">GET /federationCheck<br> "checkTiMessengerDomains"</td> 
+     <td style="text-align: left;vertical-align: top;width: 554px;height: 12px;border: 1px solid #CCCCCC;padding: 5px;">Prüft, ob alle eigenen Domains (durch Token ermittelbar) zu aktiven Organisationen gehören. Gibt die eigenen Domains zurück, die zu inaktiven Organisationen gehören.</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_111"></p>
+  <p id="polarion_193"> <span id="polarion-comment:63"></span>Im Attribut "sub" des Accesstokens ist die client_id des TI-Messenger-Registrierungsdienstes enthalten. Wenn der TI-Messenger-Registrierungsdienst einen OrganizationDirectory-Eintrag erzeugt, dann MUSS die client_id im Element alias des Eintrags enthalten sein. </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-123330">4.2.2 Aktualisierung der Basiseinträge</h4>
+  <p id="polarion_89">Der FHIR-Proxy aktualisiert regelmäßig die Basiseinträge im VZD-FHIR-Directory mit den geänderten Daten des VZD-LDAP-Directories (siehe AF_10047 Einträge mit dem VZD-LDAP-Directory abgleichen). Das Intervall für die regelmäßige Aktualisierung MUSS konfigurierbar sein und wird initial auf 2 Stunden festgelegt.&nbsp;</p>
+  <p id="polarion_82"> Es MUSS (analog dem Background-Sync-Verfahren in die LDAP flache Liste) eine weitere Synchronisation mittels PUSH in den FHIR VZD möglich sein.<span style="font-size: 10pt;line-height: 1.5;"><span id="polarion-comment:168"></span></span> </p>
+  <p id="polarion_95"> Zukünftig ist vorgesehen, dass Kartenherausgeber direkt die Basiseinträge ihrer <span id="polarion-comment:90"></span>Mitglieder im VZD-FHIR-Directory über eine FHIR-Schnittstelle verwalten können.<span id="polarion-comment:47"></span> </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-123676">4.2.3 Erzeugung und Bereitstellung der Föderationsliste</h4>
+  <p id="polarion_113"> <span style="font-size: 10pt;line-height: 1.5;"><span id="polarion-comment:172"></span></span>Die Föderationsliste MUSS bei Änderung der Domains durch TI-Messenger-Anbieter<span id="polarion-comment:183"></span> neu erzeugt und zum Download über die Schnittstelle&nbsp;I_VZD_TIM_Provider_Services&nbsp;bereitgestellt werden. </p>
+  <p id="polarion_134"> <span id="polarion-comment:16"></span> </p>
+  <p id="polarion_115">Die Föderationsliste hat folgende Struktur:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=72" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">{ <br> &nbsp; &nbsp;"version": &lt;Version der Föderationsliste (Integer)&gt;,<span id="polarion-comment:182"></span><br> &nbsp; "hashAlgorithm": "sha256", <br> &nbsp; "domainList": [<br> &nbsp; &nbsp; {<br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;"domain": "hash der Domain",<br> &nbsp; &nbsp; &nbsp; "telematikID": "Telematik-ID der Organisation, welche die Domain nutzt",<span id="polarion-comment:184"></span><br> &nbsp; &nbsp; &nbsp;&nbsp;"isInsurance": false<br> &nbsp;&nbsp; &nbsp;}<br> &nbsp; ]<br> }</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_116"></p>
+  <p id="polarion_97">Die Föderationsliste MUSS mit einer JWS gemäß RFC7515 signiert werden. Der zu verwendende Signatur-Algorithmus MUSS "ES256" sein. Dazu MUSS ein Signatur-Zertifikat der Komponenten-PKI der TI (C.FD.SIG) verwendet werden. Das Signatur-Zertifikat und das ausstellende CA-Zertifikat MÜSSEN im Signatur-Header enthalten sein.</p>
+  <p id="polarion_117">Der Signatur-Header hat folgende Struktur:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=117" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">{ <br> &nbsp; "alg": "ES256",<br> &nbsp; "x5c": [<br> &nbsp; &nbsp; "&lt;X.509 Sig-Cert, base64-encoded DER&gt;",<br> &nbsp; &nbsp; "&lt;X.509 CA-Cert, base64-encoded DER&gt;"<br> &nbsp; ]<br> }</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_118"></p>
+  <p id="polarion_142">Die signierte Föderationsliste hat gemäß RFC7515 folgende Struktur:</p>
+  <table id="polarion_wiki macro name=table;params=header=no|width=90%|uid=143" class="polarion-Document-table" style="width: 90%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;"> 
+   <tbody> 
+    <tr> 
+     <td style="height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">{ <br> &nbsp; "payload": "&lt;Föderationsliste, BASE64URL&gt;",<br> &nbsp; "signatures": [<br> &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; "header":&lt;Signatur-Header&gt;,<br> &nbsp; &nbsp; &nbsp; "signature":"&lt;signature, BASE64URL&gt;"<br> &nbsp; &nbsp; }<br> &nbsp; ]<br> }</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <pre id="polarion_175"></pre>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123677|layout=3">
+   <p><b>ML-123677</b></p>
+   <p>Im Sicherheitsgutachten des VZD-FHIR-Directories sind geeignete Maßnahmen gegen die Manipulation der Föderationsliste beschrieben. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-132695">4.2.4 Lokalisierung einer MXID (Operation whereIs)</h4>
+  <p id="polarion_27"> Die Operation prüft, in welchem Teil des Directorys (Organisation, Person) eine MXID enthalten ist, und gibt das Prüfergebnis zurück. Übergeben wird die MXID an die Operation in URL Form.<br> Damit diese Operation performant ist, darf bei Aufruf der Operation nicht der gesamte FHIR Datenbestand durchsucht werden. Dies kann z. B. durch eine Performance-optimierte Tabelle mit den MXIDs und dazugehörigem Ergebnis gewährleistet werden. </p>
+  <p id="polarion_88"> Die Authentisierung des Clients erfolgt für Operation whereIs entsprechend Kapitel <span class="polarion-rte-link" data-type="crossReference" id="fake" data-item-id="ML-123475" data-option-id="longoutline"></span>.<span id="polarion-comment:176"></span> </p>
+  <p id="polarion_91"> <span style="font-size: 10pt;line-height: 1.5;">Der FHIR-Proxy MUSS die Lokalisierung einer MXID über Operation whereIs performant bereitstellen. Dazu MUSS der&nbsp;FHIR-Proxy bei jeder Änderung an den Endpoint-Einträgen (der MXID darin)&nbsp;die benötigten Daten für die performante Antwort der whereIs Operation aktualisieren.&nbsp;Der FHIR-Proxy DARF NICHT die originalen FHIR-Daten für die Ausführung der&nbsp;whereIs Operation durchsuchen. </span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123994">4.3 Übergreifende Vorgaben</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-123329">4.3.1 Sicherheit und Datenschutz</h4>
+  <p id="polarion_36">Die folgenden Vorgaben gelten auch für den FHIR-VZD.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-115063|external=true|anchor=17d49489-c0a8e834-4dfaa9be-c39f2ec3">
+   <p><b>TIP1-A_5546-01</b></p>
+   <p>Der Anbieter des VZD MUSS die Integrität und Authentizität der im VZD gespeicherten Daten gemäß den Richtlinien des Bundesamtes für Sicherheit in der Informationstechnik für allgemeine Verzeichnisdienste, [BSI APP.2.1], implementieren. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_192"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10258|external=true|anchor=17d49489-c0a8e834-4dfaa9be-77e3c0e4">
+   <p><b>TIP1-A_5548</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD MUSS Änderungen der Verzeichnisdiensteinträge protokollieren und muss sie 6 Monate zur Verfügung halten.</span></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_194">6 Monate ist die maximale Nachweistiefe, ohne in den Bereich der Vorratsdatenspeicherung zu kommen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10259|external=true|anchor=17d49489-c0a8e834-4dfaa9be-488b33d4">
+   <p><b>TIP1-A_5549</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD DARF Suchanfragen NICHT speichern oder protokollieren.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10260|external=true|anchor=17d49489-c0a8e834-4dfaa9be-58185048">
+   <p><b>TIP1-A_5550</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD DARF von gelöschten Daten KEINE Kopien speichern.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10261|external=true|anchor=17d49489-c0a8e834-4dfaa9be-bc7229e0">
+   <p><b>TIP1-A_5551</b></p>
+   <p><p style="margin-left: 0px;"><span>Der Anbieter des VZD MUSS den Dienst gegen Datenverlust absichern.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10262|external=true|anchor=17d49489-c0a8e834-4dfaa9be-1509cc1a">
+   <p><b>TIP1-A_5552</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD MUSS die Ergebnisliste einer Suchanfrage auf 100 Suchergebnisse begrenzen.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10263|external=true|anchor=17d49489-c0a8e834-4dfaa9be-e73fb9fd">
+   <p><b>TIP1-A_5553</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD MUSS seine privaten Schlüssel sicher speichern und ihr Auslesen verhindern um Manipulationen zu verhindern.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-135430">
+   <p><b>TIP1-A_5554-01</b></p>
+   <p>Der VZD MUSS die Integrität und Authentizität der gespeicherten Registrierungsdaten gewährleisten. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10266|external=true|anchor=17d49489-c0a8e834-4dfaa9be-5d61bb8c">
+   <p><b>TIP1-A_5556</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD MUSS lokal und remote erkannte Fehler in seinem lokalen Speicher protokollieren.</span></p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-10268|external=true|anchor=17d49489-c0a8e834-4dfaa9be-c3e54927">
+   <p><b>TIP1-A_5558</b></p>
+   <p><p style="margin-left: 0px;"><span>Der VZD MUSS&nbsp;&nbsp;die Inhalte der TSL in einem lokalen Trust Store sicher speichern und für X.509-Zertifikatsprüfungen lokal zugreifbar halten.</span></p> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-123995">4.3.2 Betrieb</h4>
+  <p id="polarion_143">Das VZD-FHIR-Directory wird betrieblich als eine weitere Servicekomponente im Sinne der Weiterentwicklung des Verzeichnisdienstes betrachtet. Diese Servicekomponente kann, bis auf die Schnittstellen, unabhängig vom VZD-LDAP-Directory entwickelt und deployt werden. Aus Nutzersicht ist weniger die interne, logische Struktur der Verzeichnisdienste relevant, sondern die Verfügbarkeit der Schnittstellen und die im Verzeichnis enthaltenen Daten.</p>
+  <p id="polarion_71"> <span id="polarion-comment:175"></span> </p>
+  <p id="polarion_68"> <span id="polarion-comment:160"></span>Das VZD-FHIR-Directory MUSS die Bearbeitungszeitvorgaben unter Last aus Tab_VZD_FHIR_Perf unter der für alle Funktionen parallel anliegenden Spitzenlast erfüllen. </p>
+  <p id="polarion_73" class="polarion-rte-caption-paragraph"> Tabelle&nbsp;<span data-sequence="Tabelle" class="polarion-rte-caption">5</span>: Tab_VZD_FHIR_Perf </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 427px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;">Schnittstellenoperation</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 95px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;">Lastvorgaben<br> Spitzenlast<br> [1/sec]</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;">Bearbeitungs-zeitvorgaben<br> Mittelwert<br> [msec]</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 93px;height: 97.5px;border: 1px solid #CCCCCC;padding: 5px;">Bearbeitungs-zeitvorgaben<br> 99%-Quantil<br> [msec]</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 23px;border: 1px solid #CCCCCC;padding: 5px;">FHIR Schnittstelle für TI-Messenger-Nutzer (/search)</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 23px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 23px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 23px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 6px;border: 1px solid #CCCCCC;padding: 5px;">FHIR-Schnittstelle für Besitzer (/owner)</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 6px;border: 1px solid #CCCCCC;padding: 5px;">20</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 6px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 6px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 5px;border: 1px solid #CCCCCC;padding: 5px;">Schnittstelle I_VZD_TIM_Provider_Services (/tim-provider-services)</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 5px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;getFederationList</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;whereIs</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">50</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;addTiMessengerDomain</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;getTiMessengerDomain</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;updateTiMessengerDomain</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;deleteTiMessengerDomain</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 427px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">&nbsp; &nbsp;-&nbsp;checkTiMessengerDomains</td> 
+     <td style="text-align: left;vertical-align: top;width: 95px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1</td> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1000</td> 
+     <td style="text-align: left;vertical-align: top;width: 93px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">1250</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-122842">5 Anwendungsfälle</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123553">5.1 TI-Messenger-Nutzer sucht Einträge im FHIR-Directory</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-122874|layout=2">
+   <p><b>AF_10036</b></p>
+   <p>
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 132px;height: 19.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Attribute</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Bemerkung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 132px;height: 282px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung<span id="polarion-comment:108"></span></td> 
+       <td style="text-align: left;vertical-align: top;width: 599px;height: 282px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Nutzer können im FHIR-Directory nach HealthcareServiceDirectory- und PractitionerRoleDirectory-Einträgen suchen. Dazu ist eine Authentisierung am Auth-Service erforderlich. Hier ist die Authentisierung mit TI-Messenger-Clients beschrieben.<br> Wenn im TI-Messenger-Client kein gültiges tim-accesstoken vom Auth-Service vorhanden ist, wird vom TI-Messenger-Client am Matrix-Homeserver ein <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token</span> abgefragt und mit dem <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token</span> im Auth-Header der Endpunkt /tim-authenticate&nbsp;des Auth-Services aufgerufen. Der Auth-Service prüft das vom TI-Messenger-Client übergebene <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token</span>. Dabei MUSS der im <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token</span> angegebene matrix_server_name in der TI-Messenger Föderationsliste enthalten sein. Der Auth-Service ruft am Matrix-Homeserver die Operation GET/openid/userinfo mit dem <span style="font-size: 10pt;line-height: 1.5;">Matrix-OpenID-Token</span> als Parameter auf und erhält in der Response die MXID des <span style="font-size: 10pt;line-height: 1.5;">TI-Messenger-Nutzer</span>s.&nbsp;Damit ist die Authentisierung des Nutzers abgeschlossen. Der Auth-Service erstellt ein search-accesstoken<span style="font-size: 10pt;line-height: 1.5;"> und sendet es an den TI-Messenger-Client.<br> <span id="polarion-comment:70"></span>Der TI-Messenger-Client sendet ein&nbsp;GET Request gemäß FHIR-Spezifikation an den Endpunkt /search des FHIR-Proxy. Im Authentication Header ist das search-accesstoken enthalten.</span> <span id="polarion-comment:8"></span><br> <span style="font-size: 10pt;line-height: 1.5;">Der GET Request gemäß FHIR-Spezifikation wird vom FHIR-Proxy an das FHIR-Directory per http-Forward weitergeleitet. Der FHIR-Proxy erhält vom FHIR-Directory eine Response mit den gefundenen Einträgen als json Daten.<br> Die Response wird an den TI-Messenger-Client gesendet.&nbsp;<span id="polarion-comment:140"></span></span></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 132px;height: 19.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Vorbedingung</td> 
+       <td style="text-align: left;vertical-align: top;width: 599px;height: 19.2px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der Nutzer ist an seinem Homeserver registriert.</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 132px;height: 21px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Nachbedingung</td> 
+       <td style="text-align: left;vertical-align: top;width: 599px;height: 21px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der TI-Messenger-Client hat alle gefundenen Einträge empfangen.</td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <p class="polarion-rte-caption-paragraph" style="text-align: center;"> <img data-keep-next="true" title="12-SequenceDiagram.FHIR-Directory.search.png" src="attachments/ML-122874-12-SequenceDiagram.FHIR-Directory.search.png" style="width: 754px;height: 551px;" data-lastmodified="2022-05-30T16:35:51.253+02:00"> </p> <p class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___1"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">3</span>:&nbsp;Sequence diagram /search </p> <span id="polarion-comment:42"></span><span id="polarion-comment:18"></span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_45"> <span style="font-weight: bold;">Akzeptanzkriterien für den Anwendungsfall AF_10036 Nutzer sucht OrganizationDirectory- und PractitionerDirectory-Einträge im VZD-FHIR-Directory</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123485|layout=3">
+   <p><b>ML-123485</b></p>
+   <p>Am Endpunkt /search des FHIR-Proxy darf die Authentifizierung nur für Requests erfolgreich sein, die ein gültiges search-accesstoken im Authentication Header enthalten, das vom Auth-Service ausgestellt wurde. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123551">5.2 Eigentümer ändert seinen Eintrag im FHIR-Directory</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-122872|layout=2">
+   <p><b>AF_10037</b></p>
+   <p><br> 
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 107.953px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Attribute</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 471.781px;height: 19.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Bemerkung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 107.953px;height: 313px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung</td> 
+       <td style="text-align: left;vertical-align: top;width: 471.781px;height: 313px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span id="polarion-comment:58"></span><span id="polarion-comment:67"></span>Organisationen können ihren Eintrag im VZD-FHIR-Directory an die eigenen Strukturen anpassen. Leistungserbringer können z. B. die TI-Messenger-Adresse in ihrem Eintrag hinzufügen. Der Basiseintrag einer Organisation oder eines Leistungserbringers wird wie bisher durch die Kartenherausgeber erstellt. Die Organisation KANN eigene mit dem Basiseintrag verlinkte FHIR-Ressourcen erstellen, um die Struktur der Organisation abzubilden. Zum Beispiel können Krankenhäuser ihre Fachabteilungen als HealthcareService-Einträge abbilden, die mit dem Organization-Eintrag verlinkt sind.<br> Wenn der Org-Admin oder LE kein gültiges owner-accesstoken vom VZD-FHIR-Directory im Client vorliegt, muss die Authentisierung mittels OIDC an einem IDP der TI-IDP-Föderation erfolgen. Nach erfolgreicher Authentisierung ist die durch den IDP bestätigte Telematik-ID des Leistungserbringers oder der Organisation am Auth-Service bekannt. Für den Aufruf der FHIR-Operationen durch den Client stellt der Auth-Service dem Client ein owner-accesstoken aus, dass auch die Telematik-ID des LE oder der Organisation enthält. <br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 107.953px;height: 97.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Vorbedingung</td> 
+       <td style="text-align: left;vertical-align: top;width: 471.781px;height: 97.5px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Die Organisation oder der Leistungserbringer hat bereits einen Basiseintrag im VZD-FHIR-Directory.<br> Eine Authenticator-App des IDP steht zur Verfügung, mit der die Organisations-Identität oder die Leistungserbringer-Identität bei einem IDP der TI-IDP-Föderation bestätigt werden kann.</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 107.953px;height: 19.9844px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fehlermeldungen</td> 
+       <td style="text-align: left;vertical-align: top;width: 471.781px;height: 19.9844px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"><br> </span></td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <p class="polarion-rte-caption-paragraph" style="text-align: center;"> <img data-keep-next="true" title="11-SequenceDiagram.FHIR-Directory.owner.png" src="attachments/ML-122872-11-SequenceDiagram.FHIR-Directory.owner.png" style="max-width: 650px;" data-lastmodified="2022-06-01T11:31:54.950+02:00"> </p><p class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___2"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">4</span>:&nbsp;Sequenzdiagramm VZD-FHIR-Directory Änderung von eigenen OrganizationDirectory- oder PractitionerDirectory-Einträgen </p> <p></p> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_84"> <span style="font-weight: bold;">Akzeptanzkriterien für den Anwendungsfall AF_10037&nbsp;<span style="font-size: 10pt;line-height: 1.5;">OrganizationDirectory-</span>Einträge im VZD-FHIR-Directory ändern</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123873|layout=3">
+   <p><b>ML-123873</b></p>
+   <p><span style="font-weight: normal;">Am Endpunkt /owner des FHIR-Proxy darf die Authentifizierung nur für Nutzer erfolgreich sein, die ein gültiges Accesstoken&nbsp;vom VZD-FHIR-Directory vorweisen.</span><br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123874|layout=3">
+   <p><b>ML-123874</b></p>
+   <p>Im bei der Authentifizierung verwendeten Accesstoken ist die Telematik-ID des Nutzers enthalten. Nur der Eintrag (PractitionerDirectory oder OrganizationDirectory) <span id="polarion-comment:72"></span><span style="font-size: 10pt;line-height: 1.5;">mit der eigenen Telematik-ID&nbsp;</span>darf verändert werden. <span id="polarion-comment:79"></span>Dabei dürfen nur die Attribute verändert werden, die nicht vom VZD-LDAP-Directory synchronisiert werden.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123482|layout=3">
+   <p><b>ML-123482</b></p>
+   <p>Alle selbst durch den Besitzer angelegten FHIR-Einträge MÜSSEN mit dem eigenen Basiseintrag mittels partOf verlinkt sein. Wenn keine korrekte Verlinkung angegeben ist, dann MUSS der FHIR-Proxy das Erzeugen oder die Änderung des OrganizationDirectory-Eintrags mit der Fehlermeldung (HTTP 422 Unprocessable Entity) ablehnen. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123552">5.3 Anwendungsfälle der TI-Messenger-Anbieter im VZD-FHIR-Directory</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123334|layout=2">
+   <p><b>AF_10048</b></p>
+   <p>
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 91px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Attribute</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 640px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Bemerkung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 91px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Beschreibung</td> 
+       <td style="text-align: left;vertical-align: top;width: 640px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Für den Betrieb eines TI-Messenger-Fachdienstes ist es erforderlich, alle an der Föderation beteiligten Matrix-Domänen zu kennen, um nicht an der Föderation beteiligte Matrix-Domänen ausschließen zu können.<br> Die Domänen werden im VZD-FHIR-Directory in Endpoint-Einträgen gespeichert. Die Endpoint-Einträge eines TI-Messenger-Anbieters sind verlinkt mit seinem <span id="polarion-comment:50"></span>OrganizationDirectory-Eintrag. Der TI-Messenger-Anbieter verwaltet seine Einträge im VZD-FHIR-Directory selbst. Dazu beantragt der TI-Messenger-Anbieter für seinen Registrierungsdienst Client Credentials für die Nutzung der Schnittstelle&nbsp;I_VZD_TIM_Provider_Services. Mit den Credentials erhält der Registrierungsdienst vom VZD OAuth-Server ein Accesstoken, das zur Authentifizierung an der Schnittstelle genutzt wird. Nach erfolgreicher Authentisierung kann der Registrierungsdienst die FHIR-Operationen zur Verwaltung des eigenen OrganizationDirectory-Eintrags und der eigenen Endpoint-Einträge nutzen.<br> <br> Um die Gesamtheit der an der Föderation beteiligten Matrix-Domainnamen zu erhalten, wird die Operation GET /FederationList aufgerufen. Optional KANN die bereits bekannte Version im Request angegeben werden. Als Ergebnis erhält der Registrierungsdienst eine Liste der Hashes der an der Föderation beteiligten Domainnamen oder keine Liste, falls keine neuere Version existiert. Die Hashes der Domainnamen werden verwendet, um zu verhindern, dass jeder TI-Messenger-Anbieter alle Domainnamen im Klartext kennt.<br> </td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 91px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Vorbedingung</td> 
+       <td style="text-align: left;vertical-align: top;width: 640px;height: 17px;border: 1px solid #CCCCCC;padding: 5px;">Der Registrierungsdienst des TI-Messenger-Anbieters ist bereits als Nutzer des VZD-FHIR-Directories registriert und hat OAuth Client Credentials (client_id und client_secret) für die Umgebungen RU, TU und PU erhalten.</td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <p class="polarion-rte-caption-paragraph" style="text-align: center;"> <img data-keep-next="true" src="attachments/14-screenshot-20220607-130721.png" style="max-width: 650px;"> </p> <p class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___3"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">5</span>:&nbsp;VZD-FHIR-Directory_Sequenzdiagramm_TI-Messenger-Provider-Services </p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-123881|layout=3">
+   <p><b>ML-123881</b></p>
+   <p>An der&nbsp;Schnittstelle I_VZD_TIM_Provider_Services darf die Authentifizierung nur für Clients erfolgreich sein, die ein gültiges provider-accesstoken&nbsp;vom OAuth-Server des VZD-Anbieters vorweisen.<span id="polarion-comment:21"></span> <br> <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-123554">5.4 Einträge mit dem VZD-LDAP-Directory abgleichen</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-122988|layout=2">
+   <p><b>AF_10047</b></p>
+   <p>
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 120.883px;height: 17px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Attribute</th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 1052.82px;height: 17px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Bemerkung</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 120.883px;height: 17px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Beschreibung</td> 
+       <td style="text-align: left;vertical-align: top;width: 1052.82px;height: 17px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der FHIR-Proxy aktualisiert regelmäßig in einem konfigurierbaren Intervall die im VZD-LDAP-Directory seit der letzten Aktualisierung geänderten Einträge. <br> Da es sich um eine interne Schnittstelle des Verzeichnisdienstes handelt, wird nicht vorgegeben, wie die Schnittstelle zu implementieren ist. Die Übertragung der Daten MUSS TLS-verschlüsselt&nbsp;in einem internen Netzwerk des Verzeichnisdienstes erfolgen.&nbsp;Es werden alle geänderten Einträge seit der letzten Aktualisierung durch den FHIR-Proxy vom VZD-LDAP-Directory abgefragt und gemäß [VZD-FHIR-Directory_Mapping_LDAP_to_FHIR] aktualisiert. Dabei MÜSSEN auch im VZD-LDAP-Directory gelöschte Einträge erkannt und ebenfalls im VZD-FHIR-Directory gelöscht werden. Einträge ohne Zertifikat erhalten im VZD-FHIR-Directory den Wert<br> OrganizationDirectory.active = false bzw.&nbsp;PractitionerDirectory.active = false<br> Wird zu einem Eintrag im VZD-LDAP-Directory wieder ein Enc-Zertifikat ergänzt, dann erhält der Eintrag im VZD-FHIR-Directory den Wert TIOrganization.active = true bzw.&nbsp;PractitionerDirectory.active = true.<br> </td> 
+      </tr> 
+     </tbody> 
+    </table> <br> <img data-keep-next="true" title="1-VZD-FHIR-Directory_Sequenzdiagramm_Aktualisierung_der_Basiseinträge.png" src="attachments/ML-122988-1-VZD-FHIR-Directory_Sequenzdiagramm_Aktualisierung_der_Basiseinträge.png" style="max-width: 650px;margin-left: auto;margin-right: auto;display: block;" data-lastmodified="2021-08-19T18:14:59.680+02:00"> <p class="polarion-rte-caption-paragraph" style="text-align: center;" id="polarion___4"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">6</span>: VZD-FHIR-Directory, Aktualisierung der Basiseinträge </p> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-134278|layout=3">
+   <p><b>ML-134278</b></p>
+   <p>Der VZD FHIR-Proxy muss gewährleisten, dass nach einem konfigurierbaren Intervall die im VZD-LDAP-Directory seit der letzten Aktualisierung geänderten Einträge in das VZD FHIR-Directory synchronisiert wurden.<br> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_18"></p>
+  <p id="polarion_30"> <span id="polarion-comment:178"></span> </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121215">6 Verteilungssicht</h2>
+  <p id="polarion_48"> Das VZD-FHIR-Directory unterstützt initial die Anwendung TI-Messenger; wird zukünftig aber auch die anderen Anwendungen wie ePA und KIM in deren Folgeversionen sowie bisher unbekannte Fachanwendungen&nbsp;und neue Nutzergruppen <span id="polarion-comment:169"></span>unterstützen.&nbsp;Es ist daher erforderlich, dass das VZD-FHIR-Directory mit der Anzahl der Nutzerzugriffe skalieren und anwendungsspezifische Ressourcen speichern kann. </p>
+  <p id="polarion_83">Der FHIR-Proxy MUSS in mehreren Instanzen betrieben werden können, die die Schnittstellen Richtung Internet für Abfragen der TI-Messenger-Nutzer und Änderungen durch die Besitzer implementieren. Das Load-Balancing der Client-Requests erfolgt per DNS, indem für jede Instanz des FHIR-Proxy ein A und ein AAAA Resource Record für die RU, TU und PU FQDNs der Schnittstellen im DNS eingetragen wird. Instanzen des FHIR-Proxies werden je nach Last hinzugefügt oder entfernt.</p>
+  <p id="polarion_87">Die FHIR-Proxy sind auch die HTTP-Load-Balancer für die&nbsp;Lesezugriffe auf FHIR-Directory-Instanzen. Für den Schreibzugriff wird eine Instanz implementiert. Die Datenbanken der Instanzen für den Lesezugriff werden mit der Datenbank für den Schreibzugriff synchronisiert.</p>
+  <p id="polarion_94">Eine weitere Komponente setzt die Aktualisierung der Basiseinträge im FHIR-Directory mit den geänderten Daten aus dem VZD-LDAP-Directory um. Zusätzlich implementiert diese Komponente die Schnittstelle&nbsp;I_VZD_TIM_Provider_Services.</p>
+  <p id="polarion_56" style="text-align: center;"> <img src="attachments/15-screenshot-20220622-101305.png" style="max-width: 650px;"> </p>
+  <p id="polarion_63" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">7</span>: VZD-FHIR-Directory, Verteilungssicht&nbsp;<span id="polarion-comment:158"></span>&nbsp; </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-121216">7 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121217">7.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Kürzel</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 486.8px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Erläuterung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">AF</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Anwendungsfall</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">DNS</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Domain Name System</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">FHIR</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fast Healthcare Interoperable Resources</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">FQDN</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Fully Qualified Domain Name</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">LDAP</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Lightweight Directory Access Protocol</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">OWASP</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Open Web Application Security Project</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">PU</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Produktivumgebung</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">RU</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Referenzumgebung</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">SHA</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Secure Hash Algorithm</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TLS</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Transport Layer Security</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TI</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Telematikinfrastruktur</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TIM</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TI-Messenger (ausschließliche Verwendung der Abkürzung in Attributen, Parametern oder URLs)</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">TU</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Testumgebung</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">VZD</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Verzeichnisdienst</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121218">7.2 Glossar</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 195px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Begriff</span><br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 536px;height: 19.6px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Erläuterung</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 195px;height: 47px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Funktionsmerkmal</td> 
+     <td style="text-align: left;vertical-align: top;width: 536px;height: 47px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems.</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_181">Das Glossar wird als eigenständiges Dokument (vgl. [gemGlossar]) zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121219">7.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_150">Abbildung 1: Systemüberblick VZD-FHIR-Directory</a></li>
+   <li><a href="#polarion_37">Abbildung 2: Zerlegung des VZD</a></li>
+   <li><a href="#polarion___1">Abbildung 3:&nbsp;Sequence diagram /search</a></li>
+   <li><a href="#polarion___2">Abbildung 4:&nbsp;Sequenzdiagramm VZD-FHIR-Directory Änderung von eigenen OrganizationDirectory- oder PractitionerDirectory-Einträgen</a></li>
+   <li><a href="#polarion___3">Abbildung 5:&nbsp;VZD-FHIR-Directory_Sequenzdiagramm_TI-Messenger-Provider-Services</a></li>
+   <li><a href="#polarion___4">Abbildung 6: VZD-FHIR-Directory, Aktualisierung der Basiseinträge</a></li>
+   <li><a href="#polarion_63">Abbildung 7: VZD-FHIR-Directory, Verteilungssicht&nbsp;&nbsp;</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121220">7.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_80">Tabelle 1: Nutzer und Rollen&nbsp;</a></li>
+   <li><a href="#polarion_75">Tabelle 2: Kommunikationsbeziehungen zu IT-Systemen</a></li>
+   <li><a href="#polarion_92">Tabelle 3: VZD-FHIR-Directory, FHIR-Ressourcen</a></li>
+   <li><a href="#polarion_110">Tabelle&nbsp;4: Tab_VZD_TIM-Provider-Services_Operations</a></li>
+   <li><a href="#polarion_73">Tabelle&nbsp;5: Tab_VZD_FHIR_Perf</a></li>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-121221">7.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-121222">7.5.1 Dokumente der gematik</h4>
+  <p id="polarion_186">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummern sind in der aktuellen, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 146px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 585px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Herausgeber: Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146px;height: 13px;border: 1px solid #CCCCCC;padding: 5px;">[gemGlossar]</td> 
+     <td style="text-align: left;vertical-align: top;width: 585px;height: 13px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Einführung der Gesundheitskarte – Glossar</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_VZD]</td> 
+     <td style="text-align: left;vertical-align: top;width: 585px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">g<span style="font-size: 9pt;line-height: 1.5;">ematik:&nbsp;Spezifikation Verzeichnisdienst</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemSpec_Krypt]</td> 
+     <td style="text-align: left;vertical-align: top;width: 585px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Übergreifende Spezifikation Verwendung kryptographischer Algorithmen in der Telematikinfrastruktur</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[gemKPT_Betr]</td> 
+     <td style="text-align: left;vertical-align: top;width: 585px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Betriebskonzept Online-Produktivbetrieb</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 146px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[VZD-FHIR-Directory_Mapping_LDAP_to_FHIR]</td> 
+     <td style="text-align: left;vertical-align: top;width: 585px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">gematik: VZD Mapping LDAP zu FHIR Resouren<br> <a href="https://github.com/gematik/api-vzd/blob/d07ec12807498c159626e2a29fb8fbccf8f94c9f/docs/LDAP2FHIR_Sync.adoc" target="_top" class="descriptionLink">https://github.com/gematik/api-vzd/blob/d07ec12807498c159626e2a29fb8fbccf8f94c9f/docs/LDAP2FHIR_Sync.adoc</a>&nbsp;</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-121223">7.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=5" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Herausgeber (Erscheinungsdatum): Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">[CAB-Forum]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Liste vertrauenswürdiger Zertifikatsherausgeber (Root-CAs) für Anwendungen im Internet<br> https://cabforum.org/members/<span id="polarion-comment:159"></span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-132227">7.6 Versionierung Datenmodell</h3>
+  <p id="polarion_61"> Folgende Versionen der Datenmodell Ressourcen (<a href="https://simplifier.net/vzd-fhir-directory/" target="_top" class="descriptionLink">https://simplifier.net/vzd-fhir-directory/</a>&nbsp;) sind für die vorliegende Spezifikation relevant: </p>
+  <ul id="polarion_218"> 
+   <li><a href="https://simplifier.net/packages/de.gematik.fhir.directory/0.6.1" target="_top" style="color: #0E6980;">de.gematik.fhir.directory 0.6.1</a>&nbsp;<span id="polarion-comment:179"></span></li> 
+  </ul>
+  <p id="polarion_203"></p>
+ </body>
+</html>

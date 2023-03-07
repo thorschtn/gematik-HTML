@@ -1,0 +1,1091 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 12pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10" style="margin-left: 0px;"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 26pt;line-height: 1.2;">Spezifikation Datenschutz- und Sicherheitsanforderungen der TI an Anbieter </span> </p>
+  <p id="polarion_12"> <br> </p>
+  <p id="polarion_13"> <br> </p>
+  <div id="polarion_editor_html_block1" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.5.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571802</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>06.02.2023</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_DS_Anbieter</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_14"> <br> </p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-69109">Dokumentinformationen</h1>
+  <p id="polarion_16"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_17">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_18" data-keep-next="true"></p>
+  <p id="polarion_112"></p>
+  <p id="polarion_104"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=105" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 77px;height: 40px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Version<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 86px;height: 40px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Stand<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 65px;height: 40px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Kap./ Seite<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 353px;height: 40px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Grund der Änderung, besondere Hinweise<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 117px;height: 40px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Bearbeitung<br> </span></th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">0.9.0 </td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">18.09.17 </td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Initiale Erstellung </td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.0.0 </td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">14.05.18</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">freigegeben</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 11px;border: 1px solid #CCCCCC;padding: 5px;">1.0.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 11px;border: 1px solid #CCCCCC;padding: 5px;">05.06.18</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 11px;border: 1px solid #CCCCCC;padding: 5px;">7.2.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 11px;border: 1px solid #CCCCCC;padding: 5px;">formale Anpassung</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 11px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.1.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">18.12.18</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">4.1, S. 20</td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Änderung gemäß Änderungsliste P17.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.2.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">22.06.20</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Anpassungen lt. Änderungsliste P21.3</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.3.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">12.11.20</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung Scope-Themen zu R4.0.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.3.1</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">02.09.21</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Umbenennung der Begriffe "aAdG-NetG" in "WANDA Basic", "aAdG" und "aAdG-NetG-TI" in"WANDA Smart"&nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.4.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">31.01.22</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung ePA_Maintenance_21.5</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 77px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">1.5.0</td> 
+     <td style="text-align: left;vertical-align: top;width: 86px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">06.02.23</td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 353px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">Einarbeitung IDP_Maintenance_22.2</td> 
+     <td style="text-align: left;vertical-align: top;width: 117px;height: 20px;border: 1px solid #CCCCCC;padding: 5px;">gematik</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_20"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-21209">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-69109">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-21209">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21210">1 Einordnung des Dokuments</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21211">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21212">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21213">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21214">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21215">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21217">2 Modularisierung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21218">2.1 Zuordnung der Module zur Informationssicherheit</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21219">2.2 Zuordnung der Module zum Datenschutz</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21220">2.3 Regelungen im Anbietervertrag und Steckbriefen</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21221">3 Module der Informationssicherheit</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21222">3.1 Modul „Basis-IS“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21231">3.2 Modul „Basis-ISMS“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21248">3.3 Modul „Erweitertes ISMS“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21257">3.4 Modul „TI-Sicherheitsbericht“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21262">3.5 Modul „Erweiterter TI-Sicherheitsbericht“</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21266">4 Module des Datenschutzes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21267">4.1 Modul „Basis-DS“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21273">4.2 Modul „TI-Datenschutzbericht“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21277">4.3 Modul „Erweiterter TI-Datenschutzbericht“</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21281">5 Spezifische Module</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21282">5.1 Module für weitere Anwendungen</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21283">5.1.1 Modul „Weitere Anwendungen (mit TI-Beeinträchtigung)“</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21293">5.1.2 Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21297">5.2 Modul „Schlüsselverwaltung“</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21304">5.3 Modul „Kartenherausgabe“</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21305">6 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21306">6.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21307">6.2 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21308">6.3 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21309">6.4 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21310">6.4.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21311">6.4.2 Weitere Dokumente</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21312">7 Anhang B – Modularisierungskonzept</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21313">7.1 Anordnung der Module</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21314">7.2 Kriterien der Modulzuordnung</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21315">7.2.1 Kriterium: Spezifikationshoheit der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21316">7.2.2 Kriterium: Beeinträchtigung der TI</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-21317">8 Anhang C – Modulzuordnung bei Anwendbarkeit des § 274 Abs. 1 SGB V</a></li>
+  </div>
+  <p id="polarion_24"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21210">1 Einordnung des Dokuments</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21211">1.1 Zielsetzung</h3>
+  <p id="polarion_25">Das Dokument definiert übergreifende Sicherheits- und Datenschutzanforderungen für Anbieter von Diensten der Telematikinfrastruktur (TI), Anbieter von Fachdiensten VSDM gemäß § 291 Abs. 2b SGB V, Anbieter von Rechenzentrums-Consumern (RZ-Consumer) sowie Anbieter weiterer Anwendungen gemäß § 291a Abs. 7 Satz 3 SGB V.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21212">1.2 Zielgruppe</h3>
+  <p id="polarion_26">Das Dokument richtet sich an Anbieter von Diensten der Telematikinfrastruktur, Anbieter von Fachdiensten VSDM gemäß § 291 Abs. 2b SGB V, Anbieter von Rechenzentrums-Consumern (RZ-Consumer) sowie Anbieter weiterer Anwendungen gemäß § 291a Abs. 7 Satz 3 SGB V.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21213">1.3 Geltungsbereich</h3>
+  <p id="polarion_27">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des Deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungs- oder Abnahmeverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.&nbsp;B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) festgelegt und bekannt gegeben.</p>
+  <p id="polarion_28" data-keep-next="true"> <span style="font-weight: bold;">Wichtiger Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_29" data-keep-next="true"> <span style="font-style: italic;font-size: 10pt;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21214">1.4 Abgrenzungen</h3>
+  <p id="polarion_73" class="gemStandard">Spezifische Datenschutz- und Sicherheitsanforderungen für einzelne Produkttypen sind in den jeweiligen Spezifikationen und Konzepten des Produkttyps festgelegt.</p>
+  <p id="polarion_75" class="gemStandard">Übergreifende Anforderungen an die Verwendung kryptographischer Algorithmen in der Telematikinfrastruktur sind in [gemSpec_Krypt] festgelegt.</p>
+  <p id="polarion_76" class="gemStandard">Dieses Dokument enthält keine Anforderungen an Hersteller von Produkten der Telematikinfrastruktur. Diese sind in [gemSpec_DS_Hersteller] festgelegt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21215">1.5 Methodik</h3>
+  <p id="polarion_34">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID in eckigen Klammern sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_35">Sie werden im Dokument wie folgt dargestellt:</p>
+  <p id="polarion_15" style="text-align: left;"> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;<br> </span><span style="font-weight: normal;"> Text / Beschreibung</span><span style="font-weight: bold;"><br> [</span><span style="font-weight: normal;">&lt;=</span><span style="font-weight: bold;">]</span><br> </p>
+  <p id="polarion_37">Dabei umfasst die Anforderung sämtliche innerhalb der Textmarken angeführten Inhalte.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21217">2 Modularisierung</h2>
+  <p id="polarion_39">Dieses Dokument enthält übergreifende Datenschutz- und Sicherheitsanforderungen an Anbieter von Diensten der TI, Anbieter von Fachdiensten VSDM gemäß § 291 Abs. 2b SGB V, Anbieter von Rechenzentrums-Consumern (RZ-Consumer) gemäß [gemKPT_Arch_TIP] sowie an Anbieter weiterer Anwendungen gemäß § 291a Abs. 7 S. 3 SGB&nbsp;V.</p>
+  <p id="polarion_79">Der Begriff „Dienste der TI“ umfasst dabei Dienste der TI-Plattform, Dienste der gesetzlichen Anwendungen der eGK nach § 291a Abs. 2 und Abs. 3 SGB&nbsp;V sowie Dienste der sicheren Übermittlungsverfahren nach § 291b Abs. 1e SGB&nbsp;V.</p>
+  <p id="polarion_82">Im Gegensatz zu den Diensten der TI fallen die Fachdienste VSDM nicht in den gesetzlichen Aufgabenbereich der gematik gemäß §&nbsp;291b Abs. 1 SGB V. Die Fachdienste VSDM sind Fachdienste der Krankenkassen. Hieraus resultiert für die Fachdienste VSDM eine gesonderte Anforderungszuordnung und sie werden daher auch nicht unter dem Begriff „Dienste der TI“ subsummiert.</p>
+  <p id="polarion_85">Ein RZ-Consumer ist ein in einem Rechenzentrum betriebener Produkttyp einer Fachanwendung der TI, der als Consumer mit der TI interagiert und dabei sowohl Anteile der TI-Plattform als auch Anteile der Fachanwendung enthält. Der Produkttyp KTR-AdV ist ein Beispiel eines RZ-Consumers [gemSysL_AdV].</p>
+  <p id="polarion_40">Alle Anforderungen sind in Module unterteilt. Jede Anforderung ist dabei genau einem Modul zugeteilt. Diese Module werden anschließend Anbietern zugeordnet (siehe Abbildung 1). Ist ein Modul einem Anbieter zugeordnet, muss dieser alle Anforderungen des Moduls umsetzen.</p>
+  <p id="polarion_90"></p>
+  <p id="polarion_41" style="text-align: center;" data-keep-next="true"> <img data-keep-next="true" src="attachments/Picture_3.png" style="width: 520px;height: 372px;"> </p>
+  <p id="polarion_42" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">1</span>: Anforderungen, Module und Anbieter </p>
+  <p id="polarion_43"></p>
+  <p id="polarion_106">Abbildung 2 zeigt die Module im Überblick; unterteilt in Module zur Informationssicherheit (blau), zum Datenschutz (grün) sowie spezifische Module (rot). Die Anforderungen der Module sind in den Kapiteln 3, 4 und 5 beschrieben.</p>
+  <p id="polarion_44" style="text-align: center;" data-keep-next="true"> <img data-keep-next="true" src="attachments/Picture_2.png" style="width: 396px;height: 378px;"> </p>
+  <p id="polarion_45" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">2</span>: Modulübersicht für Anbietermodule </p>
+  <p id="polarion_46"></p>
+  <p id="polarion_107">Die Module zur Informationssicherheit (blau) und zum Datenschutz (grün) sind anbieterübergreifend, d.&nbsp;h. unabhängig von einer speziellen Rolle des Anbieters.</p>
+  <p id="polarion_47">Darüber hinaus gibt es spezifische Module für Kartenherausgeber, Anbieter von Schlüsselverwaltungen sowie Anbieter weiterer Anwendungen nach § 291a Abs. 7 S. 3 SGB V (unterteilt in weitere Anwendungen mit möglicher TI-Beeinträchtigung und weitere Anwendungen, bei denen eine TI-Beeinträchtigung technisch ausgeschlossen ist). Diese Module enthalten Sicherheitsanforderungen, die nur von Anbietern in diesen Rollen zu erfüllen sind.</p>
+  <p id="polarion_48">Im Folgenden bezeichnet der Begriff „weitere Anwendungen“ immer weitere Anwendungen nach § 291a Abs. 7 S. 3 SGB V.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21218">2.1 Zuordnung der Module zur Informationssicherheit</h3>
+  <p id="polarion_49">In diesem Abschnitt werden die anbieterübergreifenden Module zur Informationssicherheit Anbietern von Diensten der TI, Anbietern der Fachdienste VSDM, Anbietern von Rechenzentrums-Consumern (RZ-Consumer) und Anbietern weiterer Anwendungen zugeordnet (Abbildung 3).</p>
+  <p id="polarion_50">Bei den Fachdiensten VSDM und weiteren Anwendungen wird unterschieden, ob der Verlust der Sicherheit des Dienstes die Sicherheit oder den Datenschutz der TI beeinträchtigen könnte oder ob dies technisch ausgeschlossen ist. Dies ist abhängig vom technischen Anschlusstyp des Dienstes an die TI.</p>
+  <p id="polarion_51">Die aktuell verfügbaren Anschlusstypen sind der Sichere Zentrale Zugangspunkt (SZZP) und das Sicherheitsgateway Bestandsnetze (SG-BNet). Beim Sicherheitsgateway Bestandsnetze kann eine Beeinträchtigung der TI technisch ausgeschlossen werden, da darüber keine Dienste der TI erreichbar sind. Beim Verlust der Sicherheit eines über einen SZZP an die TI angeschlossenen Dienstes hingegen ist eine Beeinträchtigung der TI technisch nicht ausgeschlossen.&nbsp;&nbsp;</p>
+  <p id="polarion_52">Derzeit werden die Fachdienste VSDM mittels SZZP an die TI angeschlossen. Daher werden den Fachdiensten VSDM die Module der Zeile „Beeinträchtigt TI“ zugeordnet. Die Zuordnung der Module zu den Fachdiensten VSDM berücksichtigt die Anwendbarkeit des § 274 Abs. 1 SGB V (vgl. Anhang C).</p>
+  <p id="polarion_53">Die gematik prüft, ob ein technischer Anschlusstyp zur Verfügung gestellt werden kann, über den die Fachdienste VSDM und die weiteren Anwendungen ein Zugriff auf Dienste der TI ermöglicht wird und der gleichzeitig die TI vor Angriffen schützt, um so Sicherheitsanforderungen auf Seiten des Anbieters derart entbehrlich zu machen, dass bestimmte Module zur Sicherheit für den Anbieter entfallen. In den Abbildungen ist dieser intendierte technische Anschlusstyp als „Dienstegateway“ aufgenommen, um das Ziel zu verdeutlichen, welche Module mit dem Dienstegateway im Gegensatz zum Anschluss mittels SZZP entfallen sollen.</p>
+  <p id="polarion_31">Für Dienste der TI-Plattform, der § 291a-eGK-Anwendungen und der sicheren Übermittlungsverfahren sowie der KTR-AdV als RZ-Consumer ist die Zuordnung der Module unabhängig vom Anschlusstyp. Der Verlust der Sicherheit der Dienste der TI (selbst wenn sie nicht an das zentrale Netz der TI angeschlossen sind) und der KTR-AdV, ist sofort auch eine Beeinträchtigung der Sicherheit der TI, da diese Produkttypen selbst ein integraler Bestandteil der TI sind (daher „nicht anwendbar“ in der Abbildung). Zum Beispiel könnte bei einer kompromittierten CVC-Root-CA (als Dienst der TI-Plattform) CV-Schlüsselmaterial unautorisiert ausgestellt werden, das einen Zugriff auf medizinische Daten von eGKs ermöglicht.</p>
+  <p id="polarion_55" data-keep-next="true">Die Produkttypen der TI-Plattform sind in [gemKPT_Arch_TIP] festgelegt.</p>
+  <p id="polarion_38"> <img src="attachments/9-screenshot-20180406-111900.png" style="max-width: 750px;" data-lastmodified="2018-04-06T11:19:37.497+01:00"> </p>
+  <p id="polarion_57" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">3</span>: Zuordnung der Module der Informationssicherheit </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21219">2.2 Zuordnung der Module zum Datenschutz</h3>
+  <p id="polarion_30" class="gemStandard">Abbildung 4 zeigt die Zuordnung der anbieterübergreifenden Module zum Datenschutz.</p>
+  <p id="polarion_32" class="gemStandard">Anbietern werden Module zum Datenschutz nur zugeordnet, falls personenbezogene Daten in ihren Diensten verarbeitet werden.</p>
+  <p id="polarion_58">Die Anforderungen der gematik zum Datenschutz konkretisieren die bestehenden Vorschriften zum Datenschutz um TI-spezifische Vorgaben, die aus Sicht der gematik&nbsp; notwendig sind, ihren gesetzlichen Auftrag nach § 291b Abs. 1 SGB V zu erfüllen. Die Anforderungen der gematik ersetzen die bestehenden Vorschriften zum Datenschutz nicht. Diese sind weiterhin von den Anbietern in ihrer eigenen Verantwortung einzuhalten.</p>
+  <p id="polarion_62" style="text-align: center;" class="polarion-rte-caption-paragraph"></p>
+  <p id="polarion_19" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/10-screenshot-20180406-112414.png" style="max-width: 750px;" data-lastmodified="2018-04-06T11:24:21.001+01:00"> </p>
+  <p id="polarion_21" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">4</span>: Zuordnung der Module zum Datenschutz </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21220">2.3 Regelungen im Anbietervertrag und Steckbriefen</h3>
+  <p id="polarion_63">Neben den Anforderungen des Datenschutzes und der Informationssicherheit dieses Dokumentes können sich für Anbieter weitere vertragliche Pflichten bzgl. Datenschutz und Informationssicherheit ergeben.</p>
+  <p id="polarion_64">Hierzu gehören insbesondere Festlegungen, ob bei Zuordnung des Moduls „Erweitertes ISMS“ zusätzlich eine ISO27001-Zertifizierung gefordert wird.</p>
+  <p id="polarion_66">Die Art des Nachweises der Anforderungen (Sicherheitsgutachten, Anbietererklärungen) ergibt sich aus dem Steckbrief des Zulassungs- bzw. Bestätigungsobjekts.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21221">3 Module der Informationssicherheit</h2>
+  <p id="polarion_68">Dieses Kapitel beschreibt die Anforderungen der Module zur Informationssicherheit.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21222">3.1 Modul „Basis-IS“</h3>
+  <p id="polarion_69">Die Anforderungen dieses Moduls fordern ein grundlegendes Informationssicherheitsmanagement. Vorgaben zu dessen konkreter Ausgestaltung erfolgen jedoch nicht.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21223|layout=0">
+   <p><b>GS-A_5551</b></p>
+   <p>Der Anbieter MUSS sicherstellen, dass sich die Betriebsumgebung/en der mittels der TI erreichbaren Dienste auf dem Gebiet eines Mitgliedstaates der EU bzw. des EWR befindet/befinden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_71">Hinweis: Anbietern von Fachdiensten VSDM wird die Anforderung GS-A_5551 aufgrund gesetzlicher Regelungen im SGB X nicht zugeordnet.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21224|layout=0">
+   <p><b>GS-A_5552</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS die erforderlichen technischen Maßnahmen treffen, um die Anforderungen an die Sicherheit des Dienstes der TI, des RZ-Consumers, der Fachdienste VSDM bzw. der weiteren Anwendung im Hinblick auf die Schutzbedürftigkeit der dort verarbeiteten Daten zu gewährleisten. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21225|layout=0">
+   <p><b>GS-A_5553</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS eine aktuelle und nachvollziehbare Dokumentation besitzen, in der der Schutzbedarf der Daten und die technischen Maßnahmen beschrieben werden, die getroffen wurden, um die Anforderungen an die Sicherheit des Dienstes der TI, des RZ-Consumers, der Fachdienste VSDM bzw. der weiteren Anwendung im Hinblick auf die Schutzbedürftigkeit der dort verarbeiteten Daten zu gewährleisten. Es sind zudem die Wirksamkeit der Sicherheitsmaßnahmen hinsichtlich des Schutzbedarfs der verarbeiteten Daten, die Restrisiken, ein Netzstrukturplan und die Maßnahmen zum Notfallmanagement zu dokumentierten.<span style="font-size: 11pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;"></span> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21226|layout=0">
+   <p><b>GS-A_5554</b></p>
+   <p>Der Anbieter MUSS Prozesse zur Gewährleistung der Informationssicherheit aufbauen und kontinuierlich verbessern. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21227">
+   <p><b>GS-A_4523-01</b></p>
+   <p>Der Anbieter MUSS im Rahmen des Informationssicherheitsmanagements eine Kommunikationsschnittstelle direkt der gematik mitteilen (übliche Kontaktinformationen wie Name eines Ansprechpartners, Stellvertreter, E-Mailadresse, Telefon, Fax, Anschrift, …). <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21228">
+   <p><b>GS-A_4524-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS Änderungen an der Kommunikationsschnittstelle seines Informations­sicherheits­managements der gematik unverzüglich direkt melden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21229|layout=0">
+   <p><b>GS-A_5555</b></p>
+   <p>Der Anbieter MUSS erhebliche Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit, die zum Ausfall oder zur Beeinträchtigung der Sicherheit oder Funktionsfähigkeit des Dienstes der TI, des RZ-Consumers, der Fachdienste VSDM bzw. der weiteren Anwendung oder zum Ausfall oder zur Beeinträchtigung der Sicherheit oder Funktionsfähigkeit der Telematikinfrastruktur führen können oder bereits geführt haben, unverzüglich nach bekannt werden direkt der gematik melden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21230|layout=0">
+   <p><b>GS-A_5556</b></p>
+   <p>Der Anbieter MUSS bei erheblichen Sicherheitsvorfällen oder Sicherheitsnotfällen, die Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. weitere Anwendungen betreffen, unverzüglich Maßnahmen zur Behebung des Vorfalls bzw. Notfalls umsetzen und den erfolgreichen Abschluss direkt an die gematik melden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_86">Hinweis: TI-ITSM-Teilnehmer melden die erfolgreiche Behebung eines Vorfalls gemäß den Vorgaben des Incident Managements (vgl. [gemRL_Betr_TI]).</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21231">3.2 Modul „Basis-ISMS“</h3>
+  <p id="polarion_96">Die Anforderungen dieses Moduls richten sich an die Ausgestaltung des ISMS beim Anbieter.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21232">
+   <p><b>GS-A_4980-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS für mindestens genau die Umgebungen, in denen die Dienste der TI, RZ-Consumer, der Fachdienste VSDM bzw. die weiteren Anwendungen betrieben werden, die internationale Norm ISO/IEC 27001 umsetzen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_98">Hinweis: Falls Anbieter direkt von der gematik beauftragt werden, wird zusätzlich eine ISO 27001-Zertifizierung mit einem Geltungs­bereich, der den betriebenen Dienst der TI und die unterstützenden Systeme umfasst, gefordert.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21233">
+   <p><b>GS-A_4981-01</b></p>
+   <p>Der Anbieter MUSS für mindestens genau die Umgebungen, in denen die Dienste der TI, RZ-Consumer, der Fachdienste VSDM bzw. die weiteren Anwendungen betrieben werden, zu allen gemäß der Erklärung der An­wend­barkeit (engl. „Statement of Applicability“) anwendbaren Maßnahmen (engl. „controls“) der internationalen Norm ISO/IEC 27001 ergreifen und die dort angegebenen Ziele (engl. „objectives“) erreichen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21234">
+   <p><b>GS-A_4982-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter SOLL für mindestens genau die Umgebungen, in denen die Dienste der TI, RZ-Consumer, der Fachdienste VSDM bzw. die weiteren Anwendungen betrieben werden, beim Ergreifen der Maßnahmen (engl. „controls“) aus der internationalen Norm ISO/IEC 27002 die dort angegebene „Anleitung zur Umsetzung“ (engl. „implementation guidance“) und die dort angegebenen „Weiteren Informationen“ (engl. „other information“) befolgen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_101">Hinweis: Der Nachweis der Umsetzung der Anforderungen GS-A_4980-01, GS-A_4981-01 und GS-A_4982-01 kann durch Vorlage eines ISO27001-Zertifikats, welches den Geltungsbereich des Dienstes der TI, RZ-Consumers, der Fachdienste VSDM bzw. der weiteren Anwendung und der unterstützenden Systeme umfasst, erfolgen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21235">
+   <p><b>GS-A_4983-01</b></p>
+   <p>Der Anbieter SOLL für mindestens genau die Umgebungen, in denen die Dienste der TI, der RZ-Consumer, die Fachdienste VSDM bzw. die weiteren Anwendungen betrieben werden, bei der Umsetzung der inter­nationalen Normen ISO/IEC 27001 und ISO/IEC 27002 die anwendbaren Anforderungen des BSI-Grundschutzkompendiums oder entsprechende Maßnahmen, die ein vergleichbares Sicherheitsniveau gewährleisten, umsetzen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_103">Hinweis: Der Anbieter muss aufgrund der Anforderung GS-A_4983-01 neben der nativen ISO 27001-Vorgehensweise nicht die Grundschutzvorgehensweise (BSI Standard 200-X) umsetzen. Eine zusätzliche Dokumentation ist aufgrund der Anforderung nicht erforderlich. Das BSI-Grundschutzkompendium beschreibt zu erreichende Sicherheitsanforderungen detaillierter als die Normen ISO 27001 und ISO 27002. Hierdurch soll eine gemeinsame Baseline anhand des BSI-Grundschutzkompendiums über das erforderliche Sicherheitsniveau und die Angemessenheit von Maßnahmen erlangt werden. Beispielsweise wird es einem Sicherheitsgutachter hierdurch erleichtert, die Angemessenheit von getroffenen Sicherheitsmaßnahmen besser einzuschätzen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21236">
+   <p><b>GS-A_3737-01</b></p>
+   <p>Der Anbieter MUSS die von ihm betriebenen Dienste der TI, RZ-Consumer, die Fachdienste VSDM bzw. weiteren Anwendungen in seine bestehende Sicherheitskonzeption einbinden oder ein betreiberspezifisches Sicherheitskonzept erstellen. Folgende Inhalte MÜSSEN vom Anbieter mindestens dokumentiert werden:<br> 
+    <ul>
+     <li>Beschreibung des Dienstes der TI, RZ-Consumers, der Fachdienste VSDM bzw. der weiteren Anwendung bzgl. der Informationssicherheitsaspekte,</li>
+     <li>Schutzbedarf der Daten,</li>
+     <li>Bedrohungsanalyse,</li>
+     <li>Dokumentation der Erfüllung der Sicherheitsanforderungen der gematik,</li>
+     <li>Sicherheitsanalyse (Verifikation der Wirksamkeit der Sicherheitsmaßnahmen),</li>
+     <li>Erstellung einer Restrisikoabschätzung.</li>
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21237">
+   <p><b>GS-A_3753-01</b></p>
+   <p>Der Anbieter MUSS die von ihm betriebenen Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. weiteren Anwendungen in seine bestehende Notfallkonzeption einbinden oder ein betreiberspezifisches Notfallkonzept erstellen. Folgende Inhalte MÜSSEN mindestens dokumentiert werden:
+    <div style="margin-left: 40px;"></div> 
+    <ul> 
+     <li>übergeordnete Notfallstrategie und Einordnung der Dienste der TI, RZ-Consumer, der Fachdienste VSDM bzw. weiteren Anwendungen,<br> </li> 
+     <li>gesetzliche und vertragliche Anforderungen,<br> </li> 
+     <li>Rollen und Verantwortliche in Bezug auf das Notfall-Management,<br> </li> 
+     <li>Dokumentation zur Notfallvorsorge inkl. durchgeführter Auswirkungsanalyse (BIA oder vergleichbar), <br> </li> 
+     <li>szenariounabhängige Notfallbewältigungsstrategie (Hierbei ist insbesondere auch die TI-spezifische Eskalation zu weiteren Anbietern und zur gematik zu beschreiben.),<br> </li> 
+     <li>Dokumentation der szenariospezifischen Notfallpläne (Hierbei sind neben allgemeinen Notfallplänen für Brand und Wassereinbruch etc. insbesondere auch TI-spezifische Notfallszenarien wie der Ausfall verfügbarkeitskritischer TI-Produkte, Schwächung oder Kompromittierung von kryptographischen Schlüsselmaterial etc. zu dokumentieren.)<br> </li> 
+     <li>Nachbereitung von Notfällen,<br> </li> 
+     <li>Prävention und Vorbeugung von Notfällen, inklusive Fachkunde und Schulungen. </li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21238">
+   <p><b>GS-A_3772-01</b></p>
+   <p>Der Anbieter SOLL bei der Erstellung seines Notfallkonzeptes den inhaltlichen Vorgaben des Dokuments BSI-Standard 100-4 „Notfallmanagement" [BSI 100-4] folgen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21239">
+   <p><b>GS-A_2328-01</b></p>
+   <p>Der Anbieter MUSS die Pflege und Fortschreibung der Sicherheits- und Notfallkonzepte für die von ihm betriebenen Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. weiteren Anwendungen durchführen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21240">
+   <p><b>GS-A_2329-01</b></p>
+   <p>Der Anbieter MUSS die Maßnahmen zur Sicherheit des Personals, der Organisation, der Infrastruktur und der eingesetzten Technologien ent­sprechend der erstellten Sicherheitskonzepte umsetzen und dokumentieren; wozu insbesondere die Implementierung und Einhaltung von organisatorischen und technischen Sicherheitsmaßnahmen und die Kommunikation sowie Durchführung von Sensibilisierungen für den Themenbereich „Informationssicherheit“ und Schu­lungen gehören. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21241">
+   <p><b>GS-A_2345-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS regelmäßige Reviews seiner bestehenden Sicherheitskonzepte inkl. der organisatorischen und technischen Sicherheitsmaßnahmen durchführen und die sich daraus ergebenen Verbesserungspotenziale umsetzen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21242">
+   <p><b>GS-A_2158-01</b></p>
+   <p>Der Anbieter MUSS sicherstellen, dass kryptographische Identitäten bzw. Schlüssel der Produktivumgebung der TI des Anbieters (Umgebungen mit Echtdaten) nicht in Testumgebungen und dass keine kryptographischen Identitäten bzw. Schlüssel aus Testumgebungen in der Produktivumgebung der TI genutzt werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21244">
+   <p><b>GS-A_4984-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter SOLL für die von ihm betriebenen Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. weiteren Anwendungen herstellerspezifische Sicherheitsvorgaben und -empfehlungen befolgen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21245">
+   <p><b>GS-A_2331-01</b></p>
+   <p>
+    <div style="margin-left: 40px;"></div>Der Anbieter MUSS Sicherheitsvorfälle („security incidents“) wirksam vorbeugen, diese aufdecken und unterbinden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119247">
+   <p><b>A_21716</b></p>
+   <p><span id="polarion-comment:111"></span>Anbieter der TI MÜSSEN erkannte Software-Schwachstellen in den von Ihnen betriebenen Umgebungen der TI unverzüglich nach dem international etablierten Standard Common Vulnerability Scoring System (CVSS) in der jeweils aktuellen Fassung bewerten. Hierbei MUSS eine Reaktionszeit von &lt;24h zur Bewertung der Schwachstellen an Werktagen sowie Bewertung der Schwachstellen an Wochenenden und Feiertagen von &lt;72 h gewährleistet werden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_114" class="MsoNormal"> <span id="polarion-comment:112"></span>Hinweis: Von der gematik werden in Ausnahmefällen auch vom CVSS-Standard abweichende Bewertungssysteme zur Schwachstellenbewertung akzeptiert, sofern vom Anbieter Transparenz über die Bewertungskriterien hergestellt werden kann. </p>
+  <p id="polarion_115" class="MsoNormal">Der Gesamtprozess ist nachfolgend skizziert:</p>
+  <p id="polarion_113" data-keep-next="true"></p>
+  <p id="polarion_116" data-keep-next="true"> <img src="attachments/12-screenshot-20211202-110000.png" style="width: 754px;height: 227px;"> </p>
+  <p id="polarion_117" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">5</span> - Gesamtprozess Schwachstellenmanagement </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119249">
+   <p><b>A_21717</b></p>
+   <p><span id="polarion-comment:113"></span>Anbieter der TI müssen der gematik gegenüber den CVS-Score sowie den Bewertungsvektor bei Bedarf und auf Nachfrage zur Verfügung stellen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119250">
+   <p><b>A_21718</b></p>
+   <p><span id="polarion-comment:114"></span>Anbieter der TI SOLLEN bewertete Software-Schwachstellen innerhalb der folgenden maximalen Behebungszeit schließen.<br> 
+    <table> 
+     <thead> 
+      <tr> 
+       <td></td> 
+      </tr> 
+     </thead>
+     <tbody></tbody> 
+    </table> 
+    <table id="polarion_wiki macro name=table;params=width=37.4%" class="polarion-Document-table" style="width: 37.4%;margin-left: 0px;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+     <tbody> 
+      <tr> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 81px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">CVSS (bewertet)<br> </th> 
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 179px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Behebungszeit</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 81px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">10-9</td> 
+       <td style="text-align: left;vertical-align: top;width: 179px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Schnellstmöglich, Individualvereinbarung</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 81px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">8,9-7</td> 
+       <td style="text-align: left;vertical-align: top;width: 179px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">1 Monat</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 81px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">6,9-5</td> 
+       <td style="text-align: left;vertical-align: top;width: 179px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">quartalsweise</td> 
+      </tr> 
+      <tr> 
+       <td style="text-align: left;vertical-align: top;width: 81px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">&lt;5</td> 
+       <td style="text-align: left;vertical-align: top;width: 179px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;">Regelpatchzyklus</td> 
+      </tr> 
+     </tbody> 
+    </table> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_118"> <span id="polarion-comment:115"></span>Hinweis: Die Behebungszeit beginnt nach Abschluss der Bewertungszeit (vgl. A_21716).&nbsp; Bei kritischen Schwachstellen (CVSS 10-9) oder sofern (z.B. aufgrund fehlender bereitgestellter Sicherheitspatches des Herstellers) eine Behebung innerhalb der definierten Fristen nicht erfolgen kann, ist eine Risikoanalyse in Abstimmung mit der gematik durchzuführen und mögliche alternative mitigierende Maßnahmen mit der gematik festzulegen. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119252">
+   <p><b>A_21720</b></p>
+   <p><span id="polarion-comment:116"></span>Anbieter der TI MÜSSEN das Coordinated Vulnerability Disclosure&nbsp;Programm der gematik aktiv durch ihre Beteiligung unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_119"> <span id="polarion-comment:117"></span>Hinweis: Zur aktiven Beteiligung gehört neben der Entgegennahme, Analyse und schnellstmöglichen Beseitigung der Schwachstelle auch deren kommunikative Begleitung in Richtung der gematik, des Melders der Schwachstelle sowie in Richtung der Öffentlichkeit/Medien nach Schließung der Schwachstelle. </p>
+  <p id="polarion_33"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-125710">
+   <p><b>GS-A_2355-02</b></p>
+   <p>Der<span id="polarion-comment:119"></span> TI Anbieter MUSS kritische und hochbewertete Schwachstellen (CVSS ab 7) und erhebliche Bedrohungen unverzüglich nach Abschluss der Bewertung direkt an die gematik melden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21247">
+   <p><b>GS-A_2332-01</b></p>
+   <p>Der Anbieter MUSS die durch Notfälle aufgetretenen Schäden zeitnah durch entsprechende Maßnahmen seines Notfallmanagements korrigieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-103084">
+   <p><b>A_19174</b></p>
+   <p>Der Anbieter MUSS der gematik halbjährlich und bei Änderungen eine Übersicht über die Außenschnittstellen der Telematikinfrastruktur (IP Adresse bzw. FQDN), die aus dem Internet erreichbar sind, zur Verfügung zu stellen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_23">Außenschnittstellen der Telematikinfrastruktur in diesem Kontext sind alle Schnittstellen zum Internet, die direkt oder indirekt zur Bereitstellung des TI-Produktes notwendig sind (z.B. Beantragungsschnittstelle bei TSPs, Zertifikatsaustauschschnittstellen zwischen TSP und Personalisierer).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-103085">
+   <p><b>A_19175</b></p>
+   <p>Der Anbieter MUSS zustimmen, dass die gematik monatliche nicht-invasive Schwachstellenscans auf die Außenschnittstellen ihrer TI-Produkte durchführen darf. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_22"> <span style="font-weight: bold;text-decoration: underline;">Spezialisierung von Anforderungen des Moduls Basis-IS</span> </p>
+  <p id="polarion_120">Das Modul Basis-ISMS spezialisiert die Anforderungen GS-A_5552, GS-A_5553 und GS-A_5554 des Moduls Basis-IS. Werden die Anforderungen des Moduls Basis-ISMS umgesetzt, so auch diese Anforderungen des Moduls Basis-IS. Daher werden die Anforderungen GS-A_5552, GS-A_5553 und GS-A_5554 nicht den Anbietern zugeordnet, denen das Modul Basis-ISMS zugeordnet ist.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21248">3.3 Modul „Erweitertes ISMS“</h3>
+  <p id="polarion_121">Von Anbietern, denen das Modul „Erweitertes ISMS“ zugeordnet ist, wird eine enge Zusammenarbeit mit dem CERT der gematik hinsichtlich der Erkennung, Analyse, Bewertung und dem Umgang von Sicherheitsvorfällen, Schwachstellen, Bedrohungen und Risiken erwartet. Die folgenden Anforderungen konkretisieren diese Notwendigkeit.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21250|layout=0">
+   <p><b>GS-A_5557</b></p>
+   <p>Der Anbieter MUSS im Rahmen eines Security Monitoring präventive Maßnahmen zur Erkennung und Analyse von Bedrohungen (z.&nbsp;B. über Korrelation und Auswertung von Log-Daten) durchführen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_124">Hinweis: Die durch den Anbieter auszuwertenden Informationen (z.&nbsp;B. Log-Daten der Kommunikationsverbindungen und anwendungsnaher Dienste) sind mit der gematik vor Betriebsaufnahme und im Rahmen der Einführung neuer Produkte und bei Änderungen an bestehenden Produkten abzustimmen. Die Anforderung GS-A_5557 gibt dabei bewusst nicht die einzusetzende Überwachungstechnologie bzw. Auswertungsmethode (z.&nbsp;B. IDS, SIEM) vor, sondern lässt den Anbietern die Freiheit bereits etablierte Technologien und Verfahren zu nutzen.&nbsp;</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111949">
+   <p><b>A_20714</b></p>
+   <p>Der Anbieter MUSS vor der Inbetriebnahme seines Produkts die technische Umsetzung des Security Monitorings, die zu überwachenden Systeme, die zu detektierenden Ereignisse auf den jeweiligen Systemen sowie die begleitenden organisatorischen Maßnahmen (z.B. Vorhaltefristen der detektierten Ereignisse) mit der gematik abstimmen, in einem Security Monitoring Konzept dokumentieren und umsetzen.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_84" class="MsoNormal">Hinweis: Zu überwachende Systeme sind einerseits insbesondere Firewalls, Application Level Gateways, Proxies und andere relevante technische Komponenten zur Absicherung von Übergängen zwischen der Telematikinfrastruktur und dem Internet, da sie neuralgische Punkte für die Sicherheit des Gesamtsystems darstellen und daher besonders geschützt werden müssen. Neben der Absicherung bedeutet dies insbesondere auch, dass die Schnittstellen mittels geeigneter Sensoren dahingehend überwacht werden, dass alle sicherheitsrelevanten Aktivitäten erfasst, kontinuierlich und echtzeitnah analysiert werden und erkannte Anomalien eskaliert werden.</p>
+  <p id="polarion_105">Andererseits werden auch innerhalb der TI durch verschiedene Systeme besondere sicherheitsrelevante Aktionen durchgeführt. Zu diesen Aktionen gehören insbesondere Aktionen, bei denen Identitäten zugewiesen, entzogen oder in sonstiger Form verändert werden bzw. der Zugriff(-sversuch) auf besonders kritische Systembestandteile (z.B. Nutzung von privatem Schlüsselmaterial). Da eine unautorisierte Nutzung dieser Aktionen die Sicherheitsarchitektur in besonderem Maße gefährdet, müssen auch diese Aktionen kontinuierlich und echtzeitnah auf Anomalien hin überwacht werden.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111950">
+   <p><b>A_20715</b></p>
+   <p>Der Anbieter MUSS regelmäßig und in Abstimmung mit der gematik (mindestens jährlich) die Umsetzung des Security Monitorings überprüfen, erkannte Verbesserungspotenziale etablieren und alle fachlichen Änderungen im Security Monitoring Konzept dokumentieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111951">
+   <p><b>A_20716</b></p>
+   <p>Der Anbieter MUSS die in seinem Security Monitoring Konzept festgelegten Systeme hinsichtlich sicherheitsrelevanter Ereignisse kontinuierlich und echtzeitnah überwachen.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111952">
+   <p><b>A_20717</b></p>
+   <p>Der Anbieter MUSS die Ergebnisse der Überwachung der in seinem Security Monitoring Konzept festgelegten Systeme an zentraler Stelle aggregieren, korrelieren und analysieren.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_108">Hinweis: Die Analyse sollte Mithilfe eines SIEM Tools erfolgen, um die zu erwartenden großen Datenmengen automatisiert auswerten zu können.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111953">
+   <p><b>A_20718</b></p>
+   <p>Der Anbieter MUSS auf detektierte Ereignisse (Alarme) unverzüglich reagieren und verifizieren, ob das Ereignis einen Sicherheitsvorfall darstellt.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_109">Hinweis: Sicherheitsvorfälle sind gemäß GS-A_5555 - Unverzügliche Meldung von erheblichen Sicherheitsvorfällen und -notfällen zu melden und gemäß GS-A_5556 - Unverzügliche Behebung von erheblichen Sicherheitsvorfällen und -notfällen ist darauf zu reagieren.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111954">
+   <p><b>A_20719</b></p>
+   <p>Der Anbieter MUSS für in seinem Security Monitoring Konzept festgelegten Systeme erkannte Anomalien technisch automatisiert über die von der gematik angebotene Schnittstelle an das TI SIEM System übermitteln.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-111955">
+   <p><b>A_20720</b></p>
+   <p>Der Anbieter MUSS der gematik auf Nachfrage Stichproben der Rohdaten für die in seinem Security Monitoring Konzept festgelegten Systeme automatisiert über die von der gematik angebotene Schnittstelle an das TI SIEM System übermitteln.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_111">Hinweis: Die Übermittlung der Rohdaten dient der Verifikation und kontinuierlichen Verbesserung der bestehenden Schwell- und Messwerte.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119251">
+   <p><b>A_21719</b></p>
+   <p><span id="polarion-comment:118"></span>Der Anbieter MUSS für die in seinem Security Monitoring Konzept festgelegten Systeme aggregierte Informationen (Reports) technisch automatisiert über die von der gematik angebotene Schnittstelle an das TI SIEM System übermitteln. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21251|layout=0">
+   <p><b>GS-A_5558</b></p>
+   <p>Der Anbieter MUSS im Rahmen seines Schwachstellenmanagements mindestens monatliche Schwachstellenscans oder vergleichbare Maßnahmen zur Erkennung und Analyse von tech­nischen Schwachstellen („vulnerabilities“) in den vom ihm betriebenen Dienst der TI bzw. RZ-Consumer durchführen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_129"> Hinweis: <span id="polarion-comment:120"></span>Der Scan muss dabei alle Systeme umfassen, die zur Erbringung des TI-Dienstes benötigt werden. Ausgenommen hiervon sind nur Systeme, die offline betrieben werden, d.h. über keine Netzwerkanbindung verfügen. Authentisierte Schwachstellenscans meint in diesem Kontext, dass im Rahmen des Scans eine Anmeldung auf den zu scannenden Systemen stattfindet, um eine detaillierte Prüfung auf Softwareschwachstellen vornehmen zu können. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-119255">
+   <p><b>GS-A_5559-01</b></p>
+   <p><span id="polarion-comment:121"></span>Der Anbieter MUSS der gematik die Ergebnisse von durchgeführten Schwachstellenscans oder der vergleichbaren Maßnahmen zur Erkennung und Analyse von technischen Schwachstellen monatlich in maschinenlesbarer Form&nbsp;zur Verfügung stellen. Dabei MÜSSEN mindestens die folgenden Inhalte enthalten sein: Scandatum, betroffene Umgebung (PU/RU/TU), betroffenes System (interner/externer Name), betroffenes System (IP-Adresse), betroffene Software, eindeutige&nbsp; Bezeichnung der Schwachstelle als CVE, Schweregrad der Schwachstelle als CVSS, Information zum Umgang mit der Schwachstelle. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_122"> Hinweis: <span id="polarion-comment:122"></span>Die Ergebnisse sollen vorzugsweise und soweit nicht anders besprochen im .csv Format an die gematik übermittelt werden. </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21254|layout=0">
+   <p><b>GS-A_5560</b></p>
+   <p>Der Anbieter MUSS von der gematik übermittelte Meldungen zu Schwachstellen, Bedrohungen und Sicherheitsvorfällen annehmen, bewerten und die erforderlichen Maßnahmen mit der gematik abstimmen und umsetzen.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_36">Hinweis: Sofern der Anbieter als Verpflichteter gemäß BSI-Gesetz Meldungen aus dem Lagezentrum des BSI erhält, wird die gematik diese Meldungen in der Regel nicht nochmals an die Anbieter zur Bewertung weiterleiten.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21255|layout=0">
+   <p><b>GS-A_5561</b></p>
+   <p>Der Anbieter MUSS der gematik einen Kontaktpunkt benennen, über den der Anbieter jederzeit sicherheitsrelevante Meldungen der gematik entgegennehmen kann, um eine unverzügliche Bearbeitung und Reaktion zu gewährleisten. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_54">Hinweis: Sofern der Anbieter aufgrund gesetzlicher Anforderungen bereits eine Kontaktstelle zum BSI eingerichtet hat, kann der Anbieter diese auch für den Kontakt zur gematik nutzen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21256|layout=0">
+   <p><b>GS-A_5562</b></p>
+   <p>Der Anbieter MUSS der gematik halbjährlich eine aktuelle Liste der zur Leistungserbringung von Diensten der TI bzw. RZ-Consumern verwendeten Hard- und Softwareprodukte sowie dem zugehörigen TI-Produkttyp übermitteln.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_136">Hinweis: Die zur Verfügung gestellten Produktinformationen (z.B. Betriebssystem, eingesetzte Webserver, Datenbanken, Netzwerkkomponenten inkl. jeweils aktueller Version) dienen dazu, bei Schwachstellen und Sicherheitsvorfällen die Sicherheitslage der TI besser einschätzen zu können und mit Anbietern gezielt Maßnahmen zur Beseitigung der Schwachstellen zeitnah abstimmen zu können. Von Interesse sind hierbei insbesondere exponierte Systeme der TI und Spezialkomponenten, die für die Sicherheit der TI eine besondere Bedeutung haben.</p>
+  <p id="polarion_137">Der Detailgrad und das zu verwendende Format der bereitzustellenden Liste der Produktinformationen sind vor Betriebsaufnahme und im Rahmen der Einführung neuer Produkte und bei Änderungen an bestehenden Produkten mit der gematik abzustimmen.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21257">3.4 Modul „TI-Sicherheitsbericht“</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21258|layout=0">
+   <p><b>GS-A_5563</b></p>
+   <p>Der Anbieter MUSS sicherstellen, dass der gematik jährlich ein Sicherheitsbericht vorliegt (spätestens bis Ende März des Folgejahres), der mindestens folgende Inhalte hat: <br> 
+    <ul>
+     <li>allgemeiner Überblick des Sicherheitsstatus der vom Anbieter betriebenen Dienste der TI, RZ-Consumer bzw. weiteren Anwendungen (einschl. sicherheitsrelevanter Erkenntnisse aufgrund gesetzlicher Änderungen, des technischen Fortschritts oder veränderter Bedrohungslage)</li>
+     <li>Übersicht der im Jahreszeitraum eigenverantwortlich durchgeführten Audits (Management Summary)</li>
+     <li>Handlungsempfehlungen und Entscheidungsbedarf auf Seiten der gematik.</li>
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21259">
+   <p><b>GS-A_4530-01</b></p>
+   <p>Der Anbieter MUSS sich bei erheblichen Sicherheitsvorfällen und Notfällen mit der gematik hinsichtlich der Maßnahmen und deren Umsetzung abstimmen sowie deren erfolgreichen Abschluss direkt der gematik melden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_56">Hinweis: Die erforderliche Abstimmung ist durch den Change-Prozess gemäß [gemRL_Betr_TI] abgedeckt. Der Anbieter ist bei erheblichen Sicherheitsvorfällen und Notfällen angehalten, auch vor Abstimmung mit der gematik Sofortmaßnahmen zur Gefahrenabwehr einzuleiten.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21260">
+   <p><b>GS-A_4532-01</b></p>
+   <p>Der Anbieter MUSS der gematik auf Anfrage die Umsetzung der Maßnahmen zur Behebung eines &nbsp;erheblichen Sicherheitsvorfalls oder Notfalls, z.&nbsp;B. in Form von zur Verfügung gestellten Dokumentationen, neuen Regelungen oder Prozessen sowie anhand von Auszügen aus der Konfiguration oder Logdaten, nachweisen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_59">Hinweis: Die Nachweise der Umsetzung der Maßnahmen in Folge eines erheblichen Sicherheitsvorfalls oder Notfalls kann über den Changemanagement-Prozess erfolgen. Sofern einzelne Nachweise aufgrund von Vertraulichkeitsbeschränkungen der gematik nicht übermittelt werden dürfen, kann die Anforderung auch durch Einsichtnahme der gematik vor Ort beim Anbieter im Rahmen eines anlassbezogenen Audits erfüllt werden.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21261">
+   <p><b>GS-A_5324-01</b></p>
+   <p>Der Anbieter MUSS der gematik zusichern, dass der Anbieter das koordinierende Informationssicherheitsmanagementsystem (kISMS) der gematik unterstützt, indem auf Einladung der gematik ein Sicherheitsbeauftragter des Anbieters am Arbeitskreis Datenschutz und Informationssicherheit (AK DIS) teilnimmt, der sich im Rahmen seiner beruflichen Tätigkeit mit dem operativen Betrieb der vom Anbieter betriebenen Dienste befasst.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_60">Hinweis: Sofern die Ziele des AK DIS durch die Teilnahme des Anbieters in anderen Gremien der gematik erreicht werden können, kann die gematik auf die Einladung des Anbieters zur Teilnahme am AK DIS verzichten.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21262">3.5 Modul „Erweiterter TI-Sicherheitsbericht“</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-121231">
+   <p><b>GS-A_5624-01</b></p>
+   <p>Der Anbieter MUSS zusichern, dass die gematik oder ein von ihr zur Geheimhaltung verpflichteter Bevollmächtigter berechtigt sind, <br>
+    <ul>
+     <li>pro Kalenderjahr maximal ein Regelaudit durchzuführen. Hiervon unbenommen ist das Recht der gematik, anlassbezogene Audits durchzuführen,</li>
+     <li>im Rahmen eines Audits beim Anbieter die konkrete Umsetzung der an den Anbieter gestellten Anforderungen der TI zur Informationssicherheit zu überprüfen,</li>
+     <li>im Rahmen eines Audits während der üblichen Geschäftszeiten die Geschäftsräume des Anbieters zu betreten,</li>
+     <li>im Rahmen eines Audits alle für das Audit benötigten Informationen zur Verfügung gestellt zu bekommen und insbesondere die erforderlichen Zugangs-, Auskunfts- und Einsichtsrechte zu erhalten.</li>
+    </ul><span id="polarion-comment:123"></span>Die Durchführung von Audits kann neben einer Begutachtung vor Ort und Dokumentenprüfungen auch die Durchführung von technischen Sicherheitsanalysen (z.B. Penetrationstests, Logfileanalyse oder Source-Code-Analysen) beinhalten. Dies hat der Anbieter im gleichen Maße für Unterauftragnehmer zuzusichern. Die Kosten, die dem Anbieter durch diese Mitwirkungspflichten entstehen, trägt der Anbieter selbst. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_123">Hinweis: Die gematik verfolgt mit der Durchführung der Audits das Ziel, gemeinsam mit den Anbietern in einem kooperativen Ansatz die Aufrechterhaltung des erforderlichen Sicherheitsniveaus nachzuweisen. Die gematik wird ein Regelaudit in der Regel drei Monate vor der Durchführung beim Anbieter ankündigen. Die Terminvereinbarung erfolgt im Einvernehmen mit dem Anbieter. Die gematik erstellt im Vorfeld einen Auditplan, aus dem der Umfang und die zu betrachtenden Themenbereiche festgelegt sind und stimmt den Auditplan mit dem Anbieter ab. Die gematik muss das Auditrecht nicht notwendigerweise jedes Jahr wahrnehmen.&nbsp;&nbsp;</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21265">
+   <p><b>GS-A_4526-01</b></p>
+   <p>Der Anbieter MUSS geeignete Nachweise zu den an die gematik übermittelten Sicherheitsmeldungen mindestens ein Jahr, nachdem diese bei der gematik eingegangen sind, vorhalten, um bei einem Informationssicherheitsaudit die Nachvollziehbarkeit der gemachten Meldungen zu ermöglichen. <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21266">4 Module des Datenschutzes</h2>
+  <p id="polarion_154">Dieses Kapitel beschreibt die Anforderungen der Module zum Datenschutz.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21267">4.1 Modul „Basis-DS“</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21268">
+   <p><b>GS-A_2076-01</b></p>
+   <p>Der Anbieter MUSS ein Datenschutzmanagement nach Baustein CON.2 des IT-Grundschutzkompendiums umsetzen <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21269|layout=0">
+   <p><b>GS-A_5564</b></p>
+   <p>Der Anbieter MUSS der gematik eine Kommunikationsschnittstelle für Datenschutz (übliche Kontaktinformationen, wie Name eines Ansprechpartners, Stellvertreter, E-Mail-Adresse, Telefon, Fax, Anschrift, …) sowie die für den Anbieter zuständige datenschutzrechtliche Aufsichtsbehörde mitteilen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_157">Hinweis: Bei der in GS-A_5564 geforderten Kommunikationsschnittstelle muss es sich nicht notwendigerweise um den betrieblichen Datenschutzbeauftragten handeln.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21270">
+   <p><b>GS-A_4479-01</b></p>
+   <p>Der Anbieter MUSS der gematik Änderungen der Kontaktinformationen seines Datenschutzmanagements unverzüglich mitteilen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21271">
+   <p><b>GS-A_4473-01</b></p>
+   <p>Der Anbieter MUSS jeden Datenschutzverstoß, der die Voraussetzungen für eine Benachrichtigung der Betroffenen nach Art. 34 DSGVO erfüllt und der sich auf die vom Anbieter betriebenen Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. die weiteren Anwendungen bezieht, unverzüglich nach bekannt werden der gematik zusammen mit folgenden Informationen melden: <br> 
+    <ul> 
+     <li>Die nach Art. 33 Abs. 3 DSGVO geforderten Informationen. </li> 
+     <li>Eine Information darüber, ob der Verstoß bei einem Auftragsverarbeiter erfolgte.</li> 
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_160">Hinweis: Die vorstehende Anforderung knüpft an den Inhalt der DSGVO unabhängig von deren Anwendbarkeit an. Gleiches gilt für nachstehende Anforderungen, in denen auf Voraussetzungen der DSGVO verwiesen wird. &nbsp;</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21272|layout=0">
+   <p><b>GS-A_5565</b></p>
+   <p>Der Anbieter MUSS im Fall von Datenschutzverstößen, die die Voraussetzungen für eine Benachrichtigung der Betroffenen nach Art. 34 DSGVO erfüllen und die sich auf die vom Anbieter betriebenen Dienste der TI, RZ-Consumer, Fachdienste VSDM bzw. die weiteren Anwendungen beziehen, unverzüglich Maßnahmen zur Behebung des Verstoßes umsetzen und den erfolgreichen Abschluss unverzüglich an die gematik melden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_165">Hinweis: TI-ITSM-Teilnehmer melden die erfolgreiche Behebung eines Verstoßes gemäß den Vorgaben des Incident Managements (vgl. [gemRL_Betr_TI]).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-74913">
+   <p><b>GS-A_5626</b></p>
+   <p>Falls ein Anbieter als Auftragsverarbeiter i. S. des Art. 4 Nr. 8 DSGVO tätig ist, MUSS dieser mit dem Auftraggeber als Verantwortlichen i. S. des Art. 4 Nr. 7 DSGVO verbindlich regeln, wie die Pflichten des Anbieters gegenüber der gematik, die sich aus den Sicherheits- und Datenschutzanforderungen der gematik ergeben, erfüllt werden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_65">Hinweis: Die Ausgestaltung der Regelung obliegt den Vertragsparteien der Auftragsverarbeitung.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21273">4.2 Modul „TI-Datenschutzbericht“</h3>
+  <p id="polarion_67">Ist einem Anbieter der jährliche Datenschutzbericht des Moduls „Erweiterter TI-Datenschutzbericht“ (s. Afo GS-A_4468-02) zugeordnet, entfällt der in GS-A_4468-01 geforderte jährliche Datenschutzbericht (kurz).</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21274">
+   <p><b>GS-A_4468-01</b></p>
+   <p>Der Anbieter MUSS gewährleisten, dass der gematik jährlich (spätestens bis Ende März des Folgejahres) ein Jahresdatenschutzreport bzgl. der vom Anbieter angebotenen Dienste der TI, RZ-Consumer bzw. die weiteren Anwendungen vorliegt, der mindestens folgende Inhalte enthält:<br> 
+    <ul>
+     <li>eine Übersicht über die Anzahl der aufgetretenen Datenschutzverstöße, die die Voraussetzungen nach Art. 83 Abs. 4, 5 und 6 DSGVO erfüllen, bei denen Dienste der TI, RZ-Consumer bzw. weitere Anwendungen betroffen waren; hierbei ist jeweils anzugeben, gegen welche Bestimmung verstoßen wurde,</li>
+     <li>eine Übersicht über die Anzahl der aufgetretenen Verletzungen des Schutzes personenbezogener Daten, die die Voraussetzungen gemäß Art. 33 und 34 DSGVO erfüllen, bei denen Dienste der TI, RZ-Consumer bzw. weitere Anwendungen betroffen waren,</li>
+     <li>eine Übersicht über die Anzahl der von Betroffenen gestellten Anfragen zur Wahrnehmung der Betroffenenrechte aufgeschlüsselt nach Art. 15 (Auskunft), Art. 16 (Berichtigung), Art. 17 (Löschung), Art. 18 (Einschränkung), Art. 20 (Datenübertragbarkeit) und Art. 21 (Widerspruch) DSGVO, bezogen auf Dienste der TI, RZ-Consumer bzw. weitere Anwendungen. Sofern die DSGVO nicht anwendbar ist, sind die vorstehenden Angaben entsprechend bereitzustellen,</li>
+     <li>eine Übersicht über die Anzahl der von Betroffenen bei der Aufsichtsbehörde eingereichten Beschwerden gem. Art. 77 DSGVO, die den Anbieter als Betreiber eines Dienstes der TI, RZ-Consumers bzw. einer weiteren Anwendung betreffen.</li>
+    </ul>Bei der KTR-AdV sind Angaben im Bericht nur insoweit zu machen, sofern sie nicht die Versichertenstammdaten nach § 291 SGB V betreffen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_169">Hinweis: Im jährlichen Datenschutzbericht der TI ist jeweils nur die Anzahl der Datenschutzverstöße, Anfragen bzw. Beschwerden zu nennen, nicht jedoch deren Inhalte.</p>
+  <p id="polarion_97">Hinweis: Der KTR-AdV wird die Anforderung GS-A_4468-01 nicht zugeordnet, da in der aktuellen Ausbaustufe der TI in der KTR-AdV keine medizinischen Daten nach § 291a Abs. 3 SGB V verarbeitet werden. Beim Ausbau der TI ist zu prüfen, ob diese Bedingung dann weiterhin erfüllt ist und die Zuordnung der Anforderung GS-A_4468-01 erfolgen muss.&nbsp;&nbsp;</p>
+  <p id="polarion_170">Neben dem Jahresdatenschutzreport ist im Falle gravierender Datenschutzverstöße die erfolgreiche Umsetzung der Maßnahmen zur Behebung des Verstoßes der gematik zu melden.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21275">
+   <p><b>GS-A_4478-01</b></p>
+   <p>Der Anbieter MUSS der gematik auf Anfrage die Umsetzung der Maßnahmen zur Behebung eines Datenschutzverstoßes, der die Voraussetzungen für eine Benachrichtigung der Betroffenen nach Art. 34 DSGVO erfüllt und der sich auf die vom Anbieter betriebenen Dienste der TI, RZ-Consumer bzw. weitere Anwendungen bezieht, unter zur Verfügungsstellung einer Dokumentation mit den in Art. 33 Abs. 5 DSGVO geforderten Inhalten nachweisen. <br> Bei der KTR-AdV sind Nachweise zur Umsetzung von Maßnahmen nur insoweit zu machen, sofern sie nicht die Versichertenstammdaten nach § 291 SGB V betreffen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21276">
+   <p><b>GS-A_5324-02</b></p>
+   <p>Der Anbieter MUSS der gematik zusichern, dass der Anbieter das koordinierende Datenschutzmanagementsystem der gematik unterstützt, indem auf Einladung der gematik ein sachkundiger Ansprechpartner für Datenschutz des Anbieters am Arbeitskreis Datenschutz und Informationssicherheit (AK DIS) teilnimmt, der sich im Rahmen seiner beruflichen Tätigkeit mit dem operativen Betrieb der vom Anbieter betriebenen Dienste befasst. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_70">Hinweis: Sofern die Ziele des AK DIS durch die Teilnahme des Anbieters in anderen Gremien der gematik erreicht werden können, kann die gematik auf die Einladung des Anbieters zur Teilnahme am AK DIS verzichten.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21277">4.3 Modul „Erweiterter TI-Datenschutzbericht“</h3>
+  <p id="polarion_72">Ist einem Anbieter der jährliche Datenschutzbericht (GS-A_4468-02) zugeordnet, entfällt der in GS-A_4468-01 geforderte jährliche Datenschutzbericht (kurz) des Moduls „TI-Datenschutzbericht“.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21278">
+   <p><b>GS-A_4468-02</b></p>
+   <p>Der Anbieter MUSS gewährleisten, dass der gematik jährlich (spätestens bis Ende März des Folgejahres) ein Jahresdatenschutzreport bzgl. der vom Anbieter angebotenen Dienste der TI bzw. RZ-Consumer vorliegt, der mindestens folgende Inhalte enthält:<br> 
+    <ul> 
+     <li> eine Liste der Verarbeitungsvorgänge nach Art. 35 Abs. 4 DSGVO mit Bezug zu Diensten der TI bzw. RZ-Consumern, für die eine Datenschutz-Folgenabschätzung durchgeführt wurde inkl. der Bewertung der Risiken gemäß Art. 35 Abs. 7 Buchstabe c) DSGVO,</li> 
+     <li> eine Übersicht über die getroffenen technischen und organisatorischen Maßnahmen zur Umsetzung der Grundsätze für die Verarbeitung personenbezogener Daten entsprechend Art. 5 DSGVO,</li> 
+     <li> eine Übersicht über die Umsetzung der technischen und organisatorischen Maßnahmen entsprechend Art. 32 DSGVO zum Schutz der personenbezogenen Daten in den Diensten der TI bzw. RZ-Consumern,</li> 
+     <li> eine Übersicht der durchgeführten Audits mit thematischem Inhalt, bei denen Dienste der TI bzw. RZ-Consumer betroffen waren,</li> 
+     <li> eine Übersicht über die Anzahl der aufgetretenen Datenschutzverstöße, die die Voraussetzungen nach Art. 83 Abs. 4, 5 und 6 DSGVO erfüllen, bei denen Dienste der TI bzw. RZ-Consumer betroffen waren; hierbei ist jeweils anzugeben, gegen welche Bestimmung verstoßen wurde,</li> 
+     <li> eine Übersicht über die Anzahl der aufgetretenen Verletzungen des Schutzes personenbezogener Daten, die die Voraussetzungen gemäß Art. 33 und 34 DSGVO erfüllen, bei denen Dienste der TI bzw. RZ-Consumer betroffen waren, </li> 
+     <li> eine Übersicht über die Anzahl der von Betroffenen gestellten Anfragen zur Wahrnehmung der Betroffenenrechte aufgeschlüsselt nach Art. 15 (Auskunft), Art. 16 (Berichtigung), Art. 17 (Löschung), Art. 18 (Einschränkung), Art. 20 (Datenübertragbarkeit) und Art. 21 (Widerspruch) DSGVO, bezogen auf Dienste der TI bzw. RZ-Consumer. Sofern die DSGVO nicht anwendbar ist, sind die vorstehenden Angaben entsprechend bereitzustellen,</li> 
+     <li> den Anteil der fehlerhaft adressierten Datenschutz-Anfragen (d.&nbsp;h. Anfragen, für die der Anbieter nicht Verantwortlicher ist) im Verhältnis zur Gesamtzahl der Datenschutz-Anfragen bzgl. der im Verantwortungsbereich des Anbieters liegenden Dienste der TI bzw. RZ-Consumer, </li> 
+     <li> eine Übersicht über die durchschnittliche Bearbeitungszeit von korrekt an den Anbieter im Berichtszeitraum adressierten Datenschutz-Anfragen bzgl. der Dienste der TI bzw. RZ-Consumer (Zeitspanne vom Eingang der Anfrage beim Anbieter bis zum Abschluss des Vorgangs beim Anbieter), </li> 
+     <li> eine Übersicht über die Anzahl der gemäß Art. 14 und Art. 19 DSGVO erteilten Auskünfte ggü. Betroffenen bezogen auf Dienste der TI bzw. RZ-Consumer. Sofern die DSGVO nicht anwendbar ist, sind die vorstehenden Angaben entsprechend bereitzustellen,</li> 
+     <li> eine Übersicht über die Anzahl der von Betroffenen eingereichten Beschwerden gem. Art. 77 DSGVO, die den Anbieter als Betreiber eines Dienstes der TI bzw. RZ-Consumers betreffen, </li> 
+     <li> eine Liste der Auftragsverarbeiter, die Dienste der TI bzw. RZ-Consumerbetreiben; zusätzlich ggf. für jeden Auftragsverarbeiter die von ihm beauftragten weiteren Auftragsverarbeiter,</li> 
+     <li> eine Übersicht der durchgeführten Schulungen der Mitarbeiter zum Datenschutz (Dauer, thematische Inhalte),</li> 
+     <li> eine Selbsteinschätzung, ob es Umsetzungsprobleme mit den Anforderungen des Datenschutzes der TI bzgl. der vom Anbieter betriebenen Dienste der TI bzw. RZ-Consumer gibt.</li> 
+    </ul> Bei der KTR-AdV sind Angaben im Bericht nur insoweit zu machen, sofern sie nicht die Versichertenstammdaten nach § 291 SGB V betreffen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_175">Hinweis: Der KTR-AdV wird die Anforderung GS-A_4468-02 nicht zugeordnet, da in der aktuellen Ausbaustufe der TI in der KTR-AdV keine medizinischen Daten nach § 291a Abs. 3 SGB V verarbeitet werden. Beim Ausbau der TI ist zu prüfen, ob diese Bedingung dann weiterhin erfüllt ist und die Zuordnung der Anforderung GS-A_4468-02 erfolgen muss.</p>
+  <p id="polarion_77">Die im Datenschutzreport genannten Auftragsverarbeiter sind jährlich vom Anbieter zu kontrollieren.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21279">
+   <p><b>GS-A_2214-01</b></p>
+   <p>Falls der Anbieter Auftragsverarbeiter i.S. des Art. 4 Nr. 8 DSGVO beauftragt hat, MUSS er sich jährlich bei den beauftragten Auftragsverarbeitern von der Einhaltung der von den Auftragsverarbeitern getroffenen Maßnahmen überzeugen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21280|layout=0">
+   <p><b>GS-A_5566</b></p>
+   <p>Der Anbieter MUSS im Falle von Unterbeauftragungen einzelner oder mehrerer Leistungen an Auftragsverarbeiter im Sinne des Art. 4 Nr. 8 DSGVO in den Unterbeauftragungsverträgen sicherstellen, dass die datenschutzrechtlichen Pflichten, die er zu beachten hat, im gleichen Maße von den Unterauftragnehmern erfüllt werden. Dies gilt gleichermaßen für weitere Unterbeauftragungsverhältnisse. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-74914">
+   <p><b>GS-A_5625</b></p>
+   <p>Der Anbieter MUSS zusichern, dass die gematik oder ein von ihr zur Geheimhaltung verpflichteter Bevollmächtigter berechtigt sind, <br>
+    <ul>
+     <li>pro Kalenderjahr maximal ein Regelaudit durchzuführen. Hiervon unbenommen ist das Recht der gematik, anlassbezogene Audits durchzuführen,</li>
+     <li>im Rahmen eines Audits beim Anbieter die konkrete Umsetzung der an den Anbieter gestellten Anforderungen der TI zum Datenschutz zu überprüfen,</li>
+     <li>im Rahmen eines Audits während der üblichen Geschäftszeiten die Geschäftsräume des Anbieters zu betreten,</li>
+     <li>im Rahmen eines Audits alle für das Audit benötigten Informationen zur Verfügung gestellt zu bekommen und insbesondere die erforderlichen Zugangs-, Auskunfts- und Einsichtsrechte zu erhalten.</li>
+    </ul>Dies hat der Anbieter im gleichen Maße für Unterauftragnehmer zuzusichern. Die Kosten, die dem Anbieter durch diese Mitwirkungspflichten entstehen, trägt der Anbieter selbst. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_178">Hinweis: Die gematik verfolgt mit der Durchführung der Audits das Ziel, gemeinsam mit den Anbietern in einem kooperativen Ansatz die Aufrechterhaltung des erforderlichen Datenschutzniveaus nachzuweisen. Die gematik wird ein Regelaudit in der Regel drei Monate vor der Durchführung beim Anbieter ankündigen. Die Terminvereinbarung erfolgt im Einvernehmen mit dem Anbieter. Die gematik erstellt im Vorfeld einen Auditplan, aus dem der Umfang und die zu betrachtenden Themenbereiche festgelegt sind und stimmt den Auditplan mit dem Anbieter ab. Die gematik muss das Auditrecht nicht notwendigerweise jedes Jahr wahrnehmen.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21281">5 Spezifische Module</h2>
+  <p id="polarion_180">Kapitel 3 und 4 enthalten anbieterübergreifende Module, die unabhängig von einer speziellen Rolle des Anbieters sind. Dieses Kapitel beschreibt die Module für Anbieter in spezifischen Rollen (vgl. spezifische Module (rot) in Abbildung 2). Die spezifischen Module werden Anbietern zusätzlich zu den anbieterübergreifenden Modulen zugeordnet.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21282">5.1 Module für weitere Anwendungen</h3>
+  <p id="polarion_181">Anbietern weiterer &nbsp;Anwendungen nach § 291a Abs. 7 S. 3 SGB V wird neben den anbieterübergreifenden Modulen der Informationssicherheit aus Kapitel 3 und des Datenschutzes aus Kapitel 4 auch das spezifische Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“ bzw. das Modul „Weitere Anwendungen (mit TI-Beeinträchtigung)“ zugeordnet.</p>
+  <p id="polarion_182">Das Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“ ist für Anbieter relevant, bei denen technisch ausgeschlossen ist, dass der Verlust der Sicherheit ihrer Dienste die Sicherheit der TI beeinträchtigen können.</p>
+  <p id="polarion_183">Das Modul „Weitere Anwendungen (mit TI-Beeinträchtigung)“ ist für Anbieter relevant, bei denen technisch nicht ausgeschlossen werden kann, dass sie die Sicherheit der TI beeinträchtigen könnten.</p>
+  <p id="polarion_184">Die Richtlinie für weitere Anwendungen [gemRL_NvTIwA] unterscheidet die folgenden Anwendungskategorien für weitere Anwendungen:</p>
+  <ul id="polarion_185"> 
+   <li>Weitere Anwendungen für den Datenaustausch (WANDA Smart) mit Nutzung der TI oder derer&nbsp;kryptografischen Identitäten für eigene Anwendungszwecke,</li> 
+   <li>Weitere Anwendungen für den Datenaustausch ohne Nutzung der TI oder derer kryptografischen Identitäten&nbsp; (WANDA Basic). </li> 
+  </ul>
+  <p id="polarion_186">Die WANDA Smart könnten die TI, aufgrund der Anbindungstechnik ihrer Dienste an die TI, beeinträchtigen. Bei den WANDA Basic ist eine Beeinträchtigung aufgrund der Anbindungstechnik an die TI technisch ausgeschlossen.</p>
+  <p id="polarion_187">Anbieter von WANDA Smart sind daher „Anbieter weiterer Anwendungen mit Beeinträchtigung der TI“ und ihnen wird das Modul „Weitere Anwendungen (mit TI-Beeinträchtigung)“ zugeordnet. Anbieter von WANDA Basic sind „Anbieter weiterer Anwendungen ohne Beeinträchtigung der TI“, denen das Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“ zugeordnet wird. Die Art der Anbindungstechnik für weitere Anwendungen an die TI wird von der gematik geprüft, mit dem Ziel, die Anbindung für weitere Anwendungen zu vereinfachen und die Sicherheitsanforderungen an die Anbieter zu reduzieren. Ziel ist es, dass auch den WANDA Smart das Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“ zugeordnet werden kann.</p>
+  <p id="polarion_188">Abbildung 6 zeigt alle Module der Informationssicherheit für weitere Anwendungen im Überblick.</p>
+  <p id="polarion_190" style="text-align: center;" class="polarion-rte-caption-paragraph"> <img src="attachments/11-screenshot-20180409-153735.png" style="width: 754px;height: 366px;" data-lastmodified="2018-04-09T15:37:43.375+01:00"> </p>
+  <p id="polarion_78" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">6</span>: Module für weitere Anwendungen </p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21283">5.1.1 Modul „Weitere Anwendungen (mit TI-Beeinträchtigung)“</h4>
+  <p id="polarion_191">Die Anforderungen des spezifischen Moduls „Weitere Anwendungen (mit TI-Beeinträchtigung)“ gewährleisten eine zulässige Nutzung der Zentralen Dienste der TI durch die weiteren Anwendungen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21284|layout=0">
+   <p><b>GS-A_5567</b></p>
+   <p>Ein Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS durch technisch-organisatorische Maßnahmen gewährleisten, dass ausschließlich die bestätigten Anwendungen bestimmte, festgelegte Zentrale Dienste der TI nutzen können. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_193">Hinweis: Die Anforderung GS-A_5567 verbietet insbesondere auch eine reine Proxyfunktion im Sinne der Zurverfügungstellung der Schnittstellen zu den Diensten der TI-Plattform für Dienste, die nicht im Bestätigungs- bzw. Zulassungsumfang enthalten sind.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21285|layout=0">
+   <p><b>GS-A_5568</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS durch technisch-organisatorische Maßnahmen gewährleisten, dass von Zentralen Diensten der TI zur Verfügung gestellte personenbezogene Daten weder unverändert noch geändert an nicht bestätigte oder nicht zugelassene Anwendungen weitergegeben werden. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21286|layout=0">
+   <p><b>GS-A_5569</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS ggf. vorhandene Netzgrenzen derart sichern, dass außerhalb der Netzgrenzen nicht auf die TI zugegriffen werden kann. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21287|layout=0">
+   <p><b>GS-A_5570</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS durch technisch-organisatorische Maßnahmen gewährleisten, dass ggf. an die Netzgrenzen des Bestätigungsumfangs gekoppelte Netze nicht von Nutzern der TI erreichbar sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21288|layout=0">
+   <p><b>GS-A_5571</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS sicherstellen, dass in allen Netzsegmenten, die zur Verbindung der bestätigten oder zugelassenen Dienste mit dem Netzübergang zur Telematikinfrastruktur genutzt werden, Adressinformationen in IP-Paketen unverändert bleiben und es nicht möglich ist, IP-Pakete mit falschen Adressinformationen einzuschleusen.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_200">Hinweis: Die Anforderung GS-A_5571 soll unter anderem IP-Spoofing verhindern.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21289|layout=0">
+   <p><b>GS-A_5572</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS die ihm zugeordneten privaten asymmetrischen Schlüssel von Identitäten der Telematikinfrastruktur sicher speichern, so dass der Schlüssel während der Speicherung insbesondere nicht unautorisiert ausgelesen, unautorisiert verändert, unautorisiert ersetzt oder in anderer Weise unautorisiert benutzt werden kann. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21290|layout=0">
+   <p><b>GS-A_5573</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS sicherstellen, dass die zum Komponentenzertifikat gehörende X.509-Identität des Dienstes der weiteren Anwendung die Vorgaben für X.509-Identitäten aus [gemSpec_Krypt] erfüllt. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21291|layout=0">
+   <p><b>GS-A_5574</b></p>
+   <p>Falls der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI kryptographische Verfahren zum Schutz personenbezogener medizinischer Daten verwendet, MÜSSEN die Vorgaben aus [gemSpec_Krypt] eingehalten werden. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_204">Die folgende Anforderung legt die Auditrechte der gematik für Anbieter weiterer Anwendungen mit Beeinträchtigung der TI fest. Sie entspricht inhaltlich den vertraglich festgelegten Auditrechten der gematik bei Anbietern von Diensten der TI.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21292|layout=0">
+   <p><b>GS-A_5575</b></p>
+   <p>Der Anbieter weiterer Anwendungen mit Beeinträchtigung der TI MUSS zusichern, dass die gematik oder ein von ihr zur Geheimhaltung verpflichteter Bevollmächtigter berechtigt sind, <br> 
+    <ul> 
+     <li> pro Kalenderjahr maximal ein Regelaudit durchzuführen. Hiervon unbenommen ist das Recht der gematik, anlassbezogene Audits durchzuführen,</li> 
+     <li> im Rahmen eines Audits beim Anbieter die konkrete Umsetzung der an den Anbieter gestellten Anforderungen der TI zum Datenschutz und der Informationssicherheit zu überprüfen, </li> 
+     <li> im Rahmen eines Audits während der üblichen Geschäftszeiten die Geschäftsräume des Anbieters zu betreten,</li> 
+     <li> im Rahmen eines Audits alle für das Audit benötigten Informationen zur Verfügung gestellt zu bekommen und insbesondere die erforderlichen Zugangs-, Auskunfts- und Einsichtsrechte zu erhalten.</li> 
+    </ul> Dies hat der Anbieter im gleichen Maße für Unterauftragnehmer zuzusichern. Die Kosten, die dem Anbieter durch diese Mitwirkungspflichten entstehen, trägt der Anbieter selbst. <br> <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21293">5.1.2 Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“</h4>
+  <p id="polarion_206">Das spezifische Modul „Weitere Anwendungen (ohne TI-Beeinträchtigung)“ enthält folgende Anforderungen.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21294|layout=0">
+   <p><b>GS-A_5576</b></p>
+   <p>Der Anbieter weiterer Anwendungen ohne Beeinträchtigung der TI MUSS der Zulassungsstelle der gematik alle drei Jahre schriftlich mitteilen, dass in allen Anwendungen des Anbieters, die mittels der TI nutzbar sind, die Datenschutz- und Sicherheitsanforderungen des für die Anwendungen geltenden Produktsteckbriefes umgesetzt sind, die Vorschriften zum Datenschutz eingehalten werden und die Anforderungen an die Sicherheit der Anwendungen gewährleistet ist. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21295">
+   <p><b>GS-A_5577</b></p>
+   <p>Der Anbieter weiterer Anwendungen ohne Beeinträchtigung der TI MUSS bei Änderungen am Objekt der Bestätigung, die der Zulassungsstelle der gematik angezeigt werden müssen, schriftlich mitteilen, dass durch die Änderungen weiterhin die Vorschriften zum Datenschutz eingehalten werden und die Anforderungen an die Sicherheit gewährleistet sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-21296">
+   <p><b>GS-A_5578</b></p>
+   <p>Falls der Anbieter weiterer Anwendungen ohne Beeinträchtigung der TI kryptographische Verfahren zum Schutz personenbezogener medizinischer Daten verwendet, MÜSSEN die Vorgaben aus [gemSpec_Krypt] eingehalten werden <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21297">5.2 Modul „Schlüsselverwaltung“</h3>
+  <p id="polarion_80">Dieses Modul ist nur von Anbietern umzusetzen, die eine Schlüsselverwaltung anbieten.</p>
+  <p id="polarion_81">Hinweis: Die betroffenen zentralen Produkttypen sind CVC-Root, gematik Root-CA, Intermediär VSDM, Namensdienst, TSP CVC, TSP X.509 nonQES (HBA, SMC-B, gSMC, FD, ZD), TSL-Dienst, Fachdienst KOM-LE.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6602">
+   <p><b>GS-A_3078</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung innerhalb der TI MUSS in seinem Sicherheitskonzept notwendige Umstellungsprozesse bei Schwächung von kryptographischen Primitiven beschreiben und die Wirksamkeit der getroffenen Maßnahmen ist nachzuweisen (z.B. durch dokumentierte Notfallübungen, Ablaufprotokolle von abgewickelten Vorfällen). <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6603">
+   <p><b>GS-A_3125</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung MUSS in seinem Sicherheitskonzept dokumentieren, welcher Schlüssel in welcher Phase seines Lebenszyklus in welcher Systemkomponente transportiert wird. Es MUSS dabei sichergestellt werden, dass die Schlüssel nur an diejenigen Systemkomponenten verteilt werden, in denen ihr Aufenthalt vorgesehen ist und wo sie hinreichend geschützt sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6604">
+   <p><b>GS-A_3130</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung MUSS in seinem Sicherheitskonzept dokumentieren, welcher Schlüssel in welcher Systemkomponente installiert wird. Es MUSS dabei sichergestellt werden, dass die Schlüssel in Systemkomponenten installiert werden, in denen ihr Aufenthalt vorgesehen ist und wo sie hinreichend geschützt sind. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6605">
+   <p><b>GS-A_3139</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung MUSS sicherstellen, dass der Ableitungsprozess unumkehrbar und nicht vorhersehbar ist (die Kompromittierung eines abgeleiteten Schlüssels darf nicht den Ableitungsschlüssel oder andere abgeleitete Schlüssel kompromittieren). <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6606">
+   <p><b>GS-A_3141</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung MUSS im Falle des Einsatzes einer Schlüsselableitung (nach [ISO11770]) in seinem Sicherheitskonzept Maßnahmen für das Bekanntwerden von Schwächen des kryptographischen Verfahrens, welche die Grundlage der Schlüsselableitung ist, darlegen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-6607">
+   <p><b>GS-A_3149</b></p>
+   <p>Der Anbieter einer Schlüsselverwaltung MUSS, falls er kryptographische Schlüssel archiviert, in seinem spezifischen Sicherheitskonzept beschreiben, welcher Schlüssel in welcher Phase in welcher Systemkomponente archiviert wird. Er MUSS sicherstellen, dass die Schlüssel nur an diejenigen Systemkomponenten verteilt werden, in denen ihr Aufenthalt vorgesehen ist und wo sie hinreichend geschützt sind. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21304">5.3 Modul „Kartenherausgabe“</h3>
+  <p id="polarion_83" class="gemStandard">Dieses Modul ist von Anbietern umzusetzen, die Karten herausgeben, die Produkttypen der TI-Plattform gemäß [gemKPT_Arch_TIP] sind. Dies sind die Karten eGK, HBA, SMC-B, gSMC-K und gSMC-KT.</p>
+  <p id="polarion_87" class="gemStandard">Das Modul enthält alle Anforderungen aus [gemSpec_PINPUK_TI], [gemSpec_CAN_TI] für die sichere Verarbeitung von PIN/PUK und CAN. Diese Anforderungen werden einer Karte zugeordnet, falls diese eine PIN/PUK bzw. eine CAN besitzt.</p>
+  <p id="polarion_88" class="gemStandard">Zudem hat der Kartenherausgeber oder, falls der Kartenherausgeber einen Dritten mit der Kartenpersonalisierung beauftragt, der Kartenpersonalisierer, für die Kartenpersonalisierung jene Module zur Informationssicherheit und, im Falle von personenbezogenen Kartendaten, jene Module zum Datenschutz umzusetzen, welche Produkttypen der TI-Plattform zugeordnet werden (vgl. Abbildung 3 und Abbildung 4).</p>
+  <p id="polarion_89" class="gemStandard">Kartenherausgeber der gSMC-K sind die Hersteller der Konnektoren. Kartenherausgeber der gSMC-KT sind die Hersteller der Kartenterminals.</p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21305">6 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21306">6.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">Kürzel</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung</th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> AdV<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Anwendungen des Versicherten<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> BIA<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Business Impact Analyse<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> DS<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Datenschutz<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> DSMS<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Datenschutzmanagementsystem<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> eGK<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> elektronische Gesundheitskarte<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> EU<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Europäische Union<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> EWR<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Europäischer Wirtschaftsraum <br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> IS<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Informationssicherheit<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> ISMS<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Informationssicherheitsmanagementsystem<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> kDSM<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> koordinierendes Datenschutzmanagementsystem<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> KTR<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Kostenträger<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> RU<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Referenzumgebung<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> SGB<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Sozialgesetzbuch<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> SG-BNet<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Sicherheitsgateway Bestandsnetze<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> sÜv<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> sicheres Übermittlungsverfahren<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> TI<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Telematikinfrastruktur<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> TU<br> </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;"> Testumgebung<br> </span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">WANDA Basic</td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">Weitere Anwendungen für den Datenaustausch ohne Nutzung der TI oder derer kryptografischen Identitäten</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 140px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">WANDA Smart</td> 
+     <td style="text-align: left;vertical-align: top;width: 591px;height: 20.8px;border: 1px solid #CCCCCC;padding: 5px;">Weitere Anwendungen für den Datenaustausch mit Nutzung der TI oder derer&nbsp;kryptografischen Identitäten für eigene Anwendungszwecke</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_91"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21307">6.2 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_42">Abbildung 1: Anforderungen, Module und Anbieter</a></li>
+   <li><a href="#polarion_45">Abbildung 2: Modulübersicht für Anbietermodule</a></li>
+   <li><a href="#polarion_57">Abbildung 3: Zuordnung der Module der Informationssicherheit</a></li>
+   <li><a href="#polarion_21">Abbildung 4: Zuordnung der Module zum Datenschutz</a></li>
+   <li><a href="#polarion_117">Abbildung 5 - Gesamtprozess Schwachstellenmanagement</a></li>
+   <li><a href="#polarion_78">Abbildung 6: Module für weitere Anwendungen</a></li>
+   <li><a href="#polarion_232">Abbildung 7: Modulübersicht für Anbietermodule</a></li>
+   <li><a href="#polarion_268">Abbildung 8: Auswirkungen des § 274 SGB V auf die Modulzuordnung (grau = entfällt)</a></li>
+  </div>
+  <p id="polarion_220" style="margin-left: 0px;"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21308">6.3 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_240">Tabelle 1: Modulzuordnung bzgl. der Spezifikationshoheit der gematik</a></li>
+   <li><a href="#polarion_262">Tabelle 2: Modulzuordnung bzgl. der Möglichkeit, die TI zu beeinträchtigen</a></li>
+  </div>
+  <p id="polarion_221" style="margin-left: 0px;"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21309">6.4 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21310">6.4.1 Dokumente der gematik</h4>
+  <p id="polarion_222">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert, Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument passende jeweils gültige Versionsnummer sind in der aktuellsten, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber: Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemGlossar]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Glossar der Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemKPT_Arch_TIP]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Konzept Architektur der TI-Plattform</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemRL_Betr_TI]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Richtlinien zum Betrieb der TI</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemRL_NvTIwA]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Richtlinie – Nutzungsvoraussetzungen der TI für weitere Anwendungen des Gesundheitswesens sowie für die Gesundheitsforschung</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_CAN_TI]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Spezifikation CAN-Policy</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Hersteller_SI]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Spezifikation Datenschutz- und Sicherheitsanforderungen an Hersteller</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_Krypt]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Verwendung kryptographischer Algorithmen in der </span><br> <span style="font-size: 10pt;line-height: 1.5;">Telematikinfrastruktur</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 208.667px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[gemSpec_PINPUK_TI]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 538.444px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">gematik: Übergreifende Spezifikation PIN/PUK-Policy für Smartcards der Telematikinfrastruktur</span> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21311">6.4.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 147.333px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[Quelle]</span><br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599.778px;height: 19.3333px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Herausgeber (Erscheinungsdatum): Titel</span><br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 147.333px;height: 58.4444px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[ISO11770]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 599.778px;height: 58.4444px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">ISO/IEC 11770: 1996</span><br> <span style="font-size: 10pt;line-height: 1.5;">Information technology – Security techniques – Key management</span><br> <span style="font-size: 10pt;line-height: 1.5;">Part 3: Mechanisms using asymmetric techniques</span><br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 147.333px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">[RFC2119]</span><br> </td> 
+     <td style="text-align: left;vertical-align: top;width: 599.778px;height: 38.8889px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;color: #000000;line-height: 1.5;">RFC 2119 (März 1997): Key words for use in RFCs to Indicate</span><br> <span style="font-size: 10pt;color: #000000;line-height: 1.5;">Requirement Levels S. Bradner,&nbsp;<a href="https://datatracker.ietf.org/doc/html/rfc2119" target="_top" class="descriptionLink">https://datatracker.ietf.org/doc/html/rfc2119</a>&nbsp;</span><br> </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21312">7 Anhang B – Modularisierungskonzept</h2>
+  <p id="polarion_229">Kapitel 3 und 4 ordnen die anbieterübergreifenden Module den Anbietern von Diensten der TI, Anbieter von Fachdiensten VSDM gemäß § 291 Abs. 2b SGB V, Anbietern von Rechenzentrums-Consumern (RZ-Consumer) &nbsp;sowie Anbietern weiterer Anwendungen gemäß § 291a Abs. 7 Satz 3 SGB V zu. In diesem Anhang wird dargestellt, nach welchem Schema die Module angeordnet sind und nach welchen Kriterien die Zuordnung der Module zu den Anbietern erfolgt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21313">7.1 Anordnung der Module</h3>
+  <p id="polarion_230">Die Module zur Informationssicherheit und zum Datenschutz sind jeweils in Säulen angeordnet, die auf einem Basis-Modul („Basis-IS“ für Informationssicherheit, „Basis-DS“ für Datenschutz) aufsetzen.</p>
+  <p id="polarion_231" style="text-align: center;" data-keep-next="true"> <img data-keep-next="true" src="attachments/Picture_5_2.png" style="width: 353px;height: 337px;"> </p>
+  <p id="polarion_232" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">7</span>: Modulübersicht für Anbietermodule </p>
+  <p id="polarion_233">Wird einem Anbieter ein Modul einer Säule zugeordnet, so gelten für ihn auch alle darunter liegenden Module der Säule. Wird einem Anbieter beispielsweise das Modul „Erweitertes ISMS“ zugeordnet, so gelten für ihn auch die darunter liegenden Module „Basis-ISMS“ und „Basis-IS“.</p>
+  <p id="polarion_234">Für die Informationssicherheit gibt es eine Säule zur Etablierung eines Informationssicherheitsmanagementsystems und eine Säule zum Reporting an die gematik. Für den Datenschutz gibt es nur die Säule zum Reporting. Die Basis-Module enthalten jeweils die Minimalanforderungen zum Managementsystem und zu Meldepflichten.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-21314">7.2 Kriterien der Modulzuordnung</h3>
+  <p id="polarion_235">Die Zuordnung der anbieterübergreifenden Module zur Informationssicherheit und des Datenschutzes in Abbildung 3 und Abbildung 4 erfolgt anhand der beiden folgenden Kriterien.</p>
+  <ul id="polarion_236"> 
+   <li><span style="font-weight: bold;">Spezifikationshoheit der gematik</span>, d.&nbsp;h., ist die gematik gesetzlich verantwortlich für die Spezifikation?</li> 
+   <li><span style="font-weight: bold;">Beeinträchtigung des Datenschutzes oder der Sicherheit der TI</span>, d.&nbsp;h., kann der Verlust der Sicherheit oder des Datenschutzes des Dienstes den Datenschutz oder die Sicherheit der TI beeinträchtigen?</li> 
+  </ul>
+  <p id="polarion_237">Es werden einem Anbieter alle anbieterübergreifenden Module zur Informationssicherheit und zum Datenschutz zugeordnet, die sich für ihn aus diesen beiden Kriterien ergeben.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21315">7.2.1 Kriterium: Spezifikationshoheit der gematik</h4>
+  <p id="polarion_238">Die Spezifikationshoheit der gematik unterscheidet sich bei Diensten der TI, der KTR-AdV als aktuell einzig spezifizierten RZ-Consumer, den Fachdiensten VSDM und weiteren Anwendungen nach § 291a Abs. 7 S.3 SGB V. Tabelle 2zeigt die Zuordnung der Module der Informationssicherheit und des Datenschutzes anhand dieses Kriteriums.</p>
+  <p id="polarion_100"></p>
+  <p id="polarion_240" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">1</span>: Modulzuordnung bzgl. der Spezifikationshoheit der gematik </p>
+  <table id="polarion_wiki macro name=table;params=bold=1|width=100%|uid=101" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th colspan="3" style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 483px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Anbieter</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 248px;height: 19.5px;border: 1px solid #CCCCCC;padding: 5px;">Module</th> 
+    </tr> 
+    <tr> 
+     <td rowspan="6" style="font-weight: bold;text-align: left;vertical-align: top;width: 167px;height: 675px;border: 1px solid #CCCCCC;padding: 5px;">gematik-Spezifikationshoheit (Dienste der TI)</td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 118px;height: 218.517px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">zentrale TI-Plattform</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 176px;height: 218.517px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Der Anbieter betreibt einen Dienst der zentralen TI-Plattform.</span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Die Dienste der zentralen TI-Plattform werden von der gematik spezifiziert.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 248px;height: 124.383px;border: 1px solid #CCCCCC;padding: 5px;">Module Informationssicherheit:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 248px;height: 83.1333px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS<br> xTI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 118px;height: 215px;border: 1px solid #CCCCCC;padding: 5px;">KTR-AdV</td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 176px;height: 215px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Der Anbieter betreibt die im Rechenzentrum zu betreibenden Anteile der KTR-AdV.</span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Die KTR-AdV wird von der gematik spezifiziert.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 248px;height: 124.383px;border: 1px solid #CCCCCC;padding: 5px;">Module Informationssicherheit:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 248px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS<br> xTI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 118px;height: 218.517px;border: 1px solid #CCCCCC;padding: 5px;">eGK- Anwendung/<br> sÜv</td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 176px;height: 218.517px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Der Anbieter betreibt einen Dienst einer eGK-Anwendung oder eines sicheren Übermittlungsverfahrens (sÜv).</span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Dienste der eGK-Anwendungen und der sÜv werden von der gematik spezifiziert.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 248px;height: 124.383px;border: 1px solid #CCCCCC;padding: 5px;">Module Informationssicherheit:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 248px;height: 83.1333px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS </span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="4" style="font-weight: bold;text-align: left;vertical-align: top;width: 167px;height: 431px;border: 1px solid #CCCCCC;padding: 5px;">keine gematik-Spezifikationshoheit</td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 118px;height: 214px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;">Fachdienste VSDM</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 176px;height: 214px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Der Anbieter betreibt einen Fachdienst VSDM gemäß § 291 Abs. 2b SGB V.</span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Die Fachdienste VSDM und deren Spezifikation fallen nicht in den gesetzlichen Aufgabenbereich der gematik gemäß § 291b Abs. 1 SGB V.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 248px;height: 113px;border: 1px solid #CCCCCC;padding: 5px;">Module Informationssicherheit:<br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 248px;height: 89.4833px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 118px;height: 206px;border: 1px solid #CCCCCC;padding: 5px;">weitere Anwendungen</td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 176px;height: 206px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Der Anbieter betreibt eine weitere Anwendung gemäß § 291a Abs. 7 Satz 3 SGB V.</span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Weitere Anwendungen werden nicht von der gematik spezifiziert. </span></td> 
+     <td style="text-align: left;vertical-align: top;width: 248px;height: 117px;border: 1px solid #CCCCCC;padding: 5px;">Module Informationssicherheit:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 248px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_99"></p>
+  <p id="polarion_242"></p>
+  <p id="polarion_74"> <span style="font-weight: bold;">Dienste der TI</span> </p>
+  <p id="polarion_243">Für Dienste der TI erstellt die gematik die funktionalen und technischen Vorgaben, legt den Inhalt und die Struktur der Datensätze für deren Bereitstellung und Nutzung fest, erstellt die Vorgaben für einen sicheren Betrieb der TI und überwacht ihre Umsetzung (§&nbsp;291b Abs. 1 SGB V).</p>
+  <p id="polarion_244">Die gematik spezifiziert für Dienste der TI insbesondere die Maßnahmen, mit denen der Datenschutz und die Informationssicherheit gewährleistet werden. Die korrekte Umsetzung dieser Maßnahmen durch den Anbieter stellt sicher, dass in der TI die Vorschriften zum Datenschutz eingehalten und ein angemessenes Sicherheitsniveau in den Diensten der TI gewährleistet wird (vgl. § 291b Abs. 1 SGB V).</p>
+  <p id="polarion_245">Anbietern von Diensten der TI werden sämtliche Module des Datenschutzes und, mit Ausnahme des Moduls „Erweitertes ISMS“, sämtliche Module der Informationssicherheit zugeordnet. Diese Module gewährleisten eine sichere Betriebsumgebung beim Anbieter.</p>
+  <p id="polarion_92" class="gemStandard"> <span style="font-weight: bold;">KTR-AdV</span> </p>
+  <p id="polarion_93" class="gemStandard">Der im Rechenzentrum betriebene Anteil der KTR-AdV (AdV-Server) stellt die Funktionalitäten zur Verfügung, die eine AdV-App benötigt, um mit den Diensten der zentralen Telematikinfrastruktur und den Fachdiensten in der TI zu kommunizieren. Es handelt sich beim AdV-Server um einen Teil der TI. § 291b Absatz 1 Satz 1 Nummer 1 SGB V weist der gematik die Aufgabe zu, die funktionalen und technischen Vorgaben einschließlich eines Sicherheitskonzepts zu erstellen sowie nach § 291b Absatz 1 Satz 1 Nummer 3 auch Vorgaben für den sicheren Betrieb der TI zu erstellen und ihre Umsetzung zu überwachen. Um die Sicherheit der AdV konsistent über alle Daten bzw. Anwendungen hinweg zu gewährleisten, unterliegt die AdV einschließlich des AdV-Servers der betrieblichen Überprüfung der gematik. </p>
+  <p id="polarion_94" class="gemStandard">Anbietern der KTR-AdV werden nach dem Kriterium der Spezifikationshoheit der gematik sämtliche Module des Datenschutzes und, mit Ausnahme des Moduls „Erweitertes ISMS“, sämtliche Module der Informationssicherheit zugeordnet.</p>
+  <p id="polarion_246"> <span style="font-weight: bold;">Fachdienste VSDM</span> </p>
+  <p id="polarion_247">Die Fachdienste VSDM und deren Spezifikation fallen nicht in den gesetzlichen Aufgabenbereich der gematik gemäß §&nbsp;291b Abs. 1 SGB V. Die gematik ist insbesondere nicht gesetzlich damit beauftragt – anders als bei den weiteren Anwendungen in § 291a Abs. 7 Satz 3 Nr. 2 SGB V – die Einhaltung der Vorschriften des Datenschutzes und ein angemessenes Sicherheitsniveau im Hinblick auf die Schutzbedürftigkeit der in den Fachdiensten VSDM verarbeiteten Daten zu gewährleisten. Die Fachdienste VSDM gehören nicht zur TI. Lediglich die Schnittstellen der Fachdienste VSDM sind Teil der TI.</p>
+  <p id="polarion_248">Anbietern von Fachdiensten VSDM werden daher aufgrund des Kriteriums der „Spezifikationshoheit der gematik“ keine Module der Informationssicherheit oder des Datenschutzes zugeordnet.</p>
+  <p id="polarion_251"> <span style="font-weight: bold;">Weitere Anwendungen</span> </p>
+  <p id="polarion_252">Weitere Anwendungen nach § 291a Abs. 7 Satz 3 SGB V werden nicht von der gematik spezifiziert. Der gesetzliche Auftrag der gematik beschränkt sich bzgl. der Spezifikation darauf, zu gewährleisten, dass nur weitere Anwendungen die TI nutzen, die die Vorschriften zum Datenschutz einhalten und ein angemessenes Sicherheitsniveau bzgl. ihrer Anwendung bieten (vgl. § 291a Abs. 7 Satz 3 Nr. 2 SGB V). Insbesondere spezifiziert die gematik keine Maßnahmen des Datenschutzes und der Informationssicherheit zum Schutz der Anwendungsdaten.</p>
+  <p id="polarion_253">Es werden die Module „Basis-IS“ und „Basis-DS“ zugeordnet, um gemäß § 291a Abs. 7 Satz 3 Nr. 2 SGB V sicherzustellen, dass die Anbieter die Vorschriften zum Datenschutz und die Anforderungen der Informationssicherheit in ihrer weiteren Anwendung einhalten.</p>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-21316">7.2.2 Kriterium: Beeinträchtigung der TI</h4>
+  <p id="polarion_254">Dieses Kriterium unterscheidet die Anbieter danach, ob der Verlust der Sicherheit ihres Dienstes den Datenschutz oder die Sicherheit der TI beeinträchtigen kann. Tabelle 3 zeigt die Zuordnung der Module nach diesem Kriterium.</p>
+  <p id="polarion_255">Es werden einem Anbieter nach diesem Kriterium keine Module zugeordnet, falls die Dienste des Anbieters so an die TI angeschlossen werden, dass eine Beeinträchtigung der Sicherheit der TI durch den Verlust der Sicherheit des Dienstes technisch ausgeschlossen ist.</p>
+  <p id="polarion_256">Diensten der TI werden alle Module des Datenschutzes und der Informationssicherheit, mit Ausnahme des Moduls „Erweitertes ISMS“, zugeordnet, da der Verlust der Sicherheit eines Dienstes der TI die Sicherheit der TI per Definition beeinträchtigt.</p>
+  <p id="polarion_257">Das Modul „Erweitertes ISMS“ ist von Anbietern der Dienste der zentralen TI-Plattform umzusetzen, da die Aufrechterhaltung von Sicherheit und Datenschutz bei diesen Diensten von besonderer Bedeutung für alle Teilnehmer der TI ist. Sie werden daher gemäß dem Modul „Erweitertes ISMS“ stärker bzgl. der Sicherheit kontrolliert.</p>
+  <p id="polarion_95">Dem Anbieter einer KTR-AdV werden alle Module des Datenschutzes und der Informationssicherheit inkl. des Moduls „Erweitertes ISMS“ zugeordnet, da der Verlust der Sicherheit der KTR-AdV als integraler Bestandteil der TI die Sicherheit der TI per Definition beeinträchtigt. Zudem ergibt sich aufgrund der Erreichbarkeit des AdV-Servers (Teil der KTR-AdV) über das Internet zusammen mit der Möglichkeit, auf eine freigeschaltete eGK zuzugreifen, ein höheres Bedrohungspotential zur Beeinträchtigung der TI, so dass eine intensivere betriebliche Überprüfung erfolgt.</p>
+  <p id="polarion_258">Kann für einen Dienst einer weiteren Anwendung eine Beeinträchtigung der TI nicht technisch ausgeschlossen werden, so werden auch dem Anbieter der weiteren Anwendung alle Module zugeordnet, mit Ausnahme der Module „Erweitertes ISMS“, „Erweiterter TI-Sicherheitsbericht“ und „Erweiterter TI-Datenschutzbericht“. Das Modul „Erweitertes ISMS“ wird nicht zugeordnet, da die Dienste der weiteren Anwendung, anders als Dienste der TI-Plattform, nicht von allen Teilnehmern der TI genutzt werden. Für weitere Anwendungen sind die Berichte der Module „TI-Sicherheitsbericht“ und „TI-Datenschutzbericht“ ausreichend zur Erfüllung des gesetzlichen Auftrags der gematik.</p>
+  <p id="polarion_259">Bei den Fachdiensten VSDM wird – analog zu den Diensten der weiteren Anwendungen – bei der Zuordnung der Module berücksichtigt, ob eine Beeinträchtigung der Sicherheit und des Datenschutzes der TI bei Verlust der Sicherheit oder des Datenschutzes eines Fachdienstes VSDM technisch ausgeschlossen werden kann. Ist eine Beeinträchtigung der TI technisch ausgeschlossen, so werden keine Module zugeordnet. Ist eine Beeinträchtigung der TI nicht ausgeschlossen, werden die Module „Basis-IS“ und „Basis-ISMS“ sowie „Basis-DS“ zugeordnet. Zusammen mit der Prüfung der Fachdienste gemäß § 274 Abs. 1 SGB V (vgl. Anhang C) wird so der gesetzliche Auftrag der gematik gemäß §&nbsp;291b Abs. 1 SGB V zur Gewährleistung eines sichereren Betriebs der TI und zur Sicherstellung der Einhaltung der Vorschriften zum Datenschutz in der TI umgesetzt.</p>
+  <p id="polarion_260">In der derzeitigen Form des Anschlusses der Fachdienste VSDM an die TI ist eine Beeinträchtigung der Sicherheit und des Datenschutzes der TI bei Verlust der Sicherheit oder des Datenschutzes eines Fachdienstes VSDM technisch nicht ausgeschlossen.</p>
+  <p id="polarion_102"></p>
+  <p id="polarion_262" class="polarion-rte-caption-paragraph"> Tabelle <span data-sequence="Tabelle" class="polarion-rte-caption">2</span>: Modulzuordnung bzgl. der Möglichkeit, die TI zu beeinträchtigen </p>
+  <table id="polarion_wiki macro name=table;params=bold=1|width=100%|uid=103" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 141px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;">Grad der möglichen Beeinträchtigung der TI</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 143px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;">Anbieter</th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 174px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Beschreibung</span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 251px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;">Module</th> 
+    </tr> 
+    <tr> 
+     <td rowspan="4" style="font-weight: bold;text-align: left;vertical-align: top;width: 141px;height: 453.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">keine Beeinträchtigung möglich</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 143px;height: 208.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">weitere Anwendungen</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 208.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Dienstes der weiteren Anwendung hat keinen Einfluss auf die Sicherheit der TI.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 117.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 80px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 143px;height: 234px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fachdienste VSDM</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 234px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Fachdienstes VSDM hat keinen Einfluss auf die Sicherheit der TI. </span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Hinweis: In der derzeitigen Form des Anschlusses der Fachdienste VSDM an die TI ist dies nicht gegeben</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 133.417px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 89.5833px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="10" style="font-weight: bold;text-align: left;vertical-align: top;width: 141px;height: 1169px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Beeinträchtigung möglich</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 143px;height: 233px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-weight: bold;font-size: 10pt;line-height: 1.5;">zentrale TI-Plattform</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 233px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Dienstes der TI hat einen Einfluss auf die Sicherheit der TI. </span><br> <br> <span style="font-size: 9pt;line-height: 1.5;">Die Aufrechterhaltung von Informationssicherheit und Datenschutz bei Diensten der zentralen TI-Plattform ist von besonderer Bedeutung, da sie von allen Teilnehmern der TI genutzt werden.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 138px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 83px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 143px;height: 270px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">KTR-AdV</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 270px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Die Sicherheit der im Rechenzentrum betrieben Anteile der KTR-AdV hat einen Einfluss auf die Sicherheit der TI</span><br> <span style="font-size: 9pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Die Aufrechterhaltung von Informationssicherheit und Datenschutz ist von besonderer Bedeutung, da auf freigeschaltete eGKs von Versicherten zugegriffen werden kann und damit missbräuchliche Zugriffe auf schützenswerte Daten der Versicherten möglich wären.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 134px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 125px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 143px;height: 206.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">eGK-Anwendung/ sÜv</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 206.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Dienstes der TI hat einen Einfluss auf die Sicherheit der TI.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 117.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Sicherheitsbericht</span>&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 78px;border: 1px solid #CCCCCC;padding: 5px;">Module Datenschutz:<br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Erweiterter TI-Datenschutzberich</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 143px;height: 207px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Fachdienste VSDM</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 207px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Fachdienstes VSDM hat einen Einfluss auf die Sicherheit der TI.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 117.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 78.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">o TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2" style="font-weight: bold;text-align: left;vertical-align: top;width: 143px;height: 207px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">weitere Anwendungen</span></td> 
+     <td rowspan="2" style="text-align: left;vertical-align: top;width: 174px;height: 207px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Die Sicherheit der Betriebsumgebung des Dienstes der weiteren Anwendung hat einen Einfluss auf die Sicherheit der TI.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 251px;height: 117.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Informationssicherheit:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-IS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-ISMS </span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweitertes ISMS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Sicherheitsbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Sicherheitsbericht</span></td> 
+    </tr> 
+    <tr> 
+     <td style="font-weight: bold;text-align: left;vertical-align: top;width: 251px;height: 78.5px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 10pt;line-height: 1.5;">Module Datenschutz:</span><br> <span style="font-size: 9pt;line-height: 1.5;">x Basis-DS</span><br> <span style="font-size: 9pt;line-height: 1.5;">x TI-Datenschutzbericht</span><br> <span style="font-size: 9pt;line-height: 1.5;">o Erweiterter TI-Datenschutzbericht</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-21317">8 Anhang C – Modulzuordnung bei Anwendbarkeit des § 274 Abs. 1 SGB V</h2>
+  <p id="polarion_265">Für ausgewählte Anbieter legt der § 274 Abs. 1 SGB&nbsp;V eine Aufsichtsbehörde und einen Prüfzyklus fest, nach dem die dort benannte Aufsichtsbehörde die Geschäfts-, Rechnungs- und Betriebsführung beim Anbieter prüft. Die Prüfung erstreckt sich auf den gesamten Geschäftsbetrieb des Anbieters und umfasst die Prüfung seiner Gesetzmäßigkeit und Wirtschaftlichkeit. Die Prüfung beinhaltet die Einhaltung der Vorschriften des Datenschutzes und die Maßnahmen zur Informationssicherheit.</p>
+  <p id="polarion_266">Da die Prüfung des Datenschutzes und der Informationssicherheit inklusive Prüfzyklus gesetzlich geregelt ist, entfallen die Module zum Reporting und das Modul „Erweitertes ISMS“ für Anbieter der Fachdienste VSDM und Anbieter weiterer Anwendungen, für die der § 274 Abs. 1 SGB&nbsp;V anwendbar ist (siehe Abbildung 8).</p>
+  <p id="polarion_267" style="text-align: center;" data-keep-next="true"> <img data-keep-next="true" src="attachments/Picture_6_2.png" style="width: 361px;height: 262px;"> </p>
+  <p id="polarion_268" style="text-align: center;" class="polarion-rte-caption-paragraph"> Abbildung <span data-sequence="Abbildung" class="polarion-rte-caption">8</span>: Auswirkungen des § 274 SGB V auf die Modulzuordnung (grau = entfällt) </p>
+ </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+  <style type="text/css">
+
+
+  </style>
+ </head>
+ <body>
+ <div id="polarion_wiki macro name=module-workitem;params=id=ML-42913">
+   <p><b>TIP1-A_5009</b></p>
+   <p>Der Konnektor MUSS für Verbindungen zu Clientsystemen als Authentifizierungsmethode ausschließlich folgende Varianten erlauben:<br> 
+    <ol> 
+     <li>Für Verbindungen mit dem Konnektor in der Rolle des Servers (SOAP-Requests): </li> 
+     <ul> 
+      <li>TLS-Server-Authentifizierung des Konnektors und TLS-Client-Authentifizierung des Clientsystems<br> </li> 
+      <li>TLS-Server-Authentifizierung des Konnektors und BasicAuthentifizierung des Clientsystems<br> </li> 
+      <li>TLS-Server-Authentifizierung des Konnektors ohne TLS-Client-Authentifizierung des Clientsystems<br> </li> 
+      <li>Keine Authentifizierung des Konnektors und des Clientsystems <br> </li> 
+     </ul> 
+    </ol> 
+    <ol class="continue"> 
+     <li>Für Verbindungen mit dem Konnektor in der Rolle des Clients (CETP-Protokoll): </li> 
+     <ul> 
+      <li> TLS-Server-Authentifizierung des Clientsystems und TLS-Client-Authentifizierung des Konnektors<br> </li> 
+      <li>TLS-Server-Authentifizierung des Clientsystems ohne TLS-Client-Authentifizierung des Konnektors<br> </li> 
+      <li>Keine Authentifizierung des Konnektors und des Clientsystems<br> </li> 
+     </ul> 
+    </ol> Alle anderen Verbindungsversuche von Clientsystemen MÜSSEN vom Konnektor abgelehnt werden.<br> <b>&lt;=</b></p>
+	    <ol> 
+     <li>Für Verbindungen mit dem Konnektor in der Rolle des Servers (SOAP-Requests): </li> 
+     <ul> 
+      <li>TLS-Server-Authentifizierung des Konnektors und TLS-Client-Authentifizierung des Clientsystems<br> </li> 
+      <li>TLS-Server-Authentifizierung des Konnektors und BasicAuthentifizierung des Clientsystems<br> </li> 
+      <li>TLS-Server-Authentifizierung des Konnektors ohne TLS-Client-Authentifizierung des Clientsystems<br> </li> 
+      <li>Keine Authentifizierung des Konnektors und des Clientsystems <br> </li> 
+     </ul> 
+     <li>Für Verbindungen mit dem Konnektor in der Rolle des Clients (CETP-Protokoll): </li> 
+     <ul> 
+      <li> TLS-Server-Authentifizierung des Clientsystems und TLS-Client-Authentifizierung des Konnektors<br> </li> 
+      <li>TLS-Server-Authentifizierung des Clientsystems ohne TLS-Client-Authentifizierung des Konnektors<br> </li> 
+      <li>Keine Authentifizierung des Konnektors und des Clientsystems<br> </li> 
+     </ul> 
+    </ol> Alle anderen Verbindungsversuche von Clientsystemen MÜSSEN vom Konnektor abgelehnt werden.<br> <b>&lt;=</b></p>
+	<ol>
+    <li>First step
+    <ul>
+        <li>One sub-step
+        <li>Another sub-step
+    </ul>
+    <li>Second step
+	</ol>
+<p>Some comment in between.</p>
+<ol class="continued">          
+    <li>Obvious step after the aforementioned comment
+    <li>Last step
+    <ul>
+        <li>A sub-step
+        <li>Last sub-step
+    </ul>
+</ol>
+  </div>
+  </body>

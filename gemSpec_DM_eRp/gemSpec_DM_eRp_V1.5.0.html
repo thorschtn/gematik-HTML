@@ -1,0 +1,669 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="attachments/styleSheetForToc.css">
+ </head>
+ <body>
+  <p id="polarion_1"> <br> </p>
+  <p id="polarion_2"> <br> </p>
+  <p id="polarion_3"> <br> </p>
+  <p id="polarion_4"> <br> </p>
+  <p id="polarion_5"> <br> </p>
+  <p id="polarion_6"> <span style="font-weight: bold;text-decoration: underline;font-size: 11pt;line-height: 1.5;">Elektronische Gesundheitskarte und Telematikinfrastruktur</span> </p>
+  <p id="polarion_7"> <br> </p>
+  <p id="polarion_8"> <br> </p>
+  <p id="polarion_9"> <br> </p>
+  <p id="polarion_10"> <br> </p>
+  <p id="polarion_11" style="text-align: center;"> <span style="font-weight: bold;font-size: 26pt;line-height: 1.2;">Spezifikation</span> </p>
+  <p id="polarion_12" style="text-align: center;"> <span style="font-weight: bold;font-size: 26pt;line-height: 1.2;">Datenmodell E-Rezept</span> </p>
+  <p id="polarion_13"> <br> </p>
+  <p id="polarion_14"> <br> </p>
+  <p id="polarion_15"> <br> </p>
+  <div id="polarion_editor_html_block2" class="polarion-dle-wiki-block"> 
+   <div id="polarion_editor_html_block_content" contenteditable="false"></div>
+   <pre id="polarion_editor_html_block_source" class="polarion-dle-wiki-block-source" contenteditable="false">
+    <table>
+     <tr>
+      <td>Version</td>
+      <td>1.5.0</td>
+     </tr>
+     <tr>
+      <td>Revision</td>
+      <td>571463</td>
+     </tr>
+     <tr>
+      <td>Stand</td>
+      <td>07.12.2022</td>
+     </tr>
+     <tr>
+      <td>Status</td>
+      <td>freigegeben</td>
+     </tr>
+     <tr>
+      <td>Klassifizierung</td>
+      <td>öffentlich</td>
+     </tr>
+     <tr>
+      <td>Referenzierung</td>
+      <td>gemSpec_DM_eRp</td>
+     </tr>
+    </table></pre> 
+  </div>
+  <p id="polarion_16"></p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-103367">Dokumentinformationen</h1>
+  <p id="polarion_21"></p>
+  <p id="polarion_31"> <span style="font-weight: bold;">Änderungen zur Vorversion</span> </p>
+  <p id="polarion_22">Anpassungen des vorliegenden Dokumentes im Vergleich zur Vorversion können Sie der nachfolgenden Tabelle entnehmen.</p>
+  <p id="polarion_24"></p>
+  <p id="polarion_25" data-keep-next="true"> <span style="font-weight: bold;">Dokumentenhistorie</span> </p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=3" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 78px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Version<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 87px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Stand<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 65px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Kap./ Seite<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 366px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Grund der Änderung, besondere Hinweise<br> </span></th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 102px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Bearbeitung<br> </span></th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.0.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">30.06.20</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Erstversion des Dokumentes</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.0.1</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">06.07.20</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Aktualisierung Hinweis zu Dispensierinformation</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.1.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">12.11.20</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Einarbeitung gemäß Änderungsliste P22.2 /&nbsp;Scope-Themen Systemdesign R4.0.1</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.2.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">19.02.21</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Einarbeitung gemäß Änderungsliste P22.5</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.3.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">07.10.21</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Einarbeitung gemäß Änderungslisten<br> E-Rezept_Maintenance_21.1 und&nbsp; _21.2</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.3.1</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">18.11.21</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">redaktionelle Anpassung des Beispiels für Afo 19553-x<br> "... Sammlung von <span style="text-decoration: line-through;">vier</span> <span style="text-decoration: underline;">drei</span> E-Rezept-Token ..."</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.4.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">09.08.22</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Einarbeitung gemäß Änderungsliste E-Rezept_Maintenance_21.3, _21.4 und _22.2<br> Einarbeitung gemF_eRp_WF_LE, gemF_eRp_PKV und gemF_eRp_MVO</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.4.1</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">26.10.22</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">redaktionelle Anpassung: technische Korrektur der Beispiel-URLs unterhalb der Anforderung "A_22920 -&nbsp;Kodierung&nbsp;fullURL"<br> Diese Anpassung hat keine normativen Auswirkungen.</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 78px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">1.5.0</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 87px;height: 18.8px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">07.12.22</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 65px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;"></span></td> 
+     <td style="text-align: left;vertical-align: top;width: 366px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">Einarbeitung gemäß Änderungsliste E-Rezept_Maintenance_22.3</span></td> 
+     <td style="text-align: left;vertical-align: top;width: 102px;height: 18.8px;border: 1px solid #CCCCCC;padding: 5px;"><span style="font-size: 9pt;line-height: 1.5;">gematik</span></td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_27"> <br> </p>
+  <h1 id="polarion_wiki macro name=module-workitem;params=id=ML-103368">Inhaltsverzeichnis</h1>
+  <div id="polarion_wiki macro name=toc"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-103367">Dokumentinformationen</a></li>
+   <li><a href="#polarion_wiki macro name=module-workitem;params=id=ML-103368">Inhaltsverzeichnis</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103369">1 Einordnung des Dokumentes</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103370">1.1 Zielsetzung</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103371">1.2 Zielgruppe</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103372">1.3 Geltungsbereich</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103373">1.4 Abgrenzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103374">1.5 Methodik</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103376">2 Daten- und Informationsmodelle</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103869">2.1 FHIR-Ressourcen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103377">2.2 E-Rezept-ID</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103380">2.2.1 Beispielrechnung</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103381">2.2.1.1 Prüfzifferberechnung für "160.000.000.000.123.xx"</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103851">2.2.1.2 Prüfung von "160.000.000.000.123.76"</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103382">2.2.1.3 Prüfzifferberechnung für "160.123.456.789.123.xx"</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103850">2.2.1.4 Prüfung von "160.123.456.789.123.58"</a></li>
+   <li> : : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103852">2.2.1.5 Prüfung von "160.123.465.789.123.58" (Zahlendreher bei 56 -&gt; 65)</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-133041">2.3 2D-Code</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103385">2.3.1 2D-Code für E-Rezept-Token</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-133042">2.3.2 2D-Code für Abrechnungsinformation-Token</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103386">2.4 E-Rezept Typ</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103389">2.5 Zugriffsprotokoll</a></li>
+   <li> : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103390">3 Anhang A – Verzeichnisse</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103391">3.1 Abkürzungen</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103392">3.2 Glossar</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103393">3.3 Abbildungsverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103394">3.4 Tabellenverzeichnis</a></li>
+   <li> : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103395">3.5 Referenzierte Dokumente</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103396">3.5.1 Dokumente der gematik</a></li>
+   <li> : : : <a href="#polarion_wiki macro name=module-workitem;params=id=ML-103397">3.5.2 Weitere Dokumente</a></li>
+  </div>
+  <p id="polarion_38"></p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-103369">1 Einordnung des Dokumentes</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103370">1.1 Zielsetzung</h3>
+  <p id="polarion_40">Die vorliegende Spezifikation definiert die Anforderungen zum Datenmodell der Anwendung E-Rezept für die erste Ausbaustufe (Muster 16 für apothekenpflichtige Arzneimittel und Sprechstundenbedarfe). Für eine Folgestufe sind insbesondere für die Parametrierung der Workflows des E-Rezept-Fachdienstes weitere Parameter vorgesehen. Diese werden in der ersten Stufe nicht benötigt und zu gegebener Zeit festgelegt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103371">1.2 Zielgruppe</h3>
+  <p id="polarion_44">Dieses Dokument richtet sich an Implementierer und Nutzer von Schnittstellen der Fachanwendung E-Rezept. Dies sind insbesondere der Hersteller des Produkttyps E-Rezept-Fachdienst, die Hersteller von Primärsystemen und der Hersteller des E-Rezept-Frontend des Versicherten.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103372">1.3 Geltungsbereich</h3>
+  <p id="polarion_53">Dieses Dokument enthält normative Festlegungen zur Telematikinfrastruktur des deutschen Gesundheitswesens. Der Gültigkeitszeitraum der vorliegenden Version und deren Anwendung in Zulassungs- oder Abnahmeverfahren wird durch die gematik GmbH in gesonderten Dokumenten (z.B. Dokumentenlandkarte, Produkttypsteckbrief, Leistungsbeschreibung) fest­gelegt und bekannt gegeben.</p>
+  <p id="polarion_54"> <span style="font-weight: bold;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Schutzrechts-/Patentrechtshinweis</span> </p>
+  <p id="polarion_55"> <span style="font-style: italic;font-size: 10pt;font-family: Arial, Helvetica, sans-serif;line-height: 1.5;">Die nachfolgende Spezifikation ist von der gematik allein unter technischen Gesichtspunkten erstellt worden. Im Einzelfall kann nicht ausgeschlossen werden, dass die Implementierung der Spezifikation in technische Schutzrechte Dritter eingreift. Es ist allein Sache des Anbieters oder Herstellers, durch geeignete Maßnahmen dafür Sorge zu tragen, dass von ihm aufgrund der Spezifikation angebotene Produkte und/oder Leistungen nicht gegen Schutzrechte Dritter verstoßen und sich ggf. die erforderlichen Erlaubnisse/Lizenzen von den betroffenen Schutzrechtsinhabern einzuholen. Die gematik GmbH übernimmt insofern keinerlei Gewährleistungen.</span> </p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103373">1.4 Abgrenzungen</h3>
+  <p id="polarion_58">Spezifiziert wird in dem Dokument das Datenmodell von Produkttypen der Fachanwendung E-Rezept bereitgestellten (angebotenen) und genutzten Schnittstellen.</p>
+  <p id="polarion_19">Die fachlichen Inhalte des Informationsmodells für die Fachanwendung E-Rezept, d.h. die Daten, die durch den Verordnenden bereitgestellt werden, werden durch die Bundesmantelvertragspartner festgelegt.</p>
+  <p id="polarion_20"> <span style="font-size: 10pt;line-height: 1.5;">Die Vorgaben zur Abrechnung werden über den Rahmenvertrag § 129 Abs. 2 SGB V sowie über die Vereinbarung nach § 300 Abs. 3 SGB V festgelegt.</span> </p>
+  <p id="polarion_26">Diese fachlichen Inhalte&nbsp;sind nicht Teil des Scopes dieser Spezifikation.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103374">1.5 Methodik</h3>
+  <p id="polarion_65">Anforderungen als Ausdruck normativer Festlegungen werden durch eine eindeutige ID in eckigen Klammern sowie die dem RFC 2119 [RFC2119] entsprechenden, in Großbuchstaben geschriebenen deutschen Schlüsselworte MUSS, DARF NICHT, SOLL, SOLL NICHT, KANN gekennzeichnet.</p>
+  <p id="polarion_66"> Sie werden im Dokument wie folgt dargestellt:<span style="font-weight: bold;font-family: Wingdings;"><br> </span> <span style="font-weight: bold;">&lt;AFO-ID&gt; - &lt;Titel der Afo&gt;</span><br> Text / Beschreibung<br> [&lt;=] </p>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-103376">2 Daten- und Informationsmodelle</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103869">2.1 FHIR-Ressourcen</h3>
+  <p id="polarion_64"> Für die Spezifikation der Schnittstellen in dieser Anwendung wird der Standard FHIR (<span style="font-weight: normal;">Fast Healthcare Interoperability Resources</span>) verwendet. In FHIR werden Datenstrukturen und Elemente in "Ressourcen" beschrieben, welche über standardisierte Schnittstellen zwischen verschiedenen Komponenten übertragen werden können. Die Daten werden dabei in XML oder in JSON repräsentiert. </p>
+  <p id="polarion_29"> Die Standardisierungsgruppe HL7/FHIR definiert dafür unter&nbsp;<a href="https://www.hl7.org/fhir/index.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/index.html</a>&nbsp;ein Framework für den interoperablen Austausch medizinischer Daten über RESTful Services. Dem 80:20-Ansatz folgend definiert der FHIR-Standard die groben Bedarfe der meisten fachlichen UseCases (80%) und überlässt es der jeweiligen Anwendung, ihre spezifischen Bedarfe eigenständig zu profilieren (20 %).&nbsp; </p>
+  <p id="polarion_18"> Die gematik nutzt die Spezifikation der RESTful API gemäß <a href="https://www.hl7.org/fhir/http.html" target="_top" class="descriptionLink">https://www.hl7.org/fhir/http.html</a>&nbsp;und der ausgetauschten bzw. verwalteten Daten mittels FHIR-Ressourcen. Die spezifischen Bedarfe des E-Rezepts profiliert die gematik in einem Namespace&nbsp;&nbsp;<a href="https://gematik.de/fhir" target="_top" class="descriptionLink">https://gematik.de/fhir</a><span id="polarion-comment:94"></span>&nbsp;und&nbsp;&nbsp;<a href="https://gematik.de/fhir/erx" target="_top" class="descriptionLink">https://gematik.de/fhir/erx</a>. Das Portal simplifier.net wird für die Veröffentlichung der Profile verwendet, die über das Projekt "E-Rezept-Workflow"&nbsp;<a href="https://simplifier.net/erezept-workflow" target="_top" class="descriptionLink">https://simplifier.net/erezept-workflow</a>&nbsp;zur Einsicht und Validierung genutzt werden können. Außerdem werden die von der KBV definierten fachlichen Informationsobjekte des simplifier.net-Projekts "eRezept" <a href="https://simplifier.net/eRezept" target="_top" class="descriptionLink">https://simplifier.net/eRezept</a> referenziert und genutzt. </p>
+  <p id="polarion_17"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-126430">
+   <p><b>A_22483</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der verordnenden und abgebenden LEI MÜSSEN das FHIR-Package&nbsp;<span style="font-size: 10pt;line-height: 1.5;">de.gematik.erezept-workflow</span> in der Version gemäß [FHIR Version] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_77"> <span id="polarion-comment:101"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-132650">
+   <p><b>A_22963</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN das FHIR-Package&nbsp;<span style="font-size: 10pt;line-height: 1.5;">de.gematik.erezept-patientenrechnung&nbsp;</span>in der Version gemäß [FHIR Version] unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_49">Die in beiden Projekten erstellten Profile setzen auf den FHIR-Standard in der Version 4.0.1.</p>
+  <p id="polarion_78"> <span id="polarion-comment:112"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133056">
+   <p><b>A_19295-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept, das PS der verordnenden LEI und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource Task gemäß der Profilierung&nbsp;<a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Task" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Task</a> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_79"> <span id="polarion-comment:113"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133054">
+   <p><b>A_19297-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource MedicationDispense gemäß der Profilierung&nbsp;<a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_MedicationDispense</a> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_80"> <span id="polarion-comment:114"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133053">
+   <p><b>A_19298-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept MÜSSEN die FHIR-Ressource AuditEvent gemäß der FHIR-Profilierung&nbsp;<a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AuditEvent" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AuditEvent</a> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_46"> <span id="polarion-comment:115"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133050">
+   <p><b>A_19299-02</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource Communication gemäß der FHIR-Profilierungen&nbsp;<br> 
+    <ul> 
+     <li><a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_DispReq" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_DispReq</a>&nbsp;(Einlöseauftrag)</li> 
+     <li><a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_InfoReq" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_InfoReq</a>&nbsp;&nbsp;(Anfrage Belieferfähigkeit)&nbsp;</li> 
+     <li><a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_Reply" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_Reply</a>&nbsp;(Antwortnachricht einer Apotheke)</li> 
+     <li><a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_Representative" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_Representative</a>&nbsp;(Vertreterkommunikation)</li> 
+     <li><a href="https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq" target="_top" class="descriptionLink">https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq</a>&nbsp;(Abrechnungsinformation-Token übermitteln)</li> 
+     <li><a href="https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply" target="_top" class="descriptionLink">https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply</a>&nbsp;(Antwortnachricht zu Abrechnungsinformation-Token)</li> 
+    </ul> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_81"> <span id="polarion-comment:106"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133064">
+   <p><b>A_23028</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource Quittung gemäß der FHIR-Profilierung&nbsp;<a class="descriptionLink" target="_top" href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Composition</a> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_47"> <span id="polarion-comment:104"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133062">
+   <p><b>A_19300-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource Bundle gemäß der FHIR-Profilierung&nbsp;<a href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle</a> unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_48"> <span id="polarion-comment:107"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133058">
+   <p><b>A_23027</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der abgebenden LEI MÜSSEN&nbsp;die FHIR-Ressource CloseOprerationInputBundle <a class="descriptionLink" target="_top" href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_CloseOperationInputBundle">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_CloseOperationInputBundle</a> gemäß der Profilierung&nbsp; unterstützen. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_57"> <span id="polarion-comment:111"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133063">
+   <p><b>A_20213-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept MÜSSEN die FHIR-Ressource Bundle gemäß der FHIR-Profilierung&nbsp;<a href="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle" target="_top" class="descriptionLink">https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle</a>&nbsp;unterstützen. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-124563">
+   <p><b>A_22204</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Produkttypen der Anwendung E-Rezept MÜSSEN die FHIR-Ressource PKV-Abgabedatensatz gemäß der FHIR-Profilierung <a class="descriptionLink" target="_top" href="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle">http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle</a>&nbsp; unterstützen.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_28"> <span id="polarion-comment:103"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133048">
+   <p><b>A_22205-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Produkttypen der Anwendung E-Rezept MÜSSEN die FHIR-Ressource ChargeItem gemäß der FHIR-Profilierung&nbsp;<a href="https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem" target="_top" class="descriptionLink">https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem</a>&nbsp;unterstützen.</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_30"> <span id="polarion-comment:102"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133049">
+   <p><b>A_22206-01</b></p>
+   <p><span style="font-size: 10pt;line-height: 1.5;">Die Produkttypen der Anwendung E-Rezept MÜSSEN die FHIR-Ressource Consent gemäß der FHIR-Profilierung&nbsp;<a href="https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent" target="_top" class="descriptionLink">https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent</a> unterstützen.</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_56"> <span id="polarion-comment:110"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133059">
+   <p><b>A_20745-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept, das PS der verordnenden LEI und das PS der abgebenden LEI MÜSSEN die FHIR-Ressource Device gemäß der FHIR-Profilierung&nbsp;<a class="descriptionLink" target="_top" href="https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device">https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Device</a> unterstützen.<br> <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-124593">
+   <p><b>A_22216</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der verordnenden und abgebenden LEI MÜSSEN alle generierten FHIR-Ressourcen mit der Versionsnummer gemäß&nbsp;<a class="descriptionLink" target="_top" href="https://www.hl7.org/fhir/datatypes.html#canonical">https://www.hl7.org/fhir/datatypes.html#canonical</a>&nbsp;im Feld Ressource.meta.profile kennzeichnen, zu dessen aktuell gültiger Profilversion sie mutmaßlich validieren. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-129973">
+   <p><b>A_22920</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept und das PS der verordnenden und abgebenden LEI, welche fullURLs in FHIR-Objekten erstellen, MÜSSEN<span style="font-size: 10pt;line-height: 1.5;">&nbsp;diese URLs gemäß [RFC3986] für FHIR-Datentyp "URI" codieren.&nbsp;</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_59">Die Codierung nach RFC-3986 bedeutet, dass URLs:</p>
+  <ul id="polarion_73"> 
+   <li>im FQDN-Teil lediglich aus Ziffern und Buchstaben sowie einfachem Bindestrich und Punkt bestehen dürfen (bspw. für eine reguläre Expression zur Prüfung "(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{0,62}[a-zA-Z0-9]\.)+[a-zA-Z]{2,63}$)") und</li> 
+   <li>in der Pfadangabe und URL-Parametern gewisse Sonderzeichen in %-Codierung enthalten dürfen. Aus Sicherheitsgründen sollte auf die Nutzung von URL-Parametern verzichtet werden.</li> 
+  </ul>
+  <p id="polarion_74"> Beispiele:<br> http://praxis-dr-müller.de/123 muss umgewandelt werden zu <a href="http://xn--praxis-dr-mller-9vb.de/123" target="_top" class="descriptionLink">http://xn--praxis-dr-mller-9vb.de/123</a>&nbsp;(keine Umlaute erlaubt)<br> http://praxis dr. meier.de/123 darf keine Leerzeichen enthalten&nbsp;<a href="http://praxisdr.meier.de/123" target="_top" class="descriptionLink">http://praxisdr.meier.de/123</a>&nbsp;(bspw. Leerzeichen löschen)<br> <br> Lediglich in Canonicals für die Angabe des FHIR-Profils ist das Sonderzeichen "|" für die zusätzliche Angabe der Versionsnummer zulässig. </p>
+  <p id="polarion_75"></p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103377">2.2 E-Rezept-ID</h3>
+  <p id="polarion_52">Die E-Rezept-ID wird durch den E-Rezept-Fachdienst beim Anlegen eines Tasks für den Workflow des E-Rezepts erstellt.</p>
+  <p id="polarion_51"> <span id="polarion-comment:109"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133060">
+   <p><b>A_19217-01</b></p>
+   <p>Der E-Rezept-Fachdienst MUSS E-Rezept-IDs erzeugen und verwalten, welche der Syntax "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">aaa.bbb.bbb.bbb.bbb.cc"</span> und der folgenden Semantik genügen <br>
+    <table style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;" class="polarion-Document-table" id="polarion_wiki macro name=table;params=width=100%|uid=36">
+     <tbody>
+      <tr>
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;"></th>
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Bedeutung</th>
+       <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Datentyp</th>
+      </tr>
+      <tr>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">aaa</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">E-Rezept-Typ</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">alphanummerisch,&nbsp;mit der Belegung gemäß "flowType" in&nbsp;<a class="descriptionLink" target="_top" href="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_FlowType">https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_FlowType</a></td>
+      </tr>
+      <tr>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">bbb.bbb.bbb.bbb</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">fortlaufende Rezeptnummer</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">nummerisch, 12-stellig</td>
+      </tr>
+      <tr>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">cc</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Prüfnummer<br> Verfahren gemäß [ISO 7064]</td>
+       <td style="text-align: left;vertical-align: top;height: 12px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">nummerisch</td>
+      </tr>
+     </tbody>
+    </table>damit Tippfehler in der manuellen Erfassung erkannt werden können und die E-Rezept-ID über 11 Jahre eine eineindeutige Zuordnung zwischen allen Datenobjekten im E-Rezept-Workflow erlaubt. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-103379">
+   <p><b>A_19218</b></p>
+   <p>Alle Produkttypen, die eine E-Rezept-ID aus externen Systemen einlesen oder von Benutzern entgegen nehmen, MÜSSEN die E-Rezept-ID gegen ihre Prüfziffer nach dem Modulo-97-Verfahren gemäß [ISO 7064] prüfen und bei Ungültigkeit die Weiterverarbeitung verhindern, damit Benutzerfehleingaben vor der Verarbeitung erkannt werden. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-103380">2.2.1 Beispielrechnung</h4>
+  <p id="polarion_62">Im Folgenden wird das Modulo-97-Verfahren an zwei Beispielen verdeutlicht.</p>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-103381">2.2.1.1 Prüfzifferberechnung für "160.000.000.000.123.xx"</h5>
+  <ol id="polarion_63"> 
+   <li>step 1 in [ISO 7064]: mit 100 multiplizieren -&gt; 16000000000012300</li> 
+   <li>step 2 in [ISO 7064]: Modulo bilden -&gt; 16000000000012300 mod 97 = 22</li> 
+   <li>step 3 in [ISO 7064]: 98 - 22 = 76</li> 
+   <li>"160.000.000.000.123.<span style="font-weight: bold;">76</span>"</li> 
+  </ol>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-103851">2.2.1.2 Prüfung von "160.000.000.000.123.76"</h5>
+  <ol id="polarion_61"> 
+   <li>Modulo 97 bilden -&gt; 16000000000012376 mod 97 = 1</li> 
+   <li>Ist das Ergebnis = 1, ist die Prüfziffer korrekt, falls das Ergebnis ungleich eins ist, ist die Zahl ungültig</li> 
+  </ol>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-103382">2.2.1.3 Prüfzifferberechnung für "160.123.456.789.123.xx"</h5>
+  <ol id="polarion_68"> 
+   <li>step 1 in [ISO 7064]: mit 100 multiplizieren -&gt;&nbsp;16012345678912300</li> 
+   <li>step 2 in [ISO 7064]: Modulo bilden -&gt; 16012345678912300 mod 97 = 40</li> 
+   <li>step 3 in [ISO 7064]: 98 - 40= 58</li> 
+   <li>"160.123.456.789.123.<span style="font-weight: bold;">58</span>"</li> 
+  </ol>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-103850">2.2.1.4 Prüfung von "160.123.456.789.123.58"</h5>
+  <ol id="polarion_76"> 
+   <li>Modulo 97 bilden -&gt; 16012345678912358 mod 97 = 1</li> 
+   <li>Ist das Ergebnis = 1, ist die Prüfziffer korrekt, falls das Ergebnis ungleich eins ist, ist die Zahl ungültig</li> 
+  </ol>
+  <h5 id="polarion_wiki macro name=module-workitem;params=id=ML-103852">2.2.1.5 Prüfung von "160.123.465.789.123.58" (Zahlendreher bei 56 -&gt; 65)</h5>
+  <ol id="polarion_71"> 
+   <li>Modulo 97 bilden -&gt; 16012346578912358 mod 97 = 51</li> 
+   <li>Die Rezept-ID ist ungültig, da das Ergebnis der Modulo-Operation ungleich 1 ist.</li> 
+  </ol>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-133041">2.3 2D-Code</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-103385">2.3.1 2D-Code für E-Rezept-Token</h4>
+  <p id="polarion_23">Um ein E-Rezept beliefern zu können, muss die Apotheke das Wissen um die Referenz des steuernden Tasks und den AccessCode zum Nachweis der Berechtigung erlangen. Diese beiden Datenfelder, URL des Tasks und AccessCode, werden vom Versicherten zur Verfügung gestellt. Die Bereitstellung kann als E-Rezept-Nachricht über den E-Rezept-Fachdienst oder als 2D-Code erfolgen. Die Bereitstellung als 2D-Code erfolgt entweder über das Abscannen des Codes von einem Papierausdruck oder vom Display des E-Rezept-FdV, welches den Code auf dem Display des Geräts des Versicherten anzeigt.</p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-105638">
+   <p><b>A_19554</b></p>
+   <p>Das E-Rezept-FdV und das PS der verordnenden LEI MÜSSEN zum Erstellen eines E-Rezept-Token die ID auf einen Task zusammen mit dem AccessCode des Tasks aus den lokal verfügbaren Informationen eines E-Rezepts als URL in der Form:<br> 
+    <ul> 
+     <li><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">2D-Code-Daten = "Task/" + <span style="font-weight: bold;">Task.id</span>&nbsp; + "/$accept?ac=" + <span style="font-weight: bold;">AccessCode</span></span></li> 
+    </ul> zusammenstellen, damit diese Zeichenkette als Referenz in einer E-Rezept-Nachricht und in einem JSON-Array für die Generierung eines 2D-Codes verwendet werden kann. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_32"> <span style="font-family: Arial, Helvetica;">Beispiel für E-Rezept-Einlöseinformationen (z.B. für Nutzung als Referenz in Communication-Ressource): <br> </span><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">"Task/4711/$accept?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"</span> </p>
+  <p id="polarion_45"></p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-118925">
+   <p><b>A_19553-01</b></p>
+   <p>Das E-Rezept-FdV MUSS eine Sammlung von einer und bis zu drei E-Rezept-Referenzen als Array in JSON-Notation gemäß [JSON] der folgenden Form <br> <br>
+    <ul>
+     <li><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">2D-Code-Daten = {&nbsp;"urls":&nbsp;[ "E-Rezept 1", "E-Rezept 2", "E-Rezept 3" ] }</span></li>
+    </ul>zusammenfassen, um daraus einen 2D-Code generieren zu können. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_33">Beispiel für genau ein E-Rezept-Token (für die Codierung als 2D-Code):</p>
+  <p id="polarion_35"> {<br> &nbsp; "urls":&nbsp;[ "Task/4711/$accept?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea" ] </p>
+  <p id="polarion_36">}</p>
+  <p id="polarion_37"> Beispiel für eine Sammlung von drei E-Rezept-Token (für die Codierung als 2D-Code): <br> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{<br> &nbsp; "urls":&nbsp;[ <br> &nbsp;&nbsp; &nbsp;"Task/4711/$accept?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea", <br> &nbsp;&nbsp; &nbsp;"Task/4712/$accept?ac=0936cfa582b447144b71ac89eb7bb83a77c67c99d4054f91ee3703acf5d6a629",<br> &nbsp;&nbsp; &nbsp;"Task/4713/$accept?ac=d3e6092ae3af14b5225e2ddbe5a4f59b3939a907d6fdd5ce6a760ca71f45d8e5"<br> &nbsp; ]</span> </p>
+  <p id="polarion_39"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">}&nbsp;</span> </p>
+  <p id="polarion_41">Der Datentyp der Task.id erlaubt bis zu 64 Zeichen zur Angabe einer ID des Tasks. Mit der zulässigen Maximallänge ergibt sich folgendes Beispiel, aus dem die maximale Datengröße für einen 2D-Datamatrix-Code ergibt (Umbrücke und Leerzeichen werden im Sinne der Datenkomprimierung entfernt).</p>
+  <p id="polarion_43"> <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">{"urls":["Task/1234567891011121314151617181920212223242526272829303132333435361/$accept?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea","Task/1234567891011121314151617181920212223242526272829303132333435362/$accept?ac=0936cfa582b447144b71ac89eb7bb83a77c67c99d4054f91ee3703acf5d6a629","Task/1234567891011121314151617181920212223242526272829303132333435363/$accept?ac=d3e6092ae3af14b5225e2ddbe5a4f59b3939a907d6fdd5ce6a760ca71f45d8e5"]}&nbsp;</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-105625">
+   <p><b>A_19543</b></p>
+   <p>Das E-Rezept-FdV und das PS der verordnenden LEI MÜSSEN die Datenstruktur für&nbsp;2D-Code-Daten&nbsp;in eine&nbsp;DataMatrix-Darstellung gemäß ISO/IEC 16022:2006 überführen können. <b>&lt;=</b></p>
+  </div>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-133042">2.3.2 2D-Code für Abrechnungsinformation-Token</h4>
+  <p id="polarion_34"> Um auf Wunsch des Versicherten den PKV-Abgabedatensatz ändern zu können, <span style="font-size: 10pt;line-height: 1.5;"> muss die Apotheke das Wissen um die Referenz des ChargeItem und den AccessCode zum Nachweis der Berechtigung erlangen. Diese Informationen werden vom Versicherten zur Verfügung gestellt. Die Bereitstellung kann als Nachricht über den E-Rezept-Fachdienst oder durch Abscannen als 2D-Code vom Display der E-Rezept-FdV erfolgen.&nbsp;</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-129204">
+   <p><b>A_22729</b></p>
+   <p><span style="font-weight: normal;font-size: 10pt;line-height: 1.5;">Das E-Rezept-FdV MUSS zum Erstellen eines Token für die Zugriffsinformationen für eine Abrechnungsinformation die ID auf einen ChargeItem zusammen mit dem AccessCode zum Ändern aus den lokal verfügbaren Informationen einer Abrechnungsinformation als URL in der Form: 2D-Code-Daten = "ChargeItem/" + ChargeItem.id&nbsp; + "?ac=" + AccessCode zusammenstellen, damit diese Zeichenkette als Referenz in einer E-Rezept-Nachricht oder für die Generierung eines 2D-Codes verwendet werden kann.</span> <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_60"> <span style="font-size: 10pt;line-height: 1.5;">Beispiel für Abrechnungsinformation-Token:&nbsp; </span> </p>
+  <p id="polarion_67"> <span style="font-size: 10pt;line-height: 1.5;">"ChargeItem/200.100.000.000.004.30?ac=0037c20b8e893b690f07d784fcfcf38c748454c08253a8b2c0499347576ca612"</span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-129205">
+   <p><b>A_22730</b></p>
+   <p>Das E-Rezept-FdV MUSS einen Abrechnungsinformation-Token in JSON-Notation gemäß [JSON] der folgenden Form<br> 
+    <ul>
+     <li><span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">2D-Code-Daten = {&nbsp;"urls":&nbsp;[ "Abrechnungsinformation" ] }</span></li>
+    </ul>darstellen, um daraus einen 2D-Code generieren zu können. <b>&lt;=</b></p>
+  </div>
+  <p id="polarion_69">Beispiel für die Codierung als 2D-Code:</p>
+  <p id="polarion_70"> {<br> &nbsp; "urls":&nbsp;[ "ChargeItem/200.100.000.000.004.30?ac=0037c20b8e893b690f07d784fcfcf38c748454c08253a8b2c0499347576ca612" ] </p>
+  <p id="polarion_72">}</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103386">2.4 E-Rezept Typ</h3>
+  <p id="polarion_42"> Der E-Rezept Typ wird in dem Parameter <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">flowType</span> festgehalten. Dieser gibt an, von welchem Typ das elektronische Rezept ist, und steuert den entsprechenden Workflow. </p>
+  <p id="polarion_50"> <span id="polarion-comment:108"></span> </p>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133061">
+   <p><b>A_19324-01</b></p>
+   <p>Die Produkttypen der Anwendung E-Rezept, das PS der verordnenden LEI und das PS der abgebenden LEI MÜSSEN das FHIR CodeSystem FLOWTYPE gemäß <a href="https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_FlowType" target="_top" class="descriptionLink">https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_FlowType</a>&nbsp;unterstützen.&nbsp; <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-131776">
+   <p><b>A_19445-08</b></p>
+   <p>Der E-Rezept-Fachdienst MUSS in Abhängigkeit des Task-Parameters FLOWTYPE und dem in der http-POST-Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/Task/&lt;id&gt;/$activate</span> übergebenen, gültig signierte E-Rezept-Bundle&nbsp;die Attribute des zu erzeugenden Tasks wie folgt belegen:&nbsp;&nbsp; <br> <br>
+    <table id="polarion_wiki macro name=table;params=width=100%" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;">
+     <tbody>
+      <tr>
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 79px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">FLOWTYPE</th>
+       <th style="background-color: #F0F0F0;text-align: left;vertical-align: top;width: 651px;height: 19px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Attributierung des zu erzeugenden Tasks</th>
+      </tr>
+      <tr>
+       <td style="width: 79px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">160</td>
+       <td style="width: 651px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Task.performerType = {coding.system="urn:ietf:rfc:3986", coding.code="1.2.276.0.76.4.54", coding.display="Öffentliche Apotheke"}<br> Task.PrescriptionType.valueCoding.display = "<span style="font-size: 10pt;line-height: 1.5;">Muster 16 (Apothekenpflichtige Arzneimittel)</span>"<br><br> wenn&nbsp;MedicationRequest.extension:Mehrfachverordnung.extension:Kennzeichen = false:<br> 
+        <div style="margin-left: 40px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 28 Kalendertage
+         <br>
+        </div>sonst<br> 
+        <div style="margin-left: 40px;">
+         wenn MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end angegeben
+         <br> 
+         <div style="margin-left: 40px;">
+          Task.ExpiryDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br> Task.AcceptDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br>
+         </div>sonst
+         <br>
+        </div>
+        <div style="margin-left: 80px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+        </div></td>
+      </tr>
+      <tr>
+       <td style="width: 79px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">169</td>
+       <td style="width: 651px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Task.performerType = {coding.system="urn:ietf:rfc:3986", coding.code="1.2.276.0.76.4.54", coding.display="Öffentliche Apotheke"}<br> Task.flowType.valueCoding.display = "<span style="font-size: 10pt;line-height: 1.5;">Muster 16 (Direkte Zuweisung)</span>"<br><br> wenn&nbsp;MedicationRequest.extension:Mehrfachverordnung.extension:Kennzeichen = false:<br> 
+        <div style="margin-left: 40px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 28 Kalendertage
+        </div>sonst<br> 
+        <div style="margin-left: 40px;">
+         wenn MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end angegeben
+         <br> 
+         <div style="margin-left: 40px;">
+          Task.ExpiryDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br> Task.AcceptDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br>
+         </div>sonst
+         <br>
+        </div>
+        <div style="margin-left: 80px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+        </div></td>
+      </tr>
+      <tr>
+       <td style="width: 79px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">200</td>
+       <td style="width: 651px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Task.performerType = {coding.system="urn:ietf:rfc:3986", coding.code="1.2.276.0.76.4.54", coding.display="Öffentliche Apotheke"}<br> Task.flowType.valueCoding.display = "PKV (Apothekenpflichtige Arzneimittel)"<br><br> wenn&nbsp;MedicationRequest.extension:Mehrfachverordnung.extension:Kennzeichen = false:<br> 
+        <div style="margin-left: 40px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br>
+        </div>sonst<br> 
+        <div style="margin-left: 40px;">
+         wenn MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end angegeben
+         <br> 
+         <div style="margin-left: 40px;">
+          Task.ExpiryDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br> Task.AcceptDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br>
+         </div>sonst
+         <br>
+        </div>
+        <div style="margin-left: 80px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+        </div></td>
+      </tr>
+      <tr>
+       <td style="width: 79px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">209</td>
+       <td style="width: 651px;height: 18px;border: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;padding: 5px;">Task.performerType = {coding.system="urn:ietf:rfc:3986", coding.code="1.2.276.0.76.4.54", coding.display="Öffentliche Apotheke"}<br> Task.flowType.valueCoding.display = "<span style="font-size: 10pt;line-height: 1.5;">PKV (Direkte Zuweisung)</span>"<br><br> wenn&nbsp;MedicationRequest.extension:Mehrfachverordnung.extension:Kennzeichen = false:<br> 
+        <div style="margin-left: 40px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 3 Kalendermonate
+         <br>
+        </div>sonst<br> 
+        <div style="margin-left: 40px;">
+         wenn MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end angegeben
+         <br> 
+         <div style="margin-left: 40px;">
+          Task.ExpiryDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br> Task.AcceptDate =&nbsp; MedicationRequest.extension:Mehrfachverordnung.extension:Zeitraum.value[x]:valuePeriod.end
+          <br>
+         </div>sonst
+         <br>
+        </div>
+        <div style="margin-left: 80px;">
+         Task.ExpiryDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+         <br> Task.AcceptDate = &lt;Datum der QES.Erstellung im Signaturobjekt&gt; + 365 Kalendertage
+        </div></td>
+      </tr>
+     </tbody>
+    </table>damit dem Versicherten Informationen über die Gültigkeit (Erstattungsfrist durch die Kostenträger = AcceptDate, Einlösefrist = ExpiryDate) des E-Rezepts angezeigt werden und der Workflow auf Basis der gewählten Parameter gesteuert werden kann. <b>&lt;=</b></p>
+  </div>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-122904">
+   <p><b>A_19517-02</b></p>
+   <p>Der E-Rezept-Fachdienst MUSS nach der Feststellung der Prozessparameter gemäß&nbsp;<span data-option-id="custom" data-item-id="ML-104367" data-custom-label="A_19445" id="fake" data-type="workItem" class="polarion-rte-link"></span>&nbsp;die folgenden Parameter mit abweichenden Werten belegen:<br> 
+    <ul>
+     <li>Task.AcceptDate = &lt;Datum der QES.Erstellung <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">Bundle.signature.when</span>&gt; + 2 Werktage (Montag bis Samstag, ausgenommen bundeseinheitliche Feiertage) (Abweichende Regelungen durch den <span style="font-size: 10pt;line-height: 1.5;">Gemeinsamen Bundesausschuss (G-BA) sind zu beachten.</span>)</li>
+    </ul>wenn das in der http-POST-Operation <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">/Task/&lt;id&gt;/$activate</span> übergebene, gültig signierte E-Rezept-Bundle in der Extension&nbsp; <a class="descriptionLink" target="_top" href="https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis">https://fhir.kbv.de/StructureDefinition/KBV_EX_FOR_Legal_basis</a>&nbsp;in Bundle.Composition den <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">code="04"</span>&nbsp;oder <span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">"14"</span> des Code-Systems&nbsp;<a class="descriptionLink" target="_top" href="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN">https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_STATUSKENNZEICHEN</a>&nbsp;("<span style="font-size: 10pt;line-height: 1.5;">Entlassmanagement-Kennzeichen"</span>) enthält <br>und die übrigen Prozessparameter unverändert übernehmen, damit der Prozess für das E-Rezept mit den abweichenden Festlegungen für das Entlassrezept gemäß Arzneimittelrichtlinie [AM-RL] umgesetzt wird. <b>&lt;=</b></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103389">2.5 Zugriffsprotokoll</h3>
+  <div id="polarion_wiki macro name=module-workitem;params=id=ML-133045">
+   <p><b>A_19296-02</b></p>
+   <p>Der E-Rezept-Fachdienst MUSS einen Protokolleintrag mit den folgenden Werten befüllen:<br> 
+    <ul>
+     <li><span style="font-weight: bold;">AuditEvent.text</span>: Generierung eines HTML-&lt;div&gt;-Elements mit lesbarer Beschreibung in einfacher Sprache<br></li>
+     <li><span style="font-weight: bold;">AuditEvent.type</span>: Fester Wert "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">rest</span>" gemäß&nbsp;<a class="descriptionLink" target="_top" href="http://terminology.hl7.org/CodeSystem/audit-event-type">http://terminology.hl7.org/CodeSystem/audit-event-type</a>&nbsp;<br></li>
+     <li><span style="font-weight: bold;">AuditEvent.subtype</span>: aus dem ValueSet <a class="descriptionLink" target="_top" href="https://www.hl7.org/fhir/valueset-audit-event-sub-type.html">https://www.hl7.org/fhir/valueset-audit-event-sub-type.html</a>&nbsp; gemäß&nbsp;<a class="descriptionLink" target="_top" href="http://hl7.org/fhir/restful-interaction">http://hl7.org/fhir/restful-interaction</a>&nbsp;<br></li>
+     <li style="list-style: none">
+      <ul>
+       <li><span style="font-size: 10pt;line-height: 1.5;">"<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">create</span>" beim Hinzufügen/Speichern/Anlegen eines Datenobjekts mit Versichertenbezug (mit Ausnahme von AuditEvent- und Communication-Ressource)<br></span></li>
+       <li><span style="font-size: 10pt;line-height: 1.5;">"<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">read</span>" beim lesenden Zugriff auf ein Datenobjekt mit Versichertenbezug<br></span></li>
+       <li><span style="font-size: 10pt;line-height: 1.5;">"<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">update</span>", wenn das Datenobjekt mit Versichertenbezug geändert/aktualisiert wird<br></span></li>
+       <li><span style="font-size: 10pt;line-height: 1.5;">"<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">delete</span>", wenn das Datenobjekt mit Versichertenbezug manuell oder automatisch gelöscht wird</span><br></li>
+      </ul></li>
+     <li><span style="font-weight: bold;">AuditEvent.action</span>: analog AuditEvent.subType (C, R, U, D) gemäß&nbsp;<a class="descriptionLink" target="_top" href="https://www.hl7.org/fhir/valueset-audit-event-action.html">https://www.hl7.org/fhir/valueset-audit-event-action.html</a>&nbsp;</li>
+     <li><span style="font-weight: bold;">AuditEvent.recorded</span>: aktuelle Systemzeit des E-Rezept-Fachdienstes</li>
+     <li><span style="font-weight: bold;">AuditEvent.outcome</span>: Ergebnis der aufgerufenen Operation gemäß&nbsp;<a class="descriptionLink" target="_top" href="https://www.hl7.org/fhir/valueset-audit-event-outcome.html">https://www.hl7.org/fhir/valueset-audit-event-outcome.html</a> (0 = Erfolg, 4 = Fehler auf Clientseite, 8 = Serverfehler)&nbsp;</li>
+     <li><span style="font-weight: bold;">AuditEvent.agent.type</span>: Fester Wert "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">humanuser</span>" aus&nbsp;&nbsp;<a class="descriptionLink" target="_top" href="http://terminology.hl7.org/CodeSystem/extra-security-role-type">http://terminology.hl7.org/CodeSystem/extra-security-role-type</a>&nbsp;</li>
+     <li><span style="font-weight: bold;">AuditEvent.agent.name</span><span style="font-weight: normal;">:</span><span style="font-weight: bold;">&nbsp;</span>Lesbarer Name aus Identity-Token des Zugreifenden, der die zu protokollierende Aktion getriggert hat, z.B. "Praxis Dr. Müller, Bahnhofstr. 78" oder Versicherter z.B. "Max Mustermann"</li>
+     <li><span style="font-weight: bold;">AuditEvent.agent.who</span>: KVNR bzw. Telematik-ID des zugreifenden Nutzers aus Identity-Token, der diesen Protokolleintrag ausgelöst hat</li>
+     <li><span style="font-weight: bold;">AuditEvent.agent.requestor</span>: Fester Wert "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">false</span>", da keine Protokolleinträge von außen erzeugt werden</li>
+     <li><span style="font-weight: bold;">AuditEvent.soure.site</span>: Fester Wert "<span style="font-family: 'Courier New', Courier, monospace, HanWangKanTan;">E-Rezept-Fachdienst</span>"</li>
+     <li><span style="font-weight: bold;">AuditEvent.soure.observer</span>: Device-Informationen des E-Rezept-Fachdienstes (status, serialnumber=gemäß Release)</li>
+     <li><span style="font-weight: bold;">AuditEvent.entity.what</span>: Referenz auf&nbsp;das betroffene Datenobjekt Task, ChargeItem, MedicationDispense oder Consent zum Abruf</li>
+     <li><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">AuditEvent.entity.name</span>: Eintrag der KVNR des betroffenen Versicherten aus dem Identifier des protokollierten Datenobjekts (String)</span></li>
+     <li><span style="font-size: 10pt;line-height: 1.5;"><span style="font-weight: bold;">AuditEvent.entity.description</span><span style="font-weight: normal;">:</span> Rezept-ID als Identifier, wird übernommen aus MedicationDispense, ChargeItem oder Task bzw. Consent.category.coding.code bei Anlegen oder Löschen eines Consent&nbsp;</span></li>
+    </ul> <b>&lt;=</b></p>
+  </div>
+  <h2 id="polarion_wiki macro name=module-workitem;params=id=ML-103390">3 Anhang A – Verzeichnisse</h2>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103391">3.1 Abkürzungen</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=1" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 94px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Kürzel<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 486.8px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">API</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">application programming interface</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">FdV</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Frontend des Versicherten</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">FHIR</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Fast Healthcare Interoperable Resources</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">HTML</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Hypertext Markup Language</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">JSON</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">JavaScript Object Notation</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">KVNR</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">10-stelliger Anteil der Krankenversichertennummer ("Versicherten-ID")</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">LEI</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Leistungserbringerinstitution</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">PS</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Primärsystem</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">QES</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Qualifizierte Elektronische Signatur</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">URL</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Uniform Resource Locator</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 94px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">XML</td> 
+     <td style="text-align: left;vertical-align: top;width: 486.8px;height: 20.4px;border: 1px solid #CCCCCC;padding: 5px;">Extensible Markup Language</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103392">3.2 Glossar</h3>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=2" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 154px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Begriff<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 426.8px;height: 19.6px;border: 1px solid #CCCCCC;padding: 5px;">Erläuterung<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 154px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;">Funktionsmerkmal </td> 
+     <td style="text-align: left;vertical-align: top;width: 426.8px;height: 57.2px;border: 1px solid #CCCCCC;padding: 5px;">Der Begriff beschreibt eine Funktion oder auch einzelne, eine logische Einheit bildende Teilfunktionen der TI im Rahmen der funktionalen Zerlegung des Systems. </td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_181">Das Glossar wird als eigenständiges Dokument (vgl. [gemGlossar]) zur Verfügung gestellt.</p>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103393">3.3 Abbildungsverzeichnis</h3>
+  <div data-sequence="Abbildung" id="polarion_wiki macro name=tof;params=uid=1"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103394">3.4 Tabellenverzeichnis</h3>
+  <div data-sequence="Tabelle" id="polarion_wiki macro name=tof;params=uid=2"></div>
+  <div id="toc_container">
+   <p class="toc_title"><h1></h1></p>
+  </div>
+  <h3 id="polarion_wiki macro name=module-workitem;params=id=ML-103395">3.5 Referenzierte Dokumente</h3>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-103396">3.5.1 Dokumente der gematik</h4>
+  <p id="polarion_186">Die nachfolgende Tabelle enthält die Bezeichnung der in dem vorliegenden Dokument referenzierten Dokumente der gematik zur Telematikinfrastruktur. Der mit der vorliegenden Version korrelierende Entwicklungsstand dieser Konzepte und Spezifikationen wird pro Release in einer Dokumentenlandkarte definiert; Version und Stand der referenzierten Dokumente sind daher in der nachfolgenden Tabelle nicht aufgeführt. Deren zu diesem Dokument jeweils gültige Versionsnummern sind in der aktuellen, von der gematik veröffentlichten Dokumentenlandkarte enthalten, in der die vorliegende Version aufgeführt wird.</p>
+  <p id="polarion_187"></p>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=4" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Herausgeber: Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">[gemGlossar] </td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 38px;border: 1px solid #CCCCCC;padding: 5px;">gematik: Glossar der Telematikinfrastruktur&nbsp; </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[FHIR Version]&nbsp;</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;"><a href="https://github.com/gematik/api-erp/blob/master/docs/erp_fhirversion.adoc#e-rezept-fhir-package-versionsmanagement&nbsp;" target="_top" class="descriptionLink">https://github.com/gematik/api-erp/blob/master/docs/erp_fhirversion.adoc#e-rezept-fhir-package-versionsmanagement&nbsp;</a>&nbsp;</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <h4 id="polarion_wiki macro name=module-workitem;params=id=ML-103397">3.5.2 Weitere Dokumente</h4>
+  <table id="polarion_wiki macro name=table;params=width=100%|uid=5" class="polarion-Document-table" style="width: 100%;margin-left: auto;margin-right: auto;border: 1px solid #CCCCCC;empty-cells: show;border-collapse: collapse;"> 
+   <tbody> 
+    <tr> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[Quelle]<br> </th> 
+     <th style="font-weight: bold;background-color: #F0F0F0;text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Herausgeber (Erscheinungsdatum): Titel<br> </th> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[ISO 7064]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Berechnungsverfahren Prüfsumme (Check character systems) ISO 7064 im Modulo-97-Verfahren<br> <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:7064:ed-1:v1:en" target="_top" class="descriptionLink">https://www.iso.org/obp/ui/#iso:std:iso-iec:7064:ed-1:v1:en</a>&nbsp;<br> Kapitel 8.4 Simplified procedure</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[Simplifier]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Profilierung der FHIR Ressourcen im Projekt E-Rezept<br> <a href="https://simplifier.net/erezept-workflow" target="_top" class="descriptionLink">https://simplifier.net/erezept-workflow</a>&nbsp;<br> </td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[AM-RL]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Arzneimittel-Richtlinie - Gemeinsamer Bundesausschuss<br> <a href="https://www.g-ba.de/richtlinien/3/" target="_top" class="descriptionLink">https://www.g-ba.de/richtlinien/3/</a>&nbsp;</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: left;vertical-align: top;width: 148px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">[JSON]</td> 
+     <td style="text-align: left;vertical-align: top;width: 599px;height: 19px;border: 1px solid #CCCCCC;padding: 5px;">Grundlagen JSON-Notation<br> <a href="https://www.json.org/json-de.html" target="_top" class="descriptionLink">https://www.json.org/json-de.html</a>&nbsp;</td> 
+    </tr> 
+   </tbody> 
+  </table>
+  <p id="polarion_196"></p>
+ </body>
+</html>
